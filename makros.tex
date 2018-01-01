@@ -1,8 +1,9 @@
-\pagestyle{headings}
+\pagestyle{empty}
 \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
 \renewcommand{\sectionmark}[1]{\markright{#1}}
 \renewcommand{\headrulewidth}{0.2pt}
 \renewcommand{\footrulewidth}{0.2pt}
+\setlength{\fboxsep}{5pt}
 
 % Codestyle defined
 \definecolor{codegreen}{rgb}{0,0.6,0}
@@ -70,25 +71,14 @@
 	\setcounter{page}{1}
 	\ClearShipoutPicture
 	\AddToShipoutPicture{
-		\put(55,52){
-			\framebox(485,707){}
-		}
-		\put(55,760){{
-				\framebox(345,22)[l]{
-					\sffamily \bfseries \hspace{0.3cm} #2}
-				}
-			}
-		\put(401,760){{
-				\framebox(139,22)[l]{
-					\hspace{0.3cm}
-					\sffamily \bfseries \tiny #3}
-				}
-			}
-		\put(542,152){
-			\rotatebox{270}{
-				\makebox(100,7)[c]{
-					\sffamily \tiny #1
+		\put(55,761){{
+				\mbox{\parbox{385\unitlength}{\tiny \color{codegray}BBS I Mainz, #1 \newline #2
+						\newline #3}
 					}
+				}
+			}
+		\put(455,761){{
+				\mbox{\hspace{0.3cm}\includegraphics[height=0.025\textheight]{bbs1.jpg}}
 				}
 			}
 		}
