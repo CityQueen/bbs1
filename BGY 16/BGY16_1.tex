@@ -6,52 +6,60 @@
 \geometry{left=2.50cm,right=2.50cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
 
 \begin{document}
-	\begin{worksheet}{BGY 16}{Mathematik - Lernbereich 3, Algebraisierung}{Lineare Gleichungssysteme - Gauß-Eliminations-Verfahren}
+	\begin{worksheet}{BGY 16}{Mathematik - Lernbereich 3, Algebraisierung}{Vektorrechnung /Analytische Geometrie - Vektordarstellung}
 				
 		\noindent
 		\begin{framed}
-			\sffamily{
-			\begin{center}
-				\Large{\textbf{It's Party-Time!}}\\
-				\textit{\large{Finally 18 - Endlich ist es soweit!}}
-			\end{center}
+			\noindent
+			Darstellung des Ortes \glqq{}Nikosia\grqq{} auf Zypern als Vektor:\\
 			\par
 			\bigskip
 			\noindent
-			Wir haben Geburtstag! Das muss natürlich gebührend gefeiert werden!\\
-			\textit{Wer darf nicht fehlen?} Genau: \large DU!}\\
-			\begin{center}
-				\begin{tabular}{lcr}
-				& Wann: \color{codepurple}{12. Februar 2018} &\\
-				& Beginn: \color{codepurple}{18:00 Uhr} & \\
-				& Wo: \color{codepurple}{Haus der Vereine} & \\
-				& Motto: \color{codepurple}{Be whatever or whoever you want to be!} &\\
-				\end{tabular}
-				\par
-				\bigskip
-				Bitte sag doch kurz zu bzw. ab! Whatsapp reicht!\\
-				Wir freuen uns auf dich!\\
-				\Large{Ella, Mona und Torben}
-			\end{center}
-			\hrule
+			Darstellung der Richtung \glqq{}Kopenhagen - Reykjavik\grqq{} als Vektor:\\
+			\includegraphics[width=0.75\textwidth]{MapKoord.jpg}			
+		\end{framed}
+		\begin{framed}
+			\noindent
+			\includegraphics[width=0.75\textwidth]{MapVec.jpg}\\
+			(1) Gib die abgebildeten Pfeile und Punkte als Vektoren an!\\
 			\par
 			\bigskip
 			\noindent
-			Für ihre Party wollen die drei nun einkaufen gehen. Sie haben aber jeder nur 6s0\euro{} Budget zur Verfügung.\\
-			\begin{align*}
-				3b_{1} + 6c_{1} + 2w_{1} = 160\\
-				3b_{1} + 4c_{1} + 1w_{1} = 115\\
-				\frac{3}{2}b_{1} + 5c_{1} + 5w_{1} = 140
-			\end{align*}
+			(2) Stelle die folgenden Vektoren im Koordinatensystem auf der Rückseite dar!\\
+			\par
+			\( \overrightarrow{a} = \begin{pmatrix} 4 \\\ 7\end{pmatrix}\) \hfill \(\overrightarrow{b} = \begin{pmatrix}-4 \\\ 2 \end{pmatrix}\) \hfill \( \overrightarrow{c} = \begin{pmatrix}4 \\\ -2\end{pmatrix}\) \hfill Ortsvektor des Punktes (2,5)\\
+			\includegraphics[width=0.8\textwidth]{Koord.jpg}
 		\end{framed}
-
 		\begin{framed}
-		\color{codegray}\tiny{Leitfrage}
-		\end{framed}
-		
-		\begin{framed}
-			\includegraphics[height=0.29\textheight]{../empty.jpg}\\
-			\includegraphics[height=0.95\textheight]{../empty.jpg}
+			\noindent
+			\textbf{Der Verbindungsvektor}\\
+			(a) Bestimme den Verbindungsvektor zwischen Wilna \(\begin{pmatrix}
+				2 & 1
+			\end{pmatrix}\) und Murmansk \(\begin{pmatrix}
+			3 & 5
+			\end{pmatrix}\)!\\
+			(b) Wie bestimmt man allgemein einen Verbindungsvektor zwischen zwei Punkten A \(\begin{pmatrix}a_{1} | a_{2}\end{pmatrix}\) und B \(\begin{pmatrix}b_{1}|b_{2}\end{pmatrix}\)?\\
+			(c) Prüfen Sie Ihre Formel anhand zwei beliebig gewählter Punkte!\\
+			\par
+			\bigskip
+			\noindent
+			\textbf{Die Mitte zwischen zwei Punkten}\\
+			Die Lufthansa will einen Flug von Frankfurt \(\begin{pmatrix}-1 & -1\end{pmatrix}\) nach Ankara \(\begin{pmatrix}4,5 & -5,5\end{pmatrix}\) durchführen. Der Pilot benötigt die Position, bei der er genau in der Mittw ist, da sich gewisse Entscheidungen ab diesem Punkt ändern.\\
+			(a) Bestimmen Sie die Koordinaten dieser Position, indem Sie geeignete Vektoren aneinander ketten!\\
+			(b) Wie kann man allgemein die Mitte zwischen zwei Punkten A \(\begin{pmatrix}a_{1} | a_{2}\end{pmatrix}\) und B \(\begin{pmatrix}b_{1}|b_{2}\end{pmatrix}\) bestimmen?\\
+			(c) Prüfen Sie Ihre erarbeitete Formel anhand zweier beliebig gewählter Punkte!\\
+			\par
+			\bigskip
+			\noindent
+			\textbf{Die Länge eines Vektors}\\
+			Ein Flug führt einen Piloten von Berlin \(\begin{pmatrix}0 0\end{pmatrix}\) nach Moskau \(\begin{pmatrix}4 2\end{pmatrix}\).\\
+			(a) Bestimmen Sie die Länge des Verbindungsvektors der beiden Städte! Nutzen Sie hierzu den folgenden Satz aus der Mittelstufe:\\
+			\begin{framed}
+				\sffamily{Der \textbf{Satz des Pythagoras} ist einer der fundamentalen Sätze der euklidischen Geometrie. Er besagt, dass in allen ebenen rechtwinkligen Dreiecken die Summe der Flächeninhalte der Kathetenquadrate gleich dem Flächeninhalt des Hypothenusenquadrates ist. Sind \(a\) und \(b\) die Längen der am rechten Winkel anliegenden Seiten, der Katheten, und \(c\) die Länge der dem rechten Winkel gegenüberliegenden Seite, der Hypotenuse, dann lautet der Satz als Gleichung ausgedrückt:\\
+				\(a^{2} + b^{2} = c^{2}\)}
+			\end{framed}
+			\noindent
+			(b) Bestimmen Sie die Länge eines beliebigen weiteren Vektors und prüfen Sie, ob eine plausible Lösung vorliegt!
 		\end{framed}
 	\end{worksheet}
 \end{document}
