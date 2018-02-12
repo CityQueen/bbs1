@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.1)  10 FEB 2018 15:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.1)  12 FEB 2018 09:41
 entering extended mode
 **"./20180209 - Vektoren.tex"
 ("20180209 - Vektoren.tex"
@@ -1419,7 +1419,7 @@ LaTeX Info: Redefining \nameref on input line 8.
 \openout4 = `"20180209 - Vektoren.out"'.
 
 \c@lstlisting=\count331
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 12.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 9.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1428,17 +1428,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--16
 
  []
 
-<MapKoord.jpg, id=3, 563.10374pt x 443.40656pt>
-File: MapKoord.jpg Graphic file (type jpg)
-<use MapKoord.jpg>
-Package pdftex.def Info: MapKoord.jpg  used on input line 20. on input line 20.
-
+<Bilder/MapKoord.jpg, id=3, 563.10374pt x 443.40656pt>
+File: Bilder/MapKoord.jpg Graphic file (type jpg)
+<use Bilder/MapKoord.jpg>
+Package pdftex.def Info: Bilder/MapKoord.jpg  used on input line 20. on input l
+ine 20.
 Package pdftex.def Info: Requested size: 327.33308pt x 257.75107pt on input lin
 e 20.
-<MapVec.jpg, id=4, 560.8453pt x 415.5525pt>
-File: MapVec.jpg Graphic file (type jpg)
-<use MapVec.jpg>
-Package pdftex.def Info: MapVec.jpg  used on input line 24. on input line 24.
+<Bilder/MapVec.jpg, id=4, 560.8453pt x 415.5525pt>
+File: Bilder/MapVec.jpg Graphic file (type jpg)
+<use Bilder/MapVec.jpg>
+Package pdftex.def Info: Bilder/MapVec.jpg  used on input line 24. on input lin
+e 24.
 Package pdftex.def Info: Requested size: 327.33308pt x 242.52972pt on input lin
 e 24.
 
@@ -1488,10 +1489,11 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 31.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<Koord3D.jpg, id=5, 627.84563pt x 569.12625pt>
-File: Koord3D.jpg Graphic file (type jpg)
-<use Koord3D.jpg>
-Package pdftex.def Info: Koord3D.jpg  used on input line 36. on input line 36.
+<Bilder/Koord3D.jpg, id=5, 627.84563pt x 569.12625pt>
+File: Bilder/Koord3D.jpg Graphic file (type jpg)
+<use Bilder/Koord3D.jpg>
+Package pdftex.def Info: Bilder/Koord3D.jpg  used on input line 36. on input li
+ne 36.
 Package pdftex.def Info: Requested size: 414.62057pt x 375.84158pt on input lin
 e 36.
 
@@ -1506,7 +1508,7 @@ Package pdftex.def Info: Requested size: 65.98267pt x 16.15195pt on input line
 37.
 [1{C:/Users/carso/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
- <../bbs1.jpg> <./MapKoord.jpg> <./MapVec.jpg>]
+ <../bbs1.jpg> <./Bilder/MapKoord.jpg> <./Bilder/MapVec.jpg>]
 File: ../bbs1.jpg Graphic file (type jpg)
 <use ../bbs1.jpg>
 Package pdftex.def Info: ../bbs1.jpg  used on input line 47. on input line 47.
@@ -1515,7 +1517,7 @@ Package pdftex.def Info: Requested size: 65.98267pt x 16.15195pt on input line
  [2
 
 pdfTeX warning: pdflatex.exe: pop empty color page stack 0
- <./Koord3D.jpg>]
+ <./Bilder/Koord3D.jpg>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 48.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 48.
  ("20180209 - Vektoren.aux")
@@ -1526,9 +1528,9 @@ Package rerunfilecheck Info: File `"20180209 - Vektoren".out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 48.
  ) 
 Here is how much of TeX's memory you used:
- 24126 strings out of 493312
- 415264 string characters out of 3138900
- 641200 words of memory out of 3000000
+ 24127 strings out of 493312
+ 415355 string characters out of 3138900
+ 641201 words of memory out of 3000000
  27347 multiletter control sequences out of 15000+200000
  555153 words of font info for 44 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
