@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.1)  30 JAN 2018 17:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.1)  12 FEB 2018 15:31
 entering extended mode
-**./BSFI16.tex
-(BSFI16.tex
+**"./20180219 - Schädlinge.tex"
+("20180219 - Schädlinge.tex"
 LaTeX2e <2017-04-15>
 Babel <3.15> and hyphenation patterns for 75 language(s) loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\koma-script\scrreprt.cls"
@@ -584,8 +584,11 @@ Style option: `fancybox' v1.4 <2010/05/15> (tvz)
 \EndVerbatimTokens=\toks21
 \Verbatim@Outfile=\write3
 \Verbatim@Infile=\read1
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty"
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\lscape.sty"
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
@@ -600,7 +603,11 @@ Package graphics Info: Driver file: pdftex.def on input line 99.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
 File: pdftex.def 2017/06/24 v1.0g Graphics/color driver for pdftex
-))
+)))
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 \Gin@req@height=\dimen114
 \Gin@req@width=\dimen115
 )
@@ -831,13 +838,162 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip72
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks29
+\ex@=\dimen140
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen141
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count116
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count117
+\leftroot@=\count118
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count119
+\DOTSCASE@=\count120
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box33
+\strutbox@=\box34
+\big@size=\dimen142
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count121
+\c@MaxMatrixCols=\count122
+\dotsspace@=\muskip11
+\c@parentequation=\count123
+\dspbrk@lvl=\count124
+\tag@help=\toks30
+\row@=\count125
+\column@=\count126
+\maxfields@=\count127
+\andhelp@=\toks31
+\eqnshift@=\dimen143
+\alignsep@=\dimen144
+\tagshift@=\dimen145
+\tagwidth@=\dimen146
+\totwidth@=\dimen147
+\lineht@=\dimen148
+\@envbody=\toks32
+\multlinegap=\skip73
+\multlinetaggap=\skip74
+\mathdisplay@stack=\toks33
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\diagbox\diagbox.sty"
+Package: diagbox 2016/12/28 v2.2 Making table heads with diagonal lines
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pict2e\pict2e.sty"
+Package: pict2e 2016/02/05 v0.3b Improved picture commands (HjG,RN,JT)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pict2e\pict2e.cfg"
+File: pict2e.cfg 2016/02/05 v0.1u pict2e configuration for teTeX/TeXLive
+)
+Package pict2e Info: Driver file: pdftex.def on input line 119.
+Package pict2e Info: Driver file for pict2e: p2e-pdftex.def on input line 121.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pict2e\p2e-pdftex.def"
+File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
+)
+\pIIe@GRAPH=\toks34
+\@arclen=\dimen149
+\@arcrad=\dimen150
+\@tempdimd=\dimen151
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\fp\fp.sty"
+Package: fp 1995/04/02
+
+`Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
+("C:\Program Files\MiKTeX 2.9\tex\latex\fp\defpattern.sty"
+Package: defpattern 1994/10/12
+\actioncount=\count128
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\fp\fp-basic.sty"
+Package: fp-basic 1996/05/13
+\FP@xs=\count129
+\FP@xia=\count130
+\FP@xib=\count131
+\FP@xfa=\count132
+\FP@xfb=\count133
+\FP@rega=\count134
+\FP@regb=\count135
+\FP@regs=\count136
+\FP@times=\count137
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\fp\fp-addons.sty"
+Package: fp-addons 1995/03/15
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\fp\fp-snap.sty"
+Package: fp-snap 1995/04/05
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\fp\fp-exp.sty"
+Package: fp-exp 1995/04/03
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\fp\fp-trigo.sty"
+Package: fp-trigo 1995/04/14
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\fp\fp-pas.sty"
+Package: fp-pas 1994/08/29
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\fp\fp-random.sty"
+Package: fp-random 1995/02/23
+\FPseed=\count138
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\fp\fp-eqn.sty"
+Package: fp-eqn 1995/04/03
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\fp\fp-upn.sty"
+Package: fp-upn 1996/10/21
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\fp\fp-eval.sty"
+Package: fp-eval 1995/04/03
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count139
+\calc@Bcount=\count140
+\calc@Adimen=\dimen152
+\calc@Bdimen=\dimen153
+\calc@Askip=\skip75
+\calc@Bskip=\skip76
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count141
+\calc@Cskip=\skip77
+)
+\diagbox@boxa=\box35
+\diagbox@boxb=\box36
+\diagbox@boxm=\box37
+\diagbox@wd=\dimen154
+\diagbox@ht=\dimen155
+\diagbox@insepl=\dimen156
+\diagbox@insepr=\dimen157
+\diagbox@outsepl=\dimen158
+\diagbox@outsepr=\dimen159
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\framed\framed.sty"
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
-\OuterFrameSep=\skip72
-\fb@frw=\dimen140
-\fb@frh=\dimen141
-\FrameRule=\dimen142
-\FrameSep=\dimen143
+\OuterFrameSep=\skip78
+\fb@frw=\dimen160
+\fb@frh=\dimen161
+\FrameRule=\dimen162
+\FrameSep=\dimen163
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\mdframed\mdframed.sty"
 Package: mdframed 2013/07/01 1.9b: mdframed
@@ -848,163 +1004,163 @@ Package: expl3 2017/12/16 L3 programming layer (loader)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\expl3-code.tex"
 Package: expl3 2017/12/16 L3 programming layer (code)
-\c_max_int=\count116
-\l_tmpa_int=\count117
-\l_tmpb_int=\count118
-\g_tmpa_int=\count119
-\g_tmpb_int=\count120
-\g__intarray_font_int=\count121
-\g__prg_map_int=\count122
-\c_log_iow=\count123
-\l_iow_line_count_int=\count124
-\l__iow_line_target_int=\count125
-\l__iow_one_indent_int=\count126
-\l__iow_indent_int=\count127
-\c_zero_dim=\dimen144
-\c_max_dim=\dimen145
-\l_tmpa_dim=\dimen146
-\l_tmpb_dim=\dimen147
-\g_tmpa_dim=\dimen148
-\g_tmpb_dim=\dimen149
-\c_zero_skip=\skip73
-\c_max_skip=\skip74
-\l_tmpa_skip=\skip75
-\l_tmpb_skip=\skip76
-\g_tmpa_skip=\skip77
-\g_tmpb_skip=\skip78
-\c_zero_muskip=\muskip11
-\c_max_muskip=\muskip12
-\l_tmpa_muskip=\muskip13
-\l_tmpb_muskip=\muskip14
-\g_tmpa_muskip=\muskip15
-\g_tmpb_muskip=\muskip16
-\l_keys_choice_int=\count128
-\c__fp_leading_shift_int=\count129
-\c__fp_middle_shift_int=\count130
-\c__fp_trailing_shift_int=\count131
-\c__fp_big_leading_shift_int=\count132
-\c__fp_big_middle_shift_int=\count133
-\c__fp_big_trailing_shift_int=\count134
-\c__fp_Bigg_leading_shift_int=\count135
-\c__fp_Bigg_middle_shift_int=\count136
-\c__fp_Bigg_trailing_shift_int=\count137
-\c__fp_rand_size_int=\count138
-\c__fp_rand_four_int=\count139
-\c__fp_rand_eight_int=\count140
-\l__sort_length_int=\count141
-\l__sort_min_int=\count142
-\l__sort_top_int=\count143
-\l__sort_max_int=\count144
-\l__sort_true_max_int=\count145
-\l__sort_block_int=\count146
-\l__sort_begin_int=\count147
-\l__sort_end_int=\count148
-\l__sort_A_int=\count149
-\l__sort_B_int=\count150
-\l__sort_C_int=\count151
-\l__tl_build_start_index_int=\count152
-\l__tl_build_index_int=\count153
-\l__tl_analysis_normal_int=\count154
-\l__tl_analysis_index_int=\count155
-\l__tl_analysis_nesting_int=\count156
-\l__tl_analysis_type_int=\count157
-\l__regex_internal_a_int=\count158
-\l__regex_internal_b_int=\count159
-\l__regex_internal_c_int=\count160
-\l__regex_balance_int=\count161
-\l__regex_group_level_int=\count162
-\l__regex_mode_int=\count163
-\c__regex_cs_in_class_mode_int=\count164
-\c__regex_cs_mode_int=\count165
-\l__regex_catcodes_int=\count166
-\l__regex_default_catcodes_int=\count167
-\c__regex_catcode_D_int=\count168
-\c__regex_catcode_S_int=\count169
-\c__regex_catcode_L_int=\count170
-\c__regex_catcode_O_int=\count171
-\c__regex_catcode_A_int=\count172
-\c__regex_all_catcodes_int=\count173
-\l__regex_show_lines_int=\count174
-\l__regex_min_state_int=\count175
-\l__regex_max_state_int=\count176
-\l__regex_left_state_int=\count177
-\l__regex_right_state_int=\count178
-\l__regex_capturing_group_int=\count179
-\l__regex_min_pos_int=\count180
-\l__regex_max_pos_int=\count181
-\l__regex_curr_pos_int=\count182
-\l__regex_start_pos_int=\count183
-\l__regex_success_pos_int=\count184
-\l__regex_curr_char_int=\count185
-\l__regex_curr_catcode_int=\count186
-\l__regex_last_char_int=\count187
-\l__regex_case_changed_char_int=\count188
-\l__regex_curr_state_int=\count189
-\l__regex_step_int=\count190
-\l__regex_min_active_int=\count191
-\l__regex_max_active_int=\count192
-\l__regex_replacement_csnames_int=\count193
-\l__regex_match_count_int=\count194
-\l__regex_min_submatch_int=\count195
-\l__regex_submatch_int=\count196
-\l__regex_zeroth_submatch_int=\count197
-\g__debug_trace_regex_int=\count198
-\c_empty_box=\box33
-\l_tmpa_box=\box34
-\l_tmpb_box=\box35
-\g_tmpa_box=\box36
-\g_tmpb_box=\box37
-\l__box_top_dim=\dimen150
-\l__box_bottom_dim=\dimen151
-\l__box_left_dim=\dimen152
-\l__box_right_dim=\dimen153
-\l__box_top_new_dim=\dimen154
-\l__box_bottom_new_dim=\dimen155
-\l__box_left_new_dim=\dimen156
-\l__box_right_new_dim=\dimen157
-\l__box_internal_box=\box38
-\l__coffin_internal_box=\box39
-\l__coffin_internal_dim=\dimen158
-\l__coffin_offset_x_dim=\dimen159
-\l__coffin_offset_y_dim=\dimen160
-\l__coffin_x_dim=\dimen161
-\l__coffin_y_dim=\dimen162
-\l__coffin_x_prime_dim=\dimen163
-\l__coffin_y_prime_dim=\dimen164
-\c_empty_coffin=\box40
-\l__coffin_aligned_coffin=\box41
-\l__coffin_aligned_internal_coffin=\box42
-\l_tmpa_coffin=\box43
-\l_tmpb_coffin=\box44
-\l__coffin_display_coffin=\box45
-\l__coffin_display_coord_coffin=\box46
-\l__coffin_display_pole_coffin=\box47
-\l__coffin_display_offset_dim=\dimen165
-\l__coffin_display_x_dim=\dimen166
-\l__coffin_display_y_dim=\dimen167
-\l__coffin_bounding_shift_dim=\dimen168
-\l__coffin_left_corner_dim=\dimen169
-\l__coffin_right_corner_dim=\dimen170
-\l__coffin_bottom_corner_dim=\dimen171
-\l__coffin_top_corner_dim=\dimen172
-\l__coffin_scaled_total_height_dim=\dimen173
-\l__coffin_scaled_width_dim=\dimen174
+\c_max_int=\count142
+\l_tmpa_int=\count143
+\l_tmpb_int=\count144
+\g_tmpa_int=\count145
+\g_tmpb_int=\count146
+\g__intarray_font_int=\count147
+\g__prg_map_int=\count148
+\c_log_iow=\count149
+\l_iow_line_count_int=\count150
+\l__iow_line_target_int=\count151
+\l__iow_one_indent_int=\count152
+\l__iow_indent_int=\count153
+\c_zero_dim=\dimen164
+\c_max_dim=\dimen165
+\l_tmpa_dim=\dimen166
+\l_tmpb_dim=\dimen167
+\g_tmpa_dim=\dimen168
+\g_tmpb_dim=\dimen169
+\c_zero_skip=\skip79
+\c_max_skip=\skip80
+\l_tmpa_skip=\skip81
+\l_tmpb_skip=\skip82
+\g_tmpa_skip=\skip83
+\g_tmpb_skip=\skip84
+\c_zero_muskip=\muskip12
+\c_max_muskip=\muskip13
+\l_tmpa_muskip=\muskip14
+\l_tmpb_muskip=\muskip15
+\g_tmpa_muskip=\muskip16
+\g_tmpb_muskip=\muskip17
+\l_keys_choice_int=\count154
+\c__fp_leading_shift_int=\count155
+\c__fp_middle_shift_int=\count156
+\c__fp_trailing_shift_int=\count157
+\c__fp_big_leading_shift_int=\count158
+\c__fp_big_middle_shift_int=\count159
+\c__fp_big_trailing_shift_int=\count160
+\c__fp_Bigg_leading_shift_int=\count161
+\c__fp_Bigg_middle_shift_int=\count162
+\c__fp_Bigg_trailing_shift_int=\count163
+\c__fp_rand_size_int=\count164
+\c__fp_rand_four_int=\count165
+\c__fp_rand_eight_int=\count166
+\l__sort_length_int=\count167
+\l__sort_min_int=\count168
+\l__sort_top_int=\count169
+\l__sort_max_int=\count170
+\l__sort_true_max_int=\count171
+\l__sort_block_int=\count172
+\l__sort_begin_int=\count173
+\l__sort_end_int=\count174
+\l__sort_A_int=\count175
+\l__sort_B_int=\count176
+\l__sort_C_int=\count177
+\l__tl_build_start_index_int=\count178
+\l__tl_build_index_int=\count179
+\l__tl_analysis_normal_int=\count180
+\l__tl_analysis_index_int=\count181
+\l__tl_analysis_nesting_int=\count182
+\l__tl_analysis_type_int=\count183
+\l__regex_internal_a_int=\count184
+\l__regex_internal_b_int=\count185
+\l__regex_internal_c_int=\count186
+\l__regex_balance_int=\count187
+\l__regex_group_level_int=\count188
+\l__regex_mode_int=\count189
+\c__regex_cs_in_class_mode_int=\count190
+\c__regex_cs_mode_int=\count191
+\l__regex_catcodes_int=\count192
+\l__regex_default_catcodes_int=\count193
+\c__regex_catcode_D_int=\count194
+\c__regex_catcode_S_int=\count195
+\c__regex_catcode_L_int=\count196
+\c__regex_catcode_O_int=\count197
+\c__regex_catcode_A_int=\count198
+\c__regex_all_catcodes_int=\count199
+\l__regex_show_lines_int=\count266
+\l__regex_min_state_int=\count267
+\l__regex_max_state_int=\count268
+\l__regex_left_state_int=\count269
+\l__regex_right_state_int=\count270
+\l__regex_capturing_group_int=\count271
+\l__regex_min_pos_int=\count272
+\l__regex_max_pos_int=\count273
+\l__regex_curr_pos_int=\count274
+\l__regex_start_pos_int=\count275
+\l__regex_success_pos_int=\count276
+\l__regex_curr_char_int=\count277
+\l__regex_curr_catcode_int=\count278
+\l__regex_last_char_int=\count279
+\l__regex_case_changed_char_int=\count280
+\l__regex_curr_state_int=\count281
+\l__regex_step_int=\count282
+\l__regex_min_active_int=\count283
+\l__regex_max_active_int=\count284
+\l__regex_replacement_csnames_int=\count285
+\l__regex_match_count_int=\count286
+\l__regex_min_submatch_int=\count287
+\l__regex_submatch_int=\count288
+\l__regex_zeroth_submatch_int=\count289
+\g__debug_trace_regex_int=\count290
+\c_empty_box=\box38
+\l_tmpa_box=\box39
+\l_tmpb_box=\box40
+\g_tmpa_box=\box41
+\g_tmpb_box=\box42
+\l__box_top_dim=\dimen170
+\l__box_bottom_dim=\dimen171
+\l__box_left_dim=\dimen172
+\l__box_right_dim=\dimen173
+\l__box_top_new_dim=\dimen174
+\l__box_bottom_new_dim=\dimen175
+\l__box_left_new_dim=\dimen176
+\l__box_right_new_dim=\dimen177
+\l__box_internal_box=\box43
+\l__coffin_internal_box=\box44
+\l__coffin_internal_dim=\dimen178
+\l__coffin_offset_x_dim=\dimen179
+\l__coffin_offset_y_dim=\dimen180
+\l__coffin_x_dim=\dimen181
+\l__coffin_y_dim=\dimen182
+\l__coffin_x_prime_dim=\dimen183
+\l__coffin_y_prime_dim=\dimen184
+\c_empty_coffin=\box45
+\l__coffin_aligned_coffin=\box46
+\l__coffin_aligned_internal_coffin=\box47
+\l_tmpa_coffin=\box48
+\l_tmpb_coffin=\box49
+\l__coffin_display_coffin=\box50
+\l__coffin_display_coord_coffin=\box51
+\l__coffin_display_pole_coffin=\box52
+\l__coffin_display_offset_dim=\dimen185
+\l__coffin_display_x_dim=\dimen186
+\l__coffin_display_y_dim=\dimen187
+\l__coffin_bounding_shift_dim=\dimen188
+\l__coffin_left_corner_dim=\dimen189
+\l__coffin_right_corner_dim=\dimen190
+\l__coffin_bottom_corner_dim=\dimen191
+\l__coffin_top_corner_dim=\dimen192
+\l__coffin_scaled_total_height_dim=\dimen193
+\l__coffin_scaled_width_dim=\dimen194
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\l3pdfmode.def"
 File: l3pdfmode.def 2017/03/18 v L3 Experimental driver: PDF mode
-\l__driver_color_stack_int=\count199
-\l__driver_tmp_box=\box48
+\l__driver_color_stack_int=\count291
+\l__driver_tmp_box=\box53
 ))
 Package: xparse 2017/12/16 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count266
-\g__xparse_grabber_int=\count267
-\l__xparse_m_args_int=\count268
-\l__xparse_mandatory_args_int=\count269
-\l__xparse_v_nesting_int=\count270
+\l__xparse_current_arg_int=\count292
+\g__xparse_grabber_int=\count293
+\l__xparse_m_args_int=\count294
+\l__xparse_mandatory_args_int=\count295
+\l__xparse_v_nesting_int=\count296
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty"
 Package: etoolbox 2017/11/22 v2.5 e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count271
+\etb@tempcnta=\count297
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\zref-abspage.sty"
 Package: zref-abspage 2016/05/21 v2.26 Module abspage for zref (HO)
@@ -1015,90 +1171,90 @@ Package zref Info: New property list: main on input line 759.
 Package zref Info: New property: default on input line 760.
 Package zref Info: New property: page on input line 761.
 )
-\c@abspage=\count272
+\c@abspage=\count298
 Package zref Info: New property: abspage on input line 62.
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\needspace\needspace.sty"
 Package: needspace 2010/09/12 v1.3d reserve vertical space
 )
-\mdf@templength=\skip79
-\c@mdf@globalstyle@cnt=\count273
-\mdf@skipabove@length=\skip80
-\mdf@skipbelow@length=\skip81
-\mdf@leftmargin@length=\skip82
-\mdf@rightmargin@length=\skip83
-\mdf@innerleftmargin@length=\skip84
-\mdf@innerrightmargin@length=\skip85
-\mdf@innertopmargin@length=\skip86
-\mdf@innerbottommargin@length=\skip87
-\mdf@splittopskip@length=\skip88
-\mdf@splitbottomskip@length=\skip89
-\mdf@outermargin@length=\skip90
-\mdf@innermargin@length=\skip91
-\mdf@linewidth@length=\skip92
-\mdf@innerlinewidth@length=\skip93
-\mdf@middlelinewidth@length=\skip94
-\mdf@outerlinewidth@length=\skip95
-\mdf@roundcorner@length=\skip96
-\mdf@footenotedistance@length=\skip97
-\mdf@userdefinedwidth@length=\skip98
-\mdf@needspace@length=\skip99
-\mdf@frametitleaboveskip@length=\skip100
-\mdf@frametitlebelowskip@length=\skip101
-\mdf@frametitlerulewidth@length=\skip102
-\mdf@frametitleleftmargin@length=\skip103
-\mdf@frametitlerightmargin@length=\skip104
-\mdf@shadowsize@length=\skip105
-\mdf@extratopheight@length=\skip106
-\mdf@subtitleabovelinewidth@length=\skip107
-\mdf@subtitlebelowlinewidth@length=\skip108
-\mdf@subtitleaboveskip@length=\skip109
-\mdf@subtitlebelowskip@length=\skip110
-\mdf@subtitleinneraboveskip@length=\skip111
-\mdf@subtitleinnerbelowskip@length=\skip112
-\mdf@subsubtitleabovelinewidth@length=\skip113
-\mdf@subsubtitlebelowlinewidth@length=\skip114
-\mdf@subsubtitleaboveskip@length=\skip115
-\mdf@subsubtitlebelowskip@length=\skip116
-\mdf@subsubtitleinneraboveskip@length=\skip117
-\mdf@subsubtitleinnerbelowskip@length=\skip118
+\mdf@templength=\skip85
+\c@mdf@globalstyle@cnt=\count299
+\mdf@skipabove@length=\skip86
+\mdf@skipbelow@length=\skip87
+\mdf@leftmargin@length=\skip88
+\mdf@rightmargin@length=\skip89
+\mdf@innerleftmargin@length=\skip90
+\mdf@innerrightmargin@length=\skip91
+\mdf@innertopmargin@length=\skip92
+\mdf@innerbottommargin@length=\skip93
+\mdf@splittopskip@length=\skip94
+\mdf@splitbottomskip@length=\skip95
+\mdf@outermargin@length=\skip96
+\mdf@innermargin@length=\skip97
+\mdf@linewidth@length=\skip98
+\mdf@innerlinewidth@length=\skip99
+\mdf@middlelinewidth@length=\skip100
+\mdf@outerlinewidth@length=\skip101
+\mdf@roundcorner@length=\skip102
+\mdf@footenotedistance@length=\skip103
+\mdf@userdefinedwidth@length=\skip104
+\mdf@needspace@length=\skip105
+\mdf@frametitleaboveskip@length=\skip106
+\mdf@frametitlebelowskip@length=\skip107
+\mdf@frametitlerulewidth@length=\skip108
+\mdf@frametitleleftmargin@length=\skip109
+\mdf@frametitlerightmargin@length=\skip110
+\mdf@shadowsize@length=\skip111
+\mdf@extratopheight@length=\skip112
+\mdf@subtitleabovelinewidth@length=\skip113
+\mdf@subtitlebelowlinewidth@length=\skip114
+\mdf@subtitleaboveskip@length=\skip115
+\mdf@subtitlebelowskip@length=\skip116
+\mdf@subtitleinneraboveskip@length=\skip117
+\mdf@subtitleinnerbelowskip@length=\skip118
+\mdf@subsubtitleabovelinewidth@length=\skip119
+\mdf@subsubtitlebelowlinewidth@length=\skip120
+\mdf@subsubtitleaboveskip@length=\skip121
+\mdf@subsubtitlebelowskip@length=\skip122
+\mdf@subsubtitleinneraboveskip@length=\skip123
+\mdf@subsubtitleinnerbelowskip@length=\skip124
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\mdframed\md-frame-0.mdf"
 File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 )
-\mdf@frametitlebox=\box49
-\mdf@footnotebox=\box50
-\mdf@splitbox@one=\box51
-\mdf@splitbox@two=\box52
-\mdf@splitbox@save=\box53
-\mdfsplitboxwidth=\skip119
-\mdfsplitboxtotalwidth=\skip120
-\mdfsplitboxheight=\skip121
-\mdfsplitboxdepth=\skip122
-\mdfsplitboxtotalheight=\skip123
-\mdfframetitleboxwidth=\skip124
-\mdfframetitleboxtotalwidth=\skip125
-\mdfframetitleboxheight=\skip126
-\mdfframetitleboxdepth=\skip127
-\mdfframetitleboxtotalheight=\skip128
-\mdffootnoteboxwidth=\skip129
-\mdffootnoteboxtotalwidth=\skip130
-\mdffootnoteboxheight=\skip131
-\mdffootnoteboxdepth=\skip132
-\mdffootnoteboxtotalheight=\skip133
-\mdftotallinewidth=\skip134
-\mdfboundingboxwidth=\skip135
-\mdfboundingboxtotalwidth=\skip136
-\mdfboundingboxheight=\skip137
-\mdfboundingboxdepth=\skip138
-\mdfboundingboxtotalheight=\skip139
-\mdf@freevspace@length=\skip140
-\mdf@horizontalwidthofbox@length=\skip141
-\mdf@verticalmarginwhole@length=\skip142
-\mdf@horizontalspaceofbox=\skip143
-\mdfsubtitleheight=\skip144
-\mdfsubsubtitleheight=\skip145
-\c@mdfcountframes=\count274
+\mdf@frametitlebox=\box54
+\mdf@footnotebox=\box55
+\mdf@splitbox@one=\box56
+\mdf@splitbox@two=\box57
+\mdf@splitbox@save=\box58
+\mdfsplitboxwidth=\skip125
+\mdfsplitboxtotalwidth=\skip126
+\mdfsplitboxheight=\skip127
+\mdfsplitboxdepth=\skip128
+\mdfsplitboxtotalheight=\skip129
+\mdfframetitleboxwidth=\skip130
+\mdfframetitleboxtotalwidth=\skip131
+\mdfframetitleboxheight=\skip132
+\mdfframetitleboxdepth=\skip133
+\mdfframetitleboxtotalheight=\skip134
+\mdffootnoteboxwidth=\skip135
+\mdffootnoteboxtotalwidth=\skip136
+\mdffootnoteboxheight=\skip137
+\mdffootnoteboxdepth=\skip138
+\mdffootnoteboxtotalheight=\skip139
+\mdftotallinewidth=\skip140
+\mdfboundingboxwidth=\skip141
+\mdfboundingboxtotalwidth=\skip142
+\mdfboundingboxheight=\skip143
+\mdfboundingboxdepth=\skip144
+\mdfboundingboxtotalheight=\skip145
+\mdf@freevspace@length=\skip146
+\mdf@horizontalwidthofbox@length=\skip147
+\mdf@verticalmarginwhole@length=\skip148
+\mdf@horizontalspaceofbox=\skip149
+\mdfsubtitleheight=\skip150
+\mdfsubsubtitleheight=\skip151
+\c@mdfcountframes=\count300
 
 ****** mdframed patching \endmdf@trivlist
 
@@ -1114,13 +1270,13 @@ File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 . 
 . Defining command \mdtheorem with sig. ' O{} m o m o ' on line 701.
 .................................................
-\mdf@envdepth=\count275
-\c@mdf@env@i=\count276
-\c@mdf@env@ii=\count277
-\c@mdf@zref@counter=\count278
+\mdf@envdepth=\count301
+\c@mdf@env@i=\count302
+\c@mdf@env@ii=\count303
+\c@mdf@zref@counter=\count304
 Package zref Info: New property: mdf@pagevalue on input line 895.
 )
-\enitdp@todolist=\count279
+\enitdp@todolist=\count305
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\blindtext\blindtext.sty"
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
@@ -1128,34 +1284,37 @@ Package: blindtext 2012/01/06 V2.0 blindtext-Package
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\xspace.sty"
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count280
-\c@Blindtext=\count281
-\c@blind@countparstart=\count282
-\blind@countxx=\count283
-\blindtext@numBlindtext=\count284
-\blind@countyy=\count285
-\c@blindlist=\count286
-\c@blindlistlevel=\count287
-\c@blindlist@level=\count288
-\blind@listitem=\count289
-\c@blind@listcount=\count290
-\c@blind@levelcount=\count291
-\blind@mathformula=\count292
-\blind@Mathformula=\count293
-\c@blind@randomcount=\count294
-\c@blind@randommax=\count295
-\c@blind@pangramcount=\count296
-\c@blind@pangrammax=\count297
+\c@blindtext=\count306
+\c@Blindtext=\count307
+\c@blind@countparstart=\count308
+\blind@countxx=\count309
+\blindtext@numBlindtext=\count310
+\blind@countyy=\count311
+\c@blindlist=\count312
+\c@blindlistlevel=\count313
+\c@blindlist@level=\count314
+\blind@listitem=\count315
+\c@blind@listcount=\count316
+\c@blind@levelcount=\count317
+\blind@mathformula=\count318
+\blind@Mathformula=\count319
+\c@blind@randomcount=\count320
+\c@blind@randommax=\count321
+\c@blind@pangramcount=\count322
+\c@blind@pangrammax=\count323
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.sty"
 Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\eurosym\eurosym.sty"
 Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
-\@eurobox=\box54
-) (../makros.tex)
-(BSFI16.aux)
-\openout1 = `BSFI16.aux'.
+\@eurobox=\box59
+) (../makros.tex
+
+Package array Warning: Column L is already defined on input line 21.
+
+) ("20180219 - Schädlinge.aux")
+\openout1 = `"20180219 - Schädlinge.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
@@ -1172,7 +1331,8 @@ LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 8.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 *geometry* driver: auto-detecting
@@ -1211,17 +1371,17 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count298
-\scratchdimen=\dimen175
-\scratchbox=\box55
-\nofMPsegments=\count299
-\nofMParguments=\count300
-\everyMPshowfont=\toks29
-\MPscratchCnt=\count301
-\MPscratchDim=\dimen176
-\MPnumerator=\count302
-\makeMPintoPDFobject=\count303
-\everyMPtoPDFconversion=\toks30
+\scratchcounter=\count324
+\scratchdimen=\dimen195
+\scratchbox=\box60
+\nofMPsegments=\count325
+\nofMParguments=\count326
+\everyMPshowfont=\toks35
+\MPscratchCnt=\count327
+\MPscratchDim=\dimen196
+\MPnumerator=\count328
+\makeMPintoPDFobject=\count329
+\everyMPtoPDFconversion=\toks36
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1239,7 +1399,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box56
+\AtBeginShipoutBox=\box61
 Package hyperref Info: Link coloring OFF on input line 8.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
@@ -1248,23 +1408,30 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count304
+\c@section@level=\count330
 )
 LaTeX Info: Redefining \ref on input line 8.
 LaTeX Info: Redefining \pageref on input line 8.
 LaTeX Info: Redefining \nameref on input line 8.
 
-(BSFI16.out) (BSFI16.out)
+("20180219 - Schädlinge.out") ("20180219 - Schädlinge.out")
 \@outlinefile=\write4
-\openout4 = `BSFI16.out'.
+\openout4 = `"20180219 - Schädlinge.out"'.
 
-\c@lstlisting=\count305
+\c@lstlisting=\count331
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 9.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
+File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 13.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OML+lmm on input line 13.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 13.
@@ -1295,51 +1462,176 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 13.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<Gefahren.jpg, id=3, 296.10625pt x 227.34938pt>
-File: Gefahren.jpg Graphic file (type jpg)
-<use Gefahren.jpg>
-Package pdftex.def Info: Gefahren.jpg  used on input line 14. on input line 14.
-
-Package pdftex.def Info: Requested size: 349.15662pt x 268.08954pt on input lin
+<Bilder/AntivirUnwantedProg.jpg, id=3, 643.40375pt x 221.82875pt>
+File: Bilder/AntivirUnwantedProg.jpg Graphic file (type jpg)
+<use Bilder/AntivirUnwantedProg.jpg>
+Package pdftex.def Info: Bilder/AntivirUnwantedProg.jpg  used on input line 14.
+ on input line 14.
+Package pdftex.def Info: Requested size: 349.15662pt x 120.38484pt on input lin
 e 14.
-<../empty.jpg, id=4, 366.36874pt x 391.4625pt>
-File: ../empty.jpg Graphic file (type jpg)
-<use ../empty.jpg>
-Package pdftex.def Info: ../empty.jpg  used on input line 27. on input line 27.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 27.
 
-Package pdftex.def Info: Requested size: 248.77634pt x 265.82063pt on input lin
-e 27.
-<../bbs1.jpg, id=5, 192.72pt x 47.17625pt>
+Overfull \hbox (24.07468pt too wide) in paragraph at lines 26--33
+[]\T1/lmss/m/n/10 https://www.bsi-fuer-buerger.de/BSIFB/DE/Risiken/FalscheAntiv
+irensoftware/falscheantivirensoftware_node.html 
+ []
+
+
+Overfull \hbox (1.61632pt too wide) in paragraph at lines 26--33
+\T1/lmss/m/n/10 https://www.bsi-fuer-buerger.de/BSIFB/DE/Empfehlungen/Schutzpro
+gramme/schutzprogramme_node.html[] 
+ []
+
+<../bbs1.jpg, id=4, 192.72pt x 47.17625pt>
 File: ../bbs1.jpg Graphic file (type jpg)
 <use ../bbs1.jpg>
-Package pdftex.def Info: ../bbs1.jpg  used on input line 30. on input line 30.
+Package pdftex.def Info: ../bbs1.jpg  used on input line 37. on input line 37.
 Package pdftex.def Info: Requested size: 65.98267pt x 16.15195pt on input line 
-30.
- [1{C:/Users/carso/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+37.
+[1{C:/Users/carso/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
- <../bbs1.jpg> <./Gefahren.jpg> <../empty.jpg>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 31.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 31.
- (BSFI16.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 31.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 31.
-Package rerunfilecheck Info: File `BSFI16.out' has not changed.
+ <../bbs1.jpg> <./Bilder/AntivirUnwantedProg.jpg>]
+<Bilder/Botnetze.jpg, id=15, 638.88687pt x 225.84375pt>
+File: Bilder/Botnetze.jpg Graphic file (type jpg)
+<use Bilder/Botnetze.jpg>
+Package pdftex.def Info: Bilder/Botnetze.jpg  used on input line 42. on input l
+ine 42.
+Package pdftex.def Info: Requested size: 349.15662pt x 123.42528pt on input lin
+e 42.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.68 		\newpage
+               
+File: ../bbs1.jpg Graphic file (type jpg)
+<use ../bbs1.jpg>
+Package pdftex.def Info: ../bbs1.jpg  used on input line 68. on input line 68.
+Package pdftex.def Info: Requested size: 65.98267pt x 16.15195pt on input line 
+68.
+ [1 <./Bilder/Botnetze.jpg>]
+<Bilder/Infektionswege.jpg, id=20, 538.51187pt x 189.20688pt>
+File: Bilder/Infektionswege.jpg Graphic file (type jpg)
+<use Bilder/Infektionswege.jpg>
+Package pdftex.def Info: Bilder/Infektionswege.jpg  used on input line 73. on i
+nput line 73.
+Package pdftex.def Info: Requested size: 349.15662pt x 122.67697pt on input lin
+e 73.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.99 		\newpage
+               
+File: ../bbs1.jpg Graphic file (type jpg)
+<use ../bbs1.jpg>
+Package pdftex.def Info: ../bbs1.jpg  used on input line 99. on input line 99.
+Package pdftex.def Info: Requested size: 65.98267pt x 16.15195pt on input line 
+99.
+ [1 <./Bilder/Infektionswege.jpg>]
+<Bilder/Schadprogramme.jpg, id=24, 637.38126pt x 216.81pt>
+File: Bilder/Schadprogramme.jpg Graphic file (type jpg)
+<use Bilder/Schadprogramme.jpg>
+Package pdftex.def Info: Bilder/Schadprogramme.jpg  used on input line 104. on 
+input line 104.
+Package pdftex.def Info: Requested size: 349.15662pt x 118.76616pt on input lin
+e 104.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.129 		\newpage
+                
+File: ../bbs1.jpg Graphic file (type jpg)
+<use ../bbs1.jpg>
+Package pdftex.def Info: ../bbs1.jpg  used on input line 129. on input line 129
+.
+Package pdftex.def Info: Requested size: 65.98267pt x 16.15195pt on input line 
+129.
+ [1 <./Bilder/Schadprogramme.jpg>]
+<Bilder/SpamPhishing.jpg, id=28, 537.50812pt x 183.18437pt>
+File: Bilder/SpamPhishing.jpg Graphic file (type jpg)
+<use Bilder/SpamPhishing.jpg>
+Package pdftex.def Info: Bilder/SpamPhishing.jpg  used on input line 134. on in
+put line 134.
+Package pdftex.def Info: Requested size: 349.15662pt x 118.99295pt on input lin
+e 134.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.159 		\newpage
+                
+File: ../bbs1.jpg Graphic file (type jpg)
+<use ../bbs1.jpg>
+Package pdftex.def Info: ../bbs1.jpg  used on input line 159. on input line 159
+.
+Package pdftex.def Info: Requested size: 65.98267pt x 16.15195pt on input line 
+159.
+ [1 <./Bilder/SpamPhishing.jpg>]
+<Bilder/Gefahren.jpg, id=32, 640.3925pt x 217.81375pt>
+File: Bilder/Gefahren.jpg Graphic file (type jpg)
+<use Bilder/Gefahren.jpg>
+Package pdftex.def Info: Bilder/Gefahren.jpg  used on input line 164. on input 
+line 164.
+Package pdftex.def Info: Requested size: 349.15662pt x 118.75764pt on input lin
+e 164.
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
+
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.177 	\end{worksheet}
+                      
+File: ../bbs1.jpg Graphic file (type jpg)
+<use ../bbs1.jpg>
+Package pdftex.def Info: ../bbs1.jpg  used on input line 177. on input line 177
+.
+Package pdftex.def Info: Requested size: 65.98267pt x 16.15195pt on input line 
+177.
+ [1 <./Bilder/Gefahren.jpg>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 178.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 178.
+ ("20180219 - Schädlinge.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 178.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 178.
+Package rerunfilecheck Info: File `"20180219 - Schädlinge".out' has not change
+d.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 31.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 178.
  ) 
 Here is how much of TeX's memory you used:
- 22412 strings out of 493312
- 393759 string characters out of 3138900
- 595376 words of memory out of 3000000
- 25716 multiletter control sequences out of 15000+200000
- 549575 words of font info for 42 fonts, out of 3000000 for 9000
+ 24157 strings out of 493312
+ 416096 string characters out of 3138900
+ 638240 words of memory out of 3000000
+ 27372 multiletter control sequences out of 15000+200000
+ 566491 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 49i,12n,66p,10451b,350s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,12n,66p,10469b,430s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/lm/lmr6.pfb>
-Output written on BSFI16.pdf (1 page, 89607 bytes).
+iKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lms
+s10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss8.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/lm/lmsso10.pfb>
+Output written on "20180219 - Schädlinge.pdf" (6 pages, 394186 bytes).
 PDF statistics:
- 19 PDF objects out of 1000 (max. 8388607)
+ 58 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
