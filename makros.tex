@@ -3,7 +3,6 @@
 \renewcommand{\sectionmark}[1]{\markright{#1}}
 \renewcommand{\headrulewidth}{0.2pt}
 \renewcommand{\footrulewidth}{0.2pt}
-\newcolumntype{L}[1]{>{\raggeedleft}m{#1}}
 \setlength{\fboxsep}{5pt}
 
 % Codestyle defined
@@ -19,6 +18,8 @@
 
 %Neue Spaltendefinition
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\newcommand{\cmnt}[1]{\ignorespaces}
 
 %Bash
 \lstdefinestyle{BashInputStyle}{
