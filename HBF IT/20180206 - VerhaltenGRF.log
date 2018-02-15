@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.1)  15 FEB 2018 09:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.1)  15 FEB 2018 09:13
 entering extended mode
-**"./20180220 - EinDiff.tex"
-("20180220 - EinDiff.tex"
+**"./20180206 - VerhaltenGRF.tex"
+("20180206 - VerhaltenGRF.tex"
 LaTeX2e <2017-04-15>
 Babel <3.15> and hyphenation patterns for 75 language(s) loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\koma-script\scrreprt.cls"
@@ -1310,8 +1310,8 @@ Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
 Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
 \@eurobox=\box59
 ) (../makros.tex)
-("20180220 - EinDiff.aux")
-\openout1 = `"20180220 - EinDiff.aux"'.
+("20180206 - VerhaltenGRF.aux")
+\openout1 = `"20180206 - VerhaltenGRF.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
@@ -1328,7 +1328,8 @@ LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 8.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 *geometry* driver: auto-detecting
@@ -1410,9 +1411,9 @@ LaTeX Info: Redefining \ref on input line 8.
 LaTeX Info: Redefining \pageref on input line 8.
 LaTeX Info: Redefining \nameref on input line 8.
 
-("20180220 - EinDiff.out") ("20180220 - EinDiff.out")
+("20180206 - VerhaltenGRF.out") ("20180206 - VerhaltenGRF.out")
 \@outlinefile=\write4
-\openout4 = `"20180220 - EinDiff.out"'.
+\openout4 = `"20180206 - VerhaltenGRF.out"'.
 
 \c@lstlisting=\count331
 LaTeX Font Info:    Try loading font information for T1+lmss on input line 9.
@@ -1420,127 +1421,110 @@ LaTeX Font Info:    Try loading font information for T1+lmss on input line 9.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 14.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 13.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 14.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 13.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 14.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 13.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 14.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 13.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 14.
+(Font)              <10.95> on input line 13.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 14.
+(Font)              <8> on input line 13.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 14.
-LaTeX Font Info:    Try loading font information for U+msa on input line 14.
+(Font)              <6> on input line 13.
+LaTeX Font Info:    Try loading font information for U+msa on input line 13.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 14.
+LaTeX Font Info:    Try loading font information for U+msb on input line 13.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<Bilder/20180219-EinDiffFall.jpg, id=3, 465.74pt x 510.90875pt>
-File: Bilder/20180219-EinDiffFall.jpg Graphic file (type jpg)
-<use Bilder/20180219-EinDiffFall.jpg>
-Package pdftex.def Info: Bilder/20180219-EinDiffFall.jpg  used on input line 17
-. on input line 17.
-Package pdftex.def Info: Requested size: 305.50955pt x 335.15051pt on input lin
-e 17.
-
-Underfull \hbox (badness 10000) in paragraph at lines 24--25
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 36--37
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--38
-
- []
-
-<../bbs1.jpg, id=4, 192.72pt x 47.17625pt>
+<Bilder/f(x).png, id=3, 482.80376pt x 220.825pt>
+File: Bilder/f(x).png Graphic file (type png)
+<use Bilder/f(x).png>
+Package pdftex.def Info: Bilder/f(x).png  used on input line 16. on input line 
+16.
+Package pdftex.def Info: Requested size: 392.79704pt x 179.66246pt on input lin
+e 16.
+<../bbs1.jpg, id=5, 192.72pt x 47.17625pt>
 File: ../bbs1.jpg Graphic file (type jpg)
 <use ../bbs1.jpg>
-Package pdftex.def Info: ../bbs1.jpg  used on input line 42. on input line 42.
+Package pdftex.def Info: ../bbs1.jpg  used on input line 57. on input line 57.
 Package pdftex.def Info: Requested size: 65.98267pt x 16.15195pt on input line 
-42.
-[1{C:/Users/carso/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+57.
+ [1{C:/Users/carso/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
- <../bbs1.jpg> <./Bilder/20180219-EinDiffFall.jpg>]
-<../empty.jpg, id=16, 366.36874pt x 391.4625pt>
+ <../bbs1.jpg> <./Bilder/f(x).png>]
+<../empty.jpg, id=22, 366.36874pt x 391.4625pt>
 File: ../empty.jpg Graphic file (type jpg)
 <use ../empty.jpg>
-Package pdftex.def Info: ../empty.jpg  used on input line 43. on input line 43.
+Package pdftex.def Info: ../empty.jpg  used on input line 60. on input line 60.
 
-Package pdftex.def Info: Requested size: 362.90742pt x 387.74544pt on input lin
-e 43.
-File: ../empty.jpg Graphic file (type jpg)
-<use ../empty.jpg>
-Package pdftex.def Info: ../empty.jpg  used on input line 47. on input line 47.
+Package pdftex.def Info: Requested size: 574.60202pt x 613.92206pt on input lin
+e 60.
 
-Package pdftex.def Info: Requested size: 181.44533pt x 193.87271pt on input lin
-e 47.
+Overfull \hbox (149.1079pt too wide) in paragraph at lines 60--61
+[][] 
+ []
+
 File: ../bbs1.jpg Graphic file (type jpg)
 <use ../bbs1.jpg>
-Package pdftex.def Info: ../bbs1.jpg  used on input line 49. on input line 49.
+Package pdftex.def Info: ../bbs1.jpg  used on input line 63. on input line 63.
 Package pdftex.def Info: Requested size: 65.98267pt x 16.15195pt on input line 
-49.
- [2 <../empty.jpg>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 50.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 50.
-
-("20180220 - EinDiff.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 50.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 50.
-Package rerunfilecheck Info: File `"20180220 - EinDiff".out' has not changed.
+63.
+[2 <../empty.jpg>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 64.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 64.
+ ("20180206 - VerhaltenGRF.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 64.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 64.
+Package rerunfilecheck Info: File `"20180206 - VerhaltenGRF".out' has not chang
+ed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 50.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 64.
  ) 
 Here is how much of TeX's memory you used:
- 24131 strings out of 493312
- 415381 string characters out of 3138900
- 639215 words of memory out of 3000000
- 27353 multiletter control sequences out of 15000+200000
- 557924 words of font info for 45 fonts, out of 3000000 for 9000
+ 24128 strings out of 493312
+ 415339 string characters out of 3138900
+ 642280 words of memory out of 3000000
+ 27348 multiletter control sequences out of 15000+200000
+ 560692 words of font info for 46 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 49i,14n,66p,10465b,382s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,27n,66p,10470b,377s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
-iKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/d
-vips/lm/lm-mathit.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi10
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/lm/lmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/l
-m/lmss8.pfb>
-Output written on "20180220 - EinDiff.pdf" (2 pages, 352005 bytes).
+iKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
+nc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm
+.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmss8.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy
+8.pfb>
+Output written on "20180206 - VerhaltenGRF.pdf" (2 pages, 174957 bytes).
 PDF statistics:
- 43 PDF objects out of 1000 (max. 8388607)
+ 62 PDF objects out of 1000 (max. 8388607)
  3 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
