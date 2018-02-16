@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.1)  14 FEB 2018 13:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.1)  16 FEB 2018 10:39
 entering extended mode
 **"./20180223 - KoordinatenformÜbung.tex"
 ("20180223 - KoordinatenformÜbung.tex"
@@ -1479,31 +1479,49 @@ Package pdftex.def Info: Requested size: 65.98267pt x 16.15195pt on input line
  [1{C:/Users/carso/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
  <../bbs1.jpg> <./Bilder/Koord3D.jpg>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 18.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 18.
+<../empty.jpg, id=12, 366.36874pt x 391.4625pt>
+File: ../empty.jpg Graphic file (type jpg)
+<use ../empty.jpg>
+Package pdftex.def Info: ../empty.jpg  used on input line 20. on input line 20.
+
+Package pdftex.def Info: Requested size: 567.87126pt x 606.76656pt on input lin
+e 20.
+
+Overfull \hbox (131.42714pt too wide) in paragraph at lines 20--21
+ [] 
+ []
+
+File: ../bbs1.jpg Graphic file (type jpg)
+<use ../bbs1.jpg>
+Package pdftex.def Info: ../bbs1.jpg  used on input line 23. on input line 23.
+Package pdftex.def Info: Requested size: 65.98267pt x 16.15195pt on input line 
+23.
+[2 <../empty.jpg>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 24.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 24.
  ("20180223 - KoordinatenformÜbung.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 18.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 18.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 24.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 24.
 Package rerunfilecheck Info: File `"20180223 - KoordinatenformÜbung".out' has 
 not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 18.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 24.
  ) 
 Here is how much of TeX's memory you used:
- 24120 strings out of 493312
- 415399 string characters out of 3138900
+ 24125 strings out of 493312
+ 415476 string characters out of 3138900
  637397 words of memory out of 3000000
- 27343 multiletter control sequences out of 15000+200000
+ 27347 multiletter control sequences out of 15000+200000
  555153 words of font info for 44 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  49i,12n,66p,10479b,360s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/public/lm/lmss8.pfb>
-Output written on "20180223 - KoordinatenformÜbung.pdf" (1 page, 368830 bytes)
-.
+Output written on "20180223 - KoordinatenformÜbung.pdf" (2 pages, 386856 bytes
+).
 PDF statistics:
- 22 PDF objects out of 1000 (max. 8388607)
- 2 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 27 PDF objects out of 1000 (max. 8388607)
+ 3 named destinations out of 1000 (max. 500000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
