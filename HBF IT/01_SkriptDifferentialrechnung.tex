@@ -1,0 +1,99 @@
+\documentclass[11pt,twocolumn,oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{article}
+
+\input{../packages.tex}
+\input{../makros.tex}
+
+\setlength{\columnsep}{3em}
+\setlength{\columnseprule}{0.5pt}
+
+\geometry{left=2.50cm,right=2.50cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+\pagenumbering{gobble}
+\pagestyle{empty}
+
+\begin{document}
+	\begin{worksheet}{HBF IT 17A}{Grundstufe}{Lernbaustein 3 - LB 2: Einführung in die Differentialrechnung}
+		\section{Worum geht es in der Differentialrechnung?}
+		Abgesehen von dem absoluten Wert für eine Größe ist auch die Tendenz dieser Größe, mit der Sie sich verändert, interessant.\\
+		Die erste Sequenz versucht daher, ihnen eine erste Vorstellung zum Begriff der \glqq{}Ableitung\grqq{} zu vermitteln. Deren Verständnis ist für die nachfolgende Mathematik relevant.
+		\subsection*{Beispiel 1: Bevölkerung der BRD und Indien}
+		Die Bevölkerung der BRD beträgt knapp 82 Mio. Die Bevölkerung Indiens beträgt ungefähr 1,1 Mrd.\\
+		\par
+		Neben unterschiedlichen absolute Werten weisen die Bevölkerungswerte auch unterschiedliche Wachstumstendenzen zum jetzigen Zeitpunkt auf. Das geht aus der Darstellung der vergangenen und zukünftigen Entwicklung hervor:\\
+		\includegraphics[scale=0.8]{Bilder/BevIndien.png}\\
+		\par
+		\noindent
+		\includegraphics[scale=0.59]{Bilder/BevDeutschland.png}
+		\tiny{Bis 1989: Früheres Bundesgebiet}
+		\normalsize
+		\subsection*{Beispiel 2: Schulden in Deutschland}
+		Neben den absoluten Schuldenwerten ändert sich auch die Wachstumstendenz. So kann man hier erkennen, dass 1990 eine andere Dynamik vorlag als 2010.
+		\begin{table}[htb]
+			\begin{tabularx}{0.5\textwidth}{|X|X|}
+				\hline
+				Jahr (0=1990; in Jahren) & Schuldenstand in Milliarden\\
+				\hline
+				0 & 600\\
+				\hline
+				5 & 1.018\\
+				\hline
+				10 & 1.210\\
+				\hline
+				15 & 1.489\\
+				\hline
+				20 & 2.011\\
+				\hline
+				25 & 2.000\\
+				\hline
+			\end{tabularx}
+		\end{table}
+		\section{Die \underline{durchschnittliche} Änderungsrate \underline{über einem Intervall [\(x_{0};x_{1}\)]}}
+		Die durchschnittliche Änderungsrate über einem Intervall ist eine Maßzahl für die Dynamik in einem Zeitraum / in einem Intervall. Sie ist der Quotient aus dem absoluten Zuwachs in einem Intervall der Länge des Intervalls.\\
+		\par\noindent
+		Graphisch lässt sich dieser Wert als Steigung einer Sekante an den Punkten P (\(x_{0}\) | f(\(x_{0}\))) und Q (\(x_{1}\) | f(\(x_{1}\))) interpretieren.
+		\subsection{Übungen}
+		\begin{enumerate}
+			\item Berechnen Sie die durchschnittliche Änderungsraten zu den im ersten Kapitel gegebenen Entwicklungen zu den folgenden Intervallen:
+			\begin{itemize}
+				\item[(a)] Bevölkerungsentwicklung Indien: [2010;2050]\\
+				Bevölkerungsentwicklung Deutschland: [2010;2050]\\
+				Bevölkerungsentwicklung Deutschland: [2010;2040]\\
+				Bevölkerungsentwicklung Deutschland: [2010;2020]\\
+				Bevölkerungsentwicklung Deutschland: [2010;2011]\\
+				\item[(b)] Welche der zu Deutschland berechneten Wachstumsraten ist am besten geeignet, die \underline{momentane} Wachstumsdynamik zum Zeitpunkt 2010 zum Ausdruck zu bringen?
+			\end{itemize}
+			\item Stellen Sie die Änderung der Schuldendynamik in Deutschland in einer Form ihrer Wahl dar!
+		\end{enumerate}
+		\section{Von der \underline{durchschnittlichen} Änderungsrate zur \underline{momentanen} Änderungsrate}
+		Die durchschnittliche Änderungsrate ist nur eine Annäherung an die Dynamik an einer bestimmten Stelle. Da sich die Dynamik schnell ändern kann, ist häufig die Dynamik zu einem bestimmten Zeit\underline{punkt} relevant.
+		\subsubsection*{Beispiel 1: Radarkontrolle}
+		\includegraphics[scale=0.6]{Bilder/radar.jpg}
+		\subsubsection*{Beispiel 2: Fallschirmsprung}
+		Nach 2 Sekunden hat der Fallschirmspringer schon eine Geschwindigkeit von\\
+		\begin{center}
+			\fbox{???} km/h
+		\end{center}
+		erreicht?\\
+		\par\noindent
+		
+		\subsection{Die Bestimmung der \underline{momentanen} Änderungsrate \underline{an einer Stelle \(x_{0}\)}}
+		Die durchschnittliche Änderungsrate kann nur ein ungefähres Bild der tatsächlichen Dynamik bzw. Steigung an einem bestimmten Punkt liefern Je größer das Intervall ist, für den die Dynamik betrachtet wird, umso schlechter wird in der Regel die Realität dargestellt.\\
+		\par\noindent
+		Daher können wir versuchen, die Steigung in einem Punkt anzunähern, indem wir das Intervall, für welches wir die Dynamik betrachten, immer kleiner werden lassen.\\
+		\par\noindent
+		Im Gegensatz zur durchschnittlichen Änderungsrate, die die Dynamik über einem Intervall beschreibt, gibt die \textbf{momentane Änderungsrate} die Dynamik in einem bestimmten Punkt wieder.
+		\subsubsection*{\underline{Die Idee}}
+		Wir benennen das Intervall [\(x_{0};x_{1}\)] mit \(h\) und lassen dieses beliebig klein werden.
+		\includegraphics[scale=0.25]{Bilder/DifferenzenquotienthMeth.jpg}
+		Die Sekante hat nun die Steigung:\\
+		\begin{center}
+			\(m_{[x_{0},x_{0}+h]} = \frac{f(x_{0}+h) - f(x_{0})}{h}\)
+		\end{center}
+		\subsubsection*{\underline{Ihre Aufgabe:}}
+		Berechnen Sie für die folgenden Funktionen die mittlere Änderungsrate im Intervall \textit{I}.
+		\begin{itemize}
+			\itemsep0pt
+		\item[(a)] \(f(x) = 3x^{2} \text{ im Intervall } I=[0;4]\)
+			\item[(b)] \(f(x) = -2x^{3} + 2 \text{ im Intervall } I=[1;5]\)
+		\end{itemize}
+	\end{worksheet}
+\end{document}
