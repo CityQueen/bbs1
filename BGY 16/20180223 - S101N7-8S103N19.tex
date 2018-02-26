@@ -1,0 +1,83 @@
+\documentclass[oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{scrreprt}
+
+\input{../packages.tex}
+\input{../makros.tex}
+
+\geometry{left=2.50cm,right=2.50cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+
+\begin{document}
+	\begin{worksheet}{BGY 16}{Mathematik - Lernbereich 3, Algebraisierung}{Übungsaufgabe zu Länge eines Vektors und Winkel zwischen Vektoren}
+		
+		\begin{framed}
+			\noindent
+			\tiny{\color{codegray}S. 101 Aufgabe 7d}\\
+			\normalsize
+			\noindent
+			Gegeben waren die Vektoren \(\vec{a} = \left(\begin{array}{c}1\\3\\1\end{array}\right)\) und \(\vec{b} = \left(\begin{array}{c}5\\0\\3\end{array}\right)\).\par\bigskip\noindent
+			\underline{Gesucht}: Der eingeschlossene Winkel \(\alpha\)\\
+			\par\noindent
+			Zur Berechnung des eingeschlossenen Winkels verwenden wir die bekannte Formel \(cos{(\alpha)} = \frac{\vec{a}*\vec{b}}{|\vec{a}|*|\vec{b}|}\).\\\noindent
+			\par\noindent
+			\[\cos{\alpha} = \frac{1*5 + 3*0 + 1*3}{\sqrt{1^2+3^2+1^2}*\sqrt{5^2+0^2+3^2}} = \frac{8}{\sqrt{11}*\sqrt{34}} = 0,413 \]
+			Da wir den Winkel berechnen wollen, müssen wir die Umkehrfunktion \(\arccos \widehat{=} \cos^{-1}\) verwenden.\\
+			\[\alpha = \arccos{0,413} = 65,56^{\circ}\]
+			\par\bigskip\noindent
+			\tiny{\color{codegray}S. 101 Aufgabe 8a}\\
+			\normalsize
+			\noindent
+			Gegeben waren die Eckpunkte A (2|1), B(5|-1) und C(4|3) eines Dreiecks.\\
+			\underline{Gesucht}: Die Seitenlängen sowie die Winkel innerhalb des Dreiecks.
+			\par\bigskip\noindent
+			Die obige Formel bezieht sich auf den eingeschlossenen Winkel zwischen \(\vec{a} \text{ und } \vec{b}\). Daher benötigen wir jeweils die einschließenden Verbindungsvektoren.\(^{1}\)\par\bigskip\noindent
+			\begin{tabularx}{\textwidth}{XXX}
+				%AB
+				\(\vec{AB} = \left(\begin{array}{c}3\\ -2\end{array}\right)\) &
+				%BC
+				\(\vec{BC} =\left(\begin{array}{c}-1\\4\end{array}\right)\) &
+				%CA
+				\(\vec{CA}=\left(\begin{array}{c}-2\\-2\end{array}\right)\)\\
+				%BA
+				\(\vec{BA}= \left(\begin{array}{c}-3\\2\end{array}\right)\) &
+				%CB
+				\(\vec{CB}=\left(\begin{array}{c}1\\-4\end{array}\right)\) &
+				%AC
+				\(\vec{AC}=\left(\begin{array}{c}2\\2\end{array}\right)\)
+			\end{tabularx}
+			\\
+			\par\noindent
+			\tiny{\color{codegray}Da innerhalb der Längenberechnung die Koordinatenwerte quadriert werden gilt \(|\vec{AB}| = |\vec{BA}|\). Es genügt also jeweils einmal die Länge zu berechnen.}\\\noindent
+			\normalsize
+			Wir berechnen also zunächst die Längen der einzelnen Seiten.\\
+			\par\noindent
+			\begin{tabularx}{\textwidth}{XXX}
+				\(|\vec{AB}| = \sqrt{9+4} = \sqrt{13}\) & \(|\vec{BC}| = \sqrt{1+16} = \sqrt{17}\) & \(|\vec{CA}| = \sqrt{4+4} = \sqrt{16}\)
+			\end{tabularx}
+			\par\bigskip\noindent
+			Um nun den Winkel zu berechnen, benötigen wir zum einen die oben erwähnte Formel bzw. deren Umkehrfunktion. Diese lautet wie folgt: \(\alpha = \arccos{\frac{\vec{a}*\vec{b}}{|\vec{a}|*|\vec{b}|}}\)
+			\[\angle{CAB} = \arccos{\frac{\vec{AC}*\vec{AB}}{|\vec{AC}|*|\vec{AB}|}} =\arccos{\frac{3*2 + 2*(-2)}{\sqrt{13}*\sqrt{16}}} \approx 78,7^{\circ}\]
+			\[\angle{ABC} = \arccos{\frac{\vec{BA}*\vec{BC}}{|\vec{BA}|*|\vec{BC}|}} =\arccos{\frac{(-3)*(-1) + 2*4}{\sqrt{13}\sqrt{17}}} \approx 42,3^{\circ}\]
+			\[\angle{BCA} = \arccos{\frac{\vec{CB}*\vec{CA}}{|\vec{CB}|*|\vec{CA}|}} =\arccos{\frac{(-2)*1 +(-2)*(-4)}{\sqrt{17}\sqrt{8}}} \approx 59^{\circ}\]
+			\small{\color{codegray}[1] Siehe hierzu (*) auf der Rückseite.}
+			\par\bigskip\noindent
+			\tiny{\color{codegray}S.103 Aufgabe 19 a + b}\\
+			\normalsize
+			Wir wissen, zwei Vektoren \(\vec{a}\) und \(\vec{b}\) sind orthogonal (im Zeichen \(\vec{a}\perp\vec{b}\)), wenn ihr Skalarprodukt, also \(\vec{a}*\vec{b}) = 0\) ist.\\
+			(a) Gegeben waren \(\vec{a} = \left(\begin{array}{c}-1\\2\end{array}\right) \text{ und } \vec{b}=\left(\begin{array}{c}6\\3\end{array}\right)\).
+			\[\vec{a}*\vec{b} = (-1)*6 + 2*3 = (-6) + 6 = 0 \Rightarrow \vec{a}\perp\vec{b}\]
+			(b) Gegeben waren \(\vec{a} = \left(\begin{array}{c}2\\-1\\1\end{array}\right)\) und \(\vec{b} = \left(\begin{array}{c}1\\-2\\-3\end{array}\right)\).
+			\[\vec{a}*\vec{b} = 2*1 + (-1)*(-2) + 1*(-3) = 2 +2 - 3 = 1 \Rightarrow \vec{a}\not\perp\vec{b}\]
+		\end{framed}
+		\par\bigskip\noindent
+		\begin{framed}
+			\noindent
+			(*) Wir erinnern uns an die Formel zur Berechnung des Winkel zwischen zwei Vektoren.\\
+			\centering
+			\includegraphics[scale=0.45]{Bilder/Dreieck.jpg}\\
+			\raggedright
+			Ist \(\gamma\) der von den Vektoren \(\vec{a}\) und \(\vec{b}\) eingeschlossene Winkel, so lässt sich der dazugehörige \(\cos\) wie folgt bestimmen
+			\[\cos(\gamma) = \frac{\vec{a}+\vec{b}}{|\vec{a}|*|\vec{b}|} = \frac{a_1*b_1 + a_2*b_2 + a_3*b_3}{\sqrt{a_1^2 + a_2^2 + a_3^2}}\]\\
+			Um daraus den Winkel \(\gamma\) zu bestimmen, verwenden wir die Umkehrfunktion \(\arccos \widehat{=}cos^{-1}\).
+			\[\gamma = \arccos{\frac{\vec{a}+\vec{b}}{|\vec{a}|*|\vec{b}|}} = \arccos{\frac{a_1*b_1 + a_2*b_2 + a_3*b_3}{\sqrt{a_1^2 + a_2^2 + a_3^2}}}\]
+		\end{framed}
+	\end{worksheet}
+\end{document}
