@@ -1,0 +1,97 @@
+\documentclass[11pt,twocolumn,oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{article}
+
+\input{../packages.tex}
+\input{../makros.tex}
+
+\setlength{\columnsep}{3em}
+\setlength{\columnseprule}{0.5pt}
+
+\geometry{left=2.00cm,right=2.00cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+\pagenumbering{gobble}
+\pagestyle{empty}
+
+\begin{document}
+	\begin{worksheet}{BS FI 17}{1. Lehrjahr, LF 4 - Einfache IT-Systeme}{Digitaltechnik}
+		\section{Schaltfunktionen und Booleschen Funktionen}
+		Wir wollen die Frage diskutieren, wie sich ein Rechner oder genauer die Elemente eines Rechners Verhalten.\\
+		Dabei hängt die Art, wie der Output vom Input bestimmt wird, offensichtlich vom Aufbau des Rechners ab; ferner gilt, ein Rechner arbeitet \textit{deterministisch}, d.h. er reagiert in \textbf{eindeutiger Weise} auf einen bestimmten Input.\\
+		Unter der Annahme, dass Input und  Output aus Daten bzw. Dualfolgen bestehen, lässt sich folgende Definition aufstellen:
+		\begin{framed}
+			\textbf{Definition D1.1}\\Sind \(n,m \in \mathbb{N}\). Dann heißt
+			\(\mathcal{F}: B^n \rightarrow B^m\) \textit{\textbf{Schaltfunktion}}.
+		\end{framed}
+		\noindent
+		Input für einen Rechner ist also ein Bit-\textit{n}-Tupel. Der Output einer solchen Schaltfunktion (\(\mathcal{F}\)) ist dann wieder ein Bit-\textit{m}-Tupel.\\
+		Hat eine solche Funktion lediglich eine Bit-Ausgabe (also \(n = 1\)), so wird die Funktion mit \(\mathit{f}\) bezeichnet. Dieser Unterscheidung liegt ein wichtiger Spezialfall zugrunde, der wie folgt definiert ist:
+		\begin{framed}
+			\textbf{Definition D1.2}\\Eine Schaltfunktion \(\mathit{f}: B^n \rightarrow B\)
+			heißt (\textit{n}-stellige) \textit{\textbf{Boolesche Funktion}}.
+		\end{framed}
+		Man merke sich also, eine Schaltfunktion \(\mathcal{F}(x_1,...,x_n)\) ist die \textit{n}-stellige Verkettung einzelner \textit{Boolescher Funktionen} \(\mathit{f}_i\).
+		\subsection{Einschlägiger Index}
+		Betrachten wir die nachfolgende Funktionstabelle zu \(f: B^3 \rightarrow B\)
+		\begin{center}
+			\begin{tabular}{|c|ccc|c|}
+				\hline
+				\textit{i} & \(x_1\) & \(x_2\) & \(x_3\) & \(f(x_1,x_2,x_3)\)\\
+				\hline
+				0 & 0 & 0 & 0 & 0\\
+				\hline
+				1 & 0 & 0 & 1 & 0\\
+				\hline
+				2 & 0 & 1 & 0 & 0\\
+				\hline
+				3 & 0 & 1 & 1 & 1\\
+				\hline
+				4 & 1 & 0 & 0 & 0\\
+				\hline
+				5 & 1 & 0 & 1 & 1\\
+				\hline
+				6 & 1 & 1 & 0 & 0\\
+				\hline
+				7 & 1 & 1 & 1 & 1\\
+				\hline
+			\end{tabular}
+		\end{center}
+		Mit \textit{i} bezeichnen wir die Zeilennummer und mit \(i_1 \ldots i_n\) bezeichnen wir die Ziffernfolge der Dualdarstellung von \textit{i}.
+		\begin{framed}
+			\textbf{Definition D1.3}\\ \textit{i} heißt \textit{einschlägiger} Index zu \(f\), falls \(f(i_1,\ldots,i_n) = 1\) ist.
+		\end{framed}
+		\subsection{Minterm}
+		Für die Belegung der \textit{i}-ten Zeile dieser Funktionstabelle 
+		\begin{framed}
+			\textbf{Definition D1.4}\\ Sei \textit{i} ein Index von \(f: B^n \rightarrow B\) und (\(i_1\ldots i_n\)) die Dualdarstellung von \textit{i}. Dann heißt die Funktion \(m_i: B^n \rightarrow B\) definiert durch
+			\[m_i(x_1,\ldots x_n) := x_{1}^{i_1}\cdot x_{2}^{i_2}\cdot\ldots\cdot x_{n}^{i_n}\]
+			\textit{i-ter \textbf{Minterm}} von \(f\). Dabei gilt
+			\[x_{j}^{i_j} = \begin{cases}x_j & i_j=1 \\ \overline x_j & i_j = 0\end{cases}\]
+		\end{framed}
+		\subsection*{Ihre Aufgabe} Bestimmen Sie die \underline{Minterme} für die oben angegebene Funktionstabelle.\\
+		\textit{Hinweis}: Die \textit{einschlägigen} Indizes sind 3, 5 und 7.
+		\subsection{Sum Of Products (SOP)} Mit Hilfe der oben genannten Minterme können wir eine Boolesche Funktion nun wie folgt beschreiben:
+		\begin{framed}
+			\textbf{Satz S1.1}\\ Jede Boolesche Funktion \(f: B^n \rightarrow B\) ist eindeutig darstellbar als Summer der Minterme ihrer einschlägigen Indizes. Ist \(I \subseteq \{0,\ldots , 2^n -1\}\) die Menge der einschlägigen Indizes von \(f\), so gilt
+			\[f = \sum_{i\in I} m_i\]
+		\end{framed}
+		Die hier angegebene Darstellung heißt auch \textit{disjunktive Normalform} (DNF) einer Booleschen Funktion.
+		\subsection*{Ihre Aufgabe} Geben Sie zu oben genannter Funktion die \underline{SOP} an.
+		\subsection{Maxterme} Eine alternative Darstellung der eben erwähnten DNF benötigt ein anderes Konstrukt.
+		\begin{framed}
+			\textbf{Definition D1.5}\\Sei \textit{i} ein Index von \(f:B^n\rightarrow B\), und sei \(m_i\) der \textit{i}-te Minterm von \(f\). Dann heißt die Funktion \(M_i: B^n \rightarrow B\) definiert durch
+			\[M_i(x_1,\ldots x_n) := \overline{m_i(x_1,\ldots x_n)}\]
+			\textit{i}-ter \textit{Maxterm} von \(f\).
+		\end{framed}
+		Mit dieser Definition lässt sich in Anlehnung an die Definition der Minterme folgendes festhalten:\\ Ein Maxterm \(M_i\) nimmt genau dann den Wert 0 an, wenn das Argument \((x_1,\ldots x_n)\) die Dualdarstellung von \textit{i} ist.
+		\subsection*{Ihre Aufgabe} Bestimmen Sie die \underline{Maxterme} für die oben angegebene Funktionstabelle.\\
+		\textit{Hinweis}: Die \textit{nicht einschlägigen} Indizes sind 0, 1, 2, 4 und 6.
+		\subsection{Product Of Sums (POS)}
+		Mit diese Feststellung lässt sich für eine Boolesche Funktion folgendes sagen:
+		\begin{framed}
+			\textbf{Satz S1.2} Jede Boolesche Funktion \(f: B^n \rightarrow B\) ist eindeutig darstellbar als das Produkt der Maxterme ihrer nicht einschlägigen Indizes.
+		\end{framed}
+		Die hier genannte Darstellung wird auch \textit{konjunktive Normalform} (KNF) von \(f\) genannt.
+		\subsection*{Ihre Aufgabe} Geben Sie zur oben dargestellten Funktion die \underline{POS} an.
+		\subsection{Overview} Offensichtlich ist die DNF zu bevorzugen, wenn die Anzahl der einschlägigen Indizes kleiner ist als die Anzahl der nicht einschlägigen; Ansonsten verwenden Sie die KNF.\\
+		\par\bigskip\noindent
+		\tiny{\color{codegray}\textit{W. Oberschelp/G.Vossen} Rechneraufbau und Rechnerstrukturen 10. Auflage (11-21)}
+	\end{worksheet}
+\end{document}

@@ -1,0 +1,31 @@
+\documentclass[oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{scrreprt}
+
+\input{../packages.tex}
+\input{../makros.tex}
+
+\geometry{left=2.50cm,right=2.50cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+
+\begin{document}
+	\begin{worksheet}{BS FI 17C}{1. Lehrjahr, LF 4 - Einfache IT-Systeme}{Digitaltechnik}
+		\begin{framed}
+			\noindent
+			\includegraphics[scale=0.62]{Bilder/logic_party.png}\\
+			\tiny{\color{codegray}\url{https://xkcd.com/589}}
+		\end{framed}
+		\begin{framed}
+			\noindent
+			Herr Meier will ein Familientreffen veranstalten.\\
+			Um den Bierkonsum abschätzen zu können, überlegt er, welche Gäste auf Grund welcher Sympathien und Antipathien auf keinen Fall erscheinen. Wenn:
+			\begin{itemize}
+				\item ... Frau Maier kommt, dann mit ihrem Mann.
+				\item ... Frau Mayer nicht kommt, dann aber Herr Meyer.
+				\item ... Herr Mayer kommt, dann auch Herr Maier.
+				\item ... Frau Maier und Frau Mayer kommen, dann gönnt sich Herr Meyer lieber zu Hause ein Bier.
+			\end{itemize}
+		\par\bigskip\noindent
+		Herr Meier beauftragt Sie nun mit der Implementierung einer Funktion, die ihm für jede denkbare Kombination von Gästen sagt, ob diese den obigen Aussagen widerspricht oder nicht.\par\bigskip\noindent
+		Stellen Sie für diese Funktion eine Funktionstafel auf und dann entwerfen Sie ein Schaltnetz für diese Funktion. Verwenden Sie ausschließlich AND und/oder OR Gatter mit maximaler \textit{fan-in=2}.\\
+		Versuchen Sie die Anzahl der Gatter zu minimieren.
+		\end{framed}
+	\end{worksheet}
+\end{document}
