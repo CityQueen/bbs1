@@ -1,0 +1,65 @@
+\documentclass[11pt,oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{article}
+
+\input{../packages.tex}
+\input{../makros.tex}
+
+\setlength{\columnsep}{3em}
+\setlength{\columnseprule}{0.5pt}
+
+\geometry{left=2.00cm,right=2.00cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+\pagenumbering{gobble}
+\pagestyle{empty}
+
+\begin{document}
+	\begin{worksheet}{BS FI 17}{1. Lehrjahr, LF 4 - Einfache IT-Systeme}{Digitaltechnik - Zweistellige Boolesche Funktionen}
+		\section{Die 16 zweistelligen Booleschen Funktionen}
+		Zweistellige Boolsche Funktionen haben die Form \(f: B^2 \rightarrow B\). Hierbei können die beiden Argumente auf \(2^2 = 4\) verschiedene Arten mit 0 oder 1 belegt werden. Es gibt also insgesamt \(2^4 = 16\) zweistellige Boolesche Funktionen.\\
+		Die nachfolgende Tabelle gibt Ihnen einen Überblick über diese zweistelligen Booleschen Funktionen.\\
+		\begin{center}
+			\begin{tabular}{|cc|c|c|c|c|c|c|c|c|}
+				\hline
+				\multicolumn{2}{|c|}{(1)} & \(x\cdot\overline{x}\) & \(x\cdot y\) & \(x\cdot\overline{y}\) & \(x\) & \(\overline{x}\cdot x\) & \(y\) & \(\oplus\)& \(x+y\)\\
+				\hline
+				\multicolumn{2}{|c|}{(2)} & \(\) & \(\lor\) & \(\not\rightarrow\) & \(x\) & \(\not\leftarrow\) & \(y\) & XOR & \(\land\)\\
+				\hline
+				\(x\) & \(y\) & \(f_0\) & \(f_1\) & \(f_2\) & \(f_3\) & \(f_4\) & \(f_5\) & \(f_6\) & \(f_7\)\\
+				\hline
+				0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+				\hline
+				0 & 1 & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 1\\
+				\hline
+				1 & 0 & 0 & 0 & 1 & 1 & 0 & 0 & 1 & 1\\
+				\hline
+				1 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 1\\
+				\hline
+			\end{tabular}
+			\par\bigskip\noindent
+			\begin{tabular}{|cc|c|c|c|c|c|c|c|c|}
+				\hline
+				\multicolumn{2}{|c|}{(1)} & \(\overline{x+y}\) & \(\) & \(\overline{y}\) & \(x + \overline{y}\) & \(\overline{x}\) & \(\overline{x} + y\) & \(\overline{x\cdot y}\) & \(x+\overline{x}\)\\
+				\hline
+				\multicolumn{2}{|c|}{(2)} & \(\downarrow\) & \(\leftrightarrow\) & \(\neg y\) & \(\leftarrow\) & \(\neg x\) & \(\rightarrow\) & \(\uparrow\) & \\
+				\hline
+				\(x\) & \(y\) & \(f_8\) & \(f_9\) & \(f_{10}\) & \(f_{11}\) & \(f_{12}\) & \(f_{13}\) & \(f_{14}\) & \(f_{15}\)\\
+				\hline
+				0 & 0 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1\\
+				0 & 1 & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 1\\
+				1 & 0 & 0 & 0 & 1 & 1 & 0 & 0 & 1 & 1\\
+				1 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 1\\
+				\hline
+			\end{tabular}
+		\end{center}
+		Einige der oben aufgeführten Funktionen haben auch einen Namen:
+		\begin{itemize}
+			\item[\(f_1\)] \textit{Konjunktion (AND)}
+			\item[\(f_6\)] \textit{Antivalenz (E\underline{x}clusive \underline{OR}, XOR, manchmal auch \(\oplus\))}
+			\item[\(f_7\)] \textit{Disjunktion (OR)}
+			\item[\(f_8\)] \textit{Peircescher Pfeil (\underline{N}ot \underline{OR}, NOR, \(\downarrow\))}
+			\item[\(f_9\)] \textit{Äquivalenz}
+			\item[\(f_{13}\)] \textit{Implikation}
+			\item[\(f_{14}\)] \textit{Shefferscher Strich (\underline{N}ot \underline{AND}, NAND, \(\uparrow\))}
+		\end{itemize}
+		\par\bigskip\noindent
+		\tiny{\color{codegray}\textit{W. Oberschelp/G.Vossen} Rechneraufbau und Rechnerstrukturen 10. Auflage (16)}
+	\end{worksheet}
+\end{document}
