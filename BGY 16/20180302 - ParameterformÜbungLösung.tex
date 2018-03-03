@@ -1,0 +1,89 @@
+\documentclass[oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{scrreprt}
+
+\input{../packages.tex}
+\input{../makros.tex}
+
+\geometry{left=2.50cm,right=2.50cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+
+\begin{document}
+	\begin{worksheet}{BGY 16}{Mathematik - Lernbereich 3, Algebraisierung}{Die Parameterform - Lösungen}
+				
+		\begin{framed}
+			\noindent
+			\tiny{\color{codegray}\textbf{Übung 1}\\Bestimmen Sie zu jeweils zwei Punkten die Geradengleichung in Parameterform (\(g: \vec{x} = \overrightarrow{OA} + r*\overrightarrow{AB}\) wobei A und B zwei Punkte auf der Geraden sind).\\
+			Prüfen Sie anschließend, ob der dritte Punkt auf der Geraden liegt.}
+			\par\bigskip
+			\textbf{(a) A (2|1|-1) B (3|0|-1) C (-1|2|3)}\\
+			\par\noindent
+			Wir bestimmen die Gerade durch die Punkte A und B.\\
+			\par\noindent
+			\begin{tabularx}{\textwidth}{XX}
+				\(\overrightarrow{OA} = \vec{A} -\vec{O} = \left(\begin{array}{c}2 \\ 1 \\ -1\end{array}\right)\) & \(\overrightarrow{AB} = \vec{B} -\vec{A} = \left(\begin{array}{c}3 \\ 0 \\ -2\end{array}\right) - \left(\begin{array}{c}2 \\ 1 \\ -1\end{array}\right) = \left(\begin{array}{c}1 \\ -1 \\ -1\end{array}\right)\)
+			\end{tabularx}
+			Damit ergibt sich folgende Geradengleichung: \(g: \vec{x} = \left(\begin{array}{c}2 \\ 1 \\ -1\end{array}\right) + r*\left(\begin{array}{c}1\\-1\\-1\end{array}\right)\)\\
+			\par\noindent
+			Nun bleibt zu prüfen, ob C auf der Geraden \textit{g} liegt. Hierfür setzen wir für \(\vec{x}\)	den Ortsvektor von C, nämlich \(\left(\begin{array}{c}-1\\2\\3\end{array}\right)\) ein und bestimmen \textit{r}.\\
+			\[\left(\begin{array}{c}-1\\2\\3\end{array}\right) = \left(\begin{array}{c}2 \\ 1 \\ -1\end{array}\right) + r*\left(\begin{array}{c}1\\-1\\-1\end{array}\right)\]
+			Wir betrachten nun die Gleichung zeilenweise.
+			\[\begin{array}{llc}
+			1 = 2 + 1*r & \Rightarrow r = -1&\\
+			-1 = 1 + (-1)*r & \Rightarrow r = 2&\text{Wir erhalten drei unterschiedliche Werte für r. Das heißt, der Punkt C liegt \underline{nicht} auf der Geraden } g.\\
+			-1 = -1 + (-1)*r & \Rightarrow r = 0\\
+			\end{array}\]
+			\par
+			\textbf{(b) D (2|1|0) E (-4|-7|2) F (5|5|-1)}\\
+			\par\noindent
+			Wir bestimmen die Gerade durch die Punkte D und E.\\
+			\par\noindent
+			\begin{tabularx}{\textwidth}{XX}
+				\(\overrightarrow{OD} = \vec{D} -\vec{O} = \left(\begin{array}{c}2\\1\\0\end{array}\right)\) & \(\overrightarrow{DE} = \vec{E} -\vec{D} = \left(\begin{array}{c}-4\\-7\\2\end{array}\right) - \left(\begin{array}{c}2\\1\\0\end{array}\right) = \left(\begin{array}{c}-6\\-8\\2\end{array}\right)\)
+			\end{tabularx}
+			Damit ergibt sich folgende Geradengleichung: \(g: \vec{x} = \left(\begin{array}{c}2 \\ 1 \\ 0\end{array}\right) + r*\left(\begin{array}{c}-6\\-8\\2\end{array}\right)\)\\
+			\par\noindent
+			Nun bleibt zu prüfen, ob F auf der Geraden \textit{g} liegt. Hierfür setzen wir für \(\vec{x}\)	den Ortsvektor von F, nämlich \(\left(\begin{array}{c}5\\5\\-1\end{array}\right)\) ein und bestimmen \textit{r}.\\
+			\[\left(\begin{array}{c}5\\5\\-1\end{array}\right) = \left(\begin{array}{c}2\\1\\0\end{array}\right) + r*\left(\begin{array}{c}-6\\-8\\2\end{array}\right)\]
+			Wir betrachten nun die Gleichung zeilenweise.
+			\[\begin{array}{llc}
+			5 = 2 + (-6)*r& \Rightarrow r = -\frac{1}{2}&\\
+			&&\\
+			5 = 1 + (-8)*r & \Rightarrow r = -\frac{1}{2}&\text{Für alle drei Gleichungen hat r den Wert } -\frac{1}{2}\text{. Das heißt, F liegt auf der Geraden } g.\\
+			&&\\
+			-1 = 0 + 2*r & \Rightarrow r = -\frac{1}{2} &\\
+			\end{array}\]
+			\par
+			\textbf{(c) G (8|-7|3) H (7|11|4) K (1|-2|5)}\\
+			\par\noindent
+			Wir bestimmen die Gerade durch die Punkte G und H.\\
+			\par\noindent
+			\begin{tabularx}{\textwidth}{XX}
+				\(\overrightarrow{OG} = \vec{G} -\vec{O} = \left(\begin{array}{c}8\\-7\\3\end{array}\right)\) & \(\overrightarrow{GH} = \vec{H} -\vec{G} = \left(\begin{array}{c}7\\11\\4\end{array}\right) - \left(\begin{array}{c}8\\-7\\3\end{array}\right) = \left(\begin{array}{c}-1\\18\\1\end{array}\right)\)
+			\end{tabularx}
+			Damit ergibt sich folgende Geradengleichung: \(g: \vec{x} = \left(\begin{array}{c}8\\-7\\3\end{array}\right) + r*\left(\begin{array}{c}-1\\18\\1\end{array}\right)\)\\
+			\par\noindent
+			Nun bleibt zu prüfen, ob K auf der Geraden \textit{g} liegt. Hierfür setzen wir für \(\vec{x}\)	den Ortsvektor von K, nämlich \(\left(\begin{array}{c}1\\-2\\5\end{array}\right)\) ein und bestimmen \textit{r}.\\
+			\[\left(\begin{array}{c}1\\-2\\5\end{array}\right) = \left(\begin{array}{c}8\\-7\\3\end{array}\right) + r*\left(\begin{array}{c}-1\\18\\1\end{array}\right)\]
+			Wir betrachten nun die Gleichung zeilenweise.
+			\[\begin{array}{llc}
+			-1 = 2 + 1*r& \Rightarrow r = -3&\\
+			2 = 1 + (-1)*r & \Rightarrow r = -1&\text{Wir erhalten drei unterschiedliche Werte für r. Das heißt, der Punkt C liegt \underline{nicht} auf der Geraden } g.\\
+			1 = 8 + 1*r & \Rightarrow r = -7 &\\
+			\end{array}\]
+		\end{framed}
+		\newpage
+		\begin{framed}
+			\noindent
+			\tiny{\color{codegray}\textbf{Übung 2}\\Zeichnen Sie die nachfolgenden Geraden in das Koordinatensystem.
+			\par\noindent
+			(a) \(g: \vec{x} = \left(\begin{array}{c}2\\-5\\-2\end{array}\right) + r* \left(\begin{array}{c}-1\\2\\0\end{array}\right)\).}
+			
+			\begin{center}
+				\includegraphics[scale=0.4]{Bilder/g3DKoord.png}
+			\end{center}
+			\noindent
+			\tiny{\color{codegray}(b) \(k: \vec{x} = \left(\begin{array}{c}1\\5\\1\end{array}\right) + r* \left(\begin{array}{c}-4\\-2\\8\end{array}\right)\)}
+			\begin{center}
+				\includegraphics[scale=0.4]{Bilder/k3DKoord.png}
+			\end{center}
+		\end{framed}
+	\end{worksheet}
+\end{document}
