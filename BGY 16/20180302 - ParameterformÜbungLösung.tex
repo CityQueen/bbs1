@@ -12,14 +12,13 @@
 			\noindent
 			\tiny{\color{codegray}\textbf{Übung 1}\\Bestimmen Sie zu jeweils zwei Punkten die Geradengleichung in Parameterform (\(g: \vec{x} = \overrightarrow{OA} + r*\overrightarrow{AB}\) wobei A und B zwei Punkte auf der Geraden sind).\\
 			Prüfen Sie anschließend, ob der dritte Punkt auf der Geraden liegt.}
+			\normalsize
 			\par\bigskip
 			\textbf{(a) A (2|1|-1) B (3|0|-1) C (-1|2|3)}\\
 			\par\noindent
 			Wir bestimmen die Gerade durch die Punkte A und B.\\
 			\par\noindent
-			\begin{tabularx}{\textwidth}{XX}
-				\(\overrightarrow{OA} = \vec{A} -\vec{O} = \left(\begin{array}{c}2 \\ 1 \\ -1\end{array}\right)\) & \(\overrightarrow{AB} = \vec{B} -\vec{A} = \left(\begin{array}{c}3 \\ 0 \\ -2\end{array}\right) - \left(\begin{array}{c}2 \\ 1 \\ -1\end{array}\right) = \left(\begin{array}{c}1 \\ -1 \\ -1\end{array}\right)\)
-			\end{tabularx}
+			\(\overrightarrow{OA} = \vec{A} -\vec{O} = \left(\begin{array}{c}2 \\ 1 \\ -1\end{array}\right)\) \(\overrightarrow{AB} = \vec{B} -\vec{A} = \left(\begin{array}{c}3 \\ 0 \\ -2\end{array}\right) - \left(\begin{array}{c}2 \\ 1 \\ -1\end{array}\right) = \left(\begin{array}{c}1 \\ -1 \\ -1\end{array}\right)\)\\
 			Damit ergibt sich folgende Geradengleichung: \(g: \vec{x} = \left(\begin{array}{c}2 \\ 1 \\ -1\end{array}\right) + r*\left(\begin{array}{c}1\\-1\\-1\end{array}\right)\)\\
 			\par\noindent
 			Nun bleibt zu prüfen, ob C auf der Geraden \textit{g} liegt. Hierfür setzen wir für \(\vec{x}\)	den Ortsvektor von C, nämlich \(\left(\begin{array}{c}-1\\2\\3\end{array}\right)\) ein und bestimmen \textit{r}.\\
@@ -27,17 +26,16 @@
 			Wir betrachten nun die Gleichung zeilenweise.
 			\[\begin{array}{llc}
 			1 = 2 + 1*r & \Rightarrow r = -1&\\
-			-1 = 1 + (-1)*r & \Rightarrow r = 2&\text{Wir erhalten drei unterschiedliche Werte für r. Das heißt, der Punkt C liegt \underline{nicht} auf der Geraden } g.\\
+			-1 = 1 + (-1)*r & \Rightarrow r = 2&\\
 			-1 = -1 + (-1)*r & \Rightarrow r = 0\\
 			\end{array}\]
+			Wir erhalten drei unterschiedliche Werte für r. Das heißt, der Punkt C liegt \underline{nicht} auf der Geraden g.
 			\par
 			\textbf{(b) D (2|1|0) E (-4|-7|2) F (5|5|-1)}\\
 			\par\noindent
 			Wir bestimmen die Gerade durch die Punkte D und E.\\
 			\par\noindent
-			\begin{tabularx}{\textwidth}{XX}
-				\(\overrightarrow{OD} = \vec{D} -\vec{O} = \left(\begin{array}{c}2\\1\\0\end{array}\right)\) & \(\overrightarrow{DE} = \vec{E} -\vec{D} = \left(\begin{array}{c}-4\\-7\\2\end{array}\right) - \left(\begin{array}{c}2\\1\\0\end{array}\right) = \left(\begin{array}{c}-6\\-8\\2\end{array}\right)\)
-			\end{tabularx}
+			\(\overrightarrow{OD} = \vec{D} -\vec{O} = \left(\begin{array}{c}2\\1\\0\end{array}\right)\) \(\overrightarrow{DE} = \vec{E} -\vec{D} = \left(\begin{array}{c}-4\\-7\\2\end{array}\right) - \left(\begin{array}{c}2\\1\\0\end{array}\right) = \left(\begin{array}{c}-6\\-8\\2\end{array}\right)\)\\
 			Damit ergibt sich folgende Geradengleichung: \(g: \vec{x} = \left(\begin{array}{c}2 \\ 1 \\ 0\end{array}\right) + r*\left(\begin{array}{c}-6\\-8\\2\end{array}\right)\)\\
 			\par\noindent
 			Nun bleibt zu prüfen, ob F auf der Geraden \textit{g} liegt. Hierfür setzen wir für \(\vec{x}\)	den Ortsvektor von F, nämlich \(\left(\begin{array}{c}5\\5\\-1\end{array}\right)\) ein und bestimmen \textit{r}.\\
@@ -46,10 +44,11 @@
 			\[\begin{array}{llc}
 			5 = 2 + (-6)*r& \Rightarrow r = -\frac{1}{2}&\\
 			&&\\
-			5 = 1 + (-8)*r & \Rightarrow r = -\frac{1}{2}&\text{Für alle drei Gleichungen hat r den Wert } -\frac{1}{2}\text{. Das heißt, F liegt auf der Geraden } g.\\
+			5 = 1 + (-8)*r & \Rightarrow r = -\frac{1}{2}&\\
 			&&\\
 			-1 = 0 + 2*r & \Rightarrow r = -\frac{1}{2} &\\
 			\end{array}\]
+			Für alle drei Gleichungen hat r den Wert \(-\frac{1}{2}\). Das heißt, F liegt auf der Geraden g.\\
 			\par
 			\textbf{(c) G (8|-7|3) H (7|11|4) K (1|-2|5)}\\
 			\par\noindent
@@ -65,9 +64,10 @@
 			Wir betrachten nun die Gleichung zeilenweise.
 			\[\begin{array}{llc}
 			-1 = 2 + 1*r& \Rightarrow r = -3&\\
-			2 = 1 + (-1)*r & \Rightarrow r = -1&\text{Wir erhalten drei unterschiedliche Werte für r. Das heißt, der Punkt C liegt \underline{nicht} auf der Geraden } g.\\
+			2 = 1 + (-1)*r & \Rightarrow r = -1&\\
 			1 = 8 + 1*r & \Rightarrow r = -7 &\\
 			\end{array}\]
+			Wir erhalten drei unterschiedliche Werte für r. Das heißt, der Punkt C liegt \underline{nicht} auf der Geraden g.
 		\end{framed}
 		\newpage
 		\begin{framed}
