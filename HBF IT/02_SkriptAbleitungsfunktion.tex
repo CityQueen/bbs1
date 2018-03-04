@@ -1,0 +1,70 @@
+\documentclass[11pt,twocolumn,oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{article}
+
+\input{../packages.tex}
+\input{../makros.tex}
+
+\setlength{\columnsep}{3em}
+\setlength{\columnseprule}{0.5pt}
+
+\geometry{left=2.50cm,right=2.50cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+\pagenumbering{gobble}
+\pagestyle{empty}
+
+\begin{document}
+	\begin{worksheet}{HBF IT 17A}{Grundstufe}{Lernbaustein 3 - LB 2: Differenzialrechnung - Ableitungsfunktion}
+		\section{Was sagt uns die Ableitungsfunktion?}
+		Zu jeder Stelle eines Graphen können wir eine Steigung \(m\) z.B. mittels dem Differenzialquotienten ermitteln. 
+		Indem wir jeder Stelle \(x\) ihre Steigung \(m\) zuordnen, erhalten wir eine neue Funktion \(f'\), die \textbf{Ableitungsfunktion von \(\mathbf{f}\)}.
+		\subsection*{Beispiel 1}
+		Betrachten wir die nachfolgende Funktion \(f(x)\) und deren Ableitungsfunktion \(f'(x)\).
+		\begin{align*}
+			f(x) = \frac{1}{2}x^2+5x\\
+			f'(x) = x + 5
+		\end{align*}
+		In der nachstehenden Tabelle sind für sieben Stellen \textit{x} die zugehörigen Steigungen
+		\begin{center}
+			\begin{tabular}{c|c|c|c|c|c|c|c}
+				\textit{x} & -10 & -8 & -6 & -4 & -2 & 0 & 2\\
+				\hline
+				\(f'(x)\) & -5 & -3 & -1 & 1 & 3 & 5 & 7
+			\end{tabular}
+		\end{center}
+		Das obere Koordinatensystem zeigt den Graphen der Funktion \(f\) mit \(f(x) = \frac{1}{2}x^2+5x\).\\
+		\par\noindent
+		\includegraphics[scale=0.26]{Bilder/ff'.png}\\
+		Der Zusammenhang ist an der Stelle \(x=-8\) verdeutlicht: Im ersten Koordinatensystem sehen wir, dass der Graph von \(f\) an der Stelle \(x=-8\) die Steigung \(m=-3\) hat.\\
+		Im zweiten Koordinatensystem ist der Graph der Ableitungsfunktion \(f'\) mit \(f'(x)= x+5\) dargestellt. Hier wird der Stelle \(x=-8\) der \textit{y}-Wert \(-3\) zugeordnet. Der \textit{y}-wert entspricht also der Steigung an der untersuchten Stelle.
+		\subsection*{Interessante Stellen}
+		Das Steigungsverhalten eines Funktionsgraphen mithilfe von Tangenten in einzelnen Punkten zu beschreiben, ist ziemlich aufwändig. Meist ist es ausreichend, das Steigungsverhalten für bestimmte Abschnitte des Funktionsgraphen zu untersuchen.\\
+		Betrachten wir den nachstehenden Graphen einer ganzrationalen Funktion 4. Grades und unterteilen die
+		sen nach steigenden und fallenden Abschnitten.\\
+		\par\noindent
+		\includegraphics[scale=0.26]{Bilder/fAbsch.png}\\
+		Innerhalb der steigenden Abschnitten ergeben sich Tangenten mit positiver Steigung (\color{codegreen}{m>0}\normalcolor). Hier hat der Graph positive Steigungswerte. Entsprechend gilt für die fallenden Abschnitte des Graphen: Hier sind die Steigungswerte negativ (\color{red}{m<0}\normalcolor). An den Übergängen erhalten wir jeweils eine waagrechte Tangente, also \color{blue}{m=0}\normalcolor.\\
+		Um den Steigungsgraphen zu skizzieren, markieren wir zunächst auf der \textit{x}-Achse die Stellen, an denen der Graph von \(f\) die Steigung 0 hat. Da die Funktionswerte des Steigungsgraphen den Steigungswerten des Graphen von \(f\) entsprechen, hat der Steigungsgraph an den markierten Stellen jeweils den \textit{y}-Wert 0. Die markierten Punkte sind also schon Punkte auf unserem Steigungsgraphen.\\
+		\par\bigskip\noindent
+		Haben wir die Punkte eingezeichnet, überlegen wir, wie der zugehörige Steigungsgraph zwischen den Markierten Punkten aussieht. Bis zu unserem ersten Punkt fällt der Graph von \(f\), d.h. die Steigungswerte sind negativ. Der Steigungsgraph verläuft also \color{red}{unterhalb der \(x\)-Achse}\normalcolor.\\
+		Zwischen dem ersten und zweiten Punkt steigt der Graph von \(f\), die Steigungswerte sind also positiv. Der dazugehörige Graph verläuft also \color{codegreen}{oberhalb der \(x\)-Achse}\normalcolor.\\
+		Im nächsten Abschnitt fällt der Graph von \(f\) wieder, der Steigungsgraph befindet sich also \color{red}{unterhalb der \(x\)-Achse}\normalcolor.\\
+		Der Graph rechts vom letzten Punkt steigt schließlich nur noch, d.h. der sazugehörige Steigungsgraph muss \color{codegreen}{oberhalb der \(x\)-Achse }\normalcolor liegen.\\
+		\includegraphics[scale=0.25]{Bilder/fGef.png}\\
+		\par\noindent
+		Wir wissen also nun, wo der Steigungsgraph oberhalb bzw. unterhalb er \(x\)-Achse liegt und an welchen Stellen er die \(x\)-Achse schneidet.\\
+		Wir können ihn mit diesem Wissen also schon relativ genau zeichnen.\\
+		\par\noindent
+		\includegraphics[scale=0.25]{Bilder/f'Absch.png}
+		\subsection{Zusammenfassung}
+		Betrachten wir eine Funktion \(f(x)\) und den dazugehörigen Funktionsgraphen, so gibt es verschiedene Stellen, die interessant sind.
+		\begin{framed}
+			\noindent
+			Zunächst suchen wir die Stellen, an denen die Steigung \(m\) des Funktionsgraphen von \(f(x)\) 0 ist. Dies ist genau dann der Fall, wenn die Ableitungsfunktion \(f'(x)\) den Wert 0 annimmt. Also wenn gilt: \[f'(x) = 0\]\\
+			\tiny{\color{codegray}Vorgehen}\normalsize
+			\begin{itemize}
+				\item[-] Bestimme zunächst die Ableitungsfunktion \(f'(x)\)
+				\item[-] Berechne anschließend die Nullstellen der Ableitungsfunktion \(f'(x)\)
+			\end{itemize}
+			Die so ermittelten \(x\)-Werte sind die Stellen, an denen der Funktionsgraph von \(f(x)\) seinen Verlauf ändert.
+		\end{framed}
+		
+	\end{worksheet}
+\end{document}
