@@ -1,0 +1,96 @@
+\documentclass[oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{scrreprt}
+
+\input{../packages.tex}
+\input{../makros.tex}
+
+\geometry{left=2.50cm,right=2.50cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+
+\begin{document}
+	\begin{worksheet}{BGY 16}{Mathematik - Lernbereich 3, Algebraisierung}{Gegenseitige Lage von Geraden - Hausaufgabe Lösung}
+		
+		\begin{framed}
+			\noindent
+			\tiny{\color{codegray}Allgemeines Vorgehen zur Bestimmung der gegenseitigen Lage von Geraden}\\
+			\normalsize
+		\end{framed}
+		
+		\begin{framed}
+			\noindent
+			\underline{\textit{S. 64 Nr. 3 c \& d}} Untersuchen Sie die gegenseitige Lage der Geraden g und h. Berechnen Sie gegebenenfalls die Koordinaten des Schnittpunktes S.\\
+			\par\noindent
+			\begin{tabularx}{\textwidth}{XX}
+				\textbf{(c)} \(g: \vec{x} = \left(\begin{array}{c}7\\3\end{array}\right) + r\left(\begin{array}{c}1\\0\end{array}\right)\) & \(h: \vec{x} = \left(\begin{array}{c}2\\5\end{array}\right) + t\left(\begin{array}{c}1\\1\end{array}\right)\)
+			\end{tabularx}
+			Die Richtungsvektoren \(\left(\begin{array}{c}1\\1\end{array}\right)\) und \(\left(\begin{array}{c}1\\1\end{array}\right)\) sind \color{blue}linear unabhängig\normalcolor. Die Geraden können also \textbf{\underline{einen}} oder \textbf{\underline{keinen}} Schnittpunkt S haben. Um dies zu bestimmen, setzen wir \(g=h\) und lösen das Gleichungssystem.\\
+			\par\noindent
+			\begin{tabularx}{\textwidth}{X|X}
+				\(\left(\begin{array}{c}7\\3\end{array}\right) + r\left(\begin{array}{c}1\\0\end{array}\right) = \left(\begin{array}{c}2\\5\end{array}\right) + t\left(\begin{array}{c}1\\1\end{array}\right)\) & \begin{tabular}{lll}
+					\( 7 + r = 2 + t\)& & \(\Rightarrow r = -7\)\\
+					\(3 = 5 + t\) & \(\Rightarrow t = -2\)
+				\end{tabular}
+			\end{tabularx}\\
+			\par\noindent
+			Den Schnittpunkt der beiden Geraden bestimmen wir nun, indem wir die ermittelten Werte für \(r\) und \(t\) in die dazugehörigen Geradengleichungen einsetzen.\\
+			\par\noindent
+			\begin{tabularx}{\textwidth}{XX}
+				\(\left(\begin{array}{c}7\\3\end{array}\right) - 7\left(\begin{array}{c}1\\0\end{array}\right) = \left(\begin{array}{c}0\\3\end{array}\right)\) & \(\left(\begin{array}{c}2\\5\end{array}\right) - 2\left(\begin{array}{c}1\\1\end{array}\right) = \left(\begin{array}{c}0\\3\end{array}\right)\)
+			\end{tabularx}
+			\par\noindent			
+			Die Geraden schneiden sich also im Punkt S(0|3).\\
+			\noindent
+			\hdashrule[0.5ex][x]{\textwidth}{0.1mm}{8mm 2pt}\\
+			\par\noindent
+			\begin{tabularx}{\textwidth}{XX}
+				\textbf{(d)} \(g: \vec{x} = \left(\begin{array}{c}1\\3\end{array}\right) + r\left(\begin{array}{c}3\\6\end{array}\right)\) & \(h: \vec{x} = \left(\begin{array}{c}2\\5\end{array}\right) + t\left(\begin{array}{c}-5\\-10\end{array}\right)\)
+			\end{tabularx}
+			Die Richtungsvektoren \(\vec{u} = \left(\begin{array}{c}3\\6\end{array}\right)\) und \(\vec{v} = \left(\begin{array}{c}-5\\-10\end{array}\right)\) sind \color{blue}linear abhängig \normalcolor(\(\vec{u} = -\frac{3}{5}\vec{v}\)). Die Geraden können also entweder \textbf{\underline{parallel}} oder \textbf{\underline{gleich}} sein.\\
+			Um dies zu bestimmen, setzen wir \(g=h\) und lösen das Gleichungssystem nach \(r\) und \(t\).\\
+			\par\noindent
+			\par\noindent
+			\(\left(\begin{array}{c}1\\3\end{array}\right) + r\left(\begin{array}{c}3\\6\end{array}\right) = \left(\begin{array}{c}2\\5\end{array}\right) + t\left(\begin{array}{c}-5\\-10\end{array}\right)\)
+			\begin{center}
+				\begin{tabular}{cl}
+					&\(1 + 3r = 2 - 5t\)\\
+					&\(3 + 6r = 5 - 10t \Rightarrow r = \frac{2 - 10t}{6}\)\\
+					\\
+					\hline\\
+					\par
+					&\(1 + 3(\frac{2 - 10t}{6}) = 2 -5t\) | \(-1; +5t\)\\
+					\(\Leftrightarrow\) & \(\frac{2 - 10t}{2} + 5t = 1\)\\
+					\(\Leftrightarrow\) & \(1 - 5t + 5t = 1\)\\
+					\(\Leftrightarrow\) & \(1 = 1\)\\
+					\(\Rightarrow\) & Wir erhalten eine wahre Aussage\\
+					& Die Geraden g und h sind also \textbf{\underline{gleich}}.
+				\end{tabular}				
+			\end{center}
+			Da \(g=h\) müssen wir keinen Schnittpunkt mehr berechnen.		
+		\end{framed}
+		
+		\begin{framed}
+			\noindent
+			\underline{\textit{S. 64 Nr. 8}} Die Gerade f geht durch den Punkt A(3|8|0) und hat den Richtungsvektor \(\left(\begin{array}{c}2\\5\\0\end{array}\right)\). Die Gerade h geht durch den Punkt B(-2|3|1) und hat den Stützvektor \(\left(\begin{array}{c}3\\1\\0\end{array}\right)\).\\
+			Überprüfen Sie, ob sich die Geraden g und h schneiden. Berechnen Sie gegebenenfalls die Koordinaten des Schnittpunktes.\\
+			\par\noindent
+			Zunächst müssen wir die Geradengleichungen für \(g\) und \(h\) bestimmen.\\
+			Für \(g\) können wir wie bekannt vorgehen. So ergibt sich die folgende Geradengleichung:
+			\[g: \vec{x} = \left(\begin{array}{c}2\\8\\0\end{array}\right) + r\left(\begin{array}{c}2\\5\\0\end{array}\right)\]
+			Um die Geradengleichung von \(h\) aufzustellen müssen wir folgendes beachten: Wir kennen den \color{codegreen}\underline{Stützvektor \(\vec{s}\)}\normalcolor{} sowie \color{codegreen}\underline{einen weiteren Punkt}\normalcolor, nicht aber den \color{red}\underline{Richtungsvektor}\normalcolor. Diesen müssen wir noch bestimmen. \tiny{\color{codegray}Hierfür berechnen wir \(\vec{B} - \vec{s} = \left(\begin{array}{c}-2\\3\\1\end{array}\right) - \left(\begin{array}{c}3\\1\\0\end{array}\right) = \left(\begin{array}{c}-5\\2\\1\end{array}\right)\).}
+			\normalsize\\
+			Wir erhalten damit \(h: \vec{x} = \left(\begin{array}{c}3\\1\\0\end{array}\right) + t\left(\begin{array}{c}-5\\2\\1\end{array}\right)\)\\
+			\par\noindent
+			Die Richtungsvektoren von sind \color{blue}linear unabhängig\normalcolor. Die Geraden können also \textbf{\underline{einen}} oder \textbf{\underline{keinen}} Schnittpunkt S haben. Um dies zu bestimmen, setzen wir \(g=h\) und lösen das Gleichungssystem.\\
+			\begin{center}
+				\begin{tabular}{lll}
+					I & \(2 + 2r = 2 -5t\)\\
+					II & \(8 +5r = 1 + 2t\) \\
+					III & \(0 = t\) & \(\Rightarrow t = 0\)\\
+					\hline 
+					I' & \(2 + 2r = 2\) & \(\Rightarrow r = 0\)\\
+					II' & \(8+5r = 1\) & \(\Rightarrow r = -\frac{7}{5}\)\\
+					III & \( 0 = t\)
+				\end{tabular}\\
+			\end{center}
+			Wir erhalten für \(r\) zwei unterschiedliche Werte. Somit hat das Gleichungssystem \textbf{\underline{keine}} Lösung \( \Rightarrow \) \(g\) und \(h\) \color{red}\underline{schneiden sich nicht}\normalcolor.
+		\end{framed}
+	\end{worksheet}
+\end{document}
