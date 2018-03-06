@@ -12,6 +12,22 @@
 			\noindent
 			\tiny{\color{codegray}Allgemeines Vorgehen zur Bestimmung der gegenseitigen Lage von Geraden}\\
 			\normalsize
+			Sollen zwei Geraden \(g: \vec{x} = \vec{p} + r\vec{u}\) und \(h: \vec{x} = \vec{q}+ t\vec{v}\) auf ihre gegenseitige Lage untersucht werden, betrachten wir zunächst die Richtungsvektoren \(\vec{u}\) und \(\vec{v}\). Sind \(\vec{u}\) und \(\vec{v}\)...\\
+			\par\noindent
+			\begin{tabularx}{\textwidth}{X|X}
+				\color{blue}linear abhängig\normalcolor, & \color{blue}linear unabhängig\normalcolor,\\
+				\hline
+				dann sind \(g\) und \(h\)
+				\begin{itemize}
+					\item[+] \color{codegreen}parallel\normalcolor{}, wenn \[\vec{p} + r\vec{u} = \vec{q} + t\vec{v}\] \underline{\textbf{keine}} Lösung besitzt.
+					\item[+] \color{red}gleich\normalcolor{}, wenn \[\vec{p} + r\vec{u} = \vec{q} + t\vec{v}\] \underline{\textbf{unendlich viele}} Lösungen besitzt.
+				\end{itemize} & dann haben \(g\) und \(h\)
+			\begin{itemize}
+				\item[+] \color{codegreen}keinen\normalcolor{} Schnittpunkt (sie sind \textit{windschief}), wenn \[\vec{p} + r\vec{u} = \vec{q} + t\vec{v}\] \underline{\textbf{keine}} Lösung besitzt.
+				\item[+] \color{red}einen\normalcolor{} Schnittpunkt S, wenn \[\vec{p} + r\vec{u} = \vec{q} + t\vec{v}\] \underline{\textbf{eine}} Lösung besitzt.
+				
+		\end{itemize}\\
+			\end{tabularx}
 		\end{framed}
 		
 		\begin{framed}
@@ -21,7 +37,7 @@
 			\begin{tabularx}{\textwidth}{XX}
 				\textbf{(c)} \(g: \vec{x} = \left(\begin{array}{c}7\\3\end{array}\right) + r\left(\begin{array}{c}1\\0\end{array}\right)\) & \(h: \vec{x} = \left(\begin{array}{c}2\\5\end{array}\right) + t\left(\begin{array}{c}1\\1\end{array}\right)\)
 			\end{tabularx}
-			Die Richtungsvektoren \(\left(\begin{array}{c}1\\1\end{array}\right)\) und \(\left(\begin{array}{c}1\\1\end{array}\right)\) sind \color{blue}linear unabhängig\normalcolor. Die Geraden können also \textbf{\underline{einen}} oder \textbf{\underline{keinen}} Schnittpunkt S haben. Um dies zu bestimmen, setzen wir \(g=h\) und lösen das Gleichungssystem.\\
+			Die Richtungsvektoren \(\left(\begin{array}{c}1\\1\end{array}\right)\) und \(\left(\begin{array}{c}1\\1\end{array}\right)\) sind \color{blue}linear unabhängig\normalcolor. Die Geraden können also \color{red}einen\normalcolor{} oder \color{codegreen}keinen\normalcolor{} Schnittpunkt S haben. Um dies zu bestimmen, setzen wir \(g=h\) und lösen das Gleichungssystem.\\
 			\par\noindent
 			\begin{tabularx}{\textwidth}{X|X}
 				\(\left(\begin{array}{c}7\\3\end{array}\right) + r\left(\begin{array}{c}1\\0\end{array}\right) = \left(\begin{array}{c}2\\5\end{array}\right) + t\left(\begin{array}{c}1\\1\end{array}\right)\) & \begin{tabular}{lll}
@@ -43,7 +59,7 @@
 			\begin{tabularx}{\textwidth}{XX}
 				\textbf{(d)} \(g: \vec{x} = \left(\begin{array}{c}1\\3\end{array}\right) + r\left(\begin{array}{c}3\\6\end{array}\right)\) & \(h: \vec{x} = \left(\begin{array}{c}2\\5\end{array}\right) + t\left(\begin{array}{c}-5\\-10\end{array}\right)\)
 			\end{tabularx}
-			Die Richtungsvektoren \(\vec{u} = \left(\begin{array}{c}3\\6\end{array}\right)\) und \(\vec{v} = \left(\begin{array}{c}-5\\-10\end{array}\right)\) sind \color{blue}linear abhängig \normalcolor(\(\vec{u} = -\frac{3}{5}\vec{v}\)). Die Geraden können also entweder \textbf{\underline{parallel}} oder \textbf{\underline{gleich}} sein.\\
+			Die Richtungsvektoren \(\vec{u} = \left(\begin{array}{c}3\\6\end{array}\right)\) und \(\vec{v} = \left(\begin{array}{c}-5\\-10\end{array}\right)\) sind \color{blue}linear abhängig \normalcolor{} (\(\vec{u} = -\frac{3}{5}\vec{v}\)). Die Geraden können also entweder \color{codegreen}parallel\normalcolor{} oder \color{red}gleich\normalcolor{} sein.\\
 			Um dies zu bestimmen, setzen wir \(g=h\) und lösen das Gleichungssystem nach \(r\) und \(t\).\\
 			\par\noindent
 			\par\noindent
@@ -90,7 +106,7 @@
 					III & \( 0 = t\)
 				\end{tabular}\\
 			\end{center}
-			Wir erhalten für \(r\) zwei unterschiedliche Werte. Somit hat das Gleichungssystem \textbf{\underline{keine}} Lösung \( \Rightarrow \) \(g\) und \(h\) \color{red}\underline{schneiden sich nicht}\normalcolor.
+			Wir erhalten für \(r\) zwei unterschiedliche Werte. Somit hat das Gleichungssystem \textbf{\underline{keine}} Lösung \( \Rightarrow \) \(g\) und \(h\) \color{codegreen}\underline{schneiden sich nicht}\normalcolor{}. Sie sind also \textit{windschief}.
 		\end{framed}
 	\end{worksheet}
 \end{document}
