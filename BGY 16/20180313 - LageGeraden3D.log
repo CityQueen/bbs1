@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.1)  7 MAR 2018 15:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.1)  7 MAR 2018 16:28
 entering extended mode
-**"./20180309 - LageÜbung.tex"
-("20180309 - LageÜbung.tex"
+**"./20180313 - LageGeraden3D.tex"
+("20180313 - LageGeraden3D.tex"
 LaTeX2e <2017-04-15>
 Babel <3.15> and hyphenation patterns for 75 language(s) loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\koma-script\scrreprt.cls"
@@ -1318,8 +1318,8 @@ Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
 Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
 \@eurobox=\box59
 ) (../makros.tex)
-("20180309 - LageÜbung.aux")
-\openout1 = `"20180309 - LageÜbung.aux"'.
+("20180313 - LageGeraden3D.aux")
+\openout1 = `"20180313 - LageGeraden3D.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
@@ -1419,9 +1419,9 @@ LaTeX Info: Redefining \ref on input line 8.
 LaTeX Info: Redefining \pageref on input line 8.
 LaTeX Info: Redefining \nameref on input line 8.
 
-("20180309 - LageÜbung.out") ("20180309 - LageÜbung.out")
+("20180313 - LageGeraden3D.out") ("20180313 - LageGeraden3D.out")
 \@outlinefile=\write4
-\openout4 = `"20180309 - LageÜbung.out"'.
+\openout4 = `"20180313 - LageGeraden3D.out"'.
 
 \c@lstlisting=\count332
 LaTeX Font Info:    Try loading font information for T1+lmss on input line 9.
@@ -1435,46 +1435,145 @@ File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omxlmex.fd")
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd")
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd")
-<../bbs1.jpg, id=3, 192.72pt x 47.17625pt>
+File: Bilder/ghGleich3D.png Graphic file (type png)
+<use Bilder/ghGleich3D.png>
+Package pdftex.def Info: Bilder/ghGleich3D.png  used on input line 24. on input
+ line 24.
+Package pdftex.def Info: Requested size: 199.84723pt x 152.64575pt on input lin
+e 24.
+File: Bilder/ghSchnitt3D.png Graphic file (type png)
+<use Bilder/ghSchnitt3D.png>
+Package pdftex.def Info: Bilder/ghSchnitt3D.png  used on input line 24. on inpu
+t line 24.
+Package pdftex.def Info: Requested size: 191.84232pt x 139.12018pt on input lin
+e 24.
+File: Bilder/ghWindschief3D.png Graphic file (type png)
+<use Bilder/ghWindschief3D.png>
+Package pdftex.def Info: Bilder/ghWindschief3D.png  used on input line 24. on i
+nput line 24.
+Package pdftex.def Info: Requested size: 176.93657pt x 157.61432pt on input lin
+e 24.
+File: Bilder/ghParallel3D.png Graphic file (type png)
+<use Bilder/ghParallel3D.png>
+Package pdftex.def Info: Bilder/ghParallel3D.png  used on input line 24. on inp
+ut line 24.
+Package pdftex.def Info: Requested size: 185.21753pt x 141.60445pt on input lin
+e 24.
+<../empty.jpg, id=8, 366.36874pt x 391.4625pt>
+File: ../empty.jpg Graphic file (type jpg)
+<use ../empty.jpg>
+Package pdftex.def Info: ../empty.jpg  used on input line 31. on input line 31.
+
+Package pdftex.def Info: Requested size: 18.3195pt x 19.57426pt on input line 3
+1.
+<../bbs1.jpg, id=9, 192.72pt x 47.17625pt>
 File: ../bbs1.jpg Graphic file (type jpg)
 <use ../bbs1.jpg>
-Package pdftex.def Info: ../bbs1.jpg  used on input line 24. on input line 24.
+Package pdftex.def Info: ../bbs1.jpg  used on input line 33. on input line 33.
 Package pdftex.def Info: Requested size: 65.98267pt x 16.15195pt on input line 
-24.
+33.
  [1{C:/Users/carso/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
- <../bbs1.jpg>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 25.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 25.
+ <../bbs1.jpg> <./Bilder/ghGleich3D.png> <./Bilder/ghSchnitt3D.png> <./Bilder/g
+hWindschief3D.png> <./Bilder/ghParallel3D.png> <../empty.jpg>]
+File: ../empty.jpg Graphic file (type jpg)
+<use ../empty.jpg>
+Package pdftex.def Info: ../empty.jpg  used on input line 36. on input line 36.
 
-("20180309 - LageÜbung.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 25.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 25.
-Package rerunfilecheck Info: File `"20180309 - LageÜbung".out' has not changed
-.
+Package pdftex.def Info: Requested size: 238.13686pt x 254.4476pt on input line
+ 36.
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--37
+
+ []
+
+File: ../empty.jpg Graphic file (type jpg)
+<use ../empty.jpg>
+Package pdftex.def Info: ../empty.jpg  used on input line 49. on input line 49.
+
+Package pdftex.def Info: Requested size: 106.2442pt x 113.52121pt on input line
+ 49.
+File: Bilder/ghParallel.jpg Graphic file (type jpg)
+<use Bilder/ghParallel.jpg>
+Package pdftex.def Info: Bilder/ghParallel.jpg  used on input line 49. on input
+ line 49.
+Package pdftex.def Info: Requested size: 181.63394pt x 152.52594pt on input lin
+e 49.
+File: ../empty.jpg Graphic file (type jpg)
+<use ../empty.jpg>
+Package pdftex.def Info: ../empty.jpg  used on input line 49. on input line 49.
+
+Package pdftex.def Info: Requested size: 106.2442pt x 113.52121pt on input line
+ 49.
+File: Bilder/ghOrthogonal.jpg Graphic file (type jpg)
+<use Bilder/ghOrthogonal.jpg>
+Package pdftex.def Info: Bilder/ghOrthogonal.jpg  used on input line 49. on inp
+ut line 49.
+Package pdftex.def Info: Requested size: 181.63394pt x 152.52594pt on input lin
+e 49.
+File: ../empty.jpg Graphic file (type jpg)
+<use ../empty.jpg>
+Package pdftex.def Info: ../empty.jpg  used on input line 49. on input line 49.
+
+Package pdftex.def Info: Requested size: 106.2442pt x 113.52121pt on input line
+ 49.
+File: Bilder/ghSchnitt.jpg Graphic file (type jpg)
+<use Bilder/ghSchnitt.jpg>
+Package pdftex.def Info: Bilder/ghSchnitt.jpg  used on input line 49. on input 
+line 49.
+Package pdftex.def Info: Requested size: 181.63394pt x 153.39919pt on input lin
+e 49.
+
+Underfull \vbox (badness 10000) detected at line 51
+ []
+
+
+Overfull \vbox (165.46274pt too high) detected at line 51
+ []
+
+File: ../bbs1.jpg Graphic file (type jpg)
+<use ../bbs1.jpg>
+Package pdftex.def Info: ../bbs1.jpg  used on input line 51. on input line 51.
+Package pdftex.def Info: Requested size: 65.98267pt x 16.15195pt on input line 
+51.
+[2 <./Bilder/ghParallel.jpg> <./Bilder/ghOrthogonal.jpg> <./Bilder/ghSchnitt.jp
+g>]
+File: ../bbs1.jpg Graphic file (type jpg)
+<use ../bbs1.jpg>
+Package pdftex.def Info: ../bbs1.jpg  used on input line 52. on input line 52.
+Package pdftex.def Info: Requested size: 65.98267pt x 16.15195pt on input line 
+52.
+ [3]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 53.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 53.
+ ("20180313 - LageGeraden3D.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 53.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 53.
+Package rerunfilecheck Info: File `"20180313 - LageGeraden3D".out' has not chan
+ged.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 25.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 53.
  ) 
 Here is how much of TeX's memory you used:
- 24154 strings out of 493312
- 415954 string characters out of 3138900
- 647830 words of memory out of 3000000
- 27371 multiletter control sequences out of 15000+200000
- 555153 words of font info for 44 fonts, out of 3000000 for 9000
+ 24210 strings out of 493312
+ 417081 string characters out of 3138900
+ 652869 words of memory out of 3000000
+ 27411 multiletter control sequences out of 15000+200000
+ 559152 words of font info for 49 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 49i,19n,66p,10468b,360s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,18n,66p,10471b,440s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
 iKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
 nc/dvips/lm/lm-mathex.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm
 .enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}<C:/Program 
 Files/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss8.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/lm/lmsy10.pfb>
-Output written on "20180309 - LageÜbung.pdf" (1 page, 89496 bytes).
+c/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss8.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/lm/lmsy10.pfb>
+Output written on "20180313 - LageGeraden3D.pdf" (3 pages, 1261987 bytes).
 PDF statistics:
- 43 PDF objects out of 1000 (max. 8388607)
- 2 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 64 PDF objects out of 1000 (max. 8388607)
+ 4 named destinations out of 1000 (max. 500000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
