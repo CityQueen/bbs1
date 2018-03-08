@@ -21,27 +21,85 @@
 				\(2+5r = 5 +2t\) & \(\Rightarrow r = \frac{3+2t}{5}\) (*)\\
 				\(5+3r = 1 +7t\) & & \(\Rightarrow 5 + 3(\frac{3+2t}{5}) = 1 + 7t\)\\
 				\hline\\
-				\(\Leftrightarrow 5 + \frac{9 + 6t}{5} = 1 +7t\)& | \(* 5\)&\\
+				\(\Rightarrow 5 + \frac{9 + 6t}{5} = 1 +7t\)& | \(* 5\)&\\
 				\(\Leftrightarrow 25 + 9 +6t = 5 + 35t\) & &\\
-				\(\Leftrightarrow 25 + 9 + 6t = 5 + 35t\) & | -5; -6t& \\
+				\(\Leftrightarrow 25 + 9 + 6t = 5 + 35t\) & | \(-5; -6t\)& \\
 				\(\leftrightarrow 29 = 29t\) & | \(:29\) & \\
-				\(\Leftrightarrow t = 1\) & \(\overrightarrow{mit (*)} r = \frac{3+2*1}{5} = 1\)
+				\(\Leftrightarrow t = 1\) & \(\xrightarrow{mit (*)} r = \frac{3+2*1}{5} = 1\)
 			\end{tabular}\\
 			Mit den berechneten Werten für \(r\) und \(t\) können wir nun den Schnittpunkt bestimmen:\\
 			\(2 + 5*\underbrace{1}_{r} = 7 = 5 + 2*\underbrace{1}_{t}\)\\
+			\(5 + 3*\overbrace{1} = 8 = 1 + 7*\overbrace{1}\)\\
+			Damit ergibt sich als Schnittpunkt S(7|8).
+			\par\noindent
+			\hdashrule[0.5ex][x]{\textwidth}{0.1mm}{8mm 2pt}\\
+			\par\noindent
 			\begin{tabularx}{\textwidth}{lXX}
 				(b) & \(g: \vec{x} = \left(\begin{array}{c}-4\\1\end{array}\right) + r\left(\begin{array}{c}-2\\-1\end{array}\right)\) &	\(h: \vec{x} = \left(\begin{array}{c}0\\3\end{array}\right) + t\left(\begin{array}{c}6\\3\end{array}\right)\)\\
 				&&\\
 			\end{tabularx}
+			Die Richtungsvektoren sind \color{blue}\underline{linear abhängig}\normalcolor{}, Die Geraden sind also entweder \color{red}gleich\normalcolor{} oder \color{red}parallel\normalcolor{} Schnittpunkt. Wir setzen \(g=h\) und lösen das Gleichungssystem.\\
+			\par\noindent
+			\begin{tabular}{ll}
+				\(-4-2r = 6t\) & \(\Rightarrow -4 -2(-2-3t) = 6t\) I\\
+				\(1-r = 3+3t\) \\ 
+			\end{tabular}\\
+			Mit I: \(6t = 6t\) \(\Rightarrow 0 = 0\)\\
+			Wir haben eine wahre Aussage bzw. unendlich viele Lösungen. Somit sind \(g\) und \(h\) gleich.\\
+			\par\noindent
+			\hdashrule[0.5ex][x]{\textwidth}{0.1mm}{8mm 2pt}\\
+			\par\noindent
 			\begin{tabularx}{\textwidth}{lXX}
-				(c) & \(g: \vec{x} = \left(\begin{array}{c}1\\3\end{array}\right) + r\left(\begin{array}{c}9\\-3\end{array}\right)\) &	\(h: \vec{x} = \left(\begin{array}{c}4\\5\end{array}\right) + t\left(\begin{array}{c}-4\\-2\end{array}\right)\)\\
-			\end{tabularx}
+				(c) & \(g: \vec{x} = \left(\begin{array}{c}1\\3\end{array}\right) + r\left(\begin{array}{c}9\\-3\end{array}\right)\) &	\(h: \vec{x} = \left(\begin{array}{c}4\\5\end{array}\right) + t\left(\begin{array}{c}-3\\-2\end{array}\right)\)\\
+			\end{tabularx}\\
+			\par\noindent
+			Die Richtungsvektoren sind \color{blue}\underline{linear unabhängig}\normalcolor{}, also existiert entweder \color{red}einen\normalcolor{} oder \color{red}keinen\normalcolor{} Schnittpunkt. Um diesen zu bestimmen, setzen wir \(g=h\) und lösen das Gleichungssystem.\\
+			\par\noindent
+			\begin{tabular}{lll}
+				\(1+9r = 4 -3t\) & \(\Rightarrow t = 1 - 3r\) (*) &\\
+				\(3-3r = 3+2t\) & & \(\Rightarrow 1-r = 5 -2(1-3r)\)\\ 
+				\hline\\
+				\(\Rightarrow 3-3r = 5 - 2+6r\)\\
+				\(\Leftrightarrow 3-3r = 3 + 6r\) & | \(-3;+3r\)\\
+			\end{tabular}\\
+			\begin{tabular}{ll}
+				\(\Leftrightarrow 0 = 9r\) & | \(:9\)\\
+				\(\Leftrightarrow r = 0\) & \(\xrightarrow{mit (*)} t = 1 -3*0 = 1\)
+			\end{tabular}\\
+			\par\noindent
+			Mit den berechneten Werten für \(r\) und \(t\) können wir nun den Schnittpunkt bestimmen:\\
+			\(1 + 9*\underbrace{0}_{r} = 1 = 4 - 3*\underbrace{1}_{t}\)\\
+			\(3 - 3*\overbrace{0} = 3 = 5-2*\overbrace{1}\)\\
+			\par\noindent
+			Damit ergibt sich als Schnittpunkt S(1|3).
 			\\
 			\par\noindent
 			\hdashrule[0.5ex][x]{\textwidth}{0.1mm}{8mm 2pt}\\
 			\par\noindent
 			Die Gerade \(g\) geht durch den Punkt (2|-3) und hat den Richtungsvektor \(\left(\begin{array}{c}-1\\4\end{array}\right)\). Die Gerade \(h\) startet mit dem Stützvektor \(\left(\begin{array}{c}-5\\3\end{array}\right)\) und geht durch den Punkt (0|5).\\
-			Bestimmen Sie die gegenseitige Lage der beiden Geraden und berechnen Sie gegebenenfalls den Schnittpunkt S.
+			Bestimmen Sie die gegenseitige Lage der beiden Geraden und berechnen Sie gegebenenfalls den Schnittpunkt S.\\
+			\par\noindent
+			Zunächst müssen wir die Geradengleichungen \(g\) und \(h\) aufstellen.\\
+			\begin{tabularx}{\textwidth}{XX}
+				\(g: \vec{x} = \left(\begin{array}{c}2\\-3\end{array}\right) + r\left(\begin{array}{c}-1\\4\end{array}\right)\) & \(h: \vec{x} = \left(\begin{array}{c}-5\\3\end{array}\right) + t\left(\begin{array}{c}5\\2\end{array}\right)\)
+			\end{tabularx}
+			Die Richtungsvektoren sind \color{blue}\underline{linear unabhängig}\normalcolor{}, also existiert entweder \color{red}einen\normalcolor{} oder \color{red}keinen\normalcolor{} Schnittpunkt. Um diesen zu bestimmen, setzen wir \(g=h\) und lösen das Gleichungssystem.\\
+			\par\noindent
+			\begin{tabular}{lll}
+				\(2-r = -5 +5t\) & \(\Rightarrow r = 7-5t\) (*) &\\
+				\(-3 +4r = 3+2t\) & & \(\Rightarrow -3 +4(7-5t) = 3+2t\)\\ 
+				\hline\\
+				\(\Rightarrow -3+28-20t = 3+2t\)\\
+				\(\Leftrightarrow 25-20t = 3+2t\) & | \(-3;+20t\)\\
+				\(\Leftrightarrow 22 = 22t\) & | \(:22\)\\
+				\(\Leftrightarrow t=1\) & \(\xrightarrow{mit (*)} r = 7 -5*\underbrace{1}_t = 2\)
+			\end{tabular}\\
+			\par\noindent
+			Mit den berechneten Werten für \(r\) und \(t\) können wir nun den Schnittpunkt bestimmen:\\
+			\(2-\underbrace{2}_{r} = 0 = -5+5*\underbrace{1}_{t}\)\\
+			\(-3 +4*\overbrace{2} = 5 = 3+2*\overbrace{1}\)\\
+			\par\noindent
+			Damit ergibt sich als Schnittpunkt S(0|5).
 		\end{framed}
 	\end{worksheet}
 \end{document}
