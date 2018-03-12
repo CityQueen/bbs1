@@ -1,0 +1,63 @@
+\documentclass[11pt,twocolumn,oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{article}
+
+\input{../packages.tex}
+\input{../makros.tex}
+
+\setlength{\columnsep}{3em}
+\setlength{\columnseprule}{0.5pt}
+
+\geometry{left=2.00cm,right=2.00cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+\pagenumbering{gobble}
+\pagestyle{empty}
+
+\begin{document}
+	\begin{worksheet}{HBF IT 17A}{Grundstufe}{Verhalten für große und kleine x-Werte | Differenzialrechnung}
+		\section{Verhalten für kleine bzw. große x-Werte}
+		Haben wir eine Funktion \[f(x) = a_nx^n + a_{n-1}x^{n-1} + \ldots + a_1x + a_0\] gegeben und möchten für diese das Verhalten für kleine bzw. große x-Werte beschreiben, so betrachten wir den charakteristischen Term \(\mathbf{a_nx^n}\).\\
+		Für das Verhalten gilt folgendes\\
+		\par\noindent
+		\begin{tabular}{l|L{0.17\textwidth}|L{0.17\textwidth}}
+			\hline
+			\diagbox{\(a_{n}\)}{n} & gerade & ungerade\\
+			\hline
+			positiv & \shortstack{\(f(x) \xrightarrow{x \rightarrow -\infty} \infty\)\\\(f(x) \xrightarrow{x \rightarrow \infty} \infty\)} & \shortstack{\(f(x) \xrightarrow{x \rightarrow -\infty}-\infty\)\\\(f(x) \xrightarrow{x \rightarrow \infty}\infty\)}\\
+			\hline
+			negativ & \shortstack{\(f(x) \xrightarrow{x \rightarrow -\infty}-\infty\)\\\(f(x) \xrightarrow{x \rightarrow \infty}-\infty\)} & \shortstack{\(f(x) \xrightarrow{x \rightarrow -\infty}\infty\)\\\(f(x) \xrightarrow{x \rightarrow \infty}-\infty\)}\\
+			\hline
+		\end{tabular}
+		\section{Rechnerisch die Nullstellen (NST) bestimmen}
+		Abhängig von der gegebenen Funktion haben wir verschiedene Möglichkeiten die NST dieser zu bestimmen.
+		\begin{itemize}
+			\item \(a_1x + a_0 \Rightarrow\) Null setzen und nach \(x\) umformen (\(a_1x + a_0 = 0 \Rightarrow x = \frac{a_0}{a_1}\))
+			\item  \(a_2x^2 + a_1x + a_0 \Rightarrow\) Anwenden der pq-Formel\\
+			\textbf{Beachte:} \(a_2\) muss den Wert 1 haben (also muss gegebenenfalls \(:a_2\) gerechnet werden).
+			\item \(a_2x^2 + a_0 \Rightarrow\) Null setzen und nach \(x\) umformen (\(a_2x^2 + a_0 = 0 \Rightarrow x = \sqrt{\frac{a_0}{a_2}}\))
+			\item Funktionen mit Grad 3 und Höher \(\Rightarrow\) NST ausprobieren (meist \(-2,-1,0,1,2\)); Dann mit Polynomdivision den Grad reduzieren\\
+			\((a_nx^n + \ldots +a_1x +a_0):(x-NST) = p(x)\)\\
+			NST des Ergebnisses \(p(x)\) bestimmen
+			\item Weitere Möglichkeit: Durch Substitution\\
+			\(2x^4 -10x^2+8 \xrightarrow{z:=x^2} 2z^2-10z+8\)\\
+			Hat man hiervon die NST bestimmt, muss Rücksubstituiert werden (also \(x^2 = NST \Rightarrow x = \pm \sqrt{NST}\))
+		\end{itemize}
+		\section{Zuordnen bzw. Skizzieren des Graphen der Ableitungsfunktion}
+		Haben wir den Funktionsgraphen der Funktion \(f(x)\) gegeben und möchten den Graph der Ableitungsfunktion zeichnen, gehen wir wie folgt vor:\\
+		\begin{itemize}
+			\item Markiere die x-Werte der Hoch- bzw. Tiefpunkte auf der x-Achse
+			\item Betrachte die Steigung des Funktionsgraphen links / zwischen / rechts von den markierten x-Werten
+			\begin{itemize}
+				\item Steigung positiv \(\Rightarrow\) markiere oberhalb der x-Achse
+				\item Steigung negativ \(\Rightarrow\) markiere unterhalb der x-Achse
+			\end{itemize}
+			\item Skizziere den Graph der Ableitung entsprechend der Markierungen (oberhalb / unterhalb). Der Graph muss dabei durch die markierten x-Werte gehen.
+		\end{itemize}
+		Um den Ableitungsgraphen zuzuordnen, können wir ähnlich vorgehen. \(\Rightarrow\) Suche den Graphen der Ableitungsfunktion, der an den Hoch- bzw. Tiefpunkten des Funktionsgraphen die x-Achse schneidet (also eine NST besitzt).
+		\section{Extremwerte rechnerisch bestimmen}
+		Extremstellen einer Funktion sind eben solche Stellen, an denen die Steigung \(m\) des Funktionsgraphen von \(f(x)\) 0 ist. Dies ist genau dann der Fall, wenn die Ableitungsfunktion \(f'(x)\) den Wert 0 annimmt. Also wenn gilt: \(\mathbf{f'(x) = 0}\)\\
+		Wir gehen also wie folgt vor, um die Extrempunkte zu bestimmen:
+		\begin{itemize}
+			\item Bestimme zunächst die Ableitungsfunktion \(f'(x)\)
+			\item Berechne die Nullstellen (NST) der Ableitungsfunktion \(f'(x)\)
+			\item Ermittle die Koordinaten der berechneten Extremstellen. Dafür setze die x-Koordinate der NST in die Ausgangsfunktion ein (\(f(NST)\)).
+		\end{itemize}	
+	\end{worksheet}
+\end{document}
