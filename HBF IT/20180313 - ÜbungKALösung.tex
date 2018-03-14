@@ -3,57 +3,153 @@
 \input{../packages.tex}
 \input{../makros.tex}
 
-\geometry{left=1.50cm,right=1.50cm,top=2.50cm,bottom=1.00cm,includeheadfoot}
+\geometry{left=2.50cm,right=2.50cm,top=2.00cm,bottom=1.00cm,includeheadfoot}
 
 \begin{document}
-	\begin{worksheet}{HBF IT 17A}{Grundstufe}{Lernbaustein 3 - LB 2: Einführung in die Differentialrechnung: Hausaufgabe h-Methode}
-
+	\begin{worksheet}{HBF IT 17A}{Grundstufe}{Vorbereitung Klassenarbeit - Lösung}
 		\begin{framed}
+			\noindent\normalsize
+			Beschreiben Sie das \textbf{Verhalten} der folgenden Funktionen \textbf{für große bzw. kleine x-Werte}.
+			\begin{framed}
+				Beachten Sie die Schreibweise \(f(x) \xrightarrow{x \rightarrow -\infty}\) / \(f(x) \xrightarrow{x \rightarrow \infty}\)
+			\end{framed}
+			\begin{itemize}
+				\item[(a)] \(f(x) = 3x^6 -18x^4 +27x^2\)\\
+				betrachte \(3x^6\)\\
+				\(a_n\) positiv und \(n\) gerade:\\
+				\(f(x) \xrightarrow{x \rightarrow -\infty} \infty\)\\
+				\(f(x) \xrightarrow{x \rightarrow \infty} \infty\)
+				\item[(b)] \(f(x) = -0.9x^7+10x^3\)\\
+				betrachte \(-0.9x^7\)\\
+				\(a_n\) negativ und \(n\) ungerade:\\
+				\(f(x) \xrightarrow{x \rightarrow -\infty} \infty\)\\
+				\(f(x) \xrightarrow{x \rightarrow \infty} -\infty\)
+				\item[(c)] \(f(x) = -5x^4 +20x^3 -12x^2 +8\)\\
+				betrachte \(-5x^4\)\\
+				\(a_n\) negativ und \(n\) gerade:\\
+				\(f(x) \xrightarrow{x \rightarrow -\infty} \infty\)\\
+				\(f(x) \xrightarrow{x \rightarrow \infty} -\infty\)
+				\item[(d)] \(f(x) = 0.8x^5-5x^3-x\)\\
+				betrachte \(0.8x^5\)\\
+				\(a_n\) positiv und \(n\) ungerade:\\
+				\(f(x) \xrightarrow{x \rightarrow -\infty} \infty\)\\
+				\(f(x) \xrightarrow{x \rightarrow \infty} \infty\)
+			\end{itemize}
+			\hdashrule[0.5ex][x]{\textwidth}{0.1mm}{8mm 2pt}\\
+			\newpage
+			Ordnen Sie die Graphen der Ableitungsfunktionen \(f'(x)\) den richtigen Ausgangsgraphen für \(f(x)\) zu.\\
+			Begründen Sie ihre Entscheidung in Stichpunkten.\\
+			\begin{tabularx}{\textwidth}{|cX|cX|cX|}
+				\hline
+				\multicolumn{6}{|l|}{Ausgangsgraph von \(f(x)\)}\\
+				\hline
+				(a) & & (b) & & (c) &\\
+				& \includegraphics[scale=0.2]{Bilder/fue.png} & & \includegraphics[scale=0.2]{Bilder/gue.png} & & \includegraphics[scale=0.2]{Bilder/hue.png}\\
+				\hline
+				\multicolumn{6}{|l|}{Graph der Ableitungsfunktion \(f'(x)\)}\\
+				\hline
+				(1) & & (2) & & (3) &\\
+				& \includegraphics[scale=0.2]{Bilder/g'ue.png} & & \includegraphics[scale=0.2]{Bilder/f'ue.png} & & \includegraphics[scale=0.2]{Bilder/h'ue.png}\\
+				\hline
+			\end{tabularx}\\
+			\par\bigskip\noindent
+			Ausgangsgraph (a) gehört zum Ableitungsgraph (2)
+			\begin{itemize}
+				\item Ausgangsgraph ist eine Funktion 3. Grades und hat Extrempunkte bei \(x=0.5\) und ca. \(x=1.2\). Der Ableitungsgraph (b) ist 2. Grades und hat Nullstellen bei \(x=0.5\) und \(x=1.2\) (Wir wissen, \(f(x) \) ist Extrempunkt wenn \(f'(x)=0\))\\
+				Die Steigung vor dem ersten Extrempunkt \(x<0.5\) ist positiv (Ableitungsgraph oberhalb der x-Achse), für \(0.5 < x < 1.2\) ist die Steigung negativ (Ableitungsgraph unterhalb der x-Achse) und die Steigung nach dem zweiten Extrempunkt \(1.2<x\) ist wieder positiv (Ableitungsgraph oberhalb der x-Achse).
+			\end{itemize}
+			Ausgangsgraph (b) gehört zu Ableitungsgraph (1)
+			\begin{itemize}
+ 				\item Ausgangsgraph ist eine Funktion 3. Grades und hat Extrempunkte bei ca. \(x=1\) und ca. \(x=1.75\). Der Ableitungsgraph (b) ist 2. Grades und hat Nullstellen bei ungefähr \(x=1\) und \(x=1.75\) (Wir wissen, \(f(x) \) ist Extrempunkt wenn \(f'(x)=0\))\\
+ 				Die Steigung vor dem ersten Extrempunkt \(x<1\) ist negativ (Ableitungsgraph unterhalb der x-Achse), für \(1 < x < 1.75\) ist die Steigung positiv (Ableitungsgraph oberhalb der x-Achse) und die Steigung nach dem zweiten Extrempunkt \(1.75<x\) ist wieder negativ (Ableitungsgraph unterhalb der x-Achse).
+			\end{itemize}
+			Ausgangsgraph (c) gehört zu Ableitungsgraph (3)
+			\begin{itemize}
+				\item Ausgangsgraph ist eine Funktion 2. Grades und hat einen Extrempunkt bei ca. \(x=-1.5\). Der Ableitungsgraph (b) ist linear, also 1. Grades und hat genau eine Nullstellen bei ungefähr \(x=-1.5\) (Wir wissen, \(f(x) \) ist Extrempunkt wenn \(f'(x)=0\))\\
+				Die Steigung vor dem Extrempunkt \(x<-1.5\) ist negativ (Ableitungsgraph unterhalb der x-Achse), nach dem Extrempunkt \(-1.5<x\) ist positiv (Ableitungsgraph oberhalb der x-Achse).
+			\end{itemize}
+			\hdashrule[0.5ex][x]{\textwidth}{0.1mm}{8mm 2pt}\\
+			\textbf{Skizzieren} Sie den Graphen der Ableitungsfunktion zu gegebenem Funktionsgraphen.\\
+			Tun Sie dies im gleichen Koordinatensystem.\\
+			\textbf{Beschreiben} Sie ihr Vorgehen in Stichpunkten.\\
+			\begin{center}
+				\includegraphics[scale=0.6]{Bilder/pp'ue.png}
+			\end{center}
+			\hdashrule[0.5ex][x]{\textwidth}{0.1mm}{8mm 2pt}
+			\newpage
 			\noindent
+			Bestimmen Sie rechnerisch die \textbf{Nullstellen} der Funktionen:\\
+			(a) \(f(x) = x^3 -4.5x^2+5x\)\\
+			\par\bigskip\noindent
+			\begin{tabularx}{\textwidth}{XXX}
+				\(0 = x^3 -4.5x^2 +5x\)  & \multicolumn{2}{l}{| \(x\) in jedem Term vorhanden \(\Rightarrow\) \textbf{x ausklammern}.}\\
+				\(0 = \underbrace{x}_{=0 \text{ oder }}*\underbrace{(x^2 -4.5x +5)}_{=0}\) & \multicolumn{2}{l}{| Ein Produkt \(a*b = 0\), wenn ein Faktor \(a= 0\) oder \(b=0\).}\\
+				\hline\\
+				\multicolumn{1}{l|}{\(x = 0\)} & \(x^2\underbrace{-4.5}_{p} x+\underbrace{5}_{q}\) & | pq-Formel\\
+				\multicolumn{1}{l|}{}& \(x_{1,2} = -\frac{-4.5}{2}\pm\sqrt{(\frac{-4.5}{2})^2 -5}\)\\
+				\multicolumn{1}{l|}{}& \(x_1 = \frac{4.5}{2}-\sqrt{(\frac{-4.5}{2})^2 -5}\) & \(x_2 = \frac{4.5}{2}+\sqrt{(\frac{-4.5}{2})^2 -5}\)\\
+				\multicolumn{1}{l|}{} & \(x_1 = 2\) & \(x_2 = 2.5\)
+			\end{tabularx}
+			\par\bigskip\noindent
+			(b) \(f(x) = x^2 -1\)\\
+			\par\bigskip\noindent
+			\begin{tabularx}{\textwidth}{XXX}
+				\(0 = x^2 - 1\)  & \multicolumn{2}{l}{| \(x\) nur in einem Term vorhanden. Nach \(x\) umformen.}\\
+				\(1 = x^2\) & | \(\sqrt{}\)\\
+				\(x_1 = +\sqrt{1}\) & \(x_2 = -\sqrt{1}\)\\
+			\end{tabularx}
+			\par\bigskip\noindent
+			\hdashrule[0.5ex][x]{\textwidth}{0.1mm}{8mm 2pt}\\
+			Ermitteln Sie rechnerisch die \textbf{Extrempunkte} der Funktionen:\\
+			\par\noindent
+			(a) \(f(x) = \frac{1}{4}x^4 + \frac{7}{3}x^3 +x^2-40x\)\\
+			Wir bestimmen zunächst die Ableitung. \small{\textit{Wir wissen, \(x\) ist ein Extrempunkt, wenn \(f'(x) = 0\).}}\\
 			\normalsize
-			Berechnen Sie die Steigung für die nachfolgenden Funktionen an den Stellen \(x_0 = -2 \text{ }x_0=0 \text{ und } x_0=-4\)\\
-			\textbf{(a) \(f(x) = -2x^{2}\)}\\
-			\begin{tabularx}{\textwidth}{X|X|X}
-				\(x_0 = 2\) & \(x_0 = 0\) & \(x_0=-4\)\\
-				\hline
-				\\
-				\(m_{t} = \lim\limits_{h \to 0} \frac{f(x_{0}+h) - f(x_0)}{h}\) & \(m_{t} = \lim\limits_{h \to 0} \frac{f(x_{0}+h) - f(x_0)}{h}\) & \(m_{t} = \lim\limits_{h \to 0} \frac{f(x_{0}+h) - f(x_0)}{h}\)\\
-				\(=\lim\limits_{h \to 0} \frac{f(2+h)-f(2)}{h}\) & \(=\lim\limits_{h \to 0} \frac{f(0+h)-f(0)}{h}\) & \(=\lim\limits_{h \to 0} \frac{f(-4+h)-f(-4)}{h}\)\\
-				\(=\lim\limits_{h \to 0} \frac{(-2)*(2+h)^2 - (-2)*(2)^2}{h}\) & \(=\lim\limits_{h \to 0} \frac{(-2)*h^2 - (-2)*0^2}{h}\) & \(=\lim\limits_{h \to 0} \frac{(-2)*(-4+h)^2 - (-2)*(-4)^2}{h}\)\\
-				\(=\lim\limits_{h \to 0} \frac{(-2)*(4 +4h+h^2) -(-2)*4}{h}\) & \(=\lim\limits_{h \to 0} \frac{-2h^2 - 0}{h}\) & \(=\lim\limits_{h \to 0} \frac{(-2)*(16-8h+h^2) -(-2)*16}{h}\)\\
-				\(=\lim\limits_{h \to 0}\frac{(-8)-8h-2h^2 +8}{h}\) & \(=\lim\limits_{h \to 0}\frac{-2h^2}{h}\) & \(=\lim\limits_{h \to 0}\frac{(-32)+16h-2h^2 +32}{h}\)\\
-				\(=\lim\limits_{h \to 0} \frac{-8h -2h^2}{h}\) & \(=\lim\limits_{h \to 0}-2h\) & \(=\lim\limits_{h \to 0} \frac{16h -2h^2}{h}\)\\
-				\(=\lim\limits_{h \to 0} -8 -2h\) & = 0 & \(=\lim\limits_{h \to 0} 16 -2h\)\\
-				= -8 & & = 16
+			\begin{tabularx}{\textwidth}{XXX}
+				\(f'(x) = x^3 +7x^2+2x-40\) & | Um die Extremstellen zu berechnen, setzen wir \(f'(x) = 0\)\\
+				\(0 = x^3 +7x^2+2x-40\) & | Haben wir eine Funktion 3. Grades, so versuchen wir eine Nullstelle zu raten. Meist \(-2; -1; 0; 1\) oder \(2\).\\
 			\end{tabularx}
-			\textbf{(b) \(f(x) = 3x^2 + 4\)}\\
-			\begin{tabularx}{\textwidth}{X|X|X}
-				\(x_0 = 2\) & \(x_0 = 0\) & \(x_0=-4\)\\
-				\hline
-				\\
-				\(m_{t} = \lim\limits_{h \to 0} \frac{f(x_{0}+h) - f(x_0)}{h}\) & \(m_{t} = \lim\limits_{h \to 0} \frac{f(x_{0}+h) - f(x_0)}{h}\) & \(m_{t} = \lim\limits_{h \to 0} \frac{f(x_{0}+h) - f(x_0)}{h}\)\\
-				\(=\lim\limits_{h \to 0} \frac{f(2+h)-f(2)}{h}\) & \(=\lim\limits_{h \to 0} \frac{f(0+h)-f(0)}{h}\) & \(=\lim\limits_{h \to 0} \frac{f(-4+h)-f(-4)}{h}\)\\
-				\(=\lim\limits_{h \to 0} \frac{[3*(2+h)^2 + 4] - [3*2^2 + 4]}{h}\) & \(=\lim\limits_{h \to 0} \frac{[3*h^2 + 4] - [3*0^2+4]}{h}\) & \(=\lim\limits_{h \to 0} \frac{[3*(-4+h)^2 + 4] - [3*(-4)^2 + 4]}{h}\)\\
-				\(=\lim\limits_{h \to 0} \frac{[3*(4 +4h+h^2) +4] -[3*4+4]}{h}\) & \(=\lim\limits_{h \to 0} \frac{[3*h^2 + 4] - 4}{h}\) & \(=\lim\limits_{h \to 0} \frac{[3*(16-8h+h^2)+4] -[3*16+4]}{h}\)\\
-				\(=\lim\limits_{h \to 0}\frac{[12+12h+3h^2+4] -[12+4]}{h}\) & \(=\lim\limits_{h \to 0}\frac{3h^2}{h}\) & \(=\lim\limits_{h \to 0}\frac{[48-24h+3h^2+4] -[48+4]}{h}\)\\
-				\(=\lim\limits_{h \to 0} \frac{12h +3h^2}{h}\) & \(=\lim\limits_{h \to 0} 3h\) & \(=\lim\limits_{h \to 0} \frac{-24h +3h^2}{h}\)\\
-				\(=\lim\limits_{h \to 0} 12+3h\) & = 0 & \(=\lim\limits_{h \to 0} -24+3h\)\\
-				= 12 & & = -24
+			In unserem Fall ist \(x=2\) eine Nullstelle. Wir führen also die Polynomdivision mit \(f'(x):(x-2)\) durch.\\
+			\polyset{style=C, div=:,vars=x}
+			\polylongdiv{x^3+7x^2+2x-40}{x-2}\\
+			Unser Ergebnis \(x^2 +\underbrace{9}_{p}x +\underbrace{20}_{q}\) ist eine quadratische Funktion auf die wir die pq-Formel anwenden können.\\
+			\begin{tabularx}{\textwidth}{X|X}
+				\(x_1 = -\frac{9}{2} + \sqrt{(-\frac{9}{2})^2 -20}\) & \(x_2 = -\frac{9}{2} - \sqrt{(-\frac{9}{2})^2 -20}\)\\
+				\(x_1 = -4\) & \(x_2 = -5\)
 			\end{tabularx}
-			\textbf{(c) \(f(x) = \frac{x^2}{3}\)}\\			
-			\begin{tabularx}{\textwidth}{X|X|X}
-				\(x_0 = 2\) & \(x_0 = 0\) & \(x_0=-4\)\\
-				\hline
-				\\
-				\(m_{t} = \lim\limits_{h \to 0} \frac{f(x_{0}+h) - f(x_0)}{h}\) & \(m_{t} = \lim\limits_{h \to 0} \frac{f(x_{0}+h) - f(x_0)}{h}\) & \(m_{t} = \lim\limits_{h \to 0} \frac{f(x_{0}+h) - f(x_0)}{h}\)\\
-				\(=\lim\limits_{h \to 0} \frac{f(2+h)-f(2)}{h}\) & \(=\lim\limits_{h \to 0} \frac{f(0+h)-f(0)}{h}\) & \(=\lim\limits_{h \to 0} \frac{f(-4+h)-f(-4)}{h}\)\\
-				\(=\lim\limits_{h \to 0} \frac{\frac{(2+h)^2}{3}-\frac{(2)^2}{3}}{h}\) & \(=\lim\limits_{h \to 0} \frac{\frac{(0+h)^2}{3}-\frac{0^2}{3}}{h}\) & \(=\lim\limits_{h \to 0} \frac{\frac{(-4+h)^2}{3}-\frac{(-4)^2}{3}}{h}\)\\
-				\(=\lim\limits_{h \to 0}\frac{\frac{4+4h+h^2}{3}-\frac{4}{3}}{h}\) & \(=\lim\limits_{h \to 0}\frac{\frac{h^2}{3}-\frac{0}{3}}{h}\) & \(=\lim\limits_{h \to 0}\frac{\frac{16-8h+h^2}{3}-\frac{16}{3}}{h}\)\\
-				\(=\lim\limits_{h \to 0}\frac{\frac{4+4h+h^2-4}{3}}{h}\) & \(=\lim\limits_{h \to 0}\frac{\frac{h^2-0}{3}}{h}\) & \(=\lim\limits_{h \to 0}\frac{\frac{16-8h+h^2-16}{3}}{h}\)\\
-				\(=\lim\limits_{h \to 0}\frac{\frac{4h+h^2}{3}}{h}\) & \(=\lim\limits_{h \to 0}\frac{\frac{h^2}{3}}{h}\) & \(=\lim\limits_{h \to 0}\frac{\frac{-8h+h^2}{3}}{h}\)\\
-				\(=\lim\limits_{h \to 0}\frac{4h+h^2}{3h}\) & \(=\lim\limits_{h \to 0}\frac{h^2}{3h}\) & \(=\lim\limits_{h \to 0}\frac{-8h+h^2}{3h}\)\\
-				\(=\lim\limits_{h \to 0}\frac{4+h}{3}\) & \(=\lim\limits_{h \to 0}\frac{h}{3}\) & \(=\lim\limits_{h \to 0}\frac{-8+h}{3}\)\\
-				\(=\frac{4}{3}\) & = 0 &\(= \frac{-8}{3}\)
+			Um die Extrempunkte zu berechnen, setzen wir die errechneten x-Werte in \(f(x)\) ein. So ergibt sich\\
+			\begin{tabularx}{\textwidth}{XXX}
+				\(\mathbf{f(-5)} = 89.58\) & \(\mathbf{f(-4)} = 90.67\) & \(\mathbf{f(0)}= -53.33\)\\
+				(-5|89.58) & (-4|90.67) & (0|-53.33)
+			\end{tabularx}\\
+			\par\bigskip\noindent
+			(b) \(f(x) = \frac{1}{3}x^3 +0,75x^2 -2,5x\)\\
+			Wir bestimmen wieder die Ableitung. \small{\textit{Denn wir wissen, \(x\) ist ein Extrempunkt, wenn \(f'(x) = 0\).}}\\
+			\normalsize
+			\begin{tabularx}{\textwidth}{XX}
+				\(f'(x) = x^2 +1.5x-2.5\) &| Um die Extremstellen zu berechnen, setzen wir \(f'(x) = 0\)\\
+				\(0 = x^2 +\underbrace{1.5}_{p}x\underbrace{-2.5}_{q}\) & | Wir haben eine quadratische Funktion, also nutzen wir die pq-Formel.\\
+				\multicolumn{1}{X|}{\(x_1 = -\frac{1.5}{2} + \sqrt{(-\frac{1.5}{2})^2 -(-2.5)}\)} & \multicolumn{1}{X}{\(x_2 = -\frac{1.5}{2} - \sqrt{(-\frac{1.5}{2})^2 - (-2.5)}\)}\\
+				\multicolumn{1}{X|}{\(x_1 = -\frac{1.5}{2} + \sqrt{(-\frac{1.5}{2})^2 + 2.5}\)} & \multicolumn{1}{X}{\(x_2 = -\frac{1.5}{2} - \sqrt{(-\frac{1.5}{2})^2 + 2.5)}\)}\\
+				\multicolumn{1}{X|}{\(x_1 = 1\)} & \multicolumn{1}{X}{\(x_2 = -2.5\)}\\
+			\end{tabularx}
+			Um die Extrempunkte zu berechnen, setzen wir die errechneten x-Werte in \(f(x)\) ein. So ergibt sich\\
+			\begin{tabularx}{\textwidth}{XX}
+				\(\mathbf{f(-2.5)} = 5.73\) & \(\mathbf{f(1)} = -1.42\)\\
+				(-2.5|5.73) & (1|-1.42)
+			\end{tabularx}\\
+			\par\bigskip\noindent
+			(c) \(f(x) = \frac{1}{2}x^2 -4x\)\\
+			Wir bestimmen zunächst die Ableitung. \small{\textit{Denn wir wissen, \(x\) ist ein Extrempunkt, wenn \(f'(x) = 0\).}}\\
+			\normalsize
+			\begin{tabularx}{\textwidth}{XXX}
+				\(f'(x) = x-4\) & | \(x\) ist nur in einem Term vorhanden, daher nach \(x\) umformen.\\
+				\(4 = x\) & | Wir haben also bei \(x = 4\) einen Extrempunkt.\\
+			\end{tabularx}
+			Um diesen Extrempunkt zu berechnen, setzen wir den errechneten x-Wert in \(f(x)\) ein. Damit folgt\\
+			\begin{tabularx}{\textwidth}{X}
+				\(f(4) = -8\)\\
+				(4|-8)
 			\end{tabularx}
 		\end{framed}
 	\end{worksheet}
