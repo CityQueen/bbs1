@@ -1,0 +1,39 @@
+\documentclass[oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{scrreprt}
+
+\input{../packages.tex}
+\input{../makros.tex}
+
+\geometry{left=2.50cm,right=2.50cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+
+\begin{document}
+	\begin{worksheet}{BGY 16}{Mathematik - Lernbereich 3, Algebraisierung}{Gegenseitige Lage von Geraden I - Übung}
+				
+		\begin{framed}
+			\noindent
+			Gegeben ist die Ebene \(E: \vec{x} = \left(\begin{array}{c}2\\1\\-3\end{array}\right) + r\left(\begin{array}{c}5\\2\\1\end{array}\right) +s\left(\begin{array}{c}-2\\-1\\3\end{array}\right)\)\\
+			Bestimmen Sie jeweils den Punkt P für die nachfolgenden Parameter.\\
+			\hdashrule[0.5ex][x]{\textwidth}{0.1mm}{8mm 2pt}\\
+			\begin{tabularx}{\textwidth}{lX}
+				(a) & \(r=2; s= -1\)\\
+				& \(\vec{x} = \left(\begin{array}{c}2\\1\\-3\end{array}\right) + 2*\left(\begin{array}{c}5\\2\\1\end{array}\right) -\left(\begin{array}{c}-2\\-1\\3\end{array}\right) = \left(\begin{array}{c}14\\6\\-4\end{array}\right)\)\\
+				(b)& \(r=-2; s=2\)\\
+				& \(\vec{x} = \left(\begin{array}{c}2\\1\\-3\end{array}\right) - 2*\left(\begin{array}{c}5\\2\\1\end{array}\right) +2\left(\begin{array}{c}-2\\-1\\3\end{array}\right) = \left(\begin{array}{c}-12\\-5\\1\end{array}\right)\)\\
+			\end{tabularx}
+			\par\noindent
+			\hdashrule[0.5ex][x]{\textwidth}{0.2mm}{8mm 2pt}\\
+			\par\noindent
+			Geben Sie zwei verschiedene Parametegleichungen der Ebene E an, die durch die drei Punkte festgelegt ist.
+			\begin{tabularx}{\textwidth}{lX}
+				(a) & \(A(2|0|3); B(1|-1|5);C(3|2|0)\)\\
+				& \(\vec{0A} = \left(\begin{array}{c}2\\0\\3\end{array}\right)\) ist \textbf{Stützvektor}.\\
+				& \(\vec{AB} = \vec{B} - \vec{A} = \left(\begin{array}{c}1\\-1\\5\end{array}\right) - \left(\begin{array}{c}2\\0\\3\end{array}\right) = \left(\begin{array}{c}-1\\-1\\2\end{array}\right)\)\\
+				und & \(\vec{AC} = \vec{C} - \vec{A} = \left(\begin{array}{c}3\\2\\0\end{array}\right) - \left(\begin{array}{c}2\\0\\3\end{array}\right) = \left(\begin{array}{c}1\\2\\-3\end{array}\right)\) sind \textbf{Spannvektoren}.\\
+				\hline
+				& Die Parameterform der Ebene hat folgende Form: \(E: \vec{x} = \vec{p} + r\vec{u} + s\vec{v}\)\\
+				\hline\\
+				& So ergibt sich:\\
+				& \(E: \vec{x} = \left(\begin{array}{c}2\\0\\3\end{array}\right) + r\left(\begin{array}{c}-1\\-1\\2\end{array}\right) + s\left(\begin{array}{c}1\\2\\-3\end{array}\right)\)
+			\end{tabularx}
+		\end{framed}
+	\end{worksheet}
+\end{document}

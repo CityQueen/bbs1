@@ -1,0 +1,67 @@
+\documentclass[oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{scrreprt}
+
+\input{../packages.tex}
+\input{../makros.tex}
+
+\geometry{left=2.50cm,right=2.50cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+
+\begin{document}
+	\begin{worksheet}{BGY 16}{Mathematik - Lernbereich 3, Algebraisierung}{Hausaufgabe zur Gegenseitigen Lage von Geraden im Raum}
+		
+		\begin{framed}
+			\noindent
+			\tiny{\color{codegray}S. 65 Aufgabe 13 - g,h und g,i}\\
+			\normalsize
+			\noindent
+			Gegeben waren die Punkte \(A(0|1|1); B(0|2|1); C(0|3|1); E(2|3|0)\) und \(F(2|5|0)\).\\
+			Zunächst müssen wir die Geradengleichung für die gewünschten Geraden aufstellen.\\
+			\begin{tabularx}{\textwidth}{X|X|X}
+				Gerade g & Gerade h & Gerade i\\
+				\hline
+				Punkte: A und F & Punkte: B und E & Punkte: C und E\\
+				Ortsvektor: \(\vec{0A} = \left(\begin{array}{c}0\\1\\1\end{array}\right)\) & Ortsvektor: \(\vec{0B} = \left(\begin{array}{c}0\\2\\1\end{array}\right)\) & Ortsvektor: \(\vec{0C} = \left(\begin{array}{c}0\\3\\1\end{array}\right)\)\\
+				Richtungsvektor: & Richtungsvektor: & Richtungsvektor:\\
+				\(\vec{u} = \vec{F} - \vec{A} = \left(\begin{array}{c}2\\4\\-1\end{array}\right)\) & \(\vec{u} = \vec{E} - \vec{B} = \left(\begin{array}{c}2\\1\\-1\end{array}\right)\) & \(\vec{u} = \vec{E} - \vec{C} = \left(\begin{array}{c}2\\0\\-1\end{array}\right)\)\\
+				\(g: \vec{x} = \left(\begin{array}{c}0\\1\\1\end{array}\right) + r\left(\begin{array}{c}2\\4\\-1\end{array}\right)\) & \(h: \vec{x} = \left(\begin{array}{c}0\\2\\1\end{array}\right) + t\left(\begin{array}{c}2\\1\\-1\end{array}\right)\) & \(i: \vec{x} = \left(\begin{array}{c}0\\3\\1\end{array}\right) + s\left(\begin{array}{c}2\\0\\-1\end{array}\right)\)
+			\end{tabularx}
+			Für die gegenseitige Lage zweier Geraden muss \(g=h\) bzw. \(g=i\) gesetzt werden. Anschließend wird das Gleichungssystem gelöst.\\
+			\par\bigskip\noindent
+			\textbf{Lage von g und h}\\
+			\par\noindent
+			\begin{tabularx}{\textwidth}{lll}
+				\(0+2r = 2 + 2t\) & \(r=t\) & I\\
+				\(1+4r = 2 + 1t\) & & (*)\\
+				\(1-1r = 1-1t\) & \(r=t\) & I\\
+				\hline\\
+				\(\xrightarrow{mit (*)} 1+4t = 2+1t\) & |\(-1; -1t\)\\
+				\(\Rightarrow 3t = 1\) & \(\Rightarrow t = \frac{1}{3} = r\)\\
+			\end{tabularx}
+			Wir haben \underline{genau eine} Lösung. Um den Schnittpunkt zu berechnen, setzen wir die Werte von \(r\) bzw. \(t\) in die entsprechenden Geradengleichungen ein.\\
+			\begin{center}
+				\(0+2*\frac{1}{3}= \frac{2}{3} = 0 + 2*\frac{1}{3} \)\\
+				\(1 + 4*\frac{1}{3} = \frac{7}{3} = 2 + \frac{1}{3}\)\\
+				\(1 - 1*\frac{1}{3} = \frac{2}{3} = 1 - \frac{1}{3}\)\\
+			\end{center}
+			So ergibt sich ein Schnittpunkt bei \((\frac{2}{3}|\frac{7}{3}|\frac{2}{3})\)\\
+			\newpage
+			\noindent
+			\textbf{Lage von g und i}\\
+			\par\noindent
+			\begin{tabularx}{\textwidth}{lll}
+				\(0+2r = 0+2s\) & \(r=s\) & I\\
+				\(1+4r = 3+0s\) & & (*)\\
+				\(1-1r = 1-1s\) & \(r=s\) & I\\
+				\hline\\
+				\(\xrightarrow{mit (*)} 1+4r = 3+0r\) & |\(-1\)\\
+				\(\Rightarrow 4r = 2\) & \(\Rightarrow r = \frac{1}{2} = s\)\\
+			\end{tabularx}
+			Wir haben \underline{genau eine} Lösung. Um den Schnittpunkt zu berechnen, setzen wir die Werte von \(r\) bzw. \(s\) in die entsprechenden Geradengleichungen ein.\\
+			\begin{center}
+				\(0+2*\frac{1}{2}= 1 = 0 + 2\frac{1}{2} \)\\
+				\(1 + 4*\frac{1}{2} = 3 = 3 + 0*\frac{1}{2}\)\\
+				\(1 - 1*\frac{1}{2} = \frac{1}{2} = 1 - \frac{1}{2}\)\\
+			\end{center}
+			So ergibt sich ein Schnittpunkt bei \((1|3|\frac{1}{2})\)\\
+		\end{framed}
+	\end{worksheet}
+\end{document}
