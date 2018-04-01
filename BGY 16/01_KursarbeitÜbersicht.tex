@@ -1,0 +1,49 @@
+\documentclass[oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{scrreprt}
+
+\input{../packages.tex}
+\input{../makros.tex}
+
+\geometry{left=2.50cm,right=2.50cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+
+\begin{document}
+	\begin{worksheet}{BGY 16}{Mathematik - Lernbereich 3, Algebraisierung}{Übersicht Kursarbeit}
+				
+		\begin{framed}
+			\noindent
+			\tiny{\color{codegray}Aufstellen von Geraden}\\
+			\normalcolor\normalsize
+			Um eine Gerade (\(g: \vec{x} = \underbrace{\vec{p}}_{Stützvektor} + r*\underbrace{\vec{u}}_{Richtungsvektor}\)) aufzustellen benötigt man zwei Informationen:
+			\begin{itemize}
+				\item[\tiny{(a)}] \textbf{Zwei} Punkte (A und B)
+				\item[\tiny{(b)}] den \textbf{Stützvektor} \(\vec{p}\) sowie einen \textbf{weiteren Punkt} B
+				\item[\tiny{(c)}] den \textbf{Richtungsvektor} \(\vec{u}\) sowie einen \textbf{weiteren Punkt} A
+				\item[\tiny{(d)}] den \textbf{Stützvektor} \(\vec{p}\) und den \textbf{Richtungsvektor} \(\vec{u}\)
+			\end{itemize}
+			\textbf{(a)} Hat man \textbf{zwei} Punkte \(\mathbf{A (a_1|a_2|a_3)}\) und \(\mathbf{B (b_1|b_2|b_3)}\), müssen wir aus diesen den \textit{Stütz-} sowie den \textit{Richtungsvektor} aufstellen. Dies tun wir wie folgt:\\
+			\par\noindent
+			\begin{tabularx}{\textwidth}{ccc}
+				\(\vec{p} = \underbrace{\left(\begin{array}{c}a_1\\a_2\\a_3\end{array}\right)}_{Stützvektor}\) & \(\vec{u} = \left(\begin{array}{c}b_1-a_1\\b_2-a_2\\b_3-a_3\end{array}\right) = \underbrace{\left(\begin{array}{c}u_1\\u_2\\u_3\end{array}\right)}_{Richtungsvektor}\) & \(\Rightarrow \mathbf{g:} \vec{x} \mathbf{= \left(\begin{array}{c}a_1\\a_2\\a_3\end{array}\right) + r*\left(\begin{array}{c}u_1\\u_2\\u_3\end{array}\right)}\)
+			\end{tabularx}\\
+			\par\bigskip\noindent
+			\textbf{(b)} Hat man den \textbf{Stützvektor} \(\vec{p} = \left(\begin{array}{c}p_1\\p_2\\p_3\end{array}\right)\) und \textbf{einen} Punkt \(\mathbf{B (b_1|b_2|b_3)}\) müssen wir daraus den \textit{Richtungsvektor} bestimmen. Dies tun wir wie folgt:\\
+			\par\noindent
+			\begin{tabularx}{\textwidth}{cc}
+				\(\vec{u} = \left(\begin{array}{c}b_1-p_1\\b_2-p_2\\b_3-p_3\end{array}\right) = \underbrace{\left(\begin{array}{c}u_1\\u_2\\u_3\end{array}\right)}_{Richtungsvektor}\) & \(\Rightarrow \mathbf{g:} \vec{x} \mathbf{= \left(\begin{array}{c}p_1\\p_2\\p_3\end{array}\right) + r*\left(\begin{array}{c}u_1\\u_2\\u_3\end{array}\right)}\)
+			\end{tabularx}\\
+			\par\bigskip\noindent
+			\textbf{(c)} Hat man den \textbf{Richtungsvektor} \(\vec{u} = \left(\begin{array}{c}u_1\\u_2\\u_3\end{array}\right)\) und \textbf{einen} Punkt \(\mathbf{a (a_1|a_2|a_3)}\) benötigt man nur noch den \textit{Stützvektor}. Diesen erhält man wie folgt:\\
+			\par\noindent
+			\begin{tabularx}{\textwidth}{cc}
+				\(\vec{p} = \underbrace{\left(\begin{array}{c}a_1\\a_2\\a_3\end{array}\right)}_{Stützvektor}\) & \(\Rightarrow \mathbf{g:} \vec{x} \mathbf{= \left(\begin{array}{c}a_1\\a_2\\a_3\end{array}\right) + r*\left(\begin{array}{c}u_1\\u_2\\u_3\end{array}\right)}\)
+			\end{tabularx}\\
+			\par\bigskip\noindent
+			\textbf{(d)} Hat man den \textbf{Stützvektor} \(\vec{p} = \left(\begin{array}{c}p_1\\p_2\\p_3\end{array}\right)\) und den \textbf{Richtungsvektor} \(\vec{u} = \left(\begin{array}{c}u_1\\u_2\\u_3\end{array}\right)\) muss man diese nur noch in die Geradengleichung einsetzen:\\
+			\par\noindent
+			\[\Rightarrow \mathbf{g:} \vec{x} \mathbf{= \left(\begin{array}{c}p_1\\p_2\\p_3\end{array}\right) + r*\left(\begin{array}{c}u_1\\u_2\\u_3\end{array}\right)}\]
+		\end{framed}
+		\begin{framed}
+			\tiny{\color{codegray}Ein weiterer Punkt auf der Geraden}\normalcolor\normalsize\\
+			Blah
+		\end{framed}
+	\end{worksheet}
+\end{document}
