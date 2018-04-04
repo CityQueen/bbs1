@@ -42,8 +42,152 @@
 			\[\Rightarrow \mathbf{g:} \vec{x} \mathbf{= \left(\begin{array}{c}p_1\\p_2\\p_3\end{array}\right) + r*\left(\begin{array}{c}u_1\\u_2\\u_3\end{array}\right)}\]
 		\end{framed}
 		\begin{framed}
+			\noindent
 			\tiny{\color{codegray}Ein weiterer Punkt auf der Geraden}\normalcolor\normalsize\\
-			Blah
+			Gegeben ist eine Gerade der Form \(g: \vec{x} = \left(\begin{array}{c}p_1\\p_2\\p_3\end{array}\right) + r*\left(\begin{array}{c}u_1\\u_2\\u_3\end{array}\right)\).\\
+			\par\bigskip\noindent
+			Um einen weiteren Punkt auf dieser Geraden zu bestimmen, wählt man für den Parameter \(r \in \mathbb{R}\) einen Wert und bestimmt den entsprechenden Punkt P.\\
+			\par\bigskip\noindent
+			\textit{Beispiel}: \[g: \vec{x} = \left(\begin{array}{c}4\\-3\\2\end{array}\right) + r*\left(\begin{array}{c}2\\3\\-5\end{array}\right)\]
+			Wir wählen \(r = 2\) und erhalten
+			\[\vec{P} = \left(\begin{array}{c}4\\-3\\2\end{array}\right) + 2*\left(\begin{array}{c}2\\3\\-5\end{array}\right) = \left(\begin{array}{c}8\\3\\-8\end{array}\right)\]
+			Da aber nach einem Punkt gesucht ist, müssen wir zu dem erhaltenen Vektor \(\vec{P}\) noch den Punkt P (8|3|-8) angeben.
+		\end{framed}
+		\begin{framed}
+			\noindent
+			\tiny{\color{codegray}Punktprüfung}\normalcolor\normalsize\\
+			Gegeben ist eine Gerade der Form \(g: \vec{x} = \left(\begin{array}{c}p_1\\p_2\\p_3\end{array}\right) + r*\left(\begin{array}{c}u_1\\u_2\\u_3\end{array}\right)\) sowie ein Punkt P(\(P_1|P_2|P_3\)).\\
+			Um zu prüfen, ob der Punkt P auf der gegebenen Gerade \(g\) liegt, setzen wir \(\vec{P} = g\) und bestimmen die jeweiligen Werte für \(r\).\\
+			\par\bigskip\noindent
+			\textit{Beispiel}: Gegeben ist \(g: \vec{x} = \left(\begin{array}{c}4\\-3\\2\end{array}\right) + r*\left(\begin{array}{c}2\\3\\-5\end{array}\right)\) und der Punkt P (\(6|0|-2\)).\\
+			\begin{tabularx}{\textwidth}{Xl}
+				\(\left(\begin{array}{c}6\\0\\-2\end{array}\right) = \left(\begin{array}{c}4\\-3\\2\end{array}\right) + r*\left(\begin{array}{c}2\\3\\-5\end{array}\right)\) & \(\Rightarrow \begin{array}{c}6 = 4+2r\\0 = -3+3r\\-2 = 2 -5r\end{array}\)\\
+			\end{tabularx}
+			\begin{tabularx}{\textwidth}{lll}
+				\hline
+				\(6 = 4+2r\) & |\(-4\)\\
+				\(2 = 2r\)& | \(:2\)& \(\Rightarrow r = 1\)\\
+				\\
+				\(0 = -3 +3r\) & | \(+3\)\\
+				\(3 = 3r\) & | \(:3\) & \(\Rightarrow r = 1\)\\
+				\\
+				\(-2 = 2-5r\) & |\(-2\)\\
+				\(-4 = -5r\) & |\(:5\) & \(\Rightarrow r = \frac{4}{5}\)
+			\end{tabularx}\\
+			Für \(r\) haben wir zweimal den Wert \(1\) und einmal den Wert \(\frac{4}{5}\). Daher können wir folgern, dass der Punkt P \underline{nicht} auf der Geraden \(g\) liegt.\\
+			\par\bigskip\noindent
+			Erhalten wir hingegen \textbf{dreimal den gleichen Wert} für \(r\) berechnet, so liegt der Punkt P auf der Geraden \(g\).
+		\end{framed}
+		\begin{framed}
+			\noindent
+			\tiny{\color{codegray}Lage von Geraden}\normalcolor\normalsize\\
+			Wir haben die zwei Geradengleichungen gegeben.
+			\begin{center}
+				\begin{tabularx}{\textwidth}{XlX}
+					\(g: \vec{x} = \vec{p} + r\vec{u}\) & und & \(h: \vec{x} = \vec{q} + t\vec{v}\)
+				\end{tabularx}
+			\end{center}
+			Für die gegenseitige Lage dieser zwei Geraden gilt folgendes: \(g\) und \(h\) \(\ldots\)
+			\begin{framed}
+				\noindent
+				\begin{itemize}
+					\item[+] \(\ldots\) haben \color{codegreen}genau einen\normalcolor{} Schnittpunkt, wenn die Vektorgleichung bzw. das dazugehörige Gleichungssystem \(\vec{p} + r\vec{u} = \vec{q} + t\vec{v}\) \underline{\textbf{eine}} Lösung besitzt. 
+					\item[+] \(\ldots\) sind \color{codegreen}gleich\normalcolor{}, wenn die Vektorgleichung bzw. das dazugehörige Gleichungssystem \(\vec{p} + r\vec{u} = \vec{q} + t\vec{v}\) \underline{\textbf{unendlich viele}} Lösungen besitzt.
+				\end{itemize}
+			\end{framed}
+			\begin{framed}
+				\begin{itemize}
+					\item[+] \(\ldots\) haben \color{red}keinen\normalcolor{} Schnittpunkt, wenn die Vektorgleichung bzw. das dazugehörige Gleichungssystem \(\vec{p} + r\vec{u} = \vec{q} + t\vec{v}\) \underline{\textbf{keine}} Lösungen besitzt.\\
+					Sind ferner die Richtungsvektoren \(\vec{u}\) und \(\vec{v}\) \(\ldots\)
+					\begin{itemize}
+						\item[\(\circ_1\)] \(\ldots\) linear \color{blue}abhängig\normalcolor{}, so sind \(g\) und \(h\) \color{red}parallel\normalcolor{}
+						\item[\(\circ_2\)] \(\ldots\) linear \color{blue}unabhängig\normalcolor{}, so sind \(g\) und \(h\) zueinander \color{red}windschief\normalcolor{}
+					\end{itemize}
+				\end{itemize}
+			\end{framed}
+			\noindent
+			\textbf{Beispiel}: Gegeben sind die Geraden\\ \(g: \vec{x} = \left(\begin{array}{c}-6\\6\\10\end{array}\right) + r\left(\begin{array}{c}3.5\\-1.5\\0\end{array}\right)\) und \(h: \vec{x} = \left(\begin{array}{c}2\\-3\\8\end{array}\right) + t\left(\begin{array}{c}-0.5\\3\\1\end{array}\right)\).\\
+			\par\noindent
+			Um die gegenseitige Lage der beiden Geraden zu prüfen, müssen wir \(g=h\) setzen und das Gleichungssystem lösen.\\
+			\begin{tabularx}{\textwidth}{llll}
+				\(-6 +3.5r = 2 -0.5t\) & & I\\
+				\(6 -1.5r = -3 +3t\) & & II\\
+				\(10 = 8 +r\) & |\(-8\) & \(\Rightarrow r= 2\) & (*)\\
+			\end{tabularx}\\
+			\par\noindent
+			Wir setzen nun (*) in die Gleichungen \textbf{I und II} ein und bestimmen jeweils \(t\).\\
+			\par\noindent
+			\begin{tabularx}{\textwidth}{lXll|lXll}
+				I \(\xrightarrow{mit (*)}\) & \( -6+3.5*2 = 2-0.5t\) & & & II \(\xrightarrow{mit (*)}\) & \(6 -1.5*2 = -3 +3t\)\\
+				&\(\Leftrightarrow -6+7 = 2-0.5t\) & |\(-2\) & & & \(\Leftrightarrow 6-3 = -3 +3t\) & | \(+3\)\\
+				&\(\Leftrightarrow -1 = -0.5t\) & | \(:(-0.5)\) & & & \(\Leftrightarrow 6 = 3t\) & | \(:3\)\\
+				&\(\Rightarrow t = 2\) & & & & \(\Rightarrow t = 2\)\\				
+			\end{tabularx}\\
+			\par\noindent
+			Wir erhalten \underline{\textbf{eine}} Lösung. Um \color{codegreen}den\normalcolor{} Schnittpunkt zu berechnen, setzen wir die Werte von \(r\) bzw. \(t\) in die entsprechenden Geradengleichungen ein.\\
+			\begin{center}
+				\(-6 + 3.5*2= \underbrace{1}_{= p_1} = 2 - 0.5*2 \)\\
+				\par\bigskip
+				\(6 - 1.5*2 = \underbrace{3}_{= p_2} = -3 + 3*2\)\\
+				\par\bigskip
+				\(10 + 0*2 = \underbrace{10}_{= p_3} = 8+1*2\)\\
+			\end{center}
+			So ergibt sich ein Schnittpunkt bei SP \((1|3|10)\)\\
+			Erhalten wir hingegen \underline{\textbf{keine}} eindeutige Lösungen für \(r\) und \(t\), können wir daraus schließen, dass sich \(g\) und \(h\) \color{red}keinen\normalcolor{} Schnittpunkt haben. Für eine genauere Aussage über die Lage müssen wir uns das Verhältnis der Richtungsvektoren anschauen.\\
+			Dies tun wir anhand eines \textbf{Beispiels}.\\
+			Gegeben sind die Geraden\\ \(g: \vec{x} = \left(\begin{array}{c}1\\2\\1\end{array}\right) + r\left(\begin{array}{c}2\\0\\1\end{array}\right)\) und \(h: \vec{x} = \left(\begin{array}{c}2\\3\\4\end{array}\right) + t\left(\begin{array}{c}0\\1\\-1\end{array}\right)\).\\
+			\par\noindent
+			Um die gegenseitige Lage der beiden Geraden zu prüfen, müssen wir \(g=h\) setzen und das Gleichungssystem lösen.\\
+			\begin{tabularx}{\textwidth}{lll}
+				\(1 +2r = 2 +0t\) & \(\Rightarrow r = \frac{1}{2}\) & (*)\\
+				\(2 + 0r = 3 + 1t\) & \(\Rightarrow t = -1\) & (**)\\
+				\(1 +r = 4 -1t\) & & I\\
+			\end{tabularx}\\
+			\par\noindent
+			Wir prüfen mit I, ob unsere berechneten Werte von \(r\) (*) und \(t\) (**) korrekt sind.\\
+			\par\noindent
+			\begin{tabularx}{\textwidth}{lX}
+				I \(\xrightarrow{mit (*)/(**)}\) & \(1 + \overbrace{\frac{1}{2}}^{r} = 1.5 \neq  3 = 4 - 1*\overbrace{1}^{t}\)				
+			\end{tabularx}\\
+			\par\noindent
+			Wir erhalten also \underline{\textbf{keine}} Lösung für \(r\) und \(t\).\\
+			Daher betrachten wir nun die Richtungsvektoren \(\vec{u} = \left(\begin{array}{c}2\\0\\1\end{array}\right)\) und \(\vec{v} = \left(\begin{array}{c}0\\1\\-1\end{array}\right)\).\\
+			Zu klären ist die Frage: \textit{Existiert eine Zahl \(a\in\mathbb{R}\), so dass \(\mathbf{a*\vec{u} = \vec{v}}\)?}
+			\begin{tabularx}{\textwidth}{ll}
+				\(2a = 0\) & \(\Rightarrow a = 0\)\\
+				\(0a = 1\) & \(\lightning\)\\
+				\(1a = -1\) & \(\Rightarrow a = -1\)
+			\end{tabularx}
+			Es ergeben sich unterschiedliche bzw. widersrpüchliche Werte für \(r\), damit können wir folgern, dass es \underline{\textbf{kein}} solches \(a\) gibt. \(\vec{u}\) und \(\vec{v}\) also linear \color{blue}unabhängig\normalcolor{} und somit \(g\) und \(h\) \color{red}windschief\normalcolor{} sind.\\
+		\end{framed}
+		\begin{framed}
+			\noindent
+			\tiny{\color{codegray}Sich schneidende/Gleiche/Parallele/Windschiefe Geraden aufstellen}\\\normalsize
+			\underline{Gegeben} ist eine Gerade mit folgender Form \(g: \vec{x} = \left(\begin{array}{c}p_1\\p_2\\p_3\end{array}\right) + r*\left(\begin{array}{c}u_1\\u_2\\u_3\end{array}\right)\).\\
+			\par\noindent
+			\underline{Gesucht} ist jeweils eine Gerade ...
+			\begin{itemize}
+				\item[+] ...\(h\), die \(g\) \color{codegreen}einen\normalcolor{} gemeinsamen Schnittpunkt hat
+				\item[+] ...\(i\), die \color{codegreen}gleich\normalcolor{} \(g\) ist
+				\item[+] ...\(j\), die \color{red}parallel\normalcolor{} zu \(g\) verläuft
+				\item[+] ...\(k\), die zur Geraden \(g\) \color{red}windschief\normalcolor{} ist
+			\end{itemize}
+			\par\bigskip\noindent
+			\underline{\textit{\(h\) hat \color{codegreen}einen\normalcolor{} gemeinsamen Schnittpunkt mit \(g\)}}:\\
+			Als gemeinsamen Schnittpunkt wählen wir den Stützvektor von \(g\). Dieser wird auch Stützvektor von \(h\). Nun müssen wir noch gewährleisten, dass die Richtungsvektoren linear \color{blue}unabhängig\normalcolor{} sind. Dafür ändern wir lediglich ein Vorzeichen im Richtungsvektor \(\vec{u}\) von \(g\) und erhalten so den Richtungsvektor \(\vec{v}\) von \(h\).\\
+			\(\Rightarrow h: \vec{x} = \left(\begin{array}{c}p_1\\p_2\\p_3\end{array}\right) + s*\left(\begin{array}{c}u_1\\-u_2\\u_3\end{array}\right)\)\\
+			\par\bigskip\noindent
+			\underline{\textit{\(i\) ist \color{codegreen}gleich\normalcolor{} \(g\)}}:\\
+			Als einen gemeinsamen Punkt wählen wir den Stützvektor von \(g\). Dieser wird auch Stützvektor von \(i\). Nun müssen wir noch gewährleisten, dass die Richtungsvektoren linear \color{blue}abhängig\normalcolor{} sind. Dafür ändern wir die einzelnen Komponenten des Richtungsvektors \(\vec{u}\) von \(g\) im gleichen Verhältnis und erhalten so den Richtungsvektor \(\vec{v}\) von \(i\).\\
+			\(\Rightarrow i: \vec{x} = \left(\begin{array}{c}p_1\\p_2\\p_3\end{array}\right) + t*\left(\begin{array}{c}2*u_1\\2*u_2\\2*u_3\end{array}\right)\)\\
+			\par\bigskip\noindent
+			\underline{\textit{\(j\) ist \color{red}parallel\normalcolor{} zu \(g\)}}:\\
+			Für den Stützvektor von \(j\) benötigen wir einen Punkt, der \underline{nicht} auf \(g\) liegt. Hierfür können wir eine Komponente des Stützvektors \(\vec{p}\) von \(g\) ändern.\\ Da die Richtungsvektoren bei \color{red}parallelen\normalcolor{} Geraden linear \color{blue}abhängig\normalcolor{} sind, können wir den Richtungsvektor \(\vec{u}\) von \(g\) oder ein Vielfaches davon als Richtungsvektor \(\vec{v}\) von \(j\) verwenden.\\
+			\(\Rightarrow i: \vec{x} = \left(\begin{array}{c}p_1+2\\p_2\\p_3\end{array}\right) + w*\left(\begin{array}{c}u_1\\u_2\\u_3\end{array}\right)\)\\
+			\par\bigskip\noindent
+			\underline{\textit{\(j\) ist \color{red}windschief\normalcolor{} zu \(g\)}}:\\
+			Für den Stützvektor von \(j\) benötigen wir einen Punkt, der \underline{nicht} auf \(g\) liegt. Hierfür können wir eine Komponente des Stützvektors \(\vec{p}\) von \(g\) ändern.\\ Da die Richtungsvektoren bei \color{red}windschiefen\normalcolor{} Geraden linear \color{blue}unabhängig\normalcolor{} sind, ändern wir eine Komponente des Richtungsvektors \(\vec{u}\) von \(g\) und erhalten den Richtungsvektor \(\vec{v}\) von \(i\) verwenden.\\
+			\(\Rightarrow j: \vec{x} = \left(\begin{array}{c}p_1\\p_2\\p_3-1\end{array}\right) + t*\left(\begin{array}{c}u_1\\u_2\\4*u_3\end{array}\right)\)\\
 		\end{framed}
 	\end{worksheet}
 \end{document}
