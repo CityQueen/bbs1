@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.1)  4 APR 2018 09:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.1)  6 APR 2018 14:58
 entering extended mode
-**./01_KursarbeitÜbersicht.tex
-(01_KursarbeitÜbersicht.tex
+**"./20180410 - HOPTIP.tex"
+("20180410 - HOPTIP.tex"
 LaTeX2e <2017-04-15>
 Babel <3.15> and hyphenation patterns for 75 language(s) loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\koma-script\scrreprt.cls"
@@ -1330,8 +1330,8 @@ Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
 Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
 \@eurobox=\box59
 ) (../makros.tex)
-(01_KursarbeitÜbersicht.aux)
-\openout1 = `01_KursarbeitÜbersicht.aux'.
+("20180410 - HOPTIP.aux")
+\openout1 = `"20180410 - HOPTIP.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
@@ -1348,8 +1348,7 @@ LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 8.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 *geometry* driver: auto-detecting
@@ -1431,9 +1430,9 @@ LaTeX Info: Redefining \ref on input line 8.
 LaTeX Info: Redefining \pageref on input line 8.
 LaTeX Info: Redefining \nameref on input line 8.
 
-(01_KursarbeitÜbersicht.out) (01_KursarbeitÜbersicht.out)
+("20180410 - HOPTIP.out") ("20180410 - HOPTIP.out")
 \@outlinefile=\write4
-\openout4 = `01_KursarbeitÜbersicht.out'.
+\openout4 = `"20180410 - HOPTIP.out"'.
 
 \c@lstlisting=\count333
 LaTeX Font Info:    Try loading font information for T1+lmss on input line 9.
@@ -1441,345 +1440,189 @@ LaTeX Font Info:    Try loading font information for T1+lmss on input line 9.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 15.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 13.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 15.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 13.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 15.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 13.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 15.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 13.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 15.
+(Font)              <10.95> on input line 13.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 15.
+(Font)              <8> on input line 13.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 15.
-LaTeX Font Info:    Try loading font information for U+msa on input line 15.
+(Font)              <6> on input line 13.
+LaTeX Font Info:    Try loading font information for U+msa on input line 13.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 15.
+LaTeX Font Info:    Try loading font information for U+msb on input line 13.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+stmry on input line 15.
+LaTeX Font Info:    Try loading font information for U+stmry on input line 13.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\stmaryrd\ustmry.fd")
+<Bilder/HOPTIP_f'.png, id=3, 626.34pt x 598.235pt>
+File: Bilder/HOPTIP_f'.png Graphic file (type png)
+<use Bilder/HOPTIP_f'.png>
+Package pdftex.def Info: Bilder/HOPTIP_f'.png  used on input line 14. on input 
+line 14.
+Package pdftex.def Info: Requested size: 438.435pt x 418.76164pt on input line 
+14.
 
-LaTeX Warning: Command \" invalid in math mode on input line 15.
-
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 22.
-
-Underfull \hbox (badness 10000) in paragraph at lines 22--23
-
+Overfull \hbox (1.99088pt too wide) in paragraph at lines 13--15
+[] 
  []
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 26.
-
-
-Underfull \hbox (badness 10000) in alignment at lines 26--26
-[][][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 23--27
+Underfull \hbox (badness 10000) in paragraph at lines 18--25
 
  []
 
+<../empty.jpg, id=4, 366.36874pt x 391.4625pt>
+File: ../empty.jpg Graphic file (type jpg)
+<use ../empty.jpg>
+Package pdftex.def Info: ../empty.jpg  used on input line 27. on input line 27.
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--29
-
- []
-
-
-Underfull \hbox (badness 10000) in alignment at lines 32--32
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--33
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 33--35
-
- []
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 38.
-
-
-Underfull \hbox (badness 10000) in alignment at lines 38--38
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 35--39
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--41
-
- []
-
-<../bbs1.jpg, id=3, 192.72pt x 29.10875pt>
+Package pdftex.def Info: Requested size: 54.95293pt x 58.71683pt on input line 
+27.
+<../bbs1.jpg, id=5, 192.72pt x 29.10875pt>
 File: ../bbs1.jpg Graphic file (type jpg)
 <use ../bbs1.jpg>
-Package pdftex.def Info: ../bbs1.jpg  used on input line 43. on input line 43.
+Package pdftex.def Info: ../bbs1.jpg  used on input line 29. on input line 29.
 Package pdftex.def Info: Requested size: 106.94026pt x 16.15195pt on input line
- 43.
+ 29.
 [1{C:/Users/carso/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
- <../bbs1.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 45--48
+ <../bbs1.jpg> <./Bilder/HOPTIP_f'.png> <../empty.jpg>]
+<Bilder/Koord_g.png, id=20, 626.34pt x 598.235pt>
+File: Bilder/Koord_g.png Graphic file (type png)
+<use Bilder/Koord_g.png>
+Package pdftex.def Info: Bilder/Koord_g.png  used on input line 33. on input li
+ne 33.
+Package pdftex.def Info: Requested size: 313.16922pt x 299.11676pt on input lin
+e 33.
+File: ../empty.jpg Graphic file (type jpg)
+<use ../empty.jpg>
+Package pdftex.def Info: ../empty.jpg  used on input line 36. on input line 36.
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--50
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 57--61
-
- []
-
-
-Underfull \hbox (badness 10000) in alignment at lines 76--76
-[][][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 61--78
-
- []
-
+Package pdftex.def Info: Requested size: 183.18391pt x 195.73076pt on input lin
+e 36.
 File: ../bbs1.jpg Graphic file (type jpg)
 <use ../bbs1.jpg>
-Package pdftex.def Info: ../bbs1.jpg  used on input line 80. on input line 80.
+Package pdftex.def Info: ../bbs1.jpg  used on input line 38. on input line 38.
 Package pdftex.def Info: Requested size: 106.94026pt x 16.15195pt on input line
- 80.
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 108--110
+ 38.
+ [2 <./Bilder/Koord_g.png>]
+<Bilder/HOPTIP_g'.png, id=25, 626.34pt x 598.235pt>
+File: Bilder/HOPTIP_g'.png Graphic file (type png)
+<use Bilder/HOPTIP_g'.png>
+Package pdftex.def Info: Bilder/HOPTIP_g'.png  used on input line 43. on input 
+line 43.
+Package pdftex.def Info: Requested size: 438.435pt x 418.76164pt on input line 
+43.
 
+Overfull \hbox (1.99088pt too wide) in paragraph at lines 42--44
+[] 
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 116--116
-[][][][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 110--117
+Underfull \hbox (badness 10000) in paragraph at lines 46--53
 
  []
 
+File: ../empty.jpg Graphic file (type jpg)
+<use ../empty.jpg>
+Package pdftex.def Info: ../empty.jpg  used on input line 55. on input line 55.
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--119
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 119--126
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 126--128
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 135--139
-
- []
-
-
-Underfull \hbox (badness 10000) in alignment at lines 145--145
-[][][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 139--146
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 146--148
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 148--152
-
- []
-
-
-Underfull \hbox (badness 10000) in alignment at lines 160--160
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 152--162
-\T1/lmss/m/n/10.95 Zu kl�-ren ist die Fra-ge: \T1/lmss/m/sl/10.95 Exis-tiert ei
--ne Zahl $\OML/lmm/m/it/10.95 a \OMS/lmsy/m/n/10.95 2 \U/msb/m/n/10.95 R$\T1/lm
-ss/m/sl/10.95 , so dass $[]$?
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 152--162
-
- []
-
-
-Underfull \vbox (badness 1270) detected at line 162
- []
-
+Package pdftex.def Info: Requested size: 54.95293pt x 58.71683pt on input line 
+55.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.57 		\newpage
+               
 File: ../bbs1.jpg Graphic file (type jpg)
 <use ../bbs1.jpg>
-Package pdftex.def Info: ../bbs1.jpg  used on input line 162. on input line 162
-.
+Package pdftex.def Info: ../bbs1.jpg  used on input line 57. on input line 57.
 Package pdftex.def Info: Requested size: 106.94026pt x 16.15195pt on input line
- 162.
-[3
+ 57.
+ [1 <./Bilder/HOPTIP_g'.png>]
+<Bilder/Koord_f.png, id=29, 626.34pt x 598.235pt>
+File: Bilder/Koord_f.png Graphic file (type png)
+<use Bilder/Koord_f.png>
+Package pdftex.def Info: Bilder/Koord_f.png  used on input line 61. on input li
+ne 61.
+Package pdftex.def Info: Requested size: 313.16922pt x 299.11676pt on input lin
+e 61.
+File: ../empty.jpg Graphic file (type jpg)
+<use ../empty.jpg>
+Package pdftex.def Info: ../empty.jpg  used on input line 64. on input line 64.
 
-pdfTeX warning: pdflatex.exe: pop empty color page stack 0
-
-
-pdfTeX warning: pdflatex.exe: pop empty color page stack 0
-
-
-pdfTeX warning: pdflatex.exe: pop empty color page stack 0
-
-
-pdfTeX warning: pdflatex.exe: pop empty color page stack 0
-
-
-pdfTeX warning: pdflatex.exe: pop empty color page stack 0
-
-
-pdfTeX warning: pdflatex.exe: pop empty color page stack 0
-
-
-pdfTeX warning: pdflatex.exe: pop empty color page stack 0
-
-
-pdfTeX warning: pdflatex.exe: pop empty color page stack 0
-]
+Package pdftex.def Info: Requested size: 183.18391pt x 195.73076pt on input lin
+e 64.
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.66 	\end{worksheet}
+                     
 File: ../bbs1.jpg Graphic file (type jpg)
 <use ../bbs1.jpg>
-Package pdftex.def Info: ../bbs1.jpg  used on input line 162. on input line 162
-.
+Package pdftex.def Info: ../bbs1.jpg  used on input line 66. on input line 66.
 Package pdftex.def Info: Requested size: 106.94026pt x 16.15195pt on input line
- 162.
- [4]
-Underfull \hbox (badness 10000) in paragraph at lines 164--167
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 175--179
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 179--183
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 183--187
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 187--191
-
- []
-
-File: ../bbs1.jpg Graphic file (type jpg)
-<use ../bbs1.jpg>
-Package pdftex.def Info: ../bbs1.jpg  used on input line 191. on input line 191
-.
-Package pdftex.def Info: Requested size: 106.94026pt x 16.15195pt on input line
- 191.
-[5
-
-pdfTeX warning: pdflatex.exe: pop empty color page stack 0
-
-
-pdfTeX warning: pdflatex.exe: pop empty color page stack 0
-
-
-pdfTeX warning: pdflatex.exe: pop empty color page stack 0
-]
-File: ../bbs1.jpg Graphic file (type jpg)
-<use ../bbs1.jpg>
-Package pdftex.def Info: ../bbs1.jpg  used on input line 192. on input line 192
-.
-Package pdftex.def Info: Requested size: 106.94026pt x 16.15195pt on input line
- 192.
- [6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 193.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 193.
- (01_KursarbeitÜbersicht.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 193.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 193.
-Package rerunfilecheck Info: File `01_KursarbeitÜbersicht.out' has not changed
-.
+ 66.
+ [2 <./Bilder/Koord_f.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 67.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 67.
+ ("20180410 - HOPTIP.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 67.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 67.
+Package rerunfilecheck Info: File `"20180410 - HOPTIP".out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 193.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 67.
  ) 
 Here is how much of TeX's memory you used:
- 24752 strings out of 493312
- 424483 string characters out of 3138900
- 670026 words of memory out of 3000000
- 27941 multiletter control sequences out of 15000+200000
- 570166 words of font info for 52 fonts, out of 3000000 for 9000
+ 24754 strings out of 493312
+ 424623 string characters out of 3138900
+ 647970 words of memory out of 3000000
+ 27946 multiletter control sequences out of 15000+200000
+ 555765 words of font info for 47 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 49i,24n,66p,10468b,387s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\carso\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\stmaryrd\dpi
-657\stmary10.pk>{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/P
-rogram Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKT
-eX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvip
-s/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.en
-c}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/lm/lmbx8.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm
-/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss8.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/lm/lmsso10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/l
-m/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on 01_KursarbeitÜbersicht.pdf (6 pages, 270619 bytes).
+ 49i,13n,66p,10464b,360s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
+iKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
+nc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm
+.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/lm/lmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/lm/lmsy10.pfb>
+Output written on "20180410 - HOPTIP.pdf" (4 pages, 335922 bytes).
 PDF statistics:
- 106 PDF objects out of 1000 (max. 8388607)
- 7 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 65 PDF objects out of 1000 (max. 8388607)
+ 3 named destinations out of 1000 (max. 500000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

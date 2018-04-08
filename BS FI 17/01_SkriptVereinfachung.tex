@@ -1,0 +1,111 @@
+\documentclass[11pt,twocolumn,oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{article}
+
+\input{../packages.tex}
+\input{../makros.tex}
+
+\setlength{\columnsep}{3em}
+\setlength{\columnseprule}{0.5pt}
+
+\geometry{left=2.00cm,right=2.00cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+\pagenumbering{gobble}
+\pagestyle{empty}
+
+\begin{document}
+	\begin{worksheet}{BS FI 17}{1. Lehrjahr, LF 4 - Einfache IT-Systeme}{Digitaltechnik - Vereinfachen von Schaltnetzen}
+		\section{Vereinfachen von Schaltnetzen}
+		Wir wollen die Frage diskutieren, welche Möglichkeiten es gibt, gegebene Schaltfunktionen zu vereinfachen um so wenig Gatter wie nötig zu verwenden und ein möglichst schnelles Schaltnetz aufzubauen.\\
+		Wir haben im letzten Block die Darstellung mittels \textbf{DNF} (disjunktive Normalform) bzw. \textbf{KNF} (konjunktive Normalform) und der dazugehörigen \textit{SOP} (Sum of Products) bzw. \textit{POS} (Product of Sums).\\
+		Wir betrachten zunächst ein Beispiel und vereinfachen dieses mit Hilfe der Boolschen Algebra (siehe zugehöriges Skript in Ilias).
+		\begin{align*}
+			f(x_1,x_2,x_3) &= \overline{x_1}x_2x_3 + x_1x_2x_3\\
+			&= \underbrace{(\overline{x_1} + x_1)}_{=1}x_2x_3\\
+			&= x_2x_3
+		\end{align*}
+		Betrachten wir die nachfolgende Funktionstabelle mit drei Eingabevariablen \(x_1, x_2\) und \(x_3\).
+		\begin{center}
+			\begin{tabular}{|c|ccc|c|}
+				\hline
+				\textit{i} & \(x_1\) & \(x_2\) & \(x_3\) & \(f(x_1,x_2,x_3)\)\\
+				\hline
+				0 & 0 & 0 & 0 & 0\\
+				\hline
+				1 & 0 & 0 & 1 & 0\\
+				\hline
+				2 & 0 & 1 & 0 & 0\\
+				\hline
+				3 & 0 & 1 & 1 & 1\\
+				\hline
+				4 & 1 & 0 & 0 & 0\\
+				\hline
+				5 & 1 & 0 & 1 & 1\\
+				\hline
+				6 & 1 & 1 & 0 & 0\\
+				\hline
+				7 & 1 & 1 & 1 & 1\\
+				\hline
+			\end{tabular}
+		\end{center}
+		\subsection*{Ihre Aufgabe} Versuchen Sie die dazugehörige Schaltfunktion \[f(x_1,x_2,x_3) = \overline{x_1}x_2x_3 + x_1\overline{x_2}x_3 + x_1x_2x_3\] zu vereinfachen.\\
+		Die dazugehörige Regel besagt folgendes:
+		\begin{framed} \textbf{Resolutionsregel} Sind in einer \textit{SOP} zwei Summanden vorhanden, die sich in nur einer Eingabevariablen komplementär (\(x_1 \Leftrightarrow \overline{x_1}\)) unterscheiden, kann man beide Summanden durch den gemeinsamen Teil der Summanden ersetzen.\end{framed}
+		Ist die Schaltfunktion, die zu vereinfachen ist, komplexer, reicht ein einfaches drauf schauen manchmal nicht aus. Hier kann man sich mit der \textbf{K-Map} helfen. Diese ist quasi eine graphische Darstellung der Funktionstafel unserer Schaltfunktion \(f\). Abhängig von der Anzahl der Eingabevariablen.\\
+		Bei \underline{drei Eingabevariablen}: (2 x 4)\\
+		\par\noindent
+		\begin{karnaugh-map}[4][2][1][$x_2x_3$][$x_1$]
+			
+		\end{karnaugh-map}
+		\par\noindent
+		Bei \underline{vier Eingabevariablen}: (4 x 4)\\
+		\par\noindent
+		\begin{karnaugh-map}[4][4][1][$x_3x_4$][$x_1x_2$]
+			
+		\end{karnaugh-map}\\
+		Bei der Zeilen- bzw. Spaltenzählung ist zu beachten, dass sich von einer zur nächsten Zeile bzw. Spalte jeweils nur \underline{\textbf{eine}} Variable ändert.\\
+		Innerhalb der \textit{K-Map} werden die Zellen mit einer \(1\) befüllt, deren Belegung bei der Funktion auch \(1\) als Ausgabe haben.
+		\subsection*{Ihre Aufgabe}	Erstellen sie zu vorne angegebener Funktionstabelle die entsprechende \textbf{K-Map}.\\
+		\subsection{Überdeckung der Einsen} Betrachten wir die Funktion\\
+		\(f(x_1,x_2,x_3,x_4) = x_1\ \overline{x_2}\ x_3\ x_4 + x_1\ \overline{x_2}\ \overline{x_3}\ x_4 + x_1\ x_2\ x_3\ x_4 + \overline{x_1}\ \overline{x_2}\ \overline{x_3}\ x_4 + \overline{x_1}\ \overline{x_2}\ x_3\ x_4\)
+		\subsection*{Ihre Aufgabe} Befüllen Sie die dazugehörige \textbf{K-Map}.
+		\begin{karnaugh-map}[4][4][1][$x_3x_4$][$x_1x_2$]
+			
+		\end{karnaugh-map}
+		Unser Ziel ist es, die Schaltfunktion zu vereinfachen, dafür versuchen wir nun, so viele \(1\)en wie möglich (aber immer eine \underline{gerade} Anzahl) zu überdecken. Dabei sind folgende Überdeckungen zulässig:
+		\begin{itemize}
+			\item[+] zwei nebeneinander/übereinander liegende \(1\)en
+			\item[+] vier zusammenhängende \(1\)en
+			\item[+] zwei bzw. vier über die Außenkanten nebeneinander/übereinander liegende \(1\)en
+			\item[+] zwei oder vier in den Ecken befindliche \(1\)en
+		\end{itemize}
+		\begin{karnaugh-map}[4][4][1][$x_3x_4$][$x_1x_2$]
+			\minterms{0,1,7,15}
+			\implicant{0}{1}
+			\implicant{7}{15}
+		\end{karnaugh-map}
+		\begin{karnaugh-map}[4][4][1][$x_3x_4$][$x_1x_2$]
+			\minterms{0,1,4,5,9,11,13,15}
+			\implicant{0}{5}
+			\implicant{13}{11}
+		\end{karnaugh-map}
+		\begin{karnaugh-map}[4][4][1][$x_3x_4$][$x_1x_2$]
+			\minterms{0,1,2,4,6,8,9}
+			\implicantedge{0}{1}{8}{9}
+			\implicantedge{0}{4}{2}{6}
+		\end{karnaugh-map}
+		\begin{karnaugh-map}[4][4][1][$x_3x_4$][$x_1x_2$]
+			\minterms{0,2,8,10}
+			\implicantcorner
+		\end{karnaugh-map}
+		\subsection*{Ihre Aufgabe} Versuchen Sie für die zu Beginn dieses Kapitels aufgestellt \textbf{K-Map} eine entsprechende Überdeckung der \(1\)en zu finden.\\
+		\subsection{Vereinfachen mit Hilfe der Überdeckung}
+		Mit Hilfe dieser Überdeckung können wir nun die Schaltfunktion aufstellen. Dabei verwenden wir nur die Belegung der Eingabevariablen, die für den überdeckten \(1\)er-Block konstant bleibt.
+		\begin{karnaugh-map}[4][2][1][$x_2x_3$][$x_1$]
+			\minterms{3,5,7}
+			\implicant{5}{7}
+			\implicant{3}{7}
+		\end{karnaugh-map}\\
+		Hieraus ergibt sich \(f(x_1,x_2,x_3) = x_2x_3 + x_1x_3\).\\
+		\subsection*{Ihre Aufgabe} Erstellen Sie mit Hilfe der zuletzt aufgestellten K-Map die vereinfachte Funktion zu der zu Beginn von 1.1 genannten Funktion.
+		\par\bigskip\noindent
+		\tiny{\color{codegray}\textit{W. Oberschelp/G.Vossen} Rechneraufbau und Rechnerstrukturen 10. Auflage (72-75)}
+	\end{worksheet}
+\end{document}
