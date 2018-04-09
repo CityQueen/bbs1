@@ -1,0 +1,68 @@
+\documentclass[11pt,twocolumn,oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{article}
+
+\input{../packages.tex}
+\input{../makros.tex}
+
+\setlength{\columnsep}{3em}
+\setlength{\columnseprule}{0.5pt}
+
+\geometry{left=2.50cm,right=2.50cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+\pagenumbering{gobble}
+\pagestyle{empty}
+
+\begin{document}
+	\begin{worksheet}{HBF IT 17A}{Grundstufe}{Lernbaustein 3 - LB 2: Kurvendiskussion}
+		\section{Grundwissen}
+		Gegeben ist eine ganzrationale Funktion \[f(x) = a_nx^n + a_{n-1}x^{n-1} + \ldots + a_1x + a_0 \] mit \(x\in\mathbb{R}\).\\
+		Um diese Funktion (oder auch \textit{Kurve}) untersuchen zu können, müssen wir auf Informationen aus vergangenen Lernabschnitten aber auch auf neues Wissen zurückgreifen. Nachfolgend werden die entsprechenden Informationen in Kurzform nochmal dargestellt.
+		\subsection*{Symmetrie} \(\cdot\) Eine Funktion heißt \underline{\textbf{achsensymmetrisch}}, wenn gilt: es kommen nur gerade Exponenten in dem Funktionsterm \(f(x)\) vor.\\
+		\tiny{\(a_0\) gilt als Glied mit Geradem Exponenten.}\normalsize\\
+		In diesem Fall bedeutet das außerdem, dass \(f(x) = f(-x)\ \text{für alle zulässigen } x\). Die Funktion nennt man dann auch \underline{gerade}.\\
+		\par\noindent
+		\(\cdot\) Eine Funktion heißt \underline{\textbf{punktsymmetrisch}}, wenn gilt: es kommen nur ungerade Exponenten in dem Funktionsterm \(f(x)\) vor.\\
+		\tiny{Im Funktionsterm gibt es kein \(a_0\).}\normalsize\\
+		In diesem Fall heißt das, dass \(f(x) = -f(x)\ \text{für alle zulässigen } x\). Eine solche Funktion wird auch \underline{ungerade} genannt.\\
+		\par\noindent
+		\(\cdot\) Enthält der Funktionsterm \(f(x)\) sowohl gerade als auch ungerade Exponenten, so ist sie \underline{\textbf{nicht symmetrisch}}.
+		\subsection*{Verhalten für große x-Werte} Um das Verhalten für große x-Werte zu bestimmen, betrachten wir und lediglich den \textit{charakteristischen Summanden}, also den Summanden, mit der höchsten Potenz (\(a_nx^n\)).\\
+		Das Verhalten kann dann wie folgt angegeben werden:
+		\begin{tabular}{|l|L{0.2\textwidth}|L{0.2\textwidth}|}
+			\hline
+			\diagbox{\(a_{n}\)}{n} & gerade & ungerade\\
+			\hline
+			positiv & \shortstack{\(f(x) \xrightarrow{x \rightarrow -\infty}\infty\)\\\(f(x) \xrightarrow{x \rightarrow \infty} \infty\)} & \shortstack{\(f(x) \xrightarrow{x \rightarrow -\infty}-\infty\)\\\(f(x) \xrightarrow{x \rightarrow \infty}\infty\)}\\
+			\hline
+			negativ & \shortstack{\(f(x) \xrightarrow{x \rightarrow -\infty}-\infty\)\\\(f(x) \xrightarrow{x \rightarrow \infty}-\infty\)} & \shortstack{\(f(x) \xrightarrow{x \rightarrow -\infty}\infty\)\\\(f(x) \xrightarrow{x \rightarrow \infty}-\infty\)}\\
+			\hline
+		\end{tabular}
+		\subsection*{Schnittstelle mit der y-Achse} Um den y-Achsenabschnitt zu bestimmen, setzen wir für \(x\) Null (\(0\)) in den Funktionsterm ein. Wir bestimmen also \[f(0) = a_0\]
+		So erhalten wir \(S(0|a_0)\). Ist \(f(0) = a_0 = 0\), so verläuft der Graph durch den Ursprung.
+		\subsection*{Nullstellen} Die Nullstellen sind die Stellen, an denen der Funktionswert Null ist, der Funktionsgraph also die x-Achse schneidet.\\
+		Um die Nullstellen zu bestimmen, setzen wir \[f(x) = 0\]\\
+		Wir merken uns:
+		\begin{itemize}
+			\item \(a_1x + a_0 \Rightarrow\) Null setzen und nach \(x\) umformen (\(a_1x + a_0 = 0 \Rightarrow x = \frac{a_0}{a_1}\))
+			\item  \(a_2x^2 + a_1x + a_0 \Rightarrow\) Anwenden der \textbf{pq-Formel}\\
+			\textbf{Beachte:} \(a_2\) muss den Wert 1 haben (also muss gegebenenfalls \(:a_2\) gerechnet werden).
+			\item \(a_2x^2 + a_0 \Rightarrow\) Null setzen und nach \(x\) umformen (\(a_2x^2 + a_0 = 0 \Rightarrow x = \sqrt{\frac{a_0}{a_2}}\))
+			\item Funktionen mit Grad 3 und Höher \(\Rightarrow\) NST ausprobieren (meist \(-2,-1,0,1,2\)); Dann mit \textbf{Polynomdivision} den Grad reduzieren\\
+			\((a_nx^n + \ldots +a_1x +a_0):(x-NST) = p(x)\)\\
+			NST des Ergebnisses \(p(x)\) bestimmen
+		\end{itemize}
+		\subsection*{Monotonieverhalten} \color{red}Wird noch nachgereicht.\normalcolor
+		\subsection*{Extremstellen} \textit{Notwendige Bedingung} Ist \(x_0\) eine Extremstelle, dann muss \(f'(x) = 0\) sein.\\
+		\textit{1. Hinreichende Bedingung} 
+		\(\circ\) \(f'(x_0)=0\ \text{und}\ f''(x_0) > 0 \rightarrow\ f(x_0)\) ist \underline{lokales} Minimum\\
+		\(\circ\) \(f'(x_0)=0\ \text{und}\ f''(x_0) < 0 \rightarrow\ f(x_0)\) ist \underline{lokales} Maximum\\
+		\par\noindent
+		Wenn \(f'(x_0)=0\ \text{und}\ f''(x_0)=0\), dann verwende nachfolgende Bedingung.\\
+		\par\noindent
+		\textit{2. Hinreichende Bedingung} \(f'(x)\) hat an der Stelle \(x_0\) einen \underline{Vorzeichenwechsel}.\\
+		\(\circ\) Von \(+\ \text{nach}\ - \rightarrow\ f(x_0)\) ist \underline{lokales} Minimum\\
+		\(\circ\) Von \(-\ \text{nach}\ + \rightarrow\ f(x_0)\) ist \underline{lokales} Maximum\\
+		\subsection*{Krümmungsverhalten und Wendestellen} \color{red}Wird nachgereicht\normalcolor
+		\subsection*{Schaubild} Zeichne die Nullstellen, die Extrempunkte und die Wendepunkte in das Koordinatensystem.\\
+		Verbinde die Punkte entsprechen der Information, die du über die Symmetrie, das Randverhalten (Verhalten für große x-Werte), die Monotonie und das Krümmungsverhalten erhalten hast.\\
+		So erhältst du den \underline{ungefähren} Verlauf der Funktion.
+	\end{worksheet}
+\end{document}
