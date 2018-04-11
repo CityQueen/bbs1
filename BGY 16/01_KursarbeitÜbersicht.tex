@@ -7,7 +7,22 @@
 
 \begin{document}
 	\begin{worksheet}{BGY 16}{Mathematik - Lernbereich 3, Algebraisierung}{Übersicht Kursarbeit}
-				
+		
+		\begin{framed}
+			\noindent
+			\tiny{\color{codegray} Vektorgrundlagen}\\
+			\normalcolor\normalsize
+			Wir haben zwei Vektoren \(\vec{a} = \left(\begin{matrix}{c}a_1\\a_2\\a_3\end{matrix}\right)\) und \(\vec{b} = \left(\begin{matrix}{c}b_1\\b_2\\b_3\end{matrix}\right)\) gegeben und erinnern uns an die verschiedenen Operationen, die wir mit diesen Vektoren ausführen können:
+			\begin{itemize}
+				\item[] \textbf{Länge eines Vektors}: \(|\vec{a}| = \sqrt{a_1^2 + a_2^2 + a_3^2}\)
+				\item[] \textbf{Skalarprodukt zweier Vektoren}: \(\vec{a}*\vec{b} = a_1*b_1 + a_2*b_2 + a_3*b_3\)
+				\item[] \textbf{Winkel \(\alpha\) zwischen zwei Vektoren}: Hier ist zu beachten, dass die Formel immer den Winkel \(\alpha < 90^\circ\) angibt. Außerdem müssen beide Vektoren von dem selben Punkt ausgehen.\\
+				z.B. Das Ergebnis für den Winkel zwischen \(\vec{AB}\) und \(\vec{AC}\) wäre sinnvoll, wohingegen der Winkel zwischen \(\vec{AB}\) und \(\vec{CA}\) falsch wäre.\\
+				\[\cos(\gamma) = \frac{\vec{a}*\vec{b}}{|\vec{a}|*|\vec{b}|} = \frac{a_1*b_1 + a_2*b_2 + a_3*b_3}{\sqrt{a_1^2 + a_2^2 + a_3^2}*\sqrt{b_1^2 + b_2^2 + b_3^2}}\]
+				Da wir den Winkel benötigen, muss noch die Umkehrfunktion (\(\arccos\)) angewendet werden.
+				\[\gamma = \arccos{\frac{\vec{a}*\vec{b}}{|\vec{a}|*|\vec{b}|}} = \arccos{\frac{a_1*b_1 + a_2*b_2 + a_3*b_3}{\sqrt{a_1^2 + a_2^2 + a_3^2}*\sqrt{b_1^2 + b_2^2 + b_3^2}}}\]
+			\end{itemize}
+		\end{framed}
 		\begin{framed}
 			\noindent
 			\tiny{\color{codegray}Aufstellen von Geraden}\\
