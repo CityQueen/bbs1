@@ -1,0 +1,116 @@
+\documentclass[11pt,twocolumn,oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{article}
+
+\input{../packages.tex}
+\input{../makros.tex}
+
+\setlength{\columnsep}{3em}
+\setlength{\columnseprule}{0.5pt}
+
+\geometry{left=2.00cm,right=2.00cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+\pagenumbering{gobble}
+\pagestyle{empty}
+
+\begin{document}
+	\begin{worksheet}{BS FI 17}{1. Lehrjahr, LF 4 - Einfache IT-Systeme}{Digitaltechnik - Vereinfachen von Schaltnetzen - KNF}
+		\setcounter{section}{1}
+		\section{Vereinfachen von Schaltnetzen - KNF}
+		In der vergangenen Woche haben wir uns mit der Vereinfachung der \textit{DNF} (also der SOP) auseinandergesetzt. Hierfür haben wir das KV-Diagramm erstellt und die Einsen überdeckt.\\
+		Heute wollen wir uns die \textbf{KNF} (also die POS) anschauen und versuchen diese zu vereinfachen. Das Vorgehen ist ähnlich zur Vereinfachung einer SOP, nur dass wir diesmal nicht die Einsen, sondern die \textbf{\underline{Nullen}} überdecken. Außerdem stellen wir die Terme ein wenig anders auf.\\
+		Aber jetzt erstmal Eins nach dem Anderen.\\
+		\par\noindent
+		Betrachten wir die nachfolgende Funktionstabelle mit drei Eingabevariablen \(x_1, x_2\) und \(x_3\).
+		\begin{center}
+			\begin{tabular}{|c|ccc|c|}
+				\hline
+				\textit{i} & \(x_1\) & \(x_2\) & \(x_3\) & \(f(x_1,x_2,x_3)\)\\
+				\hline
+				0 & 0 & 0 & 0 & 1\\
+				\hline
+				1 & 0 & 0 & 1 & 1\\
+				\hline
+				2 & 0 & 1 & 0 & 1\\
+				\hline
+				3 & 0 & 1 & 1 & 0\\
+				\hline
+				4 & 1 & 0 & 0 & 1\\
+				\hline
+				5 & 1 & 0 & 1 & 0\\
+				\hline
+				6 & 1 & 1 & 0 & 1\\
+				\hline
+				7 & 1 & 1 & 1 & 0\\
+				\hline
+			\end{tabular}
+		\end{center}
+		\subsection*{Ihre Aufgabe} Versuchen Sie die nachfolgende Funktion mit Hilfe der booleschen Algebra zu vereinfachen.
+		\begin{align*}
+			f(x_1,x_2,x_3) = 
+			\!\begin{aligned}[t]
+				& (x_1+ \overline{x_2} + \overline{x_3}) \  (\overline{x_1} + x_2 + \overline{x_3}) \\
+				& \  (\overline{x_1} + \overline{x_2} + \overline{x_3})
+			\end{aligned}
+		\end{align*}\\
+		Ihnen sollte auffallen, dass das nicht so einfach und schnell geht, wie man sich das manchmal wünscht.\\
+		Stellen Sie sich also mal vor, sie haben eine komplexere Funktion. Ganz klar: Es muss ein Verfahren geben um die 
+		
+		\subsection{Überdeckung der Nullen} Betrachten wir also die Funktion\\
+		\begin{align*}
+			f(x_1,x_2,x_3,x_4) = \!\begin{aligned}[t]
+				& (x_1\lor \overline{x_2}\lor x_3\lor x_4)\ \land\\
+				& (x_1\lor \overline{x_2}\lor \overline{x_3}\lor x_4)\ \land\\
+				& (x_1\lor x_2\lor x_3\lor x_4 )\ \land\\
+				& (\overline{x_1}\lor \overline{x_2}\lor \overline{x_3}\lor x_4)\ \land\\
+				& (\overline{x_1}\lor \overline{x_2}\lor x_3\lor x_4)
+			\end{aligned}
+		\end{align*}
+		\begin{framed}
+			\noindent
+			Möchten Sie beispielsweise den Term \((\overline{x_1}\lor \overline{x_2}\lor x_3\lor x_4)\) in die K-Map übertragen, wählen Sie die Zelle aus, deren \textbf{Belegung}, auf den Term angewendet als \textbf{Ausgabe 0} hat.\\
+			In unserem Fall wäre das die Belegung \(\underbrace{1}_{x_1}\ \underbrace{1}_{x_2}\ \underbrace{0}_{x_3}\ \underbrace{0}_{x_4}\).\\
+			\par\noindent
+			Sie würden also in der Zelle \(1100\) den Wert \(0\) eintragen.
+		\end{framed}
+		\subsection*{Ihre Aufgabe} Befüllen Sie die dazugehörige \textbf{K-Map}.\\
+		\small{\textbf{Hinweis}: Beachten Sie, dass Sie diesmal Nullen eintragen.}\normalsize\\
+		\begin{karnaugh-map}[4][4][1][$x_3x_4$][$x_1x_2$]
+			
+		\end{karnaugh-map}\\
+		Erneut ist unser Ziel, die Schaltfunktion zu vereinfachen. Hierfür versuchen wir wieder, so viele \(0\)en wie möglich (aber die Anzahl muss immer einer \underline{2er Potenz} entsprechen) zu überdecken. Dabei sind folgende Überdeckungen zulässig:
+		\begin{itemize}
+			\item[+] zwei nebeneinander/übereinander liegende \(0\)en
+			\item[+] vier zusammenhängende \(0\)en
+			\item[+] zwei bzw. vier über die Außenkanten nebeneinander/übereinander liegende \(0\)en
+			\item[+] zwei oder vier in den Ecken befindliche \(0\)en
+		\end{itemize}
+		\begin{karnaugh-map}[4][4][1][$x_3x_4$][$x_1x_2$]
+			\maxterms{0,1,7,15}
+			\implicant{0}{1}
+			\implicant{7}{15}
+		\end{karnaugh-map}
+		\begin{karnaugh-map}[4][4][1][$x_3x_4$][$x_1x_2$]
+			\maxterms{0,1,4,5,9,11,13,15}
+			\implicant{0}{5}
+			\implicant{13}{11}
+		\end{karnaugh-map}
+		\begin{karnaugh-map}[4][4][1][$x_3x_4$][$x_1x_2$]
+			\maxterms{0,1,2,4,6,8,9}
+			\implicantedge{0}{1}{8}{9}
+			\implicantedge{0}{4}{2}{6}
+		\end{karnaugh-map}
+		\begin{karnaugh-map}[4][4][1][$x_3x_4$][$x_1x_2$]
+			\maxterms{0,2,8,10}
+			\implicantcorner
+		\end{karnaugh-map}
+		\subsection*{Ihre Aufgabe} Versuchen Sie für die zu Beginn dieses Abschnitts aufgestellt \textbf{K-Map} eine entsprechende Überdeckung der \(0\)en zu finden.
+		\newpage
+		\subsection{Vereinfachen mit Hilfe der Überdeckung}
+		Mit Hilfe dieser Überdeckung können wir nun die Schaltfunktion aufstellen. Dabei bestimmen wir für jeden Überdeckungsblock einen Term. Dieser besteht aus der konträren Belegung der Eingabevariablen und verknüpft diese jeweils mit \(\lor\). Die einzelnen Terme verknüpfen wir mit \(\land\) und erhalten so eine boolesche Funktion in \textit{konjuktiver Normalform} (\textbf{KNF})
+		\begin{karnaugh-map}[4][2][1][$x_2x_3$][$x_1$]
+			\maxterms{3,5,7}
+			\implicant{5}{7}
+			\implicant{3}{7}
+		\end{karnaugh-map}\\
+		Hieraus ergibt sich \[f(x_1,x_2,x_3) = (\underbrace{\overline{x_2}\lor\overline{x_3}}_{grün}) \land (\underbrace{\overline{x_1}\land\overline{x_3}}_{rot})\].\\
+		\subsection*{Ihre Aufgabe} Erstellen Sie mit Hilfe der zuletzt aufgestellten K-Map die vereinfachte Funktion zu der zu Beginn von 2.1 genannten Funktion.\\
+	\end{worksheet}
+\end{document}
