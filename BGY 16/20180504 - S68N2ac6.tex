@@ -1,0 +1,85 @@
+\documentclass[oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{scrreprt}
+
+\input{../packages.tex}
+\input{../makros.tex}
+
+\geometry{left=2.50cm,right=2.50cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+
+\begin{document}
+	\begin{worksheet}{BGY 16}{Mathematik - Lernbereich 3, Algebraisierung}{Lösung zur Hausaufgabe S.68 Nr. 2 a-c / Nr. 6}
+				
+		\begin{framed}
+			\noindent
+			\tiny{\color{codegray}\underline{S. 68 Nr. 2 a-c}}\\
+			Gegeben ist die Ebene \(E: \vec{x} = \left(\begin{matrix}3\\0\\2\end{matrix}\right) + r\cdot\left(\begin{matrix}2\\1\\7\end{matrix}\right) + s\cdot\left(\begin{matrix}3\\2\\5\end{matrix}\right)\).\\
+			(a) \(r = 0; s=1\)\\
+			Setzen wir die Werte ein, erhalten wir den Ortsvektor zu einem Punkt auf der Eben \(E\).\\
+			\[\vec{x} = \left(\begin{matrix}3\\0\\2\end{matrix}\right) + 0\cdot\left(\begin{matrix}2\\1\\7\end{matrix}\right) + 1\cdot\left(\begin{matrix}3\\2\\5\end{matrix}\right) = \left(\begin{matrix}6\\2\\7\end{matrix}\right)\]
+			Die dazugehörigen Punktkoordinaten sind \colorbox{green!10}{\underline{\(P(6|2|7)\)}}.\\
+			\par\bigskip\noindent
+			(b) \(r = 1; s=-3\)\\
+			Setzen wir die Werte ein, erhalten wir den Ortsvektor zu einem Punkt auf der Eben \(E\).\\
+			\[\vec{x} = \left(\begin{matrix}3\\0\\2\end{matrix}\right) + 1\cdot\left(\begin{matrix}2\\1\\7\end{matrix}\right) -3\cdot\left(\begin{matrix}3\\2\\5\end{matrix}\right) = \left(\begin{matrix}-4\\-5\\-6\end{matrix}\right)\]
+			Die dazugehörigen Punktkoordinaten sind \colorbox{green!10}{\underline{\(P(-4|-5|-6)\)}}.\\
+			(c) \(r = -2; s=2\)\\
+			Setzen wir die Werte ein, erhalten wir den Ortsvektor zu einem Punkt auf der Eben \(E\).\\
+			\[\vec{x} = \left(\begin{matrix}3\\0\\2\end{matrix}\right) - 2\cdot\left(\begin{matrix}2\\1\\7\end{matrix}\right) + 2\cdot\left(\begin{matrix}3\\2\\5\end{matrix}\right) = \left(\begin{matrix}5\\2\\-2\end{matrix}\right)\]
+			Die dazugehörigen Punktkoordinaten sind \colorbox{green!10}{\underline{\(P(5|2|-2)\)}}.
+		\end{framed}
+	
+		\begin{framed}
+			\noindent
+			\tiny{\color{codegray}\underline{S. 68 Nr. 6}}\\
+			Geben Sie zwei verschiedene Parametergleichungen der Ebene E an, die durch die Punkte A, B und C festgelegt ist.\\
+			\par\bigskip\noindent
+			\begin{framed}
+				\noindent
+				Um zwei verschiedene Parametergleichungen zu erhalten, wählen wir für jede Ebene jeweils einen anderen Stützvektor \(\vec{p}\) bzw. \(\vec{q}\). Mit diesem bestimmen wir die benötigten Spannvektoren \(\vec{u}, \vec{v}\).\\
+				Für die Parametergleichung gilt\\
+				\begin{tabularx}{\textwidth}{X|X}
+					\(E_1: \vec{x} = \vec{p} + r*\vec{u_1} + s*\vec{v_1}\) & \(E_2: \vec{x} = \vec{q} + r*\vec{u_2} + s*\vec{v_2}\)
+				\end{tabularx}
+			\end{framed}
+			\noindent
+			(a) \(A(2|0|3), B(1|-1|5), C(3|-2|0)\)\\
+			\begin{tabularx}{\textwidth}{X|X}
+				\(\vec{p} = \vec{0A} = \left(\begin{matrix}2\\0\\3\end{matrix}\right), \vec{u_1} = \vec{AB} = \left(\begin{matrix}-1\\-1\\2\end{matrix}\right), \vec{v_1} = \vec{AC} = \left(\begin{matrix}1\\-2\\-3\end{matrix}\right)\) & \(\vec{q} = \vec{0B} =  \left(\begin{matrix}1\\-1\\5\end{matrix}\right), \vec{u_2} = \vec{BA} = \left(\begin{matrix}1\\1\\-2\end{matrix}\right), \vec{v_2} = \vec{BC} = \left(\begin{matrix}2\\-1\\-5\end{matrix}\right)\)\\
+			\end{tabularx}
+			So ergeben sich dann die beiden Parametergleichungen\\
+			\par\noindent
+			\begin{tabularx}{\textwidth}{X|X}
+				\colorbox{green!10}{\(E_1: \vec{x} = \left(\begin{matrix}2\\0\\3\end{matrix}\right) + r*\left(\begin{matrix}-1\\-1\\2\end{matrix}\right) +s*\left(\begin{matrix}1\\-2\\-3\end{matrix}\right)\)} & \colorbox{green!10}{\(E_2: \vec{x} =  \left(\begin{matrix}1\\-1\\5\end{matrix}\right) + r*\left(\begin{matrix}1\\1\\-2\end{matrix}\right) + s*\left(\begin{matrix}2\\-1\\-5\end{matrix}\right)\)}\\
+			\end{tabularx}
+			\par\bigskip\noindent
+			(b) \(A(0|0|0), B(2|1|5), C(-3|1|-3)\)\\
+			\begin{tabularx}{\textwidth}{X|X}
+				\(\vec{p} = \vec{0A} = \left(\begin{matrix}0\\0\\0\end{matrix}\right), \vec{u_1} = \vec{AB} = \left(\begin{matrix}2\\1\\5\end{matrix}\right), \vec{v_1} = \vec{AC} = \left(\begin{matrix}-3\\1\\-3\end{matrix}\right)\) & \(\vec{q} = \vec{0B} =  \left(\begin{matrix}2\\1\\5\end{matrix}\right), \vec{u_2} = \vec{BA} = \left(\begin{matrix}-2\\-1\\-5\end{matrix}\right), \vec{v_2} = \vec{BC} = \left(\begin{matrix}-5\\0\\-8\end{matrix}\right)\)\\
+			\end{tabularx}
+			So ergeben sich dann die beiden Parametergleichungen\\
+			\par\noindent
+			\begin{tabularx}{\textwidth}{X|X}
+				\colorbox{green!10}{\(E_1: \vec{x} = \left(\begin{matrix}0\\0\\0\end{matrix}\right) + r*\left(\begin{matrix}2\\1\\5\end{matrix}\right) +s*\left(\begin{matrix}-3\\1\\-3\end{matrix}\right)\)} & \colorbox{green!10}{\(E_2: \vec{x} =  \left(\begin{matrix}2\\1\\5\end{matrix}\right) + r*\left(\begin{matrix}-2\\-1\\-5\end{matrix}\right) + s*\left(\begin{matrix}-5\\0\\-8\end{matrix}\right)\)}\\
+			\end{tabularx}
+			\par\bigskip\noindent
+			(c) \(A(1|1|1), B(2|2|2), C(-2|3|5)\)\\
+			\begin{tabularx}{\textwidth}{X|X}
+				\(\vec{p} = \vec{0A} = \left(\begin{matrix}1\\1\\1\end{matrix}\right), \vec{u_1} = \vec{AB} = \left(\begin{matrix}1\\1\\1\end{matrix}\right), \vec{v_1} = \vec{AC} = \left(\begin{matrix}-3\\2\\4\end{matrix}\right)\) & \(\vec{q} = \vec{0B} =  \left(\begin{matrix}2\\2\\2\end{matrix}\right), \vec{u_2} = \vec{BA} = \left(\begin{matrix}-1\\-1\\-1\end{matrix}\right), \vec{v_2} = \vec{BC} = \left(\begin{matrix}-4\\1\\3\end{matrix}\right)\)\\
+			\end{tabularx}
+			So ergeben sich dann die beiden Parametergleichungen\\
+			\par\noindent
+			\begin{tabularx}{\textwidth}{X|X}
+				\colorbox{green!10}{\(E_1: \vec{x} = \left(\begin{matrix}1\\1\\1\end{matrix}\right) + r*\left(\begin{matrix}1\\1\\1\end{matrix}\right) +s*\left(\begin{matrix}-3\\2\\4\end{matrix}\right)\)} & \colorbox{green!10}{\(E_2: \vec{x} =  \left(\begin{matrix}2\\2\\2\end{matrix}\right) + r*\left(\begin{matrix}-1\\-1\\-1\end{matrix}\right) + s*\left(\begin{matrix}-4\\1\\3\end{matrix}\right)\)}\\
+			\end{tabularx}
+			\par\bigskip\noindent
+			(c) \(A(2|5|7), B(7|5|2), C(1|2|3)\)\\
+			\begin{tabularx}{\textwidth}{X|X}
+				\(\vec{p} = \vec{0A} = \left(\begin{matrix}2\\5\\7\end{matrix}\right), \vec{u_1} = \vec{AB} = \left(\begin{matrix}5\\0\\-5\end{matrix}\right), \vec{v_1} = \vec{AC} = \left(\begin{matrix}-1\\-3\\-4\end{matrix}\right)\) & \(\vec{q} = \vec{0B} =  \left(\begin{matrix}7\\5\\2\end{matrix}\right), \vec{u_2} = \vec{BA} = \left(\begin{matrix}-5\\0\\5\end{matrix}\right), \vec{v_2} = \vec{BC} = \left(\begin{matrix}-6\\-3\\1\end{matrix}\right)\)\\
+			\end{tabularx}
+			So ergeben sich dann die beiden Parametergleichungen\\
+			\par\noindent
+			\begin{tabularx}{\textwidth}{X|X}
+				\colorbox{green!10}{\(E_1: \vec{x} = \left(\begin{matrix}2\\5\\7\end{matrix}\right) + r*\left(\begin{matrix}5\\0\\-5\end{matrix}\right) +s*\left(\begin{matrix}-1\\-3\\-4\end{matrix}\right)\)} & \colorbox{green!10}{\(E_2: \vec{x} =  \left(\begin{matrix}7\\5\\2\end{matrix}\right) + r*\left(\begin{matrix}-5\\0\\5\end{matrix}\right) + s*\left(\begin{matrix}-6\\-3\\1\end{matrix}\right)\)}\\
+			\end{tabularx}
+		\end{framed}
+	\end{worksheet}
+\end{document}
