@@ -16,24 +16,53 @@
 			\begin{tabularx}{\textwidth}{lX}
 				(a) & \(r=2; s= -1\)\\
 				& \(\vec{x} = \left(\begin{array}{c}2\\1\\-3\end{array}\right) + 2*\left(\begin{array}{c}5\\2\\1\end{array}\right) -\left(\begin{array}{c}-2\\-1\\3\end{array}\right) = \left(\begin{array}{c}14\\6\\-4\end{array}\right)\)\\
+				\multicolumn{2}{l}{Der zugehörige Punkt ist \(P(14|6|-4)\).}\\
 				(b)& \(r=-2; s=2\)\\
 				& \(\vec{x} = \left(\begin{array}{c}2\\1\\-3\end{array}\right) - 2*\left(\begin{array}{c}5\\2\\1\end{array}\right) +2\left(\begin{array}{c}-2\\-1\\3\end{array}\right) = \left(\begin{array}{c}-12\\-5\\1\end{array}\right)\)\\
+				\multicolumn{2}{l}{Der zugehörige Punkt ist \(P(-12|-5|1)\).}\\
 			\end{tabularx}
 			\par\noindent
 			\hdashrule[0.5ex][x]{\textwidth}{0.2mm}{8mm 2pt}\\
 			\par\noindent
-			Geben Sie zwei verschiedene Parametegleichungen der Ebene E an, die durch die drei Punkte festgelegt ist.
+			Geben Sie zwei verschiedene Parametergleichungen der Ebene E an, die durch die drei Punkte festgelegt ist.\\
 			\begin{tabularx}{\textwidth}{lX}
-				(a) & \(A(2|0|3); B(1|-1|5);C(3|2|0)\)\\
-				& \(\vec{0A} = \left(\begin{array}{c}2\\0\\3\end{array}\right)\) ist \textbf{Stützvektor}.\\
-				& \(\vec{AB} = \vec{B} - \vec{A} = \left(\begin{array}{c}1\\-1\\5\end{array}\right) - \left(\begin{array}{c}2\\0\\3\end{array}\right) = \left(\begin{array}{c}-1\\-1\\2\end{array}\right)\)\\
-				und & \(\vec{AC} = \vec{C} - \vec{A} = \left(\begin{array}{c}3\\2\\0\end{array}\right) - \left(\begin{array}{c}2\\0\\3\end{array}\right) = \left(\begin{array}{c}1\\2\\-3\end{array}\right)\) sind \textbf{Spannvektoren}.\\
 				\hline
 				& Die Parameterform der Ebene hat folgende Form: \(E: \vec{x} = \vec{p} + r\vec{u} + s\vec{v}\)\\
-				\hline\\
-				& So ergibt sich:\\
-				& \(E: \vec{x} = \left(\begin{array}{c}2\\0\\3\end{array}\right) + r\left(\begin{array}{c}-1\\-1\\2\end{array}\right) + s\left(\begin{array}{c}1\\2\\-3\end{array}\right)\)
+				\hline
+			\end{tabularx}	
+			(a) \(A(2|1|0); B(5|5|-1); C(-4|-7|2)\)\\
+			\begin{tabularx}{\textwidth}{X|X}
+				\(\vec{p} = \vec{0A} = \left(\begin{matrix}2\\1\\0\end{matrix}\right), \vec{u_1} = \vec{AB} = \left(\begin{matrix}3\\4\\-1\end{matrix}\right)\) & \(\vec{q} = \vec{0B} =  \left(\begin{matrix}5\\5\\-1\end{matrix}\right), \vec{u_2} = \vec{BA} = \left(\begin{matrix}-3\\-4\\1\end{matrix}\right)\)\\
+				\(\vec{v_1} = \vec{AC} = \left(\begin{matrix}-6\\-8\\2\end{matrix}\right)\) & \(\vec{v_2} = \vec{BC} = \left(\begin{matrix}-9\\-12\\3\end{matrix}\right)\)\\
+			\end{tabularx}\\
+			So ergeben sich dann die beiden Parametergleichungen\\
+			\par\noindent
+			\begin{tabularx}{\textwidth}{X|X}
+				\colorbox{green!10}{\(E_1: \vec{x} = \left(\begin{matrix}2\\1\\0\end{matrix}\right) + r*\left(\begin{matrix}3\\4\\-1\end{matrix}\right) +s*\left(\begin{matrix}-6\\-8\\2\end{matrix}\right)\)} & \colorbox{green!10}{\(E_2: \vec{x} =  \left(\begin{matrix}5\\5\\-1\end{matrix}\right) + r*\left(\begin{matrix}-3\\-4\\1\end{matrix}\right) + s*\left(\begin{matrix}-9\\-12\\3\end{matrix}\right)\)}\\
 			\end{tabularx}
+			\newpage\noindent
+			(b) \(A(8|1|-3); B(-11|4|3); C(6|-1|0)\)\\
+			\begin{tabularx}{\textwidth}{X|X}
+				\(\vec{p} = \vec{0A} = \left(\begin{matrix}8\\1\\-3\end{matrix}\right), \vec{u_1} = \vec{AB} = \left(\begin{matrix}-19\\3\\6\end{matrix}\right)\) & \(\vec{q} = \vec{0B} =  \left(\begin{matrix}-11\\4\\3\end{matrix}\right), \vec{u_2} = \vec{BA} = \left(\begin{matrix}19\\-3\\-6\end{matrix}\right)\)\\
+				\(\vec{v_1} = \vec{AC} = \left(\begin{matrix}-2\\-2\\3\end{matrix}\right)\) & \(\vec{v_2} = \vec{BC} = \left(\begin{matrix}17\\-5\\-3\end{matrix}\right)\)\\
+			\end{tabularx}\\
+			So ergeben sich dann die beiden Parametergleichungen\\
+			\par\noindent
+			\begin{tabularx}{\textwidth}{X|X}
+				\colorbox{green!10}{\(E_1: \vec{x} = \left(\begin{matrix}8\\1\\-3\end{matrix}\right) + r*\left(\begin{matrix}-19\\3\\6\end{matrix}\right) +s*\left(\begin{matrix}-2\\-2\\3\end{matrix}\right)\)} & \colorbox{green!10}{\(E_2: \vec{x} =  \left(\begin{matrix}-11\\4\\3\end{matrix}\right) + r*\left(\begin{matrix}19\\-3\\-6\end{matrix}\right) + s*\left(\begin{matrix}17\\-5\\-3\end{matrix}\right)\)}\\
+			\end{tabularx}
+			\par\bigskip\noindent
+			(c) \(A(2|4|7); B(13|25|8); C(6|7|-13)\)\\
+			\begin{tabularx}{\textwidth}{X|X}
+				\(\vec{p} = \vec{0A} = \left(\begin{matrix}2\\4\\7\end{matrix}\right), \vec{u_1} = \vec{AB} = \left(\begin{matrix}11\\21\\1\end{matrix}\right), \) & \(\vec{q} = \vec{0B} =  \left(\begin{matrix}13\\25\\8\end{matrix}\right), \vec{u_2} = \vec{BA} = \left(\begin{matrix}-11\\-21\\-1\end{matrix}\right), \)\\
+				\(\vec{v_1} = \vec{AC} = \left(\begin{matrix}4\\3\\-20\end{matrix}\right)\) & \(\vec{v_2} = \vec{BC} = \left(\begin{matrix}-7\\-18\\-21\end{matrix}\right)\)\\
+			\end{tabularx}\\
+			So ergeben sich dann die beiden Parametergleichungen\\
+			\par\noindent
+			\begin{tabularx}{\textwidth}{X|X}
+				\colorbox{green!10}{\(E_1: \vec{x} = \left(\begin{matrix}2\\4\\7\end{matrix}\right) + r*\left(\begin{matrix}11\\21\\1\end{matrix}\right) +s*\left(\begin{matrix}4\\3\\-20\end{matrix}\right)\)} & \colorbox{green!10}{\(E_2: \vec{x} =  \left(\begin{matrix}13\\25\\8\end{matrix}\right) + r*\left(\begin{matrix}-11\\-21\\-1\end{matrix}\right) + s*\left(\begin{matrix}-7\\-18\\-21\end{matrix}\right)\)}\\
+			\end{tabularx}
+			\par\bigskip\noindent
 		\end{framed}
 	\end{worksheet}
 \end{document}
