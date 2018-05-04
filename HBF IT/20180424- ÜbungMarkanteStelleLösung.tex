@@ -22,7 +22,7 @@
 			\end{itemize}
 			Um die zugehörigen Punkte zu berechnen, wird die Stelle in die Ausgangsfunktion eingesetzt:
 			\begin{itemize}
-				\item[-] \(f(x_{NST})\) gibt die Koordinaten der Nullstellen
+				\item[-] \(f(x_{\tiny{NST}})\) gibt die Koordinaten der Nullstellen
 				\item[-] \(f(x_{E})\) gibt die Koordinaten der Extrempunkte
 				\item[-] \(f(x_{W})\) gibt die Koordinaten der Wendepunkte
 			\end{itemize}
@@ -34,12 +34,272 @@
 			\begin{itemize}
 				\item[(a)] \(f(x) = -\frac{1}{20}x^3 +15x\)
 				\item[(b)] \(f(x) = \frac{1}{9}x^3 -\frac{1}{6}x^2 -2x\)
-				\item[(c)] \(f(x) = x^3-6x^2+9\)
+				\item[(c)] \(f(x) = x^3-6x^2+9x\)
 				\item[(d)] \(f(x) = x^3+4x^2-11x-30\)
 				\item[(e)] \(f(x) = -x^4 +24x^2 - 80\)
 				\item[(f)] \(f(x) = \frac{1}{8}x^4 -x^2 +2\)
 			\end{itemize}
-			\hdashrule[0.5ex][x]{\textwidth}{0.1mm}{8mm 2pt}\\
+		\end{framed}
+		\newpage
+		\begin{framed}
+			\noindent
+			\textbf{(a)} \(\mathbf{f(x) = -\frac{1}{20}x^3 +15x}\)\\
+			\(\Rightarrow f'(x) = -\frac{3}{20}x^2 +15\)\\
+			\(\Rightarrow f''(x) = -\frac{6}{20}x\)\\
+			\par\bigskip\noindent
+			\begin{tabularx}{\textwidth}{lXXl}
+				(1) & Nullstellen & \(\Rightarrow f(x) = 0\)\\
+				 \hline\\
+				 & \(-\frac{1}{20}x^3 +15x = 0\) & \(\Rightarrow x\) ausklammern\\
+				 & \( x(-\frac{1}{20}x^2 +15) = 0\) & \(\Leftrightarrow\) \colorbox{green!10}{\(x_1 = 0\)} oder \(-\frac{1}{20}x^2 +15 = 0\)\\
+				 & & \(-\frac{1}{20}x^2 +15 = 0\) & |\(+\frac{1}{20}x^2\)\\
+				 & & \(15 = \frac{1}{20}x^2\) & |\(\cdot20\)\\
+				 & & \(300 = x^2\) & |\(\sqrt{}\)\\
+				 & & \colorbox{green!10}{\(x_2 \sim 17,32\)} und \colorbox{green!10}{\(x_3 = -17,32\)}\\
+				 \\
+				 \multicolumn{4}{l}{Nullstellen: \colorbox{blue!5}{\(N_1(-17,32|0), N_2(0|0)\)} und \colorbox{blue!5}{\(N_3(17,32|0)\)}}\\
+				 \hline\hline\\
+				 (2) & Extremstellen & \(\Rightarrow f'(x) = 0\)\\
+				 \hline\\
+				 & \(-\frac{3}{20}x^2 +15 = 0\) & |\(+ \frac{3}{20}x^2\)\\
+				 & \(15 = \frac{3}{20}x^2\) & |\(\cdot20\)\\
+				 & \(300 = 3x^2\) & |\(:3\)\\
+				 & \(100 = x^2\) & |\(\sqrt{}\)\\
+				 & \colorbox{green!10}{\(x_4 = 10\)} und \colorbox{green!10}{\(x_5 = -10\)}\\
+				 \\
+				 (3) & Art der Extremstelle bestimmen & \(\Rightarrow f''(x_4)\) und \(f''(x_5)\)\\
+				 \hline\\				 
+				 & \(f''(10) = -\frac{6}{20}*10 = -\frac{60}{20} < 0\) & \(\Rightarrow\) \colorbox{green!10}{\(x_4\) ist HOP}\\
+				 & \(f''(-10) = -\frac{6}{20}*(-10) = \frac{60}{20} > 0\) & \(\Rightarrow\) \colorbox{green!10}{\(x_5\) ist TIP}\\
+			\end{tabularx}
+			\begin{tabularx}{\textwidth}{ll}
+				& Die dazugehörigen Punkte bestimmt man mit \(f(x_4)\) bzw. \(f(x_5)\).\\
+				& \(f(x_4) = -\frac{1}{20}*10^3 +15*10 = 100\)\\
+				& \(f(x_5) = -\frac{1}{20}*(-10)^3 +15*(-10) = -100\)\\
+				\multicolumn{2}{l}{So ergeben sich \colorbox{blue!5}{\(T(-10|-100)\)} und \colorbox{blue!5}{\(H(10|100)\)}}\\
+				\hline\hline
+			\end{tabularx}
+			\begin{tabularx}{\textwidth}{lXXl}
+				\\
+				(4) & Wendestellen & \(\Rightarrow f''(x) = 0\)\\
+				\hline\\
+				& \(-\frac{6}{20}x = 0\) & |\(\cdot20\)\\
+				& \(-6x = 0\) & |\(:(6)\)\\
+				& \(\Rightarrow\) \colorbox{green!10}{\(x_6 = 0\)}\\
+			\end{tabularx}
+			\begin{tabularx}{\textwidth}{ll}
+				& Den dazugehörigen Punkt bestimmt man mit \(f(x_6)\).\\
+				& \(f(x_6) = -\frac{1}{20}*0^3 +15*0 = 0\)\\
+				\multicolumn{2}{l}{So ergibt sich \colorbox{blue!5}{\(W(0|0)\)}}\\
+				\hline\hline
+			\end{tabularx}
+			\begin{tabularx}{\textwidth}{lXX}
+				(5) & Verhalten für große x-Werte\\
+				\hline\\
+				& Betrachte dafür: \(-\frac{1}{20}x^3\)\\
+				& \colorbox{green!10}{\(-\frac{1}{20}x^3\xrightarrow{x\rightarrow-\infty}\infty\)} & \colorbox{green!10}{\(-\frac{1}{20}x^3\xrightarrow{x\rightarrow\infty}-\infty\)}\\
+			\end{tabularx}
+			\\
+			Der Funktionsgraph sieht wie folgt aus:\\
+			\par
+			\includegraphics[scale=0.5]{Bilder/HAa.png}
+		\end{framed}
+		\newpage
+		\begin{framed}
+			\noindent
+			\textbf{(b)} \(\mathbf{f(x) = \frac{1}{9}x^3 -\frac{1}{6}x^2 -2x}\)\\
+			\(\Rightarrow f'(x) = \frac{3}{9}x^2 -\frac{2}{6}x -2\)\\
+			\(\Rightarrow f''(x) = \frac{6}{9}x - \frac{2}{6}\)\\
+			\par\noindent
+			\begin{tabularx}{\textwidth}{lXXl}
+				(1) & Nullstellen & \(\Rightarrow f(x) = 0\)\\
+				\hline\\
+				& \(\frac{1}{9}x^3 -\frac{1}{6}x^2 -2x = 0\) & \(\Rightarrow x\) ausklammern\\
+				& \( x(\frac{1}{9}x^2 -\frac{1}{6}x -2) = 0\) & \(\Leftrightarrow\) \colorbox{green!10}{\(x_1 = 0\)} oder \(\frac{1}{9}x^2 -\frac{1}{6}x -2 = 0\)\\
+				& & \(\frac{1}{9}x^2 -\frac{1}{6}x -2 = 0\) & |\(\cdot9\)\\
+				& & \(x^2 \underbrace{-\frac{9}{6}}_{p}x \underbrace{-18}_{q} = 0\) & |pq-Formel\\
+				& & \(x_{2,3} = -\frac{-\frac{9}{6}}{2} \pm \sqrt{\left(\frac{-\frac{9}{6}}{2}\right)^2 +18}\) & |\(x_2,x_3\) bestimmen\\
+				& & \multicolumn{2}{l}{\colorbox{green!10}{\(x_2\)} \(= -\frac{-\frac{9}{6}}{2} + \sqrt{\left(\frac{-\frac{9}{6}}{2}\right)^2 +18}\) \colorbox{green!10}{\(= 5,06\)}}\\
+				& & \multicolumn{2}{l}{und \colorbox{green!10}{\(x_3\)} \(= -\frac{-\frac{9}{6}}{2} - \sqrt{\left(\frac{-\frac{9}{6}}{2}\right)^2 +18}\) \colorbox{green!10}{\(=-3,56\)}}\\
+				\multicolumn{4}{l}{Nullstellen: \colorbox{blue!5}{\(N_1(-3,56|0), N_2(0|0)\)} und \colorbox{blue!5}{\(N_3(5,06|0)\)}}\\
+				\hline\hline\\
+			\end{tabularx}
+			\begin{tabularx}{\textwidth}{lXXl}
+				(2) & Extremstellen & \(\Rightarrow f'(x) = 0\)\\
+				\hline\\
+				& \(\frac{3}{9}x^2 -\frac{2}{6}x -2 = 0\) & |\(\cdot 9\)\\
+				& \(3x^2 -\frac{18}{6}x -18 = 0\) & |\(:3\)\\
+			\end{tabularx}
+			\begin{tabularx}{\textwidth}{lXXl}
+				& \(x^2 \underbrace{-1}_{p}x \underbrace{-6}_{q} = 0\) & |pq-Formel\\
+				& \(x_{4,5} = -\frac{-1}{2} \pm \sqrt{\left(\frac{-1}{2}\right)^2 + 6}\)\\
+				& \multicolumn{2}{l}{\colorbox{green!10}{\(x_4\)} \(= -\frac{-1}{2} + \sqrt{\left(\frac{-1}{2}\right)^2 + 6}\) \colorbox{green!10}{\(= -2\)}}\\
+				& \multicolumn{2}{l}{und \colorbox{green!10}{\(x_5\)} \(= -\frac{-1}{2} - \sqrt{\left(\frac{-1}{2}\right)^2 + 6}\) \colorbox{green!10}{\(= 3\)}}\\
+				\\
+				(3) & Art der Extremstelle bestimmen & \(\Rightarrow f''(x_4)\) und \(f''(x_5)\)\\
+				\hline\\				 
+				& \(f''(-2) = \frac{6}{9}*(-2) - \frac{2}{6} = -\frac{5}{3}< 0\) & \(\Rightarrow\) \colorbox{green!10}{\(x_4\) ist HOP}\\
+				& \(f''(3) = \frac{6}{9}*3 - \frac{2}{6} = \frac{5}{3} > 0\) & \(\Rightarrow\) \colorbox{green!10}{\(x_5\) ist TIP}\\
+			\end{tabularx}
+			\begin{tabularx}{\textwidth}{ll}
+				& Die dazugehörigen Punkte bestimmt man mit \(f(x_4)\) bzw. \(f(x_5)\).\\
+				& \(f(x_4) = \frac{1}{9}*(-2)^3 -\frac{1}{6}*(-2)^2 -2*(-2) = \frac{22}{9}\)\\
+				& \(f(x_5) = \frac{1}{9}*3^3 -\frac{1}{6}*3^2 -2*3 = -4,5\)\\
+			\end{tabularx}
+			\begin{tabularx}{\textwidth}{ll}
+				\multicolumn{2}{l}{So ergeben sich \colorbox{blue!5}{\(T(3|-4,5)\)} und \colorbox{blue!5}{\(H(-2|\frac{22}{9})\)}}\\
+			\end{tabularx}
+			\begin{tabularx}{\textwidth}{lXXl}
+				\hline\hline\\
+				(4) & Wendestellen & \(\Rightarrow f''(x) = 0\)\\
+				\hline\\
+				& \(\frac{6}{9}x - \frac{2}{6} = 0\) & |\(+\frac{2}{6}\)\\
+				& \(\frac{6}{9}x = \frac{2}{6}\) & |\(\cdot9\)\\
+				& \(6x = \frac{18}{6}\) & |\(:6\)\\
+				& \(x = \frac{18}{36} = \frac{1}{2}\) & \(\Rightarrow\) \colorbox{green!10}{\(x_6 = \frac{1}{2}\)}\\
+				& Den dazugehörigen Punkt bestimmt man mit \(f(x_6)\).\\
+				& \(f(x_6) = \frac{1}{9}*\frac{1}{2}^3 -\frac{1}{6}*\frac{1}{2}^2 -2*\frac{1}{2} = 1\)\\
+				\multicolumn{2}{l}{So ergibt sich \colorbox{blue!5}{\(W(\frac{3}{4}|-1)\)}.}\\
+				\hline\hline\\
+				(5) & Verhalten für große x-Werte\\
+				\hline\\
+				& Betrachte dafür: \(\frac{1}{9}x^3\)\\
+				& \colorbox{green!10}{\(\frac{1}{9}x^3\xrightarrow{x\rightarrow-\infty}-\infty\)} & \colorbox{green!10}{\(\frac{1}{9}x^3\xrightarrow{x\rightarrow\infty}\infty\)}\\
+				\hline\hline\\
+			\end{tabularx}\\
+			\par\noindent
+			Der Funktionsgraph sieht wie folgt aus:\\
+			\par
+			\includegraphics[scale=0.4]{Bilder/HAb.png}
+		\end{framed}
+		\newpage
+		\begin{framed}
+			\noindent
+			\textbf{(c)} \(\mathbf{f(x) = x^3 -6x^2 +9x}\)\\
+			\(\Rightarrow f'(x) = 3x^2 -12x+9\)\\
+			\(\Rightarrow f''(x) = 6x -12\)\\
+			\par\noindent
+			\begin{tabularx}{\textwidth}{lXXl}
+				(1) & Nullstellen & \(\Rightarrow f(x) = 0\)\\
+				\hline\\
+				& \(x^3 -6x^2 + 9x = 0\) & \(\Rightarrow x\) ausklammern\\
+				& \(x(x^2 -6x +9) = 0\) & \(\Leftrightarrow\) \colorbox{green!10}{\(x_1 = 0\)} oder \(x^2 -6x+9 = 0\)\\
+				\cline{1-2}\\
+				& \(x^2 \underbrace{-6}_{p}x +\underbrace{9}_{q} = 0\) & |pq-Formel\\
+				& & \(x_{2,3} = -\frac{-6}{2} \pm \sqrt{\left(\frac{-6}{2}\right)^2 -9}\) & |\(x_2,x_3\) bestimmen\\
+				& & \multicolumn{2}{l}{\colorbox{green!10}{\(x_2\)} \(= -\frac{-6}{2} + \sqrt{\left(\frac{-6}{2}\right)^2 -9}\) \colorbox{green!10}{\(= 3\)}}\\
+				& & \multicolumn{2}{l}{und \colorbox{green!10}{\(x_3\)} \(= -\frac{-6}{2} - \sqrt{\left(\frac{-6}{2}\right)^2 -9}\) \colorbox{green!10}{\(=3\)}}\\
+				\multicolumn{4}{l}{Nullstellen: \colorbox{blue!5}{\(N_1(0|0)\)} und \colorbox{blue!5}{\(N_2(3|0)\)}}\\
+				\hline\hline\\
+			\end{tabularx}
+			\begin{tabularx}{\textwidth}{lXXl}
+				(2) & Extremstellen & \(\Rightarrow f'(x) = 0\)\\
+				\hline\\
+				& \(3x^2 -12x+9 = 0\) & |\(:3\)\\
+				& \(x^2 \underbrace{-4}_{p}x +\underbrace{3}_{q} = 0\) & |pq-Formel\\
+				& & \(x_{3,4} = -\frac{-4}{2} \pm \sqrt{\left(\frac{-4}{2}\right)^2 -3}\) & |\(x_3,x_4\) bestimmen\\
+				& & \multicolumn{2}{l}{\colorbox{green!10}{\(x_3\)} \(= -\frac{-4}{2} + \sqrt{\left(\frac{-4}{2}\right)^2 -3}\) \colorbox{green!10}{\(= 3\)}}\\
+				& & \multicolumn{2}{l}{und \colorbox{green!10}{\(x_4\)} \(= -\frac{-4}{2} \pm \sqrt{\left(\frac{-4}{2}\right)^2 -3}\) \colorbox{green!10}{\(= 1\)}}\\
+				\\
+				(3) & Art der Extremstelle bestimmen & \(\Rightarrow f''(x_3)\) und \(f''(x_4)\)\\
+				\hline\\				 
+				& \(f''(3) =  6*3 -12 = 6 > 0\) & \(\Rightarrow\) \colorbox{green!10}{\(x_3\) ist TIP}\\
+				& \(f''(1) = 6*1 -12 = -6 < 0\) & \(\Rightarrow\) \colorbox{green!10}{\(x_5\) ist HOP}\\
+				& \multicolumn{3}{l}{Die dazugehörigen Punkte bestimmt man mit \(f(x_3)\) bzw. \(f(x_4)\).}\\
+				& \multicolumn{2}{l}{\(f(x_3) = 3^3 -6*3^2 +9*3 = 0\)}\\
+				& \multicolumn{2}{l}{\(f(x_4) = 1^3 -6*1^2 +9*1 = 4\)}\\
+			\end{tabularx}
+			\begin{tabularx}{\textwidth}{lXXl}
+				\multicolumn{2}{l}{So ergeben sich \colorbox{blue!5}{\(T(3|0) = N_2(3|0)\)} und \colorbox{blue!5}{\(H(1|4)\)}}\\
+				\hline\hline\\
+				(4) & Wendestellen & \(\Rightarrow f''(x) = 0\)\\
+				\hline\\
+				& \(6x -12 = 0\) & |\(+12\)\\
+				& \(6x = 12\) & |\(:2\)\\
+				& \(x = 2\) & \(\Rightarrow\) \colorbox{green!10}{\(x_5 = 2\)}\\
+				& Den dazugehörigen Punkt bestimmt man mit \(f(x_5)\).\\
+				& \(f(x_5) = 2^3 -6*2^2 +9*2 = 2\)\\
+				\multicolumn{2}{l}{So ergibt sich \colorbox{blue!5}{\(W(2|2)\)}.}\\
+				\hline\hline\\
+				(5) & Verhalten für große x-Werte\\
+				\hline\\
+				& Betrachte dafür: \(x^3\)\\
+				& \colorbox{green!10}{\(x^3\xrightarrow{x\rightarrow-\infty}-\infty\)} & \colorbox{green!10}{\(x^3\xrightarrow{x\rightarrow\infty}\infty\)}\\
+				\hline\hline\\
+			\end{tabularx}\\
+			\par\noindent
+			Der Funktionsgraph sieht wie folgt aus:\\
+			\par
+			\includegraphics[scale=0.4]{Bilder/HAc.png}
+		\end{framed}
+		\newpage
+		\begin{framed}
+			\noindent
+			\textbf{(d)} \(\mathbf{f(x) = x^3 +4x^2-11x-30}\)\\
+			\(\Rightarrow f'(x) = 3x^2 +8x-11\)\\
+			\(\Rightarrow f''(x) = 6x +8\)\\
+			\par\noindent
+			\begin{tabularx}{\textwidth}{lXXl}
+				(1) & Nullstellen & \(\Rightarrow f(x) = 0\)\\
+				\hline\\
+				& \(x^3 +4x^2-11x-30 = 0\) & Nullstelle raten \colorbox{green!10}{\(x_1 = -2\)}\\
+				& \(f(-2) = (-2)^3 +4*(-2)^2-11*(-2)-30 = 0\)\\
+				& Polynomdivision \(f(x):\underbrace{(x+2)}_{(x-NST)}\)\\
+			\end{tabularx}
+			\polyset{style=C, div=:,vars=x}
+			\polylongdiv{x^3+4x^2-11x-30}{x+2}\\
+			\begin{tabularx}{\textwidth}{lXXl}
+				& \multicolumn{3}{l}{\(f(x) = x^3 +4x^2-11x-30 = (x+2)*(x^2+2x-15) = 0\)}\\
+				& & \multicolumn{2}{l}{\(\Leftrightarrow\) \colorbox{green!10}{\(\underbrace{x+2=0}_{x_1=-2}\)} oder \(x^2 +2x-15 = 0\)}\\
+				\cline{1-2}\\
+				& \(x^2 +\underbrace{2}_{p}x \underbrace{-15}_{q} = 0\) & |pq-Formel\\
+				& & \(x_{2,3} = -\frac{2}{2} \pm \sqrt{\left(\frac{2}{2}\right)^2 +15}\) & |\(x_2,x_3\) bestimmen\\
+				& & \multicolumn{2}{l}{\colorbox{green!10}{\(x_2\)} \(= -\frac{2}{2} + \sqrt{\left(\frac{2}{2}\right)^2 +15}\) \colorbox{green!10}{\(= 3\)}}\\
+				& & \multicolumn{2}{l}{und \colorbox{green!10}{\(x_3\)} \(= -\frac{2}{2} - \sqrt{\left(\frac{2}{2}\right)^2 +15}\) \colorbox{green!10}{\(=-5\)}}\\
+				\multicolumn{4}{l}{Nullstellen: \colorbox{blue!5}{\(N_1(-5|0), N_2(-2|0)\)} und \colorbox{blue!5}{\(N_3(3|0)\)}}\\
+				\hline\hline\\
+				(2) & Extremstellen & \(\Rightarrow f'(x) = 0\)\\
+				\hline\\
+				& \(3x^2 +8x-11 = 0\) & |\(:3\)\\
+				& \(x^2 +\underbrace{\frac{8}{3}}_{p}x \underbrace{-\frac{11}{3}}_{q} = 0\) & |pq-Formel\\
+				& & \(x_{3,4} = -\frac{\frac{8}{3}}{2} \pm \sqrt{\left(\frac{\frac{8}{3}}{2}\right)^2 +\frac{11}{3}}\) & |\(x_4,x_5\) bestimmen\\
+			\end{tabularx}
+			\begin{tabularx}{\textwidth}{lXXl}
+				& & \multicolumn{2}{l}{\colorbox{green!10}{\(x_5\)} \(= -\frac{\frac{8}{3}}{2} + \sqrt{\left(\frac{\frac{8}{3}}{2}\right)^2 +\frac{11}{3}}\) \colorbox{green!10}{\(= 1\)}}\\
+				& & \multicolumn{2}{l}{und \colorbox{green!10}{\(x_5\)} \(= -\frac{\frac{8}{3}}{2} - \sqrt{\left(\frac{\frac{8}{3}}{2}\right)^2 +\frac{11}{3}}\) \colorbox{green!10}{\(= -\frac{11}{3}\)}}\\
+				\\
+				(3) & Art der Extremstelle bestimmen & \(\Rightarrow f''(x_4)\) und \(f''(x_5)\)\\
+				\hline\\				 
+				& \multicolumn{2}{l}{\(f''(1) =  6*1 +8 = 14 > 0\)} & \(\Rightarrow\) \colorbox{green!10}{\(x_3\) ist TIP}\\
+				& \multicolumn{2}{l}{\(f''(-\frac{11}{3}) = 6*(-\frac{11}{3}) + 8 = -14 < 0\)} & \(\Rightarrow\) \colorbox{green!10}{\(x_5\) ist HOP}\\
+				& \multicolumn{3}{l}{Die dazugehörigen Punkte bestimmt man mit \(f(x_3)\) bzw. \(f(x_4)\).}\\
+			\end{tabularx}
+			\begin{tabularx}{\textwidth}{ll}
+				& \(f(x_4) = 1^3 +4*1^2-11*1-30 = -36\)\\
+				& \(f(x_5) = (-\frac{11}{3})^3 +4*(-\frac{11}{3})^2-11*(-\frac{11}{3})-30 = 14,81\)\\
+				\multicolumn{2}{l}{So ergeben sich \colorbox{blue!5}{\(T(1|-36)\)} und \colorbox{blue!5}{\(H(-\frac{11}{3}|14,81)\)}}\\
+				\hline\hline\\
+			\end{tabularx}
+			\begin{tabularx}{\textwidth}{lXXl}
+				(4) & Wendestellen & \(\Rightarrow f''(x) = 0\)\\
+				\hline\\
+				& \(6x +8 = 0\) & |\(-8\)\\
+				& \(6x = -8\) & |\(:6\)\\
+				& \(x = -\frac{8}{6} = -\frac{4}{3}\) & \(\Rightarrow\) \colorbox{green!10}{\(x_6 = -\frac{4}{3}\)}\\
+				& Den dazugehörigen Punkt bestimmt man mit \(f(x_6)\).\\
+				& \(f(x_5) = (-\frac{4}{3})^3 +4*(-\frac{4}{3})^2-11*(-\frac{4}{3})-30 = -10,59\)\\
+				\multicolumn{2}{l}{So ergibt sich \colorbox{blue!5}{\(W(-\frac{4}{3}|-10,59)\)}.}\\
+				\hline\hline\\
+				(5) & Verhalten für große x-Werte\\
+				\hline\\
+				& Betrachte dafür: \(x^3\)\\
+				& \colorbox{green!10}{\(x^3\xrightarrow{x\rightarrow-\infty}-\infty\)} & \colorbox{green!10}{\(x^3\xrightarrow{x\rightarrow\infty}\infty\)}\\
+				\hline\hline\\
+			\end{tabularx}\\
+			\newpage
+			Der Funktionsgraph sieht wie folgt aus:\\
+			\par
+			\includegraphics[scale=0.4]{Bilder/HAd.png}
 		\end{framed}
 	\end{worksheet}
 \end{document}
