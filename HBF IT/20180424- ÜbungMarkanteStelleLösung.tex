@@ -159,7 +159,7 @@
 				& \(x = \frac{18}{36} = \frac{1}{2}\) & \(\Rightarrow\) \colorbox{green!10}{\(x_6 = \frac{1}{2}\)}\\
 				& Den dazugehörigen Punkt bestimmt man mit \(f(x_6)\).\\
 				& \(f(x_6) = \frac{1}{9}*\frac{1}{2}^3 -\frac{1}{6}*\frac{1}{2}^2 -2*\frac{1}{2} = 1\)\\
-				\multicolumn{2}{l}{So ergibt sich \colorbox{blue!5}{\(W(\frac{3}{4}|-1)\)}.}\\
+				\multicolumn{2}{l}{So ergibt sich \colorbox{blue!5}{\(W(\frac{1}{2}|-1)\)}.}\\
 				\hline\hline\\
 				(5) & Verhalten für große x-Werte\\
 				\hline\\
@@ -208,6 +208,7 @@
 				& \multicolumn{3}{l}{Die dazugehörigen Punkte bestimmt man mit \(f(x_3)\) bzw. \(f(x_4)\).}\\
 				& \multicolumn{2}{l}{\(f(x_3) = 3^3 -6*3^2 +9*3 = 0\)}\\
 				& \multicolumn{2}{l}{\(f(x_4) = 1^3 -6*1^2 +9*1 = 4\)}\\
+				
 			\end{tabularx}
 			\begin{tabularx}{\textwidth}{lXXl}
 				\multicolumn{2}{l}{So ergeben sich \colorbox{blue!5}{\(T(3|0) = N_2(3|0)\)} und \colorbox{blue!5}{\(H(1|4)\)}}\\
@@ -299,7 +300,145 @@
 			\newpage
 			Der Funktionsgraph sieht wie folgt aus:\\
 			\par
-			\includegraphics[scale=0.4]{Bilder/HAd.png}
+			\includegraphics[scale=0.4]{Bilder/HAd.png}\\
+		\end{framed}
+		\newpage
+		\begin{framed}
+			\noindent
+			\textbf{(e)} \(\mathbf{f(x) = -x^4 +24x^2-80}\)\\
+			\(\Rightarrow f'(x) = -4x^3+48x\)\\
+			\(\Rightarrow f''(x) = -12x^2+48\)\\
+			\par\noindent
+			\begin{tabularx}{\textwidth}{lXXl}
+				(1) & Nullstellen & \(\Rightarrow f(x) = 0\)\\
+				\hline\\
+				& \(-x^4 +24x^2-80 = 0\) & Substitution \(\Rightarrow z = x^2\)\\
+				& \(-\underbrace{z^2}_{x^2\cdot x^2} + 24\underbrace{z}_{x^2} -80 = 0\)\\
+				& \(-z^2  +24z -80 = 0\) & |\(\cdot(-1)\)\\
+				& \(z^2  \underbrace{-24}_{p}z +\underbrace{80}_{q} = 0\) & |pq-Formel\\
+				& & \(z_{1,2} = -\frac{-24}{2} \pm \sqrt{\left(\frac{-24}{2}\right)^2 -80}\) & |\(z_1,z_2\) bestimmen\\
+				& & \multicolumn{2}{l}{\colorbox{green!10}{\(z_1\)} \(= \frac{24}{2} + \sqrt{\left(\frac{-24}{2}\right)^2 +80}\) \colorbox{green!10}{\(= 20\)}}\\
+				& & \multicolumn{2}{l}{und \colorbox{green!10}{\(z_2\)} \(= \frac{24}{2} - \sqrt{\left(\frac{-24}{2}\right)^2 +80}\) \colorbox{green!10}{\(=4\)}}\\
+				\multicolumn{4}{l}{\textit{Rücksubstitution} \(\Rightarrow z = x^2\)}\\
+			\end{tabularx}
+			\begin{tabularx}{\textwidth}{lXlXl}
+				& \(x^2_1 = z_1 = 20\) & | \(\sqrt{}\) & \(x^2_2 = z_2 = 4\) &| \(\sqrt{}\)\\
+				& \colorbox{blue!5}{\(x_{1_{1}} = \sqrt{20} = 4,47\)} & & \colorbox{blue!5}{\(x_{2_{1}} = \sqrt{4} = 2\)}\\
+				& \colorbox{blue!5}{\(x_{1_{2}} = \sqrt{20} = -4,47\)} & & \colorbox{blue!5}{\(x_{2_{2}} = \sqrt{4} = -2\)}\\
+			\end{tabularx}
+			\begin{tabularx}{\textwidth}{lXXl}
+				\multicolumn{4}{l}{Nullstellen: \colorbox{blue!5}{\(N_1(-4,47|0), N_2(-2|0), N_3(2|0)\)} und \colorbox{blue!5}{\(N_4(4,47|0)\)}}\\
+				\hline\hline\\
+				(2) & Extremstellen & \(\Rightarrow f'(x) = 0\)\\
+				\hline\\
+				& \(-4x^3+48x = 0\) & \(\Rightarrow x\) ausklammern\\
+				& \(x(-4x^2+48) = 0\) & \(\Leftrightarrow \) \colorbox{blue!5}{\(x_5 = 0\)} oder \(-4x^2+48 = 0\)\\
+				& & \(-4x^2+48 = 0\) & | \(+4x^2\)\\
+				& & \(48 = 4x^2\) & |\(:4\)\\
+				& & \(12 = x^2\) & |\(\sqrt{}\)\\
+				& & \colorbox{blue!5}{\(x_6 = 3,46\)} und \colorbox{blue!5}{\(x_7 = -3,46\)}\\
+				\\
+				(3) & Art der Extremstelle bestimmen & \(\Rightarrow f''(x_5), f(x_6)\) und \(f''(x_7)\)\\
+				\hline\\				 
+				& \multicolumn{2}{l}{\(f''(0) =  -12*0^2+48 = 48> 0\)} & \(\Rightarrow\) \colorbox{green!10}{\(x_5\) ist TIP}\\
+				& \multicolumn{2}{l}{\(f''(3,46) =  -12*(3,46)^2 +48 = -95,66< 0\)} & \(\Rightarrow\) \colorbox{green!10}{\(x_6\) ist HOP}\\
+				& \multicolumn{2}{l}{\(f''(-3,46) = -12*(-3,46)^2 +48 = -95,66 < 0\)} & \(\Rightarrow\) \colorbox{green!10}{\(x_7\) ist HOP}\\
+				& \multicolumn{3}{l}{Die dazugehörigen Punkte bestimmt man mit \(f(x_5), f(x_6)\) bzw. \(f(x_7)\).}\\
+			\end{tabularx}
+			\begin{tabularx}{\textwidth}{ll}
+				& \(f(x_5) = -0^4 +24*0^2-80 = -80\)\\
+				& \(f(x_6) = -3,46^4 +24*(3,46)^2-80 = 64\)\\
+				& \(f(x_7) = -(-3,46)^4 +24*(-3,46)^2-80 = 64\)\\
+				\multicolumn{2}{l}{So ergeben sich \colorbox{blue!5}{\(T(0|-80)\)} und \colorbox{blue!5}{\(H_1(-3,46|64)\)} und \colorbox{blue!5}{\(H_2(3,46|64)\)}}\\
+				\hline\hline\\
+			\end{tabularx}
+			\begin{tabularx}{\textwidth}{lXXl}
+				(4) & Wendestellen & \(\Rightarrow f''(x) = 0\)\\
+				\hline\\
+				& \(-12*x^2+48 = 0\) & |\(+12x^2\)\\
+				& \(48 = 12x^2\) & |\(:12\)\\
+				& \(4 = x^2\) & |\(\sqrt{}\)\\
+				& \colorbox{green!10}{\(x_8 = 3,46 = N_3\)} und \colorbox{blue!5}{\(x_9 = -3,46 = N_2\)}\\
+				& Die dazugehörigen Punkte haben wir in (1) bereits bestimmt.\\
+				\multicolumn{2}{l}{So ergibt sich \colorbox{blue!5}{\(W_1(-3,46|0)\)} und \colorbox{blue!5}{\(W_2(3,46|0)\)}}\\
+				\hline\hline\\
+				(5) & Verhalten für große x-Werte\\
+				\hline\\
+				& Betrachte dafür: \(-x^4\)\\
+				& \colorbox{green!10}{\(-x^4\xrightarrow{x\rightarrow-\infty}-\infty\)} & \colorbox{green!10}{\(-x^4\xrightarrow{x\rightarrow\infty}-\infty\)}\\
+				\hline\hline\\
+			\end{tabularx}\\
+			Der Funktionsgraph sieht wie folgt aus:\\
+			\par
+			\includegraphics[scale=0.35]{Bilder/HAe.png}\\
+		\end{framed}
+		\newpage
+		\begin{framed}
+			\noindent
+			\textbf{(f)} \(\mathbf{f(x) = \frac{1}{8}x^4 -x^2+2}\)\\
+			\(\Rightarrow f'(x) = \frac{1}{2}x^3-2x\)\\
+			\(\Rightarrow f''(x) = \frac{3}{4}x^2 -2\)\\
+			\par\noindent
+			\begin{tabularx}{\textwidth}{lXXl}
+				(1) & Nullstellen & \(\Rightarrow f(x) = 0\)\\
+				\hline\\
+				& \(\frac{1}{8}x^4 -x^2+2 = 0\) & Substitution \(\Rightarrow z = x^2\)\\
+				& \(\frac{1}{8}\underbrace{z^2}_{x^2\cdot x^2} \underbrace{z}_{x^2} +2 = 0\)\\
+				& \(\frac{1}{8}z^2  -z +2 = 0\) & |\(\cdot 8\)\\
+				& \(z^2  \underbrace{-8}_{p}z +\underbrace{16}_{q} = 0\) & |pq-Formel\\
+				& & \(z_{1,2} = -\frac{-8}{2} \pm \sqrt{\left(\frac{-8}{2}\right)^2 -16}\) & |\(z_1,z_2\) bestimmen\\
+				& & \multicolumn{2}{l}{\colorbox{green!10}{\(z_1\)} \(= \frac{8}{2} + \sqrt{\left(\frac{-8}{2}\right)^2 -16}\) \colorbox{green!10}{\(= 4\)}}\\
+				& & \multicolumn{2}{l}{und \colorbox{green!10}{\(z_2\)} \(= \frac{8}{2} - \sqrt{\left(\frac{-8}{2}\right)^2 -16}\) \colorbox{green!10}{\(=4 = z_1\)}}\\
+				\multicolumn{4}{l}{\textit{Rücksubstitution} \(\Rightarrow z = x^2\)}\\
+				& \(x^2_1 = z_1 = 4\) & |\(\sqrt{}\)\\
+				& \colorbox{blue!5}{\(x_{1} = \sqrt{4} = 2\)}\\
+				& \colorbox{blue!5}{\(x_{2} = \sqrt{4} = -2\)}\\
+				\multicolumn{4}{l}{Nullstellen: \colorbox{blue!5}{\(N_1(-2|0)\)} und \colorbox{blue!5}{\(N_2(2|0)\)}}\\
+				\hline\hline\\
+				(2) & Extremstellen & \(\Rightarrow f'(x) = 0\)\\
+				\hline\\
+				& \(\frac{1}{2}x^3-2x = 0\) & \(\Rightarrow x\) ausklammern\\
+				& \(x(\frac{1}{2}x^2-2) = 0\) & \(\Leftrightarrow \) \colorbox{blue!5}{\(x_3 = 0\)} oder \(\frac{1}{2}x^2-2 = 0\)\\
+				& & \(\frac{1}{2}x^2-2 = 0\) & | \(+2\)\\
+				& & \(\frac{1}{2}x^2 = 2\) & |\(\cdot 2\)\\
+				& & \(x^2 = 4\) & |\(\sqrt{}\)\\
+				& & \colorbox{blue!5}{\(x_4 = 2 = N_2\)} und \colorbox{blue!5}{\(x_5 = -2 = N_1\)}\\
+				\\
+				(3) & Art der Extremstelle bestimmen & \(\Rightarrow f''(x_3), f''(x_4)\) und \(f''(x_5)\)\\
+				\hline\\		
+				& \multicolumn{2}{l}{\(f''(0) =  \frac{3}{4}0^2 -2 = -2 < 0\)} & \(\Rightarrow\) \colorbox{green!10}{\(x_3\) ist HOP}\\		 
+				& \multicolumn{2}{l}{\(f''(2) =  \frac{3}{4}2^2 -2 = 1 > 0\)} & \(\Rightarrow\) \colorbox{green!10}{\(x_4\) ist TIP}\\
+				& \multicolumn{2}{l}{\(f''(-2) =  \frac{3}{4}*(-2)^2 -2 = 1 > 0\)} & \(\Rightarrow\) \colorbox{green!10}{\(x_5\) ist TIP}\\
+				& \multicolumn{3}{l}{Die dazugehörigen Punkte bestimmt man mit \(f(x_3), f(x_4)\) bzw. \(f(x_5)\).}\\
+			\end{tabularx}
+			\begin{tabularx}{\textwidth}{ll}
+				& \(f(x_3) = \frac{1}{8}0^4 -0^2+2 = 2\)\\
+				& \(f(x_4) = \frac{1}{8}\cdot 2^4 -2^2+2 = 0\)\\
+				& \(f(x_5) = \frac{1}{8}\cdot (-2)^4 -(-2)^2+2 = 0\)\\
+				\multicolumn{2}{l}{So ergeben sich \colorbox{blue!5}{\(H(0|2)\)} und \colorbox{blue!5}{\(T_1(-2|0)\)} und \colorbox{blue!5}{\(T_2(2|0)\)}}\\
+				\hline\hline\\
+			\end{tabularx}
+			\begin{tabularx}{\textwidth}{lXXl}
+				(4) & Wendestellen & \(\Rightarrow f''(x) = 0\)\\
+				\hline\\
+				& \(\frac{3}{4}x^2 -2 = 0\) & |\(+2\)\\
+				& \(\frac{3}{4}x^2 = 2\) & |\(\cdot 4\)\\
+				& \(3x^2 = 8\) & |\(:3\)\\
+				& \(x^2 = \frac{8}{3}\) & | \(\sqrt{}\)\\
+				& \colorbox{green!10}{\(x_6 = 1,63\)} und \colorbox{blue!5}{\(x_7 = -1,63\)}\\
+				& \multicolumn{2}{l}{Die dazugehörigen Punkte bestimmt man mit \(f(x_6)\) bzw. \(f(x_7)\).}\\
+				& \multicolumn{2}{l}{\(f(x_6) = \frac{1}{8}\cdot(1,63)^4 -(1,63)^2+2 = \frac{2}{9} = \frac{1}{8}\cdot(-1,63)^4 -(-1,63)^2+2 = f(x_7)\)}\\
+				\multicolumn{2}{l}{So ergibt sich \colorbox{blue!5}{\(W_1(-1,63|\frac{2}{9})\)} und \colorbox{blue!5}{\(W_2(1,63|\frac{2}{9})\)}}\\
+				\hline\hline\\
+				(5) & Verhalten für große x-Werte\\
+				\hline\\
+				& Betrachte dafür: \(\frac{1}{8}x^4\)\\
+				& \colorbox{green!10}{\(\frac{1}{8}x^4\xrightarrow{x\rightarrow-\infty}\infty\)} & \colorbox{green!10}{\(\frac{1}{8}x^4\xrightarrow{x\rightarrow\infty}\infty\)}\\
+				\hline\hline\\
+			\end{tabularx}\\
+			Der Funktionsgraph sieht wie folgt aus:\\
+			\par
+			\includegraphics[scale=0.35]{Bilder/HAf.png}\\
 		\end{framed}
 	\end{worksheet}
 \end{document}
