@@ -49,20 +49,59 @@
 			\((a_nx^n + \ldots +a_1x +a_0):(x-NST) = p(x)\)\\
 			NST des Ergebnisses \(p(x)\) bestimmen
 		\end{itemize}
-		\subsection*{Monotonieverhalten} \color{red}Wird noch nachgereicht.\normalcolor
-		\subsection*{Extremstellen} \textit{Notwendige Bedingung} Ist \(x_0\) eine Extremstelle, dann muss \(f'(x) = 0\) sein.\\
-		\textit{1. Hinreichende Bedingung} 
+		\subsection*{Monotonieverhalten} Betrachtest du eine Funktion, so ist es bisweilen interessant zu wissen, wie die verschiedenen Funktionswerte zueinander stehen. Dies interessiert uns meist in einem bestimmten Intervall (z.B. zwischen \(x_0\) und \(x_1\)). Wir definieren also ein Intervall \(I = [x_0,x_1]\), als die Menge der x-Werte, für die gilt: \(x_0 \leq x \leq x_1\).\\
+		Um eine Aussage über das Monotonieverhalten treffen zu können, ist es zwingend notwendig, dass die Funktion auf dem entsprechenden Intervall \(I\) definiert ist.\\
+		\par\noindent
+		\(f\) heißt \textbf{streng monoton steigend} auf \(I\), wenn für alle \(x_1,x_2 \in I\) mit \(x_1<x_2\) gilt:\\
+		\(\circ f(x_1)<f(x_2)\).\\
+		Entsprechend heißt \(f\) \textbf{streng monoton fallend} auf \(I\), wenn für alle \(x_1,x_2 \in I\) mit \(x_1<x_2\) gilt:\\
+		\(\circ f(x_1) > f(x_2)\).
+		\subsection*{Extremstellen} \underline{\textit{\textbf{Notwendige Bedingung}}} Ist \(x_0\) eine Extremstelle, dann muss \(f'(x) = 0\) sein.\\
+		\par\noindent
+		\textbf{\textit{1. Hinreichende Bedingung}}\\
 		\(\circ\) \(f'(x_0)=0\ \text{und}\ f''(x_0) > 0 \rightarrow\ f(x_0)\) ist \underline{lokales} Minimum\\
 		\(\circ\) \(f'(x_0)=0\ \text{und}\ f''(x_0) < 0 \rightarrow\ f(x_0)\) ist \underline{lokales} Maximum\\
 		\par\noindent
 		Wenn \(f'(x_0)=0\ \text{und}\ f''(x_0)=0\), dann verwende nachfolgende Bedingung.\\
 		\par\noindent
-		\textit{2. Hinreichende Bedingung} \(f'(x)\) hat an der Stelle \(x_0\) einen \underline{Vorzeichenwechsel}.\\
+		\textit{\textbf{2. Hinreichende Bedingung}} \(f'(x)\) hat an der Stelle \(x_0\) einen \underline{Vorzeichenwechsel}.\\
 		\(\circ\) Von \(+\ \text{nach}\ - \rightarrow\ f(x_0)\) ist \underline{lokales} Minimum\\
 		\(\circ\) Von \(-\ \text{nach}\ + \rightarrow\ f(x_0)\) ist \underline{lokales} Maximum\\
-		\subsection*{Krümmungsverhalten und Wendestellen} \color{red}Wird nachgereicht\normalcolor
+		\subsection*{Krümmungsverhalten und Wendestellen}
+		Für das \textit{Krümmungsverhalten} eines Funktionsgraphen gilt folgendes:\\
+		\(\circ\) Ist \(f'(x)\) streng monoton \textit{steigend}, so ist der Funktionsgraph von f \textbf{linksgekrümmt}.\\
+		\(\circ\) Ist \(f'\) streng monoton \textit{fallend}, so ist der Funktionsgraph von \(f\) \textbf{rechtsgekrümmt}.\\
+		\small{Das Krümmungsverhalten gibt man vor, zwischen und nach den Wendepunkten an.}\normalsize
+		\par\noindent
+		Das Krümmungsverhalten des Funktionsgraphen ändert sich an einer \textit{Wendestelle}. Für eine solche gilt:
+		\textit{\underline{\textbf{Notwendige Bedingung}}} Ist \(x_0\) eine Wendestelle, dann muss \(f''(x_0)  = 0\) sein.\\
+		\par\noindent
+		\textbf{\textit{1. Hinreichende Bedingung}}\\
+		\(f''(x_0)=0\) und \(f'''(x_0) \neq 0\), dann ist \(x_0\) eine Wendestelle.\\
+		\par\noindent
+		Wenn \(f'''(x_0)= 0\), dann verwende nachfolgende Bedingungen.\\
+		\par\noindent
+		\textbf{\textit{2. Hinreichende Bedingung}}\\\(f''(x_0)=0\) und \(f''(x)\) hat an der Stelle \(x_0\) einen \textbf{Vorzeichenwechsel}.\\
 		\subsection*{Schaubild} Zeichne die Nullstellen, die Extrempunkte und die Wendepunkte in das Koordinatensystem.\\
 		Verbinde die Punkte entsprechen der Information, die du über die Symmetrie, das Randverhalten (Verhalten für große x-Werte), die Monotonie und das Krümmungsverhalten erhalten hast.\\
-		So erhältst du den \underline{ungefähren} Verlauf der Funktion.
+		So erhältst du den \underline{ungefähren} Verlauf des Funktionsgraphen.
+		\section{Kurvendiskussion 101}
+		Wirst du mit einer ganzrationalen Funktion \(f(x) = a_nx^n + a_{n-1}x^{n-1} +\ldots + a_1x +a_0\) konfrontiert und sollst diese skizzieren, führst du die folgenden Schritte der \textbf{Kurvendiskussion} aus.\\
+		\begin{enumerate}
+			\item Ableitungen bilden (\(f'(x), f''(x), f'''(x)\))
+			\item Symmetrie bestimmen
+			\item Verhalten für große x-Werte (\tiny{Wo kommt die Funktion her, wo geht sie hin}\normalsize)
+			\item Nullstellen und deren Koordinaten bestimmen\\
+			\(f(x) = 0\)
+			\item Extremstellen und die dazugehörigen Punkte\\
+			\(f'(x) = 0\)
+			\item Monotonieverhalten\\
+			Betrachte das Verhalten zwischen den Extrempunkten.
+			\item Wendestellen und die dazugehörigen Punkte\\
+			\(f''(x) = 0\)
+			\item Krümmungsverhalten
+			\item Übertragen der Punkte in das Koordinatensystem.\\
+			Skizzieren des Funktionsgraphen anhand der Schritte (2.), (3.), (6.) und (8.) und der eingetragenen Punkte.
+		\end{enumerate}
 	\end{worksheet}
 \end{document}
