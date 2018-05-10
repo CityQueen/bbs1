@@ -15,7 +15,11 @@
 		\section{Grundwissen}
 		Gegeben ist eine ganzrationale Funktion \[f(x) = a_nx^n + a_{n-1}x^{n-1} + \ldots + a_1x + a_0 \] mit \(x\in\mathbb{R}\).\\
 		Um diese Funktion (oder auch \textit{Kurve}) untersuchen zu können, müssen wir auf Informationen aus vergangenen Lernabschnitten aber auch auf neues Wissen zurückgreifen. Nachfolgend werden die entsprechenden Informationen in Kurzform nochmal dargestellt.
-		\subsection*{Symmetrie} \(\cdot\) Eine Funktion heißt \underline{\textbf{achsensymmetrisch}}, wenn gilt: es kommen nur gerade Exponenten in dem Funktionsterm \(f(x)\) vor.\\
+		\subsection{Defintionsbereich} Als Definitionsbereich kann man die Menge von Zahlen (x-Werte) bezeichnen, welche man in die Funktion \(f(x)\) einsetzen darf.\\
+		Man schreibt: \(\mathbb{D} = \)\\
+		\subsection{Wertebereich} Zum Wertebereich zählen alle möglichen \(y\)-Werte, die die Funktion annehmen kann.\\
+		Man schreibt auch \(\mathbb{W} = \)\\
+		\subsection{Symmetrie} \(\cdot\) Eine Funktion heißt \underline{\textbf{achsensymmetrisch}}, wenn gilt: es kommen nur gerade Exponenten in dem Funktionsterm \(f(x)\) vor.\\
 		\tiny{\(a_0\) gilt als Glied mit Geradem Exponenten.}\normalsize\\
 		In diesem Fall bedeutet das außerdem, dass \(f(x) = f(-x)\ \text{für alle zulässigen } x\). Die Funktion nennt man dann auch \underline{gerade}.\\
 		\par\noindent
@@ -24,7 +28,7 @@
 		In diesem Fall heißt das, dass \(f(x) = -f(x)\ \text{für alle zulässigen } x\). Eine solche Funktion wird auch \underline{ungerade} genannt.\\
 		\par\noindent
 		\(\cdot\) Enthält der Funktionsterm \(f(x)\) sowohl gerade als auch ungerade Exponenten, so ist sie \underline{\textbf{nicht symmetrisch}}.
-		\subsection*{Verhalten für große x-Werte} Um das Verhalten für große x-Werte zu bestimmen, betrachten wir und lediglich den \textit{charakteristischen Summanden}, also den Summanden, mit der höchsten Potenz (\(a_nx^n\)).\\
+		\subsection{Verhalten für große x-Werte} Um das Verhalten für große x-Werte zu bestimmen, betrachten wir und lediglich den \textit{charakteristischen Summanden}, also den Summanden, mit der höchsten Potenz (\(a_nx^n\)).\\
 		Das Verhalten kann dann wie folgt angegeben werden:
 		\begin{tabular}{|l|L{0.2\textwidth}|L{0.2\textwidth}|}
 			\hline
@@ -35,9 +39,8 @@
 			negativ & \shortstack{\(f(x) \xrightarrow{x \rightarrow -\infty}-\infty\)\\\(f(x) \xrightarrow{x \rightarrow \infty}-\infty\)} & \shortstack{\(f(x) \xrightarrow{x \rightarrow -\infty}\infty\)\\\(f(x) \xrightarrow{x \rightarrow \infty}-\infty\)}\\
 			\hline
 		\end{tabular}
-		\subsection*{Schnittstelle mit der y-Achse} Um den y-Achsenabschnitt zu bestimmen, setzen wir für \(x\) Null (\(0\)) in den Funktionsterm ein. Wir bestimmen also \[f(0) = a_0\]
-		So erhalten wir \(S(0|a_0)\). Ist \(f(0) = a_0 = 0\), so verläuft der Graph durch den Ursprung.
-		\subsection*{Nullstellen} Die Nullstellen sind die Stellen, an denen der Funktionswert Null ist, der Funktionsgraph also die x-Achse schneidet.\\
+		\subsection{Achsenschnitte}
+		\subsubsection*{Nullstellen} Die Nullstellen sind die Stellen, an denen der Funktionswert Null ist, der Funktionsgraph also die x-Achse schneidet.\\
 		Um die Nullstellen zu bestimmen, setzen wir \[f(x) = 0\]\\
 		Wir merken uns:
 		\begin{itemize}
@@ -49,14 +52,9 @@
 			\((a_nx^n + \ldots +a_1x +a_0):(x-NST) = p(x)\)\\
 			NST des Ergebnisses \(p(x)\) bestimmen
 		\end{itemize}
-		\subsection*{Monotonieverhalten} Betrachtest du eine Funktion, so ist es bisweilen interessant zu wissen, wie die verschiedenen Funktionswerte zueinander stehen. Dies interessiert uns meist in einem bestimmten Intervall (z.B. zwischen \(x_0\) und \(x_1\)). Wir definieren also ein Intervall \(I = [x_0,x_1]\), als die Menge der x-Werte, für die gilt: \(x_0 \leq x \leq x_1\).\\
-		Um eine Aussage über das Monotonieverhalten treffen zu können, ist es zwingend notwendig, dass die Funktion auf dem entsprechenden Intervall \(I\) definiert ist.\\
-		\par\noindent
-		\(f\) heißt \textbf{streng monoton steigend} auf \(I\), wenn für alle \(x_1,x_2 \in I\) mit \(x_1<x_2\) gilt:\\
-		\(\circ f(x_1)<f(x_2)\).\\
-		Entsprechend heißt \(f\) \textbf{streng monoton fallend} auf \(I\), wenn für alle \(x_1,x_2 \in I\) mit \(x_1<x_2\) gilt:\\
-		\(\circ f(x_1) > f(x_2)\).
-		\subsection*{Extremstellen} \underline{\textit{\textbf{Notwendige Bedingung}}} Ist \(x_0\) eine Extremstelle, dann muss \(f'(x) = 0\) sein.\\
+		\subsubsection{Schnittstelle mit der y-Achse} Um den y-Achsenabschnitt zu bestimmen, setzen wir für \(x\) Null (\(0\)) in den Funktionsterm ein. Wir bestimmen also \[f(0) = a_0\]
+		So erhalten wir \(S(0|a_0)\). Ist \(f(0) = a_0 = 0\), so verläuft der Graph durch den Ursprung.
+		\subsection{Extremstellen} \underline{\textit{\textbf{Notwendige Bedingung}}} Ist \(x_0\) eine Extremstelle, dann muss \(f'(x) = 0\) sein.\\
 		\par\noindent
 		\textbf{\textit{1. Hinreichende Bedingung}}\\
 		\(\circ\) \(f'(x_0)=0\ \text{und}\ f''(x_0) > 0 \rightarrow\ f(x_0)\) ist \underline{lokales} Minimum\\
@@ -67,39 +65,47 @@
 		\textit{\textbf{2. Hinreichende Bedingung}} \(f'(x)\) hat an der Stelle \(x_0\) einen \underline{Vorzeichenwechsel}.\\
 		\(\circ\) Von \(+\ \text{nach}\ - \rightarrow\ f(x_0)\) ist \underline{lokales} Minimum\\
 		\(\circ\) Von \(-\ \text{nach}\ + \rightarrow\ f(x_0)\) ist \underline{lokales} Maximum\\
-		\subsection*{Krümmungsverhalten und Wendestellen}
+		\subsection{Krümmungsverhalten und Wendestellen}
 		Für das \textit{Krümmungsverhalten} eines Funktionsgraphen gilt folgendes:\\
 		\(\circ\) Ist \(f'(x)\) streng monoton \textit{steigend}, so ist der Funktionsgraph von f \textbf{linksgekrümmt}.\\
 		\(\circ\) Ist \(f'\) streng monoton \textit{fallend}, so ist der Funktionsgraph von \(f\) \textbf{rechtsgekrümmt}.\\
-		\small{Das Krümmungsverhalten gibt man vor, zwischen und nach den Wendepunkten an.}\normalsize
+		\small{Das Krümmungsverhalten gibt man jeweils vor, zwischen und nach den Wendepunkten \([x_{W_1}, x_{W_2}]\) an.}\normalsize
 		\par\noindent
-		Das Krümmungsverhalten des Funktionsgraphen ändert sich an einer \textit{Wendestelle}. Für eine solche gilt:
+		Das Krümmungsverhalten des Funktionsgraphen ändert sich an einer \textit{Wendestelle}. Für eine solche gilt:\\
 		\textit{\underline{\textbf{Notwendige Bedingung}}} Ist \(x_0\) eine Wendestelle, dann muss \(f''(x_0)  = 0\) sein.\\
 		\par\noindent
 		\textbf{\textit{1. Hinreichende Bedingung}}\\
 		\(f''(x_0)=0\) und \(f'''(x_0) \neq 0\), dann ist \(x_0\) eine Wendestelle.\\
 		\par\noindent
-		Wenn \(f'''(x_0)= 0\), dann verwende nachfolgende Bedingungen.\\
+		Wenn \(f'''(x_0)= 0\), dann bezeichnet man \(x_0\) als Sattelstelle.\\
 		\par\noindent
 		\textbf{\textit{2. Hinreichende Bedingung}}\\\(f''(x_0)=0\) und \(f''(x)\) hat an der Stelle \(x_0\) einen \textbf{Vorzeichenwechsel}.\\
-		\subsection*{Schaubild} Zeichne die Nullstellen, die Extrempunkte und die Wendepunkte in das Koordinatensystem.\\
+		\subsection{Schaubild} Zeichne die Nullstellen, die Extrempunkte und die Wendepunkte in das Koordinatensystem.\\
 		Verbinde die Punkte entsprechen der Information, die du über die Symmetrie, das Randverhalten (Verhalten für große x-Werte), die Monotonie und das Krümmungsverhalten erhalten hast.\\
-		So erhältst du den \underline{ungefähren} Verlauf des Funktionsgraphen.
+		So erhältst du den \underline{ungefähren} Verlauf des Funktionsgraphen.\\
+		\hdashrule[0.5ex][x]{0.45\textwidth}{0.1mm}{8mm 2pt}\\
+		\subsection*{Monotonieverhalten \tiny{(Zusatz)}\normalsize} Betrachtest du eine Funktion, so ist es bisweilen interessant zu wissen, wie die verschiedenen Funktionswerte zueinander stehen. Dies interessiert uns meist in einem bestimmten Intervall (z.B. zwischen \(x_0\) und \(x_1\)). Wir definieren also ein Intervall \(I = [x_0,x_1]\), als die Menge der x-Werte, für die gilt: \(x_0 \leq x \leq x_1\).\\
+		Um eine Aussage über das Monotonieverhalten treffen zu können, ist es zwingend notwendig, dass die Funktion auf dem entsprechenden Intervall \(I\) definiert ist.\\
+		\par\noindent
+		\(f\) heißt \textbf{streng monoton steigend} auf \(I\), wenn für alle \(x_1,x_2 \in I\) mit \(x_1<x_2\) gilt:\\
+		\(\circ f(x_1)<f(x_2)\).\\
+		Entsprechend heißt \(f\) \textbf{streng monoton fallend} auf \(I\), wenn für alle \(x_1,x_2 \in I\) mit \(x_1<x_2\) gilt:\\
+		\(\circ f(x_1) > f(x_2)\).
+		\newpage
 		\section{Kurvendiskussion 101}
 		Wirst du mit einer ganzrationalen Funktion \(f(x) = a_nx^n + a_{n-1}x^{n-1} +\ldots + a_1x +a_0\) konfrontiert und sollst diese skizzieren, führst du die folgenden Schritte der \textbf{Kurvendiskussion} aus.\\
 		\begin{enumerate}
+			\item Definitions- und Wertebereich angeben
 			\item Ableitungen bilden (\(f'(x), f''(x), f'''(x)\))
-			\item Symmetrie bestimmen
+			\item Symmetrie bestimmen\\
+			\(\underbrace{f(x) = f(-x)}_{achsensymmetrisch}\) oder \(\underbrace{f(x) = -f(-x)}_{punktsymmetrisch}\)
 			\item Verhalten für große x-Werte (\tiny{Wo kommt die Funktion her, wo geht sie hin}\normalsize)
-			\item Nullstellen und deren Koordinaten bestimmen\\
+			\item Nullstellen und die dazugehörigen Punkte bestimmen\\
 			\(f(x) = 0\)
 			\item Extremstellen und die dazugehörigen Punkte\\
 			\(f'(x) = 0\)
-			\item Monotonieverhalten\\
-			Betrachte das Verhalten zwischen den Extrempunkten.
-			\item Wendestellen und die dazugehörigen Punkte\\
+			\item Wendestellen (ggf. Sattelstelle) und die dazugehörigen Punkte\\
 			\(f''(x) = 0\)
-			\item Krümmungsverhalten
 			\item Übertragen der Punkte in das Koordinatensystem.\\
 			Skizzieren des Funktionsgraphen anhand der Schritte (2.), (3.), (6.) und (8.) und der eingetragenen Punkte.
 		\end{enumerate}
