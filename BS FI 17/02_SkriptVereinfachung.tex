@@ -12,6 +12,13 @@
 
 \begin{document}
 	\begin{worksheet}{BS FI 17}{1. Lehrjahr, LF 4 - Einfache IT-Systeme}{Digitaltechnik - Vereinfachen von Schaltnetzen - KNF}
+		\begin{framed}
+			\centering\color{red}{\textbf{Achtung!}}\\
+			\normalcolor\raggedright Bitte beachten Sie, dass dieses Skript lediglich ein Verfahren zur Vereinfachung der KNF darstellt.\\
+			Leider waren die im Unterricht erarbeiteten Verfahren teilweise fehlerhaft und führen \underline{nicht immer} zu einer korrekten Vereinfachung.\\
+			\par\noindent
+			Das nachfolgend dargestellte Verfahren führt hingegen immer zu einem korrekten Ergebnis!
+		\end{framed}
 		\setcounter{section}{1}
 		\section{Vereinfachen von Schaltnetzen - KNF}
 		In der vergangenen Woche haben wir uns mit der Vereinfachung der \textit{DNF} (also der SOP) auseinandergesetzt. Hierfür haben wir das KV-Diagramm erstellt und die Einsen überdeckt.\\
@@ -110,7 +117,7 @@
 			\implicant{5}{7}
 			\implicant{3}{7}
 		\end{karnaugh-map}\\
-		Hieraus ergibt sich \[f(x_1,x_2,x_3) = (\underbrace{\overline{x_2}\lor\overline{x_3}}_{grün}) \land (\underbrace{\overline{x_1}\land\overline{x_3}}_{rot})\].\\
+		Hieraus ergibt sich \[f(x_1,x_2,x_3) = (\underbrace{\overline{x_2}\lor\overline{x_3}}_{grün}) \land (\underbrace{\overline{x_1}\lor\overline{x_3}}_{rot})\].\\
 		\subsection*{Ihre Aufgabe} Erstellen Sie mit Hilfe der zuletzt aufgestellten K-Map die vereinfachte Funktion zu der zu Beginn von 2.1 genannten Funktion.\\
 	\end{worksheet}
 \end{document}
