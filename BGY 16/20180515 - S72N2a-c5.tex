@@ -46,6 +46,19 @@
 			Wir gehen wie oben erwähnt vor:\\
 			\begin{tabularx}{\textwidth}{lll}
 				I & \(x_1 = 1 + r + \ s\)\\
+				II & \(x_2 = 2\ \ \ \ \ + 2s\)\\
+				III& \(x_3 =\ \ +\ r+ 3s\)\\
+				\hline
+				& III - I\\
+				III' & \(x_3 -x_1 = -1 + 2s\)\\
+				& III' -II\\
+				III'' & \(x_3 - x_1 - x_2 = -3\) & |\(\cdot (-1)\)\\
+				& \(\Rightarrow\) \colorbox{green!10}{\(E_a: x_1 + x_2 - x_3 = 3\)}\\
+			\end{tabularx}\\
+			\hdashrule[0.5ex][x]{\textwidth}{0.1mm}{2mm 6pt}\\
+			Die \textbf{alternative Vorgehensweise} mit Umformung nach \(r\) und \(s\) sähe so aus:\\
+			\begin{tabularx}{\textwidth}{lll}
+				I & \(x_1 = 1 + r + \ s\)\\
 				II & \(x_2 = 2\ \ \ \ \ + 2s\) & |\((-2); (:2)\)\\
 				III& \(x_3 =\ \ +\ r+ 3s\)\\
 				\hline
@@ -63,7 +76,20 @@
 			\end{tabularx}\\
 			\par
 			\textbf{(b)} Gegeben ist die Ebene \(E:\vec{x} = \left(\begin{array}{c}4\\9\\1\end{array}\right) + r\left(\begin{array}{c}1\\2\\0\end{array}\right) + s\left(\begin{array}{c}1\\0\\3\end{array}\right)\)\\
-			Auch hier gehen wir wie in (a) vor:\\
+			Das Vorgehen wie in (a) führt auch in diesem Fall zu einem schnellen Ergebnis:\\
+			\begin{tabularx}{\textwidth}{lll}
+				I & \(x_1 = 4 + r + s\)\\
+				II & \(x_2 = 9 + 2r\) & |\((-9); (:2)\)\\
+				III& \(x_3 =1\ \ \ \ \ + 3s\) & |\((-1);(:3)\)\\
+				\hline
+				& 2$\cdot$I - II\\
+				I' & \(2x_1 -x-2 = -1 +2s\)\\
+				& 3$\cdot$I' - 2$\cdot$III\\
+				I'' & \(6x_1 - 3x_2 - 2x_3 = -5\)\\
+				& $\Rightarrow$ \colorbox{green!10}{\(E_b: 6x_1 - 3x_2 - 2x_3 = -5\)}
+			\end{tabularx}\\
+			\hdashrule[0.5ex][x]{\textwidth}{0.1mm}{2mm 6pt}\\
+			Auch hier gehen können wir \textbf{alternativ} wie folgt vorgehen:\\
 			\begin{tabularx}{\textwidth}{lll}
 				I & \(x_1 = 4 + r + s\)\\
 				II & \(x_2 = 9 + 2r\) & |\((-9); (:2)\)\\
@@ -75,6 +101,8 @@
 				I' & \(x_1 = 4 + \underbrace{\frac{1}{2}x_2 - \frac{9}{2}}_{r} + \underbrace{\frac{1}{3}x_3 -\frac{1}{3}}_{s}\)\\
 				& \(x_1 = \frac{1}{2}x_2 + \frac{1}{3}x_3 - \frac{5}{6}\) & |\((\cdot 6)\)\\
 				I' & \(6x_1 = 3x_2 + 2x_3 - 5\) & |\((-3x_2);(-2x_3);\)\\
+			\end{tabularx}
+			\begin{tabularx}{\textwidth}{lll}
 				& \colorbox{green!10}{\(E_b: 6x_1 - 3x_2 - 2x_3 = -5\)}
 			\end{tabularx}\\
 			\par
