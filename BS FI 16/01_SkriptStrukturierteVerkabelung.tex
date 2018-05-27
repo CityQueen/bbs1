@@ -1,0 +1,61 @@
+\documentclass[11pt,twocolumn,oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{article}
+
+\input{../packages.tex}
+\input{../makros.tex}
+
+\setlength{\columnsep}{3em}
+\setlength{\columnseprule}{0.5pt}
+
+\geometry{left=2.00cm,right=2.00cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+\pagenumbering{gobble}
+\pagestyle{empty}
+
+\begin{document}
+	\begin{worksheet}{BS FI 16}{2. Lehrjahr, LF 9 - Öffentliche Netze}{Informationen zu \glqq{}Strukturierte Verkabelung\grqq{}}
+		\section{Strukturierte Verkabelung}
+		Strukturierte Verkabelung ist die Verkabelung eines Gebäudes oder einer Reihe von Gebäuden mit Kabeln, Anschlussdosen, Etagenverteilern, Gebäudeverteilern und Standortverteilern. Ziel ist, die Anforderungen aller potenziellen Nutzer des Gebäudes während seiner gesamten Lebensdauer zu erfüllen, ohne erneut verkabeln zu müssen.\\
+		\par\noindent
+		Mit diesem Verfahren der Vorverkabelung der Gebäudeinfrastruktur ist es möglich, ein universelles für den Benutzer vollständig durchschaubares System zu installieren - ein universelles, anwendungsunabhängiges Netz.\\
+		\par\noindent
+		Strukturiertes Verkabeln bedeutet, dass das System hierarchisch aufgebaut ist. Diese Hierarchie umfasst folgende Ebenen in Bezug auf die Verkabelung:\\
+		\par\noindent
+		\begin{tabularx}{0.5\textwidth}{X}
+			\textbullet \textbf{Primärverkabelung:} zwischen Standort- und Gebäudeverteiler\\
+			\textbullet \textbf{Sekundärverkabelung:} zwischen Gebäude- und Etagenverteiler\\
+			\textbullet \textbf{Tertiärverkabelung:} zwischen Etagenverteiler und informationstechnischer Anschlussdose\\
+			\textbullet \textbf{Arbeitsplatzverkabelung:} zwischen Anschlussdose und Endgerät
+		\end{tabularx}\\
+		\par\noindent
+		Hierarchie der Strukturierten Verkabelung:\\
+		\includegraphics[scale=0.45]{Bilder/struktVerk.png}\\
+		\tiny{SV = Standortverteiler; GV = Gebäudeverteiler; EV = Etagenverteiler; TA = informationstechnische Anschlussdose}\\
+		\normalsize
+		\newpage\noindent
+		Umsetzung der strukturierten Verkabelung in die Standort- und Gebäudeverkabelung:\\
+		\begin{center}
+			\includegraphics[scale=0.1]{Bilder/Verkabelungsbereiche.jpg}
+		\end{center}
+		\newpage\noindent
+		\subsection*{Verkabelungsstruktur} Der Standard EIA/TIA 568 (comercial building wiring standard) geht von einer strukturierten Verkabelung aus, die zwischen unterschiedlichen Verkabelungsstufen unterscheidet. Gebäude werden untereinander durch die sogenannte Geländeverkabelung (Primärbereich) verbunden. Innerhalb des Gebäudes gibt es Etagen. Die Etagen werden untereinander durch die sogenannte Verkabelung im Steigbereich (Sekundärbereich) verbunden.\\
+		Innerhalb der Etagen gibt es Technikräume, die die gesamten Komponenten der strukturierten Verkabelung enthalten müssen und darüber hinaus für den LAN-Betrieb wichtige Geräte wie Hubs, Bridges, Switches, Router oder Server enthalten können. Untereinander sind die Technikräume üblicherweise mit der Steigbereichtechnk verbunden. Im Etagenbereich (Tertiärberich) werden die Endgeräteanschlüsse von den Technikräumen aus versorgt. Je nach Verkabelungssystem differieren die Konzepte, die benutzen Übertragungsmedien, die Verteil- und die Anschlusstechnik.\\
+		\subsection*{Primärverkabelung, Geländeverkabelung} Die Geländeverkabelung integriert die in den einzelnen Gebäuden bestehenden Subnetze. An die Geländeverkabelung werden folgende Anforderungen gestellt:\\
+		Überbrückung großer Entfernung, Blitzschutz, Einstreusicherheit, Ausfallsicherheit, hohe Verfügbarkeit, Wartbarkeit, Potenzialtrennung zwischen Gebäudeerdung, hohe Übertragungskapazität.\\
+		\par\noindent
+		All dies kann z.B. im Rahmen einer gut gut durchdachten Glasfaserverkabelung erreicht werden, da die Glasfaser gerade mit den genannten Anforderungen keinerlei Probleme hat und bei anderen Kabeltypen hierfür besondere Maßnahmen erforderlich werden können.
+		\subsection*{Gebäudeverkabelung} Die Gebäudeverkabelung integriert die Etagennetze und die Etagenverkabelung und bindet die einzelnen räumlichen Einheiten an das Netz. Von der Gebäudeverkabelung wird gefordert:\\
+		Modularität bei der Verkabelung der Etagen oder Bereiche, Aufbau und Betrieb von begehbaren Gebäude- und Etagenverteilern, wartbares Kabelsystem zur schnellen Fehlersuche, netzwerkunabhängige Verkabelung und Anpassbarkeit an die vorhandenen Steigbereiche.
+		\subsection*{Etagenverkabelung} An die Etagenverkabelung(Tertiärbereich) werden folgende Anforderungen gestellt:\\
+		Anbindung von Wanddosen in den Büros oder Arbeitsbereichen an den Etagenverteiler; universelle Dosen- und Steckertechnik, gegebenenfalls aufgeteilt nach Sprach- und Datenübertragung; Nutzung geeigneter Kabelwegsysteme, wie Doppelbodenkanäle, abgehängte Decken, begehbare Kabelkanäle; netzunabhängige Verkabelung; beliebige Versetzbarkeit on Arbeitsplätzen; Erweiterbarkeit; Flexibilität.
+		\newpage\noindent
+		\begin{center}
+			\includegraphics[scale=1.3]{Bilder/Kabellaenge1.png}
+		\end{center}
+		\newpage\noindent
+		\subsection*{Zulässige Kabellängen}
+		\begin{center}
+			\includegraphics[scale=1.3]{Bilder/Kabellaenge2.png}
+		\end{center}
+		ASG = anwendungsspezifisches Gerät\\
+		Die Gesamtlänge \(A + B + C\) darf 100m nicht überschteigen.\\
+	\end{worksheet}
+\end{document}
