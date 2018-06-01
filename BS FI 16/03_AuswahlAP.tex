@@ -1,0 +1,109 @@
+\documentclass[11pt,twocolumn,oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{article}
+
+\input{../packages.tex}
+\input{../makros.tex}
+
+\setlength{\columnsep}{3em}
+\setlength{\columnseprule}{0.5pt}
+
+\geometry{left=2.00cm,right=2.00cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+\pagenumbering{gobble}
+\pagestyle{empty}
+
+\begin{document}
+	\begin{worksheet}{BS FI 16}{2. Lehrjahr, LF 9 - Öffentliche Netze}{Informationen zur Auswahl der Access Point}
+		\section{Auswahl der Access Point}
+		Bei der Planung einer Netzwerkerweiterung um WLAN spielt die verwendete Hardware natürlich eine zentrale Rolle. Das bedeutet, die Qualität der Signalabdeckung kann maßgeblich beeinflusst werden von den verwendeten Access Points (AP).\\
+		Ein grundlegender Unterschied ist der vom AP verwendete Frequenzbereich. Dabei sind zwei Frequenzbereiche zu unterscheiden:
+		\begin{itemize}
+			\item 2,4GHz: bietet eine bessere Reichweite im Vergleich zum 5GHz-Bereich; Überlappung mit benachbarten AP wahrscheinlicher $\Rightarrow$ 3/10 Kanälen überlappungsfrei nutzbar
+			\item 5GHz: starke Begrenzung durch Wände und andere Hindernisse; höhere nutzbare Kanalanzahl
+		\end{itemize}
+		Nun folgt durch den gewählten Frequenzbereich eine Einschränkung auf bestimmte Funkstandards.
+		\begin{itemize}
+			\item 2,4GHz: \textit{802.11, 802.11b, 802.11g} und \textit{802.11n}
+			\item 5GHz: \textit{802.11a/h, 802.11ac} und \textit{802.11n}
+		\end{itemize}
+		Während die Standards 802.11b und 802.11g lediglich das Senden über \underline{eine} Antenne anbieten, kann mit 802.11n eine parallele Datenübertragung au mehreren Kanälen ermöglicht werden.\\
+		Zusätzlich zu den möglichen Frequenzbereichen, den daraus resultierenden Standards und Übertragungsraten können die nachfolgend aufgelisteten Aspekte einen Einfluss auf die Entscheidung haben:
+		\begin{itemize}
+			\item Power over Ethernet (PoE) Fähigkeit des AP: ermöglicht eigenständiges Betreiben ohne externe Energieversorgung
+			\item Simultane Funknetz-ID Unterstützung (SSID)
+			\item komplette IP-Bereichabdeckung
+			\item Unterstützung dynamische IP-Konfiguration (DHCP)
+			\item zentrale Verwaltung möglich
+			\item WPA2-Enterprise-fähig
+			\item[] Abhängig vom Einsatzbereich kann sollte auch noch berücksichtigt werden, ob
+			\item Seamless-Roaming-fähig
+			\item aktive Lastverteilung
+		\end{itemize}
+		Abhängig von der gewählten Frequenz kann ein AP \(10-30\) Meter abdecken.\\
+		Bei 2,4GHz ist der Abdeckungsbereich größer, aber auch hier ist das Signal an den Rändern schwach. Bei 5GHz kann eine ähnlich große Fläche abgedeckt werden, wobei hier die Signalstärke bereits früher abnimmt.\\
+		\includegraphics[scale=0.4]{Bilder/2,4ghz.jpg}\\
+		\tiny{Frequenzbereich: 2,4GHz - Trockenbauwände - \href{https://www.enbitcon.de/shop/sophos-ap-55-access-point?gclid=EAIaIQobChMI05evyPyx2wIVGp7VCh1IHgJSEAQYAiABEgKC6fD_BwE07}{enbitcon.com}}\normalsize\\
+		\includegraphics[scale=0.4]{Bilder/5ghz.jpg}
+		\tiny{Frequenzbereich: 5GHz - Trockenbauwände - \href{https://www.enbitcon.de/shop/sophos-ap-55-access-point?gclid=EAIaIQobChMI05evyPyx2wIVGp7VCh1IHgJSEAQYAiABEgKC6fD_BwE07}{enbitcon.com}5}\normalsize\\
+		Mit der Wahl der Frequenz ist es aber noch nicht getan. Ebenfalls muss entschieden werden, auf welchem Kanal der AP funkt. Um Signalüberdeckungen zu vermeiden, sollten für die entsprechenden Frequenzen nur um jeweils drei versetzte Kanäle verwendet werden!\\
+		\par\noindent
+		\begin{tabularx}{0.5\textwidth}{X|X}
+			2,4GHz & 5GHz\\
+			\hline
+			1 & 52\\
+			5 & 56\\
+			9 & 60\\
+			13 & 64\\
+			& 100\\
+			& 104\\
+			& 108\\
+			& 112\\
+			& 136\\
+			& 140\\
+			\cline{2-2}\\
+			& nur mit Einschränkung\\
+			\cline{2-2}
+			& 36 - Indoor!\\
+			& 40 - Indoor!\\
+			& 44 - Indoor!\\
+			& 48 - Indoor!\\
+			& 116 - Radar!\\
+			& 120 - Radar!\\
+			& 124 - Radar!\\
+			& 128 - Radar! (Wetterradar in Rostock/Warnemünde)\\
+			& 132 - Radar!\\
+		\end{tabularx}\\
+		\tiny{\href{https://wiki.opennet-initiative.de/wiki/WLAN_Frequenzen#Nutzbare_WLAN_Kan.C3.A4le}{wiki.opennet-initiative.de}}\normalsize
+		\newpage \noindent
+		\section*{Antennen}
+		Zusätzlich zu den internen Spezifikationen, die ein AP mit sich bringt, kann auch die Antennenausstattung des AP eine interessante Rolle in der Entscheidungsfindung spielen.\\
+		Auch bei den Antennen gibt es Unterschiede, so dass auch hier der Einsatzbereich und die Anforderungen an das WLAN berücksichtigt werden müssen. Es lässt sich im groben zwischen
+		\begin{itemize}
+			\item \textit{omni-direktionaler Rundstrahl-Antenne}: sendet Funk ähnlich einer Glühbirne (Form eines dicken Donut). Das heißt, diese Antenne strahlt horizontal \(360^\circ\) in alle Richtungen, beschränkt sich vertikal aber nur auf das nötigste.\\
+			\includegraphics[scale=0.75]{Bilder/omni.png}\\
+			\tiny{\href{https://www.computerwoche.de/g/wlan-antennen-und-access-points-richtig-positionieren,37573,5#galleryHeadline}{Computerwoche}}\normalsize
+			\item \textit{Direktionaler Sektor-Antenne}: die Ausstrahlung lässt sich mit dem Lichtkegel einer Taschenlampe vergleichen, das Funkmuster ähnelt einer Birne oder einem Apfel mit identischem horizontalen und vertikalen Öffnungswinkel (\(60^\circ, 90^\circ\) oder \(120^\circ\)).\\
+			\includegraphics[scale=0.75]{Bilder/dirSek.jpg}\\
+			\tiny{\href{https://www.computerwoche.de/g/wlan-antennen-und-access-points-richtig-positionieren,37573,8#galleryHeadline}{Computerwoche}}\normalsize
+			\newpage
+			\item \textit{Direktionaler Richt-Antenne}: bündelt die ausgesendeten Funkstrahlen in ein Richtung, das Funkmuster kann mit einer Salatgurke veglichen werden, wobei sich der Öffnungswinkel horizontal und vertikal um ca. \(6^\circ\) bewegt.
+			\includegraphics[scale=0.75]{Bilder/dirRich.jpg}\\
+			\tiny{\href{https://www.computerwoche.de/g/wlan-antennen-und-access-points-richtig-positionieren,37573,4#galleryHeadline}{Computerwoche}}\normalsize
+		\end{itemize}
+		unterschieden werden.\\
+		Möchte man größere Gebäudekomplexe mit einem WLAN versorgen, benötigt man eine entsprechend große Auswahl an Antennen. Eine externe Antenne ermöglicht einen größeren Gestaltungs- und Optimierungs-Spielraum als interne Antennen.
+		\subsection*{Omnidirektionale Rundstrahl-Antennen} Diese Antennen werden häufig in der mitte des Raumes positioniert, so dass sie im optimalsten Falle alle im in der Nähe befindlichen Clients erreichen und mit Wireless-Funk versorgen. Genutzt werden diese Art von Antennen um funktechnisch unkomplizierte Räume (wenig Störquellen) zu versorgen.\\
+		Bei einer solchen Rundstrahl-Antenne unterscheidet man zwischen Antennen mit einem und mit mehreren Dipol-Drähten. Der Unterschied ist hier in der horizontalen bzw. vertikalen Reichweite. Währen Antennen mit einem Dipol-Draht eine höhere vertikale aber geringere horizontale Ausstrahlung haben, decken Antennen mit mehreren Dipol-Drähte horizontal eine größere Fläche ab, können dafür aber vertikal nicht soweit ausstrahlen.
+		\subsection*{Direktionale Sektor-Antenne} Eine solche Antenne sendet horizontal und vertikal in einem ähnlichen Winkel (\(60^\circ, 90^\circ\) oder \(120^\circ\)).\\
+		Solche Antennen, genauer gesagt die \(120^\circ\) Antennen werden an Mobilfunkmasten verwendet und sorgen im Dreier-Gespann für eine \(360^\circ\) Abdeckung. Ähnlich zu diesem Prinzip können AP-Antennen ausgerichtet werden um eine \(360^\circ\) WLAN-Abdeckung zu gewährleisten. Diese Kombination aus einzelnen Sektor-Antennen ermöglicht die Abdeckung eines größeren Bereichs (Reichweite).
+		\subsection*{Direktionale Richt-Antennen} Diese Form der Antennen können mit den Sektor-Antennen verglichen werden, wobei sie die Funkstrahlung stärker bündeln und somit eine noch größere Reichweite haben.\\
+		Korrekt ausgerichtet kann diese Art von Antenne bis zu 20 km überbrücken.\\
+		\hdashrule[0.5ex][x]{0.45\textwidth}{0.1mm}{8mm 2pt}\\
+		An APs werden häufig zwei oder mehrere identische Antennen verwendet. Dieser Umstand ist durch eine gewünschte Reduzierung der Interferenzen bedingt (\textbf{Diversity-Antennen}).\\
+		Da die angebrachten Antennen an APs ein wenig voneinander entfernt befinden, werden die Funksignale unterschiedlich von den umgebenden Oberflächen reflektiert und erreichen so den Client zu minimal unterschiedlichen Zeitpunkten und mit unterschiedlicher Qualität. Der Client wechselt nun immer auf die Antenne, die das bessere Signal sendet.\\
+		\par\noindent
+		APs die den Standard 802.11n bzw. 802.11ac unterstützen verwenden das sogenannte MIMO\footnote{Multiple-Input Multiple Output}-Multi-Connection-Multi-Antennen-Verfahren. Dieses Verfahren verwendet mehrere Antennen zum Senden und Empfangen von Daten.
+		\par\bigskip\noindent
+		\tiny{Quellen:\\
+			- \href{https://lehrerfortbildung-bw.de/st_digital/tablet/anleitungen/infrastruktur/wlan/ap-auswahl.html}{Lehrerfortbildung} (eingesehen: 31.05.2018)\\
+			- \href{https://www.computerwoche.de/a/wlan-ratgeber-antennen-richtig-waehlen-und-positionieren,3060831}{Computerwoche} (eingesehen: 31.05.2018)}
+	\end{worksheet}
+\end{document}

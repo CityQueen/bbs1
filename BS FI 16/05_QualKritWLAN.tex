@@ -1,0 +1,83 @@
+\documentclass[11pt,oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{article}
+
+\input{../packages.tex}
+\input{../makros.tex}
+
+\setlength{\columnsep}{3em}
+\setlength{\columnseprule}{0.5pt}
+
+\geometry{left=2.00cm,right=2.00cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+\pagenumbering{gobble}
+\pagestyle{empty}
+
+\begin{document}
+	\begin{worksheet}{BS FI 16}{2. Lehrjahr, LF 9 - Öffentliche Netze}{Qualitätskriterien für eine gute WLAN-Abdeckung}
+		\begin{framed}
+			\noindent
+			Im Zuge der Sanierung des A-Gebäudes soll das dort bestehende WLAN des gesamten Schulgebäudes durch die Anbringung neuer Access Points (AP) erneuert.\\
+			In den übrigen Gebäudeteilen (B-, C- und W-Gebäude) wurden auf Grund eines Kooperationsvertrags mit der Firma Sophos entsprechende AP verwendet.
+			\par\noindent
+			Für die Erneuerung stehen zwei Sophos Geräte zur Auswahl:\\
+			\par\noindent
+			\begin{tabularx}{\textwidth}{lX|lX}
+				\hline
+				\hline
+				\multicolumn{2}{c|}{\textbf{Sophos AP 100 Access Point}} & \multicolumn{2}{c}{\textbf{Sophos AP 55 Access Point}}\\
+				\hline
+				\multicolumn{2}{l|}{Dual-Band/Dual-Radio} &\multicolumn{2}{l}{Dualband/Doppelsender für Großunternehmen}\\
+				\hline
+				max. Durchsatz: & 1,3 GBit/s + 450MBit/s & max. Durchsatz: & 867 MBit/s + 300 MBit/s\\
+				\hline
+				mehrere SSIDs: & 8 pro Radio (insg. 16) & mehrere SSIDs: & 8 pro Radio (insg. 16)\\
+				\hline
+				LAN-Schnittstelle: & 1x 10/100/1000 BaseTX & LAN-Schnittstelle: & 1x 10/100/1000 BaseTX\\
+				\hline
+				Standards: & 802.11 a/b/g/n/ac & Standards: & 802.11 a/b/g/n/ac\\
+				& 2,4 GHz und 5 GHz & & 2,4 GHz und 5 GHz\\
+				\hline
+				PoE: & 802.3at & PoE: & 802.3at\\
+				\hline
+				Antennen: & 3 extern & Antennen: & 2 extern\\
+				\hline
+				Anzahl Sender: & 2 & Anzahl Sender: & 2\\
+				\hline
+				MIMO-Funktionen: & 3x3:3 & MIMO-Funktion: & 2x2:2\\
+				\hline
+				\hline
+			\end{tabularx}\\
+			\par\noindent
+			\section*{Ihre Aufgabe}
+			\begin{itemize}
+				\item \textbf{Entscheiden} Sie sich für ein \textit{AP-Modell}. \textbf{Begründen} Sie ihre Entscheidung.
+				\item \textbf{Entscheiden} Sie sich für einen \textit{Standard}. \textbf{Begründen} Sie diese.
+				\item \textbf{Planen} Sie unter Verwendung ihres ausgewählten Modells eine \textit{möglichst optimale Positionierung der APs} zur bestmöglichen Ausleuchtung!\\
+				\textbf{Vermerken} Sie an jedem positionierten AP:
+				\begin{itemize}
+					\item Signalausleuchtung
+					\item Antennenausrichtung
+					\item gewählter Kanal
+					\item Anzahl der bedienbaren Clients
+				\end{itemize}
+				\item[] Beachten Sie bei ihrer Planung die folgende Anforderung:
+				\begin{itemize}
+					\item Clients/AP im Schnitt: \(30\)
+					\item APs dürfen sichtbar montiert sein
+					\item bestmögliche Signalabdeckung in den Unterrichtsräumen
+				\end{itemize}
+				\item \textbf{Definieren und begründen} Sie zudem, für welche Form des \textit{AP-Management} Sie sich entscheiden.
+			\end{itemize}
+		\end{framed}
+		\begin{framed}
+			Für die Beurteilung ihrer eigenen Planung können Sie sich an den nachfolgenden Qualitätskriterien orientieren:\\
+			\begin{enumerate}[label*=\protect\fbox{}]
+				\item Abstand der AP
+				\item Flächendeckende Signalausleuchtung
+				\item Power over Ethernet
+				\item Controllereinsatz möglich
+				\item Funkkanalwahl
+				\item Signalzuführung zum AP
+				\item Access Control
+			\end{enumerate}
+		\end{framed}
+	\end{worksheet}
+\end{document}

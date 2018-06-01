@@ -1,0 +1,37 @@
+\documentclass[11pt,twocolumn,oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{article}
+
+\input{../packages.tex}
+\input{../makros.tex}
+
+\setlength{\columnsep}{3em}
+\setlength{\columnseprule}{0.5pt}
+
+\geometry{left=2.00cm,right=2.00cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+\pagenumbering{gobble}
+\pagestyle{empty}
+
+\begin{document}
+	\begin{worksheet}{BS FI 16}{2. Lehrjahr, LF 9 - Öffentliche Netze}{Informationen zur Montage und Ausrichtung von Access Points und Antennen}
+		\section{Montage und Ausrichtung des Access Point}
+		Ist der zu verwendende Access Points (AP) ausgewählt, geht es darum, zu entscheiden, an welchen Positionen man die APs anbringt.\\
+		\hdashrule[0.5ex][x]{0.45\textwidth}{0.1mm}{8mm 2pt}\\
+		Allgemein kann zwischen vier Arten der Montage unterschieden werden:
+		\subsection*{Deckenmontage} Die APs werden relativ mittig an der Zimmer- oder Flurdecke montiert. Je nach Antennenart kann so eine Abstrahlung in das darüberliegende Stockwerk erfolgen. Diese Abstrahlung müsste also gegebenenfalls bei der Planung der AP-Position im entsprechenden Stockwerk berücksichtigt werden. Sollte eine solche Abstrahlung nicht gewünscht sein, besteht im Allgemeinen die Möglichkeit APs mit Down-Tilt-Antennen (also hauptsächlich nach unten abstrahlende Antennen) zu verwenden.
+		\subsection*{Wandmontage} Diese Montagevariante wird häufig verwendet, wenn die Sichtbarkeit des AP unerwünscht ist. Dabei wird häufig eine Einbuße in der Signalausleuchtung in Kauf genommen. Möglich ist es in einem solchen Fall, APs mit einer Direktionalantenne zu montieren, so dass das Funksignal entsprechend ausgerichtet werden kann.
+		\subsection*{Unter-Sitz-Montage} Eine Montage des AP direkt unter dem Sitz kann durch die große Nähe zum Client zu einem hohen Daten-Speed führen und ermöglicht die Verringerung der Sendeleistung, wodurch die Funkzelle ebenfalls verkleinert wird. Dies erhöht automatisch die Anzahl an überschneidungsfreien WLAN-Zellen.
+		\subsection*{Unter-Boden-Montage} Häufig finden sich in gewerblichen Gebäuden doppelte Böden, so dass eine Montage zwischen diesen möglich ist. Dennoch kann der gewünschte Versorgungserfolg ausbleiben, je nach dem, ob sich Metallschienen oder Bleche im Boden befinden.\\
+		Auch hier ließe sich, wie bei der Unter-Sitz-Montage eine relativ hohe Anzahl an überschneidungsfreien WLAN-Zellen aufbauen, die eine entsprechend dichte Versorgung gewährleisten.\\
+		\hdashrule[0.5ex][x]{0.45\textwidth}{0.1mm}{8mm 2pt}\\
+		Je besser die externen Antennen des AP ausgerichtet sind, desto optimaler kann eine flächendeckende Signalausleuchtung gewährleistet werden.\\
+		Ein nicht zu vernachlässigender Aspekt ist die Länge und der Abstand der sendenden Antennen. Dabei gilt folgende Faustregel:
+		\begin{itemize}
+			\item 2,4GHz: \textbf{6 cm Abstand} zwischen den Antennen und zu größeren Hindernissen. Optimale Länge der Antenne: \textbf{6 cm}.
+			\item 5GHz: \textbf{3 cm Abstand} zwischen den Antennen und zu größeren Hindernissen. Optimale Länge der Antenne: \textbf{3 cm}.
+		\end{itemize}
+		Ebenfalls zu beachten ist, dass die Antenne und ihr Funksignal so ausgerichtet sind, dass die Antenne der Clients in den meisten Fällen in die Gleiche Richtung zeigt.
+		\par\bigskip\noindent
+		\tiny{Quellen:\\
+			- \href{https://www.pcwelt.de/tipps/Auf-Abstand-und-Ausrichtung-der-Antennen-achten-9705621.html}{PCWelt} (eingesehen: 31.05.2018)\\
+			- \href{https://www.tecchannel.de/a/access-points-richtig-montieren,2059035}{Techchannel} (eingesehen: 31.05.2018)}
+	\end{worksheet}
+\end{document}

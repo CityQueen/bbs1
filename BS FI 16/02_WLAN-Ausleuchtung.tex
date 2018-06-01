@@ -1,0 +1,62 @@
+\documentclass[11pt,twocolumn,oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{article}
+
+\input{../packages.tex}
+\input{../makros.tex}
+
+\setlength{\columnsep}{3em}
+\setlength{\columnseprule}{0.5pt}
+
+\geometry{left=2.00cm,right=2.00cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+\pagenumbering{gobble}
+\pagestyle{empty}
+
+\begin{document}
+	\begin{worksheet}{BS FI 16}{2. Lehrjahr, LF 9 - Öffentliche Netze}{Informationen zur WLAN-Ausleuchtung}
+		\section{WLAN-Ausleuchtung}
+		Möchte man ein bestehendes Netzwerk um WLAN erweitern, so nutzt man dafür häufig sogenannte \textbf{Access Points} (AP).\\
+		Um eine möglichst optimale und flächendeckende Signalausleuchtung zu erreichen muss die Positionierung dieser AP vorab geplant werden. Bei der Planung spielen verschiedene Faktoren eine Rolle, die für die Anzahl und die Positionierung der Geräte relevant sind. So zum Beispiel:
+		\begin{itemize}
+			\item WLAN-Frequenzbereich (2,4GHz vs. 5GHz)
+			\item Störfaktoren (Wände, Decken usw.)
+			\item Andere Funkquellen (Mikrowellen o.Ä.)
+			\item Überlagerung von AP
+		\end{itemize}
+		\par\noindent
+		Eine fundierte Berücksichtigung aller Faktoren ist meist nur schwer zu realisieren und bedarf einer experimentellen Ermittelung. Diese experimentelle Ermittelung bezeichnet man auch als \textbf{WLAN-Ausleuchtung}.
+		\subsection*{Theoretische Ausleuchtung} Für die Durchführung einer solchen Ausleuchtung gibt es diverse Software\footnote{z.B. Ekahau HeatMapper oder Netspot}, die einem die optimalen Positionen für die APs liefert. Mit Hilfe dieser Software kann man auch andere Netze ermitteln, die das eigene möglicherweise stören können.\\
+		Bei der Ausleuchtung mittels einer solchen Software muss ein Gebäudeplan zur Verfügung stehen, in welchem zunächst die einzelnen Wände und deren Baustoff vermerkt werden müssen. Im Anschluss kann die WLAN-Ausleuchtung und deren Änderung durch Platzierung von weiteren APs simuliert werden.\\
+		Zur abschließenden und vollständigen Planung ist es aber unerlässlich das abzudeckende Gebäude mit dem Laptop in der Hand zu begehen und einzelne Position zu markieren um genaue Werte zu Signalstärke oder -qualität zu erhalten.\\
+		Das kann, abhängig von der Gebäudegröße sehr aufwendig sein.\\
+		\par\noindent
+		Bei der Ausleuchtung bildet die Funkzellengröße eine besondere Herausforderung. So benötigt man für eine ausreichend hohe Ausleuchtung eine entsprechende Größe der Funkzelle. Dem entgegen tritt, dass eine Überlagerung der Funkzellen einzelner APs sich wenn möglich nicht überlagern sollten. Ist dies dennoch der Fall, kann es zu Interferenzen, also Störungen des Funksignals kommen.\\
+		Um eine solche Interferenz bzw. Überlagerung zu vermeiden, kann man für jeden AP einen geeigneten Funkkanal wählen und die Sendeleistung des AP entsprechend anpassen.
+		\subsection*{Management} Um das verfügbare WLAN-Nezt stabil zur Verfügung zu stellen, kann es notwendig sein, die verschiedenen AP zu verwalten. Für diese Verwaltung (Management) gibt es diverse Möglichkeiten, die abhängig vom Einsatzbereich sinnvoll sind.
+		\begin{itemize}
+			\item AP erkennen sich gegenseitig un d passen ihre Sendeleistung dynamisch an\\
+			Kommunikation mit einem zentralen \textbf{Controller} (z.B. Einschubmodul im LAN-Switch)
+			\item Zentrale Management-Software übernimmt Funktion des Einschubmoduls
+			\item engmaschiges Netz mit redundanten Funkzellen - senden auf unterschiedlichen Frequenzbändern, überschneiden sich voll redundant
+		\end{itemize}
+		\subsection*{Kanalwahl} Bei der Gewährleistung einer optimalen WLAN-Abdeckung spielt der gewählte Standard eine entscheidende Rolle.\\
+		In diesem Standard wird sowohl die Übertragungsrate und die Trägerfrequenz definiert.\\
+		Abhängig von der geplanten Überdeckungsvariante sollte einer der beiden Wireless-Standards (802.11b oder 802.11g) gewählt werden.\\
+		Bei der Wahl des Standards ist zu beachten, dass die Übertragungsrate durch das schwächste verbundene Glied (z.B. b-Standard Gerät verbindet sich mit g-Standard AP) beeinflusst wird.\\
+		Beide Standards bieten, da sie auf 2,4GHz senden, nur drei Kanäle auf denen überschneidungsfrei gesendet werden kann. Diese Überschneidung kann zu der oben erwähnten Interferenz führen.\\
+		Der Standard 802.11a bietet hier eine Alternative, da er auf 5GHz sendet. Auf diesem Frequenzbereich stehen mehr Kanäle zur Verfügung, welche störungsfrei parallel verwendet werden können. Bei der Wahl des 5GHz-Band ist zu beachten, dass es innerhalb von Europa gewisse gesetzliche Regularien gibt, die beachtet werden müssen. Aus diesem Grund ist der Einsatz des a-Standard auf geschlossene Räume beschränkt.\\
+		\par\noindent
+		Eine gute Alternative zu a-, b- und g-Standard bietet 802.11n. Dieser Standard ermöglicht das Senden sowohl auf 2,4 als auch auf 5GHz. Zusätzlich zum dynamischen Wechsel zwischen den Frequenzbereichen kann durch die Verbreiterung der Kanäle auf 40 MHz ein höherer Datendurchsatz erreicht werden.\\
+		\par\bigskip\noindent
+		Bei der Planung einer WLAN-Abdeckung im Unternehmen ist die Nutzung von Software-Unterstützungen unerlässlich.
+		\section*{Checkliste WLAN-Planung} Bei der Planung einer WLAN-Abdeckung können die folgenden Aspekte hilfreich sein:
+		\begin{itemize}
+			\item Wieviele Clients muss ein AP abdecken?
+			\item Was muss das WLAN bereitstellen (z.B. Voice over WLAN)?
+			\item Welche negativen Einflüssen können bauliche Gegebenheiten haben? (Baumaterial, Fenster usw.)
+			\item Existieren störende Einflüsse von außen?
+		\end{itemize}
+		\par\bigskip\noindent
+		\tiny{Quellen:\\
+			- \href{https://lehrerfortbildung-bw.de/st_digital/tablet/anleitungen/infrastruktur/wlan/ausleuchtung.html}{Lehrerfortbildung} (eingesehen: 31.05.2018)\\
+			- \href{https://www.computerwoche.de/a/die-kunst-der-optimalen-wlan-ausleuchtung,1225976}{Computerwoche} (eingesehen: 31.05.2018)}
+	\end{worksheet}
+\end{document}
