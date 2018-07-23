@@ -12,6 +12,139 @@
 
 \begin{document}
 	\begin{worksheet}{Höhere Berufsfachschule IT-Systeme}{Grundstufe - Mathematik}{Grundlagen Funktionen}
-		\section{Grundlagen}
+		\section{Allgemeine Begrifflichkeiten und Grundlagen}
+		\subsection{Terme}
+		\subsubsection*{Was sind Terme?} Unter einem Term versteht man ein \mbox{\textbf{mathematisches Gebilde}}. Dieses besteht aus Zahlen und Rechenzeichen.\\
+		Eine Zahl kann hier aber auch durch einen Buchstaben angegeben werden.\\
+		\par
+		\begin{tabularx}{0.5\textwidth}{ll}
+			\noindent
+			\textbf{Beispiele:} & \(3\)\\
+			& \(1,70+2,30\)\\
+			& \(2,30\cdot x\)\\
+			& \(5x + 20\)\\
+			& \(5^2\)\\
+			& \(\sqrt{5}\)\\
+		\end{tabularx}
+		\subsection{Termstrukturen}
+		\paragraph{Warum sind die wichtig?}
+		Durch die Verwendung von Rechenzeichen innerhalb von Termen erhalten diese eine gewisse Struktur. In diversen Standardsituationen kann es sehr hilfreich sein, wenn man diese Strukturen erkennt.
+		\begin{framed}
+			\noindent
+			\textbf{Beispiele:}\\
+			\underline{Situation 1:} Berechnen von Funktionswerten:
+			\[f(-3) = -2\cdot (-3)^2 + 4\]
+			\textit{Welche Reihenfolge der Rechenoperationen muss beachtet werden? Tastenfolge im Taschenrechner?}\\
+			\par
+			\underline{Situation 2:} Lösen einer Gleichung mithilfe von Äquivalenzumformungen (z.B. zur Nullstellenbestimmung)
+			\[-2x^2 +4 = 0\]
+			\textit{Rechnet man zuerst }|\textit{\(:(-2)\), }|\textit{\(-4\) oder }|\textit{\glqq{}Wurzel\grqq{}?}
+		\end{framed}
+		\subsubsection*{Woraus bestehen diese?}
+		Die Terme, mit denen Sie im Laufe der Zeit konfrontiert werden bestehen aus Summen, Produkten oder Potenzen.\\
+		\par\noindent
+		\textbf{\underline{Summen}}\\
+		Eine \underline{Summe} besteht aus mindestens \textbf{zwei Summanden}, die durch ein \underline{\(+\)-Zeichen} verbunden sind.
+		\begin{framed}\noindent
+			\underline{Kurz:} Summand + Summand = Summe
+		\end{framed}
+		\noindent
+		Führt man die Operation (Addition) aus, so erhält man den \underline{Summenwert}.\\
+		\par\noindent
+		\underline{Hinweis:} Sind zwei zahlen durch ein \underline{\glqq{}\(-\)\grqq{}-Zeichen} verbunden, spricht man von der \underline{Differenz}. Dieses Gebilde kann aber auch als Summe bezeichnet werden.\\
+		\(7-4\) bedeutet nämlich eigentlich nichts anderes als \(7 + (-4)\). Es ist also eine Summe aus den Summanden \(7\) und \(-4\).\\
+		\par\noindent
+		\textbf{\underline{Produkte}}\\
+		Ein \underline{Produkt} besteht aus mindestens \textbf{zwei Faktoren}. Diese werden durch ein \underline{\glqq{}\(\cdot\)\grqq{}-Zeichen} miteinander verbunden.
+		\begin{framed}
+			\noindent
+			\underline{Kurz:} Faktor $\cdot$ Faktor = Produkt
+		\end{framed}
+		\noindent
+		Führt man die Operation (Multiplikation) aus, erhält man den sogenannten \underline{Produktwert}.\\
+		\par\noindent
+		\underline{Hinweis:} Der Mal-Punkt wird häufig weggelassen. Also \(5\cdot x\) wird auch als \(5x\) geschrieben.\\
+		\par\noindent
+		\textbf{\underline{Potenzen}}\\
+		Eine \underline{Potenz} besteht immer aus einer \textbf{Basis} und einem \textbf{Exponenten}. Dabei gibt der Exponent an, wie häufig die Basis mit sich selbst multipliziert wird.\\
+		Führt man diese Rechnung aus, ergibt das den \underline{Potenzwert}.
+		\begin{framed}
+			\noindent
+			\underline{Kurz:} \(Basis^{\text{Exponent}}\) = Potenz
+		\end{framed}
+		\noindent
+		\underline{\textbf{Wurzel}}\\
+		Die \underline{Wurzel} einer Zahl \(a\) bezeichnet die Zahl, die mit sich selbst multipliziert, den Wert \(a\) ergibt. In der Regel schreibt man \(\sqrt{a}\).\\
+		Die Zahl unterhalb der Wurzel nennt man auch \textbf{Radikand}.
+		\subsubsection{Wichtige Verknüpfungsregel}
+		Es ist häufig der Fall, dass Potenzen, Produkte und Summern miteinander verknüpft werden. Ist dies der Fall, zerren unterschiedliche Rechenzeichen an einer Zahl herum.\\
+		Bei der Berechnung des Werts eines Terms gilt die folgende Hierarchie:
+		\begin{framed}
+			\centering
+			\color{red}Po\normalcolor{}tenzrechnung\\
+			vor\\
+			\color{red}Pu\normalcolor{}nktrechnung\\
+			vor\\
+			\color{red}Stri\normalcolor{}chrechnung!\\
+			\normalcolor
+			\par\noindent
+			\raggedright
+			Sind auch \color{red}Kla\normalcolor{}mmern beteiligt, so haben diese die größte Macht und binden am stärksten.
+		\end{framed}
+		\noindent
+		\centering
+		\fcolorbox{red!15}{red!5}{\textbf{\color{red}KlaPoPuStri}\normalcolor{} bewahrt vor Fehlern!}\\
+		\raggedright
+		\par\noindent
+		\textbf{Beispiel 1:} \(4\cdot 2 + 5\)\\
+		Wir analysieren die Termstruktur:
+		\begin{tabularx}{0.5\textwidth}{c}
+			\(4\ \boxed{\cdot}\ 2\ +\ 5\)\\
+			\multicolumn{1}{l}{Zuerst \color{red}Pu\normalcolor{}nktrechnung:}\\
+			\(=\ 8\ \boxed{+}\ 5\)\\
+			\multicolumn{1}{l}{Dann \color{red}Stri\normalcolor{}chrechnung:}\\
+			= 13
+		\end{tabularx}
+		\par\noindent
+		\textbf{Beispiel 2:} \(4\cdot (2 + 5)\)\\
+		Wir analysieren die Termstruktur:
+		\begin{tabularx}{0.5\textwidth}{c}
+			\(4\ \cdot\ \boxed{(}\ 2\ +\ 5\ \boxed{)}\)\\
+			\multicolumn{1}{l}{Zuerst \color{red}Kla\normalcolor{}mmerausdruck auflösen:}\\
+			\(=\ 4\ \boxed{\cdot}\ 7\)\\
+			\multicolumn{1}{l}{Dann \color{red}Pu\normalcolor{}nktrechnung:}\\
+			= 28
+		\end{tabularx}
+		\par\noindent
+		\textbf{Beispiel 3:} \(-2\cdot{}(2+4)^2 + 7\)\\
+		Wir analysieren die Termstruktur:
+		\begin{tabularx}{0.5\textwidth}{c}
+			\(-2\ \cdot{}\ \boxed{(}\ 2\ +\ 4\ \boxed{)}^2 +\ 7\)\\
+			\multicolumn{1}{l}{Zuerst \color{red}Kla\normalcolor{}mmerausdruck auflösen:}\\
+			\(=\ -2\ \cdot{}\ \boxed{6^2} +\ 7\)\\
+			\multicolumn{1}{l}{Danach \color{red}Po\normalcolor{}tenz bestimmen:}\\
+			\(=\ -2\ \boxed{\cdot{}}\ 36\ +\ 7\)\\
+			\multicolumn{1}{l}{Anschließend \color{red}Kla\normalcolor{}mmerausdruck auflösen:}\\
+			\(=\ -72\ \boxed{+}\ 7\)\\
+			\multicolumn{1}{l}{Zuletzt \color{red}Stri\normalcolor{}chrechnung:}\\
+			\(=\ -655\)\\
+		\end{tabularx}
+		\newpage
+		\subsection{Rechenregeln}
+		\subsubsection*{Vorzeichenregel (VZ)}
+		\subsubsection*{Klammerregeln - Ausmultiplizieren (AM)}
+		\subsubsection*{Faktorisieren und Ausklammern (FAK)}
+		\subsubsection*{Minus vor der Klammer (MK)}
+		\subsubsection*{Binomische Formeln (BF)}
+		\subsubsection*{Zusammenfassen (ZUS)}
+		\subsubsection*{Potenzgesetze (PG)}
+		\section{Begrifflichkeiten Funktionen}
+		\subsection{Wertepaare}
+		\subsubsection{x-Koordinate}
+		\subsubsection*{Nullstelle(n)}
+		\subsection*{Extremstelle}
+		\subsection*{Wendestelle}
+		\subsubsection{y-Koordinate}
+		\subsubsection*{y-Achsenabschnittswert}
 	\end{worksheet}
 \end{document}
