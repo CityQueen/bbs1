@@ -49,10 +49,50 @@
 		\textit{Welche Schlussfolgerung können Sie daraus ziehen?}\\
 		\par\bigskip\noindent
 		\begin{framed}
-			Die Einheit des Ableitungswerts ist die Bedeutung einer Einheit auf der y-Achse geteilt durch die Bedeutung einer Einheit auf der x-Achse. Ein Ableitungswert bei einer Zeitreihe bedeutet also die momentane Änderungsgynamik zum Zeipunkt x in \glqq{}Rinheit auf der y-Achse\grqq{} pro \glqq{}Zeiteinheit au der x-Achse\grqq{}.
+			Die Einheit des Ableitungswerts ist die Bedeutung einer Einheit auf der y-Achse geteilt durch die Bedeutung einer Einheit auf der x-Achse. Ein Ableitungswert bei einer Zeitreihe bedeutet also die momentane Änderungsdynamik zum Zeitpunkt x in \glqq{}Einheit auf der y-Achse\grqq{} pro \glqq{}Zeiteinheit au der x-Achse\grqq{}.
 		\end{framed}
 		\subsection{Die Ableitungsfunktion}
+		Wir erinnern uns noch dunkel daran, dass jede Funktion \(f\) eine passende Ableitungsfunktion \(f'\) besitzt. Diese gibt uns für jede Stelle den Wert der Ableitung an.\\
+		Bei ganzrationalen Funktionen kann man die Gleichung durch die Ableitungsregeln bestimmen: \(f(x) = a\cdot{}x^n\rightarrow{}f'(x) = a\cdot{}n\cdot{}x^{n-1}\)\\
+		\par\bigskip\noindent
+		\textit{Schauen wir uns die Funktion \(y = -0,1x^2 + 1,2x +2,4\) und deren Ableitungsfunktion aus dem letzten Beispiel an. Die Ableitungsfunktion hat laut obiger Regel die Form \(y' = -0,2x + 1,2\)}. Dementsprechend sieht der Graph dann so aus:\\
+		\par\bigskip\noindent
+		\begin{tabularx}{0.5\textwidth}{X}
+			\includegraphics[width=0.48\textwidth]{../99_Bilder/KiTa'.png}\\
+			\\
+			\textit{Am Graphen können wir ablesen, dass die Ableitungsfunktion für \(x=4\) den Wer \(f'(4)=0,4\) hat.}
+			\textit{\textbf{Außerdem} können wir ablesen, dass die Funktion an der Stelle \(x=6\) eine \underline{Extremstelle} vom Typ \underline{Hochpunkt} besitzt.}
+		\end{tabularx}
 		\subsection{Zusammenhänge zwischen Funktion und Ableitungsfunktion}
+		Um das alter Wissen noch einmal aufzufrischen und eine Übersicht zu haben, finden Sie in der nachfolgenden Tabelle die entsprechenden Zusammenhänge mit einer kurzen Erläuterung.\\
+		\newpage
+		\setlength{\columnseprule}{0pt}
+		\begin{tabularx}{\textwidth}{|X|X|X|X|}
+			\multicolumn{1}{X|}{}& \includegraphics[width=0.15\textwidth]{../99_Bilder/Bsp.png} & \includegraphics[width=0.15\textwidth]{../99_Bilder/Bsp'.png} & \includegraphics[width=0.15\textwidth]{../99_Bilder/Bsp''.png}\\
+			\hline
+			\hline
+			\textbf{Extremstelle Typ Hochpunkt bei \(x_{HP}\)} & Punkt mit \underline{höchstem} Funktionswert für eine Umgebung von \(x_{HP}\) & Nullstelle bei \(x_{HP}\) - (\(f'(x_{HP} = 0)\)) und Ableitungsgraph ist fallend an der Stelle \(x_{HP}\) & \(f''(x_{HP} < 0)\)\\
+			\hline
+			\textbf{Extremstelle Typ Tiefpunkt bei \(x_{TP}\)} & Punkt mit \underline{niedrigstem} Funktionswert für eine Umgebung von \(x_{TP}\) & Nullstelle bei \(x_{TP}\) - (\(f'(x_{TP} = 0)\)) und Ableitungsgraph ist an der Stelle \(x_{TP}\) steigend & \(f''(x_{TP} < 0)\)\\
+			\hline
+			\textbf{Sattelstelle bei \(x_{SP}\)} & Wechsel im Krümmungsverhalten, \underline{kein Wechsel} im Steigungsverhalten & \underline{Doppelte} Nullstelle bei \(x_{SP}\) & Nullstelle bei \(x_{SP}\)\\
+			& & \(f'(x_{SP} = 0)\) & \(f''(x_{SP} = 0)\)\\
+			\hline
+			\textbf{Fallend über Intervall \([a;b]\)} & Für alle \(x_0, x_1\) aus \([a,b]\) gilt: & Graph verläuft unterhalb der x-Achse & \\
+			& Wenn \(x_0 < x_1\) dann ist & \(f'(x) < 0\) & \\
+			& \(f(x_0) > f(x_1)\) & & \\
+			\hline
+			\textbf{Steigend über Intervall \([a;b]\)} & Für alle \(x_0, x_1\) aus \([a,b]\) gilt: & Graph verläuft oberhalb der x-Achse &\\
+			& Wenn \(x_0 < x_1\) dann ist & \(f'(x) > 0\) & \\
+			& \(f(x_0) < f(x_1)\) & & \\
+			\hline
+			\textbf{Wendepunkt bei \(x_{WP}\)} & Wechsel beim Krümmungsverhalten & Punkt mit höchstem/niedrigsten Ableitungswert \(f(x_{WP})'\) für eine Umgebung von \(x_{WP}\) & Nullstelle bei \(x_0\)\\
+			& & & \(f''(x_0) = 0\)\\
+			\hline
+		\end{tabularx}
+		\par\bigskip\noindent
+		\clearpage
+		\setlength{\columnseprule}{0.1pt}
 		\section{Elemente der Kurvendiskussion}
 		\subsection{Definitionsbereich}
 		\subsection{y-Achsenabschnitt}
