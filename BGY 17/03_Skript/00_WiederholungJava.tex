@@ -1,0 +1,48 @@
+\documentclass[11pt,twocolumn,oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{article}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\setlength{\columnsep}{3em}
+\setlength{\columnseprule}{0.5pt}
+
+\geometry{left=2.50cm,right=2.50cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+\pagenumbering{gobble}
+\pagestyle{empty}
+
+\begin{document}
+	\begin{worksheet}{Berufliches Gymnasium}{Klassenstufe 12 - Informationsverarbeitung}{Lernabschnitt 0: Wiederholung Java}
+		\begin{framed}
+			Datum:
+		\end{framed}
+		\section{Grundlagen}
+		\subsection{Datentypen}
+		Bei der Programmierung in Java erinnern wir uns noch an diverse Datentypen. Also die Charakterisierung der möglichen Wertzuweisung einer Variable.\\
+		\begin{tabularx}{0.48\textwidth}{lXX}
+			\textbf{Typ} & \textbf{Beschreibung} & \textbf{Wertebereich / Beispiel}\\
+			\hline
+			\hline
+			boolean & Boolescher Wert & true, false\\
+			\hline
+			char & einzelnes Zeichen & alle Unicode-Zeichen (Tastatur)\\
+			\hline
+			byte & eine ganze Zahl (max. 8 Bit) & \(-2^7\ \ldots 2^7-1\)\\
+			\hdashline
+			short & eine ganze Zahl (max. 16 Bit) & \(-2^{15}\ \ldots 2^{15}-1\)\\
+			\hdashline
+			int & eine ganze Zahl (max. 32 Bit) & \(-2^{31}\ \ldots 2^{31}-1\)\\
+			\hdashline
+			long & eine ganze Zahl (max. 64 Bit) & \(-2^{63}\ \ldots 2^{63}-1\)\\
+			\hline
+			float & Fließkommazahl (max. 32 Bit) & Beispiel: \(3,14159f\)\\
+			\hdashline
+			double & Fließkommazahl (max. 64 Bit) & Beispiel: \(-1,79 * 10^{38}\)\\
+			\hline
+			String & Zeichenkette (Wörter / Sätze etc.) & Beispiel: \glqq{}Das ist ein String!\grqq{}\\
+			\hdashline
+			int[ ] & ganzzahliges Feld (Array) & Beispiel: \({3,1,4,1,5,9}\)\\
+			\hline
+			\hline
+		\end{tabularx}
+	\end{worksheet}
+\end{document}
