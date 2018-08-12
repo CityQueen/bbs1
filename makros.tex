@@ -10,6 +10,7 @@
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
 \definecolor{deepgreen}{rgb}{0,0.5,0}
+\definecolor{mauve}{rgb}{0.40, 0.19,0.28}
 \colorlet{exceptioncolour}{yellow!50!red}
 \colorlet{commandcolour}{blue!60!black}
 \colorlet{numpycolour}{blue!60!green}
@@ -39,19 +40,20 @@
 %Java
 \lstdefinestyle{JavaInputStyle}{
 	language=Java,
-	aboveskip=3mm,
-	belowskip=3mm,
+	backgroundcolor=\color{backcolour},
+	aboveskip=1mm,
+	belowskip=1mm,
 	showstringspaces=false,
 	columns=flexible,
 	basicstyle={\footnotesize\ttfamily},
 	numberstyle={\tiny},
-	numbers=left,
+	numbers=none,
 	keywordstyle=\color{blue},
-	commentstyle=\color{dkgreen},
+	commentstyle=\color{deepgreen},
 	stringstyle=\color{mauve},
 	breaklines=true,
 	breakatwhitespace=true,
-	tabsize=3,
+	tabsize=2,
 }
 %Python
 \lstdefinestyle{PythonInputStyle}{
@@ -86,6 +88,16 @@
 	rulecolor=\color{black!40},
 	showstringspaces=false,
 	stringstyle=\color{deepgreen}
+}
+
+\lstset{literate=%
+	{Ö}{{\"O}}1
+	{Ä}{{\"A}}1
+	{Ü}{{\"U}}1
+	{ß}{{\ss}}1
+	{ü}{{\"u}}1
+	{ä}{{\"a}}1
+	{ö}{{\"o}}1
 }
 
 % Neue Klassenarbeits-Umgebung
