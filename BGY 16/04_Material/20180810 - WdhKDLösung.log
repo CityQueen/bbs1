@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.1)  13 AUG 2018 14:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.1)  14 AUG 2018 14:30
 entering extended mode
-**"./2018081317 - Woche1.tex"
-("2018081317 - Woche1.tex"
+**"./20180810 - WdhKDLösung.tex"
+("20180810 - WdhKDLösung.tex"
 LaTeX2e <2017-04-15>
 Babel <3.15> and hyphenation patterns for 75 language(s) loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\koma-script\scrreprt.cls"
@@ -1796,8 +1796,8 @@ Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\eurosym\eurosym.sty"
 Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
 \@eurobox=\box78
-) (../../makros.tex) ("2018081317 - Woche1.aux")
-\openout1 = `"2018081317 - Woche1.aux"'.
+) (../../makros.tex) ("20180810 - WdhKDLösung.aux")
+\openout1 = `"20180810 - WdhKDLösung.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
@@ -1897,9 +1897,9 @@ LaTeX Info: Redefining \ref on input line 8.
 LaTeX Info: Redefining \pageref on input line 8.
 LaTeX Info: Redefining \nameref on input line 8.
 
-("2018081317 - Woche1.out") ("2018081317 - Woche1.out")
+("20180810 - WdhKDLösung.out") ("20180810 - WdhKDLösung.out")
 \@outlinefile=\write6
-\openout6 = `"2018081317 - Woche1.out"'.
+\openout6 = `"20180810 - WdhKDLösung.out"'.
 
 \c@lstlisting=\count384
 
@@ -1909,55 +1909,180 @@ LaTeX Font Info:    Try loading font information for T1+lmss on input line 9.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd")
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omllmm.fd")
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmsy.fd")
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omxlmex.fd")
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd")
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd")
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 14.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 14.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 14.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 14.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 14.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 14.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 14.
+LaTeX Font Info:    Try loading font information for U+msb on input line 14.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 14.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+stmry on input line 14.
+
 ("C:\Program Files\MiKTeX 2.9\tex\latex\stmaryrd\ustmry.fd")
+Underfull \hbox (badness 10000) in paragraph at lines 23--34
+
+ []
+
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 35.
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <10.95> not available
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 35.
 <../../logo.jpg, id=6, 192.72pt x 29.10875pt>
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg  used on input line 54. on input line 5
-4.
+Package pdftex.def Info: ../../logo.jpg  used on input line 48. on input line 4
+8.
 Package pdftex.def Info: Requested size: 91.04742pt x 13.75172pt on input line 
-54.
- [1{C:/Users/carso/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+48.
+[1{C:/Users/carso/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
  <../../logo.jpg>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 55.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 55.
+Underfull \hbox (badness 10000) in alignment at lines 62--62
+[][] 
+ []
 
-("2018081317 - Woche1.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 55.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 55.
-Package rerunfilecheck Info: File `"2018081317 - Woche1".out' has not changed.
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--64
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--66
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--68
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--71
+
+ []
+
+<../99_Bilder/00_Wdh/KoordLeer.png, id=27, 848.67062pt x 593.71812pt>
+File: ../99_Bilder/00_Wdh/KoordLeer.png Graphic file (type png)
+<use ../99_Bilder/00_Wdh/KoordLeer.png>
+Package pdftex.def Info: ../99_Bilder/00_Wdh/KoordLeer.png  used on input line 
+79. on input line 79.
+Package pdftex.def Info: Requested size: 432.48051pt x 302.55669pt on input lin
+e 79.
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg  used on input line 80. on input line 8
+0.
+Package pdftex.def Info: Requested size: 91.04742pt x 13.75172pt on input line 
+80.
+[2]
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg  used on input line 81. on input line 8
+1.
+Package pdftex.def Info: Requested size: 91.04742pt x 13.75172pt on input line 
+81.
+ [3 <../99_Bilder/00_Wdh/KoordLeer.png>]
+<../99_Bilder/outbreak.png, id=36, 742.775pt x 252.945pt>
+File: ../99_Bilder/outbreak.png Graphic file (type png)
+<use ../99_Bilder/outbreak.png>
+Package pdftex.def Info: ../99_Bilder/outbreak.png  used on input line 82. on i
+nput line 82.
+Package pdftex.def Info: Requested size: 455.24411pt x 155.0334pt on input line
+ 82.
+
+Overfull \hbox (10.95pt too wide) in paragraph at lines 82--85
+[][] 
+ []
+
+<../99_Bilder/00_Wdh/KoordLeer1.png, id=38, 871.75688pt x 593.71812pt>
+File: ../99_Bilder/00_Wdh/KoordLeer1.png Graphic file (type png)
+<use ../99_Bilder/00_Wdh/KoordLeer1.png>
+Package pdftex.def Info: ../99_Bilder/00_Wdh/KoordLeer1.png  used on input line
+ 98. on input line 98.
+Package pdftex.def Info: Requested size: 455.24411pt x 310.04881pt on input lin
+e 98.
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg  used on input line 99. on input line 9
+9.
+Package pdftex.def Info: Requested size: 91.04742pt x 13.75172pt on input line 
+99.
+[4 <../99_Bilder/outbreak.png>]
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg  used on input line 115. on input line 
+115.
+Package pdftex.def Info: Requested size: 91.04742pt x 13.75172pt on input line 
+115.
+ [5 <../99_Bilder/00_Wdh/KoordLeer1.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 116.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 116.
+
+("20180810 - WdhKDLösung.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 116.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 116.
+Package rerunfilecheck Info: File `"20180810 - WdhKDLösung".out' has not chang
+ed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 55.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 116.
  ) 
 Here is how much of TeX's memory you used:
- 35597 strings out of 493312
- 652712 string characters out of 3138900
- 867078 words of memory out of 3000000
- 38527 multiletter control sequences out of 15000+200000
- 571328 words of font info for 51 fonts, out of 3000000 for 9000
+ 35632 strings out of 493312
+ 653464 string characters out of 3138900
+ 868130 words of memory out of 3000000
+ 38550 multiletter control sequences out of 15000+200000
+ 576935 words of font info for 53 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 73i,13n,66p,10464b,362s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 73i,20n,66p,10468b,478s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
-iKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
-nc/dvips/lm/lm-rm.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/
-lmri8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/lm/lmss8.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.
-pfb>
-Output written on "2018081317 - Woche1.pdf" (1 page, 174656 bytes).
+iKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
+nc/dvips/lm/lm-mathex.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ma
+thsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}<C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/lm/lmri8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss10
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss8.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/lm/lmssbo10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/lm/lmsso10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
+Output written on "20180810 - WdhKDLösung.pdf" (5 pages, 406526 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
- 2 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 98 PDF objects out of 1000 (max. 8388607)
+ 6 named destinations out of 1000 (max. 500000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
