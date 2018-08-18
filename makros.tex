@@ -10,6 +10,7 @@
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
 \definecolor{deepgreen}{rgb}{0,0.5,0}
+\definecolor{darkblue}{rgb}{0,0,0.65}
 \definecolor{mauve}{rgb}{0.40, 0.19,0.28}
 \colorlet{exceptioncolour}{yellow!50!red}
 \colorlet{commandcolour}{blue!60!black}
@@ -48,9 +49,13 @@
 	basicstyle={\footnotesize\ttfamily},
 	numberstyle={\tiny},
 	numbers=none,
-	keywordstyle=\color{blue},
+	keywordstyle=\color{purple},,
 	commentstyle=\color{deepgreen},
-	stringstyle=\color{mauve},
+	stringstyle=\color{blue},
+	emph={out},
+	emphstyle=\color{darkblue},
+	emph={[2]rand},
+	emphstyle=[2]\color{specmethodcolour},
 	breaklines=true,
 	breakatwhitespace=true,
 	tabsize=2,
