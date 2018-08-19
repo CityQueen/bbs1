@@ -1,0 +1,69 @@
+\documentclass[oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{scrreprt}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\geometry{left=2.50cm,right=2.50cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+
+\begin{document}
+	\begin{worksheet}{BGY 17}{Klassenstufe 12 - Informationsverarbeitung}{Lernabschnitt 1: Wiederholungsanweisung}
+				
+		\noindent
+		\sffamily
+		\textbf{Datum:}
+		\rule{0.91\textwidth}{0.4pt}
+		\begin{framed}
+			\noindent
+			Realisieren Sie die nachfolgenden Aufgaben mit Hilfe von \lstinline[style=JavaInputStyle]{for}, \lstinline[style=JavaInputStyle]{while} oder \lstinline[style=JavaInputStyle]{do-while}.\\
+			\par\noindent
+			\textbf{\underline{Satz des Pythagoras}}\\
+			Der Satz des Pythagoras definiert die Beziehungen der Seitenlängen in einem rechtwinkligen Dreieck zu \(a^2 + b^2 = c^2\). Die Formel für die Berechnung der Hypotenuse bei gegebenen Katheten ist demnach \lstinline[style=JavaInputStyle]{c = Math.sqrt(\(a^2+b^2\))}. Es ist eine bemerkenswerte Tatsache, dass die Hypotenusenlänge auchberechnet werden kann, ohne explizit die Wurzel zu ziehen.\\
+			\par\noindent
+			Das folgende Verfahren wurde 1983 von C.Moler und D.Morrison beschrieben.\\Zunächst berechnen Sie:
+			\begin{lstlisting}[style=JavaInputStyle]
+				c = maximum(a,b);
+				q= minimum(a,b);
+			\end{lstlisting}
+			Dann führen Sie \underline{drei Iterationen} der folgenden Anweisungen aus:
+			\begin{lstlisting}[style=JavaInputStyle]
+				r = (q/c)^2;
+				s = r/ (4.0+r);
+				c = c+(2.0*s*c);
+				q = s*q;
+			\end{lstlisting}
+			\par\noindent
+			Bereits nach nur drei Iterationen findet sich eine sehr gute Annäherung der Hypothenuse c.\\
+			\textbf{Schreiben Sie ein Programm, das dieses Verfahren implementiert.}\\
+			\par\noindent
+			(\underline{Hinweis:} Für die Bestimmung des Maximums der Zahlen a und b können Sie die Anweisung \lstinline[style=JavaInputStyle]{Math.max(a,b)} und für das Minimum die Anweisung \lstinline[style=JavaInputStyle]{Math.min(a,b)} nutzen.)\\
+			\par\bigskip\noindent
+			\textbf{\underline{Summe von Zahlen}}\\
+			Schreiben Sie ein Programm zur Berechnung der Summe der Zahlen von 1 bis n.\\
+			Ermitteln Sie das Resultat durch Summierung innerhalb einer Schleife.\\
+			\par\bigskip\noindent
+			\textbf{\underline{Tabelle Quadrat- und Kubikzahlen}}\\
+			Schreiben Sie ein Programm, das eine Tabelle von den Quadrat- und Kubikzahlen der Zahlen 1 bis n ausgibt.
+			\par\noindent
+			\begin{tabularx}{\textwidth}{llllX}
+				n & \(n^2\) & \(n^3\) & &  \multirow{5}{0.75\textwidth}{(\underline{Hinweis:} Nutzen Sie für die Berechnung der Quadrat- bzw. Kubikzahlen die Anweisung \lstinline[style=JavaInputStyle]{Math.pow(Basis,Exponent)}. Basis = Zahl - z.B.: 1, 2 oder 3 - und Exponent = Potenz - z.B. 2 für Quadrat und 3 für Kubik.)}\\
+				\cline{1-3}
+				1 & 1 & 1 & &\\
+				2 & 4 & 8 & &\\
+				3 & 9 & 27& &\\
+				\(\ldots\) & \(\ldots\) & \(\ldots\) & &
+			\end{tabularx}\\
+			Für die einheitliche Ausgabe als Tabelle (Spalten) können Sie \lstinline[style=JavaInputStyle]{"\t"} als Tabstopp nutzen.
+			\newpage\noindent
+			\textbf{\underline{Quadratwurzel - \lstinline[style=JavaInputStyle]{do-while}-Schleife}}\\
+			Schreiben Sie ein Program, welches die Quadratwurzel einer natürlichen Zahl annähert.\\
+			Benutzen Sie dazu die \textit{Folge von Heron}:
+			\begin{lstlisting}[style=JavaInputStyle,mathescape=true]
+				$X_{n+1}$ = 1/2 * ($X_n$ + Zahl/$X_n$);
+			\end{lstlisting}
+			Das Programm soll abbrechen, wenn der Unterschied zum vorherigen Näherungswert kleiner als \(0.000\ 000\ 000\ 000\ 001\) wird. Der Wert \(X_0\) ist die Zahl selbst.\\
+			\par\bigskip\noindent
+			\textbf{\underline{Teiler einer Zahl}}\\
+			Geben Sie zu einer einzugebenden Zahl alle Teiler dieser Zahl aus.\\Realisieren Sie die Lösung sowohl mit einer \lstinline[style=JavaInputStyle]{for}- als auch mit einer \lstinline[style=JavaInputStyle]{while}-Schleife.
+		\end{framed}
+	\end{worksheet}
+\end{document}

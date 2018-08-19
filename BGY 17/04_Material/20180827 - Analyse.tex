@@ -57,10 +57,14 @@
 		//rand.nextInt() liefert eine zufällige Zahl zurück
 		int zahl1 = rand.nextInt(), zahl2 = rand.nextInt();
 		
-		//Wenn zahl1 < zahl2 und zahl1 den Wert 5 hat, wird nach dem Namen gefragt. Ansonsten wird eine neue zufällige Zahl an zahl2 zugewiesen.
+		//Wenn zahl1 < zahl2 und zahl1 den Wert 5 hat, wird nach dem Namen gefragt. Ist das nicht der Fall aber zahl1 + zahl2 ist negativ, werden beiden Zahlen neue Werte zugewiesen.
+		//Ansonsten wird eine neue zufällige Zahl an zahl2 zugewiesen.
 		if (zahl1 < zahl2, zahl1 == 5){
 			System.out.println("Wie heißt du?");
 		}
+		if (zahl1 + zahl2 <0)
+			zahl1 = rand.nextInt();
+			rahl2 = rand.nextInt();
 		else {
 			zahl2 = rand.nextInt();
 		}
@@ -70,9 +74,14 @@
 		//rand.nextInt() liefert eine zufällige Zahl zurück
 		int zahl1 = rand.nextInt(), zahl2 = rand.nextInt();
 		
-		//Wenn zahl1 < zahl2 und zahl1 den Wert 5 hat, wird nach dem Namen gefragt. Ansonsten wird eine neue zufällige Zahl an zahl2 zugewiesen.
+		//Wenn zahl1 < zahl2 und zahl1 den Wert 5 hat, wird nach dem Namen gefragt. Ist das nicht der Fall aber zahl1 + zahl2 ist negativ, werden beiden Zahlen neue Werte zugewiesen.
+		//Ansonsten wird eine neue zufällige Zahl an zahl2 zugewiesen.
 		if (zahl1 < zahl2, zahl1 == 5){
 			System.out.println("Wie heißt du?");
+		}
+		if (zahl1 + zahl2 <0)
+			zahl1 = rand.nextInt();
+			rahl2 = rand.nextInt();
 		else {
 			zahl2 = rand.nextInt();
 		}
@@ -84,8 +93,12 @@
 		
 		//Wenn zahl1 < zahl2 und zahl1 < 100000, wird zahl1 ausgegeben.
 		//Sonst wird geprüft ob zahl2 < 200000, dann wird zahl2 eine neue zufällige Zahl zugewiesen.
+		//Ist keine der beiden Bedingungen erfüllt, wird eine neue Variable zahl3 erzeugt.
 		if (zahl1 < zahl2, zahl1 < 100000){
 			System.out.println(zahl1);
+		else {
+			int zahl3;
+		}
 		else if{ (zahl2 < 200000)
 			zahl2 = rand.nextInt();
 		}
@@ -97,8 +110,11 @@
 		
 		//Wenn zahl1 < zahl2 und zahl1 < 100000, wird zahl1 ausgegeben.
 		//Sonst wird geprüft ob zahl2 < 200000, dann wird zahl2 eine neue zufällige Zahl zugewiesen.
+		//Ist keine der beiden Bedingungen erfüllt, wird eine neue Variable zahl3 erzeugt.
 		if (zahl1 < zahl2, zahl1 < 100000){
 			System.out.println(zahl1);
+		else {
+			int zahl3;
 		}
 		else if{ (zahl2 < 200000)
 			zahl2 = rand.nextInt();
