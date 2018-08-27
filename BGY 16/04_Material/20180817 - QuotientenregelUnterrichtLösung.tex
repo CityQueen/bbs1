@@ -1,0 +1,60 @@
+\documentclass[oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{scrreprt}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\geometry{left=2.50cm,right=2.50cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+
+\begin{document}
+	\begin{worksheet}{BGY 16}{Klassenstufe 13 - Mathematik}{Lernabschnitt 1: Ketten-, Produkt- und \textbf{Quotientenregel}}
+				
+		\noindent
+		\sffamily
+		\begin{framed}
+			\noindent
+			\textbf{\underline{Quotientenregel}} Wir erinnern uns an die Regel, die wir anwenden, wenn eine mit einer gebrochen-rationalen Funktion konfrontiert werden.\\
+			\par\noindent
+			Dabei hat die Funktion folgende Form: \(f(x) = \frac{u(x)}{v(x)}\). Die dazugehörige Ableitung wird nach der unten stehenden Regel gebildet!
+			\begin{align*}				
+				f'(x) = \frac{u'(x)\cdot{}v(x) - u(x)\cdot{}v'(x)}{v^2(x)}\\
+			\end{align*}
+			Beachten Sie, dass sich die Potenz im Nenner durch das \underline{\colorbox{blue!10}{\(^2\)}} immer verdoppelt.\\
+			\textit{Beispiel: Im Nenner von \(f(x)\) steht \((x-3)^2\). Dann findet sich im Nenner von \(f'(x)\) der Ausdruck \((x-3)^4\).}
+		\end{framed}
+		\begin{framed}
+			\noindent
+			\textbf{\underline{Aufgabe 1}} Leiten Sie die nachfolgenden Funktionen mit Hilfe der Quotientenregel ab. Vereinfachen Sie das Ergebnis, falls möglich.\\
+			Wir definieren zunächst \(u(x), u'(x)\) und \(v(x), v'(x)\).
+			\par
+			\begin{tabularx}{\textwidth}{llll}
+				(a) \(f(x) = \frac{2x}{(x+2)^2}\)\\
+				\(u(x) = 2x\) & \(u'(x) = 2\) & \(v(x) = (x+2)2\) & \(v'(x) = 2(x+2)\cdot{}1\)\\
+				\multicolumn{4}{l}{\(f'(x) = \frac{\overbrace{2}^{u'(x)}\overbrace{(x+2)^2}^{v(x)} - \overbrace{2x}^{u(x)}\overbrace{2(x+1)}^{v'(x)}}{\underbrace{[(x+2)^2]^2}_{v^2(x)}} =\) \colorbox{green!10}{\(\frac{2(x+2)^2-4x(x+2)}{(x+2)^4}\)}}\\
+				\\
+				(b) \(f(x) = \frac{x^2-x}{x+1}\)\\
+				\(u(x) = x^2-x\) & \(u'(x) = 2x-1\) & \(v(x) = x+1\) & \(v'(x) = 1\)\\
+				\multicolumn{4}{l}{\colorbox{green!10}{\(f'(x) = \frac{(2x-1)(x+1)-(x^2-x)}{(x+1)^2}\)}}\\
+				\\
+				(c) \(f(x) = \frac{2x^2-3}{x^3}\)\\
+				\(u(x) = 2x^2-3\) & \(u'(x) = 4x\) & \(v(x) = x^3\) & \(v'(x) = 3x^2\)\\
+				\multicolumn{4}{l}{\(f'(x) = \frac{4x\cdot{}x^3 - (2x^2-3)3x^2}{(x^3)^2} =\) \colorbox{green!10}{\(\frac{4x^4-3x^2(2x^2-3)}{x^6}\)}}\\
+				\\
+			\end{tabularx}
+			\begin{tabularx}{\textwidth}{llll}
+				(d) \(f(x) = \frac{18x}{(x^2+3)^3}\)\\
+				\(u(x) = 18x\) & \(u'(x) = 18\) & \(v(x) = (x^2+3)^3\) & \(v'(x) = 3(x^2+3)^2\cdot{}2x\)\\
+				& & & \(= 6x(x^2+3)^2\)\\
+				\multicolumn{4}{l}{\(f'(x) = \frac{18(x^2+3)^3 - 18x\cdot{}6x(x^2+3)^2}{[(x^2+3)^3]^2} =\) \colorbox{green!10}{\(\frac{18(x^2+3)^3-108x^2(x^2+3)^2}{(x^2+3)^6}\)}}\\
+				\\
+				(e) \(f(x) = \frac{-2x^2-2}{(x^2-1)^2}\)\\
+				\(u(x) = -2x^2-2\) & \(u'(x) = -4x\) & \(v(x) = (x^2-1)^2\) & \(v'(x) = 2(x^2-1)\cdot{}2x\)\\
+				& & & \(= 4x(x^2-1)\)\\
+				\multicolumn{4}{l}{\(f'(x) = \frac{-4x(x^2-1)^2 - (-2x^2-2)\cdot{}4x(x^2-1)}{[(x^2-1)^2]^2} =\) \colorbox{green!10}{\(\frac{-4x(x^2-1)^2 - 4x(-2x^2-2)(x^2-1)}{(x^2-1)^4}\)}}\\
+				\\
+				(f) \(f(x) = \frac{x^2+2x}{x^2+2x+1}\)\\
+				\(u(x) = x^2+2x\) & \(u'(x) = 2x+2\) & \(v(x) = x^2+2x+1\) & \(v'(x) = 2x+2\)\\
+				\multicolumn{4}{l}{\colorbox{green!10}{\(f'(x) = \frac{(2x+2)(x^2+2x+1)-(x^2+2x)(2x+2)}{(x^2+2x+1)^2}\)}}
+			\end{tabularx}
+		\end{framed}
+	\end{worksheet}
+\end{document}

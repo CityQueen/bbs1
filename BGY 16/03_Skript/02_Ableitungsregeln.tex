@@ -1,0 +1,84 @@
+\documentclass[11pt,twocolumn,oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{article}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\setlength{\columnsep}{3em}
+\setlength{\columnseprule}{0.5pt}
+
+\geometry{left=2.50cm,right=2.50cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+\pagenumbering{gobble}
+\pagestyle{empty}
+
+\begin{document}
+	\begin{worksheet}{BGY 16}{Klassenstufe 13 - Mathematik}{Lernabschnitt 1: Ableitungsregeln}
+		
+		\section{Ableitungsregeln}
+		Im Verlauf unseres kurzen mathematische Vergnügens werden wir des öfteren mit dem Begriff \textbf{ableiten} oder auch \textbf{Ableitung} konfrontiert.\\
+		Nachfolgend werden die verschiedenen Ableitungsregeln kurz erläutert und an einem Beispiel demonstriert.\\
+		\par\noindent
+		Für die nachfolgenden Regeln betrachten wir die Funktionen \(g\) und \(h\). Diese sind auf einem Intervall \(I\) definiert und an der Stelle \(x\in{}I\) differenzierbar.\\
+		Konstanten bezeichnen wir im nachfolgenden mit \(c\in{}\mathbb{R}\).
+		\begin{framed}
+			\subsection{Potenzregelregel}
+			\colorbox{green!10}{\(f(x) = c\cdot{}x^n\)} mit \(c\in{}\mathbb{R}, n\in{}\mathbb{Z}\) ist in \(x\) differenzierbar, dann gilt: \[f'(x) = c\cdot{}n\cdot{}x^{n-1}\]
+			\par\noindent
+			\underline{Sonderfall}: Steht unser \(x\) im Nenner eines Bruchs, so bietet sich folgendes Vorgehen an:\\
+			\(f(x) = \frac{1}{x^3} \xrightarrow{umformen} f(x) = x^{-3}\)\\
+			\(\xrightarrow{ableiten} f'(x) = -3\cdot{}x^{\overbrace{-4}^{-3-1}}\)\\
+			\par\noindent
+			\(\xrightarrow{umformen} f'(x) = \frac{-3}{x^4}\)
+			\par\bigskip\noindent
+			\rule{0.99\textwidth}{0.4pt}
+			\underline{Beispiel:}\[f(x) = x^4\]\[f'(x) = 4x^3\]
+		\end{framed}
+		\begin{framed}
+			\subsection{Summenregel}
+			\noindent
+			\colorbox{green!10}{\(f(x) = g(x) + h(x)\)} ist in \(x\) differenzierbar, dann gilt: \[f'(x) = g'(x) + h'(x)\]
+			\par\noindent
+			Als kleine Merkregel führen wir an:\\
+			\indent{}Summen werden gliedweise abgeleitet! (Jeder Summand für sich!)
+			\par\bigskip\noindent
+			\rule{0.99\textwidth}{0.4pt}
+			\underline{Beispiel:} \[f(x) = 3x^2 + 4x\]\[f'(x) = 6x + 4\]
+		\end{framed}
+		\begin{framed}
+			\subsection{Faktorregel}
+			\colorbox{green!10}{\(f(x) = c\cdot{}g(x)\)} mit \(c\in\mathbb{R}\) ist in \(x\) differenzierbar, dann gilt: \[f'(x) = c\cdot{}g'(x)\]
+			\par\noindent
+			Unsere Merkregel für die Faktorregel:\\
+			Ein konstanter Faktor bleibt beim Ableiten erhalten!
+			\par\bigskip\noindent
+			\rule{0.99\textwidth}{0.4pt}
+			\underline{Beispiel:} \[f(x) = 4x^3\]\[f'(x) = 4\cdot{}3\cdot{}x^2\]
+		\end{framed}
+		\begin{framed}
+			\subsection{Kettenregel}
+			Betrachten wir \colorbox{green!10}{\(f(x) = g(x)\circ{}h(x) = g(h(x))\)} und sowohl \(g(x)\) als auch \(h(x)\) sind differenzierbar in \(x\), so bezeichnet man \(f(x)\) auch als Verkettung der beiden Funktionen \(g\) und \(h\). Dann gilt die folgende Ableitungsregel: \[f'(x) = g'(h(x))\cdot{}h'(x)\]
+			\par\noindent
+			Im Allgemeinen können wir diese Regel auch formulieren als \textit{äußere Ableitung} mal \textit{innere Ableitung}.\\
+			\par\bigskip\noindent
+			\rule{0.99\textwidth}{0.4pt}
+			\underline{Beispiel:} \[f(x) = \underbrace{(\overbrace{x^2-3x}^{h(x)})^4}_{g(x)}\]\[f'(x) = \underbrace{4(x^2-3x)^3}_{g'(h(x))}\cdot{}\underbrace{(2x-3)}_{h'(x)}\]
+		\end{framed}
+		\begin{framed}
+			\subsection{Produktregel}
+			\colorbox{green!10}{\(f(x) = g(x)\cdot{}h(x)\)} ist in \(x\) differenzierbar, dann gilt: \[f'(x) = g'(x)\cdot{}h(x) + g(x)\cdot{}h'(x)\]
+			\par\noindent
+			Prinzipiell können wir uns für diese Ableitung auch schnell merken: (uv)' = u'v + uv'
+			\par\bigskip\noindent
+			\rule{0.99\textwidth}{0.4pt}
+			\underline{Beispiel:}\[f(x) = \underbrace{x}_{g(x)}\cdot{}\underbrace{(x^3+x)}_{h(x)}\]\[f'(x) = \underbrace{1}_{g'(x)}\cdot\underbrace{(x^3+x)}_{h(x)} + \underbrace{x}_{g(x)}\cdot\underbrace{(3x^2+1)}_{h'(x)}\]
+		\end{framed}
+		\begin{framed}
+			\subsection{Quotientenregel}
+			Sind \(g(x)\) und \(h(x)\) differenzierbar und \underline{\(h(x)\neq{}0\)}, so ist auch \colorbox{green!10}{\(f(x) = \frac{g(x)}{h(x)}\)} differenzierbar. Die entsprechende Ableitungsregel lautet wie folgt: \[f'(x) = \frac{g'(x)\cdot{}h(x) - g(x)\cdot{}h'(x)}{h^2(x)}\]
+			\par\noindent
+			Prinzipiell können wir uns für diese Ableitung auch schnell merken: (uv)' = u'v + uv'
+			\par\bigskip\noindent
+			\rule{0.99\textwidth}{0.4pt}
+			\underline{Beispiel:}\[f(x) = \frac{\overbrace{(x^3+2x)}^{g(x)}}{\underbrace{x^2}_{h(x)}}\]\[f'(x) = \frac{\overbrace{(3x^2+2)}^{g'(x)}\cdot\overbrace{x^2}^{h(x)} - \overbrace{(x^3+2x)}^{g(x)}\cdot\overbrace{2x}^{h'(x)}}{\underbrace{(x^2)^2}_{h(x)}}\]
+		\end{framed}
+	\end{worksheet}
+\end{document}

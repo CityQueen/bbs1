@@ -11,7 +11,7 @@
 \pagenumbering{arabic}
 
 \begin{document}
-	\begin{worksheet}{Berufliches Gymnasium}{Klassenstufe 12 - Informationsverarbeitung}{Lernabschnitt 1: Wiederholungsanweisungen}
+	\begin{worksheet}{Berufliches Gymnasium}{Klassenstufe 12 - Informationsverarbeitung}{Lernabschnitt 1: Kontrollstrukturen - Wiederholungsanweisungen}
 		\setlength{\columnseprule}{0pt}
 		\begin{framed}
 			Datum:
@@ -25,12 +25,12 @@
 		\par
 		Also brauchen wir einen \underline{work-around} - eine Möglichkeit eine Sequenz mehrfach auszuführen, ohne diese mehrfach im Quellcode anzugeben.\\
 		Dafür gibt es die \textbf{\underline{Wiederholungsanweisung}}.\\
-		\par\bigskip\noindent
+		\par\noindent
 		Java bietet uns drei verschiedene Wiederholungsanweisungen, die in unterschiedlichen Fällen Anwendung finden.\\
 		\begin{tabularx}{\textwidth}{ccc}
 			\underline{Wiederholung mit fester Anzahl} & \underline{Abweisende Wiederholung} & \underline{Nicht-Abweisende Wiederholung}
 		\end{tabularx}
-		\subsection{Wiederholung mit fester Anzahl}
+		\subsection{Wiederholung mit fester Anzahl - Zählschleife}
 		Weiß man, dass eine Sequenz eine festgelegte Anzahl wiederholt wird, so nutzt man die \lstinline[style=JavaInputStyle]|for|-Anweisung.\\
 		Diese hat immer die folgende Form:
 		\begin{lstlisting}[style=JavaInputStyle]
@@ -39,12 +39,13 @@
 			}
 		\end{lstlisting}
 		\par\bigskip\noindent
-		Die geforderten Parameter haben die folgende Bedeutung:\\
+		Der Schleifenkopf lässt sich wie folgt erläutern:\\
 		\begin{tabularx}{\textwidth}{lX}
 			{\lstinline[style=JavaInputStyle]|<Init>|} & Deklaration einer ganzzahligen Zählvariable und der Zuweisung eines Anfangswerts (z.B. {\lstinline[style=JavaInputStyle]|int i = 0|})\\
 			{\lstinline[style=JavaInputStyle]|<Bedingung>|} & Solange die Bedingung, abhängig von der Zählvariablen, erfüllt ist, wird die im inneren der {\lstinline[style=JavaInputStyle]{for}}-Schleife angegebene Sequenz ausgeführt (z.B. {\lstinline[style=JavaInputStyle]|int i= 0; i < 5|} - Die Sequenz wird fünf mal ausgeführt - wurde hingegen {\lstinline[style=JavaInputStyle]|int i=0; i <= 5|} angegeben, so wird die Schleife sechs mal ausgeführt)\\
 			{\lstinline[style=JavaInputStyle]|<Update>|} & Das Update der Zählvariablen erfolgt nach jedem Durchlauf entsprechend der angegebenen Zuweisung (z.B. {\lstinline[style=JavaInputStyle]|i++|}, also i wird um eins erhöht. Bei {\lstinline[style=JavaInputStyle]|i--|} wird i um eins verringert.)
 		\end{tabularx}
+		Eine bestimmte Variable wird als Lauf- oder auch Zählvariable definiert und ihr wird ein Anfangswert zugewiesen. Diese Laufvariable wird nach jedem Durchlauf erhöht oder verringert. Die Anweisungen im Schleifenrumpf werden durchgeführt, bis die Laufvariable einen Endwert erreicht hat. Dieser wird im Schleifenkopf festgelegt.\\
 		Zu beachten ist, dass die {\lstinline[style=JavaInputStyle]|<Bedingung>|} immer vor der Ausführung der Sequenz überprüft wird.\\
 		\par\noindent
 		\begin{minipage}[t]{0.48\textwidth}
@@ -74,44 +75,34 @@
 				}
 			\end{lstlisting}
 		\end{minipage}
-		\par\noindent
-		Die zugehörigen Struktogramme verdeutlichen den minimalen Unterschied in der \lstinline[style=JavaInputStyle]|<Bedingung>|.\\
-		\begin{minipage}[t]{0.48\textwidth}
-			\vspace*{0pt}
-			\begin{struktogramm}(78,50)
-				\while[10]{Von i:=0 bis 5 tue (wobei i jedes mal um1 erhöht wird)}
-				\assign{Erhöhe den Wert der Summe um i}
-				\whileend
-			\end{struktogramm}
-		\end{minipage}
-		\hfill
-		\begin{minipage}[t]{0.48\textwidth}
-			\vspace*{0pt}
-			\begin{struktogramm}(78,50)
-				\while[10]{Von i:=0 bis 4 tue (wobei i jedes mal um1 erhöht wird)}
-				\assign{Erhöhe den Wert der Summe um i}
-				\whileend
-			\end{struktogramm}
-		\end{minipage}
 		\subsection{Abweisende Wiederholung}
 		\label{abwei}
+		Die abweisende Schleife ist ein Sprachelement zur Umsetzung der algorithmischen Grundstruktur des abweisenden Zyklus (kopfgesteuerte Wiederholung). Möchten wir also, dass ein Anweisungsblock nur ausgeführt bzw. solange ausgeführt wird, wie eine bestimmte Bedingung erfüllt ist, hilft die kopfgesteuerte Wiederholungsanweisung.\\
+		\underline{Beispiel:}\\
+		\texttt{\indent{}Solange zahl ungleich Null\\
+		\indent{}\indent{}rechne: Ergebnis = 20/zahl;\\
+		\indent{}\indent{}verringere Zahl um 1;}\\
+		\par\noindent
+		Die Schleifenbedingung wird vor Eintritt in den Anweisungsblock überprüft und die im Schleifenrumpf angegebenen Anweisungen werden so lange ausgeführt, wie die Bedingung wahr (\lstinline[style=JavaInputStyle]{true}) ist.\\
+		\par\noindent
+		Ist die Bedingung bereits vor dem ersten Eintritt in den Anweisungsblock falsch (\lstinline[style=JavaInputStyle]{false}), wird der Schleifenrumpf nicht durchlaufen.\\
 		\begin{lstlisting}[style=JavaInputStyle]
 			while(<Bedingung>){
 				<Anweisungen>
 			}
 		\end{lstlisting}
 		\par\bigskip\noindent
-		Wir überprüfen also \underline{\textbf{bevor}} die Sequenz ausgeführt wird, ob die Bedingung erfüllt ist. Dabei kann es also passieren, dass die Sequenz \underline{garnicht} ausgeführt wird.\\
+		Da die abweisende Schleife in den meisten Programmiersprachen mit dem Schlüsselwort \lstinline[style=JavaInputStyle]{while} beschrieben wird, nennt man sie meist auch \lstinline[style=JavaInputStyle]{while}-Schleife.\\
 		\par\noindent
 		\begin{minipage}[t]{0.48\textwidth}
 			\vspace*{0pt}
 			Beispiel kopfgesteuerte Wiederholung:
 			\begin{lstlisting}[style=JavaInputStyle,frame=single]
-				int pin = input();
+				int zahl = input();
 				
-				while(pin != 0815){
-					System.out.println("Fehlerhafte PIN!");
-					pin = input();
+				while(zahl != 0){
+					ergebnis = 20/zahl;
+					zahl--;
 				}
 			\end{lstlisting}
 		\end{minipage}
@@ -120,21 +111,28 @@
 			\vspace*{0pt}
 			\begin{struktogramm}(78,50)[Struktogramm]
 				\assign{Eingabe einer ganzen Zahl}
-				\while[10]{Solange eingegebene Zahl ungleich 0815}
-				\assign{Bildschirmausgabe \grqq{}Fehlerhafte PIN!\grqq{}}
-				\assign{Erneute Eingabe einer ganzen Zahl}
+				\while[10]{Solange eingegebene Zahl ungleich 0}
+				\assign{berechne ergebnis = 20/zahl}
+				\assign{verringere zahl um 1}
 				\whileend
 			\end{struktogramm}
 		\end{minipage}
 		\subsection{Nicht-abweisende Schleife}
-		Die in \ref{abwei} erwähnte Wiederholungsanweisung prüft wie es der Name sagt \underline{bevor} die Sequenz ausgeführt wird. Es kann nun aber natürlich auch mal passieren, dass eine solche Sequenz aber mindestens einmal ausgeführt werden soll, bevor die Abbruchbedingung überprüft wird. Um diese Anforderung zu erfüllen nutzt man die entsprechende \textit{Fußgesteuerte} Wiederholung.\\
+		Wollen wir hingegen, dass eine Sequenz mindestens einmal ausgeführt wird, müssen wir die Bedingung \underline{nach} einem Durchlauf prüfen.\\
+		Im Gegensatz zur abweisenden Schleife wird also bei der nicht-abweisenden Schleife die Bedingung am Ende geprüft.\\
+		\underline{Beispiel:}\\
+		\texttt{\indent{}wiederhole\\
+		\indent{}\indent{}zahl = zahl*2\\
+		\indent\indent\indent{}bis zahl größer als 100;}\\
+		\par\noindent
+		Die nicht-abweisende Schleife wird auch als fußgesteuerte Wiederholung, oder \lstinline[style=JavaInputStyle]{do-while}-Schleife oder \lstinline[style=JavaInputStyle]{repeat-until}-Schleife bezeichnet.\\
 		\begin{lstlisting}[style=JavaInputStyle]
 			do{
 				<Anweisungen>
 			} while(<Bedingung>)
 		\end{lstlisting}
 		\par\noindent
-		Bei dieser wird die Sequenz \underline{einmal ausgeführt} und die Bedingung wird \textbf{\underline{nach}} jeder Wiederholung überprüft.\\
+		Bei dieser wird die Sequenz \underline{mindestens einmal ausgeführt} und die Bedingung wird \textbf{\underline{nach}} jeder Wiederholung überprüft.\\
 		\par\noindent
 		\begin{minipage}[t]{0.48\textwidth}
 			\vspace*{0pt}
