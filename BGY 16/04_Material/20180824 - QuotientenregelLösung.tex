@@ -8,37 +8,88 @@
 \begin{document}
 	\begin{worksheet}{BGY 16}{Klassenstufe 13 - Mathematik}{Lernabschnitt 1: Ketten-, Produkt und \textbf{Quotientenregel}}
 				
-		\noindent
-		\sffamily
-		\textbf{Datum:}
-		\rule{0.91\textwidth}{0.4pt}
+		\begin{framed}
+			\noindent
+			Wir erinnern uns an die drei Ableitungsregeln, die hier notwendig sind.
+			\paragraph{Produktregel} Gegeben ist eine Funktion \(f(x) = u(x)\cdot{}v(x)\), mit \(u(x)\) und \(v(x)\) differenzierbar in \(x\). Dann gilt für die Ableitung von \(f(x)\) folgendes:
+			\[f'(x) = u'(x)\cdot{}v(x) + u(x)\cdot{}v'(x)\]
+			\paragraph{Kettenregel} Gegeben ist eine verkettete Funktion der Form \(f(x) = u(v(x))\), mit \(u(x)\) und \(v(x)\) differenzierbar in \(x\). Dann gilt für die Ableitung von \(f(x)\) folgendes:
+			\[f'(x) = u'(v(x))\cdot{}v'(x)\]
+			\paragraph{Quotientenregel} Gegeben ist eine die Funktion der Form \(f(x) = \frac{u(x)}{v(x)}\), mit \(u(x)\) und \(v(x)\) differenzierbar in \(x\) und \(v(x) \neq 0\). Dann gilt für die Ableitung von \(f(x)\) folgendes:
+			\[f'(x) = \frac{u'(x)\cdot{}v(x)-u(x)\cdot{}v'(x)}{[v(x)]^2}\]
+		\end{framed}
 		\begin{framed}
 			\noindent
 			\textbf{\underline{Aufgabe 1}} Leiten Sie mit Hilfe der Kettenregel ab und vereinfachen Sie das Ergebnis (falls möglich).\\
 			\par
-			\begin{tabularx}{\textwidth}{lll}
-				(a) \(f(x)=(2+3x)^3\) & (b) \(f(x) = (2x-3)^5\) & (c) \(f(x) = \sqrt{3x-4}\)\\
-				(d) \(f(x) = (x+4x^3)^{-3}\) & (e) \(f(x) = (x-x^4)^{-2}\) & (f) \(f(x) = \sqrt{x^3+1}\)\\
-				(g) \(f(x) = (x^2+x)^{\frac{3}{2}}\) & (h) \(f(x) = (1-\sqrt{x})^4\)
+			\begin{tabularx}{\textwidth}{lX}
+				(a) & \(f(x)=(2+3x)^3\)\\
+				& \(f'(x) = 3(2+3x)^2\cdot{}3 =\) \colorbox{green!10}{\(9(2+3x)^2\)}\\
+				\\
+				(b) & \(f(x) = (2x-3)^5\)\\
+				& \(f'(x) = 5(2x-3)^4\cdot{}2 =\) \colorbox{green!10}{\(10(2x-3)^4\)}\\
+				\\
+				(c) & \(f(x) = \sqrt{3x-4} = (3x-4)^{\frac{1}{2}}\)\\
+				& \(f'(x) = \frac{1}{2}(3x-4)^{-\frac{1}{2}}\cdot{}3 = \) \colorbox{green!10}{\(\frac{3}{2\sqrt{3x-4}}\)}\\
+				\\
+				(d) & \(f(x) = (x+4x^3)^{-3}\)\\
+				& \(f'(x) =  (-3)(x+4x^3)^{-4}\cdot{}(1+12x^2) =\) \colorbox{green!10}{\(\frac{-3-36x^2}{(x+4x^3)^4}\)}\\
+				\\
+			\end{tabularx}
+			\begin{tabularx}{\textwidth}{lX}
+				(e) & \(f(x) = (x-x^4)^{-2}\)\\
+				& \(f'(x) = (-2)(x-x^4)^{-3}\cdot(1-4x^3) =\) \colorbox{green!10}{\(\frac{8x^3-2}{(x-x^4)^3}\)}\\
+				\\
+				(f) & \(f(x) = \sqrt{x^3+1} = (x^3+1)^{\frac{1}{2}}\)\\
+				& \(f'(x) = \frac{1}{2}(x^3+1)^{-\frac{1}{2}}\cdot{}3x^2 =\) \colorbox{green!10}{\(\frac{3x^2}{2\sqrt{x^3+1}}\)}\\
+				\\
+				(g) & \(f(x) = (x^2+x)^{\frac{3}{2}}\)\\
+				& \(f'(x) = \frac{3}{2}(x^2+x)^{\frac{1}{2}}\cdot(2x+1) =\) \colorbox{green!10}{\(\frac{(6x+3)\sqrt{x^2+x}}{2}\)}\\
+				\\
+				(h) & \(f(x) = (1-\sqrt{x})^4\)\\
+				& \(f'(x) = 4(1-\sqrt{x})^3\cdot{}(-\frac{1}{2}x^{-\frac{1}{2}}) =\) \colorbox{green!10}{\(\frac{-2(1-\sqrt{x})^3}{\sqrt{x}}\)}
 			\end{tabularx}\\
 			\par\noindent
+			\rule{0.9\textwidth}{0.1pt}\\
 			\textbf{\underline{Aufgabe 2}} Bestimmen Sie mit Hilfe der Produktregel die Ableitung von:\\
 			\par\noindent
-			\begin{tabularx}{\textwidth}{ll}
-				(a) \(f(x) = x(2+3x)\) & (b) \(f(x) = \sqrt{1-x}(x^2+3x)\)\\
-				(c) \(f(x) = (2x-3)(x^2+x)\) & (d) \(f(x) = (x+1)(x^2+3x^3)\)
+			\begin{tabularx}{\textwidth}{lX}
+				(a) & \(f(x) = x(2+3x)\)\\
+				& \(f'(x) = 1\cdot(2+3x) + x\cdot{}3x =\) \colorbox{green!10}{\(3x^2 + 3x +2\)}\\
+				\\
+				(b) & \(f(x) = \sqrt{1-x}(x^2+3x) = (1-x)^{\frac{1}{2}}(x^2+3x)\)\\
+				& \(f'(x) = \frac{1}{2}(1-x)^{-\frac{1}{2}}\cdot(-1)\cdot(x^2+3x) + (1-x)^{\frac{1}{2}}\cdot{}(2x+3) =\)\\
+				& \(\frac{x^2+3x+2(1-x)(2x+3)}{2\sqrt{1-x}} =\) \colorbox{green!10}{\(\frac{-3x^2+x+6}{2\sqrt{1-x}}\)}\\
+				\\
+				(c) & \(f(x) = (2x-3)(x^2+x)\)\\
+				& \colorbox{green!10}{\(f'(x) = 2\cdot(x^2+x) + (2x-3)\cdot(2x+1)\)}\\
+				\\
+				(d) & \(f(x) = (x+1)(x^2+3x^3)\)\\
+				& \colorbox{green!10}{\(1\cdot(x^2+3x^3) + (x+1)\cdot(2x+9x^2)\)}
 			\end{tabularx}\\
-			\par\noindent
+			\newpage
 			\textbf{\underline{Aufgabe 3}} Nutzen Sie zur Ableitung die Quotientenregel.\\
 			\par
-			\begin{tabularx}{\textwidth}{XXX}
-				(a) \(f(x) = \frac{x}{x+1}\) & (b) \(f(t) = \frac{2t+1}{4t^2-5}\) & (c) \(f(a) = \frac{2a + a^3}{3a-4}\)\\
+			\begin{tabularx}{\textwidth}{XX}
+				(a) \(f(x) = \frac{x}{x+1}\) & (b) \(f(t) = \frac{2t+1}{4t^2-5}\) \\
 				\\
-				(d) \(f(x) = \frac{\sqrt{x+1}}{x^2+1}\) & (e) \(f(x) = \frac{3x^2-1}{15-x^2}\) & (f) \(f(x) = \frac{\sqrt{x}}{x-1}\)\\
+				\(f'(x) = \frac{(x+1) - x}{(x+1)^2} =\) \colorbox{green!10}{\(\frac{1}{(x+1)^2}\)} & \(f'(x) = \frac{2(4t^2-5) - (2t+1)(8t)}{(4t^2-5)^2} =\) \colorbox{green!10}{\(\frac{-8t^2+8t-10}{(4t^2-5)^2}\)}\\
 				\\
-				(g) \(f(x) = \frac{x^2+x+1}{x^2-1}\) & (h) \(f(x) = \frac{1-x^2}{x+2}\) & (k) \(f(x) = \frac{2x-3}{4x+1}\)\\
+				(c) \(f(a) = \frac{2a + a^3}{3a-4}\) & (d) \(f(x) = \frac{\sqrt{x+1}}{x^2+1}\)\\
+				\(f'(x) = \frac{(2+3a^2)(3a-4) - (2a+a^3)\cdot{}3}{(3a-4)^2} =\) & \(f'(x) = \frac{\frac{1}{2}(x+1)^{-\frac{1}{2}}(x^2+1) - (\sqrt{x+1})\cdot{}2x}{(x^2+1)^2} =\)\\
+				\colorbox{green!10}{\(\frac{8a^3-12a^2 + 4a -8}{(3a-4)^2}\)} & \colorbox{green!10}{\(\frac{(x^2+1) - 2x(x+1)}{(\sqrt{x+1})(x^2+1)^2}\)}\\
 				\\
-				(l) \(f(x) = \frac{\sqrt{x}+1}{1-\sqrt{x}}\)
+				(e) \(f(x) = \frac{3x^2-1}{15-x^2}\) & (f) \(f(x) = \frac{\sqrt{x}}{x-1}\)\\
+				\(f'(x) = \frac{6x(12-x^2) - (3x^2-1)(-2x)}{(15-x^2)^2} =\) & \(f'(x) = \frac{\frac{1}{2}x^{-\frac{1}{2}}(x-1) - \sqrt{x}\cdot{}1}{(x-1)^2} = \frac{(x-1)-x}{\sqrt{x}(x-1)^2} =\)\\
+				\colorbox{green!10}{\(\frac{6x^3-6x^2+70x}{(15-x^2)^2}\)} & \colorbox{green!10}{\(\frac{-1}{\sqrt{x}(x-1)^2}\)}\\
+				\\
+				(g) \(f(x) = \frac{x^2+x+1}{x^2-1}\) & (h) \(f(x) = \frac{1-x^2}{x+2}\)\\
+				\(f'(x) = \frac{(2x+1)(x^2-1) - (x^2+x+1)(2x)}{(x^2-1)^2}\) & \(f'(x) = \frac{-2x(x+2) - (1-x^2)\cdot{}1}{(x+2)^2} =\)\\
+				\colorbox{green!10}{\(\frac{-x^2-4x-1}{(x^2-1)^2}\)} & \colorbox{green!10}{\(\frac{-x^2-4x-1}{(x+2)^2}\)}\\
+				\\
+				(k) \(f(x) = \frac{2x-3}{4x+1}\) & (l) \(f(x) = \frac{\sqrt{x}+1}{1-\sqrt{x}}\)\\
+				\(f'(x) = \frac{2\cdot(4x+1) - (2x-3)\cdot{}4}{(4x+1)^2} =\) & \(f'(x) = \frac{\frac{1}{2}x^{-\frac{1}{2}}\cdot(1-\sqrt{x}) - (\sqrt{x}+1)\cdot(-\frac{1}{2}x^{-\frac{1}{2}})}{(1-\sqrt{x})^2} =\)\\
+				\colorbox{green!10}{\(\frac{14}{(4x+1)^2}\)} & \colorbox{green!10}{\(\frac{1}{2\sqrt{x}(1-\sqrt{x})^2}\)}
 			\end{tabularx}\\
 		\end{framed}
 	\end{worksheet}
