@@ -39,8 +39,9 @@
 		Eine Stelle im Binärsystem - also 0 oder 1 - heißt \textbf{Bit} (\textit{binary digit}).\\
 		Um aber mehrere verschiedene Werte zu ermöglichen, wird im Binärsystem analog zum Dezimalsystem vorgegangen. Man fasst mehrere Bits zu einer \textbf{Bitfolge} zusammen.\\
 		Besteh eine solche Bitfolge aus \underline{8 Bit}, so spricht man auch von einem \textbf{Byte}.\\
-		In der EDV ist Byte die gebräuchliche Basiseinheit.5
-		\paragraph{\underline{Ihre Aufgabe}} Überlegen Sie, wie viele verschiedene Zustände lassen sich mit \textbf{1 Byte} darstellen?\\
+		In der EDV ist Byte die gebräuchliche Basiseinheit.\\
+		\par\noindent
+		\textbf{\underline{Ihre Aufgabe}} Überlegen Sie, wie viele verschiedene Zustände lassen sich mit \textbf{1 Byte} darstellen?\\
 		\subsubsection*{Größere Einheiten von Bytes}
 		Sicher sind verschiedene Kenngrößen von diversen Speichermedien bekannt. In der nachfolgenden Tabelle sind die Bezeichnungen sowie die korrespondierende Anzahl an Bytes angegeben.\\
 		\begin{tabularx}{0.45\textwidth}{l|c|c}
@@ -98,11 +99,12 @@
 		\par\noindent
 		\textit{Hinweis:} Da sich die Ziffern der verschiedenen Zahlensysteme teilweise überschneiden, ist es wichtig zu verdeutlichen, in welchem Zahlensystem man sich befindet. Daher geben wir die Basis als Index der Zahlenfolge an.\\
 		z.B.: \(10110101_2\) wäre eine Zahlenfolge im Binärsystem.\\
-		\paragraph{\underline{Ihre Aufgabe}} Überlegen Sie, wie viele Zustände (bzw. Zahlen) Sie im \underline{Binärsystem} mit 2 Stellen (Bits), mit 3 Stellen (Bits) oder gar mit 8 Stellen (Bits) darstellen kann?
+		\par\noindent
+		\textbf{\underline{Ihre Aufgabe}} Überlegen Sie, wie viele Zustände (bzw. Zahlen) Sie im \underline{Binärsystem} mit 2 Stellen (Bits), mit 3 Stellen (Bits) oder gar mit 8 Stellen (Bits) darstellen kann?
 		\subsection*{Hexadezmalsystem} Das eben behandelte Dual-/Binärsystem bildet die Grundlage für jegliche Operationen, die ein Computer ausführt.\\
 		Da der Umgang mit dem Dualsystem ungewohnt und auch unübersichtlich ist, hat sich in der EDV das \textbf{\underline{Hexa}dezimalsystem} etabliert.\\
 		Die Basis dieses Systems ist \(\mathbf{16}\). Dementsprechend stehen uns die Ziffern \{0-9\} und \{A, B, C, D, E und F\} zur Verfügung.
-		\paragraph{\underline{Ihre Aufgabe}} Überlegen Sie, welcher Bezug zum Binärsystem möglich ist?\\
+		\textbf{\underline{Ihre Aufgabe}}: Überlegen Sie, welcher Bezug zum Binärsystem möglich ist?\\
 		\par
 		\begin{tabularx}{0.45\textwidth}{M|M|M}
 			\textbf{Dezimal} & \textbf{Dual} & \textbf{Hexa}\\
@@ -147,11 +149,11 @@
 		\end{tabularx}\\
 		\par\noindent
 		Ein Byte (8 Bit) lässt sich also durch genau zwei Hexadezimal-Stellen darstellen. Die Schreibweise hat den Vorteil, dass Sie zugleich übersichtlich und nah an der Binärdarstellung des Computers ist.\\
-		Um zu verdeutlichen, dass eine Zahl Hexadezimal ist, stellt man ihr den \textit{Präfix} \textbf{0x} voran, oder man hängt den \textit{Suffix} \textbf{hex} an.
-		\paragraph{\underline{Ihre Aufgabe}} Stellen Sie die Zahl \(213_{10}\) in den drei Zahlsystemen (Dezimal, Binär und Hexa) dar.\\
-		Was fällt ihnen bezüglich der Länge der Zahlenfolgen in den unterschiedlichen Zahlsystemen auf?\\
+		Um zu verdeutlichen, dass eine Zahl Hexadezimal ist, stellt man ihr den \textit{Präfix} \textbf{0x} voran, oder man hängt den \textit{Suffix} \textbf{hex} an.\\
 		\par\noindent
-		\paragraph{Übung:} Berechnen Sie den Dezimalwert der folgenden Zahlen:\\
+		\textbf{\underline{Ihre Aufgabe}}: Stellen Sie die Zahl \(213_{8}, 213_{16}, 1001011_{2}\) im Dezimalsystem (Basis 2) dar.\\
+		\par\noindent
+		\textbf{\underline{Übung}}: Berechnen Sie den Dezimalwert der folgenden Zahlen:\\
 		\par\noindent
 		\begin{tabularx}{0.45\textwidth}{M|M}
 			(a) \(A73_{16}\) & (b) \(1001101_{2}\)\\
@@ -218,9 +220,9 @@
 			\(2\) & \(2^{1}\)\\
 			\hline
 			\(1\) & \(2^{0}\)
-		\end{tabularx}
-		\paragraph{Ihre Aufgabe} Bestimmen Sie die Binärdarstellung mit Hilfe des Subtraktionsverfahren.\\
-		\par\bigskip\noindent
+		\end{tabularx}\\
+		\par\noindent
+		\paragraph{\underline{Übung}} Bestimmen Sie die Binärdarstellung mit Hilfe des Subtraktionsverfahren.\\
 		\begin{tabularx}{0.45\textwidth}{M|M}
 			(a) \(213_{10}\) & (b) \(238_{10}\)\\
 			& \\
@@ -231,6 +233,32 @@
 	 	\newpage
 	 	\subsection*{Divisionsverfahren}
 	 	Ein Verfahren, bei dem die Kenntnis der Bündelungseinheiten irrelevant ist, ist das \textbf{Divisionsverfahren}.\\
-	 	...
+	 	Hierbei wird die Ausgangszahl durch \(2\) ganzzahlig geteilt. Das heißt, der berechnete Quotient wird abgerundet und dazugehörig wird der Rest bestimmt. Bei der ersten Teilung liefert der Rest das \textit{LSB}. Der Quotient wird erneut durch \(2\) geteilt und es wie zuvor verfahren. Entsprechend gibt der letzte Bit das MSB.\\
+	 	Es wird solange gerechnet, bis der Quotient \(0\) ist.\\
+	 	\par\noindent
+	 	Wir betrachten das folgende Beispiel: \(171_{10} = ?_{2}\)\\
+	 	\begin{tabularx}{0.45\textwidth}{XMl}
+	 		& \textbf{Rest} & \\
+	 		\(171 : 2 = 85\) & \(1\) & LSB\\
+	 		\(85 : 2 = 42\) & \(1\)\\
+	 		\(42 : 2 = 21\) & \(0\)\\
+	 		\(21 : 2 = 10\) & \(1\)\\
+	 		\(10 : 2 = 5\) & \(0\)\\
+	 		\(5 : 2 = 2\) & \(1\)\\
+	 		\(2 : 2 = 1\) & \(0\)
+	 		\(1 : 2 = 0\) & \(1\)MSB\\
+	 	\end{tabularx}\\
+	 	\par\noindent
+ 		Wie bereits erwähnt ergibt der Rest die Zahldarstellung in Binär, wobei das Ergebnis von \underline{unten nach oben} gelesen die Binärzahl darstellt. In unserem Fall also \colorbox{green!10}{\(171_{10} = 10101011_{2}\)}.\\
+ 		\par\noindent
+ 		\textbf{\underline{Ihre Aufgabe}} Bestimmen Sie die Binärdarstellung mit Hilfe des Subtraktionsverfahren.\\
+ 		\par\bigskip\noindent
+ 		\begin{tabularx}{0.45\textwidth}{M|M}
+ 			(a) \(213_{10}\) & (b) \(238_{10}\)\\
+ 			& \\
+ 			\hline
+ 			& \\
+ 			(c) \(146_{10}\) & (d) \(54_{10}\)\\
+ 		\end{tabularx}
 	\end{worksheet}
 \end{document}
