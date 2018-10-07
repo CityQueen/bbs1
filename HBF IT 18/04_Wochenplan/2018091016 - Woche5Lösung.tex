@@ -92,12 +92,46 @@
 		\end{framed}
 		\begin{framed}
 			\noindent
-			\textbf{Freitag:} Zei Motorradfahrer fahren auf derselben Straße von A nach B. Die beiden Orte sind \(270\ km\) voneinander entfernt.\\
+			\textbf{Freitag:} Zwei Motorradfahrer fahren auf derselben Straße von A nach B. Die beiden Orte sind \(270\ km\) voneinander entfernt.\\
 			Fahrer M1 fährt um 9 Uhr ab und hält eine Durchschnittsgeschwindigkeit von \(45\ \frac{km}{h}\). 75 Minuten später startet Fahrer M2 und fährt durchschnittlich \(60\ \frac{km}{h}\).
 			\begin{itemize}
-				\item[(a)] Stellen Sie den Sachverhalt mithilfe zweier Funktionen dar.
-				\item[(b)] Ermitteln Sie durch Rechnung die Ankunftszeiten der beiden Fahrer.
-				\item[(c)] Zu welchem Zeitpunkt treffen sich die beiden Fahrer? Wie weit sind sie zu diesem Zeitpunkt vom Startpunkt entfernt?
+				\item[(a)] Stellen Sie den Sachverhalt mithilfe zweier Funktionen dar.\\
+				Die aufgestellten Funktionen beschreiben jeweils die noch zu fahrende Strecke der Motorradfahrer in Abhängigkeit der verstrichenen Zeit seit Reisebeginn.\\
+				\colorbox{green!10}{\(f_{M1}(x) = 270 - 45x\)}\\
+				\colorbox{green!10}{\(f_{M2}(x) = 270 - 60x\)}\\
+				\item[(b)] Ermitteln Sie durch Rechnung die Ankunftszeiten der beiden Fahrer.\\
+				Hierfür müssen wir bestimmen, wieviel Zeit verstreicht, bis sie die Stadt B erreichen. Also genauer, wann die noch zu fahrende Strecke \(0\) ist.\\
+				\par\noindent
+				\begin{tabularx}{0.8\textwidth}{Xl|Xl}
+					\(270 - 45x = 0\) & |\(+45x\) & \(270 - 60x = 0\) & |\(+60x\)\\
+					\(270 = 45x\) & |\(:45\) & \(270 = 60x\) & |\(:60\)\\
+					\(x = 6\) & & \(x=4,5\)\\
+					\\
+					\hline
+					\\
+				\end{tabularx}
+				\begin{tabularx}{0.8\textwidth}{L{5.7cm}|L{5.7cm}}
+					M1 erreicht sein Ziel nach 6 Stunden. & M2 erreicht sein Ziel bereits nach 4,5 Stunden also 4 Stunden und 30 Minuten.\\
+					$\Rightarrow$ 9:00 Uhr + 6:00 Stunden = \colorbox{green!10}{15:00 Uhr} & $\Rightarrow$ 10:15 Uhr + 4:30 Stunden = \colorbox{green!10}{14:45 Uhr}
+				\end{tabularx}
+				\item[(c)] Zu welchem Zeitpunkt treffen sich die beiden Fahrer? Wie weit sind sie zu diesem Zeitpunkt vom Startpunkt entfernt?\\
+				Gefragt ist nach dem Zeitpunkt, an dem beide Motorradfahrer die gleiche Strecke zurückgelegt haben.\\
+				Hier ist zu beachten, dass M1 zum Startzeitpunkt von M2 bereits 75 Minuten unterwegs ist. Bevor man also \(f_{M1}(x) = f_{M2}(x)\) setzen kann, muss die Funktionsgleichung von M1 angepasst werden.\\
+				\(\Rightarrow f_{M1}(x) = 270 - 45x - \underbrace{45*1,25}_{Gefahrene\ Strecke\ nach\ 75\ Minuten} = 270 - 45x - 56,25\)\\
+				\(\Rightarrow f_{M1}(x) = 213,75 - 45x\)\\
+				\\
+				Nun setzen wir die Funktionen gleich und lösen nach \(x\).\\
+				\begin{tabularx}{0.8\textwidth}{Xl}
+					\(213,75 - 45x = 270 - 60x\) & |\(+60x; -213,75\)\\
+					\(15x = 56,25\) & |\(:15\)\\
+					\(x = 3,75\)
+				\end{tabularx}\\
+				\\
+				Da nach dem Zeitpunkt gefragt ist, addieren wir wie oben\\
+				10:15 Uhr + 3:45 Stunden = \colorbox{green!10}{14:00 Uhr}\\
+				\\
+				Ebenso fehlt uns noch die Information, wie weit sie zu diesem Zeitpunkt vom Startpunkt entfernt sind. Dafür müssen wir lediglich bestimmen, wie weit sie in 3,75 Stunden gefahren sind.\\
+				\(\Rightarrow 60*3,75 =\) \colorbox{green!10}{\(225 km\)}.
 			\end{itemize}
 		\end{framed}
 	\end{worksheet}

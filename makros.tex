@@ -3,6 +3,9 @@
 \renewcommand{\footrulewidth}{0.2pt}
 \newcommand*{\underdownarrow}[2]{\ensuremath{\underset{\overset{\Big\downarrow}{#2}}{#1}}}
 \setlength{\fboxsep}{5pt}
+\newcommand{\explainBelow}[3]{\underbrace{#1}_{\parbox{\widthof{#3}}{\footnotesize\raggedright #2}}}
+\newcommand{\explainAbove}[3]{\overbrace{#1}^{\parbox{\widthof{#3}}{\footnotesize\raggedright #2}}}
+
 
 % Codestyle defined
 \definecolor{codegreen}{rgb}{0,0.6,0}
