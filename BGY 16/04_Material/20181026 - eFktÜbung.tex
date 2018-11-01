@@ -1,0 +1,102 @@
+\documentclass[oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{scrreprt}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\geometry{left=2.50cm,right=2.50cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+
+\begin{document}
+	\begin{worksheet}{BGY 16}{Klassenstufe 13}{Lernabschnitt 1: analyse verknüpfter Exponentialfunktion - Übungen}
+				
+		\noindent
+		\sffamily
+		\begin{framed}
+			\noindent
+			\section{Training der Grundtechniken}
+			Die nachfolgenden Abschnitte bieten Ihnen diverse Aufgaben, um ihre Fähigkeiten in dem genannten Bereich anzuwenden und die Anwendung der Technik zu üben.
+			\subsection{Ableitungstechniken}
+			Stellen Sie den Term der Ableitungsfunktion zu den folgenden Funktionsgleichungen auf!\\
+			\par\noindent
+			\begin{tabularx}{\textwidth}{lXlX}
+				(a) & \(f(x) = xe^x\) & (b) & \(f(x) = 2x^2\cdot{}e^{-0,5x}\)\\
+				(c) & \(f(x) = 2x+e^{-4x}\) & (d) & \(f(x) = (x-2)\cdot{}e^{-4x}\)\\
+				(e) & \(f(x) = 2\cdot{}e^{0,5x^2}\) & (f) & \(f(x) = (-2x+1)\cdot{}e^{-4x+1}\)\\
+				(g) & \(f(x) = 2\cdot{}e^{x^2+2}\) & (h) & \(f(x) = (-200)\cdot{}e^{-2x^2+2x}\)\\
+			\end{tabularx}
+			\subsection{Nullstellenberechnung (FAK und PIN)}
+			Faktorisieren Sie die folgenden Funktionsterme und berechnen Sie die Nullstellen!\\
+			\par\noindent
+			\begin{tabularx}{\textwidth}{lX}
+				(a) & \(f(x) = 2x\cdot{}(-0,2)\cdot{}e^{-0,2x} + 2\cdot{}e^{-0,2x}\)\\
+				(b) & \(f(x) = (2x+1)\cdot{}e^{-0,2x} + 2\cdot{}(-0,2)\cdot{}e^{-0,2x}\)\\
+			\end{tabularx}
+			\subsection{Bestimmung des Verhaltens für große x-Werte}
+			Geben Sie die Gleichung der Asymptote an!\\
+			\par\noindent
+			\begin{tabularx}{\textwidth}{lXlX}
+				(a) & \(f(x) = e^{-0,2x}+0,5x\) & (b) & \(f(x) = x\cdot{}e^x\)\\
+				(c) & \(f(x) = (7-2\cdot{}e^{-0,2x})\) & (d) & \(f(x) = 20\cdot{}x^2\cdot{}e^{-0,001x}+4\)\\
+			\end{tabularx}			
+			\subsection{Allgemeiner Zusammenhänge}
+			Geben Sie zunächst die \textbf{Ableitungsfunktion} der durch \(f(x) = -6x\cdot{}e^{-0,25x+1}+50\) gegebenen Funktion.\\
+			\par\noindent
+			Diese Funktion modelliert die typische Entwicklung des \glqq{}Albumin\grqq{}-Werts während einer Hepatitis-B Erkrankung. Dieser wird gemessen, um zu beobachten, ob die Krankheit von alleine abklingt.\\
+			Nachfolgend sehen Sie den Graphen der Ableitungsfunktion zu oben genannter Funktion.\\
+			\begin{center}
+				\includegraphics[width=0.7\textwidth]{../99_Bilder/01_ExpFkt/allgZsmhg.jpg}\\
+			\end{center}
+			\par\noindent
+			(a) Bestimmen Sie \underline{anhand des Graphen der Ableitungsfunktion} die Etrem- und Wendestelle(n) der Funktion!\\
+			(b) Zeigen Sie, dass es sich um eine Extremstelle vom Typ \textbf{TP} handelt und bestimmen Sie das relatives Minimum der Funktion.\\
+			(c) Bestimmen Sie den y-Achsenabschnittswert und die Gleichung der Asymptote der Funktion und fertigen Sie eine Skizze des Graphen der Funktion an!\\
+			(d) Interpretieren Sie den Verlauf des Graphen in Bezug auf die Situation!
+		\end{framed}
+		\begin{framed}
+			\noindent
+			\section*{Chemiewerk}
+			Am 1. November ereignet sich im Chemiewerk Sandoz in Schweizerhalle ein Großbrand, bei dem große Mengen des Insektizids \grqq{}Disulfoton\grqq{} in den Rhein gelangt. Auch in Mainz konnten hohe Konzentrationen gemessen werden. Die Entwicklung der Konzentration über den Zeitverlauf in Mainz kann durch \[f(x) = e^{-0,2x}\cdot{}20\cdot{}x\] modelliert werden.\\
+			(\(x\)x in Tagen nach dem Großbrand, \(f(x)\) in \(\mu{}g/Liter\))\\
+			\par\noindent
+			\rule{\textwidth}{0.1pt}\\
+			Bestimmen Sie die Nullstellen, Extrem- und Wendestellen. Geben Sie zudem das Verhalten der Funktionswerte für x gegen Unendlich.\\
+			Fertigen Sie anschließend eine Skizze des Graphen an, an dem Sie die Entwicklung der Konzentration erläutern!
+		\end{framed}
+		\begin{framed}
+			\noindent
+			\section*{Haushalt}
+			Mit \(f(x) = (2x-40)+e^{-0,2x+4}\) ist die Entwicklung des Finanzhaushalts einer Kleinstadt gegeben.\\
+			\par\noindent
+			(\(x\): in Jahren, \(0:= 1998\), \(y = \) in Mio. Euro)\\
+			\par\noindent
+			\rule{\textwidth}{0.1pt}\\
+			Bestimmen SIe Nullstellen, Extrem- und Wendestellen und das Verhalten der Funktionswerte für x gegen Unendlich.\\
+			Fertigen Sie anschließend eine Skizze des Graphen an, an dem Sie die Entwicklung des Haushalts ablesen können!
+		\end{framed}
+		\begin{framed}
+			\noindent
+			\section*{Antikörper}
+			Einem Patienten mit einer schweren Virusinfektion werden Antikörper injiziert (\textit{passive Immunisierung}). Die \underline{Entwicklung des Antikörper-Bestands im Blut} lässt sich durch die mit \[f(x) = 20x\cdot{}e^{-0,5x}\] gegebenen Fnuktion angegeben.\\
+			(\(x\): in Monaten; \(0:=\) Zeitpunkt der Injektion; \(f(x)\) Antikörperkonzentration im Blut in Nanogramm (ng)).\\
+			\par\noindent
+			\rule{\textwidth}{0.1pt}\\
+			(a) Bestimmen Sie die charakteristischen Eigenschaften der Funktion (Null-, Extrem- und Wendestelle und Asymptote falls Vorhanden) mit Hilfe der Differentialrechnung und beschreiben Sie die Entwicklung auf Basis dieser Ergebnisse!\\
+			Hierzu kann auch ein Graph skizziert werden!\\
+			\par\noindent
+			(b) Berechnen Sie den Wert der Ableitung an der Stelle \(x=4\) und interpretieren Sie diesen situationsbezogen!
+		\end{framed}
+		\begin{framed}
+			\section*{Standardaufgaben}
+			\subsection{I}
+			Mit \(f(x) = e^{-4x} + 2x\) ist eine Funktion gegeben.\\
+			Berechnen Sie den Hoch- bzw. Tiefpunkt, den y-Achsenabschnitt und die Asymptote.\\
+			Fertigen Sie eine Skizze des Graphen an!
+			\subsection{II}
+			Eine Mensa einer großen Universität öffnet um 09:00 Uhr ihre Pforten. Die Zahl der Gäste, die sich in der Mensa befinden, lässt sich durch \[f(x) = (400x + 3600)\cdot{}e^{-0,5x}\] (\(x\) - Uhrzeit (z.B. \(x = 9\) entspricht 09:00 Uhr); \(y\) - Gäste in Tausend).\\
+			\par\noindent
+			\rule{\textwidth}{0.1pt}
+			(a) Berechnen Sie die Extrem- und Wendestellen und interpretieren Sie die Stellen im Hinblick auf die Situation!\\
+			\par\noindent
+			(b) Fertigen Sie eine Skizze des Graphen an!
+		\end{framed}
+	\end{worksheet}
+\end{document}

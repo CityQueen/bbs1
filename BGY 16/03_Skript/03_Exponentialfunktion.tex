@@ -1,0 +1,80 @@
+\documentclass[11pt,twocolumn,oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{article}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\setlength{\columnsep}{3em}
+\setlength{\columnseprule}{0.5pt}
+
+\geometry{left=2.50cm,right=2.50cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+\pagenumbering{gobble}
+\pagestyle{empty}
+
+\begin{document}
+	\begin{worksheet}{BGY 16}{Klassenstufe 13 - Mathematik}{Lernabschnitt 1: Natürliche Exponentialfunktionen und verknüpfte Exponentialfunktionen}
+		
+		\section{Die Grundlagen in der Übersicht}
+		Wachstumsmodelle wie z.B. \glqq{}beschränktes Wachstum\grqq{} im Vergleich zu ganzrationalen Funktionen haben den Vorteil, dass sie eine Schranke aufweisen.\\
+		Allerdings wissen wir bisher noch nicht genau, wie wir Änderungen im Steigungsverhalten bzw. Krümmungsverhalten abbilden können.\\
+		Möglich wird beides dadurch, dass wir die natürliche Exponentialfunktion mit einer ganzrationalen Funktion (\(a_nx^n + a_{n-1}x^{n-1}\ldots{}+a_1x + a_0\)) bzw. addiert.\\
+		\par\noindent
+		\textit{Beispiel:}\\
+		\textit{Die Entwicklung einer Medikamentenkonzentration im Blut eines Patienten wird durch folgende Funktion dargestellt.}\\
+		\par\noindent
+		\begin{tabularx}{0.48\textwidth}{Xl}
+			\includegraphics[width=0.38\textwidth,align=c]{../99_Bilder/01_ExpFkt/BspSkript_01.jpg} & \(f(x) = 20x^2\cdot{}e^{-0,2x}\)
+		\end{tabularx}\\
+		\subsection{Eine e-Funktion als Faktor: \underline{Die Produktregel}}
+		Hat der Funktionsterm die Struktur \glqq{}\textit{e-Funktion$\cdot$Ganzrationale Funktion}\grqq{} (z.B. \(f(x) = 20x^2\cdot{}e^{-0,2x}\)) wird beim Ableiten die Produktregel angewandt.\\
+		\par\noindent
+		\begin{framed}
+			\noindent
+			Formel (\small{Produktregel}\normalsize): \(f(x) = u(x)\cdot{}v(x)\)\\
+			\par\noindent
+			$\Rightarrow$\\
+			\includegraphics[width=0.05\textwidth]{../../empty.jpg}
+		\end{framed}
+		\noindent
+		\underline{\textit{Beispiel:}} Wenden Sie die Produktregel auf folgende Funktion an: \(f(x) = 20x\cdot{}e^{-0,2x}\)\\
+		Geben Sie sowohl \(u(x)\) wie auch \(v(x)\) an.\\
+		\includegraphics[width=0.1\textwidth]{../../empty.jpg}
+		\subsection{Nullstellenberechnung nach der Produktregel}
+		Da Extremstellen von \(f\) Nullstellen bei \(f'\) sind, muss man also Nullstellen der ersten Ableitung bestimmen können.\\
+		Dies geschieht mittels \textbf{Faktorisieren} (FAK) - ausklammern der gemeinsamen Faktoren - und anschließendem anwenden der Regel \grqq{}\textit{Ein Produkt nimmt den Wer Null an, wenn ein Faktor den Wert Null annimmt.}\grqq{}(PIN)\\
+		\par\noindent
+		\underline{\textit{Beispiel}:} Faktorisieren Sie die folgende Gleichung und lösen im Anschluss unter Verwendung der PIN-Regel!
+		\[0 = 40x\cdot{}e^{-0,2x} + 20x^2\cdot(-0,2)\cdot{}e^{-0,2x}\]
+		\includegraphics[width=0.3\textwidth]{../../empty.jpg}
+		\subsection{Eine e-Funktion als Summand: \underline{Die Summenregel}}
+		Hat der Funktionsterm die Struktur \grqq{}\textit{e-Funktion + Ganzrationale Funktion}\grqq{} (z.B. \(f(x) = 10x + e^{-0,5x}\)) wird beim Ableiten die Summenregel angewandt.\\
+		\par\noindent
+		\begin{framed}
+			\noindent
+			Formel (\small{Summenregel}\normalsize): \(f(x) = u(x) + v(x)\)\\
+			\par\noindent
+			$\Rightarrow$\\
+			\includegraphics[width=0.05\textwidth]{../../empty.jpg}
+		\end{framed}
+		\noindent
+		\underline{\textit{Beispiel:}} Wenden Sie die Summenregel auf folgende Funktion an: \(f(x) = 10x + e^{-0,5x}\)\\
+		Geben Sie sowohl \(u(x)\) wie auch \(v(x)\) an.\\
+		\includegraphics[width=0.2\textwidth]{../../empty.jpg}
+		\subsection{Nullstellenberechnung nach der Summenregel}
+		Wie auch schon nach der Produktregel erwähnt, geben uns die Nullstellen der ersten Ableitung \(f'\) Auskunft über die Extremstellen der Ausgangsfunktion \(f\). Nach Anwendung der Summenregel müssen wir lediglich die Gleichung \(0 = \ldots{} + e^{\ldots{}x}\) in die Form \textit{feste Zahl} \(= e^{\ldots{}x}\) transformieren. Im Anschluss können wir den \underline{natürlichen Logarithmus} verwenden, um an den Wert des Exponenten zu gelangen.\\
+		\par\noindent
+		\underline{\textit{Beispiel}:} Bestimmen Sie die Nullstelle der Ableitung - also:
+		\[0 = 10+ (-0,5)\cdot{}e^{-0,5x}\]
+		\includegraphics[width=0.1\textwidth]{../../empty.jpg}
+		\subsection{Die Kettenregel}
+		Nun können wir Exponentialfunktionen der Form \(f(x) = b\cdot{}^{c\cdot{}x}\) ableiten. Hier gilt: \fbox{\(f'(x) = b\cdot{}c\cdot{}e^{c\cdot{}x}\)}.\\
+		Wir verallgemeinern diese Darstellung zu \(f(x) = b\cdot{}e^{u(x)}\). In \(u(x)\) kann ein beliebiger Ausdruck mit \grq{}\(x\)\grq{} als Exponent eingesetzt werden (z.B. \(x^2\) oder \(x^2-2\)).\\
+		Es gilt dann folgendes:
+		\begin{framed}
+			\noindent
+			Ist \(f(x) = b\cdot{}e^{u(x)}\), so gilt: \[f'(x) = b\cdot{}u'(x)\cdot{}e^{u(x)}\]
+		\end{framed}
+		\noindent
+		\underline{\textit{Beispiel}:} Bestimmen Sie die Ableitung der folgenden Funktion. Bestimmen Sie dafür zunächst \(u(x)\) und \(u'(x)\).\\
+		\(f(x) = e^{2x^2+1}\)
+	\end{worksheet}
+\end{document}
