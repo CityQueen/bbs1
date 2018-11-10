@@ -1,0 +1,50 @@
+\documentclass[oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{scrreprt}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\geometry{left=2.50cm,right=2.50cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+
+\begin{document}
+	\begin{worksheet}{BGY 17}{Klassenstufe 12 - Informationsverarbeitung}{Lernabschnitt 1: Wiederholungs- und Bedingte Anweisung}
+				
+		\noindent
+		\sffamily
+		\textbf{Datum:}
+		\rule{0.91\textwidth}{0.4pt}\\
+		\par\noindent
+		Realisieren Sie die nachfolgenden Aufgaben mit Hilfe der zuletzt behandelten Anweisungen (\lstinline[style=JavaInputStyle]{for}, \lstinline[style=JavaInputStyle]{while}, \lstinline[style=JavaInputStyle]{do-while} und \lstinline[style=JavaInputStyle]{if-else}).
+		\begin{framed}
+			\noindent
+			\textbf{\underline{Dreieck zeichnen}}\\
+			Entwerfen Sie ein Programm, welches zunächst vom Benutzer eine Zahl einliest und diese als ganzzahlige Variable \textbf{ende} speichert.\\
+			Im Anschluss soll das Programm ein Dreieck ausgeben, dessen Anzahl an Ebenen der eingegebenen Zahl entspricht.\\
+			\rule{\textwidth}{0.1pt}\\
+			\textbf{Beispielausgabe:}
+			\includegraphics[width=0.8\textwidth,align=t]{../99_Bilder/20181105_A1.jpg}\\
+			\par\bigskip\noindent
+			\textbf{\underline{GGT}}\\
+			Ein bekanntes Problem der Mathematik ist die Berechnung des größten gemeinsamen Teilers (ggT) zweier ganzer, positiver Zahlen \(x\) und \(y\).\\
+			Erstellen Sie ein Programm, welches diesen berechnet und ausgibt.\\
+			\begin{framed}
+				\underline{So funktioniert die Berechnung:} Der ggT zweier ganzer Zahlen \(x\) und \(y\) ist die größte Zahl, die beide ganzzahlig ohne Recht teilt.\\
+				Sind also \(x\) und \(y\) größer Null, so müssen folgende Überlegungen angestellt werden:
+				\begin{itemize}[label=-]
+					\item Sind die Zahlen gleich? (\textit{Was bedeutet das für den ggT?})
+					\item Sind die Zahlen ungleich, so ist der ggT ein Teiler beider Zahlen, aber auch ein Teiler der kleineren und der (größeren \textbf{minus} der kleineren).					
+				\end{itemize}
+				Diese Überlegungen ergeben folgendes Vorgehen:\\
+				\indent\textbf{Solange} die beiden Zahlen verschieden sind, ziehe die (derzeit) kleinere Zahl von der (derzeit) größeren Zahl ab.\\
+				Gebe eine der beiden (jetzt gleichen) Zahlen aus. Diese entspricht dem ggT.
+			\end{framed}
+			\par\bigskip\noindent
+			\textbf{\underline{Teiler einer Zahl}}\\
+			Schreiben Sie ein Programm, welches zu einer vom Benutzer eingegeben Zahl alle Teiler ausgibt.
+			\par\bigskip\noindent
+			\textbf{\underline{Das Ein-Mal-Eins der Zahlen}}\\
+			Schreiben Sie ein Programm, dass ihnen das große Ein-Mal-Eins in tabellarischen Form auf dem Bildschirm ausgibt.\\
+			\par\noindent
+			\small{Für die einheitliche Ausgabe als Tabelle (Spalten) können Sie \lstinline[style=JavaInputStyle]{"\t"} als Tabstopp nutzen.}
+		\end{framed}
+	\end{worksheet}
+\end{document}
