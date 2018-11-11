@@ -35,22 +35,23 @@
 			\cline{2-3}
 			& 7 & 111\\
 			\hline
-		\end{tabularx}
+		\end{tabularx}\\
+		Bei drei zur Verfügung stehenden Bits lassen sich also insgesamt nur acht verschiedene Zahlen (0-7) darstellen.
 		\subsection*{Wie werden Binärzahlen addiert?}
 		In einem Stellenwertsystem, unabhängig von der Basis, können wir addieren, wie wir es aus der Grundschule kennen.\\
 		Dabei dürfen wir aber lediglich die zur Verfügung stehenden Ziffern verwenden.\\
 		\tiny{Im \textit{Oktal} können wir nur die Ziffern \(0 - 7\) verwenden.}\normalsize\\
 		Für das Binärsystem ergeben sich somit folgende Regeln:\\
+		\par\noindent
 		\begin{tabularx}{0.48\textwidth}{ccccc}
 			0 & + & 0 & = & 0\\
 			0 & + & 1 & = & 1\\
 			1 & + & 0 & = & 1\\
 			1 & + & 1 & = & 0
-		\end{tabularx}
+		\end{tabularx}\\
 		\par\noindent
 		Man mag sich fragen, was ist da bei \(1 + 1 = 0\) passiert?\\
 		Wie auch im Dezimalsystem kommt es zu einem \textbf{Übertrag}, wenn unsere Summe den Wert der \textit{Basis} des Stellenwertsystems annimmt.\\
-		\newpage
 		\begin{framed}
 			\noindent
 			Wir betrachten das folgende Beispiel:\\
@@ -59,6 +60,7 @@
 			\textbf{Binär}: \( 111 + 1011 = 10010\)\\
 			\par\noindent
 			Wie kommen wir darauf:\\
+			\par\noindent
 			\begin{tabularx}{0.4\textwidth}{llllll}
 				& & 0 & 1 & 1 & 1\\
 				+ & & 1 & 0 & 1 & 1\\
@@ -71,6 +73,17 @@
 			\end{tabularx}
 		\end{framed}
 		\noindent
-		Was fällt bezüglich der Anzahl der Stellen der beiden Summanden und der Summe auf.
+		Was fällt bezüglich der Anzahl der Stellen der beiden Summanden und der Summe auf?\\
+		\par\noindent
+		Die Regeln der Addition lassen sich wie folgt festhalten:\\
+		\par\noindent
+		\begin{tabularx}{0.48\textwidth}{MM|MM}
+			\(x_1\) & \(x_2\) & E & O\\
+			\hline
+			0 & 0 & 0 & 0\\
+			0 & 1 & 1 & 0\\
+			1 & 0 & 1 & 0\\
+			1 & 1 & 0 & 1\\
+		\end{tabularx}
 	\end{worksheet}
 \end{document}

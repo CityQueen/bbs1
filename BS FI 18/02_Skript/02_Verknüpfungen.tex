@@ -1,0 +1,109 @@
+\documentclass[11pt,twocolumn,oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{article}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\setlength{\columnsep}{3em}
+\setlength{\columnseprule}{0.5pt}
+
+\geometry{left=2.00cm,right=2.00cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+\pagenumbering{arabic}
+\pagestyle{plain}
+
+\begin{document}
+	\begin{worksheet}{BS FI}{1. Lehrjahr, LF 4 - Einfache IT-Systeme}{Digitaltechnik - Logische Verknüpfungen}
+		\section{Logische Verknüpfungen}
+		Betrachtet man die binären Zahlen \(0\) und \(1\) als Zustände, so kann man ihnen entsprechende Wahrheitswerte \(0 = false\) und \(1 = true\) zuweisen.\\
+		Verknüpft man zwei Zustände, so ist der Ausgang (\textit{Output}) abhängig von den eingehenden (\textit{Input}) Zuständen. Dabei können auch wieder nur die entsprechenden Zustände \(0 = false\) und \(1 = true\) angenommen werden.\\
+		\par\noindent
+		Es stellt sich nun die Frage, \textbf{welche Verknüpfungen gibt es?}\\
+		Hier ist zu unterscheiden zwischen \textbf{Grundverknüpfungen} und \textbf{Erweiterte Verknüpfungen}\footnote{Die Bezeichnung ist selbst gewählt.}.\\
+		Nachfolgend betrachten wir zunächst die \underline{drei} Grundverknüpfungen. Dazu zählt zum einen die Funktionalität, das gebräuchlichste Schaltsymbol sowie die dazugehörige Wahrheitstabelle.
+		\subsection{Grundverknüpfungen}
+		Wir bezeichnen diese Verknüpfungen als \textit{Grundverknüpfungen}, da sie selbst nur unter Verwendung der anderen Grundverknüpfung dargestellt werden kann und sie zudem in Kombination alle in \textit{\nameref{ssec:erwVerk}} dargestellten Verknüpfungen erzeugen können.
+		\subsubsection*{NOT}
+		Die \textbf{NOT}-Verknüpfung wird auch als \textit{Negation} bezeichnet. Sie negiert also ihren Eingangszustand.\\
+		Geht ein \textbf{0} rein, so kommt eine \textbf{1} raus.
+		\par\noindent
+		\begin{tabularx}{0.48\textwidth}{ll|l}
+			\multirow{3}{*}{\includegraphics[width=0.1\textwidth,align=t]{../99_Bilder/NOT.jpg}} & \(x_1\) & \(f(x_1)\)\\
+			\cline{2-3}
+			 & 0 & 1\\
+			& 1 & 0\\
+		\end{tabularx}
+		\subsubsection*{AND}
+		Für die \textbf{AND}-Verknüpfung kann auch der Begriff \textit{Konjunktion} verwendet werden.\\
+		Sie verknüpft die \underline{zwei} Eingangszustände als logisches UND. Dabei ist der Output nur dann \textbf{1}, wenn \underline{beide} Eingangszustände \textbf{1} sind.\\
+		\par\noindent
+		\begin{tabularx}{0.48\textwidth}{lll|l}
+			& \(x_1\) & \(x_2\)& \(f(x_1;x_2)\)\\
+			\cline{2-4}
+			\multirow{3}{*}{\includegraphics[width=0.1\textwidth,align=t]{../99_Bilder/AND.jpg}} & 0 & 0 & 0\\
+			& 0 & 1 & 0\\
+			& 1 & 0 & 0\\
+			& 1 & 1 & 1\\
+		\end{tabularx}
+		\subsubsection*{OR}
+		Die \textbf{OR}-Verknüpfung wird auch als \textit{Disjunktion} bezeichnet.\\
+		Sie verknüpft die \underline{zwei} Eingangszustände als logisches ODER. Dabei ist der Output in dem Moment \textbf{1}, wenn \underline{mindestens einer} der beiden Eingangszustände \textbf{1} ist.\\
+		\par\noindent
+		\begin{tabularx}{0.48\textwidth}{lll|l}
+			& \(x_1\) & \(x_2\)& \(f(x_1;x_2)\)\\
+			\cline{2-4}
+			\multirow{3}{*}{\includegraphics[width=0.1\textwidth,align=t]{../99_Bilder/OR.jpg}} & 0 & 0 & 0\\
+			& 0 & 1 & 1\\
+			& 1 & 0 & 1\\
+			& 1 & 1 & 1\\
+		\end{tabularx}
+		\subsection{Erweiterte Verknüpfungen}
+		\label{ssec:erwVerk}
+		\subsubsection*{NAND}
+		Die Verknüpfung entspricht dem AND. \textbf{\underline{Vorsicht:}} Das Ausgangssignal wird negiert. Es ist also \textbf{immer 1}, \underline{außer wenn beide} Eingangszustände \textbf{1} sind.\\
+		\par\noindent
+		\begin{tabularx}{0.48\textwidth}{lll|l}
+			& \(x_1\) & \(x_2\)& \(f(x_1;x_2)\)\\
+			\cline{2-4}
+			\multirow{3}{*}{\includegraphics[width=0.1\textwidth,align=t]{../99_Bilder/NAND.jpg}} & 0 & 0 & 1\\
+			& 0 & 1 & 1\\
+			& 1 & 0 & 1\\
+			& 1 & 1 & 0\\
+		\end{tabularx}
+		\subsubsection*{NOR}
+		Die Verknüpfung entspricht dem OR. \textbf{\underline{Aber}} auch hier wird das Ausgangssignal negiert. Entsprechend ist der Output  \textbf{nur 1}, \underline{wenn beide} Eingangszustände \textbf{0} sind.\\
+		\par\noindent
+		\begin{tabularx}{0.48\textwidth}{lll|l}
+			& \(x_1\) & \(x_2\)& \(f(x_1;x_2)\)\\
+			\cline{2-4}
+			\multirow{3}{*}{\includegraphics[width=0.1\textwidth,align=t]{../99_Bilder/NOR.jpg}} & 0 & 0 & 1\\
+			& 0 & 1 & 0\\
+			& 1 & 0 & 0\\
+			& 1 & 1 & 0\\
+		\end{tabularx}
+		\subsubsection*{XOR}
+		Die logische Verknüpfung OR wird hier verschärft. Das Ausgangssignal ist \textbf{nur genau dann 1}, \underline{wenn eine} der beiden Eingangssignale \textbf{1} ist.\\
+		\par\noindent
+		\begin{tabularx}{0.48\textwidth}{lll|l}
+			& \(x_1\) & \(x_2\)& \(f(x_1;x_2)\)\\
+			\cline{2-4}
+			\multirow{3}{*}{\includegraphics[width=0.1\textwidth,align=t]{../99_Bilder/XOR.jpg}} & 0 & 0 & 0\\
+			& 0 & 1 & 1\\
+			& 1 & 0 & 1\\
+			& 1 & 1 & 0\\
+		\end{tabularx}
+		\subsubsection*{<-> (XNOR)}
+		Diese Verknüpfung entspricht dem invertierten XOR. Das bedeutet, das Ausgangssignal ist \textbf{genau dann 1}, wenn \underline{beide} Eingangszustände \textbf{0} oder \underline{beide} \textbf{1} sind.\\
+		\par\noindent
+		\begin{tabularx}{0.48\textwidth}{lll|l}
+			& \(x_1\) & \(x_2\)& \(f(x_1;x_2)\)\\
+			\cline{2-4}
+			\multirow{3}{*}{\includegraphics[width=0.1\textwidth,align=t]{../99_Bilder/equi.jpg}} & 0 & 0 & 1\\
+			& 0 & 1 & 0\\
+			& 1 & 0 & 0\\
+			& 1 & 1 & 1\\
+		\end{tabularx}\\
+		\par\noindent
+		\underline{\textbf{Ihre Aufgabe}}:\\
+		\par\noindent
+		Überlegen Sie für die einzelnen Erweiterten Verknüpfungen, wie sie diese \underline{nur} unter Verwendung der \textbf{Grundverknüpfungen} realisieren können.
+	\end{worksheet}
+\end{document}
