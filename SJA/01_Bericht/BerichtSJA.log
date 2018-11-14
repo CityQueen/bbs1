@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.1)  11 NOV 2018 19:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.1)  13 NOV 2018 12:50
 entering extended mode
 **./BerichtSJA.tex
 (BerichtSJA.tex
@@ -1854,12 +1854,12 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Try loading font information for U+stmry on input line 13.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\stmaryrd\ustmry.fd")
-<../99_Bilder/SJA.jpg, id=34, 225.84375pt x 225.84375pt>
+<../99_Bilder/SJA.jpg, id=34, 54.2025pt x 54.2025pt>
 File: ../99_Bilder/SJA.jpg Graphic file (type jpg)
 <use ../99_Bilder/SJA.jpg>
 Package pdftex.def Info: ../99_Bilder/SJA.jpg  used on input line 25. on input 
 line 25.
-Package pdftex.def Info: Requested size: 91.04742pt x 91.04922pt on input line 
+Package pdftex.def Info: Requested size: 91.04742pt x 91.05873pt on input line 
 25.
 
 Underfull \hbox (badness 1132) in paragraph at lines 26--26
@@ -1921,7 +1921,7 @@ File: ../99_Bilder/00_pepralley.jpg Graphic file (type jpg)
 <use ../99_Bilder/00_pepralley.jpg>
 Package pdftex.def Info: ../99_Bilder/00_pepralley.jpg  used on input line 97. 
 on input line 97.
-Package pdftex.def Info: Requested size: 218.51521pt x 122.88219pt on input lin
+Package pdftex.def Info: Requested size: 218.51521pt x 122.90776pt on input lin
 e 97.
 
 Overfull \hbox (2.89316pt too wide) in paragraph at lines 97--97
@@ -1932,7 +1932,7 @@ File: ../99_Bilder/01_pepralley.jpg Graphic file (type jpg)
 <use ../99_Bilder/01_pepralley.jpg>
 Package pdftex.def Info: ../99_Bilder/01_pepralley.jpg  used on input line 97. 
 on input line 97.
-Package pdftex.def Info: Requested size: 218.51521pt x 122.88219pt on input lin
+Package pdftex.def Info: Requested size: 218.51521pt x 122.90776pt on input lin
 e 97.
 
 Overfull \hbox (2.89316pt too wide) in paragraph at lines 97--97
@@ -1973,12 +1973,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
 
-<../99_Bilder/00_comskill.jpg, id=121, 4657.4pt x 2619.7875pt>
+<../99_Bilder/00_comskill.jpg, id=121, 1117.776pt x 628.749pt>
 File: ../99_Bilder/00_comskill.jpg Graphic file (type jpg)
 <use ../99_Bilder/00_comskill.jpg>
 Package pdftex.def Info: ../99_Bilder/00_comskill.jpg  used on input line 126. 
 on input line 126.
-Package pdftex.def Info: Requested size: 136.57462pt x 76.79137pt on input line
+Package pdftex.def Info: Requested size: 136.57462pt x 76.81854pt on input line
  126.
 
 Underfull \hbox (badness 10000) in paragraph at lines 122--127
@@ -1994,7 +1994,7 @@ File: ../99_Bilder/00_arduino.jpg Graphic file (type jpg)
 <use ../99_Bilder/00_arduino.jpg>
 Package pdftex.def Info: ../99_Bilder/00_arduino.jpg  used on input line 135. o
 n input line 135.
-Package pdftex.def Info: Requested size: 218.51521pt x 122.88219pt on input lin
+Package pdftex.def Info: Requested size: 218.51521pt x 122.90776pt on input lin
 e 135.
 
 Overfull \hbox (2.89316pt too wide) in paragraph at lines 135--135
@@ -2005,7 +2005,7 @@ File: ../99_Bilder/01_arduino.jpg Graphic file (type jpg)
 <use ../99_Bilder/01_arduino.jpg>
 Package pdftex.def Info: ../99_Bilder/01_arduino.jpg  used on input line 135. o
 n input line 135.
-Package pdftex.def Info: Requested size: 218.51521pt x 122.88219pt on input lin
+Package pdftex.def Info: Requested size: 218.51521pt x 122.90776pt on input lin
 e 135.
 
 Overfull \hbox (2.89316pt too wide) in paragraph at lines 135--135
@@ -2016,7 +2016,7 @@ File: ../99_Bilder/02_arduino.jpg Graphic file (type jpg)
 <use ../99_Bilder/02_arduino.jpg>
 Package pdftex.def Info: ../99_Bilder/02_arduino.jpg  used on input line 135. o
 n input line 135.
-Package pdftex.def Info: Requested size: 218.51521pt x 122.88219pt on input lin
+Package pdftex.def Info: Requested size: 218.51521pt x 122.90776pt on input lin
 e 135.
 
 Underfull \hbox (badness 10000) in paragraph at lines 137--138
@@ -2035,7 +2035,7 @@ File: ../99_Bilder/00_solder.jpg Graphic file (type jpg)
 <use ../99_Bilder/00_solder.jpg>
 Package pdftex.def Info: ../99_Bilder/00_solder.jpg  used on input line 141. on
  input line 141.
-Package pdftex.def Info: Requested size: 218.51521pt x 122.88219pt on input lin
+Package pdftex.def Info: Requested size: 218.51521pt x 122.90776pt on input lin
 e 141.
 
 Overfull \hbox (2.89316pt too wide) in paragraph at lines 141--141
@@ -2046,7 +2046,7 @@ File: ../99_Bilder/01_solder.jpg Graphic file (type jpg)
 <use ../99_Bilder/01_solder.jpg>
 Package pdftex.def Info: ../99_Bilder/01_solder.jpg  used on input line 141. on
  input line 141.
-Package pdftex.def Info: Requested size: 218.51521pt x 122.88219pt on input lin
+Package pdftex.def Info: Requested size: 218.51521pt x 122.90776pt on input lin
 e 141.
 
 Overfull \hbox (2.89316pt too wide) in paragraph at lines 141--141
@@ -2062,7 +2062,7 @@ File: ../99_Bilder/00_chair.jpg Graphic file (type jpg)
 <use ../99_Bilder/00_chair.jpg>
 Package pdftex.def Info: ../99_Bilder/00_chair.jpg  used on input line 152. on 
 input line 152.
-Package pdftex.def Info: Requested size: 218.51521pt x 122.88219pt on input lin
+Package pdftex.def Info: Requested size: 218.51521pt x 122.90776pt on input lin
 e 152.
 
 Overfull \hbox (2.89316pt too wide) in paragraph at lines 152--152
@@ -2073,7 +2073,7 @@ File: ../99_Bilder/01_chair.jpg Graphic file (type jpg)
 <use ../99_Bilder/01_chair.jpg>
 Package pdftex.def Info: ../99_Bilder/01_chair.jpg  used on input line 152. on 
 input line 152.
-Package pdftex.def Info: Requested size: 218.51521pt x 203.22726pt on input lin
+Package pdftex.def Info: Requested size: 218.51521pt x 203.25102pt on input lin
 e 152.
 
 Overfull \hbox (2.89316pt too wide) in paragraph at lines 152--152
@@ -2084,7 +2084,7 @@ File: ../99_Bilder/00_laser.jpg Graphic file (type jpg)
 <use ../99_Bilder/00_laser.jpg>
 Package pdftex.def Info: ../99_Bilder/00_laser.jpg  used on input line 155. on 
 input line 155.
-Package pdftex.def Info: Requested size: 218.51521pt x 122.88219pt on input lin
+Package pdftex.def Info: Requested size: 218.51521pt x 122.90776pt on input lin
 e 155.
 
 Overfull \hbox (2.89316pt too wide) in paragraph at lines 155--155
@@ -2095,7 +2095,7 @@ File: ../99_Bilder/01_laser.jpg Graphic file (type jpg)
 <use ../99_Bilder/01_laser.jpg>
 Package pdftex.def Info: ../99_Bilder/01_laser.jpg  used on input line 155. on 
 input line 155.
-Package pdftex.def Info: Requested size: 218.51521pt x 122.88219pt on input lin
+Package pdftex.def Info: Requested size: 218.51521pt x 122.90776pt on input lin
 e 155.
 
 Overfull \hbox (2.89316pt too wide) in paragraph at lines 155--155
@@ -2114,7 +2114,7 @@ File: ../99_Bilder/laser.jpg Graphic file (type jpg)
 <use ../99_Bilder/laser.jpg>
 Package pdftex.def Info: ../99_Bilder/laser.jpg  used on input line 162. on inp
 ut line 162.
-Package pdftex.def Info: Requested size: 218.51521pt x 122.88219pt on input lin
+Package pdftex.def Info: Requested size: 218.51521pt x 122.90776pt on input lin
 e 162.
 
 Overfull \hbox (2.89316pt too wide) in paragraph at lines 162--162
@@ -2125,7 +2125,7 @@ File: ../99_Bilder/3DPrint.jpg Graphic file (type jpg)
 <use ../99_Bilder/3DPrint.jpg>
 Package pdftex.def Info: ../99_Bilder/3DPrint.jpg  used on input line 162. on i
 nput line 162.
-Package pdftex.def Info: Requested size: 218.51521pt x 122.88219pt on input lin
+Package pdftex.def Info: Requested size: 218.51521pt x 122.90776pt on input lin
 e 162.
 
 Overfull \hbox (2.89316pt too wide) in paragraph at lines 162--162
@@ -2141,7 +2141,7 @@ File: ../99_Bilder/00_HD.jpg Graphic file (type jpg)
 <use ../99_Bilder/00_HD.jpg>
 Package pdftex.def Info: ../99_Bilder/00_HD.jpg  used on input line 172. on inp
 ut line 172.
-Package pdftex.def Info: Requested size: 218.51521pt x 122.88219pt on input lin
+Package pdftex.def Info: Requested size: 218.51521pt x 122.90776pt on input lin
 e 172.
 
 Overfull \hbox (2.89316pt too wide) in paragraph at lines 172--172
@@ -2152,7 +2152,7 @@ File: ../99_Bilder/01_HD.jpg Graphic file (type jpg)
 <use ../99_Bilder/01_HD.jpg>
 Package pdftex.def Info: ../99_Bilder/01_HD.jpg  used on input line 172. on inp
 ut line 172.
-Package pdftex.def Info: Requested size: 218.51521pt x 122.88219pt on input lin
+Package pdftex.def Info: Requested size: 218.51521pt x 122.90776pt on input lin
 e 172.
 
 Overfull \hbox (2.89316pt too wide) in paragraph at lines 172--172
@@ -2180,13 +2180,13 @@ File: ../99_Bilder/00_LSU.jpg Graphic file (type jpg)
 <use ../99_Bilder/00_LSU.jpg>
 Package pdftex.def Info: ../99_Bilder/00_LSU.jpg  used on input line 184. on in
 put line 184.
-Package pdftex.def Info: Requested size: 204.85846pt x 115.20705pt on input lin
+Package pdftex.def Info: Requested size: 204.85846pt x 115.23262pt on input lin
 e 184.
 File: ../99_Bilder/01_LSU.jpg Graphic file (type jpg)
 <use ../99_Bilder/01_LSU.jpg>
 Package pdftex.def Info: ../99_Bilder/01_LSU.jpg  used on input line 184. on in
 put line 184.
-Package pdftex.def Info: Requested size: 204.85846pt x 115.20705pt on input lin
+Package pdftex.def Info: Requested size: 204.85846pt x 115.23262pt on input lin
 e 184.
 
 Underfull \hbox (badness 10000) in paragraph at lines 186--187
@@ -2197,13 +2197,13 @@ File: ../99_Bilder/00_trip.jpg Graphic file (type jpg)
 <use ../99_Bilder/00_trip.jpg>
 Package pdftex.def Info: ../99_Bilder/00_trip.jpg  used on input line 190. on i
 nput line 190.
-Package pdftex.def Info: Requested size: 204.85846pt x 115.20705pt on input lin
+Package pdftex.def Info: Requested size: 204.85846pt x 115.23262pt on input lin
 e 190.
 File: ../99_Bilder/01_trip.jpg Graphic file (type jpg)
 <use ../99_Bilder/01_trip.jpg>
 Package pdftex.def Info: ../99_Bilder/01_trip.jpg  used on input line 190. on i
 nput line 190.
-Package pdftex.def Info: Requested size: 204.85846pt x 115.20705pt on input lin
+Package pdftex.def Info: Requested size: 204.85846pt x 115.23262pt on input lin
 e 190.
 
 Underfull \hbox (badness 10000) in paragraph at lines 192--193
@@ -2223,33 +2223,40 @@ File: ../99_Bilder/00_food.jpg Graphic file (type jpg)
 <use ../99_Bilder/00_food.jpg>
 Package pdftex.def Info: ../99_Bilder/00_food.jpg  used on input line 196. on i
 nput line 196.
-Package pdftex.def Info: Requested size: 204.85846pt x 115.20705pt on input lin
+Package pdftex.def Info: Requested size: 204.85846pt x 115.23262pt on input lin
 e 196.
 File: ../99_Bilder/01_food.jpg Graphic file (type jpg)
 <use ../99_Bilder/01_food.jpg>
 Package pdftex.def Info: ../99_Bilder/01_food.jpg  used on input line 196. on i
 nput line 196.
-Package pdftex.def Info: Requested size: 204.85846pt x 115.20705pt on input lin
+Package pdftex.def Info: Requested size: 204.85846pt x 115.23262pt on input lin
 e 196.
 File: ../../logo.pdf Graphic file (type pdf)
 <use ../../logo.pdf>
-Package pdftex.def Info: ../../logo.pdf  used on input line 198. on input line 
-198.
+Package pdftex.def Info: ../../logo.pdf  used on input line 204. on input line 
+204.
 Package pdftex.def Info: Requested size: 91.04742pt x 22.27197pt on input line 
-198.
+204.
  [9 <../99_Bilder/00_food.jpg> <../99_Bilder/01_food.jpg>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 199.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 199.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 205.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 205.
  (BerichtSJA.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 199.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 199.
-Package rerunfilecheck Info: File `BerichtSJA.out' has not changed.
-(rerunfilecheck)             Checksum: CA21325992DED6D007D2BA2593BB1882;393.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 199.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 205.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 205.
+
+
+Package rerunfilecheck Warning: File `BerichtSJA.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `BerichtSJA.out':
+(rerunfilecheck)             Before: CA21325992DED6D007D2BA2593BB1882;393
+(rerunfilecheck)             After:  2D0C83FDD92777846458EE7EB7E76B16;434.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 205.
  ) 
 Here is how much of TeX's memory you used:
- 33362 strings out of 493312
- 606559 string characters out of 3138900
+ 33363 strings out of 493312
+ 606568 string characters out of 3138900
  734652 words of memory out of 3000000
  36222 multiletter control sequences out of 15000+200000
  655888 words of font info for 100 fonts, out of 3000000 for 9000
@@ -2266,9 +2273,9 @@ Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/public/lm/lmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lms
 so10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsso8.pfb>
-Output written on BerichtSJA.pdf (9 pages, 68116519 bytes).
+Output written on BerichtSJA.pdf (9 pages, 7119369 bytes).
 PDF statistics:
- 213 PDF objects out of 1000 (max. 8388607)
- 25 named destinations out of 1000 (max. 500000)
+ 214 PDF objects out of 1000 (max. 8388607)
+ 26 named destinations out of 1000 (max. 500000)
  189 words of extra memory for PDF output out of 10000 (max. 10000000)
 
