@@ -14,7 +14,7 @@
 	\begin{worksheet}{Höhere Berufsfachschule IT-Systeme}{Grundstufe - Mathematik}{Lernabschnitt 3: Ganzrationale Funktionen}
 		\setcounter{section}{5}
 		\section{Ganzrationale Funktionen}
-		Spricht man von \textbf{ganzrationalen Funktionen}, meint man immer eine Funktion der Form \[f(x) = a_nx^n + a_{n-1}x^{n-1} + \ldots + a_1x + a_0\color{codegray}{x^0}\] Dabei besteht jeder Summand aus \(a_n\cdot{}x^n\) und \(n\) ist eine natürliche Zahle, also \(n \in \mathbb{N}\).\\
+		Spricht man von \textbf{ganzrationalen Funktionen}, meint man immer eine Funktion der Form \[f(x) = a_nx^n + a_{n-1}x^{n-1} + \ldots + a_1x + a_0\color{codegray}{x^0}\] Dabei besteht jeder Summand aus \(a_n\cdot{}x^n\) und \(n\) ist eine natürliche Zahle, also \(n \in \mathbb{N}\).
 		\par\noindent
 		\rule{0.48\textwidth}{0.1pt}\\
 		\underline{\color{red}{Vorsicht!}}\\
@@ -25,7 +25,7 @@
 		Als \textbf{Grad} \(\mathbf{n}\) einer Funktion bezeichnet man den größten vorkommenden Exponenten.\\
 		\par\noindent
 		\textbf{\underline{Beispiel:}} \(f(x) = 3x^4 + 5x^2 -3\)\\
-		Diese Funktion hat den Grad \(n = 4\) - wegen \fbox{\(3x\)\colorbox{green!10}{\(^4\)}}.
+		Diese Funktion hat den Grad \(n = 4\). Wegen \(3x\)\colorbox{green!10}{\(^4\)}.
 		\subsubsection*{\underline{Koeffizient}}
 		Mit dem Begriff \textbf{Koeffizient} \(a_n\) bezeichnet man immer den \textbf{Faktor vor} dem \(x^n\).\\
 		\par\noindent
@@ -37,19 +37,35 @@
 		\par\noindent
 		\underline{\textbf{Beispiel:}} Wir betrachten die Funktionsgleichung \(f(x) = -\frac{1}{3}x^4 + 3x^2 - 6x\).\\
 		Der charakteristische Summand ist \colorbox{green!10}{\(-\frac{1}{3}x^4\)}. Setzt sich also zusammen aus dem \(x\)-Term und seinem Koeffizienten.
+		\subsubsection*{\underline{Absolutglied}}
+		Im Polynom einer ganzrationalen Funktion bezeichnet der Koeffizient \(a_0\) das \textbf{Absolutglied}.\\
+		An ihm kann auch der \textit{y-Achsenabschnitt} einer ganzrationalen Funktion abgelesen werden.\\
+		\par\noindent
+		\underline{\textbf{Beispiel:}} Die Funktionsgleichung \(f(x) = x^4 - 2x^2 - 6\) lässt folgende Aussage zu.\\
+		Das Absolutglied ist \colorbox{green!10}{\(-6\)}. Das bedeutet, der Funktionsgraph schneidet die y-Achse bei \(-6\).\\
+		\par\noindent
+		Bei der Funktionsgleichung \(f(x) = x^5 +3x^3 - 4x\) hingegen ist kein Absolutglied vorhanden.\\
+		Das bedeutet, das Absolutglied hat den Wert \colorbox{green!10}{\(0\)}. Somit schneidet der Funktionsgraph die y-Achse im Ursprung, also bei \(0\).
 		\subsection{Prototypen}
 		Eine ganzrationale Funktion kann in unterschiedlicher Form auftreten. Diese bezeichnen wir als Prototypen.
 		\subsubsection*{\underline{Polynomform}}
 		Der oben bereits erwähnte Prototyp \[f(x) = a_nx^n + a_{n-1}x^{n-1} + \ldots + a_1x^1 + a_0\] wird Polynom genannt und dementsprechend heißt diese Darstellung \textbf{Polynomform}.
-		\subsubsection*{\underline{Faktorform}}
-		Wie auch bei den quadratischen Funktionen kann eine ganzrationale Funktion als Produkt der \grq{}Nullstellen-Polynome\grq{} dargestellt werden.
-		\[f(x) = a(x-N_1)(x-N_2)\cdot{}\ldots{}\cdot{}(x-N_{n_1})(x-N_n)\]
-		Dabei geben uns die einzelnen \grq{}Nullstellen-Polynome\grq{} Auskunft über die Nullstellen.\\
+		\subsection*{Die Faktorform (FF)}
+		Wie auch bei den quadratischen Funktionen kann eine ganzrationale Funktion als Produkt aus unterschiedlichen Faktoren dargestellt werden.\\
+		Im allgemeinen gilt für die Faktorform nur, dass sie \textbf{aus mindestens zwei Faktoren} besteht. Wobei einer die Form \((x-N_1)\) erfüllen muss.
+		\[f_{FF}(x) = a\cdot{}(x-N_1)\cdot{}(b_{n-1}x^{n-1}+\ldots{}+b_1x+ b_0)\]
+		\textbf{\underline{Beispiel:}} Die Funktion \(f(x) = 5(x-3)(x^2+2x-3)\) ist in Faktorform gegeben.
+		\subsubsection*{Linearfaktorform (LFF)}
+		Eine Sonderform der Faktorform ist eine Darstellung, die als Produkt der \grq{}Nullstelle-Polynome\grq{} (oder auch Linearfaktoren) dargestellt wird.
+		\[f_{LFF}(x) = a\cdot{}(x-N_1)\cdot{}(x-N_2)\cdot{}\ldots{}\cdot{}(x-N_{n-1})\cdot{}(x-N_n)\]
+		Die Darstellung \(f_{LFF}\) wird, wie bereits bei quadratischen Funktionen eingeführt, \textbf{Linearfaktorform} genannt.\\
+		Zu Beachten ist, dass diese Sonderform ausschließlich aus linearen Faktoren der Form (\(x-N_i\)) (also nur \(1\) als Exponent an \(x\)) besteht.\\
+		Dabei können wir an den einzelnen \grq{}Nullstellen-Polynome\grq{} (Linearfaktoren) direkt die Nullstellen der Funktion ablesen.\\
 		\par\noindent
-		\underline{\textbf{Beispiel:}} \(f(x) = (x-\underbrace{2}_{N_1})\cdot(x-\underbrace{1}_{N_2})\cdot(x-\underbrace{(-3)}_{N_3})\)
+		\underline{\textbf{Beispiel:}}\[f(x) = (x-\underbrace{2}_{N_1})\cdot(x-\underbrace{1}_{N_2})\cdot(x-\underbrace{(-3)}_{N_3})\]
 		\subsubsection*{Polynomform \(\Leftrightarrow\) Faktorform}
-		\textbf{FF \(\Rightarrow\) PF}\\
-		Haben wir eine ganzrationale Funktion in \textbf{Faktorform} \(f(x) = a(x-N_1)\cdot\ldots\cdot(x-N_{n-1})\cdot(x-N_{n})\) gegeben und möchten diese \textbf{in die Polynomform} überführen, so multiplizieren wir den Faktor aus und erhalten so die gewünschte Form.\\
+		\textbf{(L)FF \(\Rightarrow\) PF}\\
+		Haben wir eine ganzrationale Funktion in \textbf{Faktorform} \(f(x) = a(x-N_1)\cdot\ldots\cdot(x-N_{n-1})\cdot(x-N_{n})\) gegeben und möchten diese \textbf{in die Polynomform} überführen, so multiplizieren wir die Faktoren aus und erhalten so die gewünschte Form.\\
 		\par\noindent
 		\underline{\textbf{Beispiel:}} \(f(x) = 0,5(x-3)(x+2)(x-1)\)
 		\begin{align*}
