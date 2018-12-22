@@ -1,0 +1,107 @@
+\documentclass[oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{scrreprt}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\geometry{left=2.50cm,right=2.50cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+
+\begin{document}
+	\begin{worksheet}{BGY 16}{Klassenstufe 13 - Mathematik}{Lernabschnitt 1: Kettenregel und Produktregel}
+				
+		\noindent
+		\sffamily
+		\begin{framed}
+			\noindent
+			\small{\color{codegray}\underline{S. 196 \textbf{Aufgabe 2}:}} Berechnen Sie für die natürliche Exponentialfunktion an den Stellen \(-2,\ 0\ \text{und}\ 2\) die Funktionswerte und die Ableitungen. Skizzieren Sie damit den Graphen der Funktion\\
+			\par\noindent
+			\begin{tabularx}{\textwidth}{M|M|M|M}
+				\multicolumn{2}{l}{\(f(x) = e^x\)} & \multicolumn{2}{l}{\(f'(x) = e^x\)}\\
+				& & & \\
+				x & \(-2\) & \(0\) & \(2\)\\
+				\hline
+				& & & \\
+				\(f(x)\) & \(0,14\) & \(1\) & \(7,39\)\\
+				\hline
+				& & & \\
+				\(f'(x)\) & \(0,14\) & \(1\) & \(7,39\)\\
+			\end{tabularx}\\
+			\par\bigskip\noindent
+			\includegraphics[width=\textwidth]{../99_Bilder/01_ExpFkt/20180921-2.png}
+		\end{framed}
+		\newpage
+		\begin{framed}
+			\noindent
+			\small{\color{codegray}\underline{S. 196 \textbf{Aufgabe 3}:}} Zeichnen Sie zunächst den Graphen der natürlichen Exponentialfunktion f mit \(f(x) = e^x\). Skizzieren Sie damit den Graphen von\\
+			\par\noindent
+			\begin{tabularx}{\textwidth}{MMM}
+				(a) \(f_1\ \text{mit}\ f_1(x)=e^x+1\) & (a) \(f_2\ \text{mit}\ f_2(x)=2e^x\) & (a) \(f_3\ \text{mit}\ f_3(x)=e^{x-1}\)
+			\end{tabularx}\\
+			\par\noindent
+			\includegraphics[width=\textwidth]{../99_Bilder/01_ExpFkt/20180921-3.png}
+		\end{framed}
+		\begin{framed}
+			\noindent
+			\small{\color{codegray}\underline{S. 196 \textbf{Aufgabe 4}:}} Gegeben ist der Graph K der natürlichen Exponentialfunktion.\\
+			\par\noindent
+			(a) Bestimmen Sie die Gleichung der Tangenten an K im Punkt \(A(1|e)\) und \(B(-1|\frac{1}{e}\).\\
+			(b) Berechnen Sie den Schnittpunkt der Tangente an K im Punkt A mit der x-Achse.
+			\begin{framed}
+				\noindent
+				Wir erinern uns daran, dass die Tangente eine \textit{lineare Funktion} ist. Das bedeutet die Funktion erfüllt folgende Form: \(t(x) = mx+b\).\\
+				Dabei entspricht \(\mathbf{m}\) der \textbf{Steigung} der Tangente und \(\mathbf{b}\) gibt den y-Achsenabschnitt der Tangente an.
+			\end{framed}
+		 	\newpage
+		 	\noindent
+			(a) Wir beginnen mit der Tangente \(t_A(x)\) an K durch den Punkt \(A(1|e)\).\\
+			Hierfür berechnen wir zunächst die Steigung (\(f'(x_p)\)) im geforderten Punkt \((x_p|y_p)\).\\
+			\par\noindent
+			\begin{tabularx}{\textwidth}{Xl}
+				\(f(x) = e^x\) & \(\Rightarrow f'(x) = e^x\)\\
+				\(f'(1) = e\) & \(\Rightarrow\) \colorbox{green!5}{\(m = e\)}\\
+			\end{tabularx}\\
+			\par\noindent
+			Wir wissen, die Tangente \(t_A\) hat die Steigung \(e\). Zudem wissen wir, dass die Tangente durch den Punkt \(A(1|e)\) verläuft. Also \(t_A(1) = e\).\\
+			\par\noindent
+			\begin{tabularx}{\textwidth}{Xl}
+				\(t_A(x) = e\cdot{}x + b\)\\
+				\(e = t_A(1) = e\cdot{}1 + b\)\\
+				\(e = e\cdot{}1 + b\) & |\(-e\)\\
+				\colorbox{green!5}{\(0 = b\)}
+			\end{tabularx}\\
+			\par\noindent
+			Damit ergibt sich für die Tangente an K durch den Punkt \(A(1|e)\): \colorbox{green!10}{\(t_A(x) = ex\)}.\\
+			\hdashrule{\textwidth}{0.1pt}{4pt}\\
+			Das gleiche Vorgehen wählen wir, um die Tangente \(t_B(x)\) an K durch den Punkt \(B(-1|\frac{1}{e})\) zu bestimmen.\\
+			Als Erstes berechnen wir wieder die Steigung (\(f'(x_p)\)) im geforderten Punkt \((x_p|y_p)\).\\
+			\par\noindent
+			\begin{tabularx}{\textwidth}{Xl}
+				\(f(x) = e^x\) & \(\Rightarrow f'(x) = e^x\)\\
+				\(f'(-1) = \frac{1}{e}\) & \(\Rightarrow\) \colorbox{green!5}{\(m = \frac{1}{e}\)}\\
+			\end{tabularx}\\
+			\par\noindent
+			Wir wissen, die Tangente \(t_B\) hat die Steigung \(\frac{1}{e}\). Zudem wissen wir, dass die Tangente durch den Punkt \(B(-1|\frac{1}{e})\) verläuft. Also \(t_B(-1) = \frac{1}{e}\).\\
+			\par\noindent
+			\begin{tabularx}{\textwidth}{Xl}
+				\(t_b(x) = \frac{1}{e}\cdot{}x + b\)\\
+				\(\frac{1}{e} = t_B(-1) = \frac{1}{e}\cdot{}(-1) + b\)\\
+				\(\frac{1}{e} = \frac{1}{e}\cdot{}(-1) + b\) & |\(+\frac{1}{e}\)\\
+				\colorbox{green!5}{\(\frac{2}{e} = b\)}
+			\end{tabularx}\\
+			\par\noindent
+			Damit ergibt sich für die Tangente an K durch den Punkt \(B(-1|\frac{1}{e})\): \colorbox{green!10}{\(t_B(x) = \frac{1}{e}x + \frac{2}{e}\)}.\\
+			\par\noindent
+			\rule{\textwidth}{0.1pt}\\
+			\par\noindent
+			(b) Für den Schnittpunkt der Tangente \(t_A(x)\) an K durch den Punkt \(A(1|e)\) mit der x-Achse müssen wir die Nullstelle eben dieser bestimmen.\\
+			Also \(\mathbf{t_A(x) = 0}\).\\
+			\par\noindent
+			\begin{tabularx}{\textwidth}{Xl}
+				\(t_A(x) = ex\) & | \(= 0\)\\
+				\(0 = ex\) & |\(:e\)\\
+				\colorbox{green!10}{\(x = 0\)}
+			\end{tabularx}\\
+			\par\noindent
+			Das heißt, der Schnittpunkt der Tangente \(t_A(x)\) an K durch den Punkt \(A(1|e)\) schneidet die x-Achse an der Stelle \colorbox{green!10}{\(x = 0\)}. Also im Koordinatenursprung.
+		\end{framed}
+	\end{worksheet}
+\end{document}

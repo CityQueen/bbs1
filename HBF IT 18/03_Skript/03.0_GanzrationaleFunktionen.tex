@@ -48,14 +48,23 @@
 		Das bedeutet, das Absolutglied hat den Wert \colorbox{green!10}{\(0\)}. Somit schneidet der Funktionsgraph die y-Achse im Ursprung, also bei \(0\).
 		\subsection{Prototypen}
 		Eine ganzrationale Funktion kann in unterschiedlicher Form auftreten. Diese bezeichnen wir als Prototypen.
-		\subsubsection*{\underline{Polynomform}}
+		\subsection*{\underline{Polynomform}}
 		Der oben bereits erwähnte Prototyp \[f(x) = a_nx^n + a_{n-1}x^{n-1} + \ldots + a_1x^1 + a_0\] wird Polynom genannt und dementsprechend heißt diese Darstellung \textbf{Polynomform}.
-		\subsection*{Die Faktorform (FF)}
+		\subsection*{\underline{Die Faktorform (FF)}}
 		Wie auch bei den quadratischen Funktionen kann eine ganzrationale Funktion als Produkt aus unterschiedlichen Faktoren dargestellt werden.\\
 		Im allgemeinen gilt für die Faktorform nur, dass sie \textbf{aus mindestens zwei Faktoren} besteht. Wobei einer die Form \((x-N_1)\) erfüllen muss.
-		\[f_{FF}(x) = a\cdot{}(x-N_1)\cdot{}(b_{n-1}x^{n-1}+\ldots{}+b_1x+ b_0)\]
-		\textbf{\underline{Beispiel:}} Die Funktion \(f(x) = 5(x-3)(x^2+2x-3)\) ist in Faktorform gegeben.
-		\subsubsection*{Linearfaktorform (LFF)}
+		\begin{align*}
+			f_{FF}(x) & = a\cdot{}(x-N_1)\cdot{}(b_{n-1}x^{n-1}+\\
+			&\ldots{}+b_1x+ b_0)\\
+			\text{bis hin zu}\\
+			f_{FF}(x) & = a\cdot{}(x-N_1)(x-N_2)\cdot{}\ldots{}\cdot{}(x-N_k)\cdot\\
+			&(b_{k-1}x^{k-1} + \ldots + b_1x + b)
+		\end{align*}
+		Ist \(0\) eine Nullstelle der ganzrationalen Funktion, so ist \(x\) ein Faktor in unserer Darstellung.\\
+		\par\noindent
+		\textbf{\underline{Beispiel:}} Die Funktion \(f(x) = 5(x-3)(x^2+2x-3)\) ist in Faktorform gegeben.\\
+		Auch \(f(x) = 3x(x-1)(x+2)\) ist sogar in Linearfaktorform.
+		\subsubsection*{\underline{Linearfaktorform (LFF)}}
 		Eine Sonderform der Faktorform ist eine Darstellung, die als Produkt der \grq{}Nullstelle-Polynome\grq{} (oder auch Linearfaktoren) dargestellt wird.
 		\[f_{LFF}(x) = a\cdot{}(x-N_1)\cdot{}(x-N_2)\cdot{}\ldots{}\cdot{}(x-N_{n-1})\cdot{}(x-N_n)\]
 		Die Darstellung \(f_{LFF}\) wird, wie bereits bei quadratischen Funktionen eingeführt, \textbf{Linearfaktorform} genannt.\\
@@ -80,8 +89,23 @@
 		\end{align*}
 		\textbf{PF \(\Rightarrow\) FF}\\
 		\par\noindent
-		Haben wir eine ganzrationale Funktion in \textbf{Polynomform} \(f(x) = a_nx^n + a_{n-1}x^{n-1} + \ldots a_1x^1 + a_0\) gegeben und wollen diese \textbf{in die Faktorform} überführen, klammern wir zunächst den Koeffizienten des \underline{charakteristischen Summanden} aus und bestimmen im Anschluss die Nullstellen des Klammerausdrucks.\\
+		Haben wir eine ganzrationale Funktion in \textbf{Polynomform} \(f(x) = a_nx^n + a_{n-1}x^{n-1} + \ldots a_1x^1 + a_0\) gegeben und wollen diese \textbf{in die Faktorform} überführen, klammern wir zunächst den \textbf{größten gemeinsamen Teiler} aller Summanden aus (\textit{dies kann ausschließlich der \underline{Leitkoeffizient}, also der Koeffizient des \underline{charakteristischen Summanden}, sein, aber auch ein gesamter Term \(bx^c\)}) und bestimmen im Anschluss die Nullstellen des Klammerausdrucks.\\
 		Im Anschluss setzen wir die berechneten Nullstellen in das \underline{Gerüst der Faktorform} ein.\\
 		\par\noindent
+		\underline{\textit{Beispiel:}} Wir betrachten die einzelnen Terme der Funktion \(f(x) = 3x^3 + 6x^2 -12x\) genauer.\\
+		\textit{Welche Zahl kommt in allen Summanden vor?}
+		\[f(x) = 3x^3 + \underbrace{6}_{2\cdot{}3}x^2 - \underbrace{12}_{4\cdot{}3}x\]
+		Die Zahl \(3\) findet sich in jedem Summanden. Wir können diese also ausklammern. \textit{\textbf{\textit{Haben die Summanden noch etwas weiteres gemeinsam? (z.B. \(x\))}}}
+		\[\Rightarrow f(x) = 3\cdot{}(\underbrace{x^3}_{x\cdot{}x^2} +2\underbrace{x^2}_{x\cdot{}x} -4\underbrace{x}_{x\cdot{}1})\]
+		\[\Rightarrow f(x) = 3x(x^2 +2x -4)\]
+		Diese Darstellung entspricht bereits der Faktorform. Bevor wir aber hier aufhören, prüfen wir noch, ob der 2. Faktor \(\underbrace{(x^2+2x-4)}_{pq-Formel}\) sich noch umschreiben lässt zu \((x-N_1)(x-N_2)\).\\
+		\begin{align*}
+			x_{1/2} & = -\frac{2}{2} \pm \sqrt{\left(\frac{2}{2}\right)^2 - (-4)}\\
+			& = -1 \pm \sqrt{(1)^2 + 4}\\
+			\\
+			x_1 & = -1 + \sqrt{5} & x_2 & = -1 - \sqrt{5}\\
+			& = 1,24 & & = -3,24
+		\end{align*}
+		Also wäre die Darstellung der ganzrationalen Funktion in Linearfaktorform wie folgt: \[f_{LFF}(x) = 3x(x-1,24)(x+3,24)\]
 	\end{worksheet}
 \end{document}

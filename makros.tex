@@ -5,8 +5,9 @@
 \setlength{\fboxsep}{5pt}
 \newcommand{\explainBelow}[3]{\underbrace{#1}_{\parbox{\widthof{#3}}{\footnotesize\raggedright #2}}}
 \newcommand{\explainAbove}[3]{\overbrace{#1}^{\parbox{\widthof{#3}}{\footnotesize\raggedright #2}}}
+\makeatletter% Siehe De-TeX-FAQ
 \newcommand\footnoteref[1]{\protected@xdef\@thefnmark{\ref{#1}}\@footnotemark}
-
+\makeatother
 
 % Codestyle defined
 \definecolor{codegreen}{rgb}{0,0.6,0}

@@ -1,0 +1,686 @@
+\documentclass[oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{article}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\setlength{\columnsep}{3em}
+\setlength{\columnseprule}{0.5pt}
+
+\geometry{left=2.50cm,right=2.50cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+\pagestyle{plain}
+\pagenumbering{arabic}
+
+\begin{document}
+	\begin{worksheet}{Berufliches Gymnasium}{Klassenstufe 12 - Informationsverarbeitung}{Imperative Programmierelemente - \textit{Java}}
+		
+		\section{Imperative Programmierelemente}
+		\subsection*{Einlesen von der Tastatur}
+		Um einen Text von der Tastatur einzulesen gibt es das Objekt \lstinline[style=JavaInputStyle]|System.in|. Ohne nähere Erklärung der Hintergründe soll hier zunächst vorgestellt werden, wie man damit eine Ganzzahl von der Tastatur einlesen kann.
+		\begin{lstlisting}[style=JavaInputStyle]
+		Scanner eingabe = new Scanner(System.in);
+		\end{lstlisting}
+		Damit hat man ein Objekt erzeugt, das eine Methode zum Einlesen einer Zeichenkette hat und kann nun über die entsprechende Methode zeilenweise von der Tastatur lesen.
+		\begin{tabbing}
+			\underline{Beispiel:}~~~~ \= Einlesen von Zahlen
+		\end{tabbing}
+		\begin{lstlisting}[style=JavaInputStyle]
+		import java.until.*;
+		public class Einlesen {
+			public static void main(String[] args) {
+				Scanner eingabe = new Scanner(System.in);
+				
+				int a, b;
+				System.out.println("Bitte Zahl a eingeben: ");
+				a = eingabe.nextInt();
+				System.out.println("Bitte Zahl b eingeben: ");
+				b = eingabe.nextInt();
+				
+				System.out.println("Sie haben die Zahlen a =" + a + " und b = " + b + " eingegeben.");
+			}
+		}
+		\end{lstlisting}
+		Mit dem \lstinline[style=JavaInputStyle]|Scanner| können die unterschiedlichsten Datentypen eingelesen werden.\\
+		\par\noindent
+		\begin{tabularx}{\textwidth}{|X|X|}
+			\hline
+			\textbf{Methode} & \textbf{Ergebnis der Methode}\\
+			\hline
+			\hline
+			{\lstinline[style=JavaInputStyle]|next()|} & String (trennt nach Leerzeichen)\\
+			\hline
+			{\lstinline[style=JavaInputStyle]|nextLine()|} & String (speichert gesamte Eingabe in einer Variablen)\\
+			\hline
+			\hline
+			{\lstinline[style=JavaInputStyle]|nextBoolean()|} & erzeugt aus der Eingabe ein {\lstinline[style=JavaInputStyle]|boolean|} und gibt diesen zurück\\
+			\hline
+			\hline
+			{\lstinline[style=JavaInputStyle]|nextDouble()|} & Konvertiert die Eingabe zum Typ {\lstinline[style=JavaInputStyle]|double|}\\
+			\hline
+			{\lstinline[style=JavaInputStyle]|nextFloat()|} & Gibt die Eingabe als Typ {\lstinline[style=JavaInputStyle]|float|} zurück\\
+			\hline
+			\hline
+			{\lstinline[style=JavaInputStyle]|nextByte()|} & Die Eingabe wird als {\lstinline[style=JavaInputStyle]|byte|} zurückgegeben\\
+			\hline
+			{\lstinline[style=JavaInputStyle]|nextShort()|} & Konvertiert die Eingabe zum Typ {\lstinline[style=JavaInputStyle]|short|}\\
+			\hline
+			{\lstinline[style=JavaInputStyle]|nextInt()|} & Die Nutzereingabe wird als {\lstinline[style=JavaInputStyle]|int|} zurückgegeben\\
+			\hline
+			{\lstinline[style=JavaInputStyle]|nextLong()|} & Erzeugt aus der Eingabe einen Wert vom Typ {\lstinline[style=JavaInputStyle]|long|}\\
+			\hline
+		\end{tabularx}\\
+		\par\noindent
+		\subsection{Datentypen}
+		Java kennt folgende Grunddatentypen:
+		\begin{itemize}
+			\item ganzzahlige Datentypen (Integer-Datentypen): \lstinline[style=JavaInputStyle]|byte, short, int, long|
+			\item Fließkomma-Datentypen (Gleitkomma-, Floating-Point-Datentypen): \lstinline[style=JavaInputStyle]|float, double|
+			\item Zeichentyp: \lstinline[style=JavaInputStyle]|char|
+			\item logischer Datentyp (Boolescher Datentyp): \lstinline[style=JavaInputStyle]|boolean|
+		\end{itemize}
+		Die Wertebereiche der Datentypen sind in Java \underline{unabhängig} vom Rechnersystem und der Java-Implementierung.\\
+		\par\noindent
+		Außer der nachfolgend beschriebenen Grunddatentypen kennt Java noch die so genannten Referenzdatentypen, in denen Referenzen auf Objekte gespeichert werden können. Ein solcher Referenzdatentyp ist \lstinline[style=JavaInputStyle]|String|.\\
+		Prinzipiell gilt: Alle nicht-Grunddatentypen sind Referenzdatentypen.
+		\subsubsection{Ganzzahliger Datentyp}
+		Ganzzahlige Datentypen enthalten ganze Zahlen (ganzzahlige Werte) mit Vorzeichen.\\
+		\par\noindent
+		\begin{tabularx}{\textwidth}{|l|l|X|}
+			\hline
+			\textbf{Typname} & \textbf{Länge} & \textbf{Wertebereich}\\
+			\hline
+			byte & 8 Bit & \(-128\ \ldots\ 127\)\\
+			\hline
+			short & 16 Bit & \(-32768\ \ldots\ 32767\)\\
+			\hline
+			int & 32 Bit & \(-2^{31}\ \ldots\ 2^{31}-1\)\\
+			\hline
+			long & 64 Bit & \(-2^{63}\ \ldots\ 2^{63}-1\)\\
+			\hline
+		\end{tabularx}\\
+		\par\noindent
+		\underline{Beispiel:}
+		\begin{tabbing}
+			\lstinline[style=JavaInputStyle]|int zahl1;|~~~~~~~~~ \= \= //Datentyp \lstinline[style=JavaInputStyle]|int|, Name \lstinline[style=JavaInputStyle]|zahl1|\\
+			\lstinline[style=JavaInputStyle]|zahl1 = 1099;| \> \> //Wert 1099 wird zugewiesen.
+		\end{tabbing}
+		Zulässige Werte für \lstinline[style=JavaInputStyle]|zahl1| sind \(-1000, 999, +2001, \ldots\).\\
+		Ganzzahlige Literalte sind grundsätzlich vom Typ \lstinline[style=JavaInputStyle]|int|.
+		\subsubsection{Fließkommazahlen}
+		Fließkommazahlen sind immer Dezimalzahlen. Sie bestehen aus Vorzeichen, Vorkommateil, Dezimalpunkt, Nachkommateil, Exponent, Suffix (f,F, d, D).\\
+		Fließkomma-Literale sind in Java \underline{standardmäßig vom Typ \lstinline[style=JavaInputStyle]|double|}.\\
+		\par\noindent
+		\begin{tabularx}{\textwidth}{|l|l|X|}
+			\hline
+			\textbf{Typname} & \textbf{Länge} & \textbf{Wertebereich}\\
+			\hline
+			float & 32 Bit & +/- \(3,40282347\ *\ 10^{38}\)\\
+			\hline
+			double & 64 Bit & +/- \(1,79769313486231570\ *\ 10^{308}\)\\
+			\hline
+		\end{tabularx}\\
+		\par\noindent
+		\underline{Beispiel:}\\
+		\lstinline[style=JavaInputStyle]|float fa;|\\
+		\lstinline[style=JavaInputStyle]|double da, db;|\\
+		\lstinline[style=JavaInputStyle]|fa = 1.1f;|\\
+		\lstinline[style=JavaInputStyle]|da = 22.0;|\\
+		\lstinline[style=JavaInputStyle]|db = 1.02*3.3E27;|\\
+		\subsubsection{Zeichentyp (Character-Datentyp)}
+		Der Character-Datentyp ist ein Datentyp zur Darstellung von einzelnen Zeichen. Der Typ \lstinline[style=JavaInputStyle]|char| hat in Java einen Wertebereich von 16 bit. Der Zeichensatz in Java ist der Unicode-Zeichensatz.\\
+		Character-Zeichen werden in einfachen Hochkommata eingeschlossen.\\
+		\par\noindent
+		\underline{Beispiel:}		
+		\begin{tabbing}
+			\lstinline[style=JavaInputStyle]|char ca, coe, cnl, ccr, chk, ct;| ~~ \= \\
+			\lstinline[style=JavaInputStyle]|ca = 'A'; coe='Ö';| \> //Ausgabe hängt vom Ausgabesystem ab\\
+			\lstinline[style=JavaInputStyle]|cnl = '\n';| \> //Escape-Sequenz\footnote{Eine Escape-Sequenz ist eine Zeichenkombination, die nicht als Text erkannt wird und wie eine Sonderfunktion behandelt wird.\label{fn:esc}} für einen Zeilenumbruch (new line)\\
+			\lstinline[style=JavaInputStyle]|ccr = '\r';| \> //Escape-Sequenz\footnotemark[1] carriage return (zurück zum Zeilenanfang)\\
+			\lstinline[style=JavaInputStyle]|chk = '\'';| \> //Darstellung Hochkomma\\
+			\lstinline[style=JavaInputStyle]|ct = '\t';| \> //Tabulator
+		\end{tabbing}
+		Java kennt die \grqq{}üblichen\grqq{} Escape-Sequenzen\footnotemark[1] zur Darstellung von Sonderzeichen und Formatierung:\\
+		\par\noindent
+		\begin{tabularx}{\textwidth}{|X|X|}
+			\hline
+			\textbf{Zeichen} & \textbf{Bedeutung}\\
+			\hline
+			\hline
+			$\backslash$t & Horizontaler Tabulator\\
+			\hline
+			$\backslash$n & Zeilenumbruch\\
+			\hline
+			$\backslash$f & Seitenumbruch\\
+			\hline
+			$\backslash$\grqq{} & Doppeltes Anführungszeichen\\
+			\hline
+			$\backslash$\grq{} & Einfaches Anführungszeichen\\
+			\hline
+			$\backslash$$\backslash$ & Backslash\\
+			\hline
+		\end{tabularx}
+		\subsubsection{Boolescher Datentyp (boolean)}
+		Java kennt den Datentyp \lstinline[style=JavaInputStyle]|boolean| zur Darstellung logischer Werte (wahr oder falsch). Variablen vom Typ \lstinline[style=JavaInputStyle]|boolean| können somit nur zwei Werte annehmen (auf Syntaxebene dargestellt durch \lstinline[style=JavaInputStyle]|true| und \lstinline[style=JavaInputStyle]|false|). Intern ist die Länge von \lstinline[style=JavaInputStyle]|boolean| immer 1 Byte.\\
+		\par\noindent
+		\underline{Beispiel:}\\
+		\lstinline[style=JavaInputStyle]|boolean janein;|\\
+		\lstinline[style=JavaInputStyle]|janein = true;|\\
+		\par\noindent
+		Java erlaubt keine automatische Umwandlung von Integer-Werten in boolesche Werte (wie dies in C möglich ist). Deshalb dürfen ganzzahlige Typen mit den Werten 0 oder 1 nicht als Ersatz für die logischen Typen verwendet werden.
+		\section*{Konvertierung von Grunddatentypen}
+		Java führt automatisch nur Typkonvertierungen vom \grqq{}kleineren\grqq{} zum \grqq{}größeren\grqq{} Typ durch. Automatisch durchgeführt werden folgende Konvertierungen:\\
+		\lstinline[style=JavaInputStyle]|byte| $\rightarrow$ \lstinline[style=JavaInputStyle]|short| $\rightarrow$ \lstinline[style=JavaInputStyle]|int| $\rightarrow$ \lstinline[style=JavaInputStyle]|long| $\rightarrow$ \lstinline[style=JavaInputStyle]|float| $\rightarrow$ \lstinline[style=JavaInputStyle]|double| und \lstinline[style=JavaInputStyle]|char| $\rightarrow$ \lstinline[style=JavaInputStyle]|int|\\
+		Konvertierungen in die andere Richtung erfordern eine explizite Angabe des Zieldatentyps in runden Klammern (\textbf{Cast-Operator}). Der Ausdruck (\lstinline[style=javaInputStyle]|type|)\lstinline[style=javaInputStyle]|a| wandelt den Ausdruck \lstinline[style=javaInputStyle]|a| in einen Ausdruck vom Typ \lstinline[style=javaInputStyle]|type| um.\\
+		\par\noindent
+		Mit Hilfe des Type-Cast-Operators dürfen alle legalen Typkonvertierungen vorgenommen werden. Der Type-Cast-Operator wird vor allem dann angewendet, wenn der Compiler keine implizite Konvertierung vornimmt; beispielsweise bei der Zuweisung von größeren an kleinere numerische Typen oder bei der Umwandlung von Objekttypen.\\
+		\par\noindent
+		\begin{tabbing}
+			\underline{Beispiel:}~~~~~ \= Typkonvertierung\\
+			\lstinline[style=JavaInputStyle]|char c;|\\
+			\lstinline[style=JavaInputStyle]|int i,j;|\\
+			\lstinline[style=JavaInputStyle]|float x,y;|\\
+			\lstinline[style=JavaInputStyle]|double v,w;|\\
+			\lstinline[style=JavaInputStyle]|i = 3; c = 'a';|\\
+			\lstinline[style=JavaInputStyle]|j = c;| \> //Implizite Konvertierung von \lstinline[style=JavaInputStyle]|char| nach \lstinline[style=JavaInputStyle]|int|\\
+			\lstinline[style=JavaInputStyle]|x = i*j;| \> //Implizite Konvertierung von \lstinline[style=JavaInputStyle]|int|  nach \lstinline[style=JavaInputStyle]|float|\\
+			\lstinline[style=JavaInputStyle]|v = 3.0; w = 2.0;|\\
+			\lstinline[style=JavaInputStyle]|i = (int)(v/w);| \> //Konvertierung mit \lstinline[style=JavaInputStyle]|cast|-Operator von \lstinline[style=JavaInputStyle]|double| nach \lstinline[style=JavaInputStyle]|int|.\\
+			\> //ergibt die Ziffern vor dem Komma\\
+			\lstinline[style=JavaInputStyle]|x = 99.0f| \> //Das Literal \lstinline[style=JavaInputStyle]|f| gibt an, dass es sich um eine Zahl vom Typ \lstinline[style=JavaInputStyle]|float| handelt.\\
+			\lstinline[style=JavaInputStyle]|y = 100.01f;|\\
+			\lstinline[style=JavaInputStyle]|v = x*y;| \> //Implizite Konvertierung von \lstinline[style=JavaInputStyle]|float| nach \lstinline[style=JavaInputStyle]|double|\\
+			\lstinline[style=JavaInputStyle]|x = (float)v;| \> //Konvertierung von \lstinline[style=JavaInputStyle]|double| nach \lstinline[style=JavaInputStyle]|float|
+		\end{tabbing}
+		\subsection{Strings}
+		Strings (Zeichenfolge, Zeichenkette) sind Folgen von Einzelzeichen. String-Literale werden in Java durch Hochkommata eingeschlossen. Sie sind in Java Objekte der API-Klasse \lstinline[style=JavaInputStyle]|String|.\\
+		\par\noindent
+		\underline{Beispiel:}
+		\begin{lstlisting}[style=JavaInputStyle]
+			String meinString;
+			meinString = "Hallo Java kurs."
+		\end{lstlisting}
+		Der Operatr \lstinline[style=JavaInputStyle]|new| darf bei der Instanzierung von Strings mittels Literalen entfallen. Die Einzelzeichen von Strings sind über einen Index ansprechbar. Die Index-Zählung beginnt \underline{bei Null}.\\
+		\par\noindent
+		\underline{Beispiel:}\\
+		Der String \grqq{}Beispiel\grqq{} hat eine Länge von 8 Zeichen.\\
+		Das erste Zeichen an der Position 0 ist \grq{}B\grq{}, das letzte Zeichen an der Position 7 ist \grq{}l\grq{}.\\
+		\par\noindent
+		Ein String kann auch nicht druckbare Zeichen enthalten wie z.B. \lstinline[style=JavaInputStyle]|\n|= Neue Zeile.
+		\subsubsection{String-Verkettung und Konvertierung zu String}
+		Strings können durch den Operator \grqq{}+\grqq{} miteinander verbunden werden.
+		\begin{lstlisting}[style=JavaInputStyle]
+			String s1 = "Hallo";
+			String s2, s3, s4;
+			s2 = " und ";
+			s3 = "Java";
+			s4 = s1 + s2 + s3;
+		\end{lstlisting}
+		Daten werden durch den String-Operator \grqq{}+\grqq{} automatisch in den String-Typen umgewandelt.
+		\begin{lstlisting}[style=JavaInputStyle]
+			int i = 999;
+			String ausgabe = "i ist " + i;
+		\end{lstlisting}
+		\subsubsection{String-Bearbeitung}
+		Möchte man die gespeicherte Zeichenkette bearbeiten bzw. auf einen bestimmten Buchstaben an einem Index zugreifen, so bietet Java hier diverse Möglichkeiten. Die API-Klasse \lstinline[style=JavaInputStyle]|String| stellt mehr als 50 Methoden zur Bearbeitung von Strings zur Verfügung.\\
+		\par\noindent
+		\underline{Beispiel:}\\
+		\lstinline[style=JavaInputStyle]|String s = "Dies ist ein String mit 35 Zeichen."|\\
+		\par\noindent
+		\textbf{\underline{Zugriff auf ein Zeichen}}\\
+		Mit \lstinline[style=JavaInputStyle]|s.charAt(i)| kann das Zeichen (Typ \lstinline[style=JavaInputStyle]|char|) des Strings \lstinline[style=JavaInputStyle]|s| an der i-ten Poistion bestimmt werden. Dabei läuft der Index \lstinline[style=JavaInputStyle]|i| wie bei allen Indizes von 0 bis \lstinline[style=JavaInputStyle]|s.lenth()-1|\\
+		\par\noindent
+		\textbf{\underline{Zugriff auf eine Zeichenkette innerhalb eines Strings}}\\
+		Die Methode \lstinline[style=JavaInputStyle]|s.subString(Startindex, Endindex)| liefert die Teilzeichenkette (Typ \lstinline[style=JavaInputStyle]|String|) beginnend bei der \textit{Startposition} bis hin zur \textit{Endposition} zurück.\\
+		\par\noindent
+		\textbf{\underline{Länge der Zeichenkette}}\\ \lstinline[style=JavaInputStyle]|s.length()|liefert die aktuelle Länge des String-Objekts \lstinline[style=JavaInputStyle]|s|. Wenn der String leer ist, ist der Rückgabewert von \lstinline[style=JavaInputStyle]|length()| geich 0. Wird ein Wert \textit{n} größer 0 zurückgegeben, so enthält der String \textit{n} Zeichen, die an den Indexpositionen 0 bis \textit{n-1} liegen.\\
+		Für das obige Beispiel liefert \lstinline[style=JavaInputStyle]|s.length()| also den Wert 35.\\
+		\par\noindent
+		\textbf{\underline{Vergleich von Zeichenketten}}\\
+		Da Strings Referenzdatentypen sind, \underline{kann man zwei Strings nicht} mittels \lstinline[style=JavaInputStyle]|if (S1 == s2) ... | auf inhaltliche Gleichheit prüfen! Der Code \lstinline[style=JavaInputStyle]|if (s1 == s2) ... | würde bedeuten, dass überprüft wird, ob beide Stringvariablen auf den selben String weisen.
+		\begin{itemize}
+			\item \lstinline[style=JavaInputStyle]|if(s1.equals(s2)) ... | bedeutet, falls die Strings \lstinline[style=JavaInputStyle]|s1| und \lstinline[style=JavaInputStyle]|s2| gleich sind, ...
+			\item Bei \lstinline[style=JavaInputStyle]|s1.equalsIgnoreCase(s2)| wird die Groß- und Kleinschreibung nicht unterschieden.
+			\item Der Aufruf von \lstinline[style=JavaInputStyle]|s1.compareTo(s2)| gibt die Ganzzahl 0 zurück, falls die Zeichenketten gleich sind, einen negativen Wert, wenn \lstinline[style=JavaInputStyle]|s1| lexikographisch (also im Alphabet) vor \lstinline[style=JavaInputStyle]|s2| steht und sonst einen positiven Wert.
+		\end{itemize}
+		\par\noindent
+		\underline{Weitere String-Methoden:}
+		\begin{itemize}
+			\item \lstinline[style=JavaInputStyle]|String substring(int start, int ende);| liefert den Teilstring, der an der Position \lstinline[style=JavaInputStyle]|start| beginnt und an der Position \lstinline[style=JavaInputStyle]|end-1| endet. Wie bei allen Zugriffen über einen numerischen Index beginnt auch hier die Zählung bei 0.
+			\item \lstinline[style=JavaInputStyle]|s.toLowerCase()| wandelt den String in Kleinbuchstaben um
+			\item \lstinline[style=JavaInputStyle]|s.toUpperCase()| wandelt in Großbuchstaben um
+			\item \lstinline[style=JavaInputStyle]|s.trim()| entfernt Leerzeichen am Anfang und am Ende des Strings
+			\item \lstinline[style=JavaInputStyle]|s.replace(String alt, String neu)| ersetzt die Zeichenkette \lstinline[style=JavaInputStyle]|alt| durch die Zeichenkette \lstinline[style=JavaInputStyle]|neu|
+		\end{itemize}
+		\underline{Beispielprogramm zum Umgang mit Strings:}
+		\begin{lstlisting}[style=JavaInputStyle]
+			public class StringBeispiele {
+				public static void main(String[] args) {
+					String s1 = "Zeichenkette";
+					String s2, s3, s4;
+					
+					char first = s1.charAt(0);
+					char last = s1.charAt(s1.length()-1);
+					System.out.println("\n erstes Zeichen: " + first + 
+						"\n\n letztes Zeichen: " + last);
+						
+					s2 = s.toUpperCase();
+					System.out.println("\n " + s2);
+					
+					String s5 = "n bearbeiten";
+					s3 = s1 + s5;
+					System.out.println("\n Stringverkettung: " + s3);
+					
+					int laenge = s3.length();
+					System.out.println("\n Der String hat " + laenge + " Zeichen.");
+					
+					s4 = s3.substring(7,11);
+					System.out.println("\n Teilstring von Zeichen 7 bis 10: " + s4);
+				}
+			}
+		\end{lstlisting}
+		\underline{Ausgabe:}\\
+		erstes Zeichen: Z\\
+		letztes Zeichen: e\\
+		ZEICHENKETTE\\
+		Stringverkettung: Zeichenketten bearbeiten\\
+		Der String hat 24 Zeichen.\\
+		Teilstring von Zeichen 7 bis 10: kett
+		\subsubsection*{Methoden der Klasse String}
+		\begin{itemize}
+			\item \lstinline[style=JavaInputStyle]|s.length()| liefert die aktuelle Länge des String-Objekts s
+			\item \lstinline[style=JavaInputStyle]|s.substring(int start, int end)| liefert den Teilstring, der an der Position \lstinline[style=JavaInputStyle]|start| beginnt und an der Position \lstinline[style=JavaInputStyle]|end-1| endet.
+			\item \lstinline[style=JavaInputStyle]|str1.equals(String str2)| prüft die Strings \lstinline[style=JavaInputStyle]|str1| und \lstinline[style=JavaInputStyle]|str2| auf Gleichheit
+			\item \lstinline[style=JavaInputStyle]|s.toLowerCase()| wandelt den String in Kleinbuchstaben um
+			\item \lstinline[style=JavaInputStyle]|s.toUpperCase()| wandelt den String in Großbuchstaben um
+			\item \lstinline[style=JavaInputStyle]|s.trim()| entfernt die Leerzeichen am Anfang und am Ende
+			\item \lstinline[style=JavaInputStyle]|s.indexOf(String str)| sucht das erste Vorkommen der Zeichenkette \lstinline[style=JavaInputStyle]|str| innerhalb des String.-Objekts \lstinline[style=JavaInputStyle]|s|. Wird \lstinline[style=JavaInputStyle]|str| gefunden, liefert die Methode den Indes des ersten übereinstimmenden Zeichens zurück. Ansonsten wird \(-1\) zurückgegeben.
+			\item \lstinline[style=JavaInputStyle]|s.indexOf(String str, int fromIndex)| erfüllt die gleiche Funktionalität wie zuvor genannte Methode. Die Suche beginnt aber erst ab der durch \lstinline[style=JavaInputStyle]|fromIndex| gegebenen Position. Wird \lstinline[style=JavaInputStyle]|str| beginnend ab dieser Position gefunden, liefert die Methode den Index des ersten übereinstimmenden Zeichens, andernfalls -1.
+			\item \lstinline[style=JavaInputStyle]|s.lastIndexOf(String str)| sucht nach dem letzen Vorkommen des Teilstrings \lstinline[style=JavaInputStyle]|str| um aktuellen String-Objekt. Wird \lstinline[style=JavaInputStyle]|str| gefunden, liefert die Methode den Index des ersten übereinstimmenden Zeichens, andernfalls -1.
+			\item \lstinline[style=JavaInputStyle]|s.replace(char altesZeichen, char neuesZeichen)| führt eine zeichenweise Konvertierung des aktuellen String-Objekts durch. Dabei wird jedes Vorkommen der Zeichenkette \lstinline[style=JavaInputStyle]|altesZeichen| durch die neue Zeichenkette \lstinline[style=JavaInputStyle]|neuesZeichen| ersetzt.
+			\item \lstinline[style=JavaInputStyle]|s.replace(String alt, String neu)| führt eine zeichenweise Konvertierung des aktuellen String-Objekts durch. Dabei wird jedes Vorkommen der Zeichenkette \lstinline[style=JavaInputStyle]|alt| durch die neue Zeichenkette \lstinline[style=JavaInputStyle]|neu| ersetzt.
+			\item \lstinline[style=JavaInputStyle]|s.compareTo(String str)| vergleicht die Strings \lstinline[style=JavaInputStyle]|s| und \lstinline[style=JavaInputStyle]|str| lexikographisch. Das heißt, die Strings werden paarweise von inks nach rechts verglichen. Tritt eine Unterschied auf, oder ist einer der Strings beendet, wird das Ergebnis ermittelt.\\
+			Ost das aktuelle String-Objekt \lstinline[style=JavaInputStyle]|s| dabei kleiner als \lstinline[style=JavaInputStyle]|str|, wird ein negativer Wert zurückgegeben.\\
+			Ist es größer, wird ein positiver Wert zurückgegeben..\\
+			Bei Gleichheit liefert die Methode den Rückgabewert 0.
+		\end{itemize}
+		\subsection{Arrays}
+		\subsubsection{Eigenschaften}
+		\begin{itemize}
+			\item Liste von Daten gleichen Typs
+			\item Zugriff auf Elemente der Liste erfolgt über Laufindizes (Laufvariablen).
+			\item Laufindizes werden in eckigen Klammern [] gesetzt und sind ganzzahlig
+			\item Wert der Laufindizes beginnt mit 0
+			\item Jedes Array verfügt über die Instanzvariable \lstinline[style=JavaInputStyle]|length|, welche die Anzahl der Elemente enthält.
+			\item Die Anzahl der Array-Elemente wird bei Instanzierung des Arrays festgelegt und ist \underline{nicht} dynamisch veränderbar.
+			\item Arrays sind Objekte!
+		\end{itemize}
+		\underline{Beispiel:}\\
+		Es sollen mehrere Namen als String gespeichert werden. Anstatt für jeden Namen eine Stringvariable anzulegen (etwa \lstinline[style=JavaInputStyle]|name1|, \lstinline[style=JavaInputStyle]|name2|, $\ldots$) wird ein Array von Strings erzeugt.
+		\begin{lstlisting}[style=JavaInputStyle]
+			public class StringArray {
+				public static void main(String[] args) {
+					String[] name = new String[3];
+					name[0] = "PKW";
+					name[1] = "Bus";
+					name[3] = "Zug";
+					while (i < name.length) {
+						System.out.println(name[i]);
+						i++;
+					}
+				}
+			}
+		\end{lstlisting}
+		\underline{Ausgabe:}\\
+		PKW\\
+		Bus\\
+		Zug
+		\subsubsection{Deklaration von Arrays}
+		Die Deklaration eines Arrays in Java erfolgt in zwei Schritten:\\
+		\begin{enumerate}
+			\item Deklaration einer Array-Variablen\\
+			\underline{Beispiel:}\\
+			\lstinline[style=JavaInputStyle]|int[] a;|\\
+			\lstinline[style=JavaInputStyle]|double b[];|\\
+			\lstinline[style=JavaInputStyle]|boolean [] c;|\\
+			Die Deklaration eines Arrays entspricht der einer einfachen Variable, mit dem Unterschied, dass an den Typ oder Variablennamen eckige Klammern angehängt werden. Die eckigen Klammern können auch vor dem Variablennamen stehen.
+			\item Erzeugen eines Arrays und Zuweisung an die Array-Variable\\
+			Zum Zeitpunkt der Deklaration wird noch nicht festgelegt, wie viele Elemente das Array haben soll. Dies geschieht bei der Initialisierung mit Hilfe des \lstinline[style=JavaInputStyle]|new|-Operators.\\
+			\underline{Beispiel:}\\
+			\lstinline[style=JavaInputStyle]|a = new int[6];|\\
+			\lstinline[style=JavaInputStyle]|b = new double[10];|\\
+			\lstinline[style=JavaInputStyle]|c = new boolean[15];|
+		\end{enumerate}
+		Ist bereits zum Deklarationszeitpunkt klar, wie viele Elemente das Array haben soll, können Deklaration und Initialisierung zusammengeschrieben werden:\\
+		\lstinline[style=JavaInputStyle]|int[] a = new int[6];|\\
+		\par\noindent
+		\underline{Wertzuweisung in Arrays}\\
+		Die Wertzuweisung erfolgt durch den Zugriff auf das Array-Element unter Angabe des entsprechenden Index.\\
+		\underline{Beispiel:}
+		\begin{tabbing}
+			\lstinline[style=JavaInputStyle]|b[0] = 0.99;|~~~ \= //Zugriff auf das erste Element\\
+			\lstinline[style=JavaInputStyle]|b[4] = 0.001;| \> //Zugriff auf das 5. Element
+		\end{tabbing}
+		\subsubsection{Literale Initialisierung von Arrays}
+		Alternativ zur Verwendung des \lstinline[style=JavaInputStyle]|new|-Operators kann ein Array auch \ul{literal} initialisiert werden. Dazu werden die Elemente des Arrays in geschweifte Klammern gesetzt. Die Größe des Arrays ergibt sich aus der Anzahl der zugewiesenen Elemente.\\
+		\par\noindent
+		\underline{Beipiel:}\\
+		\begin{tabbing}
+			\lstinline[style=JavaInputStyle]|int[] x = {1, 2, 6, 4, 8}|~~~ \= //int-Array mit 5 Elementen\\
+			\lstinline[style=JavaInputStyle]|boolean[] y = {true, true}| \> //boolean-Array mit 2 Elementen
+		\end{tabbing}
+		Die literalte Initialisierung \underline{muss} unmittelbar bei der Deklaration erfolgen.\\
+		\par\noindent
+		\underline{Programmbeispiel Arrays:}
+		\begin{lstlisting}[style=JavaInputStyle]
+			public class Array1 {
+				public static void main(String[] args) {
+					int[] a = new int[3];
+					boolean[] b = {true, false};
+					a[0] = 2;
+					a[1] = 2;
+					a[2] = 5;
+					
+					System.out.println("a hat " + a.length + " Elemente.");
+					System.out.println("b hat " + b.length + " Elemente.");
+					System.out.println(a[0]);
+					System.out.println(a[1]);
+					System.out.println(a[2]);
+					System.out.println(b[0]);
+					System.out.println(b[1]);
+				}
+			}
+		\end{lstlisting}
+		\subsubsection{Mehrdimensionale Arrays}
+		Mehrdimensionale Arrays werden erzeugt, indem zwei oder mehr Paare eckiger Klammern bei der Deklaration angegeben werden.\\
+		\lstinline[style=JavaInpuTStyle]|int[][] c = new int [2][7];|\\
+		\lstinline[style=JavaInpuTStyle]|c| ist ein Array mit $\underbrace{2}_{1.\ Klammerausdruck}$ Spalten und $\underbrace{7}_{2.\ Klammerausdruck}$ Zeilen.\\
+		\par\noindent
+		Die Initialisierung erfolgt wie bei den eindimensionalen Arrays durch Angabe der Anzahl der Elemente. Der Zugriff auf mehrdimensionale Arrays erfolgt duch die Angabe aller erforderlichen Indizes, jeweils durch eigene eckige Klammern.\\
+		\par\noindent
+		\underline{Beispiel:}
+		\begin{tabbing}
+			\lstinline[style=JavaInputStyle]|c [1] [1] = 4;|~~~ \= //In der zweiten Spalte, zweite Zeile wird der Wert 4 gespeichert.\\
+			\lstinline[style=JavaInputStyle]|c [1] [2] = 6;| \> //In der zweiten Spalte, dritte Zeile wird der Wert 6 gespeichert.
+		\end{tabbing}
+		\par\noindent
+		\underline{Programmbeispiel mehrdimensionale Arrays:}
+		\begin{lstlisting}[style=JavaInputStyle]
+			public class Array2 {
+				public static void main(String[] args) {
+					int [][] a = new int[2][3];
+					a[0][0] = 1; 	a[1][0] = 4;
+					a[0][1] = 2;	a[1][1] = 5;
+					a[0][2] = 3;	a[1][2] = 6;
+					
+					for(int i = 0; i < = 2; i++) {
+						System.out.println(" " + a[0][i] + "	" + a[1][i]);
+					}
+				}
+			}
+		\end{lstlisting}
+		\par\noindent
+		\underline{Ausgabe:}
+		\begin{tabbing}
+			1~~ \= 4\\
+			2 \> 5\\
+			3 \> 6
+		\end{tabbing}
+		\subsection{Operatoren}
+		Java kennt die \grqq{}üblichen\grqq{} Operatoren, dazu gehören:
+		\begin{itemize}
+			\item arithmetische Operatoren
+			\item Zuweisungsoperatoren
+			\item Vergleichsoperatoren
+			\item logische Operatoren
+		\end{itemize}
+		Weitere Operatoren sind Bitoperatoren, Konditionaloperatoren und Stringverkettungen.
+		\subsubsection{Arithmetische Operatoren}
+		\begin{tabularx}{\textwidth}{|c|l|X|}
+			\hline
+			& \textbf{Bezeichnung} & \textbf{Bedeutung}\\
+			\hline
+			\(+\) & Positives Vorzeichen & \(+ n\) ist gleichbedeutend mit \(n\)\\
+			\hline
+			\(-\) & Negatives Vorzeichen & \(- n\) kehrt das Vorzeichen von \(n\) um\\
+			\hline
+			\(+\) & Summe & \(a + b\) ergibt die Summe von \(a\) und \(b\)\\
+			\hline
+			\(-\) & Differenz & \(a - b\) ergibt die Differenz von \(a\) und \(b\)\\
+			\hline
+			\(*\) & Produkt & \(a * b\) ergibt das Produkt aus \(a\) und \(b\)\\
+			\hline
+			\(/\) & Quotient & \(a / b\) ergibt den Quotienten von \(a\) und \(b\)\\
+			\hline
+			\(\%\) & Restwert & \(a \% b\) ergibt den Rest der ganzzahligen Division von \(a\) durch \(b\). In Java lässt sich dieser Operator auch auf Fließkommazahlen anwenden.\\
+			\hline
+			\multirow{2}{*}{\(++\)} & Präinkrement & {\lstinline[style=JavaInputStyle]{++a}} erhöht \(a\) um 1 und gibt dann das Ergebnis zurück\\
+			& Postinkrement & {\lstinline[style=JavaInputStyle]{a++}} gibt zunächst \(a\) zurück und erhöht dann \(a\) um 1\\
+			\hline
+			\multirow{2}{*}{\(--\)} & Prädekrement & {\lstinline[style=JavaInputStyle]{--a}} verringert \(a\) um 1 und gibt dann das Ergebnis zurück\\
+			& Postdrekement & {\lstinline[style=JavaInputStyle]{a--}} gibt zuerst \(a\) zurück und verringert dann \(a\) um 1\\
+			\hline
+		\end{tabularx}
+		\subsubsection{Zuweisungsoperatoren}
+		\begin{tabularx}{\textwidth}{|c|l|X|}
+			\hline
+			& \textbf{Bezeichnung} & \textbf{Bedeutung}\\
+			\hline
+			\(=\) & Einfache Zuweisung & {\lstinline[style=JavaInputStyle]|a = b|} weist \(a\) den Wert von \(b\) zu und liefert \(b\) als Rückgabewert.\\
+			\hline
+			\(+=\) & Additionszuweisung & {\lstinline[style=JavaInputStyle]|a += b|} weist \(a\) den Wert von \(a+b\) zu und liefert \(a+b\) als Rpckgabewert.\\
+			\hline
+			\(-=\) & Subtraktionszuweisung & {\lstinline[style=JavaInputStyle]|a -= b|} weist \(a\) den Wert von \(a-b\) zu und liefert \(a-b\) als Rückgabewert.\\
+			\hline
+			\(*=\) & Multiplikationszuweisung & {\lstinline[style=JavaInputStyle]|a *= b|} weist \(a\) den Wert von \(a*b\) zu und liefert \(a*b\) als Rückgabewert.\\
+			\hline
+			\(/=\) & Divisionszuweisung & {\lstinline[style=JavaInputStyle]|a /= b|} weist \(a\) den Wert von \(a/b\) zu und liefert \(a/b\) als Rückgabewert.\\
+			\hline
+			\(\%=\) & Modulozuweisung & {\lstinline[style=JavaInputStyle]|a \%= b|} weist \(a\) den Wert von \(a\%b\) zu und liefert \(a\%b\) als Rückgabewert.\\
+			\hline
+			\(\&=\) & UND-Zuweisung & {\lstinline[style=JavaInputStyle]|a &= b|} weist \(a\) den Wert von \(a\&b\) zu und liefert \(a\&b\) als Rückgabewert.\\
+			\hline
+			\(|=\) & ODER-Zuweisung & {\lstinline[style=JavaInputStyle]|a |= b|} weist \(a\) den Wert von \(a|b\) zu und liefert \(a|b\) als Rückgabewert.\\
+			\hline
+			\(^{\wedge}=\) & Exklusiv-ODER-Zuweisung & {\lstinline[style=JavaInputStyle]|a \^= b|} weist \(a\) den Wert von \(a^b\) zu und liefert \(a^b\) als Rückgabewert.\\
+			\hline
+		\end{tabularx}
+		\subsubsection{Relationale Operationen}
+		Relationale Operatoren vergleichen Ausdrücke und liefern einen logischen Rückgabewert (wahr oder falsch/\lstinline[style=JavaInputStyle]|true| und \lstinline[style=JavaInputStyle]|false|).\\
+		\par\noindent
+		\begin{tabularx}{\textwidth}{|c|l|X|}
+			\hline
+			\textbf{Operator} & \textbf{Bezeichnung} & \textbf{Bedeutung}\\
+			\hline
+			\(==\) & Gleichheit & {\lstinline[style=JavaInputStyle]|a == b|} ergibt {\lstinline[style=JavaInputStyle]|true|}, wenn \(a\) gleich \(b\) ist. Sind \(a\) und \(b\) Referenztypen, so ist der Rückgabewert {\lstinline[style=JavaInputStyle]|true|}, wenn beide Werte auf dasselbe Objekt zeigen.\\
+			\hline
+			\(!=\) & Ungleich & {\lstinline[style=JavaInputStyle]|a != b|} ergibt {\lstinline[style=JavaInputStyle]|true|}, wenn \(a\) ungleich \(b\) ist. Sind \(a\) und \(b\) Objekte, so ist der Rückgabewert {\lstinline[style=JavaInputStyle]|true|}, wenn beide Werte auf unterschiedliche Objekte zeigen.\\
+			\hline
+			\(<\) & Kleiner & {\lstinline[style=JavaInputStyle]|a < b|} ergibt {\lstinline[style=JavaInputStyle]|true|}, wenn \(a\) kleiner \(b\) ist.\\
+			\hline
+			\(<=\) & Kleiner gleich & {\lstinline[style=JavaInputStyle]|a <= b|} ergibt {\lstinline[style=JavaInputStyle]|true|}, wenn \(a\) kleiner oder gleich \(b\) ist.\\
+			\hline
+			\(>\) & Größer & {\lstinline[style=JavaInputStyle]|a > b|} ergibt {\lstinline[style=JavaInputStyle]|true|}, wenn \(a\) größer als \(b\) ist.\\
+			\hline
+			\(>=\) & Größer gleich & {\lstinline[style=JavaInputStyle]|a >= b|} ergibt {\lstinline[style=JavaInputStyle]|true|}, wenn \(a\) größer oder gleich \(b\) ist.\\
+			\hline
+		\end{tabularx}
+		\subsubsection{Logische Operatoren}
+		Logische Operatoren verknüpfen boolesche Werte, liefern als Rückgabewert ebenfalls boolesche Werte.\\
+		\par\noindent
+		\begin{tabularx}{\textwidth}{|c|l|X|}
+			\hline
+			\textbf{Operator} & \textbf{Bezeichnung} & \textbf{Bedeutung}\\
+			\hline
+			\(!\) & logisches NICHT & {\lstinline[style=JavaInputStyle]|!a|} ergibt {\lstinline[style=JavaInputStyle]|false|}, wenn \(a\) wahr ist. Der Ausdruck ergibt {\lstinline[style=JavaInputStyle]|true|}, wenn \(a\) falsch ist.\\
+			\hline
+			\(\&\&\) & UND \tiny{mit ShortCircuit-Evaluation}\normalsize & {\lstinline[style=JavaInputStyle]|a\&\&b|} ergibt {\lstinline[style=JavaInputStyle]|true|}, wenn sowohl \(a\) als auch \(b\) wahr sind. Ist bereits \(a\) falsch, so wird direkt {\lstinline[style=JavaInputStyle]|false|} zurückgegeben und \(b\) wird nicht mehr ausgewertet.\\
+			\hline
+			\(||\) & ODER \tiny{mit Short-Circuit-Evaluation}\normalsize & {\lstinline[style=JavaInputStyle]|a||\lstinline[style=JavaInputStyle]|b|} ergibt {\lstinline[style=JavaInputStyle]|true|}, wenn mindestens einer der beiden Ausdrücke \(a\) oder \(b\) wahr ist. Ist bereits \(a\) wahr, so wird direkt {\lstinline[style=JavaInputStyle]|true|} zurückgegeben und \(b\) wird nicht mehr ausgewertet.\\
+			\hline
+			\(\&\) & UND \tiny{ohne Short-Circuit-Evaluation}\normalsize & {\lstinline[style=JavaInputStyle]|a \& b|} ergibt {\lstinline[style=JavaInputStyle]|true|}, wenn sowohl \( a\) als auch \(b\) wahr sind. Beide Teilausdrücke werden unabhängig ihrer Ergebnisse ausgewertet.\\
+			\hline
+			\(|\) & ODER \tiny{ohne Short-Circuit-Evaluation}\normalsize & {\lstinline[style=JavaInputStyle]|a||\lstinline[style=JavaInputStyle]|b|} ergibt {\lstinline[style=JavaInputStyle]|true|}, wenn mindest einer der beiden Ausdrücke \(a\) oder \(b\) wahr ist. Beide Teilausdrücke werden unabhängig ihrer Ergebnisse ausgewertet.\\
+			\hline
+			\(^{\wedge}\) & Exklusiv-ODER & {\lstinline[style=JavaInputStyle]|a\^b|} ergibt {\lstinline[style=JavaInputStyle]|true|}, wenn beide Ausdrücke einen unterschiedlichen Wahrheitswert haben.\\
+			\hline
+		\end{tabularx}
+		\subsection{Kontrollstrukturen}
+		Java kennt folgende Kontrollstrukturen:
+		\begin{itemize}
+			\item Entscheidungsanweisungen {\lstinline[style=JavaInputStyle]|if|}, {\lstinline[style=JavaInputStyle]|if-else|}
+			\item Zählschleife {\lstinline[style=JavaInputStyle]|for|}
+			\item Abweisende Schleife {\lstinline[style=JavaInputStyle]|while|}
+			\item Nicht-abweisende Schleife {\lstinline[style=JavaInputStyle]|do-while|}
+			\item Entscheidungsanweisungen {\lstinline[style=JavaInputStyle]|switch|}
+		\end{itemize}
+		\subsubsection{Entscheidungsanweisung if-else}
+		\underline{Die Syntax:}
+		\begin{lstlisting}[style=JavaInputStyle]
+			if (bedingugn) {
+				anweisungen1;
+			} else {
+				anweisungen2;
+			}
+		\end{lstlisting}
+		\underline{Die Bedeutung und Wirkung:}\\
+		Die Bedingung \lstinline[style=JavaInputStyle]|bedingung| wird ausgewertet. Falls die Bedungung wahr (\lstinline[style=JavaInputStyle]|true|) ist, wird der Anweisungsblock \lstinline[style=JavaInputStyle]|anweisungen1| (oder die Anweisung) ausgeführt.\\
+		Ist die Bedingung nicht wahr (\lstinline[style=JavaInputStyle]|false|) wird der \lstinline[style=JavaInputStyle]|else|-Zwei ausgeführt.\\
+		\par\noindent
+		\underline{Beispiel:}
+		\begin{lstlisting}[style=JavaInputStyle]
+			public class ScheifenIf {
+				public static void main(String[] args) {
+					int zahl;
+					zahl = 2*3;
+					if (zahl == 6) {
+						System.out.println("Das Ergebnis ist sechs.");
+					} else {
+						System.out.println("Das Ergebnis ist nicht sechs.");
+					}
+				}
+			}
+		\end{lstlisting}
+		\subsubsection{Zählschleife for}
+		\underline{Syntax:}
+		\begin{lstlisting}[style=JavaInputStyle]
+			for (initialisierung; testbedingung; zaehlanweisung) {
+				anweisungen;
+			}
+		\end{lstlisting}
+		\underline{Beispiel:}\\
+		Die Zahlen 1 bis 10 sollen ausgegeben werden:\\
+		\begin{lstlisting}[style=JavaInputStyle]
+		for(int i = 1; i <= 10; i++) {
+			System.out.println(i);
+		}
+		\end{lstlisting}
+		\underline{Erläuterung des Schleifenkopfes:}\\
+		Fange an mit \lstinline[style=JavaInputStyle]|i = 1|. Prüfe, ob i noch kleiner oder gleich 10 ist, wenn ja, durchlaufe die Schleife und erhöhe i um eins, u.s.w.\\
+		\par\noindent
+		\begin{tabularx}{\textwidth}{|l|X|}
+			\hline
+			{\lstinline[style=JavaInputStyle]|initialisierung|} & Start (Initialisierungs-) Anweisung wird vor dem Ausführen der Schleife \textbf{einmal} ausgeführt.\\
+			& Deklarationen von Variablen sind zulässig, die Variable ist nur innerhalb der Schleife sichtbar.\\
+			Im Beispiel: {\lstinline[style=JavaInputStyle]|int i = 1;|} & \underline{Im Beispiel:} Variable i wird als Zählindex vereinbart.\\
+			\hline
+		\end{tabularx}
+		\begin{tabularx}{\textwidth}{|l|X|}
+			\hline
+			{\lstinline[style=JavaInputStyle]|testbedingung|} & Testbedingung für den Abbruch der Schleife.\\
+			& Die Schleife wird solange ausgeführt, wie die Testbedingung wahr ist (den Rückgabewert {\lstinline[style=JavaInputStyle]|true|} liefert).\\
+			& Die Testbedingung wird \textbf{vor jedem} Schleifendurchlauf abgeprüft.\\
+			Im Beispiel: {\lstinline[style=JavaInputStyle]|i <= 10;|} & \underline{Im Beispiel:} Die Schleife wird ausgeführt solange {\lstinline[style=JavaInputStyle]|i|} kleiner oder gleich 10 ist.\\
+			\hline
+			{\lstinline[style=JavaInputStyle]|zaehlanweisung|} & In der Zehlanweisung wird in der Regel der Schleifenzähler verändert.\\
+			& Der Ausdruck wird \textbf{nach jedem} Durchlauf der Schleife ausgewertet.\\
+			Im Beispiel: {\lstinline[style=JavaInputStyle]|i++|} & \underline{Im Beispiel:} Zählindex i wird mit dem Inkrementoperator bei jedem Schleifendurchlauf um 1 erhöht.\\
+			\hline
+		\end{tabularx}\\
+		\par\noindent
+		Jeder der drei Schleifenkopf-Ausdrücke darf auch fehlen. Fehlt die Testbedingung, so setzt der Compiler automatisch die Konstante \lstinline[style=JavaInputStyle]|true| ein. Initialisierung und Zählanweisung dürfen auch aus mehreren Ausdrücken bestehen, die mit Komma getrennt werden.
+		\subsubsection{Abweisende Schleife while}
+		\underline{Syntax:}
+		\begin{lstlisting}
+			while (bedingung) {
+				anweisungen;
+			}
+		\end{lstlisting}
+		Die Anweisungen im Schleifenrumpf werden solange ausgeführt, wie die Bedingung im Schleifenkopf wahr ist. Ist die Bedingung bereits vor dem ersten Eintritt in den Schleifenrumpf falsch,wird der Schleifenrumpf nicht durchlaufen.\\
+		\par\noindent
+		\underline{Beispiel:}
+		\begin{lstlisting}[style=JavaInputStyle]
+			int j = 0;
+			while (j < 10) {
+				System.out.println(j++);
+			}
+		\end{lstlisting}
+		Die Schleife wird solange durchlaufen, wiew \(j\) kleiner als 10 ist und gibt die Zahlen 0 bis 9 aus.
+		\subsubsection{Nicht-abweisende Schleife do-while}
+		\underline{Syntax:}
+		\begin{lstlisting}[style=JavaInputStyle]
+			do {
+				anweisungen;
+			} while (bedingung);
+		\end{lstlisting}
+		Die Anweisungen im Schleifenrumpf werden solange ausgeführt, wie die Bedingung wahr ist. Die Anweisungen werden mindestens einmal ausgeführt.\\
+		\par\noindent
+		\underline{Beispiel:}
+		\begin{lstlisting}[style=JavaInputStyle]
+			int j = 0;
+			do {
+				System.out.println(j++);
+			} while (j < 10);
+		\end{lstlisting}
+		\subsubsection{{\lstinline[style=JavaInputStyle]|break|} und {\lstinline[style=JavaInputStyle]|continue|} in Schleifen}
+		Die normale Schleifenreihenfolge von for, while und do-while Schleifen kann mittels der beiden Anweisungen \lstinline[style=JavaInputStyle]|break| und \lstinline[style=JavaInputStyle]|continue| beeinflusst werden:
+		\begin{itemize}
+			\item {\lstinline[style=JavaInputStyle]|break|} verlässt die Schleife und fährt mit der Ausführung der ersten Anweisung hinter der Schleife fort
+			\item {\lstinline[style=JavaInputStyle]|continue|} springt an das Ende des Schleifenrumpfes und beginnt sofort den nächsten Schleifendurchlauf
+		\end{itemize}
+		\subsubsection{Merfachverzweigung switch}
+		\underline{Syntax:}
+		\begin{lstlisting}[style=JavaInputStyle]
+			switch (wert) {
+				case const1: anweisung1; break;
+				case const2: anweisung2; breack;
+				...
+				default: default_anweisung;
+			}
+		\end{lstlisting}
+		Der \lstinline[style=JavaInputStyle]|switch|-Anweisung erwartet einen Wert (Ausdruck mit Rückgabewert) vom Typ \lstinline[style=JavaInputStyle]|int|, \lstinline[style=JavaInputStyle]|char|, \lstinline[style=JavaInputStyle]|byte| oder \lstinline[style=JavaInputStyle]|short|. Es können beliebig viele Verzweigungen mit \lstinline[style=JavaInputStyle]|case| folgen.\\
+		Zu jeder \lstinline[style=JavaInputStyle]|case|-Verzweigung gehört eine Konstante (\lstinline[style=JavaInputStyle]|const1|, \lstinline[style=JavaInputStyle]|const2|,...).\\
+		Stimmt der Wert einer Konstante in einer \lstinline[style=JavaInputStyle]|case|-Verzweigung mit dem aktuellen Wert im \lstinline[style=JavaInputStyle]|switch|-Ausdruck überein, werden alle Anweisungen ab dem entsprechenden \lstinline[style=JavaInputStyle]|case|-Zweig ausgeführt. \lstinline[style=JavaInputStyle]|break| verlässt die \lstinline[style=JavaInputStyle]|switch|-Anweisung.\\
+		\par\noindent
+		\underline{Achtung:} \lstinline[style=JavaInputStyle]|case| ist ein Einsprungsziel! Fehlt \lstinline[style=JavaInputStyle]|break| in einem \lstinline[style=JavaInputStyle]|case|-Zweig, werden die folgenden \lstinline[style=JavaInputStyle]|case|-Zweige ebenfalls durchlaufen.\\
+		\par\noindent
+		\underline{Beispiel:}
+		\begin{lstlisting}[style=JavaInputStyle]
+			int zahl;
+			zahl = (int)(Math.random()*4);
+			switch (zahl)
+			{
+				case 1 : System.out.println(zahl + " Eins "); break;
+				case 2 : System.out.println(zahl + " Zwei "); break;
+				case 3 : System.out.println(zahl + " Drei "); break;
+				default: System.out.println(zahl + " Kein Treffer ");
+			}
+		\end{lstlisting}
+		Die \lstinline[style=JavaInputStyle]|int|-Variable \lstinline[style=JavaInputStyle]|zahl| erhält einen Zufallswert 0, 1, 2 oder 3. Je nach Wert von \lstinline[style=JavaInputStyle]|zahl| wird der \lstinline[style=JavaInputStyle]|case|-Block 1, 2, 3 oder \lstinline[style=JavaInputStyle]|default| durchlaufen.\\
+		\par\noindent
+		\begin{tabbing}
+			\underline{Beispiel:}~~~ \= Anwendung Kontrollstrukturen
+		\end{tabbing}
+		Ermittlung der Zahlen zwischen 1 und 35, die sowohl durch 3 als auch durch 2 teilbar sind:
+		\begin{lstlisting}[style=JavaInputStyle]
+			public class Teiler {
+				public static void main(String[] args) {
+					for(int i = 1; i <= 35; i++) {
+						if((i % 3 == 0) & (i % 2 == 0)) {
+							System.out.println(i + " ist durch 3 und durch 2 teilbar! ");
+						}
+					}
+				}
+			}
+		\end{lstlisting}
+		
+	\end{worksheet}
+\end{document}

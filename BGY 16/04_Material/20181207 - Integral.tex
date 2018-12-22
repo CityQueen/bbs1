@@ -1,0 +1,65 @@
+\documentclass[oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{scrreprt}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\geometry{left=1.50cm,right=1.50cm,top=2.50cm,bottom=1.00cm,includeheadfoot}
+
+\begin{document}
+	\begin{worksheet}{BGY 16}{Klassenstufe 13}{Lernabschnitt 1: Exponentialfunktion - Integration}
+				
+		\noindent
+		\sffamily
+		\begin{framed}
+			\noindent
+			\large{\textbf{Grippe überall}}\\
+			\normalsize
+			Die Entwicklung der Anzahl von Grippefällen lässt sich für die ersten zehn Wochen bei einer Grippeepidemie mit \(f(x) = 400\cdot{}e^{0,05x}\) beschreiben
+			\tiny{\color{codegray}{x: Wochen nach dem Ausbruch; \(f(x)\): Neuerkrankte in Tausend}}\normalsize\normalcolor
+			\begin{itemize}
+				\item[(a)] Skizzieren Sie den Funktionsgraph der Funktion!\\
+				\small{\color{codegray}{Koordinatensystem auf der Rückseite!}}
+				\item[(b)] Berechnen Sie die Anzahl der insgesamt bis zum Zeitpunkt \(x=10\) infizierten Mensen und visualisieren Sie diesen Wert in der Skizze aus (a)!
+				\item[(c)] Skizzieren Sie einen Graphen, der die Entwicklung der insgesamt mit dem Grippevirus infizierten Menschen angibt (\small{\color{codegray}{\textit{Hinweis:} Graph der Integralfunktion}}) \normalcolor\normalsize und stellen Sie die charakteristischen Elemente dieser Entwicklung heraus!
+				\item[(d)] Beurteilen Sie die Entwicklung!
+			\end{itemize}
+		\end{framed}
+		\begin{framed}
+			\noindent
+			\large{\textbf{Stammfunktionen}}\\
+			\normalsize
+			Geben Sie zu nachfolgenden Funktionen die Stammfunktion an!\\
+			\par\noindent
+			\begin{tabularx}{\textwidth}{XX}
+				(a) \(f(x) = 4\cdot{}e^{0,5x}\) & (c) \(f(x) = 300\cdot{}e^{-0,5x}\)\\
+				(b) \(f(x) = 4\cdot{}e^{2x}\) & (d) \(f(x) = 300 - 4\cdot{}e^{2x}\)
+			\end{tabularx}
+		\end{framed}
+		\begin{framed}
+			\noindent
+			\large{\textbf{Eisenmangel}}\\
+			\normalsize
+			Als bei einem Patienten Eisenmangel festgestellt wird, erhält er Tabletten, damit sein Eisenwert wieder auf den normalen Stand von \(20\ Einheiten/Liter\ Blut\) kommt.\\
+			\par\noindent
+			Mit \(\mathbf{f(x) = 5\cdot{}e^{-0,4x}}\) (\tiny{\color{codegray}{x in Tagen nach Beginn der Medikation; \(f(X)\) in mg pro Tag}}\normalcolor\normalsize) kann der Aufbau des Eisenbestands im Blut beschrieben werden. Der Eisenwert zu Beginn der Medikation beträgt \(11,5\ Einheiten/Liter\ Blut\).\\
+			\par\noindent
+			\begin{minipage}{0.4\textwidth}
+				\textbf{Ausschnitt des Funktionsgraphen:}\\
+				\par\noindent
+				\includegraphics[width=0.9\textwidth,align=t]{../99_bilder/01_ExpFkt/eisen.png}
+			\end{minipage}
+			\hfill
+			\begin{minipage}{0.6\textwidth}
+				\begin{itemize}
+					\item[(a)] Beschreiben Sie die Entwicklung der Eisenkonzentration im Blut!
+					\item[(b)] Wie viel Eisen ist nach 3 Tagen aufgebaut?
+					\item[(c)] Prüfen Sie, ob der normale Eisengehalt langfristig wieder angenommen wird!
+				\end{itemize}
+			\end{minipage}
+		\end{framed}
+	\end{worksheet}
+	\newpage
+	\begin{sidewaysfigure}
+		\includegraphics[width=1.1\textheight,align=t]{../99_Bilder/01_ExpFkt/patient_koord.png}
+	\end{sidewaysfigure}
+\end{document}
