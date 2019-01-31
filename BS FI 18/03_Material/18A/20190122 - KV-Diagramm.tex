@@ -1,0 +1,78 @@
+\documentclass[oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{scrreprt}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\geometry{left=2.50cm,right=2.50cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+
+\begin{document}
+	\begin{worksheet}{BS FI 18}{1. Lehrjahr, LF 4 - Einfache IT-Systeme}{Schaltungen aufbauen}
+		\begin{framed}
+			\noindent
+			\begin{minipage}{0.58\textwidth}
+				\textbf{Mister X versucht es selbst.}\\
+				Er hat sich von \textit{SecurityAtHome} die Funktionstabelle geben lassen und will die Schaltung daraus selbst aufbauen.
+				\par
+				\begin{addmargin}[0.75cm]{0cm}
+					\texttt{Seiner Ansicht nach, ist die Realisierung mit allen Gattern viel zu teuer.\\
+						Helfen Sie ihm, die Kosten zu senken!}\\
+				\end{addmargin}
+			\end{minipage}
+			\hfill
+			\begin{minipage}{0.4\textwidth}
+				\begin{tabular}{|c||ccc||c|}
+					\hline
+					\textit{i} & \(x_1\) & \(x_2\) & \(x_3\) & \(f(x_1,x_2,x_3)\)\\
+					\hline
+					0 & 0 & 0 & 0 & 0\\
+					\hline
+					1 & 0 & 0 & 1 & 1\\
+					\hline
+					2 & 0 & 1 & 0 & 0\\
+					\hline
+					3 & 0 & 1 & 1 & 1\\
+					\hline
+					4 & 1 & 0 & 0 & 0\\
+					\hline
+					5 & 1 & 0 & 1 & 1\\
+					\hline
+					6 & 1 & 1 & 0 & 0\\
+					\hline
+					7 & 1 & 1 & 1 & 1\\
+					\hline
+				\end{tabular}
+			\end{minipage}
+		\end{framed}
+		\begin{framed}
+			\noindent
+			\tiny{\textit{\color{codegray}{Minterme}}}\\
+			\normalsize
+			\includegraphics[width=0.1\textwidth]{../../empty.jpg}\\
+			\noindent
+			\tiny{\textit{\color{codegray}Logische Funktion}}\\
+			\par\noindent
+			\normalsize
+			\includegraphics[width=0.1\textwidth]{../../empty.jpg}\\
+		\end{framed}
+		\begin{framed}
+			\begin{minipage}{0.48\textwidth}
+				\tiny{\textit{\color{codegray}Karnaugh-Diagramm}}\\
+				\normalsize
+			\end{minipage}
+			\hfill
+			\begin{minipage}{0.48\textwidth}
+					\begin{minipage}{0.48\textwidth}
+					\tiny{\textit{\color{codegray}Vereinfachte Funktion}}\\
+					\normalsize
+				\end{minipage}
+			\end{minipage}
+			\begin{minipage}{0.48\textwidth}
+				
+				\begin{karnaugh-map}[4][2][1][$x_2x_3$][$x_1$]
+					
+				\end{karnaugh-map}
+			\end{minipage}
+			\hfill
+		\end{framed}
+	\end{worksheet}
+\end{document}

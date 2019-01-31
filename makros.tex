@@ -10,6 +10,9 @@
 \makeatother
 
 % Codestyle defined
+\definecolor{ma}{rgb}{0.2,0.2,0.6}
+\definecolor{iv}{rgb}{0.6,0.2,0.4}
+
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
@@ -110,7 +113,7 @@
 	{ö}{{\"o}}1
 }
 
-% Neue Klassenarbeits-Umgebung
+% Neue Arbeitsblatt-Umgebung
 \newenvironment{worksheet}[3]
 % Begin-Bereich
 {
@@ -128,6 +131,32 @@
 		}
 		\put(455,761){{
 				\mbox{\hspace{0.3cm}\includegraphics[width=0.2\textwidth]{../../logo.pdf}}
+			}
+		}
+	}
+}
+%End-Bereich
+
+%Neue Klassenarbeits-Umgebung
+\newenvironment{test}[3]
+% Begin-Bereich
+{
+	\newpage
+	\sffamily
+	\setcounter{page}{1}
+	\ClearShipoutPicture
+	\AddToShipoutPicture{
+		\put(50,761){{
+				\renewcommand{\arraystretch}{1.25}
+				\begin{tabularx}{\textwidth}{|c|M|L{4.5cm}|}
+					\hline
+					\multirow{2}{*}{\includegraphics[height=0.025\textheight,align=c]{../../logo.jpg}} & \Large{#1} & Name:\\
+					\cline{3-3}
+					& \Large{#2} & Datum:\\
+					\hline
+					#3 & \multicolumn{1}{l|}{\underline{\hspace{1cm}} von \underline{\hspace{1cm}} Punkten erreicht: \underline{\hspace{1cm}}\%} & \textbf{Note:}\\
+					\hline
+				\end{tabularx}
 			}
 		}
 	}

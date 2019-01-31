@@ -1,0 +1,27 @@
+\documentclass[oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{article}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{1.1\baselineskip}{0.1\baselineskip}
+
+\geometry{left=2.50cm,right=2.50cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+\pagestyle{empty}
+
+\begin{document}
+	\begin{center}
+		\section*{Inhaltsverzeichnis}
+		\begin{tabularx}{\textwidth}{Xr}
+			\textit{Beschreibung} & Seite\\
+			\\
+			\textbf{Entwicklungsbericht (10.11.2018 - 12.01.2019)} & 2\\
+			\\
+			\textbf{Anhang zur Ergänzung} & 10\\
+			\\
+			\textbf{Entwicklungsbericht (01.01.2018 - 09.11.2018)} & 27
+		\end{tabularx}
+	\end{center}
+	\includepdf[pages=-]{EBContinued.pdf}
+	\includepdf[pages=-]{anhang.pdf}
+	\includepdf[pages=-]{Entwicklungsbericht_Stand-1G.pdf}
+\end{document}
