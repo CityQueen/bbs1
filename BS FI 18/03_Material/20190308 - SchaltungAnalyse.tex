@@ -1,0 +1,98 @@
+\documentclass[oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{scrreprt}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\geometry{left=1.50cm,right=1.50cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+
+\begin{document}
+	\begin{worksheet}{BS FI 18}{1. Lehrjahr, LF 4 - Einfache IT-Systeme}{Schaltungen analysieren und Funktionen ableiten}
+		\begin{framed}
+			\noindent
+			Die \texttt{BIMS \& BUMS GmbH} verwendet eine Schaltung mit folgender Logik.\\
+			\par\noindent
+			\begin{minipage}{0.65\textwidth}
+				\includegraphics[width=\textwidth,align=t]{../99_Bilder/190308_SA.jpg}
+			\end{minipage}
+			\hfill
+			\begin{minipage}{0.3\textwidth}
+				Nach verschiedenen Tests wurden folgende Ergebnisse erreicht:\\
+				\par\noindent
+				\renewcommand{\arraystretch}{1.5}
+				\begin{tabular}{|c|c|c|c|c|}
+					\hline
+					\rowcolor{codegray!15} \textbf{Test-Nr.} & \textbf{a} & \textbf{b} & \textbf{c} & \textbf{x}\\
+					\hline
+					\hline
+					\fbox{1} & 0 & 0 & 0 & 1\\
+					\hline
+					\fbox{2} & 0 & 0 & 1 & 1\\
+					\hline
+					\fbox{3} & 0 & 1 & 0 & 0\\
+					\hline
+					\fbox{4} & 0 & 1 & 1 & 0\\
+					\hline
+					\fbox{5} & 1 & 0 & 0 & 0\\
+					\hline
+					\fbox{6} & 1 & 0 & 1 & 0\\
+					\hline
+					\fbox{7} & 1 & 1 & 0 & 1\\
+					\hline
+					\fbox{8} & 1 & 1 & 1 & 0\\
+					\hline
+				\end{tabular}\\
+			\end{minipage}\\
+			\par\noindent
+			Welcher Test führt zu einem Ergebnis, das \textbf{nicht} der Logik der Schaltung entspricht?\\
+			\par\noindent
+			\rule{\textwidth}{0.1pt}\\
+			\includegraphics[width=0.5\textwidth]{../../empty.jpg}
+		\end{framed}
+		\begin{framed}
+			\noindent
+			Der Lagerplatz der \texttt{BIMS \& BUMS GmbH} wird mit einer speziellen Alarmanlage überwacht, die Umweltparameter für den Lagerraum sicherstellt. Um dies zu gewährleisten, messen die Sensoren Temperatur, Luftfeuchtigkeit und den Luftdruck. Alle drei Sensoren haben digitale Ausgänge, die beim Verletzen der vorgegebenen Grenzwerte von 0 auf 1 wechseln.\\
+			\par\noindent
+			Die digitale Schaltung erfüllt folgende Wahrheitstabelle:\\
+			\par\noindent
+			\begin{minipage}{0.25\textwidth}
+				\renewcommand{\arraystretch}{1.5}
+				\begin{tabular}{|c|c|c|c|}
+					\hline
+					\textbf{E1} & \textbf{E2} & \textbf{E3} & \textbf{A}\\
+					\hline
+					\hline
+					0 & 0 & 0 & 0\\
+					\hline
+					0 & 0 & 1 & 0\\
+					\hline
+					0 & 1 & 0 & 0\\
+					\hline
+					0 & 1 & 1 & 1\\
+					\hline
+					1 & 0 & 0 & 1\\
+					\hline
+					1 & 0 & 1 & 1\\
+					\hline
+					1 & 1 & 0 & 1\\
+					\hline
+					1 & 1 & 1 & 1\\
+					\hline
+				\end{tabular}
+				\begin{itemize}
+					\item[E1] Temperatursensor
+					\item[E2] Feuchtigkeitssensor
+					\item[E3] Luftdrucksensor
+				\end{itemize}
+			\end{minipage}
+			\hfill
+			\begin{minipage}{0.7\textwidth}
+				\includegraphics[width=\textwidth]{../99_Bilder/190308_SA_1.jpg}
+			\end{minipage}\\
+			\par\noindent
+			Welche zwei logischen Schaltglieder sind an den Positionen \textbf{L1} und \textbf{L2} einzusetzen.\\
+			\par\noindent
+			\rule{\textwidth}{0.1pt}\\
+			\includegraphics[width=0.31\textwidth]{../../empty.jpg}
+		\end{framed}
+	\end{worksheet}
+\end{document}

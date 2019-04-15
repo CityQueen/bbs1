@@ -14,6 +14,69 @@
 	\begin{worksheet}{Berufliches Gymnasium}{Klassenstufe 13 - Mathematik}{Lernabschnitt 2: Binomialverteilung}
 		\setcounter{section}{1}
 		\section{Die Binomialverteilung}
-		blah
+		\subsection{Das Bernoulli-Experiment}
+		Viele Zufallsexperimente weisen folgende Standardform auf:\\
+		\includegraphics[width=0.48\textwidth]{../99_Bilder/04_WKR/bern.png}\\
+		\textit{Symbolik/Begriffe}:\\
+		\(T\): \grqq{}Treffer\grqq{} per Definition\\
+		\(\overline{T}\): Gegenereignis zu \grqq{}Treffer\grqq{}\\
+		p: Wahrscheinlichkeit eines Treffers\\
+		n: gesamte Anzahl der Stufen\\
+		\par\noindent
+		Bei einem solchen Experiment ist es von großer Bedeutung, dass man vor jeglicher Analyse festlegt, was als Treffer gilt, welche Bedeutung die Stufen haben und natürlich welche Wahrscheinlichkeiten vorliegen.
+		\begin{framed}
+			\noindent
+			In einem \textbf{Bernoulli-Experiment} gibt es auf jeder Stufe nur zwei mögliche Ausgänge.\\
+			Die Bedeutung bzw. Zuordnung der Äste ändert sich zwischen den Stufen nicht.\\
+			Die Wahrscheinlichkeit bleibt von Stufe zu Stufe gleich. Heißt, ein Ergebnis auf einer Stufe hat keine Auswirkungen auf die Wahrscheinlichkeit der nächsten Stufe.
+		\end{framed}
+		Die Ereignisse eines Bernoulli-Zufallsexperiments können für die \glqq{}Anzahl der Treffer\grqq{} stehen. Somit kann folgende Zufallsvariable festgelegt werden:\\
+		\par\noindent
+		\renewcommand{\arraystretch}{1.5}
+		\begin{tabularx}{0.48\textwidth}{|l|M|M|M|M|}
+			\hline
+			\(x_i\) & 0 & 1 & $\ldots$ & n\\
+			\hline
+			\(P(X = x_i)\) & & & &\\
+			\hline
+		\end{tabularx}\\
+		\par\noindent
+		Haben wir eine solche \textbf{Wahrscheinlichkeitsverteilung}, so sprechen wir von einer \textbf{\underline{Binomialverteilung}}.\\
+		\subsubsection*{Beispiel: LRS}
+		\begin{framed}
+			\noindent
+			Der Anteil von Kindern mit Lese- und Rechtschreibschwäche (LRS) liegt in der BRD bei 10\%. Der Wert kann als Wahrscheinlichkeit dafür interpretiert werden, dass bei einem Kind im Laufe der Grundschulzeit LRS festgestellt wird.\\
+			In eine Grundschule werden 50 Kinder eingeschult.
+		\end{framed}
+		Wir definieren wie folgt:\\
+		\(T\): Kind hat eine LRS\\
+		\(\overline{T}\): Kind hat keine LRS\\
+		p: \(0,10\) (empirische Wahrscheinlichkeit)\\
+		\(n = 50\)\\
+		\par\noindent
+		\textit{Gesucht}: Anzahl der Kinder mit einer LRS
+		\subsection{Die Wahrscheinlichkeiten bei der Binomialverteilung}
+		Die Wahrscheinlichkeit bei der Binomialverteilung lassen sich durch folgende Formeln  ermitteln:
+		\begin{align*}
+			P(X=k) = \binom{n}{k}\cdot{}p^n\cdot(1-p)^{n-k}
+		\end{align*}
+		Dabei gibt \(\binom{n}{k}\) die Anzahl der Pfade an.\\
+		\(p^n\cdot(1-p)^{n-k}\) entspricht der Wahrscheinlichkeit eines beliebigen zum Ereignis \(X = k\) gehörenden Pfades (\grqq{}Pfadregel\grqq{}).
+		\subsubsection{Tabellen zur Binomialverteilung}
+		Damit man nicht jedes Mal in die Formel einsetzen muss, existieren Tabellen, bei denen man für eine bestimmte Anzahl Stufen und Trefferwahrscheinlichkeiten die Wahrscheinlichkeiten für die Ereignisse \(X = k\) ablesen kann.\\
+		\par\noindent
+		\includegraphics[width=0.48\textwidth]{../99_Bilder/04_WKR/binomtab.jpg}\\
+		\underline{Beispiel:} Die Wahrscheinlichkeit, dass es bei einem vierstufigen Bernoulli-Experiment mit einer Trefferwahrscheinlichkeit von \(0,10\) zu \underline{genau} 2 Treffern kommt, liegt bei \(0,0486\).\\
+		\par\noindent
+		Meist liegt eine Tabelle zur \underline{kumulierten Binomialverteilung} vor. Diese gibt die Wahrscheinlichkeit für Ereignisse wie \(X < k\ (X = {0, 1, 2, \ldots, k})\) an.\\
+		\par\noindent
+		\includegraphics[width=0.48\textwidth]{../99_Bilder/04_WKR/binomtabKum.jpg}\\
+		\underline{Beispiel}: Die Wahrscheinlichkeit, dass es bei einem $\ldots$-stufigen Bernoulli-Experiment mit einer Trefferwahrscheinlichkeit von \(0,10\) zu höchstens (genau oder weniger als) 2 Treffern kommt, liegt bei \(0,0019\).\\
+		\subsection{Typische Gestalt der Binomialverteilung}
+		Stellt man die Wahrscheinlichkeitsverteilung bei großen Werten für n als Balkendiagramm dar, ergibt sich folgendes typisches Aussehen:\\
+		\par\noindent
+		\includegraphics[width=0.48\textwidth]{../99_Bilder/04_WKR/binomBalk.jpg}\\
+		\par\noindent
+		Beobachtung: Es liegt eine gewisse Symmetrie vor, dort gibt es den höchsten Wahrscheinlichkeitswert. Er liegt bei \(n\cdot{}p\).
 	\end{worksheet}
 \end{document}

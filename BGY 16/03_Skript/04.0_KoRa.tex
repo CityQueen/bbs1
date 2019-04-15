@@ -1,0 +1,61 @@
+\documentclass[11pt,twocolumn,oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{article}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\setlength{\columnsep}{3em}
+\setlength{\columnseprule}{0.5pt}
+
+\geometry{left=1.00cm,right=1.00cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+\pagenumbering{gobble}
+\pagestyle{empty}
+
+\begin{document}
+	\begin{landscape}
+		\renewcommand{\arraystretch}{1.5}
+		\begin{tabularx}{45\baselineskip}{|M|X|X|X|}
+			\hline
+			\rowcolor{codegray!20} \textbf{Kompetenzbezug} & \textbf{B A S I C S} & \textbf{P R O F I} & \textbf{E X P E R T E}\\
+			\hline
+			\multirow{6}{*}{\tabrotate{Grundlagen}} & Ich kann zu einer Zufallssituation ein einstufiges bzw. mehrstufiges Baumdiagramm anlegen und beschriften. & Ich kann zu einem Ereignis die zugehörigen Ergebnisse (Pfade) nennen (markieren) bzw. Ergebnisse sinnvoll zu einem Ereignis zusammenfassen. & Ich kann den Erwartungswert im Hinblick auf die Situation interpretieren und Entscheidungsempfehlungen bezüglich des Einlassens auf das Zufallsexperiment aus mathematischer Sicht abgeben.\\
+			& Ich kenne die Pfad- und Additionsregel. & \multirow{2}{\hsize}{Ich kann die Wahrscheinlichkeit eines Ereignisses durch Aufsummieren aller Wahrscheinlichkeiten der zugehörigen Ergebnisse berechnen} &  Ich kann einem Ereignis eine für die Anwendungssituation sinnvolle Zahl zuordnen.\\
+			& Ich kann erläutern, was man unter einer Wahrscheinlichkeit für eine Ergebnis bzw. Ereignis versteht und wie Werte für eine Wahrscheinlichkeit zustande kommen. & & \\
+			& & & \\
+			& Ich kann die Begriffe Ereignis und Ergebnis anhand eines Baumdiagramms erläutern. & Ist die Verteilung einer Zufallsvariable tabellarisch dargestellt, kann ich den Erwartungswert berechnen. & \\
+			& & & \\
+			& Anstatt eines Baumdiagramms kann ich die Ergebnisse auch durch Klammern darstellen - z.B. (\(E, E, \overline{E}, \overline{E}, E\)). & \multirow{2}{\hsize}{Ich kann zu einem Ereignis ein Gegenereignis formulieren  insbesondere kenne ich das Gegenereignis zu \glqq{}mindestens ein Mal...\grqq{}.} & \\
+			& Ich kann erläutern, was man unter einer Zufallsvariable und einer Wahrscheinlichkeitsverteilung versteht. & & \\
+			\hline
+		\end{tabularx}
+	\end{landscape}
+	\begin{landscape}
+		\renewcommand{\arraystretch}{1.5}
+		\begin{tabularx}{45\baselineskip}{|M|X|X|X|}
+			\hline
+			\rowcolor{codegray!20} \textbf{Kompetenzbezug} & \textbf{B A S I C S} & \textbf{P R O F I} & \textbf{E X P E R T E}\\
+			\hline
+			\multirow{6}{*}{\tabrotate{einstufige / mehrstufige Zufallsexperiments}} & Ich kann eine zufallsbehaftete Zituation als Zufallsexperiment auffassen und alle möglichen Ergebnisse angeben. & Ich kann eine zufallsbehaftete Situation als mehrstufiges Zufallsexperiment auffassen und die Stufen korrekt definieren. & Ich kann die Wahrscheinlichkeit eines Ereignisses durch Aufsummieren aller Wahrscheinlichkeiten der zugehörigen Ergebnisse berechnen.\\
+			& Ich kann die Voraussetzungen für ein Zufallsexperiment nennen und ihr Vorliegen für eine gegebene Situation überprüfen. & Ich kann zu einem Ereignis die zugehörigen Ereignisse (Pfade) nennen (markieren). & Ich kann Wahrscheinlichkeitsverteilungen tabellarische darstellen.\\
+			& Ich kann erläutern, was man unter einer Wahrscheinlichkeit für ein Ergebnis bzw. Ereignis versteht und wie Werte für eine Wahrscheinlichkeit zustande kommen können. & Ich kann auch ohne ein komplettes Baumdiagramm die Wahrscheinlichkeit der Ergebnisse \glqq{}kein Mal\grqq{} oder \glqq{}jedes Mal\grqq{} berechnen. & \\
+			& Ich kann die Begriffe Ereignis und Ergebnis anhand eines Beispiels erläutern. & Ich kann zu einem Ereignis ein Gegenereignis formulieren. & \\
+			& Ich kenne die Pfadregel und die Additionsregeln und kann sie anhand eines Baumdiagramms anwenden. & Ich kann durch das Gegenereignis die Wahrscheinlichkeit zu Ereignissen wie \glqq{}mindestens ein Mal \ldots\grqq{} berechnen. & \\
+			& Ich kann einfache Laplace-Wahrscheinlichkeiten berechnen und begründen, dass man dieses Verfahren anwenden kann. & & \\
+			\hline
+		\end{tabularx}
+	\end{landscape}
+	\begin{landscape}
+		\renewcommand{\arraystretch}{1.5}
+		\begin{tabularx}{45\baselineskip}{|M|X|X|X|}
+			\hline
+			\rowcolor{codegray!20} \textbf{Kompetenzbezug} & \textbf{B A S I C S} & \textbf{P R O F I} & \textbf{E X P E R T E}\\
+			\hline
+			\multirow{1}{*}{\tabrotate{Zufallsvariable}} & Ich kann einem Ereignis eine zur Situation passende, sinnvolle Zahl zuordnen & Ich kann den Erwartungswert und die Varianz für eine gegebeen Wahrscheinlichkeitsverteilung einer Zufallsvariable berechnen. & Ich kann den Erwartungswert und die Varianz im Hinblick auf die Situation interpretieren und Entscheidungen - z.B. bezüglich Fairness eines Spiels - treffen.\\
+			\hline
+			\multirow{4}{*}{\tabrotate{Binomialverteilung}} & Ich kann eine Situation als Bernoulli-Experiment auffassen, indem ich definiere, was ein Treffer ist und den passenden Wert für n und p herauslese. & Ich kann Werte \(P(X=x_{ii})\) mit der Formel berechnen und die Bestandteile der Formel erläutern. & Ich kann ein 95\%-Vertrauensintervall für die Anzahl von Treffern durch eine Formel bestimmen.\\
+			& Ich kenne die Bedingungen zum Vorliegen eines Bernoulli-Experimentes. & Ich kann Werte aus einer Tabelle zur Binomialverteilung ablesen und die Bedeutung erläutern. & Ich kann die Wahrscheinlichkeit, dass die Anzahl der Treffer in einem bestimmten Intervall liegt durch Subtraktion von Tabellenwerten bestimmen.\\
+			& Ich kann den Zusammenhang zwischen einem Bernoulli-Experiment und der Binomialverteilung erläutern. & Ich kann beurteilen, ob die Bedingungen für ein Bernoulli-Experiment vorliegen und ggf. Kritikpunkte äußern. & Ich kann der Anzahl der Treffer sinnvolle Zahlen zuordnen, um einen zur Situation passenden Erwartungswert bestimmen.\\
+			& & Ich kann die Wahrscheinlichkeit, dass die Anzahl der Treffer einen bestimmten Wert nicht übersteigt / unterschreitet mithilfe einer Tabelle bestimmen. & Ich kann die Anzahl der Stufe \glqq{}n\grqq{} bestimmen, damit mit einer bestimmten Wahrscheinlichkeit eine Mindesttrefferzahl vorliegt (Gegenereignis / In \ldots)\\
+			\hline
+		\end{tabularx}
+	\end{landscape}
+\end{document}

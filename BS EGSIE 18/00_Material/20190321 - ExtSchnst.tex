@@ -1,0 +1,77 @@
+\documentclass[11pt,oneside,twocolumn,openany,headings=optiontotoc,11pt,numbers=noenddot]{article}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\setlength{\columnsep}{3em}
+\setlength{\columnseprule}{0.5pt}
+
+\pagestyle{empty}
+
+\geometry{left=1.50cm,right=1.50cm,top=2.50cm,bottom=1.00cm,includeheadfoot}
+
+\begin{document}
+	\begin{worksheet}{BS EGSIE 18}{1. Lehrjahr, LF 4 - Informationstechnische Systeme bereitstellen}{Verarbeitungsgeräte - Externe Schnittstellen}
+		\onehalfspacing
+		\subsection*{PS/2}
+		Üblicherweise werden hier Tastatur und Maus angeschlossen. Die angeschlossenen Peripheriegeräte können direkt nach dem Computerstart genutzt werden.\\
+		Die Anschlüsse sind baugleich, unterscheiden sich aber in ihrer Funktion. Um die Zuordnung zu erleichtern, werden die Stecker an den Geräten in der zugehörigen Farbe produziert.\\
+		Üblicherweise ist der Mausanschluss (grün) oben und der für die Tastatur (lila) unten.
+		\subsection*{Parallel (IEEE 1284, Centronics oder LPT-Anschluss)}
+		Wird für eine schnelle Datenübertragung genutzt, da hier 8 Bit gleichzeitig (parallel) übertragen werden können.\\
+		Häufige Anwendungsbereiche sind Drucker (LPT = \textbf{L}ine\textbf{P}rin\textbf{t}er), Scanner aber auch externe Laufwerke. Ein Datenaustausch zwischen zwei Computern ist aber auch möglich.\\
+		\footnotesize{Abgelöst wurde der Parallelanschluss vor geraumer Zeit von USB.}\normalsize
+		\subsection*{Seriell (RS-232C oder COM)}
+		Bei der Datenübertragung werden die Daten schrittweise (seriell), also nacheinander übertragen, sodass hiermit nur eine geringe Übertragungsgeschwindigkeit erreicht werden kann.\\
+		Vorteilhaft hingegen ist, dass die Übertragung weniger störanfällig ist, wodurch auch eine Übertragung über 1000 Meter hinweg möglich ist.\\
+		Wie auch bei der Parallelschnittstelle ist ein Datenaustausch zwischen zwei Computern möglich.\\
+		\footnotesize{Abgelöst wurde die serielle Schnittstelle von USB, sodass der serielle Anschluss bei neueren Computern nicht mehr zu finden ist.}\normalsize
+		\subsection*{USB - Universal Serial Bus}
+		An USB können bis zu 127 Geräte gleichzeitig angeschlossen werden. Die angeschlossenen Geräte werden in der Regel bei allen aktuell verwendeten Betriebssystemen automatisch erkannt und notwendigen Programme werden automatisch installiert.\\
+		Mittlerweile kann eine Vielzahl von Geräten per USB mit dem Computer verbunden werden. Er hat sich zu einem der wichtigsten Anschlusstypen entwickelt.\\
+		\par\noindent
+		Bei den Anschlüssen ist zu beachten, dass es hier marginale Unterschiede gibt.\\
+		\begin{tabularx}{0.48\textwidth}{MMM}
+			USB 1.1 - bis zu 12 Mbit/s & USB 2.0 - bis zu 480 Mbit/s & USB 3.0 - bis zu 640 Mbit/s
+		\end{tabularx}
+		\subsection*{Netzwerk (RJ-45)}
+		Ermöglicht eine Verbindung zu einem kabelgebundenen Netzwerk. Abhängig vom Einsatzgebiet können Übertragungsgeschwindigkeiten von 10MBit/s bis hin zu 10GBit/s erreicht werden.
+		\subsection*{Sound, analog}
+		Der Onboard-Soundchip kann von der Funktionalität mit einer klassischen Hi-Fi-Anlage verglichen werden. Den verschiedenen 3,5''-(Stereo)-Klinkenstecker-Anschlüssen kommen unterschiedliche Funktionen zu:
+		\begin{itemize}
+			\item Blau: Eingang Stereo (MP3-Player, Hi-Fi-Anlage)
+			\item Grün: Ausgang Stereo (Lautsprecher vorne, Kopfhörer)
+			\item Rot/Rosa: Eingang Mono (Mikrofon)
+			\item Grau/Silber: Ausgang Stereo (Lautsprecher Seite)
+			\item Schwarz: Ausgang Stereo (Lautsprecher hinten)
+			\item Orange: Ausgang Center-Lautsprecher und Subwoofer
+		\end{itemize}
+		\subsection*{Sound, digital}
+		Die Soundsignale werden bereits digital an die Buchse geleitet, so dass ein Digital-Analog-Wandler (auf der Soundkarte bzw. im Soundchip) nicht nötig ist.\\
+		Die Umwandlung geschieht in der optisch oder koaxial angeschlossenen Hi-Fi- bzw. Surround-Anlage.
+		\subsection*{Monitor, analog (VGA - Video Graphics Array)}
+		Beim anschluss eines TFT-Display über den VGA-Anschluss werden die übetragenen Bildsignale digital/analog bzw. analog/digital umgewandelt, so dass erhebliche Einbußen bei der Bildqualität auftreten.\\
+		\footnotesize{Aufgrund der Digitalisierung wird diese Schnittstelle in naher Zukunft keine Relevanz mehr haben.}\normalsize
+		\subsection*{Monitor, digital (DVI - Digital Visual Interface)}
+		Moderne Bildschirme benötigen digitale Signale, welche durch diese und die nachfolgenden Schnittstellen bereitgestellt werden.\\
+		Die Datenübertragung erfolgt verlustfrei und ermöglicht zudem eine bessere Bildqualität als der analoge Anschluss.\\
+		Auflösungen bis zu 2560 x 2048 Pixel sind mit entsprechenden Kabeln möglich.\\
+		\footnotesize{DVI wird immer mehr durch HDMI, DisplayPort oder Thunderbolt ersetzt.}\normalsize
+		\subsection*{Monitor, digital (HDMI - High Defintion Multimedia Interface)}
+		Wird als Nachfolger von DVI gehandelt, da er zusätzlich noch über Audioübertragung und einen Kopierschutz (HDCP) verfügt. Hierdurch können HD-Inhalte auf Bildschirmen mit einer Auflösung von bis zu 4096 x 2160 Pixeln ermöglicht.
+		\subsection*{Monitor, digital (Displayport)}
+		Ermöglicht eine Bildschirmauflösung von bis zu 3840 x 2160 Pixeln und kann auch 3D-Inhalte verarbeiten.
+		\subsection*{FireWire}
+		Gilt als serielle Hochgeschwindigkeitsschnittstelle, welche vor allem im Video- und Audiobereich eingesetzt wird. Es existieren aber auch externe Festplatten mit einem FireWire-Anschluss.\\
+		Ähnlich zu USB können FireWire-Geräte an den laufenden Computer angeschlossen und direkt verwendet werden.\\
+		Trotz der hohen Übertragungsgeschwindigkeiten von 800, 1600 und 3200 MBit/s konnte sich diese Schnittstelle nicht durchsetzen.\\
+		\footnotesize{USB-Anschlüsse werden als kostengünstigere Alternative verwendet und konnten sich auf die Dauer durchsetzen.}
+		\subsection*{eSATA}
+		Die standardmäßigen an die interne SATA angeschlossenen Festplatten bzw. BD/DVD/CD-R/W-Laufwerke werden über eSATA an das PC-Gehäuse geführt.\\
+		Hauptsächlich wird dieser Anschluss für externe Festplatten verwendet. 
+		\subsection*{Weitere optionale externe Schnittstellen an der Vorderseite des Gehäuses}
+		Häufig finden sich an modernen Computern an der Vorder- oder Oberseite des Computers verschiedene zusätzliche externe Anschlüsse. Hier stehen häufig neben weiteren Audio- und USB-Anschlüssen noch Speicherkartenleser zur Verfügung.\\
+		\par\noindent
+		\includegraphics[width=0.48\textwidth]{../99_Bilder/SD.jpg}
+	\end{worksheet}
+\end{document}

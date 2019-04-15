@@ -1,0 +1,123 @@
+\documentclass[oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{article}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\pagestyle{plain}
+
+\geometry{left=1.50cm,right=1.50cm,top=2.50cm,bottom=1.00cm,includeheadfoot}
+
+\begin{document}
+	\begin{worksheet}{BS EGSIE 18}{1. Lehrjahr, LF 4 - Informationstechnische Systeme bereitstellen}{Verarbeitungsgeräte - Intern}
+		\onehalfspacing
+		\clearpage
+		\setcounter{page}{3}
+		\setcounter{section}{1}
+		\setcounter{subsection}{1}
+		\subsection{Datenverarbeitung im PC}
+		\subsubsection*{Interne Komponenten}
+		\begin{framed}
+			\renewcommand{\arraystretch}{1.25}
+			\begin{tabularx}{\textwidth}{cMcM}
+				Netzteil & Massenspeicher & Arbeitsspeicher & CPU (Central Processing Unit)\\
+				Chipsatz & Motherboard & Cores & CPU\\
+				Controller & Mainboard & Bussysteme
+			\end{tabularx}
+		\end{framed}
+		Ein Computer besitzt als Verarbeitungsgeräte verschiedene Komponenten. Diese übernehmen dabei folgende Aufgaben:
+		\begin{itemize}
+			\item mindestens eine \underline{\color{white}{CPU (Central Processing Unit)CPU (Central Processing Unit)}} zur eigentlichen Datenverarbeitung.\\
+			Diese besteht häufig aus verschiedenen \underline{\color{white}{CPUCPUCPU}}-Kernen, auch als \underline{\color{white}{CoresCoresCores}} bezeichnet. Diese Cores können getrennte Rechenaufgaben durchführen.
+			\item \underline{\color{white}{ArbeitsspeicherArbeitsspeicherArbeitsspeicher}} zur vorübergehenden Ablage von Informationen
+			\item sowie verschiedene Schnittstellen und Peripheriegeräte, die den Informationsaustausch mit der Umgebung übernehmen
+			\begin{itemize}
+				\item \underline{\color{white}{ChipsatzChipsatzChipsatz}} und \underline{\color{white}{ControllerControllerController}}
+				\item \underline{\color{white}{BussystemeBussystemeBussysteme}}
+				\item \underline{\color{white}{MassenspeicherMassenspeicherMassenspeicher}} zur dauerhaften Ablage von Informationen und Programmen
+			\end{itemize}
+		\end{itemize}
+		Abgesehen vom Massenspeicher werden die übrigen Komponenten üblicherweise zusammen auf einer gemeinsamen Leiterplatte verbaut. Diese Leiterplatte bezeichnet man als \underline{\color{white}{MainboardMainboardMainboard}} oder auch \underline{\color{white}{MotherboardMotherboardMotherboard}}. Die Energieversorgung der verbauten Komponenten übernimmt das sogenannte \underline{\color{white}{NetzteilNetzteilNetzteil}}.\\
+		\par\noindent
+		Ein weit verbreitetes Konzept für den Aufbau dieser Verarbeitungsgeräte ist die \textbf{Von-Neumann-Architektur}. Sie bündelt im wesentlichen vier Funktionseinheiten:\\
+		\par\noindent
+		\includegraphics[width=\textwidth]{../99_Bilder/VNA.jpg}\\
+		\par\noindent
+		Das \textbf{Bussystem} dient als Kommunikationsbrücke der Komponenten mit der Außenwelt.
+		\subsubsection*{Die Bestandteile des Mainboard}
+		Auf dieser Leiterplatte werden die meisten Kernkomponenten des Verarbeitungsgeräts zusammengefasst.\\
+		\par\noindent
+		\begin{minipage}{0.35\textwidth}
+			\begin{enumerate}
+				\item Prozessor mit Kühlkörper und Lüfter
+				\item Steckplätze für den Arbeitsspeicher
+				\item 24-poliger Anschluss für die Stromversorgung
+				\item achtpoliger EPS12V-Anschluss für zusätzliche Stromversorgung
+				\item ATX-Anschlussfeld mit externen Anschlüssen
+				\item Heatpipe-Kühlung für Chipsatz und Spannungsregler
+				
+			\end{enumerate}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.6\textwidth}
+			\includegraphics[width=0.95\textwidth]{../99_Bilder/MB.jpg}
+		\end{minipage}
+		\vfill
+		\begin{enumerate}
+			\setcounter{enumi}{6}
+			\item Kühlkörper über den Spannungsreglern
+			\item SATA-Anschlüsse für interne Laufwerke
+			\item Chipsatz
+			\item BIOS-Chip
+			\item Anschlüsse für externe USB
+			\item Anschlüsse für FireWire
+			\item Steckplatz für PCI-Express (PCIe) x4
+			\item Grafikkarten-Steckplatz PEG (PCIe x16)
+			\item PCI-Steckplätze (32 Bit, 66MHz)
+			\item Steckplätze PCI Express (PCIe) x16
+			\item IDE/PATA-Anschluss
+		\end{enumerate}
+		\subsubsection*{Pin-Sockel für den Prozessor}
+		Um die Prozessoren auf dem Mainboard zu befestigen, stehen diverse Sockel-Arten zur Verfügung.\\
+		Der ZIF-Sockel (Zero Insertion Force) ermöglicht das Einsetzen des Prozessors ohne zusätzlichen Krafteinwirkung.\\
+		\footnotesize{Zu beachten ist, dass sowohl Intel wie auch AMD verschiedene Sockel mit einer unterschiedlichen Anzahl und Anordnung von Pins entwickelt.}\normalsize\\
+		Die derzeit verbreiteten Sockel ermöglichen die Nutzung unterschiedlicher Prozessoren mit verschiedenen Taktfrequenzen. Diese Taktfrequenz berechnet sich aus dem internen Multiplikator und der Taktfrequenz des Chipsatzes (auch Front Size Bus (FSB) genannt).\\
+		Bei aktuellen Prozessoren sind die Speichercontroller per Hyper-Transport-Verbindung an die Northbridge angebunden und somit auf dem Prozessor integriert. In solchen Fällen lässt sich die Taktfrequenz aus dem Referenztakt von 200 MHz multipliziert mit dem entsprechenden CPU-Multiplikator.
+		\par\noindent
+		Aufgrund verschiedener Protokolle der Datenübertragung zwischen Prozessor und Hauptspeicher kann der Zugriff beschleunigt werden.
+		\subsection*{Mainboard-Formfaktor}
+		Bei den einzelnen Mainboards gibt es Unterschiede bei den Abmessungen, auch \textbf{Formfaktor} genannt.\\
+		Aus dem Formfaktor lässt sich zusätzlich zur Abmessung auch die Art und Lage der Bauteile und der Schnittstelle bestimmen.\\
+		\par\noindent
+		\begin{tabularx}{\textwidth}{|X|X|X|}
+			\hline
+			\rowcolor{gray!15} \textit{Formfaktor} & \textit{Abmessung (Breite x Länge)} & \textit{Beschreibung}\\
+			\hline
+			\hline
+			\textit{Extended ATX (EATX)} & 305 mm x 330 mm & 2 Prozessorsockel, Server-Board für Racks\\
+			\hline
+			\textit{ATX} & 305 mm x 244 mm & sehr weit verbreitet\\
+			\hline
+			\textit{microATX ( $\mu$ATX)} & 244 mm x 244 mm &  ebenfalls sehr gebräuchlich\\
+			\hline
+			\textit{Flex-ATX} & 229 mm x 191 mm & Thin-Clients und HTPCs (Intel Atom, Via Nano)\\
+			\hline
+		\end{tabularx}
+		\begin{tabularx}{\textwidth}{|X|X|X|}
+			\hline
+			\rowcolor{gray!15} \textit{Formfaktor} & \textit{Abmessung (Breite x Länge)} & \textit{Beschreibung}\\
+			\hline
+			\hline
+			\textit{Mini-ITX} & 170 mm x 170 mm & Thin-Clients und HTPCs\\
+			\hline
+			\textit{Nano-ITX} & 120 mm x 120 mm & Thin-Clients und HTPCs\\
+			\hline
+			\textit{BTX} & 325 mm x 267 mm & konnte sich als ATX-Nachfolger nicht durchsetzen\\
+			\hline
+			\textit{microBTS ($\mu$BT)} & 264 mm x 267 mm & ebenfalls selten zu finden\\
+			\hline
+		\end{tabularx}\\
+		\par\noindent
+		Durch den Formfaktor wird außerdem der Gehäusetyp und das verwendbare Netzteil bestimmt.\\
+		Grundsätzlich passen ATX- bzw. microATX-Mainboards \underline{nicht} in BTX- oder ITX-Gehäuse.
+	\end{worksheet}
+\end{document}

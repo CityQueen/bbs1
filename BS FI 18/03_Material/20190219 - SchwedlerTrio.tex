@@ -1,0 +1,43 @@
+\documentclass[oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{scrreprt}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\geometry{left=1.50cm,right=1.50cm,top=1.00cm,bottom=1.00cm,includeheadfoot}
+
+\begin{document}
+	\begin{landscape}
+		\thispagestyle{empty}
+		% Zeitungsartikel
+		\setlength{\leftskip}{-0.32cm}
+		\begin{minipage}{0.35\textwidth}
+			\renewcommand{\arraystretch}{1.5}
+			\begin{tabularx}{\textwidth}{|X|}
+				\hline
+				\textbf{SCHWEDLER TRIO}\\
+				\textit{Ferdinand-Happ-Straße, Frankfurt am Main}\\
+				\textit{Geschosse}: 16\\
+				\textit{Höhe}: ca. 50 Meter\\
+				\textit{Nutzung}: Wohnen\\
+				\textit{Fertigstellung}: ca. 2021\\
+				\hline
+			\end{tabularx}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.8\textwidth}
+			\includegraphics[width=0.95\textwidth]{../99_Bilder/190219_Hochhaus.jpg}
+		\end{minipage}\\
+		\par\bigskip\noindent
+		\textit{Im Frankfurter Osten entsteht [...] ein \textbf{Hochhaus mit sechzehn Geschossen}} [Erdgeschoss sowie Stockwerke 1 bis 15].\\
+		\par\noindent
+		\textit{Der Münchner Projektentwickler \textbf{Isaria Wohnbau AG} feiert mit dem Schwedler Trio das Debüt in der Mainmetropole.}\\
+		\par\noindent
+		\textit{Mit dem \textbf{Baubeginn wird ab 2019} gerechnet. Die Fertigstellung dürfte bis zum Jahr 2021 erfolgen.}\footnote{Bild- und Textquelle: \url{https://www.skylineatlas.de/portfolios/schwedler-trio/}}\\
+		\par\noindent
+		\rule{\textwidth}{0.1pt}\\
+		\par\noindent
+		Die \textbf{Isaria Wohnbau AG} fordert:\\
+		\huge
+		\grqq{}\textit{Einer der verfügbaren Fahrstühle soll die Tür nur in der Eingangshalle sowie den Stockwerken \textbf{2, 6, 7, 8, 10, 11} und \textbf{15} öffnen.}\grqq{}
+	\end{landscape}
+\end{document}
