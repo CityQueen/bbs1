@@ -1,0 +1,155 @@
+
+\documentclass[11pt,twocolumn,oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{article}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\setlength{\columnsep}{3em}
+\setlength{\columnseprule}{0.5pt}
+
+\geometry{left=1.50cm,right=1.50cm,top=2.50cm,bottom=1.00cm,includeheadfoot}
+\pagenumbering{gobble}
+\pagestyle{empty}
+
+\begin{document}
+	\begin{worksheet}{Höhere Berufsfachschule IT-Systeme}{Grundstufe - Mathematik}{Lernabschnitt 3: Ganzrationale Funktionen - Faktorform}
+		\setcounter{section}{6}
+		\setcounter{subsection}{1}
+		\noindent
+		\subsection{Prototypen}
+		Eine ganzrationale Funktion kann in unterschiedlicher Form auftreten. Diese Formen bezeichnen wir als Prototypen.
+		\subsubsection{\underline{Polynomform}}
+		Der oben bereits erwähnte Prototyp \[f(x) = a_nx^n + a_{n-1}x^{n-1} + \ldots + a_1x^1 + a_0\] wird Polynom genannt und dementsprechend heißt diese Darstellung \textbf{Polynomform}.
+		\begin{framed}
+			\noindent
+			Bei einer ganzrationalen Funktion in \textbf{Polynomform} können wir die \underline{Nullstellen} nicht direkt ablesen. Um dieses zu berechnen, nutzen wir eine der in \textit{6.4 Nullstellen ganzrationaler Funktionen} beschriebenen Verfahren.
+		\end{framed}
+		\subsubsection{(Linear-)\underline{Faktorform}}
+		Eine weitere Darstellungsform ist die \textbf{Faktorform}.\\
+		Wir betrachten zunächst eine spezielle Form (\textit{Linearfaktorform}) und gehen dann über zur allgemeineren \textit{Faktorform}.\\
+		\par
+		\underline{\textbf{\textit{(Allgemeine) Faktorform}}}\\
+		Ist eine ganzrationale Funktion als \textit{Produkt aus verschiedenen Faktoren} gegeben, spricht man von einer ganzrationalen Funktion in \textbf{Faktorform}. Formal gesprochen bedeutet das also \(f_{FF}(x) = a\cdot{}F_1\cdot\ldots\cdot{}F_k\).\\
+		Die Faktorform ist also 
+		\begin{align*}
+			f_{FF}(x) & = a\cdot{}(x-N_1)\cdot{}(b_{n-1}x^{n-1}+\\
+			&\ldots{}+b_1x+ b_0)\\
+			\text{bis hin zu}\\
+			f_{FF}(x) & = a\cdot{}(x-N_1)(x-N_2)\cdot{}\ldots{}\cdot{}(x-N_3)\cdot\\
+			&(b_{2}x^2 + b_1x + b_0)
+		\end{align*}
+		\par\noindent
+		Dabei sind \(N_1,\ \ldots,\ N_k\) als Nullstellen der ganzrationalen Funktion zu verstehen.\\
+		\par\noindent
+		\underline{\textit{Beispiel:}} Zum besseren Verständnis schauen wir uns folgende Funktion genauer an.\\
+		\begin{align*}
+			f(x) & = -\frac{3}{4}(x-2)(x+3)(x^3 - 4x^2 + 2x -5)\\
+			& = -\frac{3}{4}(x-\ \underline{2})(x-\ (\underline{-3}))(x^3-4x^2+2x-5)
+		\end{align*}
+		ist eine in Faktorform gegebene Funktion.\\
+		Wegen der Darstellung können wir direkt ablesen, dass \colorbox{green!10}{\(x_1 = 2\)} und \colorbox{green!10}{\(x_2 = -3\)} Nullstellen der Funktion sind.\\
+		Um noch weitere Nullstellen zu bestimmen, müssten wir \((x^3-4x^2 + 2x -5 ) = 0\) setzen und diese Gleichung mit den Verfahren aus \textit{6.4 Nullstellen von ganzrationalen Funktionen} bestimmen.
+		\begin{framed}
+			\noindent
+			Bei einer ganzrationalen Funktion in \textbf{Faktorform}, können wir die \underline{Nullstellen} faktorweise bestimmen.
+		\end{framed}
+		\par
+		\underline{\textbf{\textit{Linearfaktorform}}}\\
+		Bei quadratischen Funktionen\footnote{Die übrigens auch ganzrationale Funktionen sind.\\ \textit{Mit welcher Argumentation lässt sich dies Begründen?}} haben wir bereits Bekanntschaft mit der Spezialform  \textbf{Linearfaktorform} gemacht. Dieser Prototyp ist eine Spezialform der \textbf{Faktorform}, da alle beteiligten Faktoren linear sind.\\
+		\par\noindent
+		Im allgemeinen haben ganzrationale Funktionen vom \textit{Grad n} in Linearfaktorform folgende Form: \begin{align*}
+			f_{LFF}(x) = a_n(x-N_1)(x-N_2)\cdot\ldots\\
+			\ldots\cdot(x-N_{n-1})(x-N_n)
+		\end{align*}
+		Dabei geben \(N_1,\ \ldots,\ N_n\) Auskunft über die Nullstellen der ganzrationalen Funktion.\\
+		\par\noindent
+		\underline{\textit{Beispiel:}} Um besser zu verstehen, was das bedeutet, betrachten wir \(f(x) = 5(x-3)(x+\frac{2}{5})(x-7,5)\).\\
+		\par\noindent
+		Wir schreiben die Funktion zunächst so auf, wie oben aufgeführt. \[f_{LFF}(x) = 5(x-\underbrace{3}_{N_1})(x-\underbrace{(-\frac{2}{5})}_{N_2})(x-\underbrace{7,5}_{N_3})\]
+		Wir erkennen direkt \colorbox{green!10}{\(x_1 = 3\)}, \colorbox{green!10}{\(x_2 = -\frac{2}{5}\)} und \colorbox{green!10}{\(x_3 = 7,5\)} sind Nullstellen der ganzrationalen Funktion.
+		\begin{framed}
+			\noindent
+			Ist die ganzrationale Funktion in \textbf{Linearfaktorform} gegeben, können wir die \underline{Nullstellen} direkt ablesen.
+		\end{framed}
+		\subsubsection{Wichtige Elemente der Faktorform}
+		Wir wissen, dass wir bei gegebener Polynomform die relevanten Informationen direkt an den Summanden ablesen können.\\
+		In der Faktorform hingegen, müssen wir für manche der Begrifflichkeiten, die wir in Abschnitt \textit{6.1 Begrifflichkeiten} kennengelernt haben, um die Ecke denken.\\
+		\par\noindent
+		\underline{\textbf{Charakteristischer Summand}}\\
+		Wir erinnern uns, dass wir den Summanden mit dem größten Exponenten als \textbf{charakteristischen Summanden} \(\mathbf{a_nx^n}\)bezeichnet haben.\\
+		\textit{Wie können wir diesen aber \underline{ohne ausmultiplizieren} der gesamten Funktion bestimmen?}\\
+		\par\noindent
+		Um diese Frage zu beantworten, betrachten wir den charakteristischen Summanden in seinen Einzelteilen - also zunächst den \textit{Grad n} und anschließend den \textit{Leitkoeffizient \(a_n\)}.\\
+		\par\noindent
+		\underline{\textbf{Grad n}}\\
+		Um den Grad \(n\) zu bestimmen, zählen wir die in der Faktorform vorkommenden \(x\). Dabei müssen wir möglicherweise Exponenten an Klammern beachten. Diese geben nämlich an, dass die verwendete Nullstelle mehrfach auftritt.\\
+		\par\noindent
+		\textit{\underline{Beispiel:}} Zur Verdeutlichung schauen wir uns das folgende Beispiel an: \(f(x) = 2(x-2)(x+1)^2(x-4)\)
+		\begin{align*}
+			f(x) & = 2(\underline{x}-2)(\underline{x}+1)^{\underline{2}}(\underline{x}-4)	
+		\end{align*}
+		In der ersten sowie in der dritten Klammer ist jeweils ein \(x\) vorhanden. Die Klammern haben als Exponenten \(1\), somit zählen wir sie nur einmal.\\
+		Die mittlere Klammer beinhaltet zwar nur ein \(x\), hat aber den Exponenten \(2\), was bedeutet, dass unser \(x\) zweimal gezählt werden muss.\\
+		\par\noindent
+		\(\Rightarrow\ x\ \text{kommt\ } 4\text{-mal\ vor,\ also\ ist\ der\ Grad}\) \colorbox{green!10}{\(n = 4\)}.\\
+		\rule{0.48\textwidth}{0.1pt}\\
+		Ein weiteres Beispiel: \(f(x) = 2(x^2-2)(x+1)(x-4)^3\)\\
+		\begin{align*}
+			f(x) & = 2(\underline{x}^{\underline{2}}-2)(\underline{x}+1)(\underline{x}-4)^{\underline{3}}	
+		\end{align*}
+		In der ersten Klammer ist das \(x\) durch den Exponenten \(2\) zweimal vorhanden.\\
+		Die zweite Klammer beinhaltet nur ein \(x\). Dieses zählen wir also einmal.\\
+		Die dritte Klammer enthält ein \(x\), dieses wird aber aufgrund des Exponenten \(3\) dreimal gezählt.
+		\par\noindent
+		\(\Rightarrow\ x\ \text{kommt\ } 6\text{-mal\ vor,\ also\ ist\ der\ Grad}\) \colorbox{green!10}{\(n = 6\)}.\\
+		\par\noindent
+		\underline{\textbf{Leitkoeffizient \(a_n\)}}\\
+		Wie auch der Grad \(n\) gehört der Leitkoeffizient \(\mathbf{a_n}\) zum charakteristischen Summanden.\\
+		Um \(a_n\) bei der ganzrationalen Funktion in Faktorform zu bestimmen, müssen wir lediglich faktorweise die Koeffizienten vor dem \(x\) mit dem höchsten Exponenten miteinander multiplizieren.\\
+		In manchen Fällen kann es passieren, dass vor der ersten Klammer noch ein Koeffizient steht. Ist dies der Fall, müssen wir auch diesen mit den restlichen multiplizieren.\\
+		\par\noindent
+		\textit{\underline{Beispiel:}} Auch hier schauen wir uns zum besseren Verständnis ein Beispiel an: \(f(x) = -\frac{2}{3}(x-3)(2x^2+8x+16)\).
+		\begin{align*}
+			f(x) & = \underline{-\frac{2}{3}}(\underline{1}\cdot{}x-3)(\underline{2}x^2 + 8x +16)
+		\end{align*}
+		Für den Leitkoeffizient gilt: \(a_n = -\frac{2}{3}\cdot1\cdot{}2 =\) \colorbox{green!10}{\(-\frac{4}{3}\)}.\\
+		\par\noindent
+		\textbf{\underline{Absolutglied}}\\
+		Auch bei ganzrationalen Funktionen in Faktorform kann es hilfreich sein, zu wissen, welchen Wert unser \textbf{Absolutglied \(\mathbf{a_0}\)} und somit unser \textit{y-Achsenabschnitt} hat.\\
+		Aus der Polynomform ist erkennbar, dass das Absolutglied kein \(x\) hat. Wir können also in der Faktorform einfach die Werte ohne \(x\), unter Berücksichtigung der Klammerexponenten, miteinander multiplizieren und erhalten so das Absolutglied.\\
+		\par\noindent
+		\textit{\underline{Beispiel:}} Zunächst schauen wir uns \(f(x) = -2(x+3)(x-4)^2(x-3)\).
+		\begin{align*}
+			f(x) & = \underline{-2}(x+\underline{3})(x\ \underline{-4})^{\underline{2}}(x\ \underline{-3})\\
+			\\
+			\Rightarrow\ a_0 & = (-2)\cdot{}3\cdot{}(-4)^2\cdot{}(-3) = 288
+		\end{align*}
+		\begin{framed}
+			\color{red}Vorsicht!\\
+			\normalcolor
+			Ist ein \(x\) ausgeklammert (z.B. \(3x(x+2)\cdot\ldots\)), so ist das Absolutglied \(a_0 = 0\).
+		\end{framed}
+		\subsubsection{Darstellungswechsel\\Von der Polynomform zur Faktorform}
+		Haben wir eine ganzrationale Funktion in \textbf{Polynomform} \[f(x) = a_nx^n + a_{n-1}x^{n-1} + \ldots a_1x^1 + a_0\] gegeben und wollen diese \textbf{in die Faktorform} überführen, klammern wir zunächst den \textbf{größten gemeinsamen Teiler}\footnote{\textit{Dies kann ausschließlich der \underline{Leitkoeffizient \(a_n\)}, also der Koeffizient des \underline{charakteristischen Summanden}, sein, aber auch ein gesamter Term \(bx^c\)}} aller Summanden aus und \textbf{bestimmen} im Anschluss die \textbf{Nullstellen} des Klammerausdrucks.\\
+		Im Anschluss setzen wir die berechneten Nullstellen in das \underline{Gerüst der Faktorform} ein.\\
+		\par\noindent
+		\underline{\textit{Beispiel:}} Wir betrachten die einzelnen Terme der Funktion \(f(x) = 3x^3 + 6x^2 -12x\) genauer.\\
+		\textit{Welche Zahl kommt in allen Summanden vor?}
+		\[f(x) = 3x^3 + \underbrace{6}_{2\cdot{}3}x^2 - \underbrace{12}_{4\cdot{}3}x\]
+		Die Zahl \(3\) findet sich in jedem Summanden. Wir können diese also ausklammern. \textit{\textbf{\textit{Haben die Summanden noch etwas weiteres gemeinsam? (z.B. \(x\))}}}
+		\[\Rightarrow f(x) = 3\cdot{}(\underbrace{x^3}_{x\cdot{}x^2} +2\underbrace{x^2}_{x\cdot{}x} -4\underbrace{x}_{x\cdot{}1})\]
+		\[\Rightarrow f(x) = 3x(x^2 +2x -4)\]
+		Diese Darstellung entspricht bereits der Faktorform. Bevor wir aber hier aufhören, prüfen wir noch, ob sich der 2. Faktor \(\underbrace{(x^2+2x-4)}_{pq-Formel}\) noch umschreiben lässt zu \((x-N_1)(x-N_2)\).\\
+		\begin{align*}
+			x_{1/2} & = -\frac{2}{2} \pm \sqrt{\left(\frac{2}{2}\right)^2 - (-4)}\\
+			& = -1 \pm \sqrt{(1)^2 + 4}\\
+			\\
+			x_1 & = -1 + \sqrt{5} & x_2 & = -1 - \sqrt{5}\\
+			& = 1,24 & & = -3,24
+		\end{align*}
+		Also wäre die Darstellung der ganzrationalen Funktion in Linearfaktorform wie folgt:
+		\begin{center}
+			\colorbox{green!10}{\(f_{LFF}(x) = 3x(x-1,24)(x+3,24)\)}
+		\end{center}
+	\end{worksheet}
+\end{document}

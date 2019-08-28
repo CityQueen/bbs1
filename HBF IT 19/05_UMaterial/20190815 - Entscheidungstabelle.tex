@@ -1,0 +1,42 @@
+\documentclass[oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{scrreprt}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\geometry{left=1.50cm,right=1.50cm,top=2.50cm,bottom=0.50cm,includeheadfoot}
+\pagestyle{empty}
+
+\begin{document}
+		\begin{worksheet}{BBS I, Höhere Berufsfachschule IT-Systeme}{Grundstufe - Lernbereich 3 - Strukturiert Programmieren}{Abschnitt 1: Darstellungsformen von Programmen}
+			\begin{framed}
+				\noindent
+				\footnotesize{Das Beispiel wurde dem Buch: \textit{Lehrbuch der Software-Technik - Softwareentwicklung} von Helmut Balzer entnommen.}\\
+				 \par\noindent\normalsize
+				 Ein Sachbearbeiter in einer Bank soll bei der Einlösung von Schecks folgende Regeln beachten:\\
+				\begin{tabularx}{\textwidth}{lX}
+					/1/ & Wenn die vereinbarte Kreditgrenze des Ausstellers eines Schecks überschritten wird, das bisherige Zahlungsverhalten aber einwandfrei war und der Überschreitungsbetrag kleiner als 300\euro{} ist, dann soll der Scheck eingelöst werden.\\
+				 	/2/ & Wenn die Kreditgrenze überschritten wird, das bisherige Zahlungsverhalten einwandfrei war, aber der Überschreitungsbetrag über 300\euro{} liegt, dann soll der Scheck eingelöst und dem Kunden sollen neue Konditionen vorgelegt werden.\\
+				 	/3/ & War das Zahlungsverhalten nicht einwandfrei, wird der Scheck nicht eingelöst.\\
+				 	/4/ & Der Scheck wird eingelöst, wenn der Kreditbeitrag nicht überschritten ist.
+				\end{tabularx}
+			 	\rule{0.95\textwidth}{0.1pt}
+			 	\begin{enumerate}
+			 		\item Ermitteln Sie alle Bedingungen, die Sie aus der Problemstellung ablesen können.
+			 		\item Bestimmen Sie die durchzuführenden Aktionen, welche im Text angegeben sind.
+			 		\item Erstellen Sie eine Tabelle der folgenden Form:
+			 		\\
+			 		\begin{tabularx}{\textwidth}{|L{4cm}|L{4cm}|}
+			 			\cline{1-2}
+			 			\rowcolor{gray!10} Name der Entscheidungstabelle & Regelnummern\\
+			 			\cline{1-2}
+			 			Bedingungen & Bedingungsanzeiger\\
+			 			\cline{1-2}
+			 			Aktion & Aktionsanzeiger\\
+			 			\cline{1-2}
+			 		\end{tabularx}
+			 		\item Befüllen Sie die Bedingungsanzeiger auf sinnvolle Weise.
+			 		\item Setzen Sie die Aktionsanzeiger für die verschiedenen Kombinationen der Bedingungsanzeiger.
+			 	\end{enumerate}
+			\end{framed}
+		\end{worksheet}
+\end{document}

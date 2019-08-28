@@ -1,0 +1,92 @@
+\documentclass[oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{scrreprt}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\geometry{left=1.5cm,right=1.50cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+
+\begin{document}
+	\begin{worksheet}{BGY 17}{Klassenstufe 12 - Informationsverarbeitung}{Lernabschnitt 3: Datensicherheit - Verschlüsselung}
+		\noindent
+		\sffamily
+		\begin{landscape}
+			\begin{tabularx}{1.12\textheight}{c|c||c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+				\cline{2-28}
+				& & \multicolumn{26}{|c|}{Klartext}\\
+				\cline{2-28}
+				& & A & B & C & D & E & F & G & H & I & J & K & L & M & N & O & P & Q & R & S & T & U & V & W & X & Y & Z\\
+				\hline
+				\hline
+				\rowcolor{gray!15}  &  A & A & B & C & D & E & F & G & H & I & J & K & L & M & N & O & P & Q & R & S & T & U & V & W & X & Y & Z\\
+				\cline{2-28}
+				& B & B & C & D & E & F & G & H & I & J & K & L & M & N & O & P & Q & R & S & T & U & V & W & X & Y & Z & A\\
+				\cline{2-28}
+				\rowcolor{gray!15}  &  C & C & D & E & F & G & H & I & J & K & L & M & N & O & P & Q & R & S & T & U & V & W & X & Y & Z & A & B\\
+				\cline{2-28}
+				& D & D & E & F & G & H & I & J & K & L & M & N & O & P & Q & R & S & T & U & V & W & X & Y & Z & A & B & C\\
+				\cline{2-28}
+				\rowcolor{gray!15}  & E & E & F & G & H & I & J & K & L & M & N & O & P & Q & R & S & T & U & V & W & X & Y & Z & A & B & C & D\\
+				\cline{2-28}
+				& F & F & G & H & I & J & K & L & M & N & O & P & Q & R & S & T & U & V & W & X & Y & Z & A & B & C & D & E\\
+				\cline{2-28}
+				\rowcolor{gray!15}  & G & G & H & I & J & K & L & M & N & O & P & Q & R & S & T & U & V & W & X & Y & Z & A & B & C & D & E & F\\
+				\cline{2-28}
+				& H & H & I & J & K & L & M & N & O & P & Q & R & S & T & U & V & W & X & Y & Z & A & B & C & D & E & F & G\\
+				\cline{2-28}
+				\rowcolor{gray!15}  & I & I & J & K & L & M & N & O & P & Q & R & S & T & U & V & W & X & Y & Z & A & B & C & D & E & F & G & H\\
+				\cline{2-28}
+				& J & J & K & L & M & N & O & P & Q & R & S & T & U & V & W & X & Y & Z & A & B & C & D & E & F & G & H & I\\
+				\cline{2-28}
+				\rowcolor{gray!15}  & K & K & L & M & N & O & P & Q & R & S & T & U & V & W & X & Y & Z & A & B & C & D & E & F & G & H & I & J\\
+				\cline{2-28}
+				& L & L & M & N & O & P & Q & R & S & T & U & V & W & X & Y & Z & A & B & C & D & E & F & G & H & I & J & K\\
+				\cline{2-28}
+				\rowcolor{gray!15}  & M & M & N & O & P & Q & R & S & T & U & V & W & X & Y & Z & A & B & C & D & E & F & G & H & I & J & K & L\\
+				\cline{2-28}
+				& N & N & O & P & Q & R & S & T & U & V & W & X & Y & Z & A & B & C & D & E & F & G & H & I & J & K & L & M\\
+				\cline{2-28}
+				\rowcolor{gray!15}  & O & O & P & Q & R & S & T & U & V & W & X & Y & Z & A & B & C & D & E & F & G & H & I & J & K & L & M & N\\
+				\cline{2-28}
+				& P & P & Q & R & S & T & U & V & W & X & Y & Z & A & B & C & D & E & F & G & H & I & J & K & L & M & N & O\\
+				\cline{2-28}
+				\rowcolor{gray!15}  & Q & Q & R & S & T & U & V & W & X & Y & Z & A & B & C & D & E & F & G & H & I & J & K & L & M & N & O & P\\
+				\cline{2-28}
+				& R & R & S & T & U & V & W & X & Y & Z & A & B & C & D & E & F & G & H & I & J & K & L & M & N & O & P & Q\\
+				\cline{2-28}
+				\rowcolor{gray!15}  & S & S & T & U & V & W & X & Y & Z & A & B & C & D & E & F & G & H & I & J & K & L & M & N & O & P & Q & R\\
+				\cline{2-28}
+				& T & T & U & V & W & X & Y & Z & A & B & C & D & E & F & G & H & I & J & K & L & M & N & O & P & Q & R & S\\
+				\cline{2-28}
+				\rowcolor{gray!15}  & U & U & V & W & X & Y & Z & A & B & C & D & E & F & G & H & I & J & K & L & M & N & O & P & Q & R & S & T\\
+				\cline{2-28}
+				& V & V & W & X & Y & Z & A & B & C & D & E & F & G & H & I & J & K & L & M & N & O & P & Q & R & S & T & U\\
+				\cline{2-28}
+				\rowcolor{gray!15}  & W & W & X & Y & Z & A & B & C & D & E & F & G & H & I & J & K & L & M & N & O & P & Q & R & S & T & U & V\\
+				\cline{2-28}
+				& X & X & Y & Z & A & B & C & D & E & F & G & H & I & J & K & L & M & N & O & P & Q & R & S & T & U & V & W\\
+				\cline{2-28}
+				\rowcolor{gray!15}  & Y & Y & Z & A & B & C & D & E & F & G & H & I & J & K & L & M & N & O & P & Q & R & S & T & U & V & W & X\\
+				\cline{2-28}
+				\multirow{-26}{*}{\RotText{Schlüssel}} & Z & Z & A & B & C & D & E & F & G & H & I & J & K & L & M & N & O & P & Q & R & S & T & U & V & W & X & Y\\
+				\cline{2-28}
+				\multicolumn{2}{c||}{} & \multicolumn{26}{|c|}{Geheimtext}
+			\end{tabularx}
+		\end{landscape}
+	\end{worksheet}
+	\Huge
+	Oylzd mbkau aähvj fegRo ujVfz tls.\\
+	\vfill
+	Oylzd mbkau aähvj fegRo ujVfz tls.\\
+	\vfill
+	Oylzd mbkau aähvj fegRo ujVfz tls.\\
+	\vfill
+	Oylzd mbkau aähvj fegRo ujVfz tls.\\
+	\vfill
+	Oylzd mbkau aähvj fegRo ujVfz tls.\\
+	\vfill
+	Oylzd mbkau aähvj fegRo ujVfz tls.\\
+	\vfill
+	Oylzd mbkau aähvj fegRo ujVfz tls.\\
+	\vfill
+	Oylzd mbkau aähvj fegRo ujVfz tls.\\
+\end{document}

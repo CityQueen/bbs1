@@ -1,0 +1,61 @@
+\documentclass[11pt,twocolumn,oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{article}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\setlength{\columnsep}{3em}
+\setlength{\columnseprule}{0.5pt}
+
+\geometry{left=1.50cm,right=1.50cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+\pagenumbering{gobble}
+\pagestyle{empty}
+
+\begin{document}
+	\begin{worksheet}{Höhere Berufsfachschule IT-Systeme}{Grundstufe - Mathematik}{Lernabschnitt 2: Schnittpunkte bestimmen}
+		\setcounter{section}{4}
+		\section{Schnittpunkte}
+		Betrachtet man den Verlauf von mehreren Funktionsgraphen in einem Koordinatensystem\\
+		\par\noindent
+		\includegraphics[width=0.48\textwidth]{../99_Bilder/024_NST.png}\\
+		können wir Schnittpunkte markieren. In obigem Bild sind die Koordinaten einfach abzulesen. Manchmal ist dies aber nicht so einfach möglich und manchmal haben wir keinen Graphen, sondern lediglich die Funktionsgleichung.\\
+		Wir kommen also manchmal um eine genaue Bestimmung/Berechnung der Schnittstellen bzw. Schnittpunkte nicht drum herum.\\
+		\par\noindent
+		\textbf{Und wie?}\\
+		Zunächst müssen wir die Schnittstelle zweier Funktionen bestimmen.\\
+		Wie schon bei \textit{Schnittstellen von linearen Funktionen}
+		\begin{itemize}
+			\item setzen wir die zwei Funktionen gleich
+			\item bringen alle Terme auf eine Seite
+			\item bestimmen dann \(x\)
+		\end{itemize}
+		Alle Terme auf einer Seite heißt, dass wir im Prinzip \(0 = \text{Terme}\) lösen.\\
+		\par\noindent
+		Das Problem der Schnittstellenbestimmung reduziert sich also auf das Finden von Nullstellen.\\
+		\par\noindent
+		Haben wir die Schnittstelle \(x_{ST}\), so bestimmen wir den Funktionswert von \(x_{ST}\). Dies liefert und die y-Koordinate und wir können den Schnittpunkt (\(SP(x_{ST}|f(x_{ST}))\)) angeben.
+		\par\noindent
+		\underline{\textbf{Beispiel:}}\\
+		Wir haben die Funktionen \(f(x) = x^2 - 4\) und \(g(x) = x+2\).\\
+		\begin{align*}
+			f(x) & = g(x)\\
+			x^2 - 4 & = x + 2 & | -2\\
+			x^2 - 6 & = x & | -x\\
+			x^2 -x -6 = 0
+		\end{align*}
+		Wir sehen, dass es sich um keine binomische Formel handelt, also benötigen wir die \underline{pq-Formel}.
+		\begin{align*}
+			p & = -1; & q = - 6\\
+			x_{1/2} & = -\frac{-1}{2} \pm \sqrt{\left(\frac{-1}{2}\right)^2 - (-6)}\\
+			x_{1/2} & = \frac{1}{2} \pm \sqrt{\left(\frac{1}{4}\right) + 6}\\
+			x_1 & = \frac{1}{2} + \sqrt{\left(\frac{1}{4}\right) + 6} & \Rightarrow x_1 = 3\\
+			x_2 & = \frac{1}{2} \pm \sqrt{\left(\frac{1}{4}\right) + 6} & \Rightarrow x_2 = -2
+		\end{align*}
+		Unsere Schnittstellen sind also \colorbox{green!10}{\(x_1 = 3\)} und \colorbox{green!10}{\(x_2 = -2\)}. Wir bestimmen den zugehörige Funktionswert.\\
+		\begin{align*}
+			f(x_1) & = f(3)  & = 3^2 - 4  & = 5\\
+			& \Rightarrow & SP_1(3|5) & \\
+			f(x_2) & = f(-2) & = (-2)^2 - 4 & = 0\\
+			& \Rightarrow & SP_2(-2|0) &
+		\end{align*}
+	\end{worksheet}
+\end{document}

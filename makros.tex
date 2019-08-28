@@ -7,6 +7,7 @@
 \newcommand{\explainAbove}[3]{\overbrace{#1}^{\parbox{\widthof{#3}}{\footnotesize\raggedright #2}}}
 \makeatletter% Siehe De-TeX-FAQ
 \newcommand\footnoteref[1]{\protected@xdef\@thefnmark{\ref{#1}}\@footnotemark}
+\newcommand\RotText[1]{\rotatebox{90}{\parbox{3.5cm}{\centering#1}}}
 \makeatother
 
 % Codestyle defined
@@ -36,6 +37,17 @@
 \intervalconfig {
 	soft open fences
 }
+
+% Define block styles
+\tikzstyle{init} = [draw, rectangle,node distance=1cm,
+minimum height=2em,minimum width=2cm,rounded corners]
+\tikzstyle{decision} = [diamond, draw,aspect=2, text badly centered, node distance=0.75cm, inner sep=0pt]
+\tikzstyle{process} = [rectangle, draw, text centered, minimum height=2em, minimum width=2cm]
+\tikzstyle{preprocess} = [draw,rectangle split, rectangle split horizontal,rectangle split parts=3,minimum height=2em]
+\tikzstyle{inode} = [draw, none,fill=none]
+\tikzstyle{line} = [draw, -latex']
+\tikzstyle{edge} = [draw, -]
+\tikzstyle{inout} = [draw,trapezium,trapezium left angle=70,trapezium right angle=290,minimum width=1cm,minimum height=2em]
 
 %Bash
 \lstdefinestyle{BashInputStyle}{
@@ -123,7 +135,7 @@
 	\ClearShipoutPicture
 	\AddToShipoutPicture{
 		\put(40,761){{
-				\mbox{\sffamily\parbox{385\unitlength}{\scriptsize BBS I Mainz, #1 \newline #2
+				\mbox{\sffamily\parbox{385\unitlength}{\scriptsize BBS I Mainz #1 \newline #2
 						\newline #3
 					}
 				}

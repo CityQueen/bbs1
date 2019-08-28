@@ -1,0 +1,59 @@
+\documentclass[oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{scrreprt}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\geometry{left=1.50cm,right=1.50cm,top=2.50cm,bottom=0.50cm,includeheadfoot}
+\pagestyle{empty}
+
+\begin{document}
+		\begin{worksheet}{BBS I, Höhere Berufsfachschule IT-Systeme}{Grundstufe - Lernbereich 3 - Strukturiert Programmieren}{Abschnitt 1: Darstellungsformen von Programmen - Algorithmen}
+			\par\noindent
+			\begin{tabularx}{\textwidth}{lX}
+				\textbf{Datum:} & \\
+				\cline{2-2}
+			\end{tabularx}
+			\begin{framed}
+				\noindent
+				\underline{\textbf{Aufgabe 1}}\\
+				\par
+				 Entscheiden Sie, welche der folgenden Prozesse nicht durch einen Algorithmus beschrieben werden kann.\\
+				 Geben Sie eine kurze Begründung an!
+				 \begin{enumerate}
+				 	\item Lösen einer quadratischen Gleichung der Form \(ax^2 + bx+c = 0\)
+				 	\item Auflisten aller Primzahlen
+				 	\item Schreiben eines Briefes
+				 	\item Ordnen von 1000 gebrochenen Zahlen nach ihrer Größe
+				 	\item Ermitteln der Häufigkeit bestimmter Wörter in einem Text
+				 	\item Leiten einer Diskussion
+				 	\item Auflisten aller geraden natürlichen Zahlen
+				 	\item Weben eines Teppichs
+				 	\item Schreiben einer Eins in der nächsten Klausur
+				 	\item Konstruieren eines Kreises durch nicht auf einer Geraden liegende Punkte
+				 	\item Wechseln eines Autoreifens
+				\end{enumerate}
+				\par\bigskip\noindent
+				\rule{\textwidth}{0.1pt}\\
+				\par\bigskip\noindent
+			 	\underline{\textbf{Aufgabe 2}}\\
+			 	\par\noindent
+			 	Für folgendes Problem soll ein Algorithmus aufgestellt werden:\\
+			 	Der Benutzer möchte die Fakultät \(n!\) einer selbst einzugebenden Zahl berechnen.\\
+			 	\footnotesize{\texttt{Hinweis: Die Fakultät von n berechnet sich wie folgt:\\
+			 	\(n! = 1 * 2 * 3 * 4 * \ldots * n\)}}\\
+		 		\normalsize
+		 		\newpage
+		 		\noindent
+		 		\underline{\textbf{Hausaufgabe:}}\\
+		 		\par\noindent
+		 		Ein bekanntes Beispiel für einen Algorithmus ist der \textit{euklidische Algorithmus} zur Ermittlung des größten gemeinsamen Teilers (ggT).
+		 		\begin{itemize}[label=-]
+		 			\item Man teilt die größere durch die kleinere Zahl
+		 			\item Geht die Division auf, ist der Divisor der ggT
+		 			\item Geht die Division nicht auf, bleibt ein Rest. Dieser ist der neue Divisor, der alte wird zum Dividenden.
+		 			\item Das Verfahren setzt man fort, bis man nach endlich vielen Schritten den ggT erhält. Ist der letzte Rest 1, dann sind die Ausgangszahlen teilerfremd.
+		 		\end{itemize}
+	 			Entwerfen Sie einen Algorithmus in umgangssprachlicher Form, der für \textbf{zwei einzugebende Zahlen} den \textbf{ggT} bestimmt.
+			\end{framed}
+		\end{worksheet}
+\end{document}

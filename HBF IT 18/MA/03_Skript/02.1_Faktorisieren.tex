@@ -1,0 +1,201 @@
+\documentclass[11pt,twocolumn,oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{article}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\setlength{\columnsep}{3em}
+\setlength{\columnseprule}{0.5pt}
+
+\geometry{left=1.50cm,right=1.50cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+\pagenumbering{gobble}
+\pagestyle{empty}
+
+\begin{document}
+	\begin{worksheet}{Höhere Berufsfachschule IT-Systeme}{Grundstufe - Mathematik}{Lernabschnitt 2: Faktorisieren}
+		\setcounter{section}{1}
+		\section{Quadratische Funktionen faktorisieren}
+		Haben wir eine quadratische Funktion gegeben, kann es für das weitere Vorgehen hilfreich sein, wenn man diese faktorisiert.\\
+		Wir überführen also
+		\begin{center}
+			\colorbox{red!10}{\(f(x) = ax^2 +bx + c \)}\\
+			zu\\
+			\colorbox{green!10}{\(f(x) = d\cdot(x - x_{N1})(x-x_{N2})\)}
+		\end{center}
+		Um dies zu tun, können wir verschiedene Vorgehen verwenden:
+		\begin{itemize}
+			\item Differenz von Quadraten
+			\item Vollständiges Quadrat
+			\item Gruppieren
+			\item Teilen und Schieben
+			\item Nullstellen bestimmen
+		\end{itemize}
+		\begin{framed}
+			\noindent
+			\color{red}{\underline{Vorsicht!}}\normalcolor\\
+			Die Faktorisierung einer quadratischen Funktion ist nur möglich, wenn die 
+		\end{framed}
+		\subsection{Differenz von Quadraten (3. Binomische Formel)}
+		Hat unsere quadratische Funktion die Form \[f(x) = x^2 - c; \pm\sqrt{c}\in \mathbb{Z}\]
+		Dann handelt es sich um die Differenz von Quadraten auch bekannt als die ausmultiplizierte dritte binomische Formel.\\
+		\par\noindent
+		\(\Rightarrow\ f(x) = (x+\sqrt{c})\cdot(x-\sqrt{c})\)
+		\subsection{Vollständiges Quadrat (1. und 2. Binomische Formel)}
+		Hat die quadratische Funktion hingegen die Form \[f(x) = ax^2 \pm bx + c\] und  für die Koeffizienten gilt \(b = 2ad\) und \(c = d^2\) entspricht das \[f(x) = ax^2 \pm 2adx + d^2\]
+		Klar erkennbar ist die erste bzw. zweite binomische Formel
+		\begin{align*}
+			f(x) & = (ax+d)^2\\
+			&\text{oder}\\
+			f(x) & = (ax-d)^2
+		\end{align*}
+		\subsection{Gruppieren}
+		Wir sind konfrontiert mit einer quadratischen Gleichung der Form \(f(x) = ax^2 + bx + c\). Um gut gruppieren zu können betrachten wir die Koeffizienten \(a,b \text{ und } c\).\\
+		Es müssen die Fragen geklärt werden, welche zwei Zahlen \(z_1\) und \(z_2\) ergeben
+		\begin{itemize}
+			\item[-] bei Multiplikation \(*\Rightarrow a\cdot{}c\)
+			\item[-] bei Addition \(+\Rightarrow b\)
+		\end{itemize}
+		Dieser Schritt ist mit Abstand der schwierigste an diesem Vorgehen.
+		\begin{framed}
+			\noindent
+			Dabei kann es passieren, dass es \textbf{keine solchen zwei Zahlen} gibt. In diesem Fall müssen wir die \textbf{Nullstellen bestimmen}.
+			\color{red}
+		\end{framed}
+		\normalcolor
+		\noindent
+		Haben wir diese zwei Zahlen gefunden, schreiben wir unsere Funktion neu.
+		\[f(x) = ax^2 + z_1x + z_2x + c\]
+		Hierbei sollten wir die Reihenfolge von \(z_1\) und \(z_2\) so wählen, dass sie mit \(a\) bzw. mit \(c\) einen gemeinsamen Teiler \(t_1, t_2\) haben.\\
+		Diesen gemeinsamen Teiler klammern wir in beiden Fällen aus und erhalten:
+		\begin{align*}
+			f(x) & = t_1x(\underbrace{\frac{a}{t_1}}_{k_1}x + \underbrace{\frac{z_1}{t_1}}_{k_2}) + t_2(\underbrace{\frac{z_2}{t_2}}_{k_1}x + \underbrace{\frac{c}{t_2}}_{k_2})\\
+			& = t_1x(k_1x + k_2) + t_2(k_1x+k_2)
+		\end{align*}
+		Die beiden Klammerausdrücke sind gleich und ermöglichen uns ein erneutes ausklammern.
+		\[f(x) = (t_1x+t_2)(k_1x+k_2)\]
+		Schauen wir uns folgendes \underline{\textbf{Beispiel}} an:\\
+		\par\noindent
+		\begin{tabularx}{0.5\textwidth}{X|l}
+			\cline{2-2}
+			& \(*:\ 5\cdot(-80)=-400\)\\
+			\(f(x) = 5x^2 + 30x -80\) & \(+:\ 30\)\\
+			& \(\Rightarrow z_1 = 40; z_2 = -10\)\\
+			\cline{2-2}
+			\multicolumn{2}{l}{}\\
+			\multicolumn{2}{l}{\(f(x) = 5x^2 + \underbrace{40}_{z_1}x \underbrace{-10}_{z_2}x -80\)}\\
+			\multicolumn{2}{l}{\(f(x) = 5x(x+8) -10(x+8)\)}\\
+			\multicolumn{2}{l}{\(f(x) = (5x-10)(x+8)\)}
+		\end{tabularx}\\
+		\par\noindent
+		\rule{0.45\textwidth}{0.1pt}
+		Wir schauen uns noch ein \underline{\textbf{Beispiel}} an:\\
+		\par\noindent
+		\begin{tabularx}{0.5\textwidth}{X|l}
+			\cline{2-2}
+			& \(*:\ 1\cdot(-40)=-40\)\\
+			\(f(x) = x^2 + 6x - 40\) & \(+:\ 6\)\\
+			& \(\Rightarrow z_1 = 10; z_2 = -4\)\\
+			\cline{2-2}
+			\multicolumn{2}{l}{}\\
+			\multicolumn{2}{l}{\(f(x) = x^2 + \underbrace{-4}_{z_2}x \underbrace{10}_{z_1}x - 40\)}\\
+			\multicolumn{2}{l}{\(f(x) = x(x-4) + 10(x-4)\)}\\
+			\multicolumn{2}{l}{\(f(x) = (x+10)(x-4)\)}
+		\end{tabularx}
+		\subsection{Teilen und Schieben}
+		Auch diesmal haben wir wieder eine quadratische Funktion \(f(x) = ax^2 + bx + c\) gegeben.\\
+		Die ersten Schritte entsprechen denen, die wir beim Gruppieren anwenden.\\
+		Wir betrachten erneut die Koeffizienten \(a,b \text{ und } c\).\\
+		Es müssen die Fragen geklärt werden, welche zwei Zahlen \(z_1\) und \(z_2\) ergeben
+		\begin{itemize}
+			\item[-] bei Multiplikation \(*\Rightarrow a\cdot{}c\)
+			\item[-] bei Addition \(+\Rightarrow b\)
+		\end{itemize}
+		Dieser Schritt ist mit Abstand der schwierigste an diesem Vorgehen.
+		\begin{framed}
+			\noindent
+			Dabei kann es passieren, dass es \textbf{keine solchen zwei Zahlen} gibt. In diesem Fall müssen wir die \textbf{Nullstellen bestimmen}.
+			\color{red}
+		\end{framed}
+		\normalcolor
+		\noindent
+		Unter Verwendung der beiden Zahlen schreiben wir nun \[f(x) = (\underline{\ \ }x + \frac{z_1}{a})(\underline{\ \ }x + \frac{z_2}{a})\]
+		Lässt sich \(z_1\) bzw. \(z_2\) ganzzahlig durch \(a\) teilen, so erhält \(x\) den Koeffizienten \(1\).\\
+		Ist dies nicht der Fall, erhält \(x\) den Koeffizienten \(a\) und die Zahl \(z_1\) oder \(z_2\) bleibt erhalten.\\
+		\par\noindent
+		\begin{itemize}
+			\item[] 1. Möglichkeit: \(z_1\) lässt sich nicht ganzzahlig durch \(a\) teilen, \(z_2\) aber schon\\
+			\(f(x) = (ax + z_1)(x+\underbrace{d}_{\frac{z_2}{a}})\)
+			\item[] 2. Möglichkeit: \(z_1\) lässt sich ganzzahlig durch \(a\) teilen, \(z_2\) aber nicht\\
+			\(f(x) = (x + \underbrace{d}_{\frac{z_1}{a}})(ax+z_2)\)
+			\item[] 3. Möglichkeit: \(z_1\) und \(z_2\) lassen sich ganzzahlig durch \(a\) teilen, dann wird \(a\) als Leitkoeffizient eingeführt.\\
+			\(f(x) = a(x+\underbrace{d}_{\frac{z_1}{a}})(x+\underbrace{e}_{\frac{z_2}{a}})\)
+		\end{itemize}
+		Wir betrachten das gleiche \underline{\textbf{Beispiel}} wie eben:\\
+		\par\noindent
+		\begin{tabularx}{0.5\textwidth}{X|l}
+			\cline{2-2}
+			& \(*:\ 5\cdot(-80)=-400\)\\
+			\(f(x) = 5x^2 + 30x -80\) & \(+:\ 30\)\\
+			& \(\Rightarrow z_1 = 40; z_2 = -10\)\\
+			\cline{2-2}
+			\multicolumn{2}{l}{}\\
+			\multicolumn{2}{l}{\(f(x) = (x+\frac{40}{5})(x+\frac{-10}{5})\)}\\
+			\multicolumn{2}{l}{\(f(x) = 5(x+8)(x-2)\)}
+		\end{tabularx}\\
+		\par\noindent
+		\rule{0.45\textwidth}{0.1pt}
+		Wir schauen uns noch ein \underline{\textbf{Beispiel}} an:\\
+		\par\noindent
+		\begin{tabularx}{0.5\textwidth}{X|l}
+			\cline{2-2}
+			& \(*:\ 1\cdot(-40)=-40\)\\
+			\(f(x) = x^2 + 6x - 40\) & \(+:\ 6\)\\
+			& \(\Rightarrow z_1 = 10; z_2 = -4\)\\
+			\cline{2-2}
+			\multicolumn{2}{l}{}\\
+			\multicolumn{2}{l}{\(f(x) = (x+\frac{10}{1})(x+\frac{-4}{1})\)}\\
+			\multicolumn{2}{l}{\(f(x) = (x+10)(x-4)\)}\\
+		\end{tabularx}
+		\subsection{Nullstellen bestimmen}
+		Lässt sich die gegebene quadratische Funktion \(f(x) = ax^2 + bx + c\) nicht mit einer der obigen Verfahren faktorisieren, müssen wir die Nullstellen bestimmen.\\
+		Hierfür verwenden wir die \textbf{pq-Formel}.
+		\begin{framed}
+			\noindent
+			\underline{Gegeben:} \(f(x) = x^2 + px + q\)\\
+			Dann erfüllen folgende zwei Zahlen \[x_{1,2}=-\frac{p}{2} \pm \sqrt{\left(\frac{p}{2}\right)^2 - q}\] die Gleichung \(f(x) = 0\).\\
+			\par\noindent
+			Zu beachten ist, dass der \textbf{Leitkoeffizient} (Zahl vor \(x^2\)) \textbf{1 ist}.
+		\end{framed}
+		Ist unsere quadratische Funktion nicht von der Form \(f(x) = x^2 + px + q\), so müssen wir diese durch Teilen in die entsprechende Form überführen.\\
+		\par\noindent
+		Wir betrachten das gleiche \underline{\textbf{Beispiel}} wie eben.\\
+		\par\noindent
+		\begin{tabularx}{0.5\textwidth}{Xl}
+			\(f(x) = 5x^2 + 30x - 80\) & |\(:5\)\\
+			\(f(x) = x^2 + \underbrace{6}_{p}x \underbrace{- 16}_{q}\) & |pq-Formel\\
+			\\
+			\(x_{1,2} = -\frac{6}{2} \pm \sqrt{\left(\frac{6}{2}\right)^2 +16}\)\\
+			\(x_1 = -\frac{6}{2} + \sqrt{\left(\frac{6}{2}\right)^2 +16}\) & \(x_2 = -\frac{6}{2} - \sqrt{\left(\frac{6}{2}\right)^2 +16}\)\\
+			\(x_1 = - 3 + \sqrt{9 + 16}\) & \(x_1 = - 3 - \sqrt{9 + 16}\)\\
+			\\
+			\colorbox{green!10}{\(x_1 = -3 + 5 = 2\)} & \colorbox{green!10}{\(x_2 = -3 - 5 = -8\)}
+		\end{tabularx}\\
+		\par\noindent
+		Mit diesen Nullstellen können wir faktorisieren (\(f(x) = (x-x_1)(x-x_2)\)) und erhalten:
+		\[f(x) = (x-2)(x+8)\]
+		\rule{0.45\textwidth}{0.1pt}
+		Wir betrachten zudem das nachfolgende \underline{\textbf{Beispiel}}.\\
+		\par\noindent
+		\begin{tabularx}{0.5\textwidth}{Xl}
+			\(f(x) = x^2 + \underbrace{6}_{p}x \underbrace{- 40}_{q}\) &  |pq-Formel\\
+			\\
+			\(x_{1,2} = -\frac{6}{2} \pm \sqrt{\left(\frac{6}{2}\right)^2 +40}\)\\
+			\(x_1 = -\frac{6}{2} + \sqrt{\left(\frac{6}{2}\right)^2 +40}\) & \(x_2 = -\frac{6}{2} - \sqrt{\left(\frac{6}{2}\right)^2 +40}\)\\
+			\(x_1 = - 3 + \sqrt{9 + 40}\) & \(x_1 = - 3 - \sqrt{9 + 40}\)\\
+			\\
+			\colorbox{green!10}{\(x_1 = -3 + 7 = 4\)} & \colorbox{green!10}{\(x_2 = -3 - 7 = -10\)}
+		\end{tabularx}\\
+		\par\noindent
+		Mit diesen Nullstellen können wir faktorisieren (\(f(x) = (x-x_1)(x-x_2)\)) und erhalten:
+		\[f(x) = (x-4)(x+10)\]
+	\end{worksheet}
+\end{document}
