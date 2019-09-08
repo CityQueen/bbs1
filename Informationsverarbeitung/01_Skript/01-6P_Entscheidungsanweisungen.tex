@@ -1,0 +1,303 @@
+\documentclass[11pt,oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{article}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\setlength{\columnsep}{3em}
+\setlength{\columnseprule}{0.5pt}
+
+\geometry{left=1.50cm,right=1.50cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+\pagestyle{plain}
+\pagenumbering{arabic}
+
+\begin{document}
+	\begin{worksheet}{Informationsverarbeitung}{Lernabschnitt: Strukturiert Programmieren}{Kontrollstrukturen - Wiederholungsanweisung}
+		\setlength{\columnseprule}{0pt}
+		\noindent
+		\setcounter{section}{5}
+		\setcounter{page}{16}
+		\section{Kontrollstrukturen}
+		\subsection{Sequenz}
+		Mehrere nacheinander ausgeführte Anweisungen, die in Java mit einem Semikolon (;) abgeschlossen werden, werden als \textbf{Sequenz} bezeichnet.\\
+		\par\noindent
+		\begin{minipage}[t]{0.48\textwidth}
+			\vspace*{0pt}
+			\begin{lstlisting}[style=JavaInputStyle,frame=single]
+			wash();
+			brushTeeth();
+			lieDown();
+			\end{lstlisting}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[t]{0.48\textwidth}
+			\vspace*{0pt}
+			\begin{struktogramm}(80,60)
+				\assign{wash}
+				\assign{brush teeth}
+				\assign{go to bed}
+			\end{struktogramm}
+		\end{minipage}
+		\subsection{Fallunterscheidung}
+		Unter einer Fallunterscheidung versteht man auch eine \textit{bedingte Anweisung}. Diese gibt es zum einen \textbf{mit} und zum anderen \textbf{ohne} Alternative.\\
+		\begin{minipage}[t]{0.48\textwidth}
+			\vspace*{0pt}
+			Mit Alternative:
+			\begin{lstlisting}[style=JavaInputStyle]
+			if(<Bedinung>){
+			<Anweisungen>
+			}
+			else{
+			<Anweisungen>
+			}
+			\end{lstlisting}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[t]{0.48\textwidth}
+			\vspace*{0pt}
+			Ohne Alternative:
+			\begin{lstlisting}[style=JavaInputStyle]
+			if(<Bedingung>) {
+			<Anweisungen>
+			}
+			\end{lstlisting}
+		\end{minipage}
+		\par\noindent
+		\begin{minipage}[t]{0.48\textwidth}
+			\vspace*{0pt}
+			Beispiel mit Alternative:
+			\begin{lstlisting}[style=JavaInputStyle,frame=single]
+			if(gender == 'm') {
+			System.out.println("Sehr geehrter Herr");
+			}
+			else {
+			System.out.println("Sehr geehrte Frau");
+			}
+			\end{lstlisting}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[t]{0.48\textwidth}
+			\vspace*{0pt}
+			\begin{struktogramm}(80,50)[Mit Alternative]
+				\ifthenelse[15]{6}{6}
+				{isMale?}{Ja}{Nein}
+				\assign{\grqq{}Sehr geehrter Herr\grqq{}}
+				\change
+				\assign{\grqq{}Sehr geehrte Frau\grqq{}}
+				\ifend
+			\end{struktogramm}
+		\end{minipage}
+		\begin{minipage}[t]{0.48\textwidth}
+			\vspace*{0pt}
+			Beispiel ohne Alternative:
+			\begin{lstlisting}[style=JavaInputStyle,frame=single]
+			if(age >= 18) {
+			access = true;
+			}
+			\end{lstlisting}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[t]{0.48\textwidth}
+			\vspace*{0pt}
+			\begin{struktogramm}(80,20)[Ohne Alternative]
+				\ifthenelse[12]{5}{5}
+				{age >= 18}{Ja}{Nein}
+				\assign{access granted}
+				\change
+				\ifend
+			\end{struktogramm}
+		\end{minipage}
+		\par\noindent
+		Bei der Fallunterscheidung kann es passieren, dass für verschiedene Bedingungen andere Anweisungen definiert werden. Dabei werden diese der Reihe nach überprüft, bis die erste erfüllt ist. Hierbei müssen aber die entsprechenden Bedingungen definiert werden.
+		\par\noindent
+		\begin{minipage}[t]{0.48\textwidth}
+			\vspace*{0pt}
+			Beispiel mehrere Bedingungen mit Alternative:
+			\begin{lstlisting}[style=JavaInputStyle,frame=single]
+			if(age < 16) {
+			lightDrinks = false;
+			hardDrinks = false;
+			}
+			else if(age < 18){
+			lightDrinks = true;
+			hardDrinks = false;
+			}
+			else{
+			lightDrinks = true;
+			hardDrinks = true;
+			}
+			\end{lstlisting}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[t]{0.48\textwidth}
+			\vspace*{0pt}
+			\begin{struktogramm}(80,20)[Ohne Alternative]
+				\ifthenelse[12]{5}{5}
+				{age < 16}{Ja}{Nein}
+				\assign{No alcohol!}
+				\change
+				\ifthenelse[12]{5}{5}{age < 18}{Ja}{Nein}
+				\assign{Only soft alcohol!}
+				\change
+				\assign{Drinks granted!}
+				\ifend
+				\ifend
+			\end{struktogramm}
+		\end{minipage}
+		\subsection{Mehrfachauswahl}
+		Im Gegensatz zur Fallunterscheidung wird bei der der Mehrfachauswahl auf bestimmte Werte geprüft. So dass man hiermit beliebig viele Fälle ohne größeren Aufwand unterscheiden kann.\\
+		Die Java-Anweisung für die Mehrfachauswahl ist \lstinline[style=JavaInputStyle]|switch|-Anweisung. Dabei muss aber beachtet werden, dass die zu überprüfende Variable vom Typ \lstinline[style=JavaInputStyle]|byte, short, int| oder \lstinline[style=JavaInputStyle]|char| sein muss.\\
+		\par\noindent
+		Beispiel Mehrfachauswahl:
+		\begin{lstlisting}[style=JavaInputStyle,frame=single]
+		switch(<Variable>){
+		case <Wert1>: <Anweisung 1>; break;
+		case <Wert2>: <Anweisung 2>; break;
+		...
+		default: <Anweisung n>; break;
+		}
+		\end{lstlisting}
+		Die Anweisung \lstinline[style=JavaInputStyle]|break| erzwingt das Verlassen der gesamten \lstinline[style=JavaInputStyle]|switch|-Anweisung. Die nachfolgenden \lstinline[style=JavaInputStyle]|case|-Bedingungen werden dadurch übersprungen.\\
+		\begin{struktogramm}(161,40)
+			\case[15]{5}{5}{Note = ?}{1}
+			\assign{Mit Auszeichnung bestanden}
+			\switch{2}
+			\assign{gut bestanden}
+			\switch{3}
+			\assign{befriedigend bestanden}
+			\switch{4}
+			\assign{bestanden}
+			\switch[r]{sonst}
+			\assign{nicht bestanden}
+			\caseend
+			
+		\end{struktogramm}
+		\subsection{Wiederholung}
+		In Java hat man die Möglichkeit Anweisungen wiederholen zu lassen, ohne diese durch mehrfache Nennung im Programm-Code zu erzwingen. Dabei gibt es verschiedene Weisen, wie man dies tun kann.
+		\subsubsection{Mit fester Anzahl}
+		Möchte man beispielsweise etwas für eine bestimmte Anzahl wiederholen, so nutzt man die \lstinline[style=JavaInputStyle]|for|-Anweisung.
+		\begin{lstlisting}[style=JavaInputStyle]
+		for(<Init>; <Bedingung>; <Update>){
+		<Anweisung>
+		}
+		\end{lstlisting}
+		\par\bigskip\noindent
+		Die geforderten Parameter haben die folgende Bedeutung:\\
+		\begin{tabularx}{\textwidth}{lX}
+			{\lstinline[style=JavaInputStyle]|<Init>|} & Deklaration einer ganzzahligen Zählvariable und der Zuweisung eines Anfangswerts (z.B. {\lstinline[style=JavaInputStyle]|int i = 0|})\\
+			{\lstinline[style=JavaInputStyle]|<Bedingung>|} & Solange die Bedingung, abhängig von der Zählvariablen, erfüllt ist, werden die Anweisungen ausgeführt (z.B. {\lstinline[style=JavaInputStyle]|i < 5|} - Die Sequenz wird 5 mal ausgeführt)\\
+			{\lstinline[style=JavaInputStyle]|<Update>|} & Das Update der Zählvariablen erfolgt nach jedem Durchlauf entsprechend der angegebenen Zuweisung (z.B. {\lstinline[style=JavaInputStyle]|i++|})
+		\end{tabularx}
+		Zu beachten ist, dass die {\lstinline[style=JavaInputStyle]|<Bedingung>|} immer vor der Ausführung der Sequenz überprüft wird.\\
+		\par\noindent
+		\begin{minipage}[t]{0.48\textwidth}
+			\vspace*{0pt}
+			Beispiel Abbruchbedingung einbezogen:
+			\begin{lstlisting}[style=JavaInputStyle,frame=single]
+			/**
+			* Berechnet die Summe aller ganzen Zahlen von 0 bis 5.
+			*/
+			sum = 0;
+			for(i=0; i<=5; i++) {
+			sum = sum + i;
+			}
+			\end{lstlisting}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[t]{0.48\textwidth}
+			\vspace*{0pt}
+			Beispiel Abbruchbedingung ausgeschlossen:
+			\begin{lstlisting}[style=JavaInputStyle,frame=single]
+			/**
+			* Berechnet die Summe aller ganzen Zahlen von 0 bis 4.
+			*/
+			sum = 0;
+			for(i=0; i<5; i++) {
+			sum = sum + i;
+			}
+			\end{lstlisting}
+		\end{minipage}
+		\par\noindent
+		Die zugehörigen Struktogramme verdeutlichen den minimalen Unterschied in der \lstinline[style=JavaInputStyle]|<Bedingung>|.\\
+		\begin{minipage}[t]{0.48\textwidth}
+			\vspace*{0pt}
+			\begin{struktogramm}(78,50)
+				\while[10]{Von i:=0 bis 5 tue (wobei i jedes mal um1 erhöht wird)}
+				\assign{Erhöhe den Wert der Summe um i}
+				\whileend
+			\end{struktogramm}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[t]{0.48\textwidth}
+			\vspace*{0pt}
+			\begin{struktogramm}(78,50)
+				\while[10]{Von i:=0 bis 4 tue (wobei i jedes mal um1 erhöht wird)}
+				\assign{Erhöhe den Wert der Summe um i}
+				\whileend
+			\end{struktogramm}
+		\end{minipage}
+		\subsubsection{Mit Anfangsbedingung}
+		\label{anfb}
+		Möchten wir erreichen, dass eine Anweisung oder eine Sequenz solange wiederholt, bis eine bestimmte Bedingung erfüllt wird, nutzt man die \textit{Kopfgestützte} Wiederholung.
+		\begin{lstlisting}[style=JavaInputStyle]
+		while(<Bedingung>){
+		<Anweisungen>
+		}
+		\end{lstlisting}
+		\par\bigskip\noindent
+		Wir überprüfen also \underline{\textbf{bevor}} die Sequenz ausgeführt wird, ob die Bedingung erfüllt ist. Dabei kann es also passieren, dass die Sequenz \underline{garnicht} ausgeführt wird.\\
+		\par\noindent
+		\begin{minipage}[t]{0.48\textwidth}
+			\vspace*{0pt}
+			Beispiel kopfgesteuerte Wiederholung:
+			\begin{lstlisting}[style=JavaInputStyle,frame=single]
+			int pin = input();
+			
+			while(pin != 0815){
+			System.out.println("Fehlerhafte PIN!");
+			pin = input();
+			}
+			\end{lstlisting}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[t]{0.48\textwidth}
+			\vspace*{0pt}
+			\begin{struktogramm}(78,50)[Struktogramm]
+				\assign{Eingabe einer ganzen Zahl}
+				\while[10]{Solange eingegebene Zahl ungleich 0815}
+				\assign{Bildschirmausgabe \grqq{}Fehlerhafte PIN!\grqq{}}
+				\assign{Erneute Eingabe einer ganzen Zahl}
+				\whileend
+			\end{struktogramm}
+		\end{minipage}
+		\subsubsection{Mit Endbedingung}
+		Die in \ref{anfb} erwähnte Wiederholungsanweisung prüft wie es der Name sagt \underline{bevor} die Sequenz ausgeführt wird. Es kann nun aber natürlich auch mal passieren, dass eine solche Sequenz aber mindestens einmal ausgeführt werden soll, bevor die Abbruchbedingung überprüft wird. Um diese Anforderung zu erfüllen nutzt man die entsprechende \textit{Fußgesteuerte} Wiederholung.\\
+		\begin{lstlisting}[style=JavaInputStyle]
+		do{
+		<Anweisungen>
+		} while(<Bedingung>)
+		\end{lstlisting}
+		\par\noindent
+		Bei dieser wird die Sequenz \underline{einmal ausgeführt} und die Bedingung wird \textbf{\underline{nach}} jeder Wiederholung überprüft.\\
+		\par\noindent
+		\begin{minipage}[t]{0.48\textwidth}
+			\vspace*{0pt}
+			Beispiel fußgesteuerte Wiederholung:
+			\begin{lstlisting}[style=JavaInputStyle,frame=single]
+			do{
+			System.out.println(number);
+			number--;
+			} while(number > 0);
+			\end{lstlisting}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[t]{0.48\textwidth}
+			\vspace*{0pt}
+			\begin{struktogramm}(78,50)[Struktogramm]
+				\until[10]{Solange \textit{number} größer Null}
+				\assign{Bildschirmausgabe von \textit{number}}
+				\assign{Verringere \textit{number} um 1}
+				\untilend
+			\end{struktogramm}
+		\end{minipage}
+	\end{worksheet}
+\end{document}

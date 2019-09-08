@@ -1,0 +1,74 @@
+\documentclass[11pt,oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{article}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\setlength{\columnsep}{3em}
+\setlength{\columnseprule}{0.5pt}
+
+\geometry{left=1.50cm,right=1.50cm,top=2.50cm,bottom=1.00cm,includeheadfoot}
+\pagenumbering{gobble}
+\pagestyle{empty}
+
+\begin{document}
+	\begin{worksheet}{Berufliches Gymnasium}{Klassenstufe 12 - Informationsverarbeitung}{Lernabschnitt 1: Netzwerke - Protokolle für Internet und Intranet}
+		\setcounter{section}{1}
+		\setcounter{subsection}{4}
+		\subsection{Protokolle}
+		Wie bereits beim OSI-Modell angesprochen, arbeiten die einzelnen Schichten mit für sie spezifischen Protokollen. Dabei besitzt jede Schicht ihr eigenes Protokoll, dessen Informationen nur von der gleichen, aber von keiner darüber oder darunter angesiedelten Schicht, interpretiert und verarbeitet werden.\\
+		Nachfolgend betrachten wir einige der wichtigeren Protokolle, die mit der Datenübertragung betraut sind.
+		\subsubsection{IP und ICMP}
+		Die Netzwerkschicht bekommt von der übergeordneten Transportschicht den Versandauftrag für generierte Datenpakete.\\
+		Von der Netzwerkschicht werden dann der IP-spezifische Headerinformation vor das Datenpaket vorangestellt. Dieser \grqq{}Aufkleber\grqq{} ermöglicht, dass die einzelnen Pakete unabhängig voneinander bis zum Empfänger transportiert werden können.\\
+		Dabei kann man sich den durch die Netzwerkschicht angefügten Header ein wenig so vorstellen:
+		\begin{center}
+			\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+				\hline
+				\rowcolor{blue!15} \multicolumn{8}{|l}{MSB (erstes gesendetes Bit)} & \multicolumn{8}{r|}{LSB}\\
+				\hline
+				\rowcolor{blue!15} \multicolumn{2}{|l}{0} & \multicolumn{2}{l}{4} & \multicolumn{3}{l}{8} & \multicolumn{1}{r}{16} & \multicolumn{7}{l}{19} & \multicolumn{1}{r|}{31}\\
+				\hline
+				\multicolumn{2}{|c|}{Version} & \multicolumn{2}{c|}{IHL} & \multicolumn{4}{c|}{TOS} & \multicolumn{8}{c|}{Gesamtlänge (Header + Nutzlast)}\\
+				\hline
+				\multicolumn{8}{|c|}{Identifikation} & \multicolumn{1}{c|}{Flags} & \multicolumn{7}{c|}{Fragmentoffset}\\
+				\hline
+				\multicolumn{4}{|c|}{TTL} & \multicolumn{4}{c|}{Nutzlastprotokoll} & \multicolumn{1}{c}{} & \multicolumn{7}{c|}{Kopfprüfsumme}\\
+				\hline
+				\multicolumn{16}{|c|}{IP-Adresse des Absenders}\\
+				\hline
+				\multicolumn{16}{|c|}{IP-Adresse des Empfängerss}\\
+				\hline
+				\multicolumn{16}{|c|}{Eventuelle Optionen}\\
+				\hline
+				\rowcolor{blue!15} \multicolumn{16}{|c|}{IP-Nutzlast = Daten der Transportschicht}\\
+				\hline
+			\end{tabular}
+		\end{center}
+		Jedes einzelne Feld beinhaltet wichtige Informationen:\\
+		\begin{tabularx}{\textwidth}{|l|X|}
+			\hline
+			\rowcolor{blue!10} Feld & Bedeutung / Anmerkung \\
+			\hline
+			Version (4 bit) & Enthält die Versionsnummer: aktuell Version 4\\
+			\hline
+			IHL (4 bit) & (\textbf{I}P-\textbf{H}eader \textbf{L}ength)Länge des Headers, gemessen in 32-Bit-Gruppen: \(5 \leq IHL \leq 15\).\\
+			\hline
+			TOS (8 bit) & (\textbf{T}ype \textbf{O}f \textbf{S}ervice) Anforderungen höherer Protokollschichten and eine bestimmte Dienstgüte\\
+			\hline
+			Gesamtlänge (16 bit) & Maximale Länge eines IP-Datagramms entspricht 65 535 Oktette; jedes System sollte 578 Oktette große IP-Pakaete verarbeiten können.\\
+			\hline
+			Identifikation (16 bit) & \multirow{3}{*}{siehe nachfolgende Erläuterung}\\
+			\cline{1-1}
+			Flags (3 bit) & \\
+			\cline{1-1}
+			Fragmentoffset (13 bit) & \\
+			\hline
+			TTL (8 bit) & ...\\
+			\hline
+			Nutzlastprotokoll (8 bit) & \\
+			\hline
+			Kopfprüfsumme (16 bit) & \\
+			\hline
+		\end{tabularx}
+	\end{worksheet}
+\end{document}

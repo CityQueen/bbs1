@@ -1,0 +1,74 @@
+\documentclass[oneside,openany,headings=optiontotoc,11pt,numbers=noenddot,Nassi]{scrreprt}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\geometry{left=1.50cm,right=1.50cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+
+\begin{document}
+	\begin{worksheet}{BS FI 17}{3. Lehrjahr, Lernfeld 6}{Aufgaben Struktogramme}
+		\begin{framed}
+			\subsubsection*{Aufgabe 1}
+			Erstellen Sie einen Algorithmus als Struktogramm, der mit Hilfe einer Zählschleife die Fakultät für eine eingegebene Zahl berechnet.\\
+			Die Fakultät von n berechnet sich wie folgt:\\
+			\(n! = 1 \cdot 2 \cdot 3 \cdot \ldots \cdot n\)\\
+			\underline{Beispiel:}\\
+			\(3! = 1\cdot2\cdot3 = 6\)\\
+			\(5! = 1\cdot2\cdot3\cdot4\cdot5 = 120\)
+			\subsubsection*{Aufgabe 2}
+			Entwickeln Sie ein Struktogramm für die Versandbedingungen eines Versandhauses. Dieses berechnet bis zu einem Einkaufspreis von 80\euro{} Versandkosten in Höhe von 5\euro{}. Ab einem Einkaufspreis von 150\euro{} wird zusätzlich ein Gratisgeschenk verschickt.
+			\subsubsection*{Aufgabe 3}
+			Beschreiben Sie mit Hilfe eines Struktogramms de Ablauf, der das Betanken eines Fahrzeuges an einer Tankstelle darstellt. Das Fahrzeug kann entweder voll getankt oder bis zu einem festen Betrag betankt werden.
+			\subsubsection*{Aufgabe 4}
+			Geben Sie für folgenden Ablauf am Bankautomaten ein Struktogramm an:\\
+			Zu Beginn ist der Automat im Zustand \grqq{}bereit\grqq{} und es kann eine Karte eingegeben werden. Falsche Karten werden sofort ausgeworfen und der Geldautomat ist wieder bereit.\\
+			Ist die Karte korrekt, erwartet der Automat die Eingabe der PIN. Wird eine ungültige PIN eingegeben, dann bricht der Automat die Verarbeitung ab, wirft die Karte aus und ist wieder bereit.\\
+			Bei gültiger PIN erwartet der Automat die Eingabe des Betrages. Ist der gewünschte Betrag zu hoch, kann er erneut eingegeben werden. Der Auftrag wird bearbeitet und der Betrag wird ausgegeben.\\
+			Danach wird die Karte ausgegeben und der Geldautomat ist bereit für den nächsten Kunden.
+			\subsubsection*{Aufgabe 5}
+			Erstellen Sie ein Struktogramm, das folgende Aufgabe erfüllt: Es sind zwei Zahlen einzugeben. Das Ergebnis der Division der größeren Zahl durch die kleinere Zahl ist auszugeben.\\
+			Beachten Sie, dass die Division durch Null nicht erlaubt ist.
+			\subsubsection*{Aufgabe 6}
+			Prüfen Sie mit verschiedenen Anfangswerten für a,b,c und d (a,b,c und d natürliche Zahlen), welcher Wert jeweils ausgegeben wird!\\
+			\par\noindent
+			\begin{struktogramm}(100,50)
+				\assign{Eingabe: a, b, c und d}
+				\ifthenelse[8]{1}{1}{a>b}{Ja}{Nein}
+				\assign[5]{m := a}
+				\change
+				\assign{m := b}
+				\ifend
+				\ifthenelse[8]{1}{1}{m>c}{Ja}{Nein}
+				\assign[5]{--}
+				\change
+				\assign{m := c}
+				\ifend
+				\ifthenelse[8]{1}{1}{m>d}{Ja}{Nein}
+				\assign[5]{--}
+				\change
+				\assign{m := d}
+				\ifend
+				\assign{Ausgabe: m}
+			\end{struktogramm}
+			\subsubsection*{Aufgabe 7}
+			Entwerfen Sie ein Struktogramm: Nach Eingabe einer Schulnote soll die Bewertung in Textform ausgegeben werden.\\
+			Wird eine Note größer als 6 eingegeben, soll eine Meldung ausgegeben werden.\\
+			Die Bewertung lauten:\\
+			\begin{tabularx}{\textwidth}{lll}
+				1: Sehr Gut & 2: Gut & 3: Befriedigend\\
+				4: Ausreichend & 5: Mangelhaft & 6: Ungenügend
+			\end{tabularx}
+			\subsubsection*{Aufgabe 8}
+			Erstellen Sie ein Struktogramm zur Feststellung, ob ein einzugebendes Jahr ein Schaltjahr ist. Die Sonderregelungen für Jahrhunderte sind zu beachten.
+			\begin{itemize}[label=-]
+				\item Jedes Jahr mit durch 4 teilbarer Zahl ist ein Schaltjahr, ausgenommen solche vollen Jahrhundertzahlen, die nicht durch 400 teilbar sind (z.B. 1000, 1800, 1900, 2100 usw.)
+				\item Schaltjahre sind z.B. 1996, 2000, 2004
+			\end{itemize}
+			\subsubsection*{Aufgabe 9}
+			Erstellen Sie ein Struktogramm, das zu einer eingegebenen Zahl alle Teiler dieser Zahl ausgibt.
+			\subsubsection*{Aufgabe 10}
+			Erstellen Sie ein Struktogramm, das folgende Aufgabe erfüllt:\\
+			Es wird eine Anzahl von Sekunden eingegeben. Das Programm muss berechnen, wie viele Stunden, Minuten und restliche Sekunden in dieser Sekundenzahl enthalten sind.
+		\end{framed}
+	\end{worksheet}
+\end{document}

@@ -1,0 +1,170 @@
+\documentclass[11pt,oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{article}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\geometry{left=1.50cm,right=1.50cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+\pagestyle{plain}
+\pagenumbering{arabic}
+
+\begin{document}
+	\begin{worksheet}{Informationsverarbeitung}{Lernabschnitt: Strukturiert Programmieren}{Kontrollstrukturen - Entscheidungsanweisung}
+		\setcounter{section}{5}
+		\setcounter{page}{21}
+		\section{Kontrollstrukturen}
+		\subsection{Sequenz}
+		Mehrere nacheinander ausgeführte Anweisungen, die in Java mit einem Semikolon (;) abgeschlossen werden, werden als \textbf{Sequenz} bezeichnet.\\
+		\par\noindent
+		\begin{minipage}[t]{0.48\textwidth}
+			\vspace*{0pt}
+			\begin{lstlisting}[style=JavaInputStyle,frame=single]
+			wash();
+			brushTeeth();
+			\end{lstlisting}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[t]{0.48\textwidth}
+			\vspace*{0pt}
+			\begin{struktogramm}(80,60)
+				\assign{wash}
+				\assign{brush teeth}
+			\end{struktogramm}
+		\end{minipage}
+		\vspace*{-120pt}
+		\subsection{Entscheidungsanweisung}
+		Unter einer Entscheidungsanweisung versteht man auch eine \textit{bedingte Anweisung}. Diese gibt es zum einen \textbf{mit} und zum anderen \textbf{ohne} Alternative.\\
+		\begin{minipage}[t]{0.48\textwidth}
+			\vspace*{0pt}
+			Mit Alternative:
+			\begin{lstlisting}[style=JavaInputStyle]
+			if(<Bedinung>){
+				<Anweisungen>
+			}
+			else{
+				<Anweisungen>
+			}
+			\end{lstlisting}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[t]{0.48\textwidth}
+			\vspace*{0pt}
+			Ohne Alternative:
+			\begin{lstlisting}[style=JavaInputStyle]
+			if(<Bedingung>) {
+				<Anweisungen>
+			}
+			\end{lstlisting}
+		\end{minipage}
+		\par\noindent
+		\begin{minipage}[t]{0.48\textwidth}
+			\vspace*{0pt}
+			Beispiel mit Alternative:
+			\begin{lstlisting}[style=JavaInputStyle,frame=single]
+			if(gender == 'm') {
+				System.out.println("Sehr geehrter Herr");
+			}
+			else {
+				System.out.println("Sehr geehrte Frau");
+			}
+			\end{lstlisting}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[t]{0.48\textwidth}
+			\vspace*{0pt}
+			\begin{struktogramm}(80,50)[Mit Alternative]
+				\ifthenelse[15]{6}{6}
+				{isMale?}{Ja}{Nein}
+				\assign{\grqq{}Sehr geehrter Herr\grqq{}}
+				\change
+				\assign{\grqq{}Sehr geehrte Frau\grqq{}}
+				\ifend
+			\end{struktogramm}
+		\end{minipage}
+		\begin{minipage}[t]{0.48\textwidth}
+			\vspace*{0pt}
+			Beispiel ohne Alternative:
+			\begin{lstlisting}[style=JavaInputStyle,frame=single]
+			if(age >= 18) {
+				access = true;
+			}
+			\end{lstlisting}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[t]{0.48\textwidth}
+			\vspace*{0pt}
+			\begin{struktogramm}(80,20)[Ohne Alternative]
+				\ifthenelse[12]{5}{5}
+				{age >= 18}{Ja}{Nein}
+				\assign{access granted}
+				\change
+				\ifend
+			\end{struktogramm}
+		\end{minipage}
+		\par\noindent
+		Bei der Fallunterscheidung kann es passieren, dass für verschiedene Bedingungen verschiedene Anweisungen definiert werden. Bei der Überprüfung werden diese der Reihe nach überprüft, bis die erste erfüllt ist.\\
+		Hier ist zu beachten, dass die entsprechenden Bedingungen definiert sein müssen.
+		\par\noindent
+		\begin{minipage}[t]{0.48\textwidth}
+			\vspace*{0pt}
+			Beispiel mehrere Bedingungen mit Alternative:
+			\begin{lstlisting}[style=JavaInputStyle,frame=single]
+			if(age < 16) {
+				lightDrinks = false;
+				hardDrinks = false;
+			}
+			else if(age < 18){
+				lightDrinks = true;
+				hardDrinks = false;
+			}
+			else{
+				lightDrinks = true;
+				hardDrinks = true;
+			}
+			\end{lstlisting}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[t]{0.48\textwidth}
+			\vspace*{0pt}
+			\begin{struktogramm}(80,20)[Ohne Alternative]
+				\ifthenelse[12]{5}{5}
+				{age < 16}{Ja}{Nein}
+				\assign{No alcohol!}
+				\change
+				\ifthenelse[12]{5}{5}{age < 18}{Ja}{Nein}
+				\assign{Only soft alcohol!}
+				\change
+				\assign{Drinks granted!}
+				\ifend
+				\ifend
+			\end{struktogramm}
+		\end{minipage}
+		\subsection{Mehrfachauswahl}
+		Im Gegensatz zur Entscheidungsanweisung wird bei der der Mehrfachauswahl auf bestimmte Werte geprüft. So dass man hiermit beliebig viele Fälle ohne größeren Aufwand unterscheiden kann.\\
+		Die Java-Anweisung für die Mehrfachauswahl ist die \lstinline[style=JavaInputStyle]|switch|-Anweisung. Dabei muss aber beachtet werden, dass die zu überprüfende Variable vom Typ \lstinline[style=JavaInputStyle]|byte, short, int| oder \lstinline[style=JavaInputStyle]|char| sein muss.\\
+		Das bedeutet, dass bei \lstinline[style=JavaInputStyle]|switch| nicht nach Ungleichheit oder größer bzw. kleiner gleich entschiede werden kann.
+		\par\noindent
+		Beispiel Mehrfachauswahl:
+		\begin{lstlisting}[style=JavaInputStyle,frame=single]
+		switch(<Variable>){
+			case <Wert1>: <Anweisung 1>; break;
+			case <Wert2>: <Anweisung 2>; break;
+			...
+			default: <Anweisung n>; break;
+		}
+		\end{lstlisting}
+		Die Anweisung \lstinline[style=JavaInputStyle]|break| erzwingt das Verlassen der gesamten \lstinline[style=JavaInputStyle]|switch|-Anweisung. Die nachfolgenden \lstinline[style=JavaInputStyle]|case|-Bedingungen werden dadurch übersprungen.\\
+		\begin{struktogramm}(161,40)
+			\case[15]{5}{5}{Note = ?}{1}
+			\assign{Mit Auszeichnung bestanden}
+			\switch{2}
+			\assign{gut bestanden}
+			\switch{3}
+			\assign{befriedigend bestanden}
+			\switch{4}
+			\assign{bestanden}
+			\switch[r]{sonst}
+			\assign{nicht bestanden}
+			\caseend
+		\end{struktogramm}
+	\end{worksheet}
+\end{document}

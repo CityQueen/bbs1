@@ -1,0 +1,197 @@
+\documentclass[11pt,twocolumn,oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{article}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\setlength{\columnsep}{3em}
+\setlength{\columnseprule}{0.5pt}
+
+\geometry{left=1.50cm,right=2.00cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+\pagenumbering{arabic}
+\pagestyle{plain}
+
+\begin{document}
+	\begin{worksheet}{BS FI 1. Lehrjahr}{LF 4 - Einfache IT-Systeme}{Digitaltechnik}
+		\setcounter{section}{4}
+		\setcounter{page}{13}
+		\section{Schaltungen aufbauen}
+		Jetzt haben wir die \textit{boolesche Algebra} und die \textit{Schaltalgebra} kennengelernt. Stellt sich jetzt die Frage: \textit{Wofür brauche ich das überhaupt?}
+		\par\noindent
+		\subsection{Von der Anforderung zur Schaltung}
+		In der zuvor dargestellten Beschreibung ging das Aufstellen der Gleichung direkt aus dem Text. Dies ist aber nicht immer der Fall. Daher wollen wir das Vorgehen näher betrachten:\\
+		\underline{\textbf{Beispiel:}} Die Primzahl-Maschine kann die Zahlen \(0 - 7\) verarbeiten. Dabei soll die LED besagter Maschine nur dann aufleuchten, wenn die \grq{}gefütterte\grq{} Zahl eine Primzahl ist.\\
+		\par\noindent
+		\texttt{Wie realisieren wir die Schaltung, die die Primzahl-Maschine repräsentiert?}\\
+		\par
+		(I) Zunächst müssen wir überlegen, \textbf{wie viele Eingangsvariablen benötigen wir?}\\
+		Im Fall der Primzahl-Maschine können wir die Zahlen \(0 - 7\) darstellen, also benötigen wir \(3\) Bit \(\hat{=}\) \(3\) Eingangsvariablen.\\
+		\par
+		(II) \textbf{Wie viele Ausgangsvariablen benötigt unsere Schaltung?}\\
+		Da wir lediglich \underline{eine} LED haben, die leuchtet oder eben nicht, benötigen wir auch nur \textbf{eine} Ausgangsvariable.\\
+		\par
+		(III) Als nächstes müssen wir herausfinden, \textbf{bei welcher Variablenbelegung (\textit{Eingangsvariablen}) ist unser \textit{Ausgangssignal} 1?}\\
+		Für unser Beispiel erstellen wir eine Wahrheitstabelle und tragen in den entsprechenden Stellen eine \(1\) ein.\\
+		\par\noindent
+		\begin{tabularx}{0.48\textwidth}{|M|M|M|M|}
+			\hline
+			\rowcolor{codegray!10} \(x_2\) & \(x_1\) & \(x_0\) & \(LED\) \\
+			\hline
+			0 & 0 & 0 & 0\\
+			\hline
+			0 & 0 & 1 & 0\\
+			\hline
+			\rowcolor{green!10} 0 & 1 & 0 & 1\\
+			\hline
+			\rowcolor{green!10} 0 & 1 & 1 & 1\\
+			\hline
+			1 & 0 & 0 & 0\\
+			\hline
+			\rowcolor{green!10} 1 & 0 & 1 & 1\\
+			\hline
+			1 & 1 & 0 & 0\\
+			\hline
+			\rowcolor{green!10} 1 & 1 & 1 & 1\\
+			\hline
+		\end{tabularx}\\
+		\par
+		(IV) Aus der Tabelle, schreiben wir die \textbf{Variablenbelegungen jeweils als Konjunktion} (UND-Verknüpfung).\\
+		Für die obige Tabelle ergibt sich somit:
+		\begin{align*}
+			LED_2 = \overline{x_2} \cdot{} x_1 \cdot{} \overline{x_0}\\
+			LED_3 = \overline{x_2} \cdot{} x_1 \cdot{} x_0\\
+			LED_5 = x_2 \cdot{} \overline{x_1} \cdot{} x_0\\
+			LED_7 = x_2 \cdot{} x_1 \cdot{} x_0\\
+		\end{align*}
+		\indent
+		(V) Aus dieser Auflistung \textbf{stellen wir die Gleichung auf}, die Grundlage für die Schaltung ist.
+		\begin{align*}
+			LED & = LED_2 + LED_3 + LED_5 + LED_7\\
+			& = (\overline{x_2} \cdot{} x_1 \cdot{} \overline{x_0}) + (\overline{x_2} \cdot{} x_1 \cdot{} x_0) +\\
+			& (x_2 \cdot{} \overline{x_1} \cdot{} x_0) + (x_2 \cdot{} x_1 \cdot{} x_0)
+		\end{align*}
+		\par
+		(VI) Unter Verwendung der Gleichung \textbf{realisieren wir die Schaltung in der Simulationssoftware\footnote{LogicSim}}.\\
+		\par\noindent
+		\includegraphics[width=0.48\textwidth]{../99_Bilder/prim.jpg}\\
+		\par\noindent
+		\texttt{\underline{\textbf{Die Vorgehensweise im Überblick}}}
+		\begin{itemize}
+			\item[(I)] Anzahl der Eingangsvariablen bestimmen
+			\item[(II)] Anzahl der Ausgangsvariablen bestimmen
+			\item[(III)] Wertetabelle anlegen und füllen
+			\item[(IV)] Konjunktionen der \(1\)-Zeilen aufstellen
+			\item[(V)] Gleichung aufstellen (ODER-Verknüpfung der Konjunktionen)
+			\item[(VI)] Schaltung realisieren		
+		\end{itemize}
+		\newpage
+		\section{Schaltungen analysieren}
+		Bisher haben wir aus der geforderten Funktionalität eine Funktionstabelle und daraus eine logische Funktion aufgestellt. Mit dieser Funktion haben wir dann die Schaltung in einer Simulationssoftware\footnote{LogicSim} realisiert und getestet.\\
+		\par\noindent
+		\texttt{Was aber, wenn wir die Schaltung erhalten und deren Funktionalität beschreiben sollen?}
+		\subsection{Funktionsweisen einer Schaltung beschreiben}
+		Wir nutzen die folgende Schaltung beispielhaft zur Verdeutlichung des Vorgehens.\\
+		\par\noindent
+		\includegraphics[width=0.48\textwidth]{../99_Bilder/schAna.jpg}\\
+		\par\noindent
+		(I) Wir beginnen mit der \textbf{Funktionstabelle}.\\
+		In diese Übertragen wir die \textbf{Ein- und Ausgangsvariablen}.\\
+		Eingangsvarablen: \(Tür = T, Schlüssel = S, Code = C\)\\
+		Ausgangsvariable: \(LED = L\)
+		\begin{framed}
+			\noindent
+			\footnotesize{Wenn nötig, kann die Schaltung auch in kleinere Abschnitte (im Beispiel \(P\) und \(Q\)) unterteilt werden.\\
+			Diese Spalten \(P\) und \(Q\) dienen lediglich als \textbf{Zwischenschritt} um die Gesamtsituation \(Z\) korrekt auszufüllen.\\
+			Sie \underline{müssen nicht} bei jeder Analyse angegeben werden.}
+		\end{framed}
+		\begin{tabularx}{0.48\textwidth}{|M|M|M||M|M||M|}
+			\hline
+			\rowcolor{codegray!10} \(A\) & \(B\) & \(C\) & \(P\) & \(Q\) & \(LED\) \\
+			\rowcolor{codegray!15} & & & \(\overline{A} \wedge{} B\) & \(A \vee{} C\) & \(P \wedge{} Q\)\\
+			\hline
+			0 & 0 & 0 & & &\\
+			\hline
+			0 & 0 & 1 & & &\\
+			\hline
+			0 & 1 & 0 & & &\\
+			\hline
+			0 & 1 & 1 & & &\\
+			\hline
+			1 & 0 & 0 & & &\\
+			\hline
+			1 & 0 & 1 & & &\\
+			\hline
+			1 & 1 & 0 & & &\\
+			\hline
+			1 & 1 & 1 & & &\\
+			\hline
+		\end{tabularx}\\
+		\par\noindent
+		(II) Im Anschluss betrachten wir die einzelnen (oder die gesamte ) Situationen \(P\) und \(Q\).\\
+		Wir befüllen die Spalten der einzelnen Situationen (\(P = \overline{A}\wedge{}B\) bzw. \(Q = A \vee{} C\)) unter Berücksichtigung der Variablenzustände.\\
+		\par\noindent
+		\begin{tabularx}{0.48\textwidth}{|M|M|M||M|M||M|}
+			\hline
+			\rowcolor{codegray!10} \(A\) & \(B\) & \(C\) & \(P\) & \(Q\) & \(LED\) \\
+			\rowcolor{codegray!15} & & & \(\overline{A} \wedge{} B\) & \(A \vee{} C\) & \(P \wedge{} Q\)\\
+			\hline
+			0 & 0 & 0 & 0 & 0 &\\
+			\hline
+			0 & 0 & 1 & 0 & 1 &\\
+			\hline
+			0 & 1 & 0 & 1 & 0 &\\
+			\hline
+			0 & 1 & 1 & 1 & 1 &\\
+			\hline
+			1 & 0 & 0 & 0 & 1 &\\
+			\hline
+			1 & 0 & 1 & 0 & 1 &\\
+			\hline
+			1 & 1 & 0 & 0 & 1 &\\
+			\hline
+			1 & 1 & 1 & 0 & 1 &\\
+			\hline
+		\end{tabularx}\\
+		\par\noindent
+		(III) Mit Hilfe der Einzelsituationen \(P\) und \(Q\) betrachten wir nun die Gesamtsituation \(Z = P \wedge{} Q\) und füllen diese Spalte entsprechend.\\
+		\par\noindent
+		\begin{tabularx}{0.48\textwidth}{|M|M|M||M|M||M|}
+			\hline
+			\rowcolor{codegray!10} \(Tür\) & \(B\) & \(C\) & \(P\) & \(Q\) & \(LED\) \\
+			\rowcolor{codegray!15} & & & \(\overline{A} \wedge{} B\) & \(A \vee{} C\) & \(P \wedge{} Q\)\\
+			\hline
+			0 & 0 & 0 & 0 & 0 & 0\\
+			\hline
+			0 & 0 & 1 & 0 & 1 & 0\\
+			\hline
+			0 & 1 & 0 & 1 & 0 & 0\\
+			\hline
+			\rowcolor{green!10} 0 & 1 & 1 & 1 & 1 & 1\\
+			\hline
+			1 & 0 & 0 & 0 & 1 & 0\\
+			\hline
+			1 & 0 & 1 & 0 & 1 & 0\\
+			\hline
+			1 & 1 & 0 & 0 & 1 & 0\\
+			\hline
+			1 & 1 & 1 & 0 & 1 & 0\\
+			\hline
+		\end{tabularx}\\
+		\par\noindent
+		(IV) Für die Beschreibung der Schaltung sind nun ausschließlich die Zeilen relevant, bei denen die Gesamtsituation \(Z = 1\) ist.\\
+		Für diese betrachten wir die Zustände der Eingangsvariablen und formulieren unter Zuhilfenahme der Situation die Funktionalität.\\
+		\par\noindent
+		\setlength{\leftskip}{0.5cm}
+		\textit{\textbf{Die LED leuchtet auf, wenn die Tür nicht abgeschlossen ist, der Schlüssel passt und der eingegebene Code korrekt ist.}}\\
+		\par\noindent
+		\setlength{\leftskip}{0cm}
+		\texttt{\underline{Die Vorgehensweise im Überblick}}
+		\begin{itemize}
+			\item[(I)] Ein- und Ausgangsvariablen bestimmen\\
+			Funktionstabelle mit Variablen aufstellen
+			\item[(II)] Teilsituationen in Funktionstabelle übernehmen und entsprechende Ausgänge eintragen
+			\item[(III)] Gesamtsituation in Tabelle angeben unter Berücksichtigung der Einzelsituationen füllen
+			\item[(IV)] Betrachte ausschließlich die Zeilen der Funktionstabelle, in denen die Gesamtsituation den Zustand \(1\) hat.\\
+			Nutze die Eingangsvariablen zur Beschreibung der Funktionalität.
+		\end{itemize}
+	\end{worksheet}
+\end{document}

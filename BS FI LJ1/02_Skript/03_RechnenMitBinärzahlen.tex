@@ -6,13 +6,14 @@
 \setlength{\columnsep}{3em}
 \setlength{\columnseprule}{0.5pt}
 
-\geometry{left=2.00cm,right=2.00cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+\geometry{left=1.50cm,right=2.00cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
 \pagenumbering{arabic}
 \pagestyle{plain}
 
 \begin{document}
-	\begin{worksheet}{BS FI}{1. Lehrjahr, LF 4 - Einfache IT-Systeme}{Digitaltechnik - Zahlensysteme - Rechnen mit Binärzahlen}
+	\begin{worksheet}{BS FI 1. Lehrjahr}{LF 4 - Einfache IT-Systeme}{Digitaltechnik - Zahlensysteme - Rechnen mit Binärzahlen}
 		\setcounter{section}{2}
+		\setcounter{page}{7}
 		\section{Rechnen mit Binärzahlen}
 		In der Mathematik können wir beliebig große Zahlen darstellen. Innerhalb eines Computers ist der Speicherplatz aber beschränkt und somit auch die Anzahl der möglichen Stellen einer Binärzahl.\\
 		Betrachten wir folgendes Beispiel:\\
@@ -39,7 +40,7 @@
 		\end{tabularx}\\
 		\par\noindent
 		Bei drei zur Verfügung stehenden Bits lassen sich also insgesamt nur acht verschiedene Zahlen (0-7) darstellen.
-		\subsection*{Wie werden Binärzahlen addiert?}
+		\subsection{Wie werden Binärzahlen addiert?}
 		In einem Stellenwertsystem, unabhängig von der Basis, können wir addieren, wie wir es aus der Grundschule kennen.\\
 		Dabei dürfen wir aber lediglich die zur Verfügung stehenden Ziffern verwenden.\\
 		\tiny{Im \textit{Oktal} können wir nur die Ziffern \(0 - 7\) verwenden.}\normalsize\\
@@ -90,9 +91,9 @@
 		\par\bigskip\noindent
 		Wir haben nun die Addition von Binärzahlen kennengelernt und können diese ziemlich souverän anwenden.\\
 		Was wir aber noch nicht können, ist die Subtraktion. Der Computer selbst ist auch nicht in der Lage zu subtrahieren. Was intern passiert, wenn \(3 - 2\) gerechnet wird, ist \(3 + (-2)\). Der Computer addiert also die \(-2\) zur \(3\) hinzu. Um das genauer zu verstehen, schauen wir uns die Negativdarstellung von Binärzahlen an.
-		\section{Darstellung negativer Zahlen}
+		\subsection{Darstellung negativer Zahlen}
 		\textit{\textbf{Ausgangsproblem:} Wie stellt man eine negative Zahl im Binärsystem dar? z.B.: \(-5\)}\\
-		\subsection{Negative Zahlen}
+		\subsubsection{Negative Zahlen}
 		Im Allgemeinen haben wir für die Darstellung einer Zahl \(n\) Bit zur Verfügung. Das heißt, haben wir 3 Bit, so können wir die Zahlen von \(0 - 7 (2^3-1)\) darstellen.\\
 		Um nun aber positive und negative Zahlen darstellen zu können, reservieren wir das vorderste (\textbf{M}ost \textbf{S}ignificant \textbf{B}it) Bit als Vorzeichen. Hier gilt die Zuordnung:\\
 		\(MSB = 0 \Rightarrow\) Zahl ist positiv.\\
@@ -115,7 +116,7 @@
 		\par\noindent
 		\textit{Bleibt zu klären, wie man die Negativdarstellung erhält, ohne jedes Mal zu zeichnen oder auszuprobieren.}\\
 		Hierfür müssen wir zwei Schritte ausführen, welche nachfolgend kurz erklärt werden.
-		\subsubsection*{Einerkomplement}
+		\subsubsection{Einerkomplement}
 		Wie eben bereits erwähnt, müssen die Zahl und ihre negative Zahl zusammen Null (0) ergeben. Zunächst bestimmen wir also die Binärzahl, so dass wir bei der größten mit \(n\) Bit darstellbaren Zahl sind.\\
 		\tiny{Im Fall von 3 Bit ist das \(111_2\), bei 4 Bit dann \(1111_2\).}\normalsize\\
 		Diese ominöse Zahl erhält man, indem man \textbf{alle Bit invertiert} (also umdreht). Diese Darstellung nennt man auch \textbf{Einerkomplement}.\\
@@ -134,7 +135,7 @@
 			6 & 1 & 1 & 0 & 0 & 0 & 1 & 1\\
 			7 & 1 & 1 & 1 & 0 & 0 & 0 & 0
 		\end{tabularx}\\
-		\subsubsection*{Zweierkomplement}
+		\subsubsection{Zweierkomplement}
 		In der Tabelle ist erkennbar, eine Zahl und ihre Gegenkomponente ergeben die größte mit \(n\) Bit darstellbare Zahl. Um nun alle \(n\) auf Null (0) zu bringen und einen Übertrag an der höchsten Stelle zu erhalten, also aus dem darstellbaren Zahlenbereich raus zu fallen, müssen wir \(1\) addieren.\\\par\noindent
 		\textbf{\underline{Beispiel:}} Wir haben 3 Bit und möchten das Zweierkomplement von \(2\).\\
 		\par\noindent

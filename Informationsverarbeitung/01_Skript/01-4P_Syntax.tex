@@ -1,0 +1,168 @@
+\documentclass[11pt,oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{article}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\setlength{\columnsep}{3em}
+\setlength{\columnseprule}{0.5pt}
+
+\geometry{left=1.50cm,right=1.50cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+\pagestyle{plain}
+\pagenumbering{arabic}
+
+\begin{document}
+	\begin{worksheet}{Informationsverarbeitung}{Lernabschnitt: Strukturiert Programmieren}{Grundlagen der Syntax}
+		\setlength{\columnseprule}{0pt}
+		\setcounter{section}{3}
+		\setcounter{page}{12}
+		\section{Grundlagen der Syntax}
+		\subsection{Anweisungen}
+		Anweisungen (Befehle, Kommandos, Statements) sind Programm-Einheiten, die \grqq{}etwas bewirken\grqq{}. In Java muss jede Anweisung durch ein Semikolon abgeschlossen werden.\\
+		\lstinline[style=JavaInputStyle]|System.out.println("Hallo");|\\
+		\lstinline[style=JavaInputStyle]|a = 7 + 3;|
+		
+		\subsection{Bezeichner}
+		Bezeichner benennen Programmelemente (Klassen, Objekte, Methoden, Funktionen oder Daten). Dabei ist die Groß- bzw. Kleinschreibung relevant (a ist nicht gleich A).\\
+		Bezeichner können mit einem Buchstaben, einem Unterstrich \_ oder einem Dollarzeichen \$ beginnen. Danach sind Zahlen zulässig.\\
+		Wir merken uns: \texttt{Bezeichner sind vom Programmierer (frei) wählbare Programmelemente.}
+		
+		\subsection{Konventionen in Java}
+		Bestimmte syntaktische Elemente sind innerhalb von Konventionen festgelegt. Dazu zählen
+		\begin{itemize}
+			\item \textbf{Klassennamen} beginnen mit einem Großbuchstaben
+			\item \textbf{Methodennamen} beginnen mit einem Kleinbuchstaben
+			\item \textbf{Konstanten} bestehen aus Großbuchstaben (z.B. PI)
+			\item \textbf{Attribute} beginnen mit Kleinbuchstaben
+			\item \textbf{Paketnamen} bestehen ausschließlich aus Kleinbuchstaben
+		\end{itemize}
+		
+		\subsection{Blöcke}
+		Blöcke werden durch geschweifte Klammern {} gebildet:\\
+		{ anweisun; \ldots }\\
+		Sie werden als eine Anweisung behandelt, können geschachtelt werden und bestimmen (auch) die Sichtbarkeit von Variablen.\\
+		\textbf{Lokale Variablen} sind Variablen, die innerhalb eines Blockes deklariert werden und die auch nur in diesem Block sichtbar sind.\\
+		Klassen und Methoden bestehen aus mindestens einem Anweisungsblock.
+		
+		\subsection{Schlüsselworte}
+		In Java existieren verschiedene reservierte Wörter für Elemente der Programmiersprache. Diese nennt man \textbf{Schlüsselwörter}, sie dürfen \underline{nicht} für eigene Bezeichner verwendet werden.\\
+		\newpage
+		\noindent
+		Tabelle der Schlüsselwörter:\\
+		\par\noindent
+		\begin{tabularx}{\textwidth}{|X|X|X|X|}
+			\hline
+			{\lstinline[style=JavaInputStyle]{abstract}} & {\lstinline[style=JavaInputStyle]{boolean}} & {\lstinline[style=JavaInputStyle]{break}} & {\lstinline[style=JavaInputStyle]{byte}}\\
+			\hline
+			{\lstinline[style=JavaInputStyle]{case}} & {\lstinline[style=JavaInputStyle]{char}} & {\lstinline[style=JavaInputStyle]{class}} & {\lstinline[style=JavaInputStyle]{const}}\\
+			\hline
+			{\lstinline[style=JavaInputStyle]{continue}} & {\lstinline[style=JavaInputStyle]{default}} & {\lstinline[style=JavaInputStyle]{do}} & {\lstinline[style=JavaInputStyle]{double}}\\
+			\hline
+			{\lstinline[style=JavaInputStyle]{else}} & {\lstinline[style=JavaInputStyle]{extends}} & {\lstinline[style=JavaInputStyle]{finally}} & {\lstinline[style=JavaInputStyle]{float}}\\
+			\hline
+			{\lstinline[style=JavaInputStyle]{for}} & {\lstinline[style=JavaInputStyle]{goto}} & {\lstinline[style=JavaInputStyle]{if}} & {\lstinline[style=JavaInputStyle]{implements}}\\
+			\hline
+			{\lstinline[style=JavaInputStyle]{import}} & {\lstinline[style=JavaInputStyle]{instanceof}} & {\lstinline[style=JavaInputStyle]{int}} & {\lstinline[style=JavaInputStyle]{long}}\\
+			\hline
+			{\lstinline[style=JavaInputStyle]{native}} & {\lstinline[style=JavaInputStyle]{new}} & {\lstinline[style=JavaInputStyle]{package}} & {\lstinline[style=JavaInputStyle]{private}}\\
+			\hline
+			{\lstinline[style=JavaInputStyle]{protected}} & {\lstinline[style=JavaInputStyle]{return}} & {\lstinline[style=JavaInputStyle]{short}} & {\lstinline[style=JavaInputStyle]{super}}\\
+			\hline
+			{\lstinline[style=JavaInputStyle]{switch}} & {\lstinline[style=JavaInputStyle]{synchronized}} & {\lstinline[style=JavaInputStyle]{this}} & {\lstinline[style=JavaInputStyle]{throws}}\\
+			\hline
+			{\lstinline[style=JavaInputStyle]{transient}} & {\lstinline[style=JavaInputStyle]{try}} & {\lstinline[style=JavaInputStyle]{void}} & {\lstinline[style=JavaInputStyle]{while}}\\
+			\hline
+		\end{tabularx}
+		
+		
+		\subsection{Deklarationen}
+		\textbf{Deklaration} (Vereinbarung) legt die \textbf{Attribute}, also die Eigentschaften wie Typ, Name, Zugriffsrechte, Sichtbarkeit usw. von Programmelementen (Variablen, Klassen, Methoden, ...) fest.\\
+		\par\noindent
+		Für die Deklaration von Daten in Java gilt folgende Syntax:\\
+		\lstinline[style=JavaInputStyle]|[modifier] typ datum1, datum2, ...;|
+		\begin{itemize}
+			\item {\lstinline[style=JavaInputStyle]|modifier|} (Modifikatoren) legen Eigenschaften von Programmelementen fest und werden an dieser Stelle noch nicht behandelt
+			\item {\lstinline[style=JavaInputStyle]|typ|} legt den Typ der Daten fest. Bei {\lstinline[style=JavaInputStyle]|typ|} kann es sich um die Angabe eines Grunddatentyps oder um eine Klasse handeln (Referenzdatentyp).
+		\end{itemize}
+		\underline{Beispiele für Deklarationen:}\\
+		\lstinline[style=JavaInputStyle]|int i, j, k; //Deklaration von drei Variablen vom Typ int (Grunddatentyp)|\\
+		\lstinline[style=JavaInputStyle]|String str; //Deklaration der Variable str; str ist Objekt der Klasse String|\\
+		\lstinline[style=JavaInputStyle]|Point p1,p2; // Deklaration von zwei Referenztypen p1 und p2 der Klasse Point|\\
+		\par\noindent
+		Deklarationen von Daten sind in Klassen, Methoden und Programmblöcken zulässig. Die Stellung der Deklaration bestimmt unter anderem die Sichtbarkeit der Daten. Die einfachste Form ist die Deklaration von lokalen Variablen innerhalb eines Blockes.
+		
+		\subsection{Eingabe-Applikation}
+		Die einfachste Möglichkeit, Eingaben von der Tastatur an ein Java-Programm zu übergeben, besteht darin, die Eingaben gleich beim Aufruf des Programms als so genannte Aufrufparameter anzugeben.\\
+		Die Aufrufparameter werden als Folge von Zeichenketten (Zeichenfolge, Strings) unter dem Namen gespeichert, der in der Methode \lstinline[style=JavaInputStyle]|main()| als String-Name angegeben ist.\\
+		\par\noindent
+		In \lstinline[style=JavaInputStyle]|public static void main(String[] eingabe)| enthält \lstinline[style=JavaInputStyle]|eingabe| die Liste der beim Aufruf eingegebenen Zeichenfolgen.\\
+		\underline{Beispiel:}\\
+		Das Programm gibt in einer Schleife die beim Programmstart angegebenen Zeichenfolgen nacheinander aus:
+		\begin{lstlisting}[style=JavaInputStyle]
+			public class Eingabe1
+			{
+				public static void main(STring[] args) {
+					int i = 0;
+					while(i < eingabe.length){
+						System.out.println(eingabe[i]);
+						i++;
+					}
+				}
+			}
+		\end{lstlisting}
+		
+		\subsection{Ausgabe-Applikation}
+		Alle Beispiele zu grundlegenden Programmierelementen können anhand einer einfachen Ausgabe-Applikation ausprobiert werden.\\
+		Die folgende \grqq{}einfache\grqq{} Applikation kann als Gerüst für solche Ausgabeschritte in Java benutzt werden:
+		\begin{lstlisting}[style=JavaInputStyle]
+			public class Ausgabe1 {
+				public static void main(String[] args) {
+					double w;
+					w = 999.99;
+					System.out.println("Hallo Java " + w);
+				}
+			}
+		\end{lstlisting}
+		\underline{An dieser Stelle ist fpr das Verständnis zunächst nur wichtig:}
+		\begin{itemize}
+			\item Jede Applikation muss die Zeile \lstinline[style=JavaInputStyle]|public class NameXyz()| enthalten.
+			\item Der Name \lstinline[style=JavaInputStyle]|NameXyz| ist frei wählbar, aber wenn er geändert wird, muss auch der Name der Quelltext-Datei geändert werden
+			\item Geschweifte Klammern \lstinline[style=JavaInputStyle]|{}| umschließen Programmteile.
+			\item Jede Applikation erfordert die Zeile:\\
+			\lstinline[style=JavaInputSTyle]|public static void main(String[] args)|
+			\item Innerhalb der runden Klammern von \lstinline[style=JavaInputStyle]|main()| muss \lstinline[style=JavaInputStyle]|String| vereinbart und ein frei wählbarer Name (z.B. \lstinline[style=JavaInputStyle]|args| oder \lstinline[style=JavaInputStyle]|str, abc, ...|) angegeben werden. Die eckigen Klammern bei \lstinline[style=JavaInputStyle]|String| oder hinter dem Namen stehen.
+		\end{itemize}
+		Mit \lstinline[style=JavaInputStyle]|System.out.println()| wird eine Zeichenfolge auf die Kommandozeile ausgegeben.
+		
+		\subsection{Ausdrücke}
+		Ausdrücke sind in Java die kleinsten ausführbaren Einheiten innerhalb eines Programms. Ein Ausdruck besteht mindestens aus einem Operator und einem Operanden. Jeder Ausdruck hat einen Rückgabewert.\\
+		\underline{Beispiel:}\\
+		\lstinline[style=JavaInputStyle]|ax - ay|\\
+		Der Operator \lstinline[style=JavaInputStyle]|+| (arithmetischer Operator) verknüpft die beiden Operanden \lstinline[style=JavaInputStyle]|ax| und \lstinline[style=JavaInputStyle]|ay|, der Rückgabewert ist die Summe der beiden Operanden (wenn beide Operanden Fließkomma- oder Ganzzahl-Daten sind).\\
+		\par\noindent
+		\underline{Eigenschaften von Ausdrücken}
+		\begin{itemize}
+			\item \textbf{Rückgabewert}\\
+			Jeder Ausdruck hat einen Rückgabewert. Wert und Typ des Rückgabewertes ergeben sich aus dem Operator und den Operanden.
+			\item \textbf{Auswertungsreihenfolge}\\
+			Bindungs- und Assoziativitätsregeln (z.B. \grqq{}Punkt- vor Strichrechnung\grqq{})
+			\item \textbf{Klammerung}\\
+			Durch Klammerung lässt sich die Auswertungsreihenfolge festlegen/verändern.
+			\item \textbf{Nebeneffekte}\\
+			Veränderung von Variablenwerten ohne explizite Zuweisung
+		\end{itemize}
+		\subsection{Zuweisungen}
+		Die Zuweisung von Werten an Variablen geschieht in Java mit dem einfachen Gleichheitszeichen Der Wert des Ausdrucks recht vom Gleichheitszeichen wird der Variablen links vom Gleichheitszeichen zugewiesen. Der Typ des Ausdrucks und der Typ der Variable müssen zueinander passen.\\
+		\underline{Beispiel:}\\
+		\lstinline[style=JavaInputStyle]|int a;|\\
+		\lstinline[style=JavaInputStyle]|a = 3 * 6;|
+		\subsection{Kommentare}
+		Kommentare dienen der besseren Lesbarkeit (Dokumentation) von Programm-Quelltexten. Sie werden vom Compiler ignoriert. Der Standars-Kommentar beginnt mit \lstinline[style=JavaInputStyle]|/*| und endet mit \lstinline[style=JavaInputStyle]|*/|. Er kann sich über mehrere Zeilen erstrecken. Dabei gilt: Kommentare können nicht geschachtelt werden.\\
+		\underline{Beispiel:}\\
+		\lstinline[style=JavaInputStyle]|/* Das ist ein Kommentar */|\\
+		\par\noindent
+		\underline{Zeilenkommentar}\\
+		Java (und die meisten C-Compiler) kennen den Zeilenkommentar. Der Zeilenkommentar beginnt it \lstinline[style=JavaInputStyle]|//| und endet am Zeilenende.\\
+		\underline{Beispiel:}\\
+		\lstinline[style=JavaInputStyle]|int j = 0;   // Das ist der Kommentar|
+	\end{worksheet}
+\end{document}

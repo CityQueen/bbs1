@@ -1,0 +1,90 @@
+\documentclass[11pt,twocolumn,oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{article}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\setlength{\columnsep}{3em}
+\setlength{\columnseprule}{0.5pt}
+
+\geometry{left=1.50cm,right=2.00cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+\pagenumbering{arabic}
+\pagestyle{plain}
+
+\begin{document}
+	\begin{worksheet}{BS FI 1. Lehrjahr}{LF 4 - Einfache IT-Systeme}{Digitaltechnik}
+		\setcounter{section}{3}
+		\setcounter{page}{11}
+		\section{Boolesche Algebra}
+		Die boolesche Logik oder auch die boolesche Algebra geht auf den Mathematiker Georg Boole (England, 1815 - 1864) zurück. Als Grundlage dient der booleschen Algebra die Darstellung von Werten in binärer Form. Genauer bedeutet das eigentlich nur, dass der Wert einer Aussage entweder \glqq{}wahr\grqq{} oder \glqq{}falsch\grqq{} sein kann.\\
+		Aufgrund der Binärdarstellung existieren in der booleschen Algebra lediglich zwei Grundwerte.\\
+		Diese Grundwerte können durch eine Reihe von logischen Operationen\footnote{Diese werden auch als Verknüpfungen bezeichnet. Siehe hierzu Abschnitt 2: Logische Verknüpfungen.} miteinander verknüpft werden.\\
+		Das Resultat einer solchen Verknüpfung wird in Tabellen, den sogenannten Wahrheitstabellen, definiert. Die uns bekannten logischen Verknüpfungen sind NICHT, ODER und UND.\\
+		\par\noindent
+		\begin{tabularx}{0.47\textwidth}{|M|M|M|M|M|}
+			\cline{3-5}
+			\multicolumn{2}{c|}{} & NOT & OR & AND\\
+			\hline
+			\rowcolor{codegray!10} \(x_1\) & \(x_2\) & \(\bar{x_1}\) & \(x_1 + x_2\) & \(x_1\cdot{}x_2\)\\
+			\hline
+			0 & 0 & 1 & 0 & 0\\
+			\hline
+			0 & 1 & 1 & 1 & 0\\
+			\hline
+			1 & 0 & 0 & 1 & 0\\
+			\hline
+			1 & 1 & 0 & 1 & 1\\
+			\hline
+		\end{tabularx}
+		\subsection{Wahrheitstabellen der booleschen Hauptverknüpfungen}
+		Zusätzlich zu der jeweiligen Wahrheitstabelle finden Sie auch die verwendeten Schaltplan-Symbole. Diese entsprechen der IEC\footnote{Die International Electotechnical Commission (IEC) ist eine internationale Normierungsorganisation.} 60617-12 Norm aus der IEC-60617-Schaltzeichen-Datenbank.
+		\subsubsection{NOT}
+		\begin{tabularx}{0.48\textwidth}{ll|l}
+			\multirow{3}{*}{\includegraphics[width=0.1\textwidth,align=t]{../99_Bilder/NOT.jpg}} & \(x_1\) & \(f(x_1)\)\\
+			\cline{2-3}
+			& 0 & 1\\
+			& 1 & 0\\
+		\end{tabularx}\\
+		\par\noindent
+		\textbf{Beschreibung}: Dieses Schaltelement negiert/invertiert das Eingangssignal.
+		\subsubsection{OR}
+		\begin{tabularx}{0.48\textwidth}{lll|l}
+			& \(x_1\) & \(x_2\)& \(f(x_1;x_2)\)\\
+			\cline{2-4}
+			\multirow{3}{*}{\includegraphics[width=0.1\textwidth,align=t]{../99_Bilder/OR.jpg}} & 0 & 0 & 0\\
+			& 0 & 1 & 1\\
+			& 1 & 0 & 1\\
+			& 1 & 1 & 1\\
+		\end{tabularx}\\
+		\par\noindent
+		\textbf{Beschreibung}: Das Ausgangssignal dieses Schaltsymbol ist genau dann \(1\), wenn \underline{eines} oder \underline{beide} der Eingangssignale \(1\) sind.
+		\subsubsection{AND}
+		\begin{tabularx}{0.48\textwidth}{lll|l}
+			& \(x_1\) & \(x_2\)& \(f(x_1;x_2)\)\\
+			\cline{2-4}
+			\multirow{3}{*}{\includegraphics[width=0.1\textwidth,align=t]{../99_Bilder/AND.jpg}} & 0 & 0 & 0\\
+			& 0 & 1 & 0\\
+			& 1 & 0 & 0\\
+			& 1 & 1 & 1\\
+		\end{tabularx}\\
+		\par\noindent
+		\textbf{Beschreibung}: Das Ausgangssignal dieses Schaltsymbol ist genau dann \(1\), wenn \underline{beide} der Eingangssignale \(1\) sind.
+		\subsection{Schaltalgebra}
+		Die Schaltalgebra ist ein Spezialfall der booleschen Algebra. In ihr werden alle allgemeinen Aussagen wir \glqq{}wahr\grqq{} und \glqq{}falsch\grqq{} durch Kontaktzustände (also Kontakt geschlossen oder Kontakt offen) ersetzt.\\
+		So ist es dann möglich, Schaltnetze durch boolesche Gleichungen zu beschreiben. In der Schaltalgebra ist es zudem üblich, die UND-Funktion als Multiplikationszeichen (\(\cdot\)) und die ODER-Funktion als Pluszeichen (\(+\))darzustellen. Die NICHT-Funktion wird im allgemeinen als Querstrich (\(\bar{x}\)) über der Zustandsvariablen oder durch das mathematische Nicht-Zeichen (\(\neg\)) markiert.\\
+		\par\noindent
+		Wir schauen uns die folgende \glqq{}logische Gleichung\grqq{} an:\[(E_1 + E_2)\cdot(E_3+E_4) = A_1\]
+		Lesen kann man das Ganze dann als:\\
+		\textit{(\(E_1\) \textbf{ODER} \(E_2\)) \textbf{UND} (\(E_3\) \textbf{ODER} \(E_4\)) = \(A_1\)}
+		\subsubsection{Anwendung für die boolesche Logik}
+		Generell kann die boolesche Logik bei den meisten Logikproblemen angewendet werden, bei denen die Eingangsvariablen jeweils nur zwei Zustände haben.\\
+		Betrachten wir das folgende Beispiel:\\
+		Ein Raum hat zwei Türen und ein Fenster. Der angeschlossene Warnmelder soll einen Warnton abgeben, wenn beide Türen mit einem Sicherheitsschloss abgeschlossen sind und entweder ein Bewegungsmelder im Raum oder ein Berührungssensor am Fenster anspringt.\\
+		\rule{0.48\textwidth}{0.1pt}\\
+		\textit{Wie gehen wir vor, um die Schaltung aufzustellen?}\\
+		\par\noindent
+		Als Eingangssignale haben wir die beiden Türen \(T_1, T_2\) (UND), sowie den Bewegungsmelder \(B_1\) und den Berührungssensor \(B_2\) (ODER).\\
+		Die Türschlösser und die externen Sensoren (UND) lösen zusammen den Warnton aus. Das Ausgangssignal ist der Warnton \(W_1\). So ergibt sich dann die folgende Funktionsgleichung \[W_1 = (E_1\cdot{}E_2)\cdot{}(B_1 + B_2)\]
+		Die Funktionalität lässt sich dann mit Hilfe der Gleichung in einer Simulationssoftware\footnote{Zum Beispiel LogicSim.} umsetzten.\\
+		\includegraphics[width=0.48\textwidth]{../99_Bilder/SkrAlarmanlage.jpg}\\
+	\end{worksheet}
+\end{document}

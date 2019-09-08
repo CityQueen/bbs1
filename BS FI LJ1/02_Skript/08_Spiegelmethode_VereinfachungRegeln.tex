@@ -1,0 +1,89 @@
+\documentclass[11pt,twocolumn,oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{article}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\setlength{\columnsep}{3em}
+\setlength{\columnseprule}{0.5pt}
+
+\geometry{left=1.50cm,right=1.50cm,top=2.50cm,bottom=1.00cm,includeheadfoot}
+\pagestyle{plain}
+
+\begin{document}
+	\begin{worksheet}{BS FI 1. Lehrjahr}{LF 4 - Einfache IT-Systeme}{Digitaltechnik}
+		\setcounter{page}{19}
+		\section*{Die Konstruktion des Karnaugh-Diagramms}
+		Betrachten wir uns die Funktionstabelle für eine boolesche Funktion \(f_1\) mit zwei Eingangsvariablen. Da es nur vier Ausgangszustände (\(2^2\)) gibt, benötigen wir im zugehörigen Karnaugh-Diagramm nur ein (2 x 2) Diagramm.\\
+		\begin{karnaugh-map}[2][2][1][$x_0$][$x_1$]
+			
+		\end{karnaugh-map}\\
+		Ergänzen wir unsere Funktion nun auf drei Eingangsvariablen, müssen wir das Diagramm zunächst etwas anpassen. Um beim übertragen aus der Funktionstabelle in das Diagramm nicht viel nachdenken zu müssen, ziehen wir die Variable \(x_1\) nach oben, ergänzen somit das Diagramm um zwei Spalten und reduzieren es zunächst auf eine Spalte.\\
+		\includegraphics[width=0.4\textwidth]{../99_Bilder/190219_2x2zu1x4.jpg}\\
+		So ergibt sich dann das nachfolgende Layout.\\
+		\begin{minipage}{0.2\textwidth}
+			\renewcommand{\arraystretch}{1.4}
+			\begin{tabularx}{1.1\textwidth}{|L{0.5cm}|L{0.5cm}|L{0.5cm}|L{0.5cm}|}
+				\multicolumn{4}{c}{$x_1x_0$}\\
+				\multicolumn{1}{c}{00} & \multicolumn{1}{c}{01} & \multicolumn{1}{c}{11} & \multicolumn{1}{c}{10}\\
+				\hline
+				& & & \\
+				\hline
+			\end{tabularx}\\
+			\par\noindent
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.2\textwidth}
+			\includegraphics[width=0.98\textwidth]{../99_Bilder/190219_1x4zu2x4.jpg}
+		\end{minipage}\\
+		Es fehlt noch die dritte Eingangsvariable. Diese hat entsprechend zwei Zeilen. Wir weisen der ersten Zeile den Zustand \(0\) zu und erweitern um eine weitere Zeile, die den Zustand \(1\) erhält.\\
+		\newpage
+		Damit ergibt sich für \underline{drei Eingabevariablen}: (2 x 4)\\
+		\par\noindent
+		\begin{karnaugh-map}[4][2][1][$x_1x_0$][$x_2$]
+			
+		\end{karnaugh-map}
+		\par\noindent
+		Möchten wir nun um eine vierte Eingangsvariable erweitern, nutzen wir die untere Kante des Diagramms als Spiegelachse.\\
+		\par\noindent
+		\includegraphics[width=0.28\textwidth]{../99_Bilder/190219_2x4zu4x4.jpg}\\
+		Damit ergibt sich zunächst das folgende Diagramm:\\
+		\includegraphics[width=0.28\textwidth]{../99_Bilder/190219_4x4_3.jpg}\\
+		Um nun die vierte Eingangsvariable betrachten zu können, müssen wir diese entsprechend anbringen.\\
+		Bei der Zeilen- bzw. Spaltenzählung ist zu beachten, dass sich von einer zur nächsten Zeile bzw. Spalte jeweils nur \underline{\textbf{eine}} Variable ändern darf.\\
+		Innerhalb der \textit{K-Map} werden die Zellen mit einer \(1\) befüllt, deren Belegung bei der Funktion auch eine \(1\) als Ausgabe haben.
+		\section*{Vereinfachen mit der K-Map - Überdeckung der Einsen}
+		Bei der Vereinfachung von Schaltfunktionen ist unser Ziel, so wenig Schaltelemente (\textit{NOT, AND} bzw. \textit{OR}) wie möglich zu nutzen.\\
+		Um die aus der Funktionstabelle aufgestellte Funktion zu minimieren, versuchen wir im Karnaugh-Diagramm so viele \(1\)en wie möglich\footnote{Die Anzahl muss immer einer \underline{2er Potenz} entsprechen.} zusammenzufassen. Dabei sind folgende Überdeckungen bzw. Zusammenfassungen zulässig:
+		\begin{itemize}
+			\item[+] zwei nebeneinander/übereinander liegende \(1\)en\\
+			\begin{karnaugh-map}[4][4][1][$x_1x_0$][$x_3x_2$]
+				\minterms{0,1,7,15}
+				\implicant{0}{1}
+				\implicant{7}{15}
+			\end{karnaugh-map}
+			\item[+] vier zusammenhängende \(1\)en\\
+			\begin{karnaugh-map}[4][4][1][$x_1x_0$][$x_3x_2$]
+				\minterms{0,1,4,5,9,11,13,15}
+				\implicant{0}{5}
+				\implicant{13}{11}
+			\end{karnaugh-map}
+			\item[+] zwei bzw. vier über die Außenkanten nebeneinander/übereinander liegende \(1\)en
+			\begin{karnaugh-map}[4][4][1][$x_1x_0$][$x_3x_2$]
+				\minterms{0,1,2,4,6,9}
+				\implicantedge{1}{1}{9}{9}
+				\implicantedge{0}{4}{2}{6}
+			\end{karnaugh-map}
+			\item[+] zwei oder vier in den Ecken befindliche \(1\)en
+		\end{itemize}
+		\begin{karnaugh-map}[4][4][1][$x_1x_0$][$x_3x_2$]
+			\minterms{0,2,8,10}
+			\implicantedge{0}{0}{2}{2}
+			\implicantedge{8}{8}{10}{10}
+		\end{karnaugh-map}\\
+		bzw.\\
+		\begin{karnaugh-map}[4][4][1][$x_1x_0$][$x_3x_2$]
+			\minterms{0,2,8,10}
+			\implicantcorner
+		\end{karnaugh-map}
+	\end{worksheet}
+\end{document}
