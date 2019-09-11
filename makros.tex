@@ -81,10 +81,12 @@ minimum height=2em,minimum width=2cm,rounded corners]
 	tabsize=2,
 }
 %Python
-\lstdefinestyle{PythonInputStyle}{
+\lstdefinestyle{Python}{
 	language=Python,
 	alsoletter={1234567890},
-	aboveskip=1ex,
+	autogobble=true,
+	aboveskip=1em,
+	belowskip=1em,
 	basicstyle=\footnotesize,
 	breaklines=true,
 	breakatwhitespace= true,
@@ -112,7 +114,8 @@ minimum height=2em,minimum width=2cm,rounded corners]
 	keywordstyle=\color{blue}\bfseries,
 	rulecolor=\color{black!40},
 	showstringspaces=false,
-	stringstyle=\color{deepgreen}
+	stringstyle=\color{deepgreen},
+	tabsize=4
 }
 
 \lstset{literate=%

@@ -1,0 +1,84 @@
+\documentclass[11pt,twocolumn,oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{article}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\setlength{\columnsep}{3em}
+\setlength{\columnseprule}{0.5pt}
+
+\geometry{left=1.50cm,right=1.50cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+\pagenumbering{gobble}
+\pagestyle{empty}
+
+\begin{document}
+	\begin{worksheet}{Mathematik}{Lernabschnitt: Differenzialrechnung}{Extremwertaufgaben}
+		\setcounter{section}{7}
+		\setcounter{subsection}{5}
+		\subsection{Extremwertaufgaben}
+		In der realen Welt läuft es bei vielen Problemen technischer, naturwissenschaftlicher, ökonomischer oder mathematischer Art darauf hinaus, dass man eine Fläche, ein Volumen, den Materialverbrauch oder auch die Kosten optimieren möchte.\\
+		Hierfür bestimmt man für die entsprechende Funktion einen maximalen oder auch einen minimalen Funktionswert. Diese Berechnung heißt dann \textbf{Extremwertberechnung}.
+		\subsubsection{Vorgehensweise}
+		Bei der Lösung einer solchen Extremwertberechnung ist es sinnvoll, sich an eine gewisse Vorgehensweise zu halten, damit man keine relevanten Dinge vergisst.
+		\subsubsection*{Zeichnen}
+		Zunächst verdeutlichen wir uns das Problem, indem wir eine Skizze anfertigen. Diese sollte das gewünschte Ziel ungefähr darstellen.
+		\subsubsection*{Hauptbedingung}
+		Im nächsten Schritt stellen wir die Anforderung in einer Funktion dar. Diese Funktion entspricht unserer \textbf{Hauptbedingung}. Diese entspricht immer dem Teil, den es gilt zu optimieren (maximieren oder minimieren).
+		\subsubsection*{Nebenbedingung(en)}
+		Zusätzlich zu der Optimierungsanforderung (Hauptbedingung) liefert die Problemstellung weitere Informationen, welche wir auch in verschiedenen Funktionen darstellen können. Diese Informationen bezeichnen wir als \textbf{Nebenbedingung}. Da das Problem mehrere solcher Informationen aufweisen kann, ist es möglich, dass wir mehrere Nebenbedingungen aufstellen.
+		\subsubsection*{Zielfunktion aufstellen}
+		Da wir Funktionen mit lediglich einer Variablen lösen können, müssen wir unsere Hauptbedingung mit Hilfe der Nebenbedingungen so umschreiben, dass nur noch \underline{\textbf{eine Variable}} übrig bleibt.\\
+		Hierfür stellen wir also unsere Nebenbedingungen nach den korrespondierenden Variablen in der Hauptbedingung um. Anschließend ersetzen wir eben diese Variablen in der Hauptbedingung durch die umgestellten Nebenbedingungen und erhalten damit die gewünschte \textbf{Zielfunktion}.
+		\subsubsection*{Definitionsbereich festlegen}
+		Um uns die weitere Arbeit zu erleichtern, legen wir als nächstes den Definitionsbereich der Zielfunktion fest. Darunter verstehen wir das Intervall, in dem alle logischen Werte liegen, die die Variable annehmen kann.
+		\subsubsection*{Extremwerte berechnen}
+		Wir wissen, um das Maximum oder Minimum einer Funktion zu bestimmen, müssen wir die Nullstellen der ersten Ableitung bestimmen.\\
+		Das heißt, wir untersuchen die aufgestellte Zielfunktion auf Extremstellen innerhalb des Definitionsbereichs.
+		\subsubsection*{Übrige Werte bestimmen}
+		Mit Hilfe der errechneten Extremstelle und den zuvor umgestellten Nebenbedingungen können wir nun die weiteren Werte ausrechnen. Hierfür setzen wir die Extremstelle in die Nebenbedingungen ein.
+		\subsubsection*{Graphen zeichnen}
+		War in der Problemstellung ein Graph mit maximaler oder minimaler Anforderung gefragt, müssen wir diesen zeichnen.
+		\subsubsection*{Ergebnis formulieren}
+		Abschließend nutzen wir alle berechneten Werte um eine Lösung des Problems zu formulieren.
+		\subsubsection*{Beispiel:}
+		\begin{framed}
+			\noindent
+			Mit einem \(20\ cm\) langen Zaun soll für die Meerschweinchen ein größtmögliches rechteckiges Gehege gebaut werden.
+		\end{framed}
+		\underline{1. Zeichnen}\\
+		\includegraphics[width=0.35\textwidth]{../99_Bilder/04-6_skizze.jpg}\\
+		\underline{2. Hauptbedingung aufstellen}\\
+		Wir möchten einen größtmögliches rechteckiges Gehege erhalten.
+		\[\mathbf{F = x\cdot{}y}\]
+		\underline{3. Nebenbedingung aufstellen}\\
+		Im Falle des Drahtes wissen wir, dass dieser nur \(20\ cm\) lang ist. Zudem wissen wir, dass wir eine rechteckige Fläche abstecken müssen. Das bedeutet also
+		\[20 = 2\cdot(x+y)\]
+		\underline{4. Zielfunktion aufstellen}\\
+		Unsere Nebenbedingung lautet \(20 = 2\cdot(x+y)\). Da unsere Hauptbedingung sowohl \(x\) wie auch \(y\) enthält können wir frei entscheiden, nach welcher Variablen wir umstellen.\\
+		\begin{tabularx}{0.48\textwidth}{Ml}
+			\(20 = 2\cdot(x+y)\) & |\(: 2\)\\
+			\(10 = x+y\) & |\(-x\)\\
+			\(10 - x = y\)
+		\end{tabularx}\\
+		\par\noindent
+		Diese umgeformte Nebenbedingung setzen wir nun in die Hauptbedingung ein und erhalten \[F = x\cdot(10-x) = \mathbf{-x^2 + 10x}\]
+		\underline{5. Definitionsbereich festlegen}\\
+		Da wir eine rechteckige Fläche mit den Seitenlängen \(x\) und \(10-x\) erhalten möchten, darf die Variable \(x\) nur Werte im Intervall \[0\ cm \le x \le 10\ cm\] annehmen.\\
+		Eine negative Seitenlänge ist nicht möglich und sollte \(x = 0\ cm\) oder \(x = 10\ cm\) betragen, hätten wir kein rechteckiges Gehege.\\
+		\underline{6. Extremwerte berechnen}\\
+		Für unser Gehege bedeutet das
+		\[F' = -2x + 10; E'' = -2\]
+		Da die zweite Ableitung negativ ist, können wir direkt Schlussfolgern, dass die berechnete Extremstelle zwangsläufig ein Maximum (Hochpunkt) ist.\\
+		\begin{tabularx}{0.48\textwidth}{Xl}
+			\(E' = 0\)\\
+			\(\Leftrightarrow -2x + 10 = 0\) & |\(+2x\)\\
+			\(\Leftrightarrow 10 = 2x\) & |\(:2\)\\
+			\(\Leftrightarrow 5 = x\)
+		\end{tabularx}\\
+		\par\noindent
+		Wir wissen nun, dass das Rechteck mit einer Seitenlänge von \(x=5\ cm\) die maximale Fläche hat.\\
+		\underline{7. Übrige Werte bestimmen}\\
+		Da wir lediglich eine Nebenbedingung haben, müssen wir nur die Breite des Rechtecks berechnen. Für dieses gilt \[y = 10 - \underbrace{5}_{x} = 5\ cm\]
+		\underline{8. Lösung formulieren}\\
+		Mit einem \(20\ cm\) langen Draht lässt sich eine rechteckiges Gehege mit den Seitenlängen \(x = 5\ cm\) und \(y = 5\ cm\) abstecken.
+	\end{worksheet}
+\end{document}

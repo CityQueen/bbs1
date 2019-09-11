@@ -26,30 +26,30 @@
 			\textbf{Typ} & \textbf{Beschreibung} & \textbf{Wertebereich / Beispiel}\\
 			\hline
 			\hline
-			{\lstinline[style=JavaInputStyle]{boolean}} & Boolescher Wert & {\lstinline[style=JavaInputStyle]{true, false}}\\
+			{\lstinline[style=Python]{boolean}} & Boolescher Wert & {\lstinline[style=Python]{true, false}}\\
 			\hline
-			{\lstinline[style=JavaInputStyle]{char}} & einzelnes Zeichen & alle Unicode-Zeichen (Tastatur)\\
+			{\lstinline[style=Python]{char}} & einzelnes Zeichen & alle Unicode-Zeichen (Tastatur)\\
 			\hline
-			{\lstinline[style=JavaInputStyle]{byte}} & eine ganze Zahl (max. 8 Bit) & \(-2^7\ \ldots 2^7-1\)\\
+			{\lstinline[style=Python]{byte}} & eine ganze Zahl (max. 8 Bit) & \(-2^7\ \ldots 2^7-1\)\\
 			\hdashline
-			{\lstinline[style=JavaInputStyle]{short}} & eine ganze Zahl (max. 16 Bit) & \(-2^{15}\ \ldots 2^{15}-1\)\\
+			{\lstinline[style=Python]{short}} & eine ganze Zahl (max. 16 Bit) & \(-2^{15}\ \ldots 2^{15}-1\)\\
 			\hdashline
-			{\lstinline[style=JavaInputStyle]{int}} & eine ganze Zahl (max. 32 Bit) & \(-2^{31}\ \ldots 2^{31}-1\)\\
+			{\lstinline[style=Python]{int}} & eine ganze Zahl (max. 32 Bit) & \(-2^{31}\ \ldots 2^{31}-1\)\\
 			\hdashline
-			{\lstinline[style=JavaInputStyle]{long}} & eine ganze Zahl (max. 64 Bit) & \(-2^{63}\ \ldots 2^{63}-1\)\\
+			{\lstinline[style=Python]{long}} & eine ganze Zahl (max. 64 Bit) & \(-2^{63}\ \ldots 2^{63}-1\)\\
 			\hline
-			{\lstinline[style=JavaInputStyle]{float}} & Fließkommazahl (max. 32 Bit) & Beispiel: \(3,14159f\)\\
+			{\lstinline[style=Python]{float}} & Fließkommazahl (max. 32 Bit) & Beispiel: \(3,14159f\)\\
 			\hdashline
-			{\lstinline[style=JavaInputStyle]{double}} & Fließkommazahl (max. 64 Bit) & Beispiel: \(-1,79 * 10^{38}\)\\
+			{\lstinline[style=Python]{double}} & Fließkommazahl (max. 64 Bit) & Beispiel: \(-1,79 * 10^{38}\)\\
 			\hline
-			{\lstinline[style=JavaInputStyle]{String}} & Zeichenkette (Wörter / Sätze etc.) & Beispiel: \glqq{}Das ist ein String!\grqq{}\\
+			{\lstinline[style=Python]{String}} & Zeichenkette (Wörter / Sätze etc.) & Beispiel: \glqq{}Das ist ein String!\grqq{}\\
 			\hdashline
-			{\lstinline[style=JavaInputStyle]{int[ ]}} & ganzzahliges Feld (Array) & Beispiel: \({3,1,4,1,5,9}\)\\
+			{\lstinline[style=Python]{int[ ]}} & ganzzahliges Feld (Array) & Beispiel: \({3,1,4,1,5,9}\)\\
 			\hline
 			\hline
 		\end{tabularx}\\
 		\par\noindent
-		Java unterscheidet zwischen \textbf{zwei Datentypen}. Zum einen gibt es die \textit{primitiven Typen}. Dazu zählen z.B. \lstinline[style=JavaInputStyle]{boolean, char, ... , double}. Zum anderen gibt es die \textit{Referenztypen}. Als solche werden Typen bezeichnet, die entweder primitive Typen enthalten oder aus solchen zusammengesetzt werden. So zum Beispiel Objekte, Strings und Arrays.\\
+		Java unterscheidet zwischen \textbf{zwei Datentypen}. Zum einen gibt es die \textit{primitiven Typen}. Dazu zählen z.B. \lstinline[style=Python]{boolean, char, ... , double}. Zum anderen gibt es die \textit{Referenztypen}. Als solche werden Typen bezeichnet, die entweder primitive Typen enthalten oder aus solchen zusammengesetzt werden. So zum Beispiel Objekte, Strings und Arrays.\\
 		Die wichtigen Datentypen werden in einem gesonderten Kapitel behandelt. Dort finden sich auch verschiedene Operationen und Beispiele für die Anwendung der entsprechenden Datentypen.
 		\subsection{Operatoren}
 		In Java gibt es diverse Operatoren, die bei der Programmierung hilfreich sein können.\\
@@ -68,7 +68,7 @@
 			\hline
 			\% & Modulo & Divisionsrest (z.B 9\%4 = 1)\\
 			\hline
-			++ & Inkrement & {\lstinline[style=JavaInputStyle]{i++}} entspricht dann {\lstinline[style=JavaInputStyle]{i+1}}\\
+			++ & Inkrement & {\lstinline[style=Python]{i++}} entspricht dann {\lstinline[style=Python]{i+1}}\\
 			\hline
 			\hline
 		\end{tabularx}\\
@@ -78,25 +78,25 @@
 			\textbf{Java-Operator} & \textbf{Beschreibung} & \textbf{Anmerkung}\\
 			\hline
 			\hline
-			{\lstinline[style=JavaInputStyle]{=}} & Zuweisung & Der Variablen auf der linken Seite wird der auf der rechten Seite des \(=\)-Zeichen stehende Wert zugewiesen.\\
+			{\lstinline[style=Python]{=}} & Zuweisung & Der Variablen auf der linken Seite wird der auf der rechten Seite des \(=\)-Zeichen stehende Wert zugewiesen.\\
 			\hline
-			{\lstinline[style=JavaInputStyle]{==}} & Vergleich & Ermöglicht den Vergleich von \textbf{primitiven Datentypen}. Liefert als Rückgabe {\lstinline[style=JavaInputStyle]{true}} oder {\lstinline[style=JavaInputStyle]{false}}.\\
+			{\lstinline[style=Python]{==}} & Vergleich & Ermöglicht den Vergleich von \textbf{primitiven Datentypen}. Liefert als Rückgabe {\lstinline[style=Python]{true}} oder {\lstinline[style=Python]{false}}.\\
 			\hline
-			{\lstinline[style=JavaInputStyle]{<}} & Kleiner & \multirow{4}{*}{Liefert {\lstinline[style=JavaInputStyle]{true}} oder {\lstinline[style=JavaInputStyle]{false}}.}\\
+			{\lstinline[style=Python]{<}} & Kleiner & \multirow{4}{*}{Liefert {\lstinline[style=Python]{true}} oder {\lstinline[style=Python]{false}}.}\\
 			\cline{1-2}
-			{\lstinline[style=JavaInputStyle]{<=}} & Kleiner gleich & \\
+			{\lstinline[style=Python]{<=}} & Kleiner gleich & \\
 			\cline{1-2}
-			{\lstinline[style=JavaInputStyle]{>}} & Größer & \\
+			{\lstinline[style=Python]{>}} & Größer & \\
 			\cline{1-2}
-			{\lstinline[style=JavaInputStyle]{>=}} & Größer gleich & \\
+			{\lstinline[style=Python]{>=}} & Größer gleich & \\
 			\hline
-			{\lstinline[style=JavaInputStyle]{!=}} & Ungleich & Ermöglicht den Vergleich von \textbf{primitiven Datentypen}. Liefert als Rückgabe {\lstinline[style=JavaInputStyle]{true}} oder {\lstinline[style=JavaInputStyle]{false}}.\\
+			{\lstinline[style=Python]{!=}} & Ungleich & Ermöglicht den Vergleich von \textbf{primitiven Datentypen}. Liefert als Rückgabe {\lstinline[style=Python]{true}} oder {\lstinline[style=Python]{false}}.\\
 			\hline
-			{\lstinline[style=JavaInputStyle]{!}} & logisches NICHT & Kehrt die Wertzuweisung der nachfolgenden Variable für die nächste Operation um. Aus {\lstinline[style=JavaInputStyle]{true}} wird {\lstinline[style=JavaInputStyle]{false}}.\\
+			{\lstinline[style=Python]{!}} & logisches NICHT & Kehrt die Wertzuweisung der nachfolgenden Variable für die nächste Operation um. Aus {\lstinline[style=Python]{true}} wird {\lstinline[style=Python]{false}}.\\
 			\hline
-			{\lstinline[style=JavaInputStyle]{||}} & logisches ODER & Entweder \underline{die eine}, \underline{die andere} \textbf{oder} \underline{beide} Bedingungen sind erfüllt.\\
+			{\lstinline[style=Python]{||}} & logisches ODER & Entweder \underline{die eine}, \underline{die andere} \textbf{oder} \underline{beide} Bedingungen sind erfüllt.\\
 			\hline
-			{\lstinline[style=JavaInputStyle]{\&\&}} & logisches UND & Es müssen \underline{beide} Bedingungen erfüllt sein.\\
+			{\lstinline[style=Python]{\&\&}} & logisches UND & Es müssen \underline{beide} Bedingungen erfüllt sein.\\
 			\hline
 			\hline
 		\end{tabularx}\\
@@ -104,13 +104,13 @@
 		\subsection{Klassendefinition}
 		Wir erinnern und, dass es sich bei Java um eine sogenannte \textbf{objektorientierte Programmiersprache} handelt. Um ein Objekt überhaupt erzeugen zu können, benötigen wir einen \textit{Bauplan}, der alle nötigen Informationen enthält. Diesen \textit{Bauplan} bezeichnet man auch als \textbf{Klasse}.\\
 		Dabei gilt folgende Vorgabe:
-		\begin{lstlisting}[style=JavaInputStyle]
+		\begin{lstlisting}[style=Python]
 			(<Zugriffsart>) class <Bezeichner> (extends <Oberklasse>) {...}
 		\end{lstlisting}
-		Hierbei ist die Angabe der \lstinline[style=JavaInputStyle]{<Zugriffsart>} notwendig, \lstinline[style=JavaInputStyle]{extends <Oberklasse>} hingegen ist optional.\\
+		Hierbei ist die Angabe der \lstinline[style=Python]{<Zugriffsart>} notwendig, \lstinline[style=Python]{extends <Oberklasse>} hingegen ist optional.\\
 		\par\noindent
 		Beispiel:
-		\begin{lstlisting}[style=JavaInputStyle,frame=single]
+		\begin{lstlisting}[style=Python,frame=single]
 			public class Square{
 				/**
 				* Deklaration der Attribute
@@ -137,14 +137,14 @@
 		\subsection{Methodendeklaration}
 		Die eben angesprochene Klasse beinhaltet im Allgemeinen Methoden, also \glqq{}Fähigkeiten\grqq{}, die die erzeugten Objekte der Klasse besitzen.\\
 		Möchte man eine solche Methode deklarieren, so muss diese Deklaration die folgende Form haben:
-		\begin{lstlisting}[style=JavaInputStyle]
+		\begin{lstlisting}[style=Python]
 			(<Zugriffsart>) <Rückgabewert> <Bezeichner> (<Parameter>) {...}
 		\end{lstlisting}
-		Wie bei der Klasse ist die Definition der \lstinline[style=JavaInputStyle]{<Zugriffsart>} verpflichtend. Die Angabe \lstinline[style=JavaInputStyle]{<Parameter>} hat die Form \lstinline[style=JavaInputStyle]{<Datentyp> <Bezeichner>}.\\
-		Die Definition des \lstinline[style=JavaInputStyle]{<Rückgabewert>} bestimmt, welchen Datentyp die Methode bei Aufruf zurückliefert. Die möglichen Belegungen sind die unter \ref{datyp} genannten, sowie weitere Datentypen. Die Angabe von \lstinline[style=JavaInputStyle]{void} als Rückgabewert sagt aus, dass die Methode keine Rückgabe liefert.\\
+		Wie bei der Klasse ist die Definition der \lstinline[style=Python]{<Zugriffsart>} verpflichtend. Die Angabe \lstinline[style=Python]{<Parameter>} hat die Form \lstinline[style=Python]{<Datentyp> <Bezeichner>}.\\
+		Die Definition des \lstinline[style=Python]{<Rückgabewert>} bestimmt, welchen Datentyp die Methode bei Aufruf zurückliefert. Die möglichen Belegungen sind die unter \ref{datyp} genannten, sowie weitere Datentypen. Die Angabe von \lstinline[style=Python]{void} als Rückgabewert sagt aus, dass die Methode keine Rückgabe liefert.\\
 		\par\noindent
 		Beispiel:
-		\begin{lstlisting}[style=JavaInputStyle,frame=single]
+		\begin{lstlisting}[style=Python,frame=single]
 			/**
 			* Öffentliche Methode hello gibt auf dem Bildschirm "Hallo XYZ" aus, wenn "XYZ" beim
 			* Aufruf übergeben wurde.
@@ -169,14 +169,14 @@
 		\end{lstlisting}
 		\subsection{Variablendefinition}
 		Innerhalb von Klassen, aber auch in Methoden benötigen wir Variablen, mit denen wir arbeiten können. Diese müssen zunächst deklariert werden. Auch hier gibt es eine Deklarationsvorschrift:
-		\begin{lstlisting}[style=JavaInputStyle]
+		\begin{lstlisting}[style=Python]
 			(<Zugriffsart>) <Typ> <Bezeichner> (= <Wert>)
 		\end{lstlisting}
-		Die direkte Wertzuweisung mittels \lstinline[style=JavaInputStyle]{= <Wert>} kann, muss aber nicht, direkt bei der Variablendeklaration gemacht werden.\\
-		Bei dieser \grq{}Wertzuweisung\grq{} ist wichtig zu beachten, dass \textbf{Referenztypen} im Allgemeinen mit dem \lstinline[style=JavaInputStyle]{new}-Operator erzeugt werden müssen. Dies gilt nicht für den Referenztyp \lstinline[style=JavaInputStyle]{String}.\\
+		Die direkte Wertzuweisung mittels \lstinline[style=Python]{= <Wert>} kann, muss aber nicht, direkt bei der Variablendeklaration gemacht werden.\\
+		Bei dieser \grq{}Wertzuweisung\grq{} ist wichtig zu beachten, dass \textbf{Referenztypen} im Allgemeinen mit dem \lstinline[style=Python]{new}-Operator erzeugt werden müssen. Dies gilt nicht für den Referenztyp \lstinline[style=Python]{String}.\\
 		\par\noindent
 		Beispiel:
-		\begin{lstlisting}[style=JavaInputStyle,frame=single]
+		\begin{lstlisting}[style=Python,frame=single]
 			private int anzahl;
 			int tage = 15;
 			boolean healty;
@@ -184,45 +184,45 @@
 			int[] counter = new int[Größe];
 		\end{lstlisting}
 		\subsection{Zugriffsart}
-		Bei der Definition bzw. Deklaration von Klassen, Methoden und Variablen wird immer nach der ominösen \lstinline[style=JavaInputStyle]{<Zugriffsart>} verlangt. Diese gibt an, wer auf das Objekt und seine Methoden und Variablen zugreifen kann. Dabei gibt es die folgenden Unterscheidungen:
+		Bei der Definition bzw. Deklaration von Klassen, Methoden und Variablen wird immer nach der ominösen \lstinline[style=Python]{<Zugriffsart>} verlangt. Diese gibt an, wer auf das Objekt und seine Methoden und Variablen zugreifen kann. Dabei gibt es die folgenden Unterscheidungen:
 		\begin{itemize}
 			\item \textbf{public}\\
-			Innerhalb einer Klasse sind die Konstruktoren, Methoden und Variablen sichtbar. Sollen diese auch von Objekten außerhalb der Klasse verwendet werden, definiert man sie als \lstinline[style=JavaInputStyle]{public}.\\
-			Deklariert man eine Klasse als \lstinline[style=JavaInputStyle]{public}, so können andere Klassen Instanzen dieser Klasse erzeugen.
+			Innerhalb einer Klasse sind die Konstruktoren, Methoden und Variablen sichtbar. Sollen diese auch von Objekten außerhalb der Klasse verwendet werden, definiert man sie als \lstinline[style=Python]{public}.\\
+			Deklariert man eine Klasse als \lstinline[style=Python]{public}, so können andere Klassen Instanzen dieser Klasse erzeugen.
 			\item \textbf{private}\\
-			Dem Gegenüber steht \lstinline[style=JavaInputStyle]{private}. Diese Zugriffsart erlaubt den Zugriff nur innerhalb der Klasse selbst. Das bedeutet auch, dass z.B. Methoden oder Variablen, die als \lstinline[style=JavaInputStyle]{private} deklariert wurden, für andere \underline{nicht} sichtbar sind.
+			Dem Gegenüber steht \lstinline[style=Python]{private}. Diese Zugriffsart erlaubt den Zugriff nur innerhalb der Klasse selbst. Das bedeutet auch, dass z.B. Methoden oder Variablen, die als \lstinline[style=Python]{private} deklariert wurden, für andere \underline{nicht} sichtbar sind.
 			\item \textbf{protected}\\
-			Zusätzlich gibt es die Zugriffsart \lstinline[style=JavaInputStyle]{protected}. Diese dritte Zugriffsart betrifft die Klasse, sowie alle derzeit existierenden und zukünftigen Subklassen.\\
-			Auf als \lstinline[style=JavaInputStyle]{protected} deklarierte Konstruktoren, Methoden und Instanzvariablen kann nur von Subklassen zugegriffen werden.\\
-			Befinden sich zwei Klassen im gleichen \lstinline[style=JavaInputStyle]{package}, können diese jeweils auf die \lstinline[style=JavaInputStyle]{protected} Bereiche der anderen zugreifen.
+			Zusätzlich gibt es die Zugriffsart \lstinline[style=Python]{protected}. Diese dritte Zugriffsart betrifft die Klasse, sowie alle derzeit existierenden und zukünftigen Subklassen.\\
+			Auf als \lstinline[style=Python]{protected} deklarierte Konstruktoren, Methoden und Instanzvariablen kann nur von Subklassen zugegriffen werden.\\
+			Befinden sich zwei Klassen im gleichen \lstinline[style=Python]{package}, können diese jeweils auf die \lstinline[style=Python]{protected} Bereiche der anderen zugreifen.
 			\item \textbf{package (auch friendly oder default)}\\			
-			Der \lstinline[style=JavaInputStyle]{default}-Modus tritt immer dann in Kraft,wenn keine ausdrückliche Zugriffsart angegeben wird.\\
+			Der \lstinline[style=Python]{default}-Modus tritt immer dann in Kraft,wenn keine ausdrückliche Zugriffsart angegeben wird.\\
 		\end{itemize}
 		\begin{tabularx}{\textwidth}{cX}
-			\textbf{{\lstinline[style=JavaInputStyle]{<Zugriffsart>}}} & \textbf{Beschreibung}\\
+			\textbf{{\lstinline[style=Python]{<Zugriffsart>}}} & \textbf{Beschreibung}\\
 			\hline
 			\hline
-			{\lstinline[style=JavaInputStyle]{public}} & Der Zugriff ist immer möglich. \\
+			{\lstinline[style=Python]{public}} & Der Zugriff ist immer möglich. \\
 			\hline
-			{\lstinline[style=JavaInputStyle]{private}} & Der Zugriff ist nur innerhalb der Klasse möglich.\\
+			{\lstinline[style=Python]{private}} & Der Zugriff ist nur innerhalb der Klasse möglich.\\
 			\hline
-			{\lstinline[style=JavaInputStyle]{protected}} & Der Zugriff ist von Klassen innerhalb des gleichen Package möglich. Ebenso kann von Subklassen auf die {\lstinline[style=JavaInputStyle]{protected}} Elemente zugegriffen werden. \\
+			{\lstinline[style=Python]{protected}} & Der Zugriff ist von Klassen innerhalb des gleichen Package möglich. Ebenso kann von Subklassen auf die {\lstinline[style=Python]{protected}} Elemente zugegriffen werden. \\
 			\hline
 			\hline
-			{\lstinline[style=JavaInputStyle]{package}} & Ein Zugriff ist innerhalb der Klasse und von anderen Klassen des gleichen Package möglich. Der Zugriff ist von einer Subklasse aus nicht möglich.\\
+			{\lstinline[style=Python]{package}} & Ein Zugriff ist innerhalb der Klasse und von anderen Klassen des gleichen Package möglich. Der Zugriff ist von einer Subklasse aus nicht möglich.\\
 			\hline
 			\hline
 		\end{tabularx}
 		\subsection{Einlesen von der Tastatur}
-		Um einen Text von der Taststur einzulesen gibt es das Objekt \lstinline[style=JavaInputStyle]|System.in|. Ohne nähere Erklärung der Hintergründe folgt hier zunächst eine Vorstellung, wie eine Ganzzahl von der Tastatur eingelesen werden kann.
-		\begin{lstlisting}[style=JavaInputStyle]
+		Um einen Text von der Taststur einzulesen gibt es das Objekt \lstinline[style=Python]|System.in|. Ohne nähere Erklärung der Hintergründe folgt hier zunächst eine Vorstellung, wie eine Ganzzahl von der Tastatur eingelesen werden kann.
+		\begin{lstlisting}[style=Python]
 			Scanner eingabe = new Scanne(System.in);
 			int zahl = eingabe.nextInt();
 		\end{lstlisting}
-		Mit \texttt{Zeile 1} haben wir ein Objekt erzeugt, das eine Methode zum Einlesen einer Ganzzahl hat. Diese Methode kann über \lstinline[style=JavaInputStyle]|eingabe.nextInt();| zeilenweise von der Tastatur lesen. Das Ergebnis dieser Methode ist vom Typ \lstinline[style=JavaInputStyle]|int| (Integer).\\
+		Mit \texttt{Zeile 1} haben wir ein Objekt erzeugt, das eine Methode zum Einlesen einer Ganzzahl hat. Diese Methode kann über \lstinline[style=Python]|eingabe.nextInt();| zeilenweise von der Tastatur lesen. Das Ergebnis dieser Methode ist vom Typ \lstinline[style=Python]|int| (Integer).\\
 		\par\noindent
 		\underline{Beispiel:}
-		\begin{lstlisting}[style=JavaInputStyle]
+		\begin{lstlisting}[style=Python]
 			import java.util.*;
 			
 			class Einlesen{
@@ -239,7 +239,7 @@
 			}
 		\end{lstlisting}
 		\par\noindent
-		Eine \textbf{kleine Besonderheit} besteht beim Einlesen eines String. Die Methode \lstinline[style=JavaInputStyle]|eingabe.next()| erkennt über das Betätigen der Enter-Taste nicht, dass die Eingabe beendet wurde. Hier wäre ein doppeltes Enter-Drücken notwendig.\\
-		Um dies zu umgehen bietet das Objekt \lstinline[style=JavaInputStyle]|eingabe| die Methode \lstinline[style=JavaInputStyle]|eingabe.nextLine();|. Diese beendet das Einlesen der Tastatureingabe automatisch mit dem Betätigen der Enter-Taste.
+		Eine \textbf{kleine Besonderheit} besteht beim Einlesen eines String. Die Methode \lstinline[style=Python]|eingabe.next()| erkennt über das Betätigen der Enter-Taste nicht, dass die Eingabe beendet wurde. Hier wäre ein doppeltes Enter-Drücken notwendig.\\
+		Um dies zu umgehen bietet das Objekt \lstinline[style=Python]|eingabe| die Methode \lstinline[style=Python]|eingabe.nextLine();|. Diese beendet das Einlesen der Tastatureingabe automatisch mit dem Betätigen der Enter-Taste.
 	\end{worksheet}
 \end{document}

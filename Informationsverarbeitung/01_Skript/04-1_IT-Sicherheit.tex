@@ -1,0 +1,59 @@
+\documentclass[11pt,oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{article}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\setlength{\columnsep}{3em}
+\setlength{\columnseprule}{0.5pt}
+
+\geometry{left=1.50cm,right=1.50cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+\pagestyle{empty}
+\pagenumbering{arabic}
+
+\begin{document}
+	\begin{worksheet}{Berufliches Gymnasium}{Klassenstufe 13 - Informationsverarbeitung - Grundkurs}{Lernabschnitt 4: Datensicherheit und Datenschutz}
+		\setlength{\columnseprule}{0pt}
+		\setcounter{section}{3}
+		\setcounter{page}{25}
+		\section{IT-Sicherheit}
+		Bei der Nutzung von Internetdiensten, welcher Art auch immer, möchten wir, dass verantwortungsvoll mit unseren Daten umgegangen wird.\\
+		Allgemein gesprochen wollen wir, dass unsere Daten sicher sind und der Internetdienst bestimmte sich an Sicherheitsvorgaben hält.
+		\subsection{Sicherheitsziele}
+		Um diese Sicherheitsvorgaben zu vereinheitlichen, wurden die nachfolgenden Sicherheitsziele definiert.\\
+		\small{Im Nachfolgenden sind diese am Beispiel \textit{Online-Banking} verdeutlicht.}\\
+		\par\noindent
+		\renewcommand{\arraystretch}{1.5}
+		\begin{tabularx}{\textwidth}{rX}
+			\textbf{Authentizität} &\\
+			& \textit{Instanz-Authentizität}: Die Kommunikationspartner (Nutzer und Bank) sind davon überzeugt, dass ihr jeweiliges Gegenüber tatsächlich jene Partei ist, die sie vorgibt zu sein.\\
+			& \textit{Datenursprungs-Authentizität}: Die Kommunikationspartner können sicher sein, dass die empfangenen Nachrichten tatsächlich vom \grqq{}erwarteten\grqq{} Gegenüber stammen.\\
+			\textbf{Integrität} & Die Nachrichten werden während der Übertragung nicht unautorisiert modifiziert, bspw. Ändern des Überweisungsbetrags.\\
+			\textbf{Vertraulichkeit} & Keine dritte unautorisierte Partei kann die ausgetauschten Nachrichten, bspw. den Kontostand lesen.\\
+			\textbf{Verfügbarkeit}&  Die Online-Banking-Seite ist für autorisierte Benutzer \grqq{}immer\grqq{} erreichbar und erfüllt die vorgesehene Funktion.\\
+			\textbf{Verbindlichkeit} & Keine der beiden Parteien kann im Nachhinein eine durchgeführte Transaktion abstreiten, bspw. eine durchgeführte Überweisung.\\
+			\textbf{Anonymität} & Die Bank kann einen einzelnen Kunden unter der Menge der Kunden nicht eindeutig identifizieren.\\
+			\textbf{Pseudonymität} & Der Kunde tritt unter einem Identifikator (ungleich Namen) gegenüber der Bank auf und die Bank kann - ohne die Kenntnis der Zuordnungsvorschrift mittels derer personenbezogene Daten verändert wurden - den Identifikator nicht mehr dem Kunden eindeutig zuordnen.
+		\end{tabularx}
+		\subsection{Angriffe}
+		Wenn man an Sicherheit und die eigenen Daten denkt, so geht damit automatisch auch die Angst vor Angriffen auf diese Daten einher.\\
+		Bei solchen Angriffen sollte zwischen \textbf{aktiven} und \textbf{passiven} Angriffen unterscheiden.
+		\subsubsection{Passiver Angriff}
+		Ein passiver Angriff ist in der Regel schwer zu erkennen, da keine Daten modifiziert werden. Bei einem solchen Angriff ist weder dem Sender noch Empfänger ersichtlich, dass seine Daten mitgelesen werden.\\
+		Ziel eines solchen Angriffs ist das unbemerkte Sammeln von Daten ohne eine Interaktion zwischen Angreifer und Opfer.
+		\subsubsection{Aktiver Angriff}
+		Auch bei aktiven Angriffen ist das Ziel das Abgreifen und Sammeln von Daten. Hierbei besteht aber die Möglichkeit, dass der Angriff auf Seiten des Senders oder Empfängers erkannt wird.
+		\subsubsection{Angriffsbeispiele}
+		\textbf{Abhören} (\textit{passiver Angriff}): Ziel ist eine unautorisierte Kenntnisnahme von Information.\\
+		\par\noindent
+		\textbf{Verkehrsanalyse} (\textit{passiver Angriff}): Ziel ist das Herausfinden von Kommunikationsbeziehungen. Also beispielsweise wer kommuniziert wie lange mit wem.\\
+		\par\noindent
+		\textbf{Maskerade} (\textit{aktiver Angriff}): Bei einem solchen Angriff verschafft sich der Angreifer (ohne Zugriffsberechtigung), indem er sich als Nutzer (mit Zugriffsberechtigung) unautorisiert Zugriff zu Diensten.\\
+		\par\noindent
+		\textbf{Wiederholungs-Angriff} (\textit{aktiver Angriff}): Hierbei werden passiv mitgehörte Nachrichten in das System wieder eingespielt um dadurch unautorisiert eine Dienstnutzungserlaubnis zu erlangen.\\
+		\par\noindent
+		\textbf{Modifikation} (\textit{aktiver Angriff}): Das Ziel dieses Angriffes ist die Veränderung von legitimen Nachrichten (bzw. Teilen davon).\\
+		Das Zurückhalten von Nachrichten oder auch das Umordnen des Verkehrsflusses kann hierzu zählen.\\
+		\par\noindent
+		\textbf{Denial of Service} (\textit{aktiver Angriff}): Bei einem solchen Angriff wird durch eine Vielzahl von parallel abgesetzten Anfragen an einen Service (z.B. eine Website) ebendieser nicht mehr verfügbar.
+	\end{worksheet}
+\end{document}
