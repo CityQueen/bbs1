@@ -1,0 +1,10 @@
+z1=int(input('gib eine zalhl ein'))
+z2=int(input('gib noch eine weitere zahl ein'))
+z3=int(input('und noch ein zahl'))
+z4=z1+z2+z3
+z5=input('77')
+z6=input('94')
+z7=input('65')
+z8=input('77+94*65)
+ganzzahl=int(input('ganze zahl'))
+kommazahl=float(input('kommazahl'))
