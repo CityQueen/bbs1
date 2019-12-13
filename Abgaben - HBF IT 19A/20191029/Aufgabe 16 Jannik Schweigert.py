@@ -1,0 +1,8 @@
+print('Sie geben jetzt Gleich 5 Zahlen ein. Daraufhin wird das Program die gröste und die kleinste zahl wieder Ausgeben.')
+z1 = float(input())
+z2 = float(input())
+z3 = float(input())
+z4 = float(input())
+z5 = float(input())
+print(max(z1,z2,z3,z4,z5), 'ist die gröste zahl')
+print(min(z1,z2,z3,z4,z5), 'ist die kleinste zahl')
