@@ -1,0 +1,31 @@
+var1 = int(input('Bitte geben Sie eine Zahl ein'))
+var2 = int(input('Bitte geben Sie eine Zahl ein'))
+var3 = int(input('Bitte geben Sie eine Zahl ein'))
+
+if var1 < var2 and var1 < var3:
+    print('Die kleinste Zahl ist', var1)
+    if var2 < var3:
+        print('Danach kommt', var2)
+        print(var3, 'ist die größte Zahl')
+    elif var3 < var2:
+        print('Danach kommt', var3)
+        print(var2, 'ist die größte Zahl')
+    
+if var2 < var1 and var2 < var3:
+    print('Die kleinste Zahl ist', var2)
+    if var3 < var1:
+        print('Danach kommt', var3)
+        print(var1, 'ist die größte Zahl')
+    elif var1 < var3:
+        print('Danach kommt', var1)
+        print(var3, 'ist die größte Zahl')
+
+if var3 < var1 and var3 < var2:
+    print('Die kleinste Zahl ist', var3)
+    if var1 < var2:
+        print('Danach kommt', var1)
+        print(var2, 'ist die größte Zahl')
+    elif var2 < var1:
+        print('Danach kommt', var2)
+        print(var1, 'ist die größte Zahl')
+    

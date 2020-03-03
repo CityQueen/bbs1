@@ -1,0 +1,6 @@
+Text = input('Geben sie einen text ein:')
+Bustabe = input('Geben sie einen bustaben zur überprüfung ein')
+Text = Text.upper()
+Bustabe = Bustabe.upper()
+Count = Text.count(Bustabe)
+print('Häufichkeit von',Bustabe,': ', Count)
