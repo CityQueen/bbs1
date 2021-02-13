@@ -1,0 +1,7 @@
+import java.util.*;
+public class AnzahlDerSummanden {
+public static void main (String[]args) {
+Scanner name=new Scanner(System.in);
+int a=name.nextInt();
+}
+}

@@ -1,0 +1,75 @@
+\documentclass[oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{scrreprt}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\geometry{left=2.50cm,right=2.50cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+
+\begin{document}
+	\begin{worksheet}{BGY 17}{Klassenstufe 12 - Informationsverarbeitung}{Lernabschnitt 1: Wiederholungs- und Bedingte Anweisung}
+				
+		\noindent
+		\sffamily
+		\begin{tabularx}{\textwidth}{Xr}
+			\textbf{Datum:} \underline{03.12.2018} & \textbf{Abgabe bis:} \underline{10.12.2018 11:30}
+		\end{tabularx}
+		\par\noindent
+		\rule{\textwidth}{0.1pt}\\
+		Realisieren Sie die nachfolgenden Aufgaben unter Verwendung des Methoden- bzw. Prozedurkonzepts (siehe dazu 03-Methodenkonzept).\\
+		\par\noindent
+		\underline{\textit{Hinweis:}} Erfinden Sie das Rad nicht neu. Nutzen Sie, wenn Sie es möchten, ihre Lösungen der Vorstunden wenn zur Realisierung.
+		\begin{framed}
+			\noindent
+			\textbf{Bevor Sie eine Aufgabe beginnen...}\\
+			Erstellen Sie zunächst eine Klasse mit dem Namen \lstinline[style=JavaInputStyle]|IhrName_uebung|.\\
+			Innerhalb dieser Klasse lösen Sie \textbf{zwei} der nachfolgenden Aufgaben.\\
+			\hdashrule{\textwidth}{0.1pt}{4pt}\\
+			\par\noindent
+			\textbf{Am Ende...}\\
+			Ergänzen Sie ihr Hauptprogramm (also die \lstinline[style=JavaInputStyle]|public static void main(String[] args)|-Methode) um eine entsprechende Benutzereingabe, die abhängig vom eingegeben Wert eine ihrer Methoden/Prozeduren ausführt.\\
+			\textit{Hinweis:} Sollte die aufgerufene Methode Parameter erwarten, lassen Sie diese durch den Benutzer eingeben.\\
+			\rule{\textwidth}{1mm}\\
+			\par\noindent
+			\textbf{Erste Primzahl}\\
+			Übernehmen Sie die folgende Rohform der Methode \lstinline[style=JavaInputStyle]|produkt| in die Klasse und ergänzen die Auslassung (...) so, dass de gewünschte Funktionalität gegeben ist.
+			\begin{lstlisting}[style=JavaInputStyle]
+				public static int allePrim(int zahl1, int zahl2){
+				// Die Methode gibt die erste Primzahlen zwischen zahl1 und zahl2 als Ergebnis zurück.
+				...}
+			\end{lstlisting}
+			\par\noindent
+			\rule{\textwidth}{0.1pt}\\
+			\par\noindent
+			\textbf{Alle Rechtwinkligen}\\
+			Programmieren Sie eine \lstinline[style=JavaInputStyle]|public static|-Prozedur mit dem Namen \lstinline[style=JavaInputStyle]|alleRechtwinkligen|. Die Prozedur besitzt keine Parameter.\\
+			Die Ausgabe der Prozedur sind alle Ganzzahl-Tripel (a,b,c) für die folgende Bedingungen erfüllt sind:
+			\begin{itemize}
+				\item Jeder der drei Ganzzahlen \(a,\ b\) und \(c\) liegt zwischen 1 und 100 (einschliesslich).
+				\item \(a\) ist größer oder gleich \(b\) und \(b\) ist größer oder gleich \(c\).
+				\item Die drei Ganzzahlen repräsentieren die Seiten eines \textit{\textbf{rechtwinkligen Dreiecks}}, d.h. es gilt der \grq{}Satz des Pythagoras\grq{}, nämlich: \(a^2 = b^2 + c^2\).
+			\end{itemize}
+			Die Ausgabe des Tripels soll Zeilenweise folgende Form haben:\\
+			\lstinline[style=JavaInputStyle]|Nr. 19: 50, 40, 30|\\
+			\par\noindent
+			\rule{\textwidth}{0.1pt}\\
+			\par\noindent
+			\textbf{Größter gemeinsamer Teiler}\\
+			Entwerfen Sie eine \lstinline[style=JavaInputStyle]|public static|-Methode mit dem Rückgabetyp \lstinline[style=JavaInputStyle]|int| namens \lstinline[style=JavaInputStyle]|ggT|. Die Methode erhält zwei \lstinline[style=JavaInputStyle]|int|-Parameter mit den Bezeichnungen \lstinline[style=JavaInputStyle]|zahlA| und \lstinline[style=JavaInputStyle]|zahlB|.\\
+			Die Methode liefert den \textit{größten gemeinsamen Teiler} der Variablenwerte von \lstinline[style=JavaInputStyle]|zahlA| und \lstinline[style=JavaInputStyle]|zahlB| zurück.\\
+			\par\noindent
+			\rule{\textwidth}{0.1pt}\\
+			\par\noindent
+			\textbf{Ein vollständig gekürzter Bruch}\\
+			Entwerfen Sie eine \lstinline[style=JavaInputStyle]|public static|-Prozedur mit der Bezeichnung \lstinline[style=JavaInputStyle]|Bruch|. Die Prozedur erhält zwei \lstinline[style=JavaInputStyle]|int|-Parameter mit den Namen \lstinline[style=JavaInputStyle]|zaehler| und \lstinline[style=JavaInputStyle]|nenner|.\\
+			Die Prozedur soll zunächst den \textit{größten gemeinsamen Teiler} der beiden Zahlen bestimmen und diesen Verwenden, um den \textbf{vollständig gekürzten Bruch} auf der Konsole auszugeben.
+			\rule{\textwidth}{0.1pt}\\
+			\par\noindent
+			\textbf{Prim-Pärchen}\\
+			als Prim-Pärchen oder auch \textit{Prim-Doublette} bezeichnet werden zwei Primzahlen bezeichnet, deren Differenz gleich \(2\) ist. z.B. \(3\ \text{und}\ 5\), \(9\ \text{und}\ 11\) oder \(1019\ \text{und}\ 1021\).\\
+			Programmieren Sie eine \lstinline[style=JavaInputStyle]|public static int|-Methode namens \lstinline[style=JavaInputStyle]|primPaar|. Die Methode erhält einen \lstinline[style=JavaInputStyle]|int|-Parameter mit der Bezeichnung \lstinline[style=JavaInputStyle]|min|.\\
+			\lstinline[style=JavaInputStyle]|primPaar| sucht von \lstinline[style=JavaInputStyle]|min| aufwärts nach solchen Prim-Pärchen.\\
+			Wird eines gefunden, soll die kleinere der beiden Primzahlen zurückgegeben werden.\\
+			Wird zwischen \lstinline[style=JavaInputStyle]|min| und der größten Zahl vom Typ \lstinline[style=JavaInputStyle]|int| (\lstinline[style=JavaInputStyle]|Integer.MAX_VALUE|) kein Pärchen gefunden, liefert \lstinline[style=JavaInputStyle]|primPaar| den Wert \lstinline[style=JavaInputStyle]|0| als Ergebnis.\\
+		\end{framed}
+	\end{worksheet}
+\end{document}

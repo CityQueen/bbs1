@@ -1,0 +1,16 @@
+import java.util.*;
+public class EinsBisEinschlieﬂlich {
+public static void main (String[]args) {
+	Scanner name=new Scanner(System.in);
+	int a=name.nextInt();
+	int summe=0;
+for(int b=1;b<=a;b++) {
+	if(b%2>0) {
+	summe=summe-b;	
+	}else {
+	summe=summe+b;	
+	}
+}
+System.out.println(summe);
+}
+}

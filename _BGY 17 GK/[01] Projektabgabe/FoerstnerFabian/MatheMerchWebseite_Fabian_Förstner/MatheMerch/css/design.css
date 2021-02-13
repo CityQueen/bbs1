@@ -1,0 +1,101 @@
+body { 
+    height: 100%; 
+    margin: 0; 
+    width: 960px;
+}
+
+#header {
+    background-image: url("../pictures/titelbild.png");
+    min-height: 249px;
+}
+
+#navi {
+    background-color: black;
+    min-height: 50px;
+    padding: 17px 0px 17px 0px;
+}
+    
+#content {
+    background-color:#718296;
+    font-family: Verdana;
+    font-size: 16px;
+    padding: 17px 0px 17px 0px;
+}
+
+#footer {
+    background-color: black;
+    font-size: 12px;
+    color: white;
+    font-family: Verdana;
+    text-align: center;
+    padding: 17px 0px 17px 0px;
+}
+
+#navi ul li{
+    list-style-type:none;
+    display: inline;
+    padding-right: 30px;
+    font-size: 16px;
+}
+
+
+p, li{
+    font-size:16px;
+    font-family: Verdana;
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h1{
+    font-family: Verdana;
+    color: white;
+}
+
+h2{
+    font-family: Verdana;
+    color: white;
+}
+
+h3{
+    font-family: Verdana;
+    color: white;
+}
+
+.preis {
+    font-size: 32px;
+}
+     
+a:link {
+    font-family: Verdana; 
+    font-size: 16px;
+    color: white; 
+    text-decoration: none;
+}
+
+a:visited {
+    font-family: Verdana,; 
+    font-size: 16px; 
+    color:#96a097; 
+    text-decoration: none; 
+} 
+
+a:hover {
+    font-family: Verdana,; 
+    font-size: 16px;  
+    text-decoration:none;
+} 
+
+.hover a:hover{
+    font-family: Verdana,; 
+    font-size: 16px;  
+    text-decoration:underline;
+}
+
+a:active {
+    font-family: Verdana; 
+    font-size: 16px; 
+    color: white; 
+    text-decoration: none; 
+} 
+

@@ -1,0 +1,30 @@
+import java.util.*;
+
+public class Aufgabe04 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner eingabe = new Scanner (System.in);
+		
+		System.out.println("Gib eine Obergrenze an: ");
+		int a = eingabe.nextInt();
+		
+		for(int i = 0; i <= a; i++) {
+			int b = 0;
+			
+			if(i%2) {
+				b = b+i;	
+			}
+			else {
+			}
+			
+			System.out.println(b);
+			
+			//System.out.println("Die Summe ist "+ b + "und ergibt sich aus der Summe von ");
+		}
+		
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+import java.util.*;
+public class Summe04 {
+
+	public static void main(String[] args) {
+		Scanner Summe01 = new Scanner (System.in);
+		int y = Summe01.nextInt();
+		System.out.print("geben sie eine obergrenze an");
+			
+
+	}
+
+}

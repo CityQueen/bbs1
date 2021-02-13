@@ -1,0 +1,134 @@
+\documentclass[oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{scrreprt}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\geometry{left=1.50cm,right=1.50cm,top=2.50cm,bottom=0.50cm,includeheadfoot}
+\pagestyle{empty}
+
+\begin{document}
+		\begin{worksheet}{Lernbereich 5}{Lernabschnitt: Mikrocontroller}{Berechnungen - Strom, Spannung und Widerstand}
+			\begin{framed}
+				\noindent
+				\tiny{Die Aufgaben sind entnommen aus:
+					\begin{itemize}
+						\item Grafe, H./Loose, J./Kühn, H.: \textit{Grundlagen der Elektrotechnik - Band 1}: Gleichspannungstechnik - 4. durchgesehene Auflage - S. 126ff.
+						\item Lindner, H. \textit{Physikalische Aufgaben} - 18. Auflage - S 144ff.
+					\end{itemize}}\normalsize
+				\textbf{Aufgabe 1:}\\
+				In der Schaltung sind die Teilspannungen \(U_1\) bis \(U_3\) und sämtliche Ströme zu berechnen. Gegeben sind:\\
+				\begin{minipage}[c]{0.48\textwidth}
+					\includegraphics[width=0.98\textwidth]{../99_Bilder/A1.png}
+				\end{minipage}
+				\hfill
+				\begin{minipage}[c]{0.24\textwidth}
+					\begin{align*}
+						U & = 220V\\
+						R_1 & = 24\ \Omega\\
+						R_2 & = 12\ \Omega\\
+						R_3 & = 5\ \Omega
+					\end{align*}
+				\end{minipage}
+				\hfill
+				\begin{minipage}[c]{0.24\textwidth}
+					\begin{align*}
+						R_4 & = 8\ \Omega\\
+						R_5 & = 17\ \Omega\\
+						R_6 & = 26 \Omega
+					\end{align*}
+				\end{minipage}\\
+				\par\noindent
+				\textbf{Aufgabe 2:}\\
+				Von der Schaltung sind gegeben:\\
+				\begin{minipage}{0.48\textwidth}
+					\begin{align*}
+						U & = 4\ V\\
+						R_r & = 100\ \Omega\\
+						R_1 & = 200\ \Omega\\
+						I_2 & = 8\ mA\\
+						I_3 & = 2\ mA
+					\end{align*}
+				\end{minipage}
+				\hfill
+				\begin{minipage}{0.5\textwidth}
+					\includegraphics[width=0.98\textwidth]{../99_Bilder/A2.png}
+				\end{minipage}\\
+				\par\noindent
+				\textbf{Aufgabe 3:}\\
+				\begin{minipage}{0.58\textwidth}
+					Wie groß muss \(R_2\) gewählt werden, wenn \(R_1 = 750\ \Omega\) ist und der Gesamtwiderstand \(R_g = 350\ \Omega\) betragen soll?
+				\end{minipage}
+				\hfill
+				\begin{minipage}{0.38\textwidth}
+					\includegraphics[width=0.98\textwidth]{../99_Bilder/A3.png}
+				\end{minipage}\\
+				\par\noindent
+				\textbf{Aufgabe 4:}\\
+				\begin{minipage}{0.58\textwidth}
+					\includegraphics[width=0.98\textwidth]{../99_Bilder/A4.png}
+				\end{minipage}
+				\hfill
+				\begin{minipage}{0.38\textwidth}
+					Wie groß muss der Widerstand \(R_x\) gewählt werden, damit der Gesamtwiderstand zwischen den Klemmen A und B den Betrag \(R_{AB} = 7\ \Omega\) hat.
+				\end{minipage}\\
+				\par\noindent
+				\textbf{Aufgabe 5:}\\
+				Schaltet man zu einem widerstand \(R_1\) einen zweiten \(R_2\) parallel, so beträgt der Gesamtwiderstand nur noch \(\frac{R_1}{5}\).\\
+				Wie groß ist das Verhältnis \(\frac{R_1}{R_2}\)?\\
+				\par\noindent
+				\tiny{Die nachfolgenden Aufgaben sind aus den Übungen von Alexander Veith übernommen.}\normalsize\\
+				\textbf{Aufgabe 6:}\\
+				\begin{enumerate}[label=(\alph*)]
+					\item Der Ausgang eines \(\mu\)Cs darf maximal mit einem Strom von \(40mA\) belastet werden.\\
+					Welchen Widerstandswert darf eine Last haben (maximal oder minimal)?
+					\item Der Ausgang eines \(\mu\)Cs darf maximal mit einen Strom von \(30mA\) belastet werden.\\
+					Welchen Widerstandswert darf eine Last haben (maximal oder minimal), wenn an dem Ausgang eine Spannung von \(4V\) anliegt?
+					\item Am Ausgang eines \(\mu\)Cs (5V, max. Belastung \(40mA\)) sollen drei Lasten mit jeweils einer Leistung von \(70mW\) parallel angeschlossen werden.\\
+					Ist dies zulässig?
+					\item Der Ausgang eines \(\mu\)Cs darf maximal mit einem Strom von \(30mA\) belastet werden.\\
+					Welchen Widerstandswert darf eine Last haben (maximal oder minimal), wenn an dem Ausgang eine Spannung von \(6V\) anliegt?
+					\item Am Ausgang eines \(\mu\)Cs (\(6V\), max. Belastung \(30mA\)) sollen drei Lasten mit jeweils einer Leistung von \(10mW\) parallel angeschlossen werden.\\
+					Ist das zulässig? Wie viele dieser Lasten sind maximal erlaubt?
+				\end{enumerate}
+				\par\noindent
+				\textbf{Aufgabe 7:}\\
+				Eine LED it \(U_{LED} = 2,2V\) und \(I_{LED} =  20mA\) soll an eine Spannung von insgesamt \(5V\) betrieben werden.
+				\begin{enumerate}[label=(\alph*)]
+					\item Berechnen Sie den notwendigen Vorwiderstand und wählen Sie passend aus der Tabelle \(E12\) aus.
+					\item Wie groß ist die Verlustleistung am Vorwiderstand?
+				\end{enumerate}
+				\par\noindent
+				\textbf{Aufgabe 8:}\\
+				Eine LED mit \(U_{LED} = 2,4V\) und \(I_{LED} = 0,022A\) soll an eine Spannung von insgesamt \(10V\) angeschlossen werden.
+				\begin{enumerate}[label=(\alph*)]
+					\item Berechnen Sie den notwendigen Vorwiderstand und wählen Sie passend aus der Tabelle \(E24\) aus.
+					\item Wie groß ist ungefähr die Verlustleistung am Vorwiderstand?
+				\end{enumerate}
+				\par\noindent
+				\textbf{Aufgabe 9:}\\
+				Eine LED mit \(U_{LED} = 2,4V\) und \(I_{LED} = 20mA\) soll an eine Spannung von 5V betrieben werden.
+				\begin{enumerate}[label=(\alph*)]
+					\item Berechnen Sie den notwendigen Vorwiderstand und wählen Sie passend aus der Tabelle \(E12\) aus.
+					\item Wie groß ist die Verlustleistung am Vorwiderstand?
+				\end{enumerate}
+				\par\noindent
+				\textbf{Aufgabe 10:}\\
+				Zwei in Reihe geschaltete LEDs mit jeweils \(U_{LED} = 2,4V\) und \(I_{LED} = 20mA\) sollen an einer Spannung von \(10V\) betrieben werden.
+				\begin{enumerate}[label=(\alph*)]
+					\item Berechnen Sie den notwendigen Vorwiderstand und wählen Sie passend aus der Tabelle \(E24\) aus.
+					\item Wie groß ist die Verlustleistung am Vorwiderstand?
+				\end{enumerate}
+				\par\noindent
+				\textbf{Aufgabe 11:}\\
+				Zwei in Reihe geschaltete LEDs mit jeweils \(U_{LED} = 2,2V\) und \(I_{LED} = 24mA\) sollen an einer Spannung von \(10V\) betrieben werden.
+				\begin{enumerate}[label=(\alph*)]
+					\item Berechnen Sie den notwendigen Vorwiderstand und wählen Sie passend aus der Tabelle \(E12\) aus.
+					\item Wie groß ist die Verlustleistung am Vorwiderstand?
+				\end{enumerate}
+				\par\noindent
+				\rule{0.98\textwidth}{0.1pt}\\
+				\par\noindent
+				\includegraphics[width=0.98\textwidth]{../99_Bilder/eReihe.png}
+			\end{framed}
+		\end{worksheet}	
+\end{document}

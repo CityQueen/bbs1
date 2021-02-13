@@ -1,0 +1,21 @@
+
+import java.util.Scanner;
+public class Summe04 {
+
+public static void main(String[] args) {
+
+	System.out.println("Geben sie bitte eine gerade zahl ein:" );
+	Scanner eingabe = new Scanner (System.in);
+	int a= eingabe.nextInt();
+	int b=1;
+	
+	
+	if(b < a);
+	{
+		
+	}
+		
+
+	}
+
+}

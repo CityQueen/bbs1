@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Aufgabe04 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner tt=new Scanner(System.in);
+	
+			int a=tt.nextInt();
+            int summe=0;
+            
+            for(int i=1; i<a;i=i+2) {
+            	summe=summe+2;
+            	
+            }
+			
+			
+	}
+
+}

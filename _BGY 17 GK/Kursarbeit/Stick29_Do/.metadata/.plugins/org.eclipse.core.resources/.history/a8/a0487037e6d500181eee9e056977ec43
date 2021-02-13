@@ -1,0 +1,20 @@
+import java.util.*;
+
+public class Summe04 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+Scanner eingabe = new Scanner (System.in);
+		
+		System.out.println ("Geben Sie eine Obergrenze an:");
+		int Obergrenze = eingabe.nextInt();
+		
+		
+	for (int i=1; i<Obergrenze; i=i+2) {
+		System.out.println(i+i);
+	}
+	}
+
+}
+

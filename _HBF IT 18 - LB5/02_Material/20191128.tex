@@ -1,0 +1,89 @@
+\documentclass[oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{scrreprt}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\geometry{left=1.50cm,right=1.50cm,top=2.50cm,bottom=0.50cm,includeheadfoot}
+\pagestyle{empty}
+
+\begin{document}
+		\begin{worksheet}{Lernbereich 5}{Lernabschnitt: Mikrocontroller}{Dokumentation}
+			\begin{framed}
+				\noindent
+				\renewcommand{\arraystretch}{1.5}
+				\begin{enumerate}
+					\item Installieren Sie sich die \texttt{Fritzing-App}. Nutzen Sie das \textit{Installation tutorial}.\\
+					Dieses finden Sie unter \url{https://fritzing.org/download/#install}.
+					\item Laden Sie sich das Word Dokument (Dokumentation\_leer.docx) von Ilias herunter.
+					\item Nehmen Sie in dem Dokument die entsprechenden allgemeinen Änderungen vor.
+					\begin{itemize}[label=+]
+						\item Erzeugen Sie für jede Aufgabe ein eigenes Dokument (\texttt{Rechtsklick und kopieren.}).\\
+						Geben Sie diesem Dokument einen entsprechenden Namen.
+						\item Passen Sie die \grqq{}Freifelder\grqq{} für jedes Dokument an.
+					\end{itemize}
+				\end{enumerate}
+			\end{framed}
+		\end{worksheet}
+		\begin{worksheet}{Lernbereich 5}{Lernabschnitt: Mikrocontroller}{setup() / loop() und Kommentieren}
+			\begin{framed}
+				\noindent
+				Beantworten Sie die Fragen in einem gesonderten Dokument (Vorlage).
+				\begin{enumerate}[label=(\Roman{*})]
+					\item Beschreiben Sie die Aufgaben der Programmteile \lstinline[style=Arduino]|void setup| und \lstinline[style=Arduino]|void loop|.
+					\item Formulieren Sie entsprechend passende Kommentare für das nachfolgend angegebene Programm.
+					\begin{lstlisting}[style=Arduino]
+						/*
+						* Blink
+						*
+						*/
+												
+						/*
+						* Die Funktion setup() ...
+						*/
+						void setup(){
+							pinMode(13,OUTPUT); //
+						}
+						
+						/*
+						* Die loop() Funktion ...
+						*/
+						void loop() {
+							digitalWrite(13,HIGH);
+							delay(1000);
+							digitalWrite(13,LOW);
+							delay(500);
+						}
+					\end{lstlisting}
+				\end{enumerate}
+			\end{framed}
+		\end{worksheet}
+		\begin{worksheet}{Lernbereich 5}{Lernabschnitt: Mikrocontroller}{LED mit HIGH und LOW einschalten}
+			\begin{framed}
+				\noindent
+				Realisieren Sie die folgenden Anforderungen in
+				\begin{itemize}[label=-]
+					\item einer Skizze mit Fritzing
+					\item einem Programmablaufplan
+					\item einem Arduino-Programm
+				\end{itemize}
+				um.
+				\begin{enumerate}
+					\item Eine LED leuchtet \(1000ms\) und ist dann \(400ms\) ausgeschaltet.
+					\begin{enumerate}[label=(\alph*)]
+						\item Schalten Sie die LED mit {\lstinline[style=Arduino]|HIGH|} ein.
+						\item Schalten Sie die LED mit {\lstinline[style=Arduino]|LOW|} ein.
+					\end{enumerate}
+					\item Sie lassen zwei LED (grün und rot) gleichzeitig leuchten - dabei gilt: ON für \(650ms\), OFF für \(350ms\).
+					\begin{enumerate}[label=(\alph*)]
+						\item Sie schalten beide mit \lstinline[style=Arduino]|HIGH| ein.
+						\item Die grüne LED wird mit \lstinline[style=Arduino]|HIGH| und die rote mit \lstinline[style=Arduino]|LOW| eingeschaltet.
+					\end{enumerate}
+					\item Zwei (grün und rot) an unterschiedlichen Pins angebrachte LEDs leuchten nacheinander. Dabei leuchtet jede jeweils \(300ms\).
+					\begin{enumerate}[label=(\alph*)]
+						\item Sie schalten beide mit \lstinline[style=Arduino]|HIGH| ein.
+						\item Die grüne LED wird mit \lstinline[style=Arduino]|LOW| und die rote mit \lstinline[style=Arduino]|HIGH| eingeschaltet.
+					\end{enumerate}
+				\end{enumerate}
+			\end{framed}
+		\end{worksheet}
+\end{document}

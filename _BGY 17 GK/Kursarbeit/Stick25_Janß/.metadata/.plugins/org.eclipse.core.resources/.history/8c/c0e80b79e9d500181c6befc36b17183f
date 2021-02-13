@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Elemente05 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Geben Sie die Anzahl der zu verwendenen Elemente an:");
+		Scanner eingabe = new Scanner(System.in);
+		int n=eingabe.nextInt();
+		if ( )
+			
+		}
+
+	}
+
+

@@ -1,0 +1,14 @@
+import java.util.*;
+public class Aufgabe04 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.print("Geben sie eine Ganzzahlie Obergrenze ein");
+		Scanner eingabe = new Scanner(System.in);
+		int a = eingabe.nextInt();
+		Scanner test = new Scanner(System.in);
+		int b = eingabe.nextInt();
+		
+	}
+}
+

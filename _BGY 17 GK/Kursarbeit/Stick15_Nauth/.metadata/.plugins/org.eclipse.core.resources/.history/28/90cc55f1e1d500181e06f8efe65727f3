@@ -1,0 +1,14 @@
+import java.util.*;
+public class Aufgabe_1 {
+
+	public static void main(String[] args) {
+	Scanner eingabe= new Scanner(System.in);
+	int x=eingabe.nextInt();
+	int y;
+for (y=0; y<=x; y++) {
+	y= y+x;
+	System.out.print(y);
+}
+	}
+
+}

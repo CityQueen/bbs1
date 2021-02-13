@@ -1,0 +1,46 @@
+\documentclass[oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{scrreprt}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\geometry{left=2.50cm,right=2.50cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+
+\begin{document}
+	\begin{worksheet}{BGY 17}{Klassenstufe 12 - Informationsverarbeitung}{Lernabschnitt 2: Netzwerktechnik - Subnetzbildung}
+		\noindent
+		\sffamily
+		\begin{framed}
+			\noindent
+			\underline{Aufgabe 1}\\
+			\par\noindent
+			Gegeben ist die folgende Firmen-Netzwerkarchitektur:\\
+			Hierbei handelt es sich um ein Class C Netzwerk mit drei Segmenten, die alle durch die Subnetzmaske \textbf{255.255.255.224} gebildet werden und durch den Router miteinander verbunden sind.\\
+			\par\noindent
+			\includegraphics[width=0.98\textwidth]{../99_Bilder/20190603.jpg}\\
+			\begin{itemize}
+				\item[a)] Bezeichnen Sie \textbf{3} in der Grafik enthaltenen Netzwerkverbindungsgeräte. Beschreiben Sie jeweils die Aufgabe und die Funktionsweise.
+				\item[b)] Bei der IP-Adressvergabe sind Fehler aufgetreten. Beschreiben Sie die Fehler und formulieren Sie Lösungsvorschläge.
+			\end{itemize}
+			\newpage
+			\noindent
+			\underline{Aufgabe 2}\\
+			\par\noindent
+			Folgende Einstellungen wurden von einem User eingegeben:\\
+			\par
+			\begin{tabular}{l|l}
+				\hline
+				IP: & 232.174.20.351\\
+				\hline
+				Subnetz-Maske: & 255.255.255.5\\
+				\hline
+				Standard-Gateway IP: & 232.174.20.1\\
+				\hline
+			\end{tabular}
+			\begin{itemize}
+				\item[a)] Dem User sind Fehler bei der Eingabe unterlaufen. Benennen Sie diese.\\
+				Erläutern Sie das Problem des Fehlers und geben einen selbstgewählten neuen korrigierten Wert an.
+				\item[b)] Bestimmen Sie (basierend auf ihrer Antwort aus a)) für die IP-Adresse den Netzwerk-Anteil, den Host-Anteil und geben Sie abschließend die Netzwerk-Adresse an.
+			\end{itemize}
+		\end{framed}
+	\end{worksheet}
+\end{document}

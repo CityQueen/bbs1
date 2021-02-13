@@ -1,0 +1,52 @@
+from time import sleep
+liste1 =       [8, 5, 65, 14, 888, 774, 554, 125, 963, 645, 4]
+mittelwert1_addieren = (8 + 5 + 65 + 14 + 888 + 774 + 554 + 125 + 963 + 645 + 4)
+mittelwert1 = mittelwert1_addieren / 11
+print('Die erste liste lautet: ', liste1)
+sleep(1)
+print('Die größte Zahl der ersten liste ist', max(liste1))
+sleep(1)
+print('Die kleinste Zahl der ersten liste ist', min(liste1))
+sleep(1)
+print('Der Mittelwert der ersten liste ist', mittelwert1)
+sleep(2)
+liste2 = [874651, 98451, 10654, 349, 541235, 245, 984565123, 1, 9853265, 2, 452650, 0]
+mittelwert2_addieren = (874651 + 98451 + 10654 + 349 + 541235 + 245 + 984565123 + 1 + 9853265 + 2 + 452650 + 0)
+mittelwert2 = mittelwert2_addieren / 12
+sleep(1)
+print('Die zweite liste lautet: ', liste2)
+sleep(1)
+print('Die größte Zahl der zweiten liste ist', max(liste2))
+sleep(1)
+print('Die kleinste Zahl der zweiten liste ist', min(liste2))
+sleep(1)
+print('Der Mittelwert der zweiten liste ist', mittelwert2)
+sleep(2)
+liste3 = ['Handy','Giraffe','Internet','pc']
+laengsteswort1= max(liste3, key = len)
+sleep(1)
+print('Die dritte liste lautet',liste3)
+sleep(1)
+print('Das längste Wort in der dritten liste ist', laengsteswort1)
+sleep(2)
+liste4 = ['Wohnung', 'Fernseher', 'Spielzeug', 'Früchte']
+laengsteswort2= max(liste4, key = len)
+sleep(1)
+print('Die vierte liste lautet: ', liste4)
+sleep(1)
+print('Das längste Wort in der vierten liste ist', laengsteswort2)
+sleep(2)
+liste5 = ['Hund', 'Stuhl', 'Auto']
+laengsteswort3= max(liste5, key = len)
+sleep(1)
+print('Die fünfte liste lautet: ', liste5)
+sleep(1)
+print('Das längste Wort in der fünften liste ist', laengsteswort3)
+sleep(2)
+liste6 = ['Sommer', 'Winter', 'Brötchen']
+laengsteswort4= max(liste6, key = len)
+sleep(1)
+print('Die sechste liste lautet: ', liste6)
+sleep(1)
+print('Das längste Wort in der sechsten liste ist', laengsteswort4)
+sleep(1)

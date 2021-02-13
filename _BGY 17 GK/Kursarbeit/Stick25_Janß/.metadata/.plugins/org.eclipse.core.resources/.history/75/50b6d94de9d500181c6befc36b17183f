@@ -1,0 +1,18 @@
+
+public class a {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int grenze = 14;
+		int summe = 0;
+		int zeahler = 1;
+		do {
+			summe = summe + zeahler;
+			zeahler++;
+		} while (summe < grenze);
+		System.out.println(summe);
+		}
+
+	}
+
+

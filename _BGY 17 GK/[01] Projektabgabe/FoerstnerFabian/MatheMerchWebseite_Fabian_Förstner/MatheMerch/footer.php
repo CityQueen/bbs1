@@ -1,0 +1,1 @@
+<p>&copy; Alle Inhalte dieser Seite sind Urheberrechtlich geschützt.</p>

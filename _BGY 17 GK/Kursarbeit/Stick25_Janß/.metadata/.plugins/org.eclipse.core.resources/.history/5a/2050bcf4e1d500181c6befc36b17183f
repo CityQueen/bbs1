@@ -1,0 +1,11 @@
+
+public class Obergrenze04 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Geben Sie eine Obergrenze an: ");
+		
+
+	}
+
+}

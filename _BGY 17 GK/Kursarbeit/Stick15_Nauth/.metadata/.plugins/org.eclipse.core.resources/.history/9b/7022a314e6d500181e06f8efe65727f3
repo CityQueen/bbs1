@@ -1,0 +1,20 @@
+import java.util.*;
+
+public class Aufgabe_1 {
+
+	public static void main(String[] args) {
+		System.out.println("Geben Sie eine Zahl ein!");
+		Scanner eingabe = new Scanner(System.in);
+		int x = eingabe.nextInt();
+		int y;
+		for (y = 1; y <= x; y+2) {
+			int c = y % 2;
+			if (c > 0) {
+				y = 0 + y;
+				System.out.print(y);
+			}
+			
+		}
+
+	}
+}

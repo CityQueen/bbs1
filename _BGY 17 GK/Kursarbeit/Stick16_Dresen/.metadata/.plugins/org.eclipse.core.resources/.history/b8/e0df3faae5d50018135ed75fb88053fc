@@ -1,0 +1,19 @@
+import java.util.*;
+public class AnzahlDerSummanden {
+public static void main (String[]args) {
+Scanner name=new Scanner(System.in);
+System.out.println("bitte geben Sie eine ganzzahlige obergrenze an:");
+int a=name.nextInt();
+int summe= 0;
+for(int b=1;b<a;b++) {
+	if(b%2>0) {
+	summe= summe+b;
+	System.out.println(summe);
+	}else{
+		
+	}
+	}
+System.out.println(a/2);
+System.out.println(summe);
+}
+}

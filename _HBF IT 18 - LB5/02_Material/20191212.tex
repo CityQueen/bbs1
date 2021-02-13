@@ -1,0 +1,65 @@
+\documentclass[oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{scrreprt}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\geometry{left=1.50cm,right=1.50cm,top=2.50cm,bottom=0.50cm,includeheadfoot}
+\pagestyle{empty}
+
+\begin{document}
+		\begin{worksheet}{Lernbereich 5}{Lernabschnitt: Mikrocontroller}{Zwei Taster und zwei LED}
+			\begin{framed}
+				\noindent
+				Halten Sie ihre Ergebnisse in einer \textit{Dokumentationsdatei} fest.
+				\begin{enumerate}[series=tsk]
+					\item[] Bauen Sie die Schaltung aus der letzten Stunde nach (Ein Taster, eine LED).
+					\item Erweitern Sie ihr bestehendes Programm und ihre Schaltung, so dass eine \textbf{zweite LED} durch einen \textbf{zweiten Taster} eingeschaltet wird.
+				\end{enumerate}
+				\includegraphics[width=0.55\textwidth]{../99_Bilder/20191205_1.png}
+			\end{framed}
+			\begin{lstlisting}[style=Arduino]
+				int led = 9;
+				int taster = 11;
+				
+				void setup() {
+					pinMode(led,OUTPUT);
+					pinMode(taster,INPUT_PULLUP);
+					digitalWrite(taster,HIGH);
+				}
+				
+				void loop() {
+					int bRead = digitalRead(taster);
+					if(bRead == LOW) {
+						doThis();
+						delay(1000);
+					}
+				}
+				
+				void doThis() {
+					digitalWrite(led,HIGH);
+					delay(2000);
+					digitalWrite(led,LOW);
+				}
+			\end{lstlisting}
+		\end{worksheet}
+		\begin{worksheet}{Lernbereich 5}{Lernabschnitt: Mikrocontroller}{Ampel und Fußgänger}
+			\begin{framed}
+				\noindent
+				Halten Sie ihre Ergebnisse in einer \textit{Dokumentationsdatei} fest.
+				\begin{enumerate}
+					\item Entwerfen Sie ein Programm und eine Schaltung für eine Ampel (rot, gelb, grün) sowie eine Fußgängerampel (rot, grün).\\
+					Die Schaltung soll folgende Funktionalität realisieren:
+					\begin{itemize}
+						\item Die Ampel zeigt immer grün für Autos.
+						\item Die Fußgängerampel wechselt nur nach Betätigung des Tasters den Zustand.\\
+						\item Wird der Taster betätigt:\\
+						Schaltet die Ampel für Autos nach einer \textbf{Wartezeit von 3s} auf gelb um (2s).\\
+						Danach auf rot.
+						\item Ist die Ampel für Autos rot:\\
+						Wird nach einer \textbf{Wartezeit von 2,5s} die Fußgängerampel grün (5s).
+						\item Ist die Fußgängerampel wieder rot, wird nach \textbf{weiteren 2s} die Ampel für Autos auf gelb-rot (2s) gewechselt. Dann wieder grün.
+					\end{itemize}
+				\end{enumerate}
+			\end{framed}
+		\end{worksheet}	
+\end{document}

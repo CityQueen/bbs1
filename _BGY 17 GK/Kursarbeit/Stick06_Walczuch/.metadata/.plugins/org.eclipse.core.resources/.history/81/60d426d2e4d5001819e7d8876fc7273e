@@ -1,0 +1,17 @@
+import java.util.*;
+public class Obergrenze {
+	public static void main(String[] args) {
+		 Scanner eingabe = new Scanner(System.in);
+		int a= eingabe.nextInt();
+		int i=1;
+		int b=1;
+		int c=0;
+		while (i<=a) {
+			b= b+2;
+			i= i+2;
+			c++;
+		}
+		System.out.println("Die Summe"+a+ "ergibt sich als Summe aus"+c);
+		}
+	}
+

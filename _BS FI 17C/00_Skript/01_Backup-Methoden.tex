@@ -1,0 +1,85 @@
+\documentclass[11pt,oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{article}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\setlength{\columnsep}{3em}
+\setlength{\columnseprule}{0.5pt}
+
+\geometry{left=1.50cm,right=1.50cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+\pagestyle{plain}
+\pagenumbering{arabic}
+
+\begin{document}
+	\begin{worksheet}{Informationsverarbeitung}{Lernabschnitt: Betreuen von IT-Systemen}{Datenschutz und Datensicherheit - Maßnahmen zur Datensicherung und - archivierung}
+		\section{Datensicherung}
+		Unabhängig davon, ob man sich heutzutage im privaten oder aber im beruflichen Bereich bewegt, die Datenflut, die tagtäglich generiert wird ist enorm. Sicher kann dabei zwischen wichtigen und unwichtigen oder relevanten und irrelevanten unterschieden werden. Unabhängig vom betrachteten Bereich ist aber klar: \texttt{Wenn die Daten weg sind, dann ärgern wir uns.}\\
+		Um diesem Phänomen entgegenzuwirken, haben wir die Möglichkeit einem eventuellen Datenverlust, durch welche Ursache auch immer, vorzusorgen\footnote{Hierbei ist natürlich zu beachten, dass ein vollkommener Schutz gegen Datenverlust unmöglich ist.} Nachfolgend wollen wir die gängigen Methoden der Datensicherung\footnote{Nachfolgend immer als Backup bezeichnet.} näher beleuchten.
+		\subsection*{Bewertungskriterien}
+		Bei der Wahl der Backup-Variante gibt es diverse Kriterien, die zu beachten sind.\\
+		\par\noindent
+		\begin{minipage}{0.48\textwidth}
+			\begin{itemize}
+				\itemsep0em
+				\item Speicherbedarf
+				\item Geschwindigkeit (Performance)
+				\begin{itemize}
+					\itemsep0em
+					\item bei der Sicherung
+					\item bei der Wiederherstellung
+				\end{itemize}
+			\end{itemize}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.48\textwidth}
+			\begin{itemize}
+				\item Sicherheit
+				\begin{itemize}
+					\item bei Ausfall
+					\item bei Beschädigung
+				\end{itemize}
+			\end{itemize}
+		\end{minipage}\\
+		\subsection{Vollbackup}
+		Das Vollbackup bzw. die Vollsicherung kann man salopp als das Beschreiben was so mancher 0815-Computer Nutzer mit seinen Daten zu Hause macht. Bei dieser Variante werden bei jedem Backup alle vorhandenen Daten vom Produktivsystem, unabhängig ihrer Aktualität, kopiert und ohne entsprechende Komprimierung auf dem dafür vorgesehenen Sicherungslaufwerk gespeichert. Das bedeutet, das Backup hat den gleichen Speicherbedarf, wie die zu sichernden Daten.\\
+		\par\noindent
+		Bei dieser Backup-Variante müssen zur Wiederherstellung nur die Daten vom Sicherungslaufwerk zum entsprechenden Zeitpunkt gewählt und auf das Produktivlaufwerk \grqq{}kopiert\grqq{} werden.\\
+		Da hier der komplette Datensatz wiederhergestellt wird entfallen aufwändige Rechenarbeiten, womit die Wiederherstellungszeit entsprechend kurz ist. Die Geschwindigkeit hängt hier lediglich von der Übertragungsrate zwischen den zwei Laufwerken ab.\\
+		\par\noindent
+		Wie bereits im ersten Absatz angedeutet hat das Vollbackup einen erheblichen Speicherbedarf. Hierbei finden sich die gleichen Dateien mehrfach \grq{}irgendwo\grq{} auf den verschiedenen Laufwerken und nehmen unnötig viel Platz in Anspruch.\\
+		\newpage
+		\noindent
+		Aufgrund des intensiven Speicherbedarfs diese Variante auch sehr kostspielig, da der Speicherplatz beschafft und so zur Verfügung gestellt werden muss.\\
+		\par\noindent
+		\includegraphics[width=0.98\textwidth]{../99_Bilder/01_voll.jpg}\\
+		\tiny{Quelle: \href{https://www.grundlagen-computer.de/backup/backup-strategien-inkrementell-differentiell-und-vollbackup}{Grundlagen Computer Backup Strategien} (05.01.2020)}\\
+		\footnotesize{Dieses Schaubild veranschaulicht den Speicherbedarf beim Vollbackup.}\normalsize
+		\subsection{Differentielles Backup}
+		Grundlage für das differentielle Backup ist ein initial durchgeführtes Vollbackup, auf dem zu jedem Sicherungszeitpunkt aufgebaut wird.\\
+		Zu jedem Sicherungszeitpunkt werden bei dieser Variante lediglich die Unterschiede zwischen den aktuellen Daten und dem initialen Vollbackup gesichert. Zu jeder Sicherung werden also alle Dateien des Produktivsystems gesichert, die seit dem initialen Vollbackup verändert wurden oder neu hinzugekommen sind.\\
+		\par\noindent
+		Bei der Wiederherstellung wird das initiale Vollbackup sowie das differentielle Backup zum gewünschten Zeitpunkt benötigt. Eine entsprechende Rechenarbeit ist aber notwendig, um die beiden Stände zu integrieren und den ursprünglichen Datenzustand wiederherzustellen.\\
+		Dennoch benötigt diese Variante aufgrund der Teilsicherung verhältnismäßig wenig Speicherplatz.\\
+		\par\noindent
+		Obwohl diese Variante pro Sicherungsdurchgang vergleichsweise wenig Speicher benötigt ist der gesamte Speicherbedarf dennoch immens, da im Prinzip jedes vorherige Backup nochmals gespeichert wird.\\
+		\par\noindent
+		\includegraphics[width=0.98\textwidth]{../99_Bilder/01_diff.jpg}\\
+		\tiny{Quelle: \href{https://www.grundlagen-computer.de/backup/backup-strategien-inkrementell-differentiell-und-vollbackup}{Grundlagen Computer}(05.01.2020)}\\
+		\footnotesize{Das Schaubild verdeutlicht die nach jedem Sicherungsdurchlauf gesicherten Daten.}\normalsize
+		\subsection{Inkrementelles Backup}
+		Zuletzt betrachten wir das inkrementelle Backup, welches wie das differentielle Backup, ein initiales Vollbackup benötigt. Zu jedem Sicherungszeitpunkt werden lediglich die Daten gespeichert, die sich seit dem letzten Backup (Teilbackup) verändert haben oder neu hinzugekommen sind.\\
+		Diese Methode wird auch als \textit{Forward Delta Verfahren} bezeichnet. Dem gegenüber steht das sogenannte \textit{Reverse Delta Verfahren}, bei dem die Datenunterschiede (Veränderungen bzw. neue Daten) in das bestehende initiale Vollbackup integriert werden.\\
+		\par\noindent
+		Zur Wiederherstellungen werden entsprechende Kontrolldaten benötigt. Diese dienen dazu, dass die Teilsicherungen an den korrekten Stellen im initialen Vollbackup integriert werden können. Daher ist eine hohe Rechenarbeit nötig, da die einzelnen Teilbackups in das initiale Vollbackup integriert und dadurch der ursprüngliche Datenzustand wiederhergestellt werden müssen.\\
+		\par\noindent
+		Der Speicherbedarf bei dieser Variante ist sehr gering, da ausschließlich die Differenzen zum vorherigen Backup gespeichert werden. Auf diese Weise kann eine redundante Speicherung von Daten umgangen werden.\\
+		Ausschließlich die zuvor erwähnten Kontrolldaten erhöhen den Speicherbedarf um rund 10\%.\\
+		\par\noindent
+		Das größte Manko dieser Methode ist das aufwändige und teils problematische Wiederherstellen der Daten. Dadurch kann eine entsprechende Wiederherstellung, im Vergleich zum Vollbackup, sehr viel mehr Zeit in Anspruch nehmen.\\
+		Zudem ist eine vollständige Wiederherstellung des Datenzustands nicht möglich, sollte auch nur ein Teilbackup geschweige denn das initiale Vollbackup fehlen.\\
+		\par\noindent
+		\includegraphics[width=0.98\textwidth]{../99_Bilder/01_ink.jpg}\\
+		\tiny{Quelle: \href{https://www.grundlagen-computer.de/backup/backup-strategien-inkrementell-differentiell-und-vollbackup}{Grundlagen Computer}(05.01.2020)}\\
+		\footnotesize{Das Schaubild zeigt die zu jedem Sicherungszeitpunkt gespeicherten Datenmengen.}\normalsize
+	\end{worksheet}
+\end{document}

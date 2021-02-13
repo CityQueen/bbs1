@@ -1,0 +1,14 @@
+
+public class Versuch {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int grenze = 14;
+		int sumer = 0;
+		int zaehler = 1;
+		
+		do {
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Convert local variable &apos;aufgabe5.main().n&apos; in &apos;aufgabe5.main()&apos; to field&#x0D;&#x0A;- Original project: &apos;Müslüm -Kilic&apos;&#x0D;&#x0A;- Original element: &apos;aufgabe5.main().n&apos;&#x0D;&#x0A;- Field name: &apos;n&apos;&#x0D;&#x0A;- Initialize field in method&#x0D;&#x0A;- Declared visibility: &apos;private&apos;" description="Convert local variable &apos;n&apos; to field" final="false" flags="2" id="org.eclipse.jdt.ui.promote.temp" initialize="1" input="/src&lt;{aufgabe5.java" name="n" selection="73 3" stamp="1540814003876" static="false" version="1.0" visibility="2"/>
+</session>

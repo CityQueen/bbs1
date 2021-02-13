@@ -1,0 +1,21 @@
+import java.util.*;
+public class Obergrenze {
+	public static void main(String[] args) {
+		 Scanner eingabe = new Scanner(System.in);
+		 System.out.println("Bitte geben sie eine Obergrenze ein:");
+		int a= eingabe.nextInt();
+		int i=1;
+		int b=0;
+		int c=0;
+		int d=1;
+		
+		do {
+			b= b+2;
+			i= i+2;
+			d= d+2;
+			c++;
+		}while (i<a);
+		System.out.println("Die Summe "+b+ " ergibt sich als Summe aus"+c+ " ungeraden Zahlen");
+		}
+	}
+

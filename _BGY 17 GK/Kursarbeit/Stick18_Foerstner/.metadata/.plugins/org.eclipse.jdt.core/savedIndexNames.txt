@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+D:\[Eclipse][Photon][64B]\Stick18\.metadata\.plugins\org.eclipse.jdt.core
+1838414706.index
+736901806.index

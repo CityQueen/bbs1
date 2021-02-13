@@ -1,0 +1,164 @@
+\documentclass[oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{scrreprt}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\geometry{left=2.50cm,right=2.50cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+
+\begin{document}
+	\begin{worksheet}{BGY 17}{Klassenstufe 12 - Informationsverarbeitung}{Lernabschnitt 1: Bedingte Anweisungen}
+				
+		\noindent
+		\sffamily
+		\pagestyle{empty}
+		\textbf{Gruppe 1}
+		\begin{lstlisting}[style=JavaInputStyle]
+			//rand.nextInt() liefert eine zufällige Zahl zurück
+			int zahl1 = rand.nextInt(), zahl2 = rand.nextInt();
+			//Die Scanner-Klasse ermöglicht das Einlesen von Nutzereingaben.
+			Scanner input = new Scanner(System.in);
+			
+			//Wenn zahl1 >= zahl2 muss der Nutzer eine ganzzahlige Eingabe tätigen. Diese wird mit zahl2 multipliziert. Ist hingegen zahl1 < zahl2 wird nach einer ganzzahlige Eingabe verlangt, die mit zahl1 multipliziert wird.
+			//Danach wird erneut geprüft, ob zahl1 >= zahl2. Ist die Bedingung erfüllt wird die Summe der beiden Zahlen ausgegeben.
+			if (zahl1 >= zahl2) {;
+				System.out.print("Geben Sie einen ganzzahligen Wert ein:");
+				int eingabe = input.nextInt();
+				zahl2 = zahl2*eingabe;
+			}
+			else if (zahl1 < zahl2){
+				System.out.print("Geben Sie bitte eine ganze Zahl ein:");
+				int eingabe = input.nextInt();
+				zahl1 = zahl1*eingabe;
+				
+			if (zahl1 >= zahl2)
+				System.out.println(zahl1 + zahl2);
+			}
+		\end{lstlisting}
+		\newpage
+		\textbf{Gruppe 2}
+		\begin{lstlisting}[style=JavaInputStyle]
+			//rand.nextInt() liefert eine zufällige Zahl zurück
+			int zahl1 = rand.nextInt(), zahl2 = rand.nextInt();
+			
+			//Wenn zahl1 < zahl2 wird Hallo ausgegeben, ansonsten wird eine neue zufällige Zahl an zahl2 zugewiesen.
+			//Danach wird erneut geprüft, ob zahl1 < zahl2. Ist die Bedingung erfüllt wird die Summe der beiden Zahlen ausgegeben.
+			//Ist hingegen zahl1 größer oder gleich zahl2, so wird eine dritte Zahlvariable, zahl3, erzeugt. Diese bekommt die Summe aus zahl1 und zahl2 zugewiesen.
+			//Ist die Hälfte von zahl3 kleiner als zahl2, wird zahl2 ausgegeben.
+			if (zahl1 < zahl2); {
+				System.out.println("Hallo!");
+			}
+			
+			zahl2 = rand.nextInt();
+			
+			if (zahl1 < zahl2)
+				System.out.println(zahl1 + zahl2);
+			}
+			else if {zahl1 => zahl2) 
+				int zahl3 = zahl1 + zahl2;
+				if (zahl3/2 < zahl2});
+					System.out.println(zahl2);
+				}
+			
+		\end{lstlisting}
+		\newpage
+		\textbf{Gruppe 3}
+		\begin{lstlisting}[style=JavaInputStyle]
+			//rand.nextInt() liefert eine zufällige Zahl zurück
+			int zahl1 = rand.nextInt(), zahl2 = rand.nextInt();
+			
+			//Wenn zahl1 < zahl2 und zahl1 den Wert 5 hat, wird nach dem Namen gefragt. Ist das nicht der Fall aber zahl1 + zahl2 ist negativ, werden beiden Zahlen neue Werte zugewiesen.
+			//Ansonsten wird eine neue zufällige Zahl an zahl2 zugewiesen.
+			if (zahl1 < zahl2, zahl1 == 5){
+				System.out.println("Wie heißt du?");
+			}
+			if (zahl1 + zahl2 <0) }
+				zahl1 = rand.nextInt();
+				zahl2 = rand.nextInt();
+				
+			else {
+				zahl2 = rand.nextInt();
+			}
+		\end{lstlisting}
+		\newpage
+		\textbf{Gruppe 4}
+		\begin{lstlisting}[style=JavaInputStyle]
+			//rand.nextInt() liefert eine zufällige Zahl zurück
+			int zahl1 = rand.nextInt(), zahl2 = rand.nextInt();
+			
+			//Wenn zahl1 < zahl2 und zahl1 < 100000, wird zahl1 ausgegeben.
+			//Sonst wird geprüft ob zahl2 < 200000, dann wird zahl2 eine neue zufällige Zahl zugewiesen.
+			//Ist keine der beiden Bedingungen erfüllt, wird eine neue Variable zahl3 erzeugt.
+			if (zahl1 < zahl2, zahl1 < 100000){
+				System.out.println(zahl1);
+				
+			else {
+				int zahl3;
+			}
+			else if{ (zahl2 < 200000)
+				zahl2 = rand.nextInt();
+			}
+		\end{lstlisting}
+		\newpage
+		\textbf{Gruppe 5}
+		\begin{lstlisting}[style=JavaInputStyle]
+			//rand.nextInt() liefert eine zufällige Zahl zurück
+			int zahl1 = rand.nextInt(), zahl2 = rand.nextInt(), zahl3 = rand.nextInt();
+			
+			//Wenn zahl1 + zahl2 < zahl3, wird zahl3 ausgegeben
+			//Sonst wird geprüft, ob zahl1 + zahl3 < zahl2. Dann wird zahl2 ausgegeben.
+			//Ansonsten prüfen wir, ob zahl2 + zahl3 < zahl1. Ist das der Fall, wird zahl2 und zahl3 ausgegeben
+			if (zahl1 + zahl2 < zahl3){
+				System.out.println(zahl3);
+			}
+			else if{ (zahl1 + zahl3 < zahl2)
+				System.out.println(zahl2);
+			};
+			else if{ zahl2 + zahl3 < zahl1;
+				System.out.println(zahl2 + " und " + zahl3);
+			}
+		\end{lstlisting}
+		\newpage
+		\textbf{Gruppe 6}
+		\begin{lstlisting}[style=JavaInputStyle]
+			//rand.nextInt() liefert eine zufällige Zahl zurück
+			int zahl1 = rand.nextInt(), zahl2 = rand.nextInt(), zahl3 = rand.nextInt();
+			
+			//Ist zahl1 > zahl2 und zahl2 < zahl3, werden zahl2 und zahl3 addiert und anschließend ausgegeben.
+			//Sonst wird geprüft ob zahl1 < zahl2, dann werden zahl1 und eine zufällige Zahl addiert und es wird der String "Nicht richtig." ausgegeben.
+			//Ist hingegen zahl2 < zahl3, fragen wir nach dem Alter.
+			//Ansonsten verabschiedet sich das Programm
+			if zahl1 > zahl2 && zahl2 < zahl3 {
+				int temp = zahl2 + zahl3;
+				System.out.println(temp);
+			}
+			else if (zahl1 < zahl2)
+				int temp = zahl1 + rand.nextInt();
+				System.out.println("Nicht richtig");
+			else zahl2 < zahl3 {
+				System.out.println("Wie alt bist du?");
+			}
+			else
+				System.out.println("Auf Wiedersehen.");
+		\end{lstlisting}
+		\newpage
+		\textbf{Gruppe 7}
+		\begin{lstlisting}[style=JavaInputStyle]
+			//rand.nextInt() liefert eine zufällige Zahl zurück
+			int zahl1 = rand.nextInt(), zahl2 = rand.nextInt();
+			
+			//Ist zahl1*5 < zahl2, wird solange zahl2 ausgegeben, bis zahl3 als Summe der Durchlaufnummern (Summe der ersten n Zahlen) den Wert von zahl1 erreicht hat
+			//Sollte die erste Bedingung nicht erfüllt sein, wird geprüft ob zahl2/5 < zahl2 ist. Ist das der Fall, wird eine zufällige Zahl ausgegeben.
+			if (zahl1*5 < zahl2) {
+				int i = 0, counter = 1;
+				while (i < zahl2); {
+					System.out.println(zahl2);
+					i = i + counter;
+					counter++;
+			
+			}
+			else (zahl2/5 < zahl1) }
+				System.out.println(rand.nextInt());
+			}
+		\end{lstlisting}
+	\end{worksheet}
+\end{document}

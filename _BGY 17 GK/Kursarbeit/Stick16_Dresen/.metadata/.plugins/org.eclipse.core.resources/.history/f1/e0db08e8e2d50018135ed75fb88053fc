@@ -1,0 +1,15 @@
+import java.util.*;
+public class AnzahlDerSummanden {
+public static void main (String[]args) {
+Scanner name=new Scanner(System.in);
+System.out.println("bitte geben Sie eine ganzzahlige obergrenze an:");
+int a=name.nextInt();
+int c= 1;
+int summe= 0;
+for(int b=1;b<a;b++) {
+	b++;
+	summe= summe+c+b;
+	}
+System.out.println(summe);
+}
+}

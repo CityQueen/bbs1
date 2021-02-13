@@ -1,0 +1,16 @@
+
+public class aufgabe5 {
+	
+private int n;
+
+public void main (String []args) {
+
+	n = 1;
+	System.out.println(n ist 0);
+	
+	
+
+}
+
+
+}

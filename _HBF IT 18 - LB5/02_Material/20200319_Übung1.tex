@@ -1,0 +1,119 @@
+\documentclass[oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{scrreprt}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\geometry{left=1.50cm,right=1.50cm,top=3.00cm,bottom=0.15cm,includeheadfoot}
+
+\pagestyle{empty}
+
+\begin{document}
+	\begin{worksheet}{Lernbereich 5}{Lernabschnitt: Mikrocontroller}{LED und Taster ansteuern}
+		\begin{framed}
+			\noindent
+			\begin{tabularx}{0.98\textwidth}{Xr}
+				\textbf{Übung / Hausaufgabe} & Abgabe: 26.03.2020 14:00 Uhr\\
+				\hline
+			\end{tabularx}\\
+			\par\noindent
+			Bearbeiten Sie bitte die nachfolgende Aufgabe auf Zeit.\\
+			\par\noindent
+			Laden Sie ihr Ergebnis, spätestens zum angegebenen Termin, im PDF-Format in Ilias (HBFIT18A [LB5][WESP] >> [98] Abgabe >> Ihr Ordner) hoch.\\
+			Achten Sie darauf, dass Sie ihr Dokument in \textbf{IHREN} Ordner hochladen.\\
+			Sie sehen ausschließlich ihre eigenen Dateien, nicht aber die der Anderen.\\
+			\par\noindent
+			Halten Sie sich bei der Benennung ihrer Datei bitte an folgende Vorgabe: Datum\_Vorname\_Übung1\_benötigteZeit (Platzhalter sind zu ersetzen).\\ 
+		\end{framed}
+		\begin{framed}
+			\noindent
+			Drei LEDs sind an den Pins 3 (gelbe LED), 7 (grüne LED) und 9 (rote LED) angeschlossen. Der Taster ist mit dem Pin 5 verbunden. Wird der Arduino mit Strom versorgt passiert folgendes:
+			\begin{enumerate}
+				\item Die grüne LED beginnt zu leuchten.
+				\item Wird der Taster betätigt, wird folgende Reaktionskette ausgelöst:
+				\begin{enumerate}[label=\Alph* - ]
+					\item grüne LED wird ausgeschaltet
+					\item gelbe LED wird eingeschaltet
+					\item LED leuchtet für 50 ms
+					\item gelbe LED wird ausgeschaltet
+					\item 0,1s passiert nichts
+					\item rote LED wird eingeschaltet
+					\item rote LED leuchtet für 1,5s
+					\item gelbe LED wird eingeschaltet
+					\item nach einer Wartezeit von 0,75s werden beide LED ausgeschaltet
+					\item die grüne LED wird eingeschaltet
+				\end{enumerate}
+			\end{enumerate}
+			\par\noindent
+			\begin{enumerate}[label=(\alph*)]
+				\item Skizzieren Sie die Schaltung entsprechend der Funktionalität.\\
+				\textit{Achten Sie auch auf die korrekten Kabelfarben [schwarz für das Signal, blau für Erdung]}
+				\item Vervollständigen Sie das Programmskelett, so dass der Arduino beim Hochladen die angegebene Funktionalität erfüllt.\\
+				Versehen Sie ihren Quellcode auch mit aussagekräftigen Kommentaren.
+			\end{enumerate}
+		\end{framed}
+		\begin{center}
+			\begin{minipage}{0.38\textwidth}
+				\includegraphics[width=1.2\textwidth]{../99_Bilder/uno.png}
+			\end{minipage}
+			\hfill
+			\begin{minipage}{0.6\textwidth}
+				\begin{center}
+					\includegraphics[width=2.2\textwidth,angle=90]{../99_Bilder/breadboard.png}
+				\end{center}
+			\end{minipage}
+		\end{center}
+		\newpage
+		\begin{lstlisting}[style=Arduino]
+			void setup() {
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			}
+			void loop(){
+			
+						
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		
+			
+			
+			
+			
+			}
+		\end{lstlisting}
+	\end{worksheet}
+\end{document}

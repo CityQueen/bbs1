@@ -1,0 +1,52 @@
+\documentclass[oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{scrreprt}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\geometry{left=1.50cm,right=1.50cm,top=2.50cm,bottom=0.50cm,includeheadfoot}
+\pagestyle{empty}
+
+\begin{document}
+		\begin{worksheet}{Lernbereich 5}{Lernabschnitt: Mikrocontroller}{Taster nutzen}
+			\begin{framed}
+				\noindent
+				Für das nachfolgende Programm sowie die dazugehörige Schaltung bearbeiten Sie folgende Aufgaben.\\
+				Halten Sie ihre Ergebnisse in einer \textit{Dokumentationsdatei} fest.
+				\begin{enumerate}
+					\item Recherchieren Sie zunächst die Aufgabe bzw. Funktion unbekannter Befehle aus dem vorliegenden Quellcode.
+					\item Fügen Sie in den Quellcode sprechende Kommentare ein, die die Funktionsweise der einzelnen Befehle und des gesamten Programms beschreiben.
+					\item Fassen Sie die Funktionen der einzelnen Methoden / Funktionen kurz zusammen.
+					\item Welche Bauteile werden verwendet? (Kurze Erläuterung)
+					\item Schreiben Sie das Programm und bauen Sie die Schaltung nach.
+					\item Testen Sie das Programm mit der Schaltung.
+					\item Was beobachten Sie, beim testen?\\
+					Welche Probleme treten beim Test auf?
+				\end{enumerate}
+				\includegraphics[width=0.98\textwidth]{../99_Bilder/20191205_1.png}
+			\end{framed}
+			\begin{lstlisting}[style=Arduino]
+				int led = 9;
+				int taster = 11;
+				
+				void setup() {
+					pinMode(led,OUTPUT);
+					pinMode(taster,INPUT_PULLUP);
+					digitalWrite(taster,HIGH);
+				}
+				
+				void loop() {
+					int bRead = digitalRead(taster);
+					if(bRead == LOW) {
+						doThis();
+						delay(1000);
+					}
+				}
+				
+				void doThis() {
+					digitalWrite(led,HIGH);
+					delay(2000);
+					digitalWrite(led,LOW);
+				}
+			\end{lstlisting}
+		\end{worksheet}
+\end{document}

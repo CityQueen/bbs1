@@ -1,0 +1,12 @@
+import java.util.*;
+
+public class Aufagbe_5 {
+
+	public static void main(String[] args) {
+		Scanner eingabe = new Scanner(System.in);
+		int x = eingabe.nextInt();
+		System.out.println("Geben Sie eine Zahl ein");
+
+	}
+
+}

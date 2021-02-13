@@ -1,0 +1,18 @@
+
+public class Aufgabe4 {
+
+  public static void main (String []args) {
+  
+	 int i;
+	int (i=5);
+	 
+	 while (obergrenze >i++);
+	 
+	 System.out.print(obergrenze+ " ");
+	 
+	 obergerenze=ungradezahlen+ 1;
+	 
+System.out.println();
+}
+  }
+

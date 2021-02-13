@@ -1,0 +1,10 @@
+
+public class Aufgabe04 {
+	public void main (String[]args) {
+		for (int i=2;i=1;i<obergrenze>; i=42) {
+			System out.println(i);
+		}
+		
+	}
+
+}

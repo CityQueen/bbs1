@@ -1,0 +1,20 @@
+INDEX VERSION 1.131+G:\[Eclipse][Photon][64B]\Stick10\.metadata\.plugins\org.eclipse.jdt.core
+2285042199.index
+1434877271.index
+3457842276.index
+1581225392.index
+61140439.index
+971964272.index
+3875173725.index
+1391273964.index
+2223913880.index
+811254527.index
+974497899.index
+2146246523.index
+3088609866.index
+3437257551.index
+2981880908.index
+2255827074.index
+2570198671.index
+2256741742.index
+2322598702.index

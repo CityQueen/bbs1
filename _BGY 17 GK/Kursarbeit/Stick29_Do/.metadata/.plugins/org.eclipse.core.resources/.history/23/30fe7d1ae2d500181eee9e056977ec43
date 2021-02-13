@@ -1,0 +1,15 @@
+import java.util.*;
+
+public class Summe05 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+Scanner eingabe = new Scanner (System.in);
+		
+		System.out.println ("Bitte geben Sie n ein:");
+		int n = eingabe.nextInt();
+		
+	}
+
+}

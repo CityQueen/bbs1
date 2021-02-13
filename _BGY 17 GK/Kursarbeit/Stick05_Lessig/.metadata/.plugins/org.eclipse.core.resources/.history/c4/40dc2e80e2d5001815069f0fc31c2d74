@@ -1,0 +1,25 @@
+
+import java.util.Scanner;
+public class if_else_scanner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+    Scanner scan = new Scanner(System.in);
+		int a=scan.nextInt();
+		int b=scan.nextInt();
+	
+		int max=0;
+		if (a > b) {
+			max = a;
+		}
+		if (b > a) {
+			max = b;
+		}
+		if (a==b) {
+		max=b;
+	}
+	System.out.println("Das maximum ist " + max);
+		
+	}
+
+}

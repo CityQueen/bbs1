@@ -1,0 +1,61 @@
+\documentclass[oneside,openany,headings=optiontotoc,11pt,numbers=noenddot]{scrreprt}
+
+\input{../../packages.tex}
+\input{../../makros.tex}
+
+\geometry{left=2.50cm,right=2.50cm,top=3.00cm,bottom=1.00cm,includeheadfoot}
+
+\begin{document}
+	\begin{worksheet}{BGY 17}{Klassenstufe 12 - Informationsverarbeitung}{Lernabschnitt 1: Wiederholungs- und Bedingte Anweisung}
+				
+		\noindent
+		\sffamily
+		\textbf{Datum:}
+		\rule{0.91\textwidth}{0.4pt}\\
+		\par\noindent
+		Realisieren Sie die nachfolgenden Aufgaben unter Verwendung des Methoden- bzw. Prozedurkonzepts (siehe dazu 03-Methodenkonzept).
+		\begin{framed}
+			\noindent
+			\textbf{Bevor Sie eine Aufgabe beginnen...}\\
+			Erstellen Sie zunächst eine Klasse mit dem Namen \lstinline[style=JavaInputStyle]|methoden_IhrName|.\\
+			Innerhalb dieser Klasse lösen Sie drei der nachfolgenden Aufgaben.\\
+			\rule{\textwidth}{0.1pt}\\
+			\par\noindent
+			\textbf{Multiplikation}\\
+			Übernehmen Sie die folgende Rohform der Methode \lstinline[style=JavaInputStyle]|produkt| in die Klasse und ergänzen die Auslassung (...) so, dass de gewünschte Funktionalität gegeben ist.
+			\begin{lstlisting}[style=JavaInputStyle]
+				public static int multipliziere(int zahl1, int zahl2){
+				// Die Methode gibt das Produkt von zahl1 und zahl2 als Ergebnis zurück.
+				...}
+			\end{lstlisting}
+			\par\noindent
+			\rule{\textwidth}{0.1pt}\\
+			\par\noindent
+			\textbf{Gib aus}\\
+			Programmieren Sie eine \lstinline[style=JavaInputStyle]|public static|-Prozedur mit dem Namen \lstinline[style=JavaInputStyle]|gibAus|, die drei Parameter vom Typ ihrer Wahl hat.\\
+			Die Prozedur solle diese drei Parameter in lesbarer Form (mit kleinem Text) in der Konsole ausgeben.\\
+			\par\noindent
+			\rule{\textwidth}{0.1pt}\\
+			\par\noindent
+			\textbf{Quadrieren}\\
+			Entwerfen Sie eine \lstinline[style=JavaInputStyle]|public static|-Methode mit dem Rückgabetyp \lstinline[style=JavaInputStyle]|int| namens \lstinline[style=JavaInputStyle]|hochZwei|. Die Methode erhält einen \lstinline[style=JavaInputStyle]|int|-Parameter mit dem Namen \lstinline[style=JavaInputStyle]|basis|.\\
+			Die Methode liefert das Quadrat der \lstinline[style=JavaInputStyle]|basis| (also \lstinline[style=JavaInputStyle]|basis|\(^2\)) zurück.\\
+			\par\noindent
+			\rule{\textwidth}{0.1pt}\\
+			\par\noindent
+			\textbf{2 hoch was?}\\
+			Entwerfen Sie eine \lstinline[style=JavaInputStyle]|public static|-Methode mit dem Rückgabetyp \lstinline[style=JavaInputStyle]|int| namens \lstinline[style=JavaInputStyle]|zweiHoch|. Die Methode erhält einen \lstinline[style=JavaInputStyle]|int|-Parameter mit dem Namen \lstinline[style=JavaInputStyle]|exponent|.\\
+			Ist der \lstinline[style=JavaInputStyle]|exponent| kleiner oder gleich \(0\), soll die der Wert \(1\) zurückgeliefert werden. Ansonsten soll die entsprechende Potenz von \(2\) (also \(2^{\text{\lstinline[style=JavaInputStyle]|exponent|}}\)) als Rückgabewert geliefert werden.\\
+			\newpage
+			\textbf{Primzahl?}\\
+			Programmieren Sie eine\lstinline[style=JavaInputStyle]|public static boolean|-Methode namens \lstinline[style=JavaInputStyle]|istPrim|. Die Methode bekommt einen \lstinline[style=JavaInputStyle]|int|-Parameter mit einem Namen ihrer Wahl.\\
+			Ist dieser Parameterwert eine Primzahl, soll die Funktion das Ergebnis \lstinline[style=JavaInputStyle]|true| liefern und sonst das Ergebnis \lstinline[style=JavaInputStyle]|false|.\\
+			\par\noindent
+			\rule{\textwidth}{0.1pt}\\
+			\par\noindent
+			\textbf{Die Böse Sieben}\\
+			Schreiben Sie eine \lstinline[style=JavaInputStyle]|public static void|-Prozedur mit Methodennamen \lstinline[style=JavaInputStyle]|teilbar|. Es wird ein \lstinline[style=JavaInputStyle]|int|-Parameter namens \lstinline[style=JavaInputStyle]|obergrenze| übergeben.\\
+			Die Prozedur gibt in der Konsole alle ganzzahlig durch sieben (7) teilbaren Zahlen bis einschließlich \lstinline[style=JavaInputStyle]|obergrenze| aus.
+		\end{framed}
+	\end{worksheet}
+\end{document}

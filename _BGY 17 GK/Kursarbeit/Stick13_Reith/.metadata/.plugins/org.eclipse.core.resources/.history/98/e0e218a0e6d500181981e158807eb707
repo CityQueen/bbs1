@@ -1,0 +1,12 @@
+import java.util.*;
+public class Aufgabe_05 {
+	public static void main(String[] fghdfhfd) {
+		Scanner uff=new Scanner(System.in);
+		int s=0, r=0, z=1, n=0;
+		System.out.print("Geben Sie die Anzahl der zu verwendenden Elemente an: ");
+		n=uff.nextInt();
+		while (z<=n){
+			
+		}
+	}
+}
